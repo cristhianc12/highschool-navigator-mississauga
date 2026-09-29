@@ -1,76 +1,120 @@
-import { UI, SCHOOLS, PROGRAMS, SOURCES, FRASER } from "./content.js";
+import { UI, LANGS, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS } from "./content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const MAX_COMPARE = 4;
 
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
-  set(k, v) { try { localStorage.setItem(k, v); } catch { /* sin almacenamiento */ } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
 };
 
 const state = {
   lang: "es",
-  filters: { q: "", system: "", start: "", entry: "" },
-  compare: new Set(SCHOOLS.map((s) => s.id)),
+  filters: { q: "", system: "", tag: "", start: "", entry: "", sort: "name" },
+  compare: ["goetz", "pocock", "cabot", "sfx"],
 };
 
 function detectLang() {
   const fromUrl = new URLSearchParams(location.search).get("lang");
-  if (fromUrl === "es" || fromUrl === "en") return fromUrl;
+  if (LANGS.includes(fromUrl)) return fromUrl;
   const saved = store.get("lang");
-  if (saved === "es" || saved === "en") return saved;
-  return (navigator.language || "es").toLowerCase().startsWith("en") ? "en" : "es";
+  if (LANGS.includes(saved)) return saved;
+  const nav = (navigator.language || "es").toLowerCase();
+  return nav.startsWith("fr") ? "fr" : nav.startsWith("en") ? "en" : "es";
 }
 
 const t = () => UI[state.lang];
-const L = (o) => (typeof o === "string" ? o : o[state.lang]);
+const L = (o) => (o == null ? "" : typeof o === "string" ? o : o[state.lang] || o.en);
+const byId = (id) => SCHOOLS.find((s) => s.id === id);
+const norm = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-function matches(item, text) {
+/* ---------- Filtering ---------- */
+
+function schoolText(s) {
+  const kv = s.kv ? Object.values(s.kv).map(L).join(" ") : "";
+  const progs = s.progs.map((p) => `${L(TAGS[p.k])} ${L(p.n)}`).join(" ");
+  return `${s.name} ${s.addr} ${L(BOARDS[s.board])} ${progs} ${kv} ${s.focus ? L(s.focus) : ""}`;
+}
+
+function schoolMatches(s) {
   const f = state.filters;
-  if (f.system && item.system !== f.system) return false;
-  if (f.start && item.start !== f.start) return false;
-  if (f.entry && item.entry !== f.entry) return false;
-  if (f.q && !text.toLowerCase().includes(f.q.toLowerCase())) return false;
+  if (f.system && s.board !== f.system) return false;
+  if (f.tag && !s.progs.some((p) => p.k === f.tag)) return false;
+  if (f.q && !norm(schoolText(s)).includes(norm(f.q))) return false;
   return true;
 }
 
-/* ---------- Plantillas ---------- */
+function programMatches(p) {
+  const f = state.filters;
+  if (f.system && p.board !== f.system) return false;
+  if (f.tag && p.tag !== f.tag) return false;
+  if (f.start && p.start !== f.start) return false;
+  if (f.entry && p.entry !== f.entry) return false;
+  const text = `${L(p.name)} ${p.hosts.map((h) => h.n).join(" ")} ${L(p.p)}`;
+  if (f.q && !norm(text).includes(norm(f.q))) return false;
+  return true;
+}
 
-function chip(c) { return `<span class="chip ${c.k}">${esc(L(c.t))}</span>`; }
+/* ---------- Templates ---------- */
+
+function progChips(s) {
+  return s.progs.map((p) => `<span class="chip" ${p.n ? `title="${esc(L(p.n))}"` : ""}>${esc(L(TAGS[p.k]))}</span>`).join("");
+}
+
+function fraserBlock(s) {
+  const u = t();
+  if (!s.fraser) return `<div class="fraser"><small>${esc(u.fraserNone)}</small></div>`;
+  const f = s.fraser;
+  const prev = f.prev == null ? "" : ` · ${esc(u.fraserPrev(f.prev.toFixed(1)))}`;
+  return `<div class="fraser">
+    <div class="fraser-head"><span class="fraser-label">${esc(u.fraserLabel)}</span><span class="fraser-score">${f.score.toFixed(1)}</span><span class="fraser-of">${esc(u.fraserOf)}</span></div>
+    <div class="bar" role="img" aria-label="${f.score.toFixed(1)} ${esc(u.fraserOf)}"><i style="width:${f.score * 10}%"></i></div>
+    <small>${esc(u.fraserRank(f.rank))}${prev}</small>
+    ${s.fnote ? `<small class="warnnote">${esc(L(s.fnote))}</small>` : ""}
+  </div>`;
+}
 
 function schoolCard(s) {
   const u = t();
-  const f = s.fraser;
-  const kv = ["distinct", "shsm", "langs", "entry"]
-    .map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(s.kv[k]))}</dd>`).join("");
+  const initials = s.name.replace(/[^A-Za-zÀ-ÿ ]/g, "").split(" ").filter((w) => /^[A-ZÀ-Ý]/.test(w) && !/^(SS|CSS)$/.test(w)).slice(0, 2).map((w) => w[0]).join("") || s.name[0];
+  const more = s.kv ? `<details class="more"><summary>${esc(u.moreInfo)}</summary>
+      <p class="focus"><b>${esc(u.lblFocus)}</b> ${esc(L(s.focus))}</p>
+      <dl class="kv">${["distinct", "shsm", "langs", "entry"].map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(s.kv[k]))}</dd>`).join("")}</dl></details>` : "";
+  const progs = s.progs.length
+    ? `<div class="chips">${progChips(s)}</div>`
+    : `<p class="muted small">${esc(u.noPrograms)}</p>`;
+  const checked = state.compare.includes(s.id);
   return `
-  <article class="card school ${s.cls}" data-id="${s.id}">
-    <div class="top"><div class="mono" aria-hidden="true">${s.mono}</div><div><div class="name">${esc(s.name)}</div><div class="sub">${esc(s.addr)}</div></div></div>
-    <div class="chips">${s.chips.map(chip).join("")}</div>
-    <p class="focus"><b>${esc(u.lblFocus)}</b> ${esc(L(s.focus))}</p>
-    <dl class="kv">${kv}</dl>
-    <div class="fraser">
-      <div class="fraser-head"><span class="fraser-label">${esc(u.fraserLabel)}</span><span class="fraser-score">${f.score.toFixed(1)}</span><span class="fraser-of">${esc(u.fraserOf)}</span></div>
-      <div class="bar" role="img" aria-label="${f.score.toFixed(1)} ${esc(u.fraserOf)}"><i style="width:${f.score * 10}%"></i></div>
-      <small>${esc(u.fraserRank(f.rank))} · ${esc(u.fraserPrev(f.prev.toFixed(1)))}</small>
-    </div>
-    <label class="cmp"><input type="checkbox" data-cmp="${s.id}" ${state.compare.has(s.id) ? "checked" : ""}> ${esc(u.compare)}</label>
+  <article class="card school board-${s.board}" data-id="${s.id}">
+    <div class="top"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><div class="name">${esc(s.name)}</div><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div></div>
+    ${progs}
+    ${fraserBlock(s)}
+    ${more}
+    <label class="cmp"><input type="checkbox" data-cmp="${s.id}" ${checked ? "checked" : ""}> ${esc(u.compare)}</label>
   </article>`;
 }
 
 function programCard(p) {
   const u = t();
-  const where = p.host ? `<div class="where">${esc(u.host)}${esc(p.host)}</div>` : "";
-  const chips = p.chips
-    ? p.chips.map(chip).join("")
-    : `<span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${state.lang === "es" ? "Solicitud" : "Application"}</span>`;
-  return `<article class="card prog"><h3>${esc(p.name)}</h3>${where}<p>${esc(L(p.p))}</p><div class="meta">${chips}</div></article>`;
+  const hosts = p.hosts.map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("");
+  const second = p.second ? `<p class="muted small"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : "";
+  return `<article class="card prog"><h3>${esc(L(p.name))}</h3>
+    <div class="where">${esc(u.host)}</div><ul class="hosts">${hosts}</ul>
+    <p>${esc(L(p.p))}</p>${second}
+    <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span></div></article>`;
 }
 
 function options(map, current) {
   const u = t();
   return `<option value="">${esc(u.all)}</option>` +
     Object.entries(map).map(([v, label]) => `<option value="${v}" ${current === v ? "selected" : ""}>${esc(label)}</option>`).join("");
+}
+
+function tagOptions(current) {
+  const u = t();
+  return `<option value="">${esc(u.all)}</option>` +
+    Object.keys(TAGS).map((k) => `<option value="${k}" ${current === k ? "selected" : ""}>${esc(L(TAGS[k]))}</option>`).join("");
 }
 
 function timeline() {
@@ -81,7 +125,8 @@ function timeline() {
       : `<span class="seg ${r.soft ? "soft" : "core"}" style="grid-column:${r.from}/${r.to}">${esc(r.txt)}</span>`;
     return `<div class="tl-row"><div class="tl-label">${esc(r.label)}<small>${esc(r.sub)}</small></div><div class="cols">${segs}</div></div>`;
   }).join("");
-  return `<div class="tl"><div class="tl-head"><span>${esc(u.tlOption)}</span><div class="cols"><span>Gr 9</span><span>Gr 10</span><span>Gr 11</span><span>Gr 12</span></div></div>${rows}
+  const g = state.lang === "fr" ? ["9e", "10e", "11e", "12e"] : ["Gr 9", "Gr 10", "Gr 11", "Gr 12"];
+  return `<div class="tl"><div class="tl-head"><span>${esc(u.tlOption)}</span><div class="cols">${g.map((x) => `<span>${x}</span>`).join("")}</div></div>${rows}
     <div class="legend"><span><i class="c"></i>${esc(u.tlConfirmed)}</span><span><i class="s"></i>${esc(u.tlSoft)}</span></div></div>`;
 }
 
@@ -96,7 +141,7 @@ function renderShell() {
   $('meta[name="twitter:title"]').content = u.h1;
   $('meta[property="og:description"]').content = u.metaDesc;
   $('meta[name="twitter:description"]').content = u.metaDesc;
-  $('meta[property="og:locale"]').content = state.lang === "es" ? "es_CO" : "en_CA";
+  $('meta[property="og:locale"]').content = u.ogLocale;
   $("#skip").textContent = u.skip;
   $("#theme-btn").setAttribute("aria-label", u.themeLabel);
   $("#lang-group").setAttribute("aria-label", u.langLabel);
@@ -113,9 +158,10 @@ function renderShell() {
     <p class="lead">${esc(u.lead)}</p>
     <div class="facts">
       <span class="fact"><b>${esc(u.factBoards)}</b> ${esc(u.factBoardsV)}</span>
-      <span class="fact"><b>${esc(u.factSchools)}</b> ${esc(u.factSchoolsV)}</span>
+      <span class="fact"><b>${esc(u.factSchools)}</b> ${esc(u.factSchoolsN(SCHOOLS.length))}</span>
     </div>
     <p class="notice">${u.notice}</p>
+    <p class="scope muted small">${esc(u.scope)}</p>
     <nav class="jump" aria-label="${esc(u.navLabel)}">${nav}</nav>
   </header>
 
@@ -126,14 +172,16 @@ function renderShell() {
     <form class="filters" id="filters" role="search" onsubmit="return false">
       <label class="field search">${esc(u.searchLabel)}<input type="search" id="f-q" value="${esc(f.q)}" placeholder="${esc(u.searchPh)}"></label>
       <label class="field">${esc(u.fSystem)}<select id="f-system">${options(u.optSystem, f.system)}</select></label>
+      <label class="field">${esc(u.fTag)}<select id="f-tag">${tagOptions(f.tag)}</select></label>
       <label class="field">${esc(u.fStart)}<select id="f-start">${options(u.optStart, f.start)}</select></label>
       <label class="field">${esc(u.fEntry)}<select id="f-entry">${options(u.optEntry, f.entry)}</select></label>
+      <label class="field">${esc(u.fSort)}<select id="f-sort">${Object.entries(u.optSort).map(([v, l]) => `<option value="${v}" ${f.sort === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
       <button type="button" class="btn" id="f-reset">${esc(u.reset)}</button>
     </form>
     <p class="count" id="count" aria-live="polite"></p></section>
 
   <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
-    <div class="grid two" id="schools"></div>
+    <div class="grid" id="schools"></div>
     <details class="fraser-note"><summary>${esc(u.fraserWhatH)}</summary><p>${esc(u.fraserWhat)}</p>
       <p><a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p></details></section>
 
@@ -173,63 +221,83 @@ function renderShell() {
 
 function renderResults() {
   const u = t();
-  const schools = SCHOOLS.filter((s) => matches(s, `${s.name} ${L(s.focus)} ${Object.values(s.kv).map(L).join(" ")} ${s.tags}`));
-  const progs = PROGRAMS.filter((p) => matches(p, `${p.name} ${p.host || ""} ${L(p.p)}`));
-  const dp = progs.filter((p) => p.system === "dpcdsb");
-  const pe = progs.filter((p) => p.system === "peel");
+  const f = state.filters;
+  let schools = SCHOOLS.filter(schoolMatches);
+  if (f.sort === "fraser") schools = [...schools].sort((a, b) => (b.fraser?.score ?? -1) - (a.fraser?.score ?? -1));
+  else schools = [...schools].sort((a, b) => a.name.localeCompare(b.name));
+  const progs = PROGRAMS.filter(programMatches);
+  const dp = progs.filter((p) => p.board === "dpcdsb");
+  const pe = progs.filter((p) => p.board === "peel");
   const empty = `<div class="empty">${esc(u.noResults)}</div>`;
 
   $("#schools").innerHTML = schools.length ? schools.map(schoolCard).join("") : empty;
   $("#prog-dpcdsb").innerHTML = dp.length ? dp.map(programCard).join("") : empty;
   $("#prog-peel").innerHTML = pe.length ? pe.map(programCard).join("") : empty;
-  $("#count").textContent = u.resultCount(schools.length + progs.length);
+  $("#count").textContent = u.resultCount(schools.length, progs.length);
 }
 
 function renderCompare() {
   const u = t();
-  $("#cmp-toggles").innerHTML = SCHOOLS.map((s) =>
-    `<button type="button" class="btn" data-toggle="${s.id}" aria-pressed="${state.compare.has(s.id)}">${esc(s.name)}</button>`).join("");
-  const chosen = SCHOOLS.filter((s) => state.compare.has(s.id));
+  const chosen = state.compare.map(byId).filter(Boolean);
+  const free = SCHOOLS.filter((s) => !state.compare.includes(s.id)).sort((a, b) => a.name.localeCompare(b.name));
+  const canAdd = chosen.length < MAX_COMPARE;
+  $("#cmp-toggles").innerHTML =
+    chosen.map((s) => `<button type="button" class="btn chosen" data-remove="${s.id}" aria-label="${esc(u.compRemove)} ${esc(s.name)}">${esc(s.name)} ✕</button>`).join("") +
+    (canAdd
+      ? `<select id="cmp-add" class="btn" aria-label="${esc(u.compAdd)}"><option value="">${esc(u.compAdd)}</option>${free.map((s) => `<option value="${s.id}">${esc(s.name)}</option>`).join("")}</select>`
+      : `<span class="muted small">${esc(u.compareMax)}</span>`);
+
   if (chosen.length < 2) { $("#cmp-out").innerHTML = `<div class="empty">${esc(u.compEmpty)}</div>`; return; }
+  const dash = u.none;
   const row = (label, fn) => `<tr><th scope="row">${esc(label)}</th>${chosen.map((s) => `<td>${fn(s)}</td>`).join("")}</tr>`;
   const r = u.compRows;
+  const kv = (k) => (s) => (s.kv ? esc(L(s.kv[k])) : dash);
   $("#cmp-out").innerHTML = `<div class="cmp-wrap"><table class="cmp-table">
     <thead><tr><th scope="col">${esc(u.compCol)}</th>${chosen.map((s) => `<th scope="col">${esc(s.name)}</th>`).join("")}</tr></thead>
     <tbody>
-    ${row(r.fraser, (s) => `<b>${s.fraser.score.toFixed(1)}</b> ${esc(u.fraserOf)}`)}
-    ${row(r.rank, (s) => esc(u.fraserRank(s.fraser.rank)))}
-    ${row(r.prev, (s) => s.fraser.prev.toFixed(1))}
+    ${row(r.board, (s) => esc(L(BOARDS[s.board])))}
+    ${row(r.fraser, (s) => (s.fraser ? `<b>${s.fraser.score.toFixed(1)}</b> ${esc(u.fraserOf)}` : dash))}
+    ${row(r.rank, (s) => (s.fraser ? esc(u.fraserRank(s.fraser.rank)) : dash))}
+    ${row(r.prev, (s) => (s.fraser && s.fraser.prev != null ? s.fraser.prev.toFixed(1) : dash))}
     ${row(r.addr, (s) => esc(s.addr))}
-    ${row(r.focus, (s) => esc(L(s.focus)))}
-    ${row(r.distinct, (s) => esc(L(s.kv.distinct)))}
-    ${row(r.shsm, (s) => esc(L(s.kv.shsm)))}
-    ${row(r.langs, (s) => esc(L(s.kv.langs)))}
-    ${row(r.entry, (s) => esc(L(s.kv.entry)))}
+    ${row(r.programs, (s) => (s.progs.length ? s.progs.map((p) => esc(L(TAGS[p.k]))).join(", ") : dash))}
+    ${row(r.focus, (s) => (s.focus ? esc(L(s.focus)) : dash))}
+    ${row(r.distinct, kv("distinct"))}
+    ${row(r.shsm, kv("shsm"))}
+    ${row(r.langs, kv("langs"))}
+    ${row(r.entry, kv("entry"))}
     </tbody></table></div>
     <p class="count">${esc(u.fraserFoot)}<a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p>`;
 }
 
-/* ---------- Eventos ---------- */
+/* ---------- Events ---------- */
 
 function bindFilters() {
   const f = state.filters;
-  const upd = () => { renderResults(); };
-  $("#f-q").addEventListener("input", (e) => { f.q = e.target.value.trim(); upd(); });
-  for (const k of ["system", "start", "entry"]) $(`#f-${k}`).addEventListener("change", (e) => { f[k] = e.target.value; upd(); });
-  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", system: "", start: "", entry: "" }); renderShell(); });
+  $("#f-q").addEventListener("input", (e) => { f.q = e.target.value.trim(); renderResults(); });
+  for (const k of ["system", "tag", "start", "entry", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => { f[k] = e.target.value; renderResults(); });
+  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", system: "", tag: "", start: "", entry: "", sort: "name" }); renderShell(); });
 }
 
-function toggleCompare(id) {
-  state.compare.has(id) ? state.compare.delete(id) : state.compare.add(id);
+function setCompare(id, on) {
+  const has = state.compare.includes(id);
+  if (on && !has) {
+    state.compare.push(id);
+    if (state.compare.length > MAX_COMPARE) state.compare.shift();
+  } else if (!on && has) {
+    state.compare = state.compare.filter((x) => x !== id);
+  }
   renderCompare();
-  const cb = document.querySelector(`[data-cmp="${id}"]`);
-  if (cb) cb.checked = state.compare.has(id);
+  document.querySelectorAll("[data-cmp]").forEach((cb) => { cb.checked = state.compare.includes(cb.dataset.cmp); });
 }
 
-document.addEventListener("change", (e) => { if (e.target.matches("[data-cmp]")) toggleCompare(e.target.dataset.cmp); });
+document.addEventListener("change", (e) => {
+  if (e.target.matches("[data-cmp]")) setCompare(e.target.dataset.cmp, e.target.checked);
+  if (e.target.id === "cmp-add" && e.target.value) setCompare(e.target.value, true);
+});
 document.addEventListener("click", (e) => {
-  const b = e.target.closest("[data-toggle]");
-  if (b) toggleCompare(b.dataset.toggle);
+  const rm = e.target.closest("[data-remove]");
+  if (rm) setCompare(rm.dataset.remove, false);
   const l = e.target.closest("[data-lang]");
   if (l && l.dataset.lang !== state.lang) {
     state.lang = l.dataset.lang;

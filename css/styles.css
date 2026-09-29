@@ -192,3 +192,22 @@ ol.q li::before{content:counter(q);flex:none;width:26px;height:26px;border-radiu
   .hero{padding-block-start:24px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Directory additions */
+.school.board-dpcdsb{--c:var(--goetz);--cs:var(--goetz-soft)}
+.school.board-peel{--c:var(--sfx);--cs:var(--sfx-soft)}
+.school.board-fr{--c:var(--pocock);--cs:var(--pocock-soft)}
+.small{font-size:13.5px}
+.scope{margin-top:12px;max-width:74ch}
+.warnnote{color:var(--warm)}
+.more{border-top:1px solid var(--line);padding-top:10px;font-size:14.5px}
+.more summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.more .focus{margin:10px 0}
+.hosts{list-style:none;margin:0;padding:0;display:grid;gap:3px;font-size:14px}
+.hosts li{color:var(--muted)}
+.hosts li.miss{color:var(--ink);font-weight:600}
+.pin{font-size:11.5px;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:1px 8px;border-radius:999px;margin-left:4px;white-space:nowrap}
+.cmp-toggles{align-items:center}
+.cmp-toggles .chosen{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.cmp-toggles select.btn{max-width:100%}
+.school .fraser{margin-top:auto}

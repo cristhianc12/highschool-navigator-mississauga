@@ -22,7 +22,7 @@ const store = {
 };
 
 // Module state: survives re-renders of the page (filters change often).
-const S = { host: null, lang: null, matchIds: null, q: "", home: null, picking: false, loaded: false, map: null, L: null, markers: new Map(), group: null, homeMarker: null, lastKey: "" };
+const S = { host: null, lang: null, matchIds: null, q: "", home: null, picking: false, loaded: false, map: null, L: null, markers: new Map(), group: null, homeMarker: null, lastKey: "", hide: new Set(), touched: false, ro: null };
 
 // Fixed number per school (alphabetical), so a pin, its list row and its popup always match.
 const NUM = new Map([...SCHOOLS].sort((a, b) => a.name.localeCompare(b.name)).map((s, i) => [s.id, i + 1]));
@@ -39,7 +39,7 @@ const distOf = (s) => (S.home && GEO[s.id] ? km(S.home, GEO[s.id]) : null);
 const fmtKm = (d) => (d < 10 ? d.toFixed(1) : Math.round(d)).toString();
 
 function visible() {
-  let list = SCHOOLS.filter((s) => GEO[s.id] && (!S.matchIds || S.matchIds.includes(s.id)));
+  let list = SCHOOLS.filter((s) => GEO[s.id] && (!S.matchIds || S.matchIds.includes(s.id)) && !S.hide.has(s.board) && !(S.hide.has("mine") && inList("school", s.id)));
   if (S.q) list = list.filter((s) => norm(`${s.name} ${BOARDS[s.board][S.lang]}`).includes(norm(S.q)));
   return list.sort((a, b) => (S.home ? distOf(a) - distOf(b) : a.name.localeCompare(b.name)));
 }
@@ -70,8 +70,8 @@ function build() {
       </div>
       <div class="mapmain"><div class="mapstage" id="map-stage" aria-label="${esc(m.aria)}"></div>
         <div class="mlegend" role="group" aria-label="${esc(m.legendH)}">
-          ${["dpcdsb", "peel", "fr"].map((b) => `<span><i class="lgpin" style="background:${COLOR[b]}"></i>${esc(BOARDS[b][S.lang])}</span>`).join("")}
-          <span><i class="lgpin mine"></i>⭐ ${esc(m.mine)}</span>
+          ${["dpcdsb", "peel", "fr"].map((b) => `<button type="button" class="lgt" data-legend="${b}" aria-pressed="${!S.hide.has(b)}" title="${esc(m.legendToggle)}"><i class="lgpin" style="background:${COLOR[b]}"></i>${esc(BOARDS[b][S.lang])}</button>`).join("")}
+          <button type="button" class="lgt" data-legend="mine" aria-pressed="${!S.hide.has("mine")}" title="${esc(m.legendToggle)}"><i class="lgpin mine"></i>⭐ ${esc(m.mine)}</button>
           <span><i class="lghome">🏠</i>${esc(m.legendHome)}</span>
           <span class="lgnum">${esc(m.legendNum)}</span>
         </div></div>
@@ -167,7 +167,12 @@ function updateHomeMarker() {
   S.homeMarker.on("dragend", () => { const p = S.homeMarker.getLatLng(); S.home = [p.lat, p.lng]; updateList(); });
 }
 
+function syncLegend() {
+  S.host.querySelectorAll("[data-legend]").forEach((b) => b.setAttribute("aria-pressed", String(!S.hide.has(b.dataset.legend))));
+}
+
 function sync() {
+  syncLegend();
   updateList();
   updateMarkers();
 }
@@ -202,8 +207,21 @@ async function loadMap(stage) {
     el._hs = true;
     el.addEventListener("click", (ev) => { const b = ev.target.closest("[data-open]"); if (b) openSchool(b.dataset.open); });
   });
+  S.touched = false;
+  S.map.on("dragstart popupopen", () => { S.touched = true; });
+  S.map.invalidateSize();
   updateMarkers();
   setTimeout(() => S.map && S.map.invalidateSize(), 60);
+  // The page can finish laying out after the map is created (laptop widths): re-measure and re-fit.
+  if (S.ro) S.ro.disconnect();
+  if ("ResizeObserver" in window) {
+    S.ro = new ResizeObserver(() => {
+      if (!S.map) return;
+      S.map.invalidateSize();
+      if (!S.touched) { S.lastKey = ""; updateMarkers(); }
+    });
+    S.ro.observe(stage);
+  }
 }
 
 function setHome(p) {
@@ -220,6 +238,8 @@ function bind() {
   host._mapBound = true;
   host.addEventListener("input", (e) => { if (e.target.classList.contains("mapsearch")) { S.q = e.target.value.trim(); sync(); } });
   host.addEventListener("click", (e) => {
+    const lg = e.target.closest("[data-legend]")?.dataset.legend;
+    if (lg) { if (S.hide.has(lg)) S.hide.delete(lg); else S.hide.add(lg); S.touched = false; sync(); return; }
     const a = e.target.closest("[data-map]")?.dataset.map;
     if (a === "load") {
       if (host.querySelector("#map-remember")?.checked) store.set(CONSENT_KEY, "1");
@@ -246,4 +266,4 @@ function bind() {
 }
 
 // Keep pins and list stars in sync with "My list".
-window.addEventListener("mylist:change", () => { if (S.host?.isConnected) { updateMarkers(); } });
+window.addEventListener("mylist:change", () => { if (S.host?.isConnected) { if (S.hide.has("mine")) sync(); else updateMarkers(); } });

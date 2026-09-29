@@ -301,6 +301,10 @@ button.opener:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .maploading{display:grid;place-items:center;height:100%}
 .mlegend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
 .mlegend span{display:inline-flex;align-items:center;gap:6px}
+.lgt{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:13px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 11px 4px 8px;cursor:pointer}
+.lgt:hover{border-color:var(--accent)}
+.lgt[aria-pressed="false"]{color:var(--muted);text-decoration:line-through;background:transparent;opacity:.7}
+.lgt[aria-pressed="false"] .lgpin{background:transparent!important;box-shadow:0 0 0 1px var(--line)}
 .lgpin{display:inline-block;width:16px;height:16px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
 .lgpin.mine{background:var(--surface);box-shadow:0 0 0 2px #F59E0B}
 .lghome{font-style:normal;font-size:15px}

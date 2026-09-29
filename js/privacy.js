@@ -13,7 +13,9 @@ let lang = (() => {
   if (LANGS.includes(q)) return q;
   const s = store.get("lang");
   if (LANGS.includes(s)) return s;
-  return "en";
+  // Device language (es / fr / en); anything else falls back to English.
+  const nav = (navigator.language || "en").toLowerCase();
+  return nav.startsWith("fr") ? "fr" : nav.startsWith("es") ? "es" : "en";
 })();
 
 function render() {

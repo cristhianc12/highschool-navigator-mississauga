@@ -21,7 +21,9 @@ function detectLang() {
   if (LANGS.includes(fromUrl)) return fromUrl;
   const saved = store.get("lang");
   if (LANGS.includes(saved)) return saved;
-  return "en"; // English by default; the URL or a saved choice can override it
+  // Device language (es / fr / en); anything else falls back to English.
+  const nav = (navigator.language || "en").toLowerCase();
+  return nav.startsWith("fr") ? "fr" : nav.startsWith("es") ? "es" : "en";
 }
 
 const t = () => (state.tone === "teen" ? { ...UI[state.lang], ...TEEN[state.lang] } : UI[state.lang]);

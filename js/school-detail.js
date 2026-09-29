@@ -124,9 +124,22 @@ export function closeSchool() {
 
 export function initSchoolDetail(options = {}) {
   ctx = { ...ctx, ...options };
+  let cardTimer = null;
   document.addEventListener("click", (e) => {
     const t = e.target.closest("[data-school]");
-    if (t) { e.preventDefault(); openSchool(t.dataset.school); }
+    if (t) { e.preventDefault(); openSchool(t.dataset.school); return; }
+
+    // Whole-card click. It must never get in the way of copying text, so it does nothing when the
+    // person is selecting (drag, double or triple click) and waits a moment before opening.
+    const card = e.target.closest("[data-card]");
+    if (!card || e.target.closest("a, button, input, label, select, textarea, summary, dialog")) return;
+    clearTimeout(cardTimer);
+    if (e.detail > 1) return; // double / triple click = selecting a word or paragraph
+    const id = card.dataset.card;
+    cardTimer = setTimeout(() => {
+      if (String(window.getSelection?.() || "").trim()) return; // text is selected: leave it alone
+      openSchool(id);
+    }, 260);
   });
   window.addEventListener("popstate", () => {
     if (location.hash.startsWith(HASH)) openSchool(location.hash.slice(HASH.length));

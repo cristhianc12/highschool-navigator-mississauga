@@ -202,11 +202,12 @@ function renderResults() {
       const why = row.hits.slice(0, 2).map((h) => `<li>${esc(L(TAGS[h.k]))}: ${esc(L(TAG_WHY[h.k]))}</li>`).join("");
       const notes = [row.dependsOnRegional ? u.transportNote : "", s.board === "fr" ? u.frenchNote : ""].filter(Boolean)
         .map((n) => `<p class="muted small">${esc(n)}</p>`).join("");
-      return `<article class="res board-${s.board}">
-        <div class="res-top"><h3><button type="button" class="viewlink" data-school="${s.id}">${esc(s.name)}</button></h3><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span></div>
+      return `<article class="res clickable board-${s.board}" data-card="${s.id}">
+        <div class="res-top"><h3>${esc(s.name)}</h3><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span></div>
         <div class="sub">${esc(L(BOARDS[s.board]))}</div>
         <div class="chips">${s.progs.map((p) => `<span class="chip">${esc(L(TAGS[p.k]))}</span>`).join("")}</div>
-        <p class="small"><b>${esc(u.whyLabel)}</b></p><ul class="why">${why}</ul>${notes}</article>`;
+        <p class="small"><b>${esc(u.whyLabel)}</b></p><ul class="why">${why}</ul>${notes}
+        <div class="res-foot"><span class="small muted">${esc(u.tapHint)}</span><button type="button" class="viewbtn" data-school="${s.id}" aria-label="${esc(u.viewProfile)}: ${esc(s.name)}">${esc(u.viewProfile)} →</button></div></article>`;
     }).join("")
     : `<p class="empty">${esc(u.noSignal)}</p>`;
   const progs = r.programs.length

@@ -34,6 +34,8 @@ export const QUIZ_UI = {
     programsH: "Programas que podrían gustarte",
     nextH: "Siguientes pasos",
     below: "Tus sugerencias están justo abajo ↓",
+    viewProfile: "Ver perfil completo",
+    tapHint: "Toca la tarjeta para ver más. Puedes seleccionar y copiar cualquier texto.",
     nextSteps: [
       "Revisa los programas en la guía y anota cuáles piden solicitud, audición o portafolio.",
       "Asiste a las charlas y open houses (oct–nov 2026). Peel recibe solicitudes del 3 al 24 de noviembre de 2026.",
@@ -101,6 +103,8 @@ export const QUIZ_UI = {
     programsH: "Programs you might like",
     nextH: "Next steps",
     below: "Your suggestions are right below ↓",
+    viewProfile: "View full profile",
+    tapHint: "Tap the card for more. You can select and copy any text.",
     nextSteps: [
       "Review the programs in the guide and note which ones require an application, audition or portfolio.",
       "Attend the info sessions and open houses (Oct–Nov 2026). Peel accepts applications Nov 3–24, 2026.",
@@ -168,6 +172,8 @@ export const QUIZ_UI = {
     programsH: "Programmes qui pourraient te plaire",
     nextH: "Prochaines étapes",
     below: "Tes suggestions sont juste en dessous ↓",
+    viewProfile: "Voir le profil complet",
+    tapHint: "Touche la carte pour en savoir plus. Tu peux sélectionner et copier n'importe quel texte.",
     nextSteps: [
       "Passe en revue les programmes du guide et note ceux qui exigent une demande, une audition ou un portfolio.",
       "Assiste aux séances d'information et aux portes ouvertes (oct.–nov. 2026). Peel reçoit les demandes du 3 au 24 novembre 2026.",

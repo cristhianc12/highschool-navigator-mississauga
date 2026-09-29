@@ -88,13 +88,13 @@ function schoolCard(s) {
     : `<p class="muted small">${esc(u.noPrograms)}</p>`;
   const checked = state.compare.includes(s.id);
   return `
-  <article class="card school board-${s.board}" data-id="${s.id}">
-    <button type="button" class="top opener" data-school="${s.id}" aria-label="${esc(u.detail.profile)}: ${esc(s.name)}"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><div class="name">${esc(s.name)}</div><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div></button>
+  <article class="card school clickable board-${s.board}" data-id="${s.id}" data-card="${s.id}">
+    <div class="top"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><h3 class="name">${esc(s.name)}</h3><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div></div>
     ${progs}
     ${fraserBlock(s)}
     <div class="cardfoot">
       <label class="cmp"><input type="checkbox" data-cmp="${s.id}" ${checked ? "checked" : ""}> ${esc(u.compare)}</label>
-      <button type="button" class="viewlink" data-school="${s.id}">${esc(u.detail.profile)} →</button>
+      <button type="button" class="viewbtn" data-school="${s.id}" aria-label="${esc(u.detail.profile)}: ${esc(s.name)}">${esc(u.detail.profile)} →</button>
     </div>
   </article>`;
 }

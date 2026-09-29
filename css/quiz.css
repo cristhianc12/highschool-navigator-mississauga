@@ -58,4 +58,6 @@
 .tb-share .check{margin:0;font-size:14px;flex:1;min-width:200px}
 .tb-info summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent)}
 .tb-info p{margin-top:6px}
+.res-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:10px;margin-top:2px}
+.res-foot .small{flex:1;min-width:180px}
 .scrollcue{text-align:center;font-weight:700;font-size:14px;color:var(--accent);margin:8px 0 0}

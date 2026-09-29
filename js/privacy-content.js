@@ -8,7 +8,7 @@ export const PRIV = {
     h1: "Política de privacidad", updated: "Última actualización",
     tldr: "En corto: este sitio no te pide nombre, correo ni cuenta, no usa cookies y no guarda tu IP. Si haces el cuestionario, nada sale de tu dispositivo a menos que aceptes compartir tus respuestas de forma anónima.",
     sections: [
-      { h: "Quiénes somos", p: ["Highschool Navigator Mississauga es un proyecto informativo independiente. No está afiliado con el DPCDSB, el Peel District School Board ni el Fraser Institute."] },
+      { h: "Quiénes somos", p: ["Highschool Navigator Mississauga es un proyecto informativo independiente. No tiene relación con el DPCDSB, el Peel District School Board ni el Fraser Institute."] },
       { h: "La guía", p: ["Explorar la guía no requiere dar datos personales."], ul: [
         "Guardamos en tu navegador (localStorage) solo tus preferencias de idioma, tema y tono. Nunca salen de tu dispositivo.",
         "Mientras haces el cuestionario, tu avance se guarda en esta pestaña del navegador (sessionStorage) para que no pierdas tu resultado si abres otra página. Se queda en tu dispositivo y desaparece al cerrar la pestaña.",
@@ -17,7 +17,7 @@ export const PRIV = {
       ] },
       { h: "El cuestionario", p: ["Las respuestas se procesan en tu navegador para mostrarte el resultado. El PDF también se genera en tu dispositivo.", "Solo si marcas «Acepto compartir mis respuestas de forma anónima» y pulsas Enviar, guardamos:"], ul: [
         "el idioma que usabas;",
-        "tus respuestas a las preguntas (opciones predefinidas, sin texto libre), incluida la zona amplia de la ciudad si la elegiste;",
+        "tus respuestas a las preguntas (opciones ya definidas, sin texto libre), incluida la zona general de la ciudad si la elegiste;",
         "las escuelas y programas que te sugerimos;",
         "la fecha del envío (sin hora).",
       ] },
@@ -31,7 +31,7 @@ export const PRIV = {
       { h: "Cuánto tiempo", p: ["Las respuestas se eliminan automáticamente a los 24 meses."] },
       { h: "Dónde se alojan", p: ["El sitio se aloja en Vercel y las respuestas en una base de datos Neon (Postgres). Estos proveedores pueden operar servidores fuera de Canadá. La infraestructura de Vercel puede registrar temporalmente direcciones IP en sus propios registros técnicos; nosotros no las guardamos en nuestra base de datos ni las usamos."] },
       { h: "Menores de edad", p: ["La guía está pensada para familias y estudiantes de Grade 8. Si tienes menos de 13 años, usa el sitio con un adulto de tu familia. No pedimos cuentas ni datos de contacto."] },
-      { h: "Tus decisiones", p: ["Compartir es totalmente voluntario y el cuestionario y el PDF funcionan igual sin hacerlo. Como las respuestas enviadas son anónimas, no podemos identificar cuáles son las tuyas, por eso no ofrecemos búsqueda o borrado individual: la mejor protección es no enviarlas. Puedes borrar tus preferencias limpiando los datos del sitio en tu navegador."] },
+      { h: "Tus decisiones", p: ["Compartir es totalmente voluntario, y el cuestionario y el PDF funcionan igual sin hacerlo. Como las respuestas enviadas son anónimas, no podemos saber cuáles son las tuyas; por eso no ofrecemos buscarlas ni borrarlas de forma individual. La mejor protección es no enviarlas. Puedes borrar tus preferencias limpiando los datos del sitio en tu navegador."] },
       { h: "Cambios y contacto", p: ["Si esta política cambia, actualizaremos la fecha de arriba. Para dudas o comentarios, abre un mensaje en el repositorio del proyecto."] },
     ],
     contact: "Contacto (repositorio del proyecto)",

@@ -139,3 +139,20 @@ export const PROGRAM_INFO = {
 };
 
 export const PEEL_MAIN_LINK = { l: x("Todos los RLCP de Peel", "All Peel RLCPs", "Tous les RLCP de Peel"), u: PEEL + "secondary-regional-learning-choice-programs" };
+
+// Regional Bakery School: details from the host school's own page (goetz.dpcdsb.org/programs/regional-programs).
+PROGRAM_INFO.bakery = {
+  ...PROGRAM_INFO.bakery,
+  reqs: [
+    x("4 créditos de Hospitality and Tourism con enfoque en panadería (cumple los requisitos de Tech y STEM).", "4 credits in Hospitality and Tourism with a focus on baking (meets the Tech and STEM requirements).", "4 crédits en accueil et tourisme axés sur la boulangerie (répond aux exigences de techno et de STIM)."),
+    x("4 cursos de panadería, uno por semestre, desde el segundo semestre de Grade 10.", "4 Bakery School courses, one per semester, starting in the second semester of Grade 10.", "4 cours de boulangerie, un par semestre, à partir du deuxième semestre de la 10e année."),
+    x("Segundo semestre de Grade 12: experiencia real con co-op en panadería y posible OYAP.", "Second semester of Grade 12: real-world co-op placements in baking and possible OYAP.", "Deuxième semestre de la 12e année : stages coopératifs en boulangerie et PAJO possible."),
+    x("Para estudiantes de Grade 8 o 9 con ganas de aprender, responsables y con espíritu de equipo.", "For Grade 8 or 9 students with a strong desire to learn, who are dependable team players.", "Pour les élèves de 8e ou 9e année qui ont le goût d'apprendre et sont fiables en équipe."),
+  ],
+  how: x(
+    "Se completa la solicitud del Regional Bakery School (la de 2027-28 se publicará pronto) con un componente escrito, se revisa con tu maestro (Grade 8) o tu orientador (Grade 9) y se entrega en la primera ronda. Si te aceptan, te inscribes en Goetz y empiezas en septiembre de 2027. Los cupos son limitados y el board no ofrece transporte a este programa.",
+    "Complete the Regional Bakery School application (the 2027-28 one will be posted soon) with its written component, review it with your teacher (Grade 8) or guidance counsellor (Grade 9) and submit it in the first round. If accepted, you register at Goetz and start in September 2027. Spaces are limited and the board does not provide transportation to this program.",
+    "On remplit la demande de l'école de boulangerie (celle de 2027-2028 sera bientôt publiée) avec sa partie écrite, on la révise avec son enseignant (8e année) ou son conseiller (9e année) et on la soumet à la première ronde. Si l'élève est accepté, il s'inscrit à Goetz et commence en septembre 2027. Les places sont limitées et le conseil n'offre pas de transport pour ce programme."
+  ),
+  keyDates: x("Fecha límite de la primera ronda: 8 de enero de 2027.", "First-round deadline: January 8, 2027.", "Date limite de la première ronde : 8 janvier 2027."),
+};

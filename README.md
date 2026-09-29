@@ -16,7 +16,8 @@ It describes what each school and program offers, how to get in and when to appl
 - **Fraser Institute score** (out of 10), rank and previous-year score for each school, with a plain-language note on what the score does and does not measure.
 - **Filters and search** by board, program type, starting grade and how you get in, plus sorting by name or Fraser score.
 - **Side-by-side comparison** of up to 4 schools from any board.
-- **Interactive school map:** a self-contained SVG map (no tiles, no third-party requests) with the city outline, highways and all 33 schools. Drag, zoom (wheel, pinch, buttons), click a dot to open the profile; it follows the directory filters and marks schools saved in "My list". Map data © OpenStreetMap contributors (ODbL), simplified at build time into `js/map-data.js`; school coordinates come from the official addresses (DPCDSB PDF) or OSM.
+- **Interactive school map:** a searchable list next to a real street map (Leaflet, self-hosted in `assets/vendor/leaflet`, with OpenStreetMap tiles). Numbered pins match the list; tap a pin or a list row for a card with score, programs, distance, directions and the profile; mark "my home" on the map (or use your location) to sort by straight-line distance; it follows the directory filters and marks schools saved in "My list". **Privacy:** tiles are requested from OpenStreetMap only after the person clicks "Load the map" (or asks to remember it); until then an offline preview is shown and the list works alone. For heavy traffic, switch the tile URL in `js/map.js` to a provider that allows it (OSM's tile policy discourages heavy use). School coordinates come from the official addresses (DPCDSB PDF) or OSM (`js/school-geo.js`).
+- **Courses per school:** the profile of every DPCDSB school lists its official course calendar (2025-26, by subject area and grade, with Ontario course codes), and a **course finder** shows which schools offer a subject or code. Verified SHSM sectors and other programs (Co-op, Dual Credit, OYAP...) per school come from each school's own website (`js/school-extras.js`). Bakery School details (credits, sequence, deadline Jan 8, 2027, no transportation) come from Goetz's regional program page.
 - **AP vs IB vs regular explainer**, a **year-over-year Fraser trend** (up/down vs the previous year), a **"data checked on" stamp** and a **Report an error** link (prefilled GitHub issue) on every profile.
 - **Installable and offline-friendly (PWA):** web app manifest, icons and a small service worker (network-first for pages and scripts, cache-first for fonts and images; it never touches `/api/`).
 - **My list:** star (☆/⭐) any school or program to build a personal shortlist, kept only on the device (`localStorage`, no account). The panel shows a plan with the dates that matter for the list and exports it to the calendar (one `.ics` with all dates), a PDF or plain text.
@@ -47,7 +48,9 @@ js/app.js           guide rendering, filters, comparison and language logic
 js/quiz-content.js  questionnaire text (es/en/fr), options and scoring weights
 js/quiz.js          questionnaire UI, recommendation engine, PDF export, anonymous share
 js/school-detail.js school and program profile modal shared by the guide and the results
-js/map.js           interactive SVG map; js/map-data.js is the generated map data
+js/map.js           list + street map (Leaflet); js/school-geo.js coordinates; js/map-data.js offline preview shape
+js/school-extras.js verified SHSM/other programs and official links per school
+js/course-finder.js course list and course finder (lazy); js/school-courses.js course calendars (lazy, generated)
 js/mylist.js        "My list" shortlist (localStorage), plan and exports
 js/explainer.js     AP vs IB vs regular comparison
 js/game.js          the "67 Runner" mini game (lazy loaded, Teen tone)

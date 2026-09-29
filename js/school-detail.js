@@ -6,6 +6,7 @@
 import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content.js";
 import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
 import { starBtn } from "./mylist.js";
+import { EXTRAS } from "./school-extras.js";
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -145,6 +146,18 @@ function renderSchool(school) {
     ? `<section class="dsec"><h3>${esc(S.forSchool)}</h3>${sess.map((e) => sessionRow(e)).join("")}<p class="small muted">${esc(S.calNote)}</p></section>`
     : "";
 
+  const ex = EXTRAS[school.id];
+  const crs = u.crs;
+  const extraHtml = ex && (ex.shsm?.length || ex.other?.length || ex.site)
+    ? `<section class="dsec"><h3>${esc(crs.extraH)}</h3>
+        ${ex.shsm?.length ? `<p class="small"><b>${esc(crs.shsmL)}:</b> ${ex.shsm.map(esc).join(" · ")}</p>` : ""}
+        ${ex.other?.length ? `<p class="small"><b>${esc(crs.otherL)}:</b> ${ex.other.map(esc).join(" · ")}</p>` : ""}
+        <div class="sbtns">${ex.site ? `<a class="btn small" href="${ex.site}" target="_blank" rel="noopener">${esc(crs.siteL)} ↗</a>` : ""}${ex.cal ? `<a class="btn small" href="${ex.cal}" target="_blank" rel="noopener">${esc(crs.calL)} ↗</a>` : ""}</div></section>`
+    : "";
+  const coursesHtml = ex?.cal
+    ? `<section class="dsec"><h3>${esc(crs.h)}</h3><details class="dcourses" data-courses="${school.id}"><summary>${esc(crs.show)}</summary><div class="dcourses-body"></div></details></section>`
+    : (ex?.src === "peel" ? `<section class="dsec"><p class="small muted">${esc(crs.peelNote)}</p></section>` : "");
+
   const kv = school.kv
     ? `<section class="dsec"><h3>${esc(d.detailsH)}</h3><p class="dfocus"><b>${esc(u.lblFocus)}</b> ${esc(L(school.focus))}</p>
         <dl class="kv">${["distinct", "shsm", "langs", "entry"].map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(school.kv[k]))}</dd>`).join("")}</dl></section>`
@@ -161,8 +174,15 @@ function renderSchool(school) {
   dlg.setAttribute("aria-label", school.name);
   dlg.className = `sdlg board-${school.board}`;
   dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
-    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
+    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
     footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
+  // Course list is loaded only when the person opens it (86 KB of data).
+  const det = dlg.querySelector("[data-courses]");
+  if (det) det.addEventListener("toggle", async () => {
+    const body = det.querySelector(".dcourses-body");
+    det.querySelector("summary").textContent = det.open ? crs.hide : crs.show;
+    if (det.open && !body.childElementCount) { const { renderSchoolCourses } = await import("./course-finder.js"); renderSchoolCourses(body, school.id, langOf()); }
+  });
 }
 
 /* ---------------- program profile ---------------- */

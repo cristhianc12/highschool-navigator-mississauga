@@ -1,150 +1,243 @@
-// Interactive map of the schools. A self-contained SVG (no tiles, no third-party requests): the city
-// outline and highways come from OpenStreetMap data simplified at build time (see map-data.js).
-// Drag to pan, wheel / pinch / buttons to zoom, click a dot (or press Enter) to open the school profile.
+// School map: a searchable list next to a real street map (Leaflet + OpenStreetMap tiles).
+// Privacy: the street map is loaded only after the person clicks "Load the map" (or asked us to remember
+// that choice), because their browser then requests tiles from OpenStreetMap. Until then the list works on
+// its own and a decorative offline preview is shown. Marking "my home" happens on the device: the point is
+// kept in memory only and is never stored or sent anywhere.
+import { UI, SCHOOLS, BOARDS, TAG_ICON, TAGS } from "./content.js";
+import { GEO } from "./school-geo.js";
 import { MAP } from "./map-data.js";
-import { UI, SCHOOLS, BOARDS } from "./content.js";
-import { inList } from "./mylist.js";
+import { inList, starBtn } from "./mylist.js";
+import { openSchool } from "./school-detail.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const MIN_K = 1, MAX_K = 9;
-const view = { x: 0, y: 0, k: 1 }; // module-level so the view survives re-renders
+const norm = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const COLOR = { dpcdsb: "#6D3DF2", peel: "#0A7BB8", fr: "#C2287E" };
+const CONSENT_KEY = "hsMapOk";
+const CENTER = [43.5890, -79.6441];
 
-const BOARD_COLOR = { dpcdsb: "var(--accent)", peel: "var(--sky)", fr: "var(--pink)" };
-let last = null; // { host, lang, matchIds }
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
+  del(k) { try { localStorage.removeItem(k); } catch { /* storage unavailable */ } },
+};
 
-const vb = () => `${view.x} ${view.y} ${MAP.w / view.k} ${MAP.h / view.k}`;
-function clamp() {
-  const w = MAP.w / view.k, h = MAP.h / view.k;
-  view.x = Math.min(Math.max(view.x, -w * 0.15), MAP.w - w * 0.85);
-  view.y = Math.min(Math.max(view.y, -h * 0.15), MAP.h - h * 0.85);
+// Module state: survives re-renders of the page (filters change often).
+const S = { host: null, lang: null, matchIds: null, q: "", home: null, picking: false, loaded: false, map: null, L: null, markers: new Map(), group: null, homeMarker: null, lastKey: "" };
+
+// Fixed number per school (alphabetical), so a pin, its list row and its popup always match.
+const NUM = new Map([...SCHOOLS].sort((a, b) => a.name.localeCompare(b.name)).map((s, i) => [s.id, i + 1]));
+const LABEL_ZOOM = 13; // school names appear next to the pins from this zoom level
+const t = () => UI[S.lang].map;
+
+function km(a, b) {
+  const R = 6371, rad = (d) => (d * Math.PI) / 180;
+  const dLat = rad(b[0] - a[0]), dLon = rad(b[1] - a[1]);
+  const x = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a[0])) * Math.cos(rad(b[0])) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(x));
+}
+const distOf = (s) => (S.home && GEO[s.id] ? km(S.home, GEO[s.id]) : null);
+const fmtKm = (d) => (d < 10 ? d.toFixed(1) : Math.round(d)).toString();
+
+function visible() {
+  let list = SCHOOLS.filter((s) => GEO[s.id] && (!S.matchIds || S.matchIds.includes(s.id)));
+  if (S.q) list = list.filter((s) => norm(`${s.name} ${BOARDS[s.board][S.lang]}`).includes(norm(S.q)));
+  return list.sort((a, b) => (S.home ? distOf(a) - distOf(b) : a.name.localeCompare(b.name)));
 }
 
+/* ---------------- layout ---------------- */
 export function renderMap(host, { lang, matchIds }) {
-  last = { host, lang, matchIds };
-  const u = UI[lang];
-  const m = u.map;
-  const dots = SCHOOLS.filter((s) => MAP.schools[s.id]).map((s) => {
-    const [x, y] = MAP.schools[s.id];
-    const on = !matchIds || matchIds.includes(s.id);
-    const mine = inList("school", s.id);
-    return `<g class="mdot${on ? "" : " dim"}${mine ? " mine" : ""}" data-school="${s.id}" data-x="${x}" data-y="${y}" role="button" tabindex="${on ? 0 : -1}" aria-label="${esc(s.name)}, ${esc(BOARDS[s.board][lang])}${mine ? ", " + esc(m.mine) : ""}" style="--c:${BOARD_COLOR[s.board]}">
-      ${mine ? `<circle class="ring" cx="${x}" cy="${y}" r="9"/>` : ""}<circle class="pt" cx="${x}" cy="${y}" r="6"/></g>`;
-  }).join("");
-  const roads = MAP.roads.map((r) => `<path class="mroad" d="${r.d}"/>`).join("");
-  const labels = MAP.labels.map((l) => `<text class="mlab" x="${l.p[0]}" y="${l.p[1]}">${esc(l.name)}</text>`).join("");
-  host.innerHTML = `
-    <div class="mapbox">
-      <svg class="mapsvg" viewBox="${vb()}" role="group" aria-label="${esc(m.aria)}" preserveAspectRatio="xMidYMid meet">
-        <defs><clipPath id="mclip"><path d="${MAP.city}"/></clipPath></defs>
-        <path class="mcity" d="${MAP.city}"/>
-        <g clip-path="url(#mclip)">${roads}</g>
-        <path class="mcityline" d="${MAP.city}"/>
-        <g class="mlabels">${labels}</g>
-        <g class="mdots">${dots}</g>
-      </svg>
-      <div class="mtools" role="group" aria-label="${esc(m.zoom)}">
-        <button type="button" class="btn small" data-map="in" aria-label="${esc(m.zoomIn)}">＋</button>
-        <button type="button" class="btn small" data-map="out" aria-label="${esc(m.zoomOut)}">－</button>
-        <button type="button" class="btn small" data-map="reset">${esc(m.reset)}</button>
+  S.matchIds = matchIds;
+  const fresh = S.host !== host || S.lang !== lang || !host.querySelector(".mapwrap");
+  S.host = host; S.lang = lang;
+  if (fresh) build();
+  sync();
+}
+
+function build() {
+  const m = t();
+  if (S.map) { try { S.map.remove(); } catch { /* already gone */ } S.map = null; S.markers.clear(); S.group = null; S.homeMarker = null; S.lastKey = ""; }
+  S.host.innerHTML = `
+    <div class="mapwrap">
+      <div class="mapside">
+        <input type="search" class="mapsearch" placeholder="${esc(m.search)}" aria-label="${esc(m.search)}" value="${esc(S.q)}">
+        <div class="maptools">
+          <button type="button" class="btn small" data-map="home"></button>
+          <button type="button" class="btn small" data-map="locate">🎯 ${esc(m.locate)}</button>
+        </div>
+        <p class="small muted" id="map-note"></p>
+        <div class="mapcount small muted" aria-live="polite"></div>
+        <ul class="maplist" aria-label="${esc(m.listAria)}"></ul>
       </div>
-      <div class="mtip" hidden></div>
-    </div>
-    <div class="mlegend small muted">
-      ${["dpcdsb", "peel", "fr"].map((b) => `<span><i style="background:${BOARD_COLOR[b]}"></i>${esc(BOARDS[b][lang])}</span>`).join("")}
-      <span><i class="ringi"></i>${esc(m.mine)}</span>
-    </div>
-    <p class="small muted">${esc(m.hint)} ${esc(m.attrib)}: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></p>`;
-  applyScale(host);
-  bind(host, lang);
+      <div class="mapmain"><div class="mapstage" id="map-stage" aria-label="${esc(m.aria)}"></div></div>
+    </div>`;
+  const stage = S.host.querySelector("#map-stage");
+  if (S.loaded || store.get(CONSENT_KEY) === "1") loadMap(stage); else showGate(stage);
+  bind();
 }
 
-// Keep dots and labels the same size on screen while zooming.
-function applyScale(host) {
-  const k = view.k;
-  host.querySelectorAll(".mdot").forEach((g) => {
-    const x = +g.dataset.x, y = +g.dataset.y;
-    g.querySelector(".pt").setAttribute("r", (6 / k ** 0.6).toFixed(2));
-    g.querySelector(".ring")?.setAttribute("r", (10 / k ** 0.6).toFixed(2));
-    g.style.setProperty("--sw", (2 / k ** 0.6).toFixed(2));
-  });
-  host.querySelectorAll(".mlab").forEach((t) => { t.style.fontSize = (15 / k ** 0.7).toFixed(1) + "px"; });
-  host.querySelectorAll(".mroad").forEach((p) => { p.style.strokeWidth = (3 / k ** 0.7).toFixed(2); });
-  const svg = host.querySelector(".mapsvg");
-  if (svg) svg.setAttribute("viewBox", vb());
+function showGate(stage) {
+  const m = t();
+  const preview = `<svg class="gate-svg" viewBox="0 0 ${MAP.w} ${MAP.h}" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="${MAP.city}" class="mcity"/><path d="${MAP.city}" class="mcityline"/>${MAP.roads.map((r) => `<path class="mroad" d="${r.d}" style="stroke-width:4"/>`).join("")}</svg>`;
+  stage.innerHTML = `${preview}<div class="mapgate"><h3>${esc(m.gateH)}</h3><p class="small">${esc(m.gateP)}</p>
+    <label class="check small"><input type="checkbox" id="map-remember"> ${esc(m.remember)}</label>
+    <button type="button" class="cta small" data-map="load">${esc(m.load)}</button></div>`;
 }
 
-function svgPoint(svg, cx, cy) {
-  const pt = svg.createSVGPoint(); pt.x = cx; pt.y = cy;
-  return pt.matrixTransform(svg.getScreenCTM().inverse());
+/* ---------------- list ---------------- */
+function updateList() {
+  const m = t();
+  const list = visible();
+  S.host.querySelector(".mapcount").textContent = `${m.count(list.length)}${S.home ? " · " + m.sortedByDist : ""}`;
+  S.host.querySelector(".maplist").innerHTML = list.length ? list.map((s) => {
+    const d = distOf(s);
+    return `<li class="mapitem" data-id="${s.id}">
+      <button type="button" class="mi-main" data-focus="${s.id}"><span class="mi-num" style="background:${COLOR[s.board]}" aria-hidden="true">${NUM.get(s.id)}</span>
+        <span class="mi-text"><b>${esc(s.name)}</b><small>${esc(BOARDS[s.board][S.lang])}${s.fraser ? " · " + s.fraser.score.toFixed(1) : ""}${d != null ? " · " + esc(m.dist(fmtKm(d))) : ""}</small></span></button>
+      ${starBtn("school", s.id)}<button type="button" class="viewbtn" data-open="${s.id}">${esc(m.view)} →</button></li>`;
+  }).join("") : `<li class="empty">${esc(m.none)}</li>`;
+  const btn = S.host.querySelector('[data-map="home"]');
+  btn.textContent = S.home ? `✖ ${m.homeClear}` : (S.picking ? `📍 ${m.homePick}` : `📍 ${m.home}`);
+  S.host.querySelector("#map-note").textContent = S.picking ? m.homePick : (S.home ? m.homeNote : "");
 }
 
-function zoomAt(host, factor, cx, cy) {
-  const svg = host.querySelector(".mapsvg");
-  const k2 = Math.min(MAX_K, Math.max(MIN_K, view.k * factor));
-  if (k2 === view.k) return;
-  const p = cx == null ? { x: view.x + MAP.w / view.k / 2, y: view.y + MAP.h / view.k / 2 } : svgPoint(svg, cx, cy);
-  // keep the point under the cursor fixed
-  view.x = p.x - (p.x - view.x) * (view.k / k2);
-  view.y = p.y - (p.y - view.y) * (view.k / k2);
-  view.k = k2; clamp(); applyScale(host);
+/* ---------------- markers ---------------- */
+function pinIcon(s) {
+  const mine = inList("school", s.id);
+  return S.L.divIcon({ className: "pinwrap", iconSize: [36, 36], iconAnchor: [18, 18], tooltipAnchor: [0, -18],
+    html: `<span class="pin ${mine ? "mine" : ""}" style="--pc:${COLOR[s.board]}">${NUM.get(s.id)}${mine ? '<i aria-hidden="true">⭐</i>' : ""}</span>` });
 }
 
-let bound = new WeakSet();
-function bind(host, lang) {
-  const svg = host.querySelector(".mapsvg");
-  const tip = host.querySelector(".mtip");
-  const box = host.querySelector(".mapbox");
-  let drag = null, moved = false;
-  const pointers = new Map();
-  let pinch = null;
+function popupHtml(s) {
+  const m = t();
+  const u = UI[S.lang];
+  const d = distOf(s);
+  const [lat, lon] = GEO[s.id];
+  const progs = s.progs.slice(0, 4).map((p) => `<span class="chip">${TAG_ICON[p.k] || ""} ${esc(TAGS[p.k][S.lang])}</span>`).join("");
+  return `<div class="spop"><h4><span class="popnum" style="background:${COLOR[s.board]}">${NUM.get(s.id)}</span> ${esc(s.name)}</h4>
+    <p class="small">${esc(BOARDS[s.board][S.lang])}${s.fraser ? ` · ${esc(u.fraserLabel)} <b>${s.fraser.score.toFixed(1)}</b>${esc(u.fraserOf)}` : ""}</p>
+    ${d != null ? `<p class="small">${esc(m.dist(fmtKm(d)))}</p>` : ""}
+    ${progs ? `<div class="chips">${progs}</div>` : ""}
+    <div class="sbtns"><button type="button" class="cta small" data-open="${s.id}">${esc(m.view)} →</button>
+      <a class="btn small" href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}" target="_blank" rel="noopener">${esc(m.directions)} ↗</a>
+      ${starBtn("school", s.id)}</div></div>`;
+}
 
-  svg.addEventListener("pointerdown", (e) => {
-    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    if (pointers.size === 2) { const [a, b] = [...pointers.values()]; pinch = Math.hypot(a.x - b.x, a.y - b.y); }
-    drag = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y }; moved = false;
-  });
-  svg.addEventListener("pointermove", (e) => {
-    if (!pointers.has(e.pointerId)) return;
-    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    if (pointers.size === 2 && pinch) {
-      const [a, b] = [...pointers.values()];
-      const d = Math.hypot(a.x - b.x, a.y - b.y);
-      zoomAt(host, d / pinch, (a.x + b.x) / 2, (a.y + b.y) / 2); pinch = d; moved = true; return;
+function updateMarkers() {
+  if (!S.map) return;
+  const L = S.L;
+  const list = visible();
+  const ids = new Set(list.map((s) => s.id));
+  for (const [id, mk] of S.markers) if (!ids.has(id)) { mk.remove(); S.markers.delete(id); }
+  const labels = S.map.getZoom() >= LABEL_ZOOM;
+  for (const s of list) {
+    let mk = S.markers.get(s.id);
+    if (!mk) {
+      mk = L.marker(GEO[s.id], { icon: pinIcon(s), title: s.name, alt: s.name, keyboard: true, riseOnHover: true }).addTo(S.map);
+      mk.bindPopup(() => popupHtml(s), { maxWidth: 290, className: "schoolpop", autoPanPadding: [20, 20] });
+      S.markers.set(s.id, mk);
+    } else mk.setIcon(pinIcon(s));
+    mk.unbindTooltip().bindTooltip(esc(s.name), { direction: "top", offset: [0, -4], permanent: labels, className: "pinlabel" });
+  }
+  // Fit the view only when the set of schools changes (not while typing in the search box).
+  const key = [...ids].sort().join(",");
+  if (key !== S.lastKey) {
+    S.lastKey = key;
+    if (list.length) {
+      const b = L.latLngBounds(list.map((s) => GEO[s.id]));
+      if (S.home) b.extend(S.home);
+      S.map.fitBounds(b, { padding: [36, 36], maxZoom: 15 });
     }
-    if (!drag) return;
-    const r = svg.getBoundingClientRect();
-    const scale = (MAP.w / view.k) / r.width;
-    const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
-    if (Math.abs(dx) + Math.abs(dy) > 4) { moved = true; svg.classList.add("grabbing"); }
-    if (moved) { view.x = drag.vx - dx * Math.max(scale, (MAP.h / view.k) / r.height); view.y = drag.vy - dy * Math.max(scale, (MAP.h / view.k) / r.height); clamp(); svg.setAttribute("viewBox", vb()); }
-  });
-  const end = (e) => { pointers.delete(e.pointerId); if (pointers.size < 2) pinch = null; if (!pointers.size) { drag = null; svg.classList.remove("grabbing"); } };
-  svg.addEventListener("pointerup", end); svg.addEventListener("pointercancel", end); svg.addEventListener("pointerleave", end);
-  // A drag must not count as a click on a dot.
-  svg.addEventListener("click", (e) => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
-  svg.addEventListener("wheel", (e) => { e.preventDefault(); zoomAt(host, e.deltaY < 0 ? 1.25 : 0.8, e.clientX, e.clientY); }, { passive: false });
-  svg.addEventListener("keydown", (e) => { if ((e.key === "Enter" || e.key === " ") && e.target.closest(".mdot")) { e.preventDefault(); e.target.closest(".mdot").dispatchEvent(new MouseEvent("click", { bubbles: true })); } });
-
-  host.querySelector(".mtools").addEventListener("click", (e) => {
-    const a = e.target.closest("[data-map]")?.dataset.map;
-    if (a === "in") zoomAt(host, 1.5); if (a === "out") zoomAt(host, 1 / 1.5);
-    if (a === "reset") { view.x = 0; view.y = 0; view.k = 1; applyScale(host); }
-  });
-
-  // Tooltip with the school name on hover / focus.
-  const show = (g) => {
-    const s = SCHOOLS.find((x) => x.id === g.dataset.school);
-    if (!s) return;
-    const r = g.getBoundingClientRect(), b = box.getBoundingClientRect();
-    tip.textContent = `${s.name}${s.fraser ? " · " + s.fraser.score.toFixed(1) : ""}`;
-    tip.hidden = false;
-    tip.style.left = `${r.left - b.left + r.width / 2}px`; tip.style.top = `${r.top - b.top - 8}px`;
-  };
-  svg.addEventListener("pointerover", (e) => { const g = e.target.closest(".mdot"); if (g) show(g); });
-  svg.addEventListener("focusin", (e) => { const g = e.target.closest(".mdot"); if (g) show(g); });
-  svg.addEventListener("pointerout", () => { tip.hidden = true; });
-  svg.addEventListener("focusout", () => { tip.hidden = true; });
+  }
+  updateHomeMarker();
 }
 
-// Re-render when the shortlist changes so the star rings stay in sync.
-window.addEventListener("mylist:change", () => { if (last && last.host.isConnected) renderMap(last.host, last); });
+function updateHomeMarker() {
+  if (!S.map) return;
+  if (S.homeMarker) { S.homeMarker.remove(); S.homeMarker = null; }
+  if (!S.home) return;
+  const L = S.L;
+  S.homeMarker = L.marker(S.home, { draggable: true, title: t().myHome, alt: t().myHome, icon: L.divIcon({ className: "pinwrap", iconSize: [36, 36], iconAnchor: [18, 34], html: '<span class="homepin" aria-hidden="true">🏠</span>' }) }).addTo(S.map);
+  S.homeMarker.bindTooltip(esc(t().myHome), { direction: "top", offset: [0, -30] });
+  S.homeMarker.on("dragend", () => { const p = S.homeMarker.getLatLng(); S.home = [p.lat, p.lng]; updateList(); });
+}
+
+function sync() {
+  updateList();
+  updateMarkers();
+}
+
+/* ---------------- Leaflet ---------------- */
+function loadLeaflet() {
+  if (window.L) return Promise.resolve(window.L);
+  return new Promise((resolve, reject) => {
+    const css = document.createElement("link"); css.rel = "stylesheet"; css.href = "assets/vendor/leaflet/leaflet.css"; document.head.appendChild(css);
+    const s = document.createElement("script"); s.src = "assets/vendor/leaflet/leaflet.js";
+    s.onload = () => resolve(window.L); s.onerror = reject; document.head.appendChild(s);
+  });
+}
+
+async function loadMap(stage) {
+  stage.innerHTML = `<div class="maploading small muted">…</div>`;
+  try { S.L = await loadLeaflet(); } catch { showGate(stage); return; }
+  if (!stage.isConnected) return;
+  stage.innerHTML = "";
+  const L = S.L;
+  S.loaded = true;
+  S.map = L.map(stage, { center: CENTER, zoom: 11, minZoom: 9, maxZoom: 18, scrollWheelZoom: false });
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' }).addTo(S.map);
+  // The wheel zooms the map only after the map was clicked, so scrolling the page never gets trapped.
+  S.map.on("click", () => S.map.scrollWheelZoom.enable());
+  S.map.on("mouseout", () => S.map.scrollWheelZoom.disable());
+  S.map.on("zoomend", updateMarkers);
+  S.map.on("click", (e) => { if (S.picking) setHome([e.latlng.lat, e.latlng.lng]); });
+  S.map.on("popupopen", (e) => {
+    const el = e.popup.getElement();
+    if (el._hs) return;
+    el._hs = true;
+    el.addEventListener("click", (ev) => { const b = ev.target.closest("[data-open]"); if (b) openSchool(b.dataset.open); });
+  });
+  updateMarkers();
+  setTimeout(() => S.map && S.map.invalidateSize(), 60);
+}
+
+function setHome(p) {
+  S.home = p; S.picking = false;
+  if (S.map) S.map.getContainer().classList.remove("picking");
+  S.lastKey = ""; // refit to include home
+  sync();
+}
+
+/* ---------------- events ---------------- */
+function bind() {
+  const host = S.host;
+  if (host._mapBound) return; // the host element survives re-builds: attach the listeners once
+  host._mapBound = true;
+  host.addEventListener("input", (e) => { if (e.target.classList.contains("mapsearch")) { S.q = e.target.value.trim(); sync(); } });
+  host.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-map]")?.dataset.map;
+    if (a === "load") {
+      if (host.querySelector("#map-remember")?.checked) store.set(CONSENT_KEY, "1");
+      loadMap(host.querySelector("#map-stage"));
+    }
+    if (a === "home") {
+      if (S.home) { S.home = null; S.picking = false; sync(); return; }
+      if (!S.map) { host.querySelector('[data-map="load"]')?.focus(); return; }
+      S.picking = !S.picking; S.map.getContainer().classList.toggle("picking", S.picking); updateList();
+    }
+    if (a === "locate") {
+      if (!navigator.geolocation) { host.querySelector("#map-note").textContent = t().geoErr; return; }
+      navigator.geolocation.getCurrentPosition((pos) => setHome([pos.coords.latitude, pos.coords.longitude]), () => { host.querySelector("#map-note").textContent = t().geoErr; }, { timeout: 8000, maximumAge: 60000 });
+    }
+    const focus = e.target.closest("[data-focus]")?.dataset.focus;
+    if (focus) {
+      const mk = S.markers.get(focus);
+      if (S.map && mk) { S.map.flyTo(GEO[focus], Math.max(S.map.getZoom(), 15), { duration: 0.6 }); setTimeout(() => mk.openPopup(), 650); host.querySelector(".mapstage").scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+      else openSchool(focus); // no map loaded: the list item opens the profile directly
+    }
+    const open = e.target.closest(".mapside [data-open]")?.dataset.open;
+    if (open) openSchool(open);
+  });
+}
+
+// Keep pins and list stars in sync with "My list".
+window.addEventListener("mylist:change", () => { if (S.host?.isConnected) { updateMarkers(); } });

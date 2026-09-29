@@ -1,6 +1,8 @@
 // All site content lives here, in Spanish (es), English (en) and Canadian French (fr).
 // To update data (Fraser scores, dates, programs, schools) edit only this file.
 
+import { EXTRAS } from "./school-extras.js";
+
 const x = (es, en, fr) => ({ es, en, fr });
 
 export const LANGS = ["es", "en", "fr"];
@@ -74,11 +76,33 @@ export const UI = {
     factSchoolsN: (n) => `${n} secundarias de Mississauga`,
     notice: "<b>Esta guía muestra lo que ofrece cada escuela; no recomienda ninguna.</b> Incluye la nota pública del Fraser Institute como referencia de cómo se ve cada escuela en resultados académicos. No mide los programas, el ambiente ni si la escuela es adecuada para cada estudiante.",
     scope: "Alcance: secundarias públicas y católicas de Mississauga, más una escuela en francés. No incluye escuelas privadas ni independientes (por ejemplo Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Los programas de cada escuela son los regionales confirmados en fuentes oficiales. Otras opciones, como los SHSM (especializaciones) y el Co-op (prácticas laborales con crédito), pueden variar: confírmalas con la escuela.",
+    crs: {
+      extraH: "También en esta escuela", shsmL: "SHSM", otherL: "Otros programas", siteL: "Sitio de la escuela", calL: "Calendario de cursos oficial",
+      h: "Cursos que ofrece",
+      intro: (y) => `Cursos del calendario oficial de la escuela (${y}). Que un curso aparezca no garantiza que se dicte todos los años: confírmalo con la escuela. Los nombres se muestran como los publica la escuela (en inglés).`,
+      show: "Ver los cursos", hide: "Ocultar los cursos", loading: "Cargando…", course: "Curso",
+      peelNote: "Las escuelas de Peel publican sus cursos en su propia guía de selección; aún no están incluidos aquí.",
+      finderH: "Buscador de cursos",
+      finderP: "Escribe una materia o un código (por ejemplo Computer Science, Photography, ICS4U) para ver qué escuelas del DPCDSB la ofrecen y en qué grados.",
+      finderPh: "Ej.: Computer Science, Photography, MHF4U…", finderNone: "No encontramos cursos con ese texto.", finderMin: "Escribe al menos 3 letras.",
+      finderCount: (n) => `${n} curso${n === 1 ? "" : "s"}`,
+      finderSrc: (y) => `Fuente: calendarios de cursos oficiales de 15 escuelas del DPCDSB (${y}). Peel todavía no está incluido.`,
+      offeredIn: "Se ofrece en",
+    },
     map: {
       nav: "Mapa", h: "Mapa de las escuelas",
-      p: "Ubica cada escuela en la ciudad. Toca un punto para abrir su perfil. Arrastra para moverte y usa los botones, la rueda o dos dedos para acercar. Respeta los filtros de arriba.",
-      aria: "Mapa interactivo de las secundarias de Mississauga", zoom: "Zoom", zoomIn: "Acercar", zoomOut: "Alejar", reset: "Ver toda la ciudad",
-      mine: "En mi lista", hint: "Los puntos atenuados no cumplen los filtros.", attrib: "Datos del mapa: © colaboradores de",
+      p: "Encuentra las escuelas cerca de ti. Toca una escuela de la lista o un punto del mapa para ver su tarjeta y abrir su perfil. Puedes marcar tu casa en el mapa para ver la distancia en línea recta.",
+      aria: "Mapa interactivo de las secundarias de Mississauga",
+      search: "Buscar una escuela…", listAria: "Lista de escuelas",
+      count: (n) => `${n} escuela${n === 1 ? "" : "s"}`,
+      gateH: "Mapa de calles interactivo",
+      gateP: "Para mostrarlo, tu navegador pedirá las imágenes del mapa a los servidores de OpenStreetMap, que verán tu dirección IP. No se envía nada más. La lista de escuelas funciona igual sin el mapa.",
+      load: "Cargar el mapa", remember: "Recordar mi elección en este dispositivo",
+      home: "Marcar mi casa", homePick: "Toca el mapa para marcar tu casa", homeClear: "Quitar mi casa", locate: "Usar mi ubicación",
+      homeNote: "La ubicación se queda en tu dispositivo y no se guarda.", geoErr: "No pudimos obtener tu ubicación.",
+      dist: (km) => `≈ ${km} km en línea recta`, sortedByDist: "Ordenadas por distancia a tu casa",
+      directions: "Cómo llegar", view: "Ver perfil", fit: "Ver todas", mine: "En mi lista",
+      attrib: "© colaboradores de OpenStreetMap", none: "No hay escuelas con esos filtros.", myHome: "Mi casa",
     },
     list: {
       btn: "Mi lista", h: "Mi lista", local: "Se guarda solo en este dispositivo, sin cuenta.",
@@ -222,6 +246,7 @@ export const UI = {
       { when: "21 oct – 5 nov 2026", b: "Charlas de los programas RLCP de Peel", p: "una por programa: IB 21 oct; AP, SciTech y Strings 22 oct; Arts 27 oct; IBT 28 oct; Skilled Trades 29 oct; Transportation 5 nov." },
       { when: "3–24 nov 2026", b: "Aplicaciones a los RLCP de Peel", p: "para el año escolar 2027-28. Primeras ofertas: 2 de febrero de 2027." },
       { when: "5 dic 2026 – 28 ene 2027", b: "Evaluaciones y audiciones de Peel", p: "AP y Strings 5 dic; IB 12 dic; Arts y Skilled Trades 27–28 ene (la hora la define cada escuela)." },
+      { when: "8 ene 2027", b: "Bakery School (Goetz)", p: "fecha límite de la primera ronda de aplicaciones para entrar en septiembre de 2027." },
       { when: "Por confirmar", b: "Aplicaciones a los programas regionales del DPCDSB", p: "(AP, IB, artes, deportes, STEM, panadería). Se confirman en cada charla; según el board, la aplicación a STEAM en St. Joan of Arc abre en octubre." },
     ],
 
@@ -276,11 +301,33 @@ export const UI = {
     factSchoolsN: (n) => `${n} high schools in Mississauga`,
     notice: "<b>This guide describes what is offered; it does not recommend any school.</b> It includes the Fraser Institute's public score as a reference for how each school is perceived on academic results. It does not measure programs, atmosphere or fit for each student.",
     scope: "Scope: public and Catholic high schools in Mississauga, plus one French-language school. Private and independent schools are excluded (for example Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). The programs listed per school are the regional programs confirmed in official sources; SHSM, Co-op and others may vary, so confirm them with the school.",
+    crs: {
+      extraH: "Also at this school", shsmL: "SHSM", otherL: "Other programs", siteL: "School website", calL: "Official course calendar",
+      h: "Courses offered",
+      intro: (y) => `Courses in the school's official course calendar (${y}). A listed course is not a guarantee that it runs every year: confirm with the school. Names are shown as the school publishes them.`,
+      show: "Show the courses", hide: "Hide the courses", loading: "Loading…", course: "Course",
+      peelNote: "Peel schools publish their courses in their own course selection guides; they are not included here yet.",
+      finderH: "Course finder",
+      finderP: "Type a subject or a course code (for example Computer Science, Photography, ICS4U) to see which DPCDSB schools offer it and in which grades.",
+      finderPh: "E.g. Computer Science, Photography, MHF4U…", finderNone: "No courses match that text.", finderMin: "Type at least 3 letters.",
+      finderCount: (n) => `${n} course${n === 1 ? "" : "s"}`,
+      finderSrc: (y) => `Source: official course calendars of 15 DPCDSB schools (${y}). Peel is not included yet.`,
+      offeredIn: "Offered at",
+    },
     map: {
       nav: "Map", h: "School map",
-      p: "See where each school is in the city. Tap a dot to open its profile. Drag to move around and use the buttons, the wheel or two fingers to zoom. It follows the filters above.",
-      aria: "Interactive map of Mississauga high schools", zoom: "Zoom", zoomIn: "Zoom in", zoomOut: "Zoom out", reset: "Show the whole city",
-      mine: "In my list", hint: "Dimmed dots do not match the filters.", attrib: "Map data: © contributors of",
+      p: "Find schools near you. Tap a school in the list or a point on the map to see its card and open its profile. You can mark your home on the map to see the straight-line distance.",
+      aria: "Interactive map of Mississauga high schools",
+      search: "Search for a school…", listAria: "List of schools",
+      count: (n) => `${n} school${n === 1 ? "" : "s"}`,
+      gateH: "Interactive street map",
+      gateP: "To show it, your browser will request the map images from OpenStreetMap's servers, which will see your IP address. Nothing else is sent. The school list works the same without the map.",
+      load: "Load the map", remember: "Remember my choice on this device",
+      home: "Mark my home", homePick: "Tap the map to mark your home", homeClear: "Remove my home", locate: "Use my location",
+      homeNote: "Your location stays on your device and is not saved.", geoErr: "We could not get your location.",
+      dist: (km) => `≈ ${km} km straight line`, sortedByDist: "Sorted by distance from your home",
+      directions: "Directions", view: "View profile", fit: "Show all", mine: "In my list",
+      attrib: "© OpenStreetMap contributors", none: "No schools match these filters.", myHome: "My home",
     },
     list: {
       btn: "My list", h: "My list", local: "Saved only on this device, no account.",
@@ -424,6 +471,7 @@ export const UI = {
       { when: "Oct 21 – Nov 5, 2026", b: "Peel RLCP program information nights", p: "one per program: IB Oct 21; AP, SciTech and Strings Oct 22; Arts Oct 27; IBT Oct 28; Skilled Trades Oct 29; Transportation Nov 5." },
       { when: "Nov 3–24, 2026", b: "Peel RLCP applications", p: "for the 2027-28 school year. First offers: February 2, 2027." },
       { when: "Dec 5, 2026 – Jan 28, 2027", b: "Peel assessments and auditions", p: "AP and Strings Dec 5; IB Dec 12; Arts and Skilled Trades Jan 27–28 (time set by each school)." },
+      { when: "Jan 8, 2027", b: "Bakery School (Goetz)", p: "first-round application deadline to start in September 2027." },
       { when: "To be confirmed", b: "DPCDSB regional program applications", p: "(AP, IB, Arts, Sports, STEM, Bakery). Confirmed at each talk; St. Joan of Arc STEAM opens in October, per the board." },
     ],
 
@@ -478,11 +526,33 @@ export const UI = {
     factSchoolsN: (n) => `${n} écoles secondaires à Mississauga`,
     notice: "<b>Ce guide décrit l'offre; il ne recommande aucune école.</b> Il inclut la cote publique de l'Institut Fraser comme repère de la perception de chaque école sur les résultats scolaires. Elle ne mesure ni les programmes, ni le climat, ni l'adéquation à chaque élève.",
     scope: "Portée : écoles secondaires publiques et catholiques de Mississauga, plus une école de langue française. Les écoles privées et indépendantes sont exclues (par exemple Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Les programmes indiqués pour chaque école sont les programmes régionaux confirmés dans les sources officielles; les MHS (SHSM), l'éducation coopérative et autres peuvent varier : confirmez-les auprès de l'école.",
+    crs: {
+      extraH: "Aussi à cette école", shsmL: "MHS (SHSM)", otherL: "Autres programmes", siteL: "Site de l'école", calL: "Calendrier des cours officiel",
+      h: "Cours offerts",
+      intro: (y) => `Cours du calendrier officiel de l'école (${y}). La présence d'un cours ne garantit pas qu'il soit offert chaque année : confirme auprès de l'école. Les noms sont affichés tels que l'école les publie (en anglais).`,
+      show: "Voir les cours", hide: "Masquer les cours", loading: "Chargement…", course: "Cours",
+      peelNote: "Les écoles de Peel publient leurs cours dans leur propre guide de sélection; ils ne sont pas encore inclus ici.",
+      finderH: "Recherche de cours",
+      finderP: "Saisis une matière ou un code (par exemple Computer Science, Photography, ICS4U) pour voir quelles écoles du DPCDSB l'offrent et en quelles années.",
+      finderPh: "Ex. : Computer Science, Photography, MHF4U…", finderNone: "Aucun cours ne correspond.", finderMin: "Saisis au moins 3 lettres.",
+      finderCount: (n) => `${n} cours`,
+      finderSrc: (y) => `Source : calendriers de cours officiels de 15 écoles du DPCDSB (${y}). Peel n'est pas encore inclus.`,
+      offeredIn: "Offert à",
+    },
     map: {
       nav: "Carte", h: "Carte des écoles",
-      p: "Vois où se trouve chaque école dans la ville. Touche un point pour ouvrir son profil. Glisse pour te déplacer et utilise les boutons, la molette ou deux doigts pour zoomer. La carte suit les filtres ci-dessus.",
-      aria: "Carte interactive des écoles secondaires de Mississauga", zoom: "Zoom", zoomIn: "Zoom avant", zoomOut: "Zoom arrière", reset: "Voir toute la ville",
-      mine: "Dans ma liste", hint: "Les points estompés ne correspondent pas aux filtres.", attrib: "Données de la carte : © contributeurs d'",
+      p: "Trouve les écoles près de chez toi. Touche une école dans la liste ou un point sur la carte pour voir sa fiche et ouvrir son profil. Tu peux marquer ta maison sur la carte pour voir la distance en ligne droite.",
+      aria: "Carte interactive des écoles secondaires de Mississauga",
+      search: "Chercher une école…", listAria: "Liste des écoles",
+      count: (n) => `${n} école${n === 1 ? "" : "s"}`,
+      gateH: "Carte routière interactive",
+      gateP: "Pour l'afficher, ton navigateur demandera les images de la carte aux serveurs d'OpenStreetMap, qui verront ton adresse IP. Rien d'autre n'est envoyé. La liste des écoles fonctionne aussi sans la carte.",
+      load: "Charger la carte", remember: "Se souvenir de mon choix sur cet appareil",
+      home: "Marquer ma maison", homePick: "Touche la carte pour marquer ta maison", homeClear: "Retirer ma maison", locate: "Utiliser ma position",
+      homeNote: "Ta position reste sur ton appareil et n'est pas enregistrée.", geoErr: "Impossible d'obtenir ta position.",
+      dist: (km) => `≈ ${km} km en ligne droite`, sortedByDist: "Triées par distance depuis ta maison",
+      directions: "Itinéraire", view: "Voir le profil", fit: "Tout voir", mine: "Dans ma liste",
+      attrib: "© contributeurs d'OpenStreetMap", none: "Aucune école avec ces filtres.", myHome: "Ma maison",
     },
     list: {
       btn: "Ma liste", h: "Ma liste", local: "Conservée seulement sur cet appareil, sans compte.",
@@ -626,6 +696,7 @@ export const UI = {
       { when: "21 oct. – 5 nov. 2026", b: "Soirées d'information des programmes RLCP de Peel", p: "une par programme : BI 21 oct.; AP, SciTech et cordes 22 oct.; arts 27 oct.; IBT 28 oct.; métiers spécialisés 29 oct.; transport 5 nov." },
       { when: "3–24 nov. 2026", b: "Demandes RLCP de Peel", p: "pour l'année scolaire 2027-2028. Premières offres : 2 février 2027." },
       { when: "5 déc. 2026 – 28 janv. 2027", b: "Évaluations et auditions de Peel", p: "AP et cordes 5 déc.; BI 12 déc.; arts et métiers spécialisés 27–28 janv. (l'heure est fixée par chaque école)." },
+      { when: "8 janv. 2027", b: "École de boulangerie (Goetz)", p: "date limite de la première ronde de demandes pour commencer en septembre 2027." },
       { when: "À confirmer", b: "Demandes des programmes régionaux du DPCDSB", p: "(AP, BI, arts, sports, STIM, boulangerie). Confirmées à chaque présentation; le programme STEAM de St. Joan of Arc ouvre en octobre, selon le conseil." },
     ],
 
@@ -659,6 +730,9 @@ export const UI = {
 };
 
 export const SOURCES = [
+  ["DPCDSB schools: official course calendars and SHSM pages (<school>.dpcdsb.org)", "https://www.dpcdsb.org/schools/school-directory"],
+  ["Peel schools: program pages of each school (<school>.peelschools.org)", "https://www.peelschools.org/"],
+  ["Regional Bakery School at Fr. Michael Goetz", "https://goetz.dpcdsb.org/programs/regional-programs"],
   ["DPCDSB, Secondary School Information Sessions 2026", "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions"],
   ["DPCDSB, Regional Secondary Programs 2025-26", "https://www.dpcdsb.org/download/527393"],
   ["DPCDSB, Regional Advanced Placement", "https://www.dpcdsb.org/programs-services/secondary/advanced-placement"],
@@ -828,6 +902,15 @@ export const PROGRAMS = [
     p: x("Aprendizaje práctico en oficios como la construcción. Según la sede, se pide un artefacto, una encuesta de intereses y una audición.", "Experiential learning in trades such as construction. Depending on the host, an artifact, a survey of interest and an audition are required.", "Apprentissage expérientiel dans des métiers comme la construction. Selon le site, un artefact, un sondage d'intérêts et une audition sont exigés."),
     second: x("Grade 11.", "Grade 11.", "11e année.") },
 ];
+
+/* Schools whose own website names their SHSM sectors get an SHSM chip listing them (see school-extras.js). */
+for (const sc of SCHOOLS) {
+  const e = EXTRAS[sc.id];
+  if (!e || !e.shsm || !e.shsm.length) continue;
+  const note = { es: e.shsm.join(", "), en: e.shsm.join(", "), fr: e.shsm.join(", ") };
+  const i = sc.progs.findIndex((p) => p.k === "shsm");
+  if (i >= 0) sc.progs[i] = { k: "shsm", n: note }; else sc.progs.push({ k: "shsm", n: note });
+}
 
 /* Icons for program types (emoji, no external assets). */
 export const TAG_ICON = {

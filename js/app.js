@@ -231,6 +231,11 @@ function renderShell() {
 
   <section id="mapa"><div class="sec-head"><h2>${esc(u.map.h)}</h2><p>${esc(u.map.p)}</p></div><div id="map-host"></div></section>
 
+  <section id="materias"><div class="sec-head"><h2>${esc(u.crs.finderH)}</h2><p>${esc(u.crs.finderP)}</p></div>
+    <input type="search" class="mapsearch" id="cf-q" placeholder="${esc(u.crs.finderPh)}" aria-label="${esc(u.crs.finderH)}" autocomplete="off">
+    <div id="cf-out" class="cf-out" aria-live="polite"></div>
+    <p class="small muted">${esc(u.crs.finderSrc("2025-2026"))}</p></section>
+
   <section id="comparar"><div class="sec-head"><h2>${esc(u.compararH)}</h2><p>${esc(u.compararP)}</p></div>
     <div class="cmp-toggles" id="cmp-toggles"></div><div id="cmp-out"></div></section>
 
@@ -382,6 +387,12 @@ function setCompare(id, on) {
   document.querySelectorAll("[data-cmp]").forEach((cb) => { cb.checked = state.compare.includes(cb.dataset.cmp); });
 }
 
+let cfTimer = null;
+document.addEventListener("input", (e) => {
+  if (e.target.id !== "cf-q") return;
+  clearTimeout(cfTimer);
+  cfTimer = setTimeout(async () => { const { renderFinder } = await import("./course-finder.js"); renderFinder($("#cf-out"), e.target.value, state.lang); }, 220);
+});
 document.addEventListener("change", (e) => {
   if (e.target.matches("[data-cmp]")) setCompare(e.target.dataset.cmp, e.target.checked);
   if (e.target.id === "cmp-add" && e.target.value) setCompare(e.target.value, true);

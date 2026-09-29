@@ -74,6 +74,14 @@ export const UI = {
     factSchoolsN: (n) => `${n} secundarias de Mississauga`,
     notice: "<b>Esta guía muestra lo que ofrece cada escuela; no recomienda ninguna.</b> Incluye la nota pública del Fraser Institute como referencia de cómo se ve cada escuela en resultados académicos. No mide los programas, el ambiente ni si la escuela es adecuada para cada estudiante.",
     scope: "Alcance: secundarias públicas y católicas de Mississauga, más una escuela en francés. No incluye escuelas privadas ni independientes (por ejemplo Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Los programas de cada escuela son los regionales confirmados en fuentes oficiales. Otras opciones, como los SHSM (especializaciones) y el Co-op (prácticas laborales con crédito), pueden variar: confírmalas con la escuela.",
+    game: {
+      h: "Descanso 🎮", p: "¿Ya viste muchas escuelas? Tómate un respiro y ayuda al 67 a saltar la tarea.",
+      aria: "Juego: el 67 salta obstáculos escolares y recoge íconos de programas",
+      start: "Empezar", restart: "Reiniciar", again: "Jugar otra vez", ready: "Toca o pulsa espacio para empezar", over: "Game over",
+      score: "Puntos", best: "Récord",
+      hint: "Salta con la barra espaciadora, la flecha ↑ o tocando la pantalla. Recoge los íconos de programas para sumar puntos.",
+      reduced: "Detectamos «reducir movimiento»: el juego va más lento.", sixtySeven: "¡67! 😏", paused: "Juego en pausa",
+    },
     sess: {
       nav: "Charlas",
       h: "Calendario de charlas informativas",
@@ -252,6 +260,14 @@ export const UI = {
     factSchoolsN: (n) => `${n} high schools in Mississauga`,
     notice: "<b>This guide describes what is offered; it does not recommend any school.</b> It includes the Fraser Institute's public score as a reference for how each school is perceived on academic results. It does not measure programs, atmosphere or fit for each student.",
     scope: "Scope: public and Catholic high schools in Mississauga, plus one French-language school. Private and independent schools are excluded (for example Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). The programs listed per school are the regional programs confirmed in official sources; SHSM, Co-op and others may vary, so confirm them with the school.",
+    game: {
+      h: "Take a break 🎮", p: "Seen a lot of schools? Take a breather and help the 67 jump over homework.",
+      aria: "Game: the 67 jumps over school obstacles and collects program icons",
+      start: "Start", restart: "Restart", again: "Play again", ready: "Tap or press space to start", over: "Game over",
+      score: "Score", best: "Best",
+      hint: "Jump with the space bar, the ↑ key or by tapping the screen. Collect program icons for extra points.",
+      reduced: "We detected “reduce motion”: the game runs slower.", sixtySeven: "67! 😏", paused: "Game paused",
+    },
     sess: {
       nav: "Sessions",
       h: "Information session calendar",
@@ -430,6 +446,14 @@ export const UI = {
     factSchoolsN: (n) => `${n} écoles secondaires à Mississauga`,
     notice: "<b>Ce guide décrit l'offre; il ne recommande aucune école.</b> Il inclut la cote publique de l'Institut Fraser comme repère de la perception de chaque école sur les résultats scolaires. Elle ne mesure ni les programmes, ni le climat, ni l'adéquation à chaque élève.",
     scope: "Portée : écoles secondaires publiques et catholiques de Mississauga, plus une école de langue française. Les écoles privées et indépendantes sont exclues (par exemple Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Les programmes indiqués pour chaque école sont les programmes régionaux confirmés dans les sources officielles; les MHS (SHSM), l'éducation coopérative et autres peuvent varier : confirmez-les auprès de l'école.",
+    game: {
+      h: "Pause 🎮", p: "Tu as vu beaucoup d'écoles? Prends une pause et aide le 67 à sauter par-dessus les devoirs.",
+      aria: "Jeu : le 67 saute des obstacles scolaires et ramasse des icônes de programmes",
+      start: "Commencer", restart: "Recommencer", again: "Rejouer", ready: "Touche ou appuie sur espace pour commencer", over: "Partie terminée",
+      score: "Points", best: "Record",
+      hint: "Saute avec la barre d'espace, la flèche ↑ ou en touchant l'écran. Ramasse les icônes de programmes pour gagner des points.",
+      reduced: "« Réduire les animations » détecté : le jeu va plus lentement.", sixtySeven: "67! 😏", paused: "Jeu en pause",
+    },
     sess: {
       nav: "Séances",
       h: "Calendrier des séances d'information",

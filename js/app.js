@@ -242,6 +242,9 @@ function renderShell() {
   <section id="preguntas"><div class="sec-head"><h2>${esc(u.preguntasH)}</h2><p>${esc(u.preguntasP)}</p></div>
     <ol class="q">${u.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></section>
 
+  ${state.tone === "teen" ? `<section id="descanso"><details class="gamebox" id="gamebox"><summary>${esc(u.game.h)}</summary>
+    <p class="muted">${esc(u.game.p)}</p><div id="game-host"></div></details></section>` : ""}
+
   <section><div class="sec-head"><h2>${esc(u.pendingH)}</h2></div>
     <div class="pending"><p class="muted">${esc(u.pendingP)}</p><ul>${u.pending.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
@@ -252,6 +255,18 @@ function renderShell() {
   renderResults();
   renderCompare();
   renderSessions();
+  bindGame();
+}
+
+// The game is loaded only when someone opens the "Take a break" panel, so it never slows the page.
+function bindGame() {
+  const box = $("#gamebox");
+  if (!box) return;
+  box.addEventListener("toggle", async () => {
+    if (!box.open || $("#game-host").childElementCount) return;
+    const { mountGame } = await import("./game.js");
+    mountGame($("#game-host"), t().game);
+  });
 }
 
 function renderSessions() {

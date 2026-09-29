@@ -17,10 +17,11 @@ It describes what each school and program offers, how to get in and when to appl
 - **Filters and search** by board, program type, starting grade and how you get in, plus sorting by name or Fraser score.
 - **Side-by-side comparison** of up to 4 schools from any board.
 - **Grade-by-grade timeline**, glossary, key dates and questions to bring to info sessions.
-- **Interactive questionnaire** (`/quiz`): 12 short, tap-to-answer questions written for the student (with an optional family part on school system, transportation and postal area). It suggests possible schools and programs, explains why, and offers a **PDF download** of the result (generated in the browser). It is orientation, not counselling, and says so.
+- **Teen-friendly design:** dark-first, vibrant theme, compact cards, one-tap "vibe" chips (IB, AP, Arts, STEM...), a sticky bottom navigation on mobile and a **Teen / Family tone switch** (same information, playful or neutral wording; light nods to trends live only in microcopy).
+- **Interactive questionnaire** (`/quiz`): 12 short, tap-to-answer questions written for the student (with an optional family part on school system, transportation and a broad area of the city). It suggests possible schools and programs, explains why, and offers a **PDF download** of the result (generated in the browser). It is orientation, not counselling, and says so.
 - **Optional anonymous data sharing**: with explicit opt-in, the answers can be stored anonymously in Postgres to study which options interest families.
 - **Languages:** Spanish, English and Canadian French (`fr-CA`). The language is picked from `?lang=`, then the saved choice, then the browser language.
-- **Light and dark themes**, responsive layout and keyboard-friendly, accessible markup.
+- **Dark and light themes**, responsive layout, keyboard-friendly and accessible markup.
 - **SEO:** meta tags, Open Graph / Twitter card image, JSON-LD, `sitemap.xml`, `robots.txt`.
 - **Analytics:** Vercel Web Analytics (enable it in the Vercel dashboard).
 
@@ -37,10 +38,13 @@ js/content.js       ALL guide content: UI text (es/en/fr), schools, programs, Fr
 js/app.js           guide rendering, filters, comparison and language logic
 js/quiz-content.js  questionnaire text (es/en/fr), options and scoring weights
 js/quiz.js          questionnaire UI, recommendation engine, PDF export, anonymous share
+privacy.html        trilingual privacy policy (js/privacy.js, js/privacy-content.js)
 api/submit.js       POST /api/submit: validated, anonymous insert into Postgres (Neon)
+api/cleanup.js      weekly retention job: deletes responses older than 24 months
+scripts/set-domain.mjs  rewrites the production domain across the static files
 db/schema.sql       table definition (also created lazily by the function)
 db/queries.sql      example correlation queries
-assets/             favicon and Open Graph image
+assets/             favicon, Open Graph image, self-hosted fonts (assets/fonts) and jsPDF (assets/vendor)
 vercel.json         security headers and clean URLs
 robots.txt, sitemap.xml
 ```
@@ -52,7 +56,7 @@ robots.txt, sitemap.xml
 - Family answers apply filters and adjustments: school system (Catholic, public, French-language), and a penalty for matches that depend on a regional program when transportation is limited.
 - The Fraser score is **not** used to recommend. Results are shown as bands (strong, good, possible), never as percentages.
 - Schools without a regional program are not ranked; the results explain that the boundary school offers the regular program.
-- The PDF is built client-side with [jsPDF](https://github.com/parallax/jsPDF) (loaded from cdnjs on demand). Nothing leaves the device unless the user opts in to share.
+- The PDF is built client-side with [jsPDF](https://github.com/parallax/jsPDF) (self-hosted in `assets/vendor/`, MIT license). Nothing leaves the device unless the user opts in to share.
 
 ### Anonymous data storage (optional)
 
@@ -60,7 +64,28 @@ robots.txt, sitemap.xml
 2. Redeploy. The function creates the `quiz_responses` table on first use (or run `db/schema.sql` in the Neon SQL editor).
 3. Analyze with `db/queries.sql`.
 
-What is stored per response: schema version, language, the answers, the optional first 3 characters of the postal code, and the ids of the suggested schools and programs. **Not stored:** names, emails, IP addresses, user agents, cookies or any identifier. Sharing is opt-in, with a visible consent checkbox on the results page. If `DATABASE_URL` is not set, the endpoint returns 503 and the site tells the user sharing is not enabled; the questionnaire and PDF keep working.
+What is stored per response (schema v2): the **date only (no time)**, language, the answers (predefined options, including a broad area: east / central / west / other) and the ids of the suggested schools and programs. **Not stored:** names, emails, IP addresses, user agents, cookies, postal codes, exact timestamps, free text or any identifier. Sharing is opt-in, with a visible consent checkbox on the results page. If `DATABASE_URL` is not set, the endpoint returns 503 and the site tells the user sharing is not enabled; the questionnaire and PDF keep working.
+
+Privacy safeguards built in:
+
+- **Data minimization:** the payload is validated against the questionnaire definition (`api/submit.js`); unknown fields, free text and the old postal-code field are rejected.
+- **Retention:** a weekly Vercel Cron (`/api/cleanup`, see `vercel.json`) deletes responses older than **24 months**. Optionally set `CRON_SECRET` in Vercel so only the cron can call it.
+- **Small-group rule:** never analyze or publish groups of fewer than 5 responses. `db/queries.sql` already applies `having count(*) >= 5`.
+- **No third parties on the page:** fonts and the PDF library are self-hosted, and a strict Content-Security-Policy in `vercel.json` blocks external resources.
+- **Transparency:** a trilingual privacy policy at `/privacy` that mirrors exactly what the API stores. Update `js/privacy-content.js` whenever the stored fields change.
+- **Ages:** the site says under-13s should use it with an adult; there are no accounts or contact fields.
+
+This is a privacy-by-design setup, not legal advice. Have a privacy professional review it before you analyze or publish results.
+
+### Changing the production domain
+
+Rename the project in Vercel (Settings, General, Project Name), then run:
+
+```bash
+node scripts/set-domain.mjs your-new-name.vercel.app
+```
+
+It rewrites the canonical, Open Graph and JSON-LD URLs, `sitemap.xml` and `robots.txt`.
 
 Note: because the data may relate to minors, keep the opt-in wording, avoid adding free-text fields, and review privacy obligations (for example PIPEDA) before analyzing or publishing results.
 

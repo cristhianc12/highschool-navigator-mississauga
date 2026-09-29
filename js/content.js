@@ -51,6 +51,14 @@ export const UI = {
     skip: "Saltar al contenido",
     eyebrow: "Mississauga · Ingreso a Grade 9, septiembre 2027",
     h1: "Guía de Secundarias en Mississauga",
+    h1a: "Guía de Secundarias",
+    h1b: "en Mississauga",
+    vibesLabel: "Explora por interés:",
+    statSchools: "escuelas", statBoards: "sistemas", statPrograms: "programas",
+    tone: { label: "Tono", teen: "Teen", family: "Familia" },
+    bnav: { escuelas: "Escuelas", regionales: "Programas", quiz: "Quiz", fechas: "Fechas" },
+    privacy: "Privacidad",
+    sticker: "6-7 😏",
     lead: "Todas las secundarias públicas, católicas y francófonas de Mississauga, con sus programas especiales (IB, AP, Arts, STEM, francés y más), cómo se entra y cuándo aplicar. Una guía para conversar en familia con la misma información.",
     factBoards: "Sistemas:",
     factBoardsV: "DPCDSB (católico), Peel (público) y escuela francófona",
@@ -202,6 +210,14 @@ export const UI = {
     skip: "Skip to content",
     eyebrow: "Mississauga · Grade 9 entry, September 2027",
     h1: "Mississauga High School Guide",
+    h1a: "Mississauga",
+    h1b: "High School Guide",
+    vibesLabel: "Explore by interest:",
+    statSchools: "schools", statBoards: "boards", statPrograms: "programs",
+    tone: { label: "Tone", teen: "Teen", family: "Family" },
+    bnav: { escuelas: "Schools", regionales: "Programs", quiz: "Quiz", fechas: "Dates" },
+    privacy: "Privacy",
+    sticker: "6-7 😏",
     lead: "Every public, Catholic and French-language high school in Mississauga, with its special programs (IB, AP, Arts, STEM, French and more), how to get in and when to apply. A guide so the family can talk with the same information.",
     factBoards: "Boards:",
     factBoardsV: "DPCDSB (Catholic), Peel (public) and a French-language school",
@@ -353,6 +369,14 @@ export const UI = {
     skip: "Passer au contenu",
     eyebrow: "Mississauga · Entrée en 9e année, septembre 2027",
     h1: "Guide des écoles secondaires de Mississauga",
+    h1a: "Guide des écoles secondaires",
+    h1b: "de Mississauga",
+    vibesLabel: "Explore selon tes intérêts :",
+    statSchools: "écoles", statBoards: "conseils", statPrograms: "programmes",
+    tone: { label: "Ton", teen: "Ado", family: "Famille" },
+    bnav: { escuelas: "Écoles", regionales: "Programmes", quiz: "Quiz", fechas: "Dates" },
+    privacy: "Confidentialité",
+    sticker: "6-7 😏",
     lead: "Toutes les écoles secondaires publiques, catholiques et de langue française de Mississauga, avec leurs programmes spéciaux (BI, AP, arts, STIM, français et plus), la façon d'y entrer et le moment de présenter une demande. Un guide pour en discuter en famille avec la même information.",
     factBoards: "Conseils scolaires :",
     factBoardsV: "DPCDSB (catholique), Peel (public) et une école de langue française",
@@ -666,3 +690,56 @@ export const PROGRAMS = [
     p: x("Aprendizaje experiencial en oficios como construcción. Incluye entrevista, audición y evaluación definida por la escuela.", "Experiential learning in trades such as construction. Includes a written response, interview and school-defined assessment.", "Apprentissage expérientiel dans des métiers comme la construction. Comprend une réponse écrite, une entrevue et une évaluation définie par l'école."),
     second: x("Grade 11.", "Grade 11.", "11e année.") },
 ];
+
+/* Icons for program types (emoji, no external assets). */
+export const TAG_ICON = {
+  ib: "🌐", ap: "🎓", arts: "🎨", stem: "🔬", sports: "⚽", fi: "🇨🇦", ef: "🥖", bakery: "🥐",
+  trades: "🛠️", ibt: "💼", strings: "🎻", alt: "🧭", shsm: "⭐",
+};
+
+/* Program types shown as quick "vibe" chips on the home page. */
+export const VIBES = ["ib", "ap", "arts", "stem", "sports", "fi", "trades", "ibt"];
+
+/* Teen-tone overrides. The "Family" tone uses the base UI text above.
+   Keys here fully replace the base ones (nested objects are replaced whole). */
+export const TEEN = {
+  es: {
+    eyebrow: "Mississauga · Grade 9 · septiembre 2027",
+    h1a: "Encuentra tu high school",
+    h1b: "en Mississauga",
+    lead: "33 escuelas, todos los programas y cero rollo. Filtra por lo que te gusta, compara y haz el vibe check para ver por dónde arrancar.",
+    notice: "<b>Aquí no hay favoritos.</b> Solo mostramos lo que ofrece cada escuela. La nota Fraser es solo académica: no mide el ambiente, los programas ni si es para ti.",
+    quiz: { h: "Vibe check ✨", p: "12 toques, 3 minutos, cero registro. Te sale un PDF con escuelas y programas para explorar. Es una guía, no una sentencia.", btn: "Hacer el vibe check" },
+    exploreH: "Filtra a tu manera",
+    compararH: "Cara a cara",
+    vibesLabel: "Empieza por lo que te late:",
+    preguntasH: "Qué preguntar en las charlas",
+    fechasH: "Fechas que no puedes olvidar",
+  },
+  en: {
+    eyebrow: "Mississauga · Grade 9 · September 2027",
+    h1a: "Find your high school",
+    h1b: "in Mississauga",
+    lead: "33 schools, every program, zero fluff. Filter by what you like, compare, and take the vibe check to see where to start.",
+    notice: "<b>No favourites here.</b> We only show what each school offers. The Fraser score is academic only: it does not measure atmosphere, programs or whether a school is right for you.",
+    quiz: { h: "Vibe check ✨", p: "12 taps, 3 minutes, no sign-up. You get a PDF with schools and programs to explore. It is a guide, not a verdict.", btn: "Take the vibe check" },
+    exploreH: "Filter your way",
+    compararH: "Head to head",
+    vibesLabel: "Start with what you are into:",
+    preguntasH: "What to ask at the info sessions",
+    fechasH: "Dates you cannot miss",
+  },
+  fr: {
+    eyebrow: "Mississauga · 9e année · septembre 2027",
+    h1a: "Trouve ton école secondaire",
+    h1b: "à Mississauga",
+    lead: "33 écoles, tous les programmes, zéro blabla. Filtre selon ce que tu aimes, compare et fais le vibe check pour savoir par où commencer.",
+    notice: "<b>Ici, pas de favoris.</b> On montre seulement ce que chaque école offre. La cote Fraser est uniquement scolaire : elle ne mesure ni le climat, ni les programmes, ni si l'école est faite pour toi.",
+    quiz: { h: "Vibe check ✨", p: "12 clics, 3 minutes, sans inscription. Tu obtiens un PDF avec des écoles et des programmes à explorer. C'est un guide, pas un verdict.", btn: "Faire le vibe check" },
+    exploreH: "Filtre à ta façon",
+    compararH: "Face à face",
+    vibesLabel: "Commence par ce qui te branche :",
+    preguntasH: "Quoi demander aux séances d'info",
+    fechasH: "Les dates à ne pas manquer",
+  },
+};

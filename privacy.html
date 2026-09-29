@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Política de privacidad | Highschool Navigator</title>
+<meta name="description" content="Qué datos usa y qué datos nunca guarda Highschool Navigator Mississauga.">
+<link rel="canonical" href="https://highschool-navigator-mississauga.vercel.app/privacy">
+<meta name="theme-color" content="#0C0B17">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.priv{max-width:760px;padding-block:28px 40px}
+.priv h1{font-size:clamp(2rem,6vw,3rem);margin-bottom:6px}
+.tldr{margin:18px 0 8px;background:var(--accent-soft);border-radius:14px;padding:14px 16px;font-size:1.05rem}
+.ps h2{font-size:1.3rem;margin-top:26px;margin-bottom:8px}
+.ps p,.ps li{font-size:15.5px}
+.ps ul{padding-left:22px;display:grid;gap:5px;margin:8px 0 0}
+.priv .topbar-in .btn{margin-right:auto}
+</style>
+<script>
+try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a class="btn small" id="back-link" href="./">← Volver a la guía</a>
+    <div class="toggle" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+    <button type="button" class="theme" id="theme-btn" aria-label="Theme">◐</button>
+  </div>
+</div>
+<main class="wrap priv" id="main"><div id="app"><noscript><p class="notice">JavaScript required. / Se requiere JavaScript.</p></noscript></div></main>
+<script type="module" src="js/privacy.js"></script>
+</body>
+</html>

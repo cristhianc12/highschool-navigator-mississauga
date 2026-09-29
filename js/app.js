@@ -1,4 +1,4 @@
-import { UI, LANGS, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS } from "./content.js";
+import { UI, TEEN, LANGS, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -11,6 +11,7 @@ const store = {
 
 const state = {
   lang: "es",
+  tone: store.get("tone") === "family" ? "family" : "teen",
   filters: { q: "", system: "", tag: "", start: "", entry: "", sort: "name" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
@@ -24,7 +25,7 @@ function detectLang() {
   return nav.startsWith("fr") ? "fr" : nav.startsWith("en") ? "en" : "es";
 }
 
-const t = () => UI[state.lang];
+const t = () => (state.tone === "teen" ? { ...UI[state.lang], ...TEEN[state.lang] } : UI[state.lang]);
 const L = (o) => (o == null ? "" : typeof o === "string" ? o : o[state.lang] || o.en);
 const byId = (id) => SCHOOLS.find((s) => s.id === id);
 const norm = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -59,19 +60,21 @@ function programMatches(p) {
 /* ---------- Templates ---------- */
 
 function progChips(s) {
-  return s.progs.map((p) => `<span class="chip" ${p.n ? `title="${esc(L(p.n))}"` : ""}>${esc(L(TAGS[p.k]))}</span>`).join("");
+  return s.progs.map((p) => `<span class="chip" ${p.n ? `title="${esc(L(p.n))}"` : ""}>${TAG_ICON[p.k] || ""} ${esc(L(TAGS[p.k]))}</span>`).join("");
 }
 
 function fraserBlock(s) {
   const u = t();
-  if (!s.fraser) return `<div class="fraser"><small>${esc(u.fraserNone)}</small></div>`;
+  if (!s.fraser) return `<div class="fraser"><span class="small muted">${esc(u.fraserNone)}</span></div>`;
   const f = s.fraser;
   const prev = f.prev == null ? "" : ` · ${esc(u.fraserPrev(f.prev.toFixed(1)))}`;
+  // Playful nod for teens: the only school scoring exactly 6.7.
+  const sticker = state.tone === "teen" && f.score === 6.7 ? `<span class="sticker">${esc(u.sticker)}</span>` : "";
   return `<div class="fraser">
-    <div class="fraser-head"><span class="fraser-label">${esc(u.fraserLabel)}</span><span class="fraser-score">${f.score.toFixed(1)}</span><span class="fraser-of">${esc(u.fraserOf)}</span></div>
+    <div class="fraser-pill"><small>${esc(u.fraserLabel)}</small>${f.score.toFixed(1)}<small>${esc(u.fraserOf)}</small></div>
+    ${sticker}
     <div class="bar" role="img" aria-label="${f.score.toFixed(1)} ${esc(u.fraserOf)}"><i style="width:${f.score * 10}%"></i></div>
-    <small>${esc(u.fraserRank(f.rank))}${prev}</small>
-    ${s.fnote ? `<small class="warnnote">${esc(L(s.fnote))}</small>` : ""}
+    <div class="meta">${esc(u.fraserRank(f.rank))}${prev}${s.fnote ? ` · <span class="warnnote">${esc(L(s.fnote))}</span>` : ""}</div>
   </div>`;
 }
 
@@ -99,7 +102,7 @@ function programCard(p) {
   const u = t();
   const hosts = p.hosts.map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("");
   const second = p.second ? `<p class="muted small"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : "";
-  return `<article class="card prog"><h3>${esc(L(p.name))}</h3>
+  return `<article class="card prog"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>
     <div class="where">${esc(u.host)}</div><ul class="hosts">${hosts}</ul>
     <p>${esc(L(p.p))}</p>${second}
     <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span></div></article>`;
@@ -145,29 +148,43 @@ function renderShell() {
   $("#skip").textContent = u.skip;
   $("#theme-btn").setAttribute("aria-label", u.themeLabel);
   $("#lang-group").setAttribute("aria-label", u.langLabel);
+  $("#tone-group").setAttribute("aria-label", u.tone.label);
   document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang)));
+  document.querySelectorAll("[data-tone]").forEach((b) => {
+    b.setAttribute("aria-pressed", String(b.dataset.tone === state.tone));
+    b.textContent = u.tone[b.dataset.tone];
+  });
 
-  const nav = Object.entries(u.nav).map(([id, label]) => `<a href="#${id}">${esc(label)}</a>`).join("");
   const f = state.filters;
+  const q = `quiz?lang=${state.lang}`;
+  $("#desk-nav").innerHTML =
+    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>`;
+  $("#bnav").setAttribute("aria-label", u.navLabel);
+  $("#bnav").innerHTML =
+    `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
+    `<a href="#regionales"><span aria-hidden="true">🎯</span>${esc(u.bnav.regionales)}</a>` +
+    `<a href="${q}" class="hot"><span aria-hidden="true">✨</span>${esc(u.bnav.quiz)}</a>` +
+    `<a href="#fechas"><span aria-hidden="true">📅</span>${esc(u.bnav.fechas)}</a>`;
+
+  const vibes = VIBES.map((k) => `<button type="button" class="vibe" data-vibe="${k}">${TAG_ICON[k]} ${esc(L(TAGS[k]))}</button>`).join("");
+  const dpCount = PROGRAMS.length;
 
   $("#app").innerHTML = `
   <main id="main">
   <header class="hero">
     <div class="eyebrow">${esc(u.eyebrow)}</div>
-    <h1>${esc(u.h1)}</h1>
+    <h1>${esc(u.h1a)} <span class="grad">${esc(u.h1b)}</span></h1>
     <p class="lead">${esc(u.lead)}</p>
-    <div class="facts">
-      <span class="fact"><b>${esc(u.factBoards)}</b> ${esc(u.factBoardsV)}</span>
-      <span class="fact"><b>${esc(u.factSchools)}</b> ${esc(u.factSchoolsN(SCHOOLS.length))}</span>
+    <div class="stats">
+      <div class="stat"><b>${SCHOOLS.length}</b><span>${esc(u.statSchools)}</span></div>
+      <div class="stat"><b>3</b><span>${esc(u.statBoards)}</span></div>
+      <div class="stat"><b>${dpCount}</b><span>${esc(u.statPrograms)}</span></div>
     </div>
+    <div class="vibes" role="group" aria-label="${esc(u.vibesLabel)}"><span class="vibes-label">${esc(u.vibesLabel)}</span>${vibes}</div>
+    <div class="quiz-cta"><div><h2>${esc(u.quiz.h)}</h2><p>${esc(u.quiz.p)}</p></div><a class="cta" href="${q}">${esc(u.quiz.btn)} →</a></div>
     <p class="notice">${u.notice}</p>
     <p class="scope muted small">${esc(u.scope)}</p>
-    <div class="quiz-cta"><div><h2>${esc(u.quiz.h)}</h2><p>${esc(u.quiz.p)}</p></div><a class="cta" href="quiz?lang=${state.lang}">${esc(u.quiz.btn)} →</a></div>
-    <nav class="jump" aria-label="${esc(u.navLabel)}">${nav}</nav>
   </header>
-
-  <section id="capas"><div class="sec-head"><h2>${esc(u.capasH)}</h2><p>${esc(u.capasP)}</p></div>
-    <div class="grid">${u.layers.map((l) => `<div class="card layer"><span class="tag">${esc(l.tag)}</span><h3>${esc(l.h)}</h3><p>${esc(l.p)}</p></div>`).join("")}</div></section>
 
   <section id="explorar"><div class="sec-head"><h2>${esc(u.exploreH)}</h2><p>${esc(u.exploreP)}</p></div>
     <form class="filters" id="filters" role="search" onsubmit="return false">
@@ -182,7 +199,7 @@ function renderShell() {
     <p class="count" id="count" aria-live="polite"></p></section>
 
   <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
-    <div class="grid" id="schools"></div>
+    <div class="grid dir" id="schools"></div>
     <details class="fraser-note"><summary>${esc(u.fraserWhatH)}</summary><p>${esc(u.fraserWhat)}</p>
       <p><a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p></details></section>
 
@@ -197,6 +214,9 @@ function renderShell() {
     <div class="grid" style="margin-top:14px">
       <div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div>
       <div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div></section>
+
+  <section id="capas"><div class="sec-head"><h2>${esc(u.capasH)}</h2><p>${esc(u.capasP)}</p></div>
+    <div class="grid">${u.layers.map((l) => `<div class="card layer"><span class="tag">${esc(l.tag)}</span><h3>${esc(l.h)}</h3><p>${esc(l.p)}</p></div>`).join("")}</div></section>
 
   <section id="grados"><div class="sec-head"><h2>${esc(u.gradosH)}</h2><p>${esc(u.gradosP)}</p></div>${timeline()}</section>
 
@@ -214,7 +234,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><a href="#main">${esc(u.backTop)}</a>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="#main">${esc(u.backTop)}</a></nav>`;
   bindFilters();
   renderResults();
   renderCompare();
@@ -299,6 +319,21 @@ document.addEventListener("change", (e) => {
 document.addEventListener("click", (e) => {
   const rm = e.target.closest("[data-remove]");
   if (rm) setCompare(rm.dataset.remove, false);
+  const tone = e.target.closest("[data-tone]");
+  if (tone && tone.dataset.tone !== state.tone) {
+    state.tone = tone.dataset.tone;
+    store.set("tone", state.tone);
+    renderShell();
+    return;
+  }
+  const vibe = e.target.closest("[data-vibe]");
+  if (vibe) {
+    const k = vibe.dataset.vibe;
+    state.filters.tag = state.filters.tag === k ? "" : k;
+    renderShell();
+    $("#escuelas")?.scrollIntoView({ behavior: "smooth" });
+    return;
+  }
   const l = e.target.closest("[data-lang]");
   if (l && l.dataset.lang !== state.lang) {
     state.lang = l.dataset.lang;

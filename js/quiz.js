@@ -1,5 +1,5 @@
 import { LANGS, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
-import { QUIZ_UI, QUESTIONS, TAG_WHY } from "./quiz-content.js";
+import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -9,9 +9,13 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
 };
 
-const state = { lang: "es", step: -1, answers: {}, result: null, shared: false };
+const state = {
+  lang: "es",
+  tone: store.get("tone") === "family" ? "family" : "teen",
+  step: -1, answers: {}, result: null, shared: false,
+};
 
-const t = () => QUIZ_UI[state.lang];
+const t = () => (state.tone === "teen" ? { ...QUIZ_UI[state.lang], ...QUIZ_TEEN[state.lang] } : QUIZ_UI[state.lang]);
 const L = (o) => (o == null ? "" : typeof o === "string" ? o : o[state.lang] || o.en);
 const TOTAL = QUESTIONS.length;
 
@@ -113,8 +117,14 @@ function chrome() {
   $("#theme-btn").setAttribute("aria-label", u.themeLabel);
   $("#lang-group").setAttribute("aria-label", u.langLabel);
   document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang)));
-  const link = $("#back-link");
-  link.href = `./?lang=${state.lang}`;
+  const tl = { es: ["Teen", "Familia"], en: ["Teen", "Family"], fr: ["Ado", "Famille"] }[state.lang];
+  document.querySelectorAll("[data-tone]").forEach((b) => {
+    b.setAttribute("aria-pressed", String(b.dataset.tone === state.tone));
+    b.textContent = b.dataset.tone === "teen" ? tl[0] : tl[1];
+  });
+  $("#back-link").href = `./?lang=${state.lang}`;
+  $("#priv-link").href = `privacy?lang=${state.lang}`;
+  $("#priv-link").textContent = u.privacy;
 }
 
 function render() {
@@ -136,6 +146,7 @@ function renderIntro() {
     <p class="lead">${esc(u.lead)}</p>
     <ul class="ticks">${u.bullets.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
     <p class="notice small">${esc(u.notAdvice)}</p>
+    <p class="muted small">${esc(u.ageNote)}</p>
     <button type="button" class="cta" id="start">${esc(u.start)} →</button>
   </section>`;
 }
@@ -146,25 +157,19 @@ function renderQuestion(i) {
   const part = q.part === "about" ? u.partAbout : u.partFamily;
   const pct = Math.round((i / TOTAL) * 100);
   const cur = state.answers[q.id];
-  let body = "";
-  let hint = "";
-  if (q.type === "fsa") {
-    body = `<label class="fsa"><span>${esc(u.fsaLabel)}</span>
-      <input id="fsa" type="text" maxlength="3" inputmode="text" autocomplete="off" autocapitalize="characters" value="${esc(cur || "")}" placeholder="L4Z">
-      <small class="muted">${esc(u.fsaHint)}</small><small class="err" id="fsa-err" hidden>${esc(u.fsaInvalid)}</small></label>`;
-  } else {
-    hint = q.type === "multi" ? u.pickUpTo(q.max) : u.pickOne;
-    body = `<div class="opts" role="group" aria-label="${esc(L(q.t))}">${q.o.map((o) => {
-      const on = asArray(cur).includes(o.v);
-      return `<button type="button" class="opt${on ? " on" : ""}" data-opt="${o.v}" aria-pressed="${on}"><span class="emo" aria-hidden="true">${o.e}</span><span>${esc(L(o.l))}</span></button>`;
-    }).join("")}</div>`;
-  }
+  const hint = q.type === "multi" ? u.pickUpTo(q.max) : u.pickOne;
+  const body = `<div class="opts" role="group" aria-label="${esc(L(q.t))}">${q.o.map((o) => {
+    const on = asArray(cur).includes(o.v);
+    return `<button type="button" class="opt${on ? " on" : ""}" data-opt="${o.v}" aria-pressed="${on}"><span class="emo" aria-hidden="true">${o.e}</span><span>${esc(L(o.l))}</span></button>`;
+  }).join("")}</div>`;
   const isLast = i === TOTAL - 1;
-  const canNext = q.type === "fsa" || asArray(cur).length > 0;
+  const canNext = asArray(cur).length > 0;
+  // Light easter egg for the teen tone: "6..." on question 6 and "...7" on question 7.
+  const tick = state.tone === "teen" ? (i === 5 ? u.tick6 : i === 6 ? u.tick7 : "") : "";
   const optional = q.part === "family";
   return `<section class="qcard">
     <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div>
-    <div class="qmeta"><span class="part">${esc(part)}</span><span>${esc(u.q(i + 1, TOTAL))}</span></div>
+    <div class="qmeta"><span class="part">${esc(part)}</span><span>${esc(u.q(i + 1, TOTAL))}${tick ? ` <b class="tick">${esc(tick)}</b>` : ""}</span></div>
     <h2>${esc(L(q.t))}</h2>
     ${hint ? `<p class="muted small">${esc(hint)}</p>` : ""}
     ${body}
@@ -220,6 +225,7 @@ function renderResults() {
     <div class="share">
       <h2>${esc(u.shareH)}</h2>
       <p class="small muted">${esc(u.shareP)}</p>
+      <p class="small"><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a></p>
       <label class="check"><input type="checkbox" id="consent" ${state.shared ? "checked disabled" : ""}> ${esc(u.shareCheck)}</label>
       <button type="button" class="btn" id="share" disabled>${esc(u.shareBtn)}</button>
       <p class="small" id="share-msg" role="status" aria-live="polite"></p>
@@ -238,6 +244,10 @@ document.addEventListener("click", (e) => {
   if (lang && lang.dataset.lang !== state.lang) {
     state.lang = lang.dataset.lang; store.set("lang", state.lang); render(); return;
   }
+  const tone = e.target.closest("[data-tone]");
+  if (tone && tone.dataset.tone !== state.tone) {
+    state.tone = tone.dataset.tone; store.set("tone", state.tone); render(); return;
+  }
   if (e.target.closest("#start")) return go(0);
   if (e.target.closest("#prev")) return go(Math.max(0, state.step - 1));
   if (e.target.closest("#skip-q")) return go(state.step + 1);
@@ -249,16 +259,7 @@ document.addEventListener("click", (e) => {
   if (opt) pick(opt.dataset.opt);
 });
 
-document.addEventListener("input", (e) => {
-  if (e.target.id === "fsa") {
-    e.target.value = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, "");
-    state.answers.q12 = e.target.value;
-    $("#fsa-err").hidden = true;
-  }
-  if (e.target.id === "consent") $("#share").disabled = !e.target.checked;
-});
 document.addEventListener("change", (e) => { if (e.target.id === "consent") $("#share").disabled = !e.target.checked; });
-document.addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.id === "fsa") { e.preventDefault(); advance(); } });
 
 function pick(v) {
   const q = QUESTIONS[state.step];
@@ -278,15 +279,7 @@ function pick(v) {
   }
 }
 
-function advance() {
-  const q = QUESTIONS[state.step];
-  if (q.type === "fsa") {
-    const v = (state.answers.q12 || "").trim();
-    if (v && !/^[A-Z]\d[A-Z]$/.test(v)) { $("#fsa-err").hidden = false; return; }
-    if (!v) delete state.answers.q12;
-  }
-  go(state.step + 1);
-}
+function advance() { go(state.step + 1); }
 
 /* ------------------------------------------------------------------ */
 /* Anonymous share                                                     */
@@ -299,10 +292,9 @@ async function share() {
   btn.disabled = true;
   const r = state.result;
   const body = {
-    v: 1,
+    v: 2,
     lang: state.lang,
-    answers: Object.fromEntries(Object.entries(state.answers).filter(([k]) => k !== "q12")),
-    fsa: state.answers.q12 || null,
+    answers: state.answers,
     topSchools: r.schools.map((x) => x.s.id),
     topPrograms: r.programs.map((x) => x.p.id),
   };
@@ -324,7 +316,7 @@ function loadJsPdf() {
   if (window.jspdf) return Promise.resolve(window.jspdf.jsPDF);
   return new Promise((resolve, reject) => {
     const s = document.createElement("script");
-    s.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+    s.src = "assets/vendor/jspdf.umd.min.js"; // self-hosted: no third-party request
     s.onload = () => resolve(window.jspdf.jsPDF);
     s.onerror = reject;
     document.head.appendChild(s);
@@ -403,7 +395,6 @@ async function makePdf() {
 
     heading(u.pdfAnswersH);
     QUESTIONS.forEach((q) => {
-      if (q.type === "fsa") return;
       const a = answerLabels(q.id);
       if (a.length) write(`${L(q.t)} ${a.join(", ")}`, { size: 9, color: muted, gap: 0.6 });
     });

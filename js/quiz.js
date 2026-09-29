@@ -418,7 +418,7 @@ async function makePdf() {
 
 $("#theme-btn").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") ||
-    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    "light";
   const next = cur === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   store.set("theme", next);

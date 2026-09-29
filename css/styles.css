@@ -6,8 +6,21 @@
   src:url(../assets/fonts/figtree-latin.woff2) format('woff2');
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
 
-/* Dark is the default; light follows the OS unless the user picked a theme. */
+/* Light is the default; dark only when the user picks it with the theme toggle. */
 :root{
+  color-scheme:light;
+  --bg:#F6F4FF; --surface:#FFFFFF; --surface2:#EFEAFF; --ink:#15122B; --muted:#5B5878; --line:#DDD8F5;
+  --accent:#6D3DF2; --accent-soft:#EDE6FF; --on-accent:#FFFFFF;
+  --cta-bg:#6D3DF2; --cta-ink:#FFFFFF;
+  --pink:#C2287E; --sky:#0A7BB8; --coral:#C63D2E; --lime:#6D3DF2;
+  --warm:#8A5A00; --warm-soft:#FFF0CC;
+  --apply:#B5321F; --apply-soft:#FDE3DF;
+  --grad:linear-gradient(110deg,#6D3DF2,#C2287E 60%,#B36B00);
+  --shadow:0 10px 30px rgba(60,40,140,.14);
+  --font-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --font-body:'Figtree','Segoe UI',system-ui,sans-serif;
+}
+:root[data-theme="dark"]{
   color-scheme:dark;
   --bg:#0C0B17; --surface:#16152A; --surface2:#1E1C38; --ink:#F5F3FF; --muted:#ABA8CB; --line:#2D2B4D;
   --accent:#A78BFA; --accent-soft:rgba(167,139,250,.16); --on-accent:#12101F;
@@ -16,30 +29,7 @@
   --warm:#FBBF24; --warm-soft:rgba(251,191,36,.13);
   --apply:#FF9C91; --apply-soft:rgba(255,122,107,.16);
   --grad:linear-gradient(110deg,#A78BFA,#F472B6 55%,#FBBF24);
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-  --font-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
-  --font-body:'Figtree','Segoe UI',system-ui,sans-serif;
-}
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
-  color-scheme:light;
-  --bg:#F6F4FF; --surface:#FFFFFF; --surface2:#EFEAFF; --ink:#15122B; --muted:#5B5878; --line:#DDD8F5;
-  --accent:#6D3DF2; --accent-soft:#EDE6FF; --on-accent:#FFFFFF;
-  --cta-bg:#6D3DF2; --cta-ink:#FFFFFF;
-  --pink:#C2287E; --sky:#0A7BB8; --coral:#C63D2E; --lime:#6D3DF2;
-  --warm:#8A5A00; --warm-soft:#FFF0CC;
-  --apply:#B5321F; --apply-soft:#FDE3DF;
-  --grad:linear-gradient(110deg,#6D3DF2,#C2287E 60%,#B36B00);
-  --shadow:0 10px 30px rgba(60,40,140,.14)}}
-:root[data-theme="light"]{
-  color-scheme:light;
-  --bg:#F6F4FF; --surface:#FFFFFF; --surface2:#EFEAFF; --ink:#15122B; --muted:#5B5878; --line:#DDD8F5;
-  --accent:#6D3DF2; --accent-soft:#EDE6FF; --on-accent:#FFFFFF;
-  --cta-bg:#6D3DF2; --cta-ink:#FFFFFF;
-  --pink:#C2287E; --sky:#0A7BB8; --coral:#C63D2E; --lime:#6D3DF2;
-  --warm:#8A5A00; --warm-soft:#FFF0CC;
-  --apply:#B5321F; --apply-soft:#FDE3DF;
-  --grad:linear-gradient(110deg,#6D3DF2,#C2287E 60%,#B36B00);
-  --shadow:0 10px 30px rgba(60,40,140,.14)}
+  --shadow:0 10px 30px rgba(0,0,0,.35)}
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
@@ -152,9 +142,8 @@ h3{font-size:1.2rem;font-weight:700}
 .bar{flex:1;min-width:60px;height:6px;border-radius:99px;background:var(--line);overflow:hidden}
 .bar i{display:block;height:100%;background:var(--c);border-radius:99px}
 .fraser .meta{width:100%;font-size:12.5px;color:var(--muted)}
-.sticker{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--lime);color:#14121F;transform:rotate(-3deg)}
-:root[data-theme="light"] .sticker{background:var(--warm-soft);color:var(--warm)}
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .sticker{background:var(--warm-soft);color:var(--warm)}}
+.sticker{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--warm-soft);color:var(--warm);transform:rotate(-3deg)}
+:root[data-theme="dark"] .sticker{background:var(--lime);color:#14121F}
 .warnnote{color:var(--warm)}
 .more{border-top:1px solid var(--line);padding-top:8px;font-size:14.5px}
 .more summary{cursor:pointer;font-weight:600;color:var(--accent)}

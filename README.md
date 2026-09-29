@@ -17,11 +17,11 @@ It describes what each school and program offers, how to get in and when to appl
 - **Filters and search** by board, program type, starting grade and how you get in, plus sorting by name or Fraser score.
 - **Side-by-side comparison** of up to 4 schools from any board.
 - **Grade-by-grade timeline**, glossary, key dates and questions to bring to info sessions.
-- **Teen-friendly design:** dark-first, vibrant theme, compact cards, one-tap "vibe" chips (IB, AP, Arts, STEM...), a sticky bottom navigation on mobile and a **Teen / Family tone switch** (same information, playful or neutral wording; light nods to trends live only in microcopy).
+- **Teen-friendly design:** vibrant theme (light by default, with a dark option), compact cards, one-tap "vibe" chips (IB, AP, Arts, STEM...), a sticky bottom navigation on mobile and a **Teen / Family tone switch** (same information, playful or neutral wording; light nods to trends live only in microcopy).
 - **Interactive questionnaire** (`/quiz`): 12 short, tap-to-answer questions written for the student (with an optional family part on school system, transportation and a broad area of the city). It suggests possible schools and programs, explains why, and offers a **PDF download** of the result (generated in the browser). It is orientation, not counselling, and says so.
 - **Optional anonymous data sharing**: with explicit opt-in, the answers can be stored anonymously in Postgres to study which options interest families.
 - **Languages:** Spanish, English and Canadian French (`fr-CA`). The language is picked from `?lang=`, then the saved choice, then the browser language.
-- **Dark and light themes**, responsive layout, keyboard-friendly and accessible markup.
+- **Light theme by default** (dark on request), responsive layout, keyboard-friendly and accessible markup.
 - **SEO:** meta tags, Open Graph / Twitter card image, JSON-LD, `sitemap.xml`, `robots.txt`.
 - **Analytics:** Vercel Web Analytics (enable it in the Vercel dashboard).
 
@@ -140,7 +140,7 @@ The site has no accounts and sets no cookies. Language and theme choices are sto
 1. Import this repository at https://vercel.com/new.
 2. Framework preset: **Other**. Leave build command and output directory empty.
 3. Deploy, then enable **Analytics** in the project settings and, optionally, connect Neon Postgres (see above).
-4. If the production URL differs from `highschool-navigator-mississauga.vercel.app`, update it in `index.html` (canonical, Open Graph, JSON-LD), `sitemap.xml` and `robots.txt`.
+4. If the production URL differs from `hs-mississauga-navigator.vercel.app`, update it in `index.html` (canonical, Open Graph, JSON-LD), `sitemap.xml` and `robots.txt`.
 
 ## Disclaimer
 

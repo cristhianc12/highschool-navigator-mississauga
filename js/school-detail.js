@@ -5,6 +5,7 @@
 // and the browser Back button closes it.
 import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content.js";
 import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
+import { starBtn } from "./mylist.js";
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -132,7 +133,7 @@ function renderSchool(school) {
   dlg.className = `sdlg board-${school.board}`;
   dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
     `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${kv}${boardNote}</div>` +
-    footHtml(cmp + siteBtn + (site ? "" : official));
+    footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
 }
 
 /* ---------------- program profile ---------------- */
@@ -169,7 +170,7 @@ function renderProgram(p) {
       ${sess.length ? `<section class="dsec"><h3>${esc(P.sessions)}</h3>${sess.map((e) => sessionRow(e, { showSchool: true })).join("")}<p class="small muted">${esc(S.calNote)}</p></section>` : ""}
       <section class="dsec"><h3>${esc(P.hosts)}</h3><ul class="hosts">${hosts}</ul></section>
       ${links ? `<section class="dsec"><h3>${esc(P.links)}</h3><div class="sbtns">${links}</div></section>` : ""}
-    </div>` + footHtml("");
+    </div>` + footHtml(starBtn("program", p.id, { label: true }));
 }
 
 /* ---------------- open / close ---------------- */

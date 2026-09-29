@@ -1,5 +1,6 @@
 import { initSchoolDetail, renderSessionRow } from "./school-detail.js";
 import { SESSIONS } from "./sessions.js";
+import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -91,7 +92,7 @@ function schoolCard(s) {
   const checked = state.compare.includes(s.id);
   return `
   <article class="card school clickable board-${s.board}" data-id="${s.id}" data-card="${s.id}">
-    <div class="top"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><h3 class="name">${esc(s.name)}</h3><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div></div>
+    <div class="top"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><h3 class="name">${esc(s.name)}</h3><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div>${starBtn("school", s.id)}</div>
     ${progs}
     ${fraserBlock(s)}
     <div class="cardfoot">
@@ -105,7 +106,7 @@ function programCard(p) {
   const u = t();
   const hosts = p.hosts.map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("");
   const second = p.second ? `<p class="muted small"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : "";
-  return `<article class="card prog clickable" data-pcard="${p.id}"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>
+  return `<article class="card prog clickable" data-pcard="${p.id}"><div class="prog-top"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>${starBtn("program", p.id)}</div>
     <div class="where">${esc(u.host)}</div><ul class="hosts">${hosts}</ul>
     <p>${esc(L(p.p))}</p>${second}
     <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
@@ -256,6 +257,7 @@ function renderShell() {
   renderCompare();
   renderSessions();
   bindGame();
+  syncMyList();
 }
 
 // The game is loaded only when someone opens the "Take a break" panel, so it never slows the page.
@@ -399,4 +401,5 @@ initSchoolDetail({
   onCompare: (id) => setCompare(id, !state.compare.includes(id)),
   isCompared: (id) => state.compare.includes(id),
 });
+initMyList({ getLang: () => state.lang });
 renderShell();

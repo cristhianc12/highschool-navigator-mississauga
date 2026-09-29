@@ -10,7 +10,7 @@ export const PRIV = {
     sections: [
       { h: "Quiénes somos", p: ["Highschool Navigator Mississauga es un proyecto informativo independiente. No tiene relación con el DPCDSB, el Peel District School Board ni el Fraser Institute."] },
       { h: "La guía", p: ["Explorar la guía no requiere dar datos personales."], ul: [
-        "Guardamos en tu navegador (localStorage) solo tus preferencias de idioma, tema y tono. Nunca salen de tu dispositivo.",
+        "Guardamos en tu navegador (localStorage) solo tus preferencias de idioma, tema y tono, tu «Mi lista» de escuelas y programas guardados, y tu récord en el minijuego. Nunca salen de tu dispositivo.",
         "Mientras haces el cuestionario, tu avance se guarda en esta pestaña del navegador (sessionStorage) para que no pierdas tu resultado si abres otra página. Se queda en tu dispositivo y desaparece al cerrar la pestaña.",
         "Usamos Vercel Web Analytics, que mide visitas de forma agregada, sin cookies y sin identificarte.",
         "Las fuentes y la librería del PDF se sirven desde este mismo sitio: no cargamos recursos de terceros.",
@@ -44,7 +44,7 @@ export const PRIV = {
     sections: [
       { h: "Who we are", p: ["Highschool Navigator Mississauga is an independent informational project. It is not affiliated with DPCDSB, the Peel District School Board or the Fraser Institute."] },
       { h: "The guide", p: ["Browsing the guide does not require any personal data."], ul: [
-        "We keep only your language, theme and tone preferences in your browser (localStorage). They never leave your device.",
+        "We keep only your language, theme and tone preferences, your saved “My list” of schools and programs, and your best score in the mini game in your browser (localStorage). They never leave your device.",
         "While you take the questionnaire, your progress is kept in this browser tab (sessionStorage) so you do not lose your results if you open another page. It stays on your device and disappears when you close the tab.",
         "We use Vercel Web Analytics, which measures visits in aggregate, without cookies and without identifying you.",
         "Fonts and the PDF library are served from this same site: we load no third-party resources.",
@@ -78,7 +78,7 @@ export const PRIV = {
     sections: [
       { h: "Qui nous sommes", p: ["Highschool Navigator Mississauga est un projet d'information indépendant. Il n'est affilié ni au DPCDSB, ni au Peel District School Board, ni à l'Institut Fraser."] },
       { h: "Le guide", p: ["Consulter le guide n'exige aucune donnée personnelle."], ul: [
-        "Nous conservons dans ton navigateur (localStorage) seulement tes préférences de langue, de thème et de ton. Elles ne quittent jamais ton appareil.",
+        "Nous conservons dans ton navigateur (localStorage) seulement tes préférences de langue, de thème et de ton, ta « Ma liste » d'écoles et de programmes enregistrés, et ton record au mini-jeu. Elles ne quittent jamais ton appareil.",
         "Pendant le questionnaire, ta progression est conservée dans cet onglet du navigateur (sessionStorage) pour que tu ne perdes pas ton résultat si tu ouvres une autre page. Elle reste sur ton appareil et disparaît à la fermeture de l'onglet.",
         "Nous utilisons Vercel Web Analytics, qui mesure les visites de façon agrégée, sans témoins et sans t'identifier.",
         "Les polices et la bibliothèque PDF sont servies depuis ce même site : aucune ressource de tiers n'est chargée.",

@@ -1,6 +1,7 @@
 import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 import { initSchoolDetail } from "./school-detail.js";
+import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -146,6 +147,7 @@ function render() {
   const h = app.querySelector("h1, h2");
   if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
   window.scrollTo({ top: 0 });
+  syncMyList();
 }
 
 function renderIntro() {
@@ -203,7 +205,7 @@ function renderResults() {
       const notes = [row.dependsOnRegional ? u.transportNote : "", s.board === "fr" ? u.frenchNote : ""].filter(Boolean)
         .map((n) => `<p class="muted small">${esc(n)}</p>`).join("");
       return `<article class="res clickable board-${s.board}" data-card="${s.id}">
-        <div class="res-top"><h3>${esc(s.name)}</h3><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span></div>
+        <div class="res-top"><h3>${esc(s.name)}</h3><span class="res-tags"><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span>${starBtn("school", s.id)}</span></div>
         <div class="sub">${esc(L(BOARDS[s.board]))}</div>
         <div class="chips">${s.progs.map((p) => `<span class="chip">${esc(L(TAGS[p.k]))}</span>`).join("")}</div>
         <p class="small"><b>${esc(u.whyLabel)}</b></p><ul class="why">${why}</ul>${notes}
@@ -461,3 +463,4 @@ state.lang = detectLang();
 restoreProgress();
 render();
 initSchoolDetail({ getLang: () => state.lang });
+initMyList({ getLang: () => state.lang });

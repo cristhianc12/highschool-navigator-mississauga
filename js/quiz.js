@@ -1,5 +1,6 @@
 import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
+import { initSchoolDetail } from "./school-detail.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -121,7 +122,7 @@ function chrome() {
   document.title = u.title;
   $('meta[name="description"]').content = u.metaDesc;
   $("#skip").textContent = u.back;
-  $("#back-link").textContent = "← " + u.back;
+  $("#back-link").innerHTML = `<span class="bk-full">← ${esc(u.back)}</span><span class="bk-short">← ${esc(u.backShort)}</span>`;
   $("#theme-btn").setAttribute("aria-label", u.themeLabel);
   $("#lang-group").setAttribute("aria-label", u.langLabel);
   document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang)));
@@ -202,7 +203,7 @@ function renderResults() {
       const notes = [row.dependsOnRegional ? u.transportNote : "", s.board === "fr" ? u.frenchNote : ""].filter(Boolean)
         .map((n) => `<p class="muted small">${esc(n)}</p>`).join("");
       return `<article class="res board-${s.board}">
-        <div class="res-top"><h3>${esc(s.name)}</h3><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span></div>
+        <div class="res-top"><h3><button type="button" class="viewlink" data-school="${s.id}">${esc(s.name)}</button></h3><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span></div>
         <div class="sub">${esc(L(BOARDS[s.board]))}</div>
         <div class="chips">${s.progs.map((p) => `<span class="chip">${esc(L(TAGS[p.k]))}</span>`).join("")}</div>
         <p class="small"><b>${esc(u.whyLabel)}</b></p><ul class="why">${why}</ul>${notes}</article>`;
@@ -218,7 +219,24 @@ function renderResults() {
     <div class="eyebrow">${esc(u.eyebrow)}</div>
     <h1>${esc(u.resultsH)}</h1>
     <p class="lead">${esc(u.resultsLead)}</p>
-    <p class="notice small">${esc(u.notAdvice)}</p>
+
+    <div class="toolbar">
+      <div class="tb-row">
+        <button type="button" class="cta small" id="pdf">⬇ ${esc(u.pdf)}</button>
+        <a class="btn small" href="./?lang=${state.lang}#escuelas">${esc(u.seeGuide)}</a>
+        <button type="button" class="btn small" id="retake">${esc(u.retake)}</button>
+      </div>
+      <div class="tb-row tb-share">
+        <label class="check"><input type="checkbox" id="consent" ${state.shared ? "checked disabled" : ""}> ${esc(u.shareCheck)}</label>
+        <button type="button" class="btn small" id="share" disabled>${esc(u.shareBtn)}</button>
+      </div>
+      <details class="tb-info"><summary>${esc(u.shareH)}</summary>
+        <p class="small muted">${esc(u.shareP)}</p>
+        <p class="small"><a href="privacy?lang=${state.lang}" target="_blank" rel="noopener">${esc(u.privacy)}</a></p></details>
+      <p class="small" id="share-msg" role="status" aria-live="polite"></p>
+    </div>
+    <p class="scrollcue">${esc(u.below)}</p>
+
     ${profile ? `<h2>${esc(u.profileH)}</h2><p class="profile">${esc(profile)}</p>` : ""}
     <h2>${esc(u.schoolsH)}</h2>
     <div class="resgrid">${schools}</div>
@@ -226,19 +244,7 @@ function renderResults() {
     ${progs ? `<h2>${esc(u.programsH)}</h2><div class="resgrid">${progs}</div>` : ""}
     <h2>${esc(u.nextH)}</h2>
     <ol class="steps">${u.nextSteps.map((s) => `<li>${esc(s)}</li>`).join("")}</ol>
-    <div class="actions">
-      <button type="button" class="cta" id="pdf">${esc(u.pdf)}</button>
-      <a class="btn" href="./?lang=${state.lang}#escuelas">${esc(u.seeGuide)}</a>
-      <button type="button" class="btn" id="retake">${esc(u.retake)}</button>
-    </div>
-    <div class="share">
-      <h2>${esc(u.shareH)}</h2>
-      <p class="small muted">${esc(u.shareP)}</p>
-      <p class="small"><a href="privacy?lang=${state.lang}" target="_blank" rel="noopener">${esc(u.privacy)}</a></p>
-      <label class="check"><input type="checkbox" id="consent" ${state.shared ? "checked disabled" : ""}> ${esc(u.shareCheck)}</label>
-      <button type="button" class="btn" id="share" disabled>${esc(u.shareBtn)}</button>
-      <p class="small" id="share-msg" role="status" aria-live="polite"></p>
-    </div>
+    <p class="notice small">${esc(u.notAdvice)}</p>
   </section>`;
 }
 
@@ -453,3 +459,4 @@ $("#theme-btn").addEventListener("click", () => {
 state.lang = detectLang();
 restoreProgress();
 render();
+initSchoolDetail({ getLang: () => state.lang });

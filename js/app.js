@@ -1,3 +1,4 @@
+import { initSchoolDetail } from "./school-detail.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -82,20 +83,19 @@ function fraserBlock(s) {
 function schoolCard(s) {
   const u = t();
   const initials = s.name.replace(/[^A-Za-zÀ-ÿ ]/g, "").split(" ").filter((w) => /^[A-ZÀ-Ý]/.test(w) && !/^(SS|CSS)$/.test(w)).slice(0, 2).map((w) => w[0]).join("") || s.name[0];
-  const more = s.kv ? `<details class="more"><summary>${esc(u.moreInfo)}</summary>
-      <p class="focus"><b>${esc(u.lblFocus)}</b> ${esc(L(s.focus))}</p>
-      <dl class="kv">${["distinct", "shsm", "langs", "entry"].map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(s.kv[k]))}</dd>`).join("")}</dl></details>` : "";
   const progs = s.progs.length
     ? `<div class="chips">${progChips(s)}</div>`
     : `<p class="muted small">${esc(u.noPrograms)}</p>`;
   const checked = state.compare.includes(s.id);
   return `
   <article class="card school board-${s.board}" data-id="${s.id}">
-    <div class="top"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><div class="name">${esc(s.name)}</div><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div></div>
+    <button type="button" class="top opener" data-school="${s.id}" aria-label="${esc(u.detail.profile)}: ${esc(s.name)}"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><div class="name">${esc(s.name)}</div><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div></button>
     ${progs}
     ${fraserBlock(s)}
-    ${more}
-    <label class="cmp"><input type="checkbox" data-cmp="${s.id}" ${checked ? "checked" : ""}> ${esc(u.compare)}</label>
+    <div class="cardfoot">
+      <label class="cmp"><input type="checkbox" data-cmp="${s.id}" ${checked ? "checked" : ""}> ${esc(u.compare)}</label>
+      <button type="button" class="viewlink" data-school="${s.id}">${esc(u.detail.profile)} →</button>
+    </div>
   </article>`;
 }
 
@@ -275,7 +275,7 @@ function renderCompare() {
   const r = u.compRows;
   const kv = (k) => (s) => (s.kv ? esc(L(s.kv[k])) : dash);
   $("#cmp-out").innerHTML = `<div class="cmp-wrap"><table class="cmp-table">
-    <thead><tr><th scope="col">${esc(u.compCol)}</th>${chosen.map((s) => `<th scope="col">${esc(s.name)}</th>`).join("")}</tr></thead>
+    <thead><tr><th scope="col">${esc(u.compCol)}</th>${chosen.map((s) => `<th scope="col"><button type="button" class="viewlink" data-school="${s.id}">${esc(s.name)}</button></th>`).join("")}</tr></thead>
     <tbody>
     ${row(r.board, (s) => esc(L(BOARDS[s.board])))}
     ${row(r.fraser, (s) => (s.fraser ? `<b>${s.fraser.score.toFixed(1)}</b> ${esc(u.fraserOf)}` : dash))}
@@ -352,3 +352,8 @@ $("#theme-btn").addEventListener("click", () => {
 
 state.lang = detectLang();
 renderShell();
+initSchoolDetail({
+  getLang: () => state.lang,
+  onCompare: (id) => setCompare(id, !state.compare.includes(id)),
+  isCompared: (id) => state.compare.includes(id),
+});

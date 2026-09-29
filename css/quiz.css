@@ -46,3 +46,16 @@
 .check{display:flex;gap:10px;align-items:center;margin:12px 0;font-weight:600}
 .check input{width:20px;height:20px;accent-color:var(--accent)}
 .foot{max-width:760px}
+.bk-short{display:none}
+@media (max-width:520px){.bk-full{display:none}.bk-short{display:inline}.toggle button{padding:6px 9px}.topbar-in{gap:6px}}
+#back-link{white-space:nowrap}
+
+/* Compact action bar at the top of the results */
+.results .lead{margin-top:8px}
+.toolbar{display:grid;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px 12px;margin:14px 0 6px}
+.tb-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tb-share{justify-content:space-between;border-top:1px solid var(--line);padding-top:8px}
+.tb-share .check{margin:0;font-size:14px;flex:1;min-width:200px}
+.tb-info summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent)}
+.tb-info p{margin-top:6px}
+.scrollcue{text-align:center;font-weight:700;font-size:14px;color:var(--accent);margin:8px 0 0}

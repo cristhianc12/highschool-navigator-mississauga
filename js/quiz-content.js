@@ -9,6 +9,7 @@ export const QUIZ_UI = {
     title: "¿Qué secundaria encaja contigo? | Highschool Navigator",
     metaDesc: "Cuestionario anónimo de 3 minutos para explorar posibles secundarias y programas en Mississauga según tus intereses. Incluye resultado en PDF.",
     back: "Volver a la guía",
+    backShort: "Guía",
     langLabel: "Idioma",
     themeLabel: "Cambiar tema",
     eyebrow: "Cuestionario · 3 minutos",
@@ -32,6 +33,7 @@ export const QUIZ_UI = {
     schoolsH: "Escuelas para mirar de cerca",
     programsH: "Programas que podrían gustarte",
     nextH: "Siguientes pasos",
+    below: "Tus sugerencias están justo abajo ↓",
     nextSteps: [
       "Revisa los programas en la guía y anota cuáles piden solicitud, audición o portafolio.",
       "Asiste a las charlas y open houses (oct–nov 2026). Peel recibe solicitudes del 3 al 24 de noviembre de 2026.",
@@ -74,6 +76,7 @@ export const QUIZ_UI = {
     title: "Which high school might fit you? | Highschool Navigator",
     metaDesc: "An anonymous 3-minute questionnaire to explore possible high schools and programs in Mississauga based on your interests. Includes a PDF result.",
     back: "Back to the guide",
+    backShort: "Guide",
     langLabel: "Language",
     themeLabel: "Toggle theme",
     eyebrow: "Questionnaire · 3 minutes",
@@ -97,6 +100,7 @@ export const QUIZ_UI = {
     schoolsH: "Schools to look at closely",
     programsH: "Programs you might like",
     nextH: "Next steps",
+    below: "Your suggestions are right below ↓",
     nextSteps: [
       "Review the programs in the guide and note which ones require an application, audition or portfolio.",
       "Attend the info sessions and open houses (Oct–Nov 2026). Peel accepts applications Nov 3–24, 2026.",
@@ -139,6 +143,7 @@ export const QUIZ_UI = {
     title: "Quelle école secondaire te convient? | Highschool Navigator",
     metaDesc: "Questionnaire anonyme de 3 minutes pour explorer des écoles secondaires et programmes possibles à Mississauga selon tes intérêts. Résultat en PDF.",
     back: "Retour au guide",
+    backShort: "Guide",
     langLabel: "Langue",
     themeLabel: "Changer de thème",
     eyebrow: "Questionnaire · 3 minutes",
@@ -162,6 +167,7 @@ export const QUIZ_UI = {
     schoolsH: "Écoles à regarder de près",
     programsH: "Programmes qui pourraient te plaire",
     nextH: "Prochaines étapes",
+    below: "Tes suggestions sont juste en dessous ↓",
     nextSteps: [
       "Passe en revue les programmes du guide et note ceux qui exigent une demande, une audition ou un portfolio.",
       "Assiste aux séances d'information et aux portes ouvertes (oct.–nov. 2026). Peel reçoit les demandes du 3 au 24 novembre 2026.",

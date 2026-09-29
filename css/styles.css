@@ -63,7 +63,7 @@ img{max-width:100%}
 .skip:focus{left:16px}
 
 /* ---------- Top bar ---------- */
-.topbar{position:sticky;top:0;z-index:30;margin-inline:-16px;padding:9px 16px;
+.topbar{position:sticky;top:0;z-index:1200;margin-inline:-16px;padding:9px 16px;
   background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .topbar-in{display:flex;align-items:center;gap:8px}
 .brand{font:800 1.05rem var(--font-display);color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px;margin-right:auto}

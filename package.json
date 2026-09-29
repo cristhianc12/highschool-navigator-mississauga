@@ -1,0 +1,11 @@
+{
+  "name": "highschool-navigator-mississauga",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Trilingual guide and anonymous questionnaire for Mississauga high schools",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  }
+}

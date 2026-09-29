@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>¿Qué secundaria encaja contigo? | Highschool Navigator</title>
+<meta name="description" content="Cuestionario anónimo de 3 minutos para explorar posibles secundarias y programas en Mississauga según tus intereses. Incluye resultado en PDF.">
+<link rel="canonical" href="https://highschool-navigator-mississauga.vercel.app/quiz">
+<meta name="theme-color" content="#0B7A86">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Qué secundaria encaja contigo?">
+<meta property="og:description" content="Cuestionario anónimo de 3 minutos con resultado en PDF. ES/EN/FR.">
+<meta property="og:url" content="https://highschool-navigator-mississauga.vercel.app/quiz">
+<meta property="og:image" content="https://highschool-navigator-mississauga.vercel.app/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/quiz.css">
+<script>
+try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main" id="skip">Volver a la guía</a>
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a class="btn small" id="back-link" href="./">← Volver a la guía</a>
+    <span class="grow"></span>
+    <div class="toggle" role="group" id="lang-group">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+    <button type="button" class="theme" id="theme-btn" aria-label="Cambiar tema">◐</button>
+  </div>
+</div>
+<main class="wrap quiz" id="main"><div id="app"><noscript><p class="notice">Este cuestionario necesita JavaScript. / This questionnaire needs JavaScript.</p></noscript></div></main>
+<script type="module" src="js/quiz.js"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

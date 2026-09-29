@@ -162,6 +162,7 @@ function renderShell() {
     </div>
     <p class="notice">${u.notice}</p>
     <p class="scope muted small">${esc(u.scope)}</p>
+    <div class="quiz-cta"><div><h2>${esc(u.quiz.h)}</h2><p>${esc(u.quiz.p)}</p></div><a class="cta" href="quiz?lang=${state.lang}">${esc(u.quiz.btn)} →</a></div>
     <nav class="jump" aria-label="${esc(u.navLabel)}">${nav}</nav>
   </header>
 

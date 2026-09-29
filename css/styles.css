@@ -211,3 +211,9 @@ ol.q li::before{content:counter(q);flex:none;width:26px;height:26px;border-radiu
 .cmp-toggles .chosen{background:var(--accent);border-color:var(--accent);color:var(--surface)}
 .cmp-toggles select.btn{max-width:100%}
 .school .fraser{margin-top:auto}
+
+/* Questionnaire call to action */
+.quiz-cta{margin-top:24px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between;background:var(--accent-soft);border:1px solid var(--accent);border-radius:14px;padding:18px 20px}
+.quiz-cta h2{font-size:1.3rem}
+.quiz-cta p{margin-top:4px;max-width:56ch;font-size:15px}
+.cta{display:inline-block;text-decoration:none;font:600 16px var(--font-body);background:var(--accent);color:var(--surface);border:0;border-radius:12px;padding:12px 20px;cursor:pointer}

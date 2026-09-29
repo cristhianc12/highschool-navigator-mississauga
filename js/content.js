@@ -91,7 +91,7 @@ export const UI = {
     },
     map: {
       nav: "Mapa", h: "Mapa de las escuelas",
-      legendH: "Colores", legendToggle: "Toca para mostrar u ocultar", legendNum: "El número de cada punto coincide con la lista", legendHome: "Mi casa",
+      legendH: "Colores", legendToggle: "Toca para mostrar u ocultar", tilesFail: "Tu navegador bloqueó el mapa de calles (¿bloqueador de anuncios o escudo de privacidad?). Los puntos y la lista siguen funcionando; prueba pausar el bloqueador para este sitio.", legendNum: "El número de cada punto coincide con la lista", legendHome: "Mi casa",
       p: "Encuentra las escuelas cerca de ti. Toca una escuela de la lista o un punto del mapa para ver su tarjeta y abrir su perfil. Puedes marcar tu casa en el mapa para ver la distancia en línea recta.",
       aria: "Mapa interactivo de las secundarias de Mississauga",
       search: "Buscar una escuela…", listAria: "Lista de escuelas",
@@ -319,7 +319,7 @@ export const UI = {
     },
     map: {
       nav: "Map", h: "School map",
-      legendH: "Colors", legendToggle: "Tap to show or hide", legendNum: "The number on each pin matches the list", legendHome: "My home",
+      legendH: "Colors", legendToggle: "Tap to show or hide", tilesFail: "Your browser blocked the street map (ad blocker or privacy shield?). The pins and the list still work; try pausing the blocker for this site.", legendNum: "The number on each pin matches the list", legendHome: "My home",
       p: "Find schools near you. Tap a school in the list or a point on the map to see its card and open its profile. You can mark your home on the map to see the straight-line distance.",
       aria: "Interactive map of Mississauga high schools",
       search: "Search for a school…", listAria: "List of schools",
@@ -547,7 +547,7 @@ export const UI = {
     },
     map: {
       nav: "Carte", h: "Carte des écoles",
-      legendH: "Couleurs", legendToggle: "Touche pour afficher ou masquer", legendNum: "Le numéro de chaque point correspond à la liste", legendHome: "Ma maison",
+      legendH: "Couleurs", legendToggle: "Touche pour afficher ou masquer", tilesFail: "Ton navigateur a bloqué la carte routière (bloqueur de pub ou bouclier de confidentialité?). Les repères et la liste fonctionnent toujours; essaie de mettre le bloqueur en pause pour ce site.", legendNum: "Le numéro de chaque point correspond à la liste", legendHome: "Ma maison",
       p: "Trouve les écoles près de chez toi. Touche une école dans la liste ou un point sur la carte pour voir sa fiche et ouvrir son profil. Tu peux marquer ta maison sur la carte pour voir la distance en ligne droite.",
       aria: "Carte interactive des écoles secondaires de Mississauga",
       search: "Chercher une école…", listAria: "Liste des écoles",

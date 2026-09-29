@@ -194,8 +194,19 @@ async function loadMap(stage) {
   stage.innerHTML = "";
   const L = S.L;
   S.loaded = true;
-  S.map = L.map(stage, { center: CENTER, zoom: 11, minZoom: 9, maxZoom: 18, scrollWheelZoom: false });
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' }).addTo(S.map);
+  S.map = L.map(stage, { center: CENTER, zoom: 11, minZoom: 9, maxZoom: 18, scrollWheelZoom: false, fadeAnimation: false });
+  const tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, referrerPolicy: "strict-origin-when-cross-origin", attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' }).addTo(S.map);
+  // If the browser (ad blocker, privacy shield, network) stops the tiles, say so instead of leaving a blank grey box.
+  let ok = 0, bad = 0, warned = false;
+  tiles.on("tileload", () => { ok++; stage.querySelector(".maptilewarn")?.remove(); });
+  tiles.on("tileerror", () => {
+    bad++;
+    if (!warned && !ok && bad >= 3) {
+      warned = true;
+      const w = document.createElement("div"); w.className = "maptilewarn"; w.setAttribute("role", "status"); w.textContent = t().tilesFail;
+      stage.appendChild(w);
+    }
+  });
   // The wheel zooms the map only after the map was clicked, so scrolling the page never gets trapped.
   S.map.on("click", () => S.map.scrollWheelZoom.enable());
   S.map.on("mouseout", () => S.map.scrollWheelZoom.disable());

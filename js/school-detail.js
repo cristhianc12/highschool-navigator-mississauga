@@ -132,8 +132,9 @@ function admissionHtml(entries, where) {
       ${row(A.submit, `<ul class="dnotes">${a.submit.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>`)}
       ${row(A.marks, esc(L(a.marks)))}
       ${row(A.fee, esc(L(a.fee)))}
-      ${row(A.dates, esc(L(a.dates)))}</dl>
-      <div class="sbtns"><a class="btn small" href="${a.url}" target="_blank" rel="noopener">${esc(A.src)} ↗</a></div></article>`;
+      ${row(A.dates, esc(L(a.dates)))}
+      ${row(A.know, a.know ? `<ul class="dnotes">${a.know.map((k) => `<li>${esc(L(k))}</li>`).join("")}</ul>` : "")}</dl>
+      <div class="sbtns"><a class="btn small" href="${a.url}" target="_blank" rel="noopener">${esc(A.src)} ↗</a>${a.url2 ? `<a class="btn small" href="${a.url2}" target="_blank" rel="noopener">${esc(A.src2)} ↗</a>` : ""}</div></article>`;
   }).join("");
   return `<section class="dsec"><h3>${esc(A.h)}</h3>${cards}<p class="small muted">${esc(A.checked)}</p></section>`;
 }

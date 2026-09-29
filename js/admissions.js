@@ -31,7 +31,75 @@ const PEEL_LOTTERY = x(
   "Processus de Peel : 1) les notes finales de 7e année sont comparées aux critères du programme; 2) tous ceux qui les remplissent entrent dans un tirage au sort mené par le conseil (pas par l'école). S'il y a plus de candidats que de places, le tirage décide. Les élèves de la région de Peel sont servis en premier. Les élèves africains, noirs, des Premières Nations, inuits ou métis qui s'auto-identifient et remplissent les critères sont admis sans tirage."
 );
 
+// General registration (every school of the board, not only regional programs). Sources: DPCDSB
+// "Secondary Registration" page and Peel's "Register for School" page, checked September 2026.
+export const REG_UI = {
+  es: { h: "Cómo registrarte en la escuela", steps: "Pasos", docs: "Documentos (originales, en inglés)", limited: "Esta escuela tiene registro limitado para 2027-28: confirma cupo con la escuela y el board.", contact: "Contacto de admisiones", src: "Página oficial de registro", note: "Los programas regionales (IB, AP, Artes, Deportes, STEM, Bakery) tienen su propia aplicación: mira las secciones de arriba." },
+  en: { h: "How to register at this school", steps: "Steps", docs: "Documents (originals, in English)", limited: "This school has limited registration for 2027-28: confirm space with the school and the board.", contact: "Admissions contact", src: "Official registration page", note: "Regional programs (IB, AP, Arts, Sports, STEM, Bakery) have their own application: see the sections above." },
+  fr: { h: "Comment s'inscrire à cette école", steps: "Étapes", docs: "Documents (originaux, en anglais)", limited: "Cette école a des inscriptions limitées pour 2027-2028 : confirme les places avec l'école et le conseil.", contact: "Contact des admissions", src: "Page officielle d'inscription", note: "Les programmes régionaux (IB, AP, arts, sports, STIM, boulangerie) ont leur propre demande : voir les sections ci-dessus." },
+};
+
+export const REGISTRATION = {
+  dpcdsb: {
+    steps: [
+      x("Crea una cuenta en el sistema de aplicación en línea del DPCDSB.", "Create an account in DPCDSB's online application system.", "Crée un compte dans le système de demande en ligne du DPCDSB."),
+      x("Completa y envía el formulario de aplicación en línea.", "Complete and submit the online application form.", "Remplis et soumets le formulaire de demande en ligne."),
+      x("Recibirás un correo de confirmación con instrucciones sobre los documentos que falten.", "You receive a confirmation email with instructions for any missing documents.", "Tu reçois un courriel de confirmation avec les instructions pour les documents manquants."),
+      x("El departamento de Guidance de la escuela te contacta para verificar documentos y el horario de cursos.", "The school's Guidance department contacts you to verify documents and your course schedule.", "Le service d'orientation de l'école te contacte pour vérifier les documents et l'horaire de cours."),
+    ],
+    docs: [
+      x("Acta de nacimiento o pasaporte (prueba de edad).", "Birth certificate or passport (proof of age).", "Certificat de naissance ou passeport (preuve d'âge)."),
+      x("Registro de vacunas.", "Immunization records.", "Carnet de vaccination."),
+      x("Prueba de ciudadanía canadiense o de estatus.", "Proof of Canadian citizenship.", "Preuve de citoyenneté canadienne."),
+      x("Dos comprobantes de domicilio (factura de servicios, impuesto a la propiedad, contrato de arriendo, etc.).", "Two proofs of home address (utility bill, property tax statement, lease agreement, etc.).", "Deux preuves de domicile (facture de services, taxe foncière, bail, etc.)."),
+      x("Prueba de apoyo a la escuela separada en inglés, si aplica.", "Proof of English Separate School Support, if applicable.", "Preuve de soutien aux écoles séparées anglaises, le cas échéant."),
+    ],
+    note: x(
+      "Si estás en una primaria del DPCDSB, quedas inscrito automáticamente en la secundaria católica de tu zona para Grade 9. Por la ley provincial de acceso abierto, familias católicas y de escuelas públicas pueden aplicar a escuelas católicas. Estudiantes con necesidades de apoyo: completa además el Entry Planning Form for Students with Differing Abilities.",
+      "If you attend a DPCDSB elementary school, you are automatically enrolled in your local Catholic secondary school for Grade 9. Under Ontario's open-access law, both Catholic and public school supporters can apply to Catholic schools. Students who need extra support should also complete the Entry Planning Form for Students with Differing Abilities.",
+      "Si tu fréquentes une école élémentaire du DPCDSB, tu es inscrit automatiquement à l'école secondaire catholique de ton secteur pour la 9e année. En vertu de la loi provinciale d'accès ouvert, les familles catholiques et celles des écoles publiques peuvent postuler. Les élèves qui ont besoin de soutien remplissent aussi le formulaire Entry Planning Form for Students with Differing Abilities."
+    ),
+    contact: "905-890-1221 · admissions@dpcdsb.org",
+    url: "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    // Schools listed by DPCDSB with limited registration availability for 2027-28.
+    limited: ["cardinal ambrozic", "st edmund campion", "st marcellinus", "st roch"],
+  },
+  peel: {
+    steps: [
+      x("Crea una cuenta de padres en PowerSchool Enrollment (portal en línea del board) para el registro de Grade 1 a 12.", "Create a parent account in PowerSchool Enrollment (the board's online portal) for Grade 1 to 12 registration.", "Crée un compte parent dans PowerSchool Enrollment (le portail en ligne du conseil) pour l'inscription de la 1re à la 12e année."),
+      x("Usa el localizador de escuelas (School Finder) con tu dirección para saber qué escuela te corresponde.", "Use the School Finder with your home address to see which school is yours.", "Utilise le localisateur d'écoles avec ton adresse pour savoir quelle école est la tienne."),
+      x("Sigue la guía \"How to Apply\" del board para completar la solicitud y subir los documentos.", "Follow the board's \"How to Apply\" tip sheet to complete the application and upload documents.", "Suis la fiche « How to Apply » du conseil pour remplir la demande et téléverser les documents."),
+    ],
+    docs: [],
+    note: x(
+      "La lista exacta de documentos está en la guía \"How to Apply\" del board; no la copiamos aquí para no darte una lista desactualizada.",
+      "The exact document list is in the board's \"How to Apply\" tip sheet; we do not copy it here so you do not get an outdated list.",
+      "La liste exacte des documents figure dans la fiche « How to Apply » du conseil; nous ne la copions pas ici pour éviter une liste périmée."
+    ),
+    contact: "",
+    url: "https://www.peelschools.org/registration",
+  },
+};
+
 export const ADMISSIONS = [
+  {
+    school: "cawthra", prog: "p-arts",
+    elig: x("Estudiantes de Grade 8 (y de Grade 9 actual, en la segunda entrada) que viven al sur de la Hwy 401. Quienes viven al norte de la 401 aplican a Mayfield. Estudiantes de otro board o fuera del área pueden aplicar, pero solo reciben oferta en la ronda 2 si hay cupo.", "Grade 8 students (and current Grade 9 students, at the second entry point) who live south of Hwy 401. Students north of the 401 apply to Mayfield. Students from another board or outside the area may apply, but only get an offer in round 2 if space allows.", "Élèves de 8e année (et de 9e actuelle, au deuxième point d'entrée) qui habitent au sud de la 401. Ceux du nord de la 401 postulent à Mayfield. Les élèves d'un autre conseil ou hors secteur peuvent postuler, mais n'obtiennent une offre qu'à la ronde 2 s'il reste de la place."),
+    submit: [
+      x("Solicitud en línea en el portal RLCP de Peel (no hay solicitud en papel).", "Online application in Peel's RLCP portal (no paper application).", "Demande en ligne dans le portail RLCP de Peel (pas de demande papier)."),
+      x("Elegir una sola disciplina: danza, drama, música (instrumental o vocal) o artes visuales. No se puede audicionar para más de una.", "Choose one discipline only: dance, drama, music (instrumental or vocal) or visual arts. You cannot audition for more than one.", "Choisir une seule discipline : danse, art dramatique, musique (instrumentale ou vocale) ou arts visuels. On ne peut pas auditionner pour plus d'une."),
+      x("Preparar el material de audición o portafolio de la disciplina (los requisitos se publican en el sitio de la escuela).", "Prepare the audition material or portfolio for that discipline (requirements are posted on the school's site).", "Préparer le matériel d'audition ou le portfolio de la discipline (les exigences sont publiées sur le site de l'école)."),
+      x("Si tienes un IEP, envía una copia a cawthrarap@peelsb.com después de aplicar; el IEP no reduce tus posibilidades.", "If you have an IEP, email a copy to cawthrarap@peelsb.com after applying; an IEP does not lower your chances.", "Si tu as un PEI (IEP), envoie-en une copie à cawthrarap@peelsb.com après ta demande; il ne diminue pas tes chances."),
+    ],
+    marks: x("Se entra por audición o portafolio. Ni el board ni la escuela publican una nota mínima para Artes.", "Entry is by audition or portfolio. Neither the board nor the school publishes a minimum mark for Arts.", "L'entrée se fait par audition ou portfolio. Ni le conseil ni l'école ne publient de note minimale pour les arts."),
+    fee: x("Audición: $40 (se paga en línea al aplicar). Programa Regional de Artes: $250 (se paga tras aceptar la oferta) y $250 cada año siguiente.", "Audition fee: $40 (paid online when you apply). Regional Arts program: $250 (paid after you accept an offer) and $250 each following year.", "Audition : 40 $ (payée en ligne à la demande). Programme régional d'arts : 250 $ (payé après l'acceptation de l'offre) et 250 $ chaque année suivante."),
+    dates: x("Noche informativa: 27 de octubre de 2026 (presentaciones a las 6 y 7 p. m.). Aplicaciones: 3 al 24 de noviembre de 2026. Las citas de audición se envían por correo antes de las vacaciones de diciembre; las audiciones son en enero. Ofertas: 2 de febrero de 2027 después de las 3 p. m. (ronda 1), 16 de febrero (ronda 2), 23 de febrero (ronda 3), 8 de marzo (ronda 4). Lista de espera desde el 30 de marzo.", "Information night: Oct 27, 2026 (presentations at 6 and 7 p.m.). Applications: Nov 3 to 24, 2026. Audition appointments are emailed before the December break; auditions take place in January. Offers: Feb 2, 2027 after 3 p.m. (round 1), Feb 16 (round 2), Feb 23 (round 3), Mar 8 (round 4). Waitlist from Mar 30.", "Soirée d'information : 27 octobre 2026 (présentations à 18 h et 19 h). Demandes : du 3 au 24 novembre 2026. Les rendez-vous d'audition sont envoyés avant le congé de décembre; les auditions ont lieu en janvier. Offres : 2 février 2027 après 15 h (ronde 1), 16 février (ronde 2), 23 février (ronde 3), 8 mars (ronde 4). Liste d'attente dès le 30 mars."),
+    know: [
+      x("Sigues el currículo académico normal de Ontario; la diferencia es que tomas tu área principal en los dos semestres y terminas con un paquete de 8 créditos de artes y un certificado del programa.", "You follow the regular Ontario academic curriculum; the difference is that you take your major in both semesters and finish with an 8-credit arts package and a program certificate.", "Tu suis le curriculum ontarien habituel; la différence est que tu suis ta majeure aux deux semestres et termines avec un bloc de 8 crédits en arts et un certificat du programme."),
+    ],
+    url: "https://cawthrapark.peelschools.org/how-to-apply",
+    url2: "https://cawthrapark.peelschools.org/arts-faq",
+  },
   {
     school: "erindale", prog: "p-ib",
     elig: x("Estudiantes de Grade 8 que viven en el área de Erindale (Pre-IB). No pueden aplicar quienes están en Canadá con visa de estudiante internacional; con permiso de trabajo o de estudio sí.", "Grade 8 students who live in Erindale's program area (Pre-IB). International visa students cannot apply; students here on work or study permits can.", "Élèves de 8e année qui habitent le secteur d'Erindale (pré-IB). Les élèves internationaux avec visa ne peuvent pas postuler; ceux avec permis de travail ou d'études le peuvent."),

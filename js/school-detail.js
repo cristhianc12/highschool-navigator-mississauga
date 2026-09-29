@@ -7,7 +7,7 @@ import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content
 import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
 import { starBtn } from "./mylist.js";
 import { EXTRAS } from "./school-extras.js";
-import { ADM_UI, admissionsForProgram, admissionsForSchool } from "./admissions.js";
+import { ADM_UI, REG_UI, REGISTRATION, admissionsForProgram, admissionsForSchool } from "./admissions.js";
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -139,6 +139,23 @@ function admissionHtml(entries, where) {
   return `<section class="dsec"><h3>${esc(A.h)}</h3>${cards}<p class="small muted">${esc(A.checked)}</p></section>`;
 }
 
+// General registration steps and documents for the school's board (see admissions.js).
+function registrationHtml(school) {
+  const reg = REGISTRATION[school.board];
+  if (!reg) return "";
+  const R = REG_UI[langOf()];
+  const L = Lx;
+  const limited = reg.limited && reg.limited.some((n) => schoolKey(school.name) === n);
+  return `<section class="dsec"><h3>${esc(R.h)}</h3>
+    ${limited ? `<p class="small warnnote">${esc(R.limited)}</p>` : ""}
+    <p class="small"><b>${esc(R.steps)}</b></p><ol class="dnotes">${reg.steps.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ol>
+    ${reg.docs.length ? `<p class="small"><b>${esc(R.docs)}</b></p><ul class="dnotes">${reg.docs.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>` : ""}
+    <p class="small muted">${esc(L(reg.note))}</p>
+    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(reg.contact)}</p>` : ""}
+    <p class="small muted">${esc(R.note)}</p>
+    <div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div></section>`;
+}
+
 function renderSchool(school) {
   const lang = langOf();
   const u = UI[lang];
@@ -204,7 +221,7 @@ function renderSchool(school) {
   dlg.setAttribute("aria-label", school.name);
   dlg.className = `sdlg board-${school.board}`;
   dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
-    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${admissionHtml(admissionsForSchool(school.id), "school")}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
+    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${admissionHtml(admissionsForSchool(school.id), "school")}${registrationHtml(school)}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
     footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
   // Course list is loaded only when the person opens it (86 KB of data).
   const det = dlg.querySelector("[data-courses]");

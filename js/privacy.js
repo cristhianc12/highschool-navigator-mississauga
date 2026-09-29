@@ -1,4 +1,4 @@
-import { LANGS } from "./content.js";
+import { LANGS, madeWith } from "./content.js";
 import { PRIV, CONTACT_URL, UPDATED } from "./privacy-content.js";
 
 const $ = (s) => document.querySelector(s);
@@ -13,8 +13,7 @@ let lang = (() => {
   if (LANGS.includes(q)) return q;
   const s = store.get("lang");
   if (LANGS.includes(s)) return s;
-  const n = (navigator.language || "es").toLowerCase();
-  return n.startsWith("fr") ? "fr" : n.startsWith("en") ? "en" : "es";
+  return "en";
 })();
 
 function render() {
@@ -22,6 +21,7 @@ function render() {
   document.documentElement.lang = p.htmlLang;
   document.title = p.title;
   $("#back-link").textContent = p.back;
+  $("#made").innerHTML = madeWith(lang);
   $("#back-link").href = `./?lang=${lang}`;
   document.querySelectorAll("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
   const locale = { es: "es-CO", en: "en-CA", fr: "fr-CA" }[lang];
@@ -43,7 +43,7 @@ document.addEventListener("click", (e) => {
 });
 $("#theme-btn").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") ||
-    "light";
+    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   const next = cur === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   store.set("theme", next);

@@ -1,4 +1,4 @@
-import { UI, TEEN, LANGS, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
+import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -10,7 +10,7 @@ const store = {
 };
 
 const state = {
-  lang: "es",
+  lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
   filters: { q: "", system: "", tag: "", start: "", entry: "", sort: "name" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
@@ -21,8 +21,7 @@ function detectLang() {
   if (LANGS.includes(fromUrl)) return fromUrl;
   const saved = store.get("lang");
   if (LANGS.includes(saved)) return saved;
-  const nav = (navigator.language || "es").toLowerCase();
-  return nav.startsWith("fr") ? "fr" : nav.startsWith("en") ? "en" : "es";
+  return "en"; // English by default; the URL or a saved choice can override it
 }
 
 const t = () => (state.tone === "teen" ? { ...UI[state.lang], ...TEEN[state.lang] } : UI[state.lang]);
@@ -234,7 +233,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="#main">${esc(u.backTop)}</a></nav>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
   bindFilters();
   renderResults();
   renderCompare();
@@ -343,7 +342,7 @@ document.addEventListener("click", (e) => {
 });
 $("#theme-btn").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") ||
-    "light";
+    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   const next = cur === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   store.set("theme", next);

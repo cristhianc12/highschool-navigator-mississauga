@@ -1,4 +1,4 @@
-import { LANGS, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
+import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -10,7 +10,7 @@ const store = {
 };
 
 const state = {
-  lang: "es",
+  lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
   step: -1, answers: {}, result: null, shared: false,
 };
@@ -24,8 +24,7 @@ function detectLang() {
   if (LANGS.includes(fromUrl)) return fromUrl;
   const saved = store.get("lang");
   if (LANGS.includes(saved)) return saved;
-  const nav = (navigator.language || "es").toLowerCase();
-  return nav.startsWith("fr") ? "fr" : nav.startsWith("en") ? "en" : "es";
+  return "en"; // English by default; the URL or a saved choice can override it
 }
 
 /* ------------------------------------------------------------------ */
@@ -125,6 +124,7 @@ function chrome() {
   $("#back-link").href = `./?lang=${state.lang}`;
   $("#priv-link").href = `privacy?lang=${state.lang}`;
   $("#priv-link").textContent = u.privacy;
+  $("#made").innerHTML = madeWith(state.lang);
 }
 
 function render() {
@@ -418,7 +418,7 @@ async function makePdf() {
 
 $("#theme-btn").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") ||
-    "light";
+    (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   const next = cur === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   store.set("theme", next);

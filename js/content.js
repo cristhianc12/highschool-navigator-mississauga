@@ -5,6 +5,14 @@ const x = (es, en, fr) => ({ es, en, fr });
 
 export const LANGS = ["es", "en", "fr"];
 
+/* Signature line shown discreetly at the bottom of every page. */
+const MADE_WITH = {
+  en: "Made with love by a loving parent",
+  es: "Hecho con amor por un papá o mamá que los adora",
+  fr: "Fait avec amour par un parent aimant",
+};
+export const madeWith = (lang) => `${MADE_WITH[lang] || MADE_WITH.en} ❤ <b>SBR · CBR</b>`;
+
 export const FRASER = {
   report: x(
     "Informe Fraser 2025 (año escolar 2024-25)",

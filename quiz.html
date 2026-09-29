@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>¿Qué secundaria encaja contigo? | Highschool Navigator</title>
-<meta name="description" content="Cuestionario anónimo de 3 minutos para explorar posibles secundarias y programas en Mississauga según tus intereses. Incluye resultado en PDF.">
+<title>Which high school might fit you? | Highschool Navigator</title>
+<meta name="description" content="An anonymous 3-minute questionnaire to explore possible high schools and programs in Mississauga based on your interests. Includes a PDF result.">
 <link rel="canonical" href="https://hs-mississauga-navigator.vercel.app/quiz">
 <meta name="theme-color" content="#F6F4FF">
 <meta property="og:type" content="website">
-<meta property="og:title" content="¿Qué secundaria encaja contigo?">
-<meta property="og:description" content="Cuestionario anónimo de 3 minutos con resultado en PDF. ES/EN/FR.">
+<meta property="og:title" content="Which high school might fit you?">
+<meta property="og:description" content="An anonymous 3-minute questionnaire with a PDF result. EN/ES/FR.">
 <meta property="og:url" content="https://hs-mississauga-navigator.vercel.app/quiz">
 <meta property="og:image" content="https://hs-mississauga-navigator.vercel.app/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -23,25 +23,25 @@ try { var t = localStorage.getItem("theme"); if (t) document.documentElement.set
 </script>
 </head>
 <body>
-<a class="skip" href="#main" id="skip">Volver a la guía</a>
+<a class="skip" href="#main" id="skip">Back to the guide</a>
 <div class="topbar">
   <div class="wrap topbar-in">
-    <a class="btn small" id="back-link" href="./">← Volver a la guía</a>
+    <a class="btn small" id="back-link" href="./">← Back to the guide</a>
     <span class="grow"></span>
     <div class="toggle" role="group" id="tone-group">
       <button type="button" data-tone="teen" aria-pressed="true">Teen</button>
-      <button type="button" data-tone="family" aria-pressed="false">Familia</button>
+      <button type="button" data-tone="family" aria-pressed="false">Family</button>
     </div>
     <div class="toggle" role="group" id="lang-group">
-      <button type="button" data-lang="es" aria-pressed="true">ES</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" data-lang="fr" aria-pressed="false">FR</button>
     </div>
-    <button type="button" class="theme" id="theme-btn" aria-label="Cambiar tema">◐</button>
+    <button type="button" class="theme" id="theme-btn" aria-label="Toggle theme">◐</button>
   </div>
 </div>
-<main class="wrap quiz" id="main"><div id="app"><noscript><p class="notice">Este cuestionario necesita JavaScript. / This questionnaire needs JavaScript.</p></noscript></div></main>
-<footer class="wrap foot"><nav><a id="priv-link" href="privacy">Privacidad</a></nav></footer>
+<main class="wrap quiz" id="main"><div id="app"><noscript><p class="notice">This questionnaire needs JavaScript. / Este cuestionario necesita JavaScript.</p></noscript></div></main>
+<footer class="wrap foot"><nav><a id="priv-link" href="privacy">Privacy</a></nav><p class="made" id="made"></p></footer>
 <script type="module" src="js/quiz.js"></script>
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>

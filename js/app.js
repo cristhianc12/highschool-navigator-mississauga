@@ -1,6 +1,8 @@
+import "./pwa.js";
 import { initSchoolDetail, renderSessionRow, reportUrl } from "./school-detail.js";
 import { SESSIONS } from "./sessions.js";
 import { EXPLAINER } from "./explainer.js";
+import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
@@ -182,7 +184,7 @@ function renderShell() {
   const f = state.filters;
   const q = `quiz?lang=${state.lang}`;
   $("#desk-nav").innerHTML =
-    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>`;
+    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
   $("#bnav").innerHTML =
     `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
@@ -226,6 +228,8 @@ function renderShell() {
     <div class="grid dir" id="schools"></div>
     <details class="fraser-note"><summary>${esc(u.fraserWhatH)}</summary><p>${esc(u.fraserWhat)}</p>
       <p><a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p></details></section>
+
+  <section id="mapa"><div class="sec-head"><h2>${esc(u.map.h)}</h2><p>${esc(u.map.p)}</p></div><div id="map-host"></div></section>
 
   <section id="comparar"><div class="sec-head"><h2>${esc(u.compararH)}</h2><p>${esc(u.compararP)}</p></div>
     <div class="cmp-toggles" id="cmp-toggles"></div><div id="cmp-out"></div></section>
@@ -316,6 +320,8 @@ function renderResults() {
   const empty = `<div class="empty">${esc(u.noResults)}</div>`;
 
   $("#schools").innerHTML = schools.length ? schools.map(schoolCard).join("") : empty;
+  const mh = $("#map-host");
+  if (mh) renderMap(mh, { lang: state.lang, matchIds: schools.map((s) => s.id) });
   $("#prog-dpcdsb").innerHTML = dp.length ? dp.map(programCard).join("") : empty;
   $("#prog-peel").innerHTML = pe.length ? pe.map(programCard).join("") : empty;
   $("#count").textContent = u.resultCount(schools.length, progs.length);

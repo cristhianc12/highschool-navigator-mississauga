@@ -1,4 +1,5 @@
 import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
+import "./pwa.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 import { initSchoolDetail } from "./school-detail.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";

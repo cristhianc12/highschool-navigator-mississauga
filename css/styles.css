@@ -263,6 +263,26 @@ button.opener:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .trend{font:700 12.5px var(--font-body);padding:2px 8px;border-radius:999px;background:var(--surface2);color:var(--muted);white-space:nowrap}
 .trend.up{color:var(--accent)}
 
+/* School map */
+.mapbox{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.mapsvg{display:block;width:100%;height:min(72vh,680px);touch-action:none;cursor:grab;user-select:none}
+.mapsvg.grabbing{cursor:grabbing}
+.mcity{fill:var(--surface2)}
+.mcityline{fill:none;stroke:var(--muted);stroke-width:2;opacity:.7}
+.mroad{fill:none;stroke:var(--muted);stroke-linecap:round;stroke-linejoin:round;opacity:.3}
+.mlab{fill:var(--muted);font-family:var(--font-body);font-weight:600;text-anchor:middle;pointer-events:none;opacity:.8}
+.mdot{cursor:pointer;outline:none}
+.mdot .pt{fill:var(--c);stroke:var(--surface);stroke-width:calc(var(--sw,2) * 1px)}
+.mdot .ring{fill:none;stroke:var(--warm);stroke-width:calc(var(--sw,2) * 1px)}
+.mdot:hover .pt,.mdot:focus-visible .pt{stroke:var(--ink)}
+.mdot.dim{opacity:.22}
+.mtools{position:absolute;top:10px;right:10px;display:flex;gap:6px}
+.mtip{position:absolute;transform:translate(-50%,-100%);background:var(--ink);color:var(--bg);font:600 12.5px var(--font-body);padding:4px 9px;border-radius:8px;white-space:nowrap;pointer-events:none;z-index:2}
+.mlegend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px}
+.mlegend span{display:inline-flex;align-items:center;gap:6px}
+.mlegend i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.mlegend i.ringi{background:transparent;border:2px solid var(--warm)}
+
 /* AP vs IB explainer */
 .explain{min-width:760px}
 .explain th[scope="row"]{width:150px}

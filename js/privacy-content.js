@@ -15,6 +15,7 @@ export const PRIV = {
         "Usamos Vercel Web Analytics, que mide visitas de forma agregada, sin cookies y sin identificarte.",
         "Las fuentes y la librería del PDF se sirven desde este mismo sitio: no cargamos recursos de terceros.",
         "Los enlaces a sitios oficiales y a GitHub (para reportar errores) solo se abren si haces clic en ellos; esos sitios tienen sus propias políticas de privacidad.",
+        "Si instalas el sitio o lo usas sin conexión, tu navegador guarda en tu dispositivo una copia de los archivos del propio sitio (páginas, estilos, scripts e íconos). No se guarda ningún dato personal.",
       ] },
       { h: "El cuestionario", p: ["Las respuestas se procesan en tu navegador para mostrarte el resultado. El PDF también se genera en tu dispositivo.", "Solo si marcas «Acepto compartir mis respuestas de forma anónima» y pulsas Enviar, guardamos:"], ul: [
         "el idioma que usabas;",
@@ -50,6 +51,7 @@ export const PRIV = {
         "We use Vercel Web Analytics, which measures visits in aggregate, without cookies and without identifying you.",
         "Fonts and the PDF library are served from this same site: we load no third-party resources.",
         "Links to official sites and to GitHub (to report errors) are only followed if you click them; those sites have their own privacy policies.",
+        "If you install the site or use it offline, your browser keeps a copy of the site's own files (pages, styles, scripts and icons) on your device. No personal data is stored there.",
       ] },
       { h: "The questionnaire", p: ["Your answers are processed in your browser to show your result. The PDF is also generated on your device.", "Only if you tick “I agree to share my answers anonymously” and press Send do we store:"], ul: [
         "the language you were using;",
@@ -85,6 +87,7 @@ export const PRIV = {
         "Nous utilisons Vercel Web Analytics, qui mesure les visites de façon agrégée, sans témoins et sans t'identifier.",
         "Les polices et la bibliothèque PDF sont servies depuis ce même site : aucune ressource de tiers n'est chargée.",
         "Les liens vers les sites officiels et vers GitHub (pour signaler des erreurs) ne sont suivis que si tu cliques dessus; ces sites ont leur propre politique de confidentialité.",
+        "Si tu installes le site ou l'utilises hors ligne, ton navigateur garde sur ton appareil une copie des fichiers du site lui-même (pages, styles, scripts et icônes). Aucune donnée personnelle n'y est conservée.",
       ] },
       { h: "Le questionnaire", p: ["Tes réponses sont traitées dans ton navigateur pour afficher ton résultat. Le PDF est aussi généré sur ton appareil.", "Seulement si tu coches « J'accepte de partager mes réponses de façon anonyme » et que tu appuies sur Envoyer, nous enregistrons :"], ul: [
         "la langue que tu utilisais;",

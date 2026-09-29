@@ -16,6 +16,9 @@ It describes what each school and program offers, how to get in and when to appl
 - **Fraser Institute score** (out of 10), rank and previous-year score for each school, with a plain-language note on what the score does and does not measure.
 - **Filters and search** by board, program type, starting grade and how you get in, plus sorting by name or Fraser score.
 - **Side-by-side comparison** of up to 4 schools from any board.
+- **Interactive school map:** a self-contained SVG map (no tiles, no third-party requests) with the city outline, highways and all 33 schools. Drag, zoom (wheel, pinch, buttons), click a dot to open the profile; it follows the directory filters and marks schools saved in "My list". Map data © OpenStreetMap contributors (ODbL), simplified at build time into `js/map-data.js`; school coordinates come from the official addresses (DPCDSB PDF) or OSM.
+- **AP vs IB vs regular explainer**, a **year-over-year Fraser trend** (up/down vs the previous year), a **"data checked on" stamp** and a **Report an error** link (prefilled GitHub issue) on every profile.
+- **Installable and offline-friendly (PWA):** web app manifest, icons and a small service worker (network-first for pages and scripts, cache-first for fonts and images; it never touches `/api/`).
 - **My list:** star (☆/⭐) any school or program to build a personal shortlist, kept only on the device (`localStorage`, no account). The panel shows a plan with the dates that matter for the list and exports it to the calendar (one `.ics` with all dates), a PDF or plain text.
 - **"Take a break" mini game (Teen tone):** a tiny endless runner with the 67 as the hero, loaded on demand; the best score stays on the device.
 - **Program profiles:** click any regional program card to see who it is for, requirements (from Peel's official admissions table), how and when to apply, key dates (assessments, auditions, offer rounds), the information sessions at each host school, where it is offered (with links to the school profiles) and official links.
@@ -44,6 +47,11 @@ js/app.js           guide rendering, filters, comparison and language logic
 js/quiz-content.js  questionnaire text (es/en/fr), options and scoring weights
 js/quiz.js          questionnaire UI, recommendation engine, PDF export, anonymous share
 js/school-detail.js school and program profile modal shared by the guide and the results
+js/map.js           interactive SVG map; js/map-data.js is the generated map data
+js/mylist.js        "My list" shortlist (localStorage), plan and exports
+js/explainer.js     AP vs IB vs regular comparison
+js/game.js          the "67 Runner" mini game (lazy loaded, Teen tone)
+js/pwa.js, sw.js, manifest.webmanifest   installable app + offline support
 js/sessions.js      information sessions data (DPCDSB PDF + Peel nights), formatting and .ics export
 js/program-info.js  per-program details: audience, requirements, how to apply, key dates, links
 privacy.html        trilingual privacy policy (js/privacy.js, js/privacy-content.js)

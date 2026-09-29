@@ -1,3 +1,4 @@
+import "./pwa.js";
 import { LANGS, madeWith } from "./content.js";
 import { PRIV, CONTACT_URL, UPDATED } from "./privacy-content.js";
 

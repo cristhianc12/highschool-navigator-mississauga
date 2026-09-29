@@ -1,0 +1,19 @@
+{
+  "name": "Highschool Navigator Mississauga",
+  "short_name": "HS Navigator",
+  "description": "Guide to every high school in Mississauga: programs, dates, map and a shortlist.",
+  "lang": "en",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F6F4FF",
+  "theme_color": "#6D3DF2",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Vibe check (quiz)", "url": "/quiz", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Information sessions", "url": "/#charlas", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

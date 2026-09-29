@@ -41,6 +41,7 @@ export function toggle(type, id) {
   i >= 0 ? arr.splice(i, 1) : arr.push(id);
   write(v);
   refresh();
+  window.dispatchEvent(new Event("mylist:change"));
   if (dlg?.open) renderPanel();
 }
 

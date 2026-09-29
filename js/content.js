@@ -74,6 +74,12 @@ export const UI = {
     factSchoolsN: (n) => `${n} secundarias de Mississauga`,
     notice: "<b>Esta guía muestra lo que ofrece cada escuela; no recomienda ninguna.</b> Incluye la nota pública del Fraser Institute como referencia de cómo se ve cada escuela en resultados académicos. No mide los programas, el ambiente ni si la escuela es adecuada para cada estudiante.",
     scope: "Alcance: secundarias públicas y católicas de Mississauga, más una escuela en francés. No incluye escuelas privadas ni independientes (por ejemplo Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Los programas de cada escuela son los regionales confirmados en fuentes oficiales. Otras opciones, como los SHSM (especializaciones) y el Co-op (prácticas laborales con crédito), pueden variar: confírmalas con la escuela.",
+    map: {
+      nav: "Mapa", h: "Mapa de las escuelas",
+      p: "Ubica cada escuela en la ciudad. Toca un punto para abrir su perfil. Arrastra para moverte y usa los botones, la rueda o dos dedos para acercar. Respeta los filtros de arriba.",
+      aria: "Mapa interactivo de las secundarias de Mississauga", zoom: "Zoom", zoomIn: "Acercar", zoomOut: "Alejar", reset: "Ver toda la ciudad",
+      mine: "En mi lista", hint: "Los puntos atenuados no cumplen los filtros.", attrib: "Datos del mapa: © colaboradores de",
+    },
     list: {
       btn: "Mi lista", h: "Mi lista", local: "Se guarda solo en este dispositivo, sin cuenta.",
       add: "Guardar en mi lista", saved: "Guardado en mi lista",
@@ -270,6 +276,12 @@ export const UI = {
     factSchoolsN: (n) => `${n} high schools in Mississauga`,
     notice: "<b>This guide describes what is offered; it does not recommend any school.</b> It includes the Fraser Institute's public score as a reference for how each school is perceived on academic results. It does not measure programs, atmosphere or fit for each student.",
     scope: "Scope: public and Catholic high schools in Mississauga, plus one French-language school. Private and independent schools are excluded (for example Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). The programs listed per school are the regional programs confirmed in official sources; SHSM, Co-op and others may vary, so confirm them with the school.",
+    map: {
+      nav: "Map", h: "School map",
+      p: "See where each school is in the city. Tap a dot to open its profile. Drag to move around and use the buttons, the wheel or two fingers to zoom. It follows the filters above.",
+      aria: "Interactive map of Mississauga high schools", zoom: "Zoom", zoomIn: "Zoom in", zoomOut: "Zoom out", reset: "Show the whole city",
+      mine: "In my list", hint: "Dimmed dots do not match the filters.", attrib: "Map data: © contributors of",
+    },
     list: {
       btn: "My list", h: "My list", local: "Saved only on this device, no account.",
       add: "Save to my list", saved: "Saved to my list",
@@ -466,6 +478,12 @@ export const UI = {
     factSchoolsN: (n) => `${n} écoles secondaires à Mississauga`,
     notice: "<b>Ce guide décrit l'offre; il ne recommande aucune école.</b> Il inclut la cote publique de l'Institut Fraser comme repère de la perception de chaque école sur les résultats scolaires. Elle ne mesure ni les programmes, ni le climat, ni l'adéquation à chaque élève.",
     scope: "Portée : écoles secondaires publiques et catholiques de Mississauga, plus une école de langue française. Les écoles privées et indépendantes sont exclues (par exemple Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Les programmes indiqués pour chaque école sont les programmes régionaux confirmés dans les sources officielles; les MHS (SHSM), l'éducation coopérative et autres peuvent varier : confirmez-les auprès de l'école.",
+    map: {
+      nav: "Carte", h: "Carte des écoles",
+      p: "Vois où se trouve chaque école dans la ville. Touche un point pour ouvrir son profil. Glisse pour te déplacer et utilise les boutons, la molette ou deux doigts pour zoomer. La carte suit les filtres ci-dessus.",
+      aria: "Carte interactive des écoles secondaires de Mississauga", zoom: "Zoom", zoomIn: "Zoom avant", zoomOut: "Zoom arrière", reset: "Voir toute la ville",
+      mine: "Dans ma liste", hint: "Les points estompés ne correspondent pas aux filtres.", attrib: "Données de la carte : © contributeurs d'",
+    },
     list: {
       btn: "Ma liste", h: "Ma liste", local: "Conservée seulement sur cet appareil, sans compte.",
       add: "Ajouter à ma liste", saved: "Dans ma liste",

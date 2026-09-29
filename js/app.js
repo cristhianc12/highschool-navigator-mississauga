@@ -1,4 +1,5 @@
-import { initSchoolDetail } from "./school-detail.js";
+import { initSchoolDetail, renderSessionRow } from "./school-detail.js";
+import { SESSIONS } from "./sessions.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -14,6 +15,7 @@ const state = {
   lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
   filters: { q: "", system: "", tag: "", start: "", entry: "", sort: "name" },
+  sess: { area: "mississauga", board: "" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
 
@@ -103,10 +105,11 @@ function programCard(p) {
   const u = t();
   const hosts = p.hosts.map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("");
   const second = p.second ? `<p class="muted small"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : "";
-  return `<article class="card prog"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>
+  return `<article class="card prog clickable" data-pcard="${p.id}"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>
     <div class="where">${esc(u.host)}</div><ul class="hosts">${hosts}</ul>
     <p>${esc(L(p.p))}</p>${second}
-    <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span></div></article>`;
+    <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
+      <button type="button" class="viewbtn" data-program="${p.id}" aria-label="${esc(u.sess.pd.details)}: ${esc(L(p.name))}">${esc(u.sess.pd.details)} →</button></div></article>`;
 }
 
 function options(map, current) {
@@ -159,7 +162,7 @@ function renderShell() {
   const f = state.filters;
   const q = `quiz?lang=${state.lang}`;
   $("#desk-nav").innerHTML =
-    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>`;
+    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
   $("#bnav").innerHTML =
     `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
@@ -216,6 +219,15 @@ function renderShell() {
       <div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div>
       <div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div></section>
 
+  <section id="charlas"><div class="sec-head"><h2>${esc(u.sess.h)}</h2><p>${esc(u.sess.p)}</p></div>
+    <form class="filters" id="sess-filters" onsubmit="return false">
+      <label class="field">${esc(u.sess.area)}<select id="s-area">${[["mississauga", u.sess.miss], ["brampton", u.sess.bramp], ["caledon", u.sess.caledon], ["virtual", u.sess.virtual], ["", u.sess.all]].map(([v, l]) => `<option value="${v}" ${state.sess.area === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
+      <label class="field">${esc(u.sess.board)}<select id="s-board">${[["", u.sess.allBoards], ["dpcdsb", u.optSystem.dpcdsb], ["peel", u.optSystem.peel]].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
+    </form>
+    <p class="count" id="sess-count" aria-live="polite"></p>
+    <div class="slist" id="sess-list"></div>
+    <p class="small muted">${esc(u.sess.calNote)} ${esc(u.sess.source)}</p></section>
+
   <section id="capas"><div class="sec-head"><h2>${esc(u.capasH)}</h2><p>${esc(u.capasP)}</p></div>
     <div class="grid">${u.layers.map((l) => `<div class="card layer"><span class="tag">${esc(l.tag)}</span><h3>${esc(l.h)}</h3><p>${esc(l.p)}</p></div>`).join("")}</div></section>
 
@@ -239,6 +251,19 @@ function renderShell() {
   bindFilters();
   renderResults();
   renderCompare();
+  renderSessions();
+}
+
+function renderSessions() {
+  const u = t();
+  const today = new Date().toISOString().slice(0, 10);
+  let list = SESSIONS.filter((e) => !e.date || e.date >= today);
+  if (state.sess.area) list = list.filter((e) => e.city === state.sess.area);
+  if (state.sess.board) list = list.filter((e) => e.board === state.sess.board);
+  $("#sess-count").textContent = u.sess.count(list.length);
+  $("#sess-list").innerHTML = list.length
+    ? list.map((e) => renderSessionRow(e, { showSchool: true })).join("")
+    : `<div class="empty">${esc(u.sess.none)}</div>`;
 }
 
 function renderResults() {
@@ -316,6 +341,8 @@ function setCompare(id, on) {
 document.addEventListener("change", (e) => {
   if (e.target.matches("[data-cmp]")) setCompare(e.target.dataset.cmp, e.target.checked);
   if (e.target.id === "cmp-add" && e.target.value) setCompare(e.target.value, true);
+  if (e.target.id === "s-area") { state.sess.area = e.target.value; renderSessions(); }
+  if (e.target.id === "s-board") { state.sess.board = e.target.value; renderSessions(); }
 });
 document.addEventListener("click", (e) => {
   const rm = e.target.closest("[data-remove]");
@@ -351,9 +378,10 @@ $("#theme-btn").addEventListener("click", () => {
 });
 
 state.lang = detectLang();
-renderShell();
+// The profile modal is initialised first so its language getter is ready when rows are rendered.
 initSchoolDetail({
   getLang: () => state.lang,
   onCompare: (id) => setCompare(id, !state.compare.includes(id)),
   isCompared: (id) => state.compare.includes(id),
 });
+renderShell();

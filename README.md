@@ -16,6 +16,8 @@ It describes what each school and program offers, how to get in and when to appl
 - **Fraser Institute score** (out of 10), rank and previous-year score for each school, with a plain-language note on what the score does and does not measure.
 - **Filters and search** by board, program type, starting grade and how you get in, plus sorting by name or Fraser score.
 - **Side-by-side comparison** of up to 4 schools from any board.
+- **Program profiles:** click any regional program card to see who it is for, requirements (from Peel's official admissions table), how and when to apply, key dates (assessments, auditions, offer rounds), the information sessions at each host school, where it is offered (with links to the school profiles) and official links.
+- **Information session calendar:** DPCDSB's official fall 2026 session schedule (school by school, with program presentations, flyers and links) plus Peel's program information nights, filterable by area and board, with **Add to calendar (.ics)** buttons. Sessions also appear inside each school and program profile.
 - **School profile modal:** click any school (directory, comparison or questionnaire results) to see its Fraser score, programs, the regional programs it hosts and details, without leaving the page. Whole cards are clickable (with a visible "View profile" button and hover feedback) but text stays selectable: dragging, double or triple click to copy never opens the modal. Each profile has a shareable link (`#school-<id>`), Esc/Back closes it, and it is built on the native `<dialog>` element (bottom sheet on mobile).
 - **Grade-by-grade timeline**, glossary, key dates and questions to bring to info sessions.
 - **Teen-friendly design:** vibrant theme that follows the device light/dark setting, compact cards, one-tap "vibe" chips (IB, AP, Arts, STEM...), a sticky bottom navigation on mobile and a **Teen / Family tone switch** (same information, playful or neutral wording; light nods to trends live only in microcopy).
@@ -39,7 +41,9 @@ js/content.js       ALL guide content: UI text (es/en/fr), schools, programs, Fr
 js/app.js           guide rendering, filters, comparison and language logic
 js/quiz-content.js  questionnaire text (es/en/fr), options and scoring weights
 js/quiz.js          questionnaire UI, recommendation engine, PDF export, anonymous share
-js/school-detail.js school profile modal shared by the guide and the results
+js/school-detail.js school and program profile modal shared by the guide and the results
+js/sessions.js      information sessions data (DPCDSB PDF + Peel nights), formatting and .ics export
+js/program-info.js  per-program details: audience, requirements, how to apply, key dates, links
 privacy.html        trilingual privacy policy (js/privacy.js, js/privacy-content.js)
 api/submit.js       POST /api/submit: validated, anonymous insert into Postgres (Neon)
 api/cleanup.js      weekly retention job: deletes responses older than 24 months

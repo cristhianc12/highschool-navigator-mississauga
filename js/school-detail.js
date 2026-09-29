@@ -1,35 +1,91 @@
-// School profile modal, shared by the guide and the questionnaire results.
-// Any element with data-school="<id>" opens it. Uses the native <dialog> element, which gives
-// focus trapping, Esc to close and focus restoration for free. The URL hash (#school-<id>) makes
-// a profile shareable, and the browser Back button closes it.
+// Profile modal for schools and regional programs, shared by the guide and the questionnaire results.
+// Elements with data-school="<id>" / data-program="<id>" open it (and so do whole cards marked with
+// data-card / data-pcard). It uses the native <dialog> element, which provides focus trapping, Esc to
+// close and focus restoration. The URL hash (#school-<id> / #program-<id>) makes a profile shareable,
+// and the browser Back button closes it.
 import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content.js";
+import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
+import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const HASH = "#school-";
 const OFFICIAL = {
   dpcdsb: "https://www.dpcdsb.org/schools/school-directory",
   peel: "https://www.peelschools.org/",
 };
 
-// "St. Joseph CSS" and "St. Joseph" must match: strip punctuation, parentheses and CSS/SS.
-const key = (n) => String(n).toLowerCase().replace(/\(.*?\)/g, "").replace(/[.'’]/g, "").replace(/\b(css|ss)\b/g, "").replace(/\s+/g, " ").trim();
-
 let dlg = null;
 let ctx = { getLang: () => "en", onCompare: null, isCompared: null };
-let currentId = null;
+let current = null; // { type: "school" | "program", id }
+let depth = 0; // history entries pushed by the open modal
 
-export function hostedPrograms(school) {
-  const k = key(school.name);
-  return PROGRAMS.filter((p) => p.hosts.some((h) => key(h.n) === k));
+const langOf = () => ctx.getLang();
+const Lx = (o) => (o == null ? "" : typeof o === "string" ? o : o[langOf()] || o.en);
+const schoolByKey = (name) => SCHOOLS.find((s) => schoolKey(s.name) === schoolKey(name));
+
+/* ---------------- shared pieces ---------------- */
+
+function sessionRow(e, opts = {}) {
+  const u = UI[langOf()];
+  const S = u.sess;
+  const date = e.date ? esc(fmtDate(e.date, langOf())) : esc(S.tbc);
+  const time = e.time || e.timeNote ? esc(eventTime(e, langOf())) : (e.date ? esc(S.tba) : "");
+  const kind = e.kind === "program" ? S.kindProgram : e.kind === "general" ? S.kindGeneral : S.kindSchool;
+  const program = e.programId ? PROGRAMS.find((p) => p.id === e.programId) : null;
+  const what = e.kind === "program" && program ? `${TAG_ICON[program.tag] || ""} ${Lx(program.name)}` : (e.title || "");
+  const info = e.links.find((l) => l.label === "Link");
+  const flyers = e.links.filter((l) => /^Flyer/.test(l.label));
+  const school = schoolByKey(e.school);
+  const who = opts.showSchool
+    ? (school ? `<button type="button" class="viewlink" data-school="${school.id}">${esc(e.school)}</button>` : `<span>${esc(e.school)}</span>`)
+    : "";
+  const presented = (e.programIds || []).filter((p) => p.id || p.name).map((p) => {
+    const pr = PROGRAMS.find((x) => x.id === p.id);
+    return pr ? `<button type="button" class="viewlink" data-program="${pr.id}">${TAG_ICON[pr.tag] || ""} ${esc(Lx(pr.name))}</button>` : esc(p.name);
+  });
+  const btns = [
+    info ? `<a class="btn small" href="${info.url}" target="_blank" rel="noopener">${esc(S.info)} ↗</a>` : "",
+    ...flyers.map((f) => `<a class="btn small" href="${f.url}" target="_blank" rel="noopener">${esc(S.flyer)}${/English/.test(f.label) ? " (EN)" : /French/.test(f.label) ? " (FR)" : ""} ↗</a>`),
+    e.date ? `<button type="button" class="btn small" data-ics="${e.id}">📅 ${esc(S.cal)}</button>` : "",
+  ].join("");
+  return `<div class="srow">
+    <div class="sdate"><b>${date}</b><span>${time}</span></div>
+    <div class="sbody">
+      <div class="stitle">${who}${who ? " · " : ""}${esc(kind)}${what ? `: ${what.startsWith("<") ? what : esc(what)}` : ""}${e.format ? ` <span class="chip">${esc(e.format === "Virtual" ? S.virtual : e.format)}</span>` : ""}</div>
+      ${presented.length ? `<div class="small muted">${esc(S.presented)} ${presented.join(", ")}</div>` : ""}
+      ${btns ? `<div class="sbtns">${btns}</div>` : ""}
+    </div></div>`;
 }
 
-function render(school) {
-  const lang = ctx.getLang();
+function icsForEvent(id) {
+  const e = SESSIONS.find((x) => x.id === id);
+  if (!e || !e.date) return;
+  const S = UI[langOf()].sess;
+  const program = e.programId ? PROGRAMS.find((p) => p.id === e.programId) : null;
+  const title = e.kind === "program" && program ? `${S.kindProgram}: ${Lx(program.name)} – ${e.school}` : `${S.forSchool}: ${e.school}`;
+  const info = e.links.find((l) => l.label === "Link");
+  downloadIcs(e, title, `${S.calNote}${info ? " " + info.url : ""}`);
+}
+
+/** Session row markup, also used by the sessions calendar section of the guide. */
+export const renderSessionRow = (e, opts) => sessionRow(e, opts);
+
+const headHtml = (icon, title, sub, boardCls) => `<div class="dhead ${boardCls}">
+    <div class="mono" aria-hidden="true">${esc(icon)}</div>
+    <div class="dtitle"><h2>${esc(title)}</h2><p class="small muted">${sub}</p></div>
+    <button type="button" class="dclose" id="d-close" aria-label="${esc(UI[langOf()].detail.close)}">✕</button></div>`;
+
+const footHtml = (extra) => `<div class="dfoot">${extra}<button type="button" class="btn" id="d-copy">${esc(UI[langOf()].detail.copy)}</button><span class="small muted" id="d-msg" role="status" aria-live="polite"></span></div>`;
+
+/* ---------------- school profile ---------------- */
+
+function renderSchool(school) {
+  const lang = langOf();
   const u = UI[lang];
   const d = u.detail;
-  const L = (o) => (o == null ? "" : typeof o === "string" ? o : o[lang] || o.en);
+  const S = u.sess;
+  const L = Lx;
   const f = school.fraser;
-  const hosted = hostedPrograms(school);
+  const hostedList = PROGRAMS.filter((p) => p.hosts.some((h) => schoolKey(h.n) === schoolKey(school.name)));
   const initials = school.name.replace(/[^A-Za-zÀ-ÿ ]/g, "").split(" ").filter((w) => /^[A-ZÀ-Ý]/.test(w) && !/^(SS|CSS)$/.test(w)).slice(0, 2).map((w) => w[0]).join("") || school.name[0];
 
   const fraser = f
@@ -46,11 +102,17 @@ function render(school) {
        <ul class="dnotes">${school.progs.filter((p) => p.n).map((p) => `<li><b>${esc(L(TAGS[p.k]))}:</b> ${esc(L(p.n))}</li>`).join("")}</ul>`
     : `<p class="muted">${esc(u.noPrograms)}</p>`;
 
-  const hostedHtml = hosted.length
-    ? `<section class="dsec"><h3>${esc(d.hostedH)}</h3>${hosted.map((p) => `<article class="dprog">
+  const hostedHtml = hostedList.length
+    ? `<section class="dsec"><h3>${esc(d.hostedH)}</h3>${hostedList.map((p) => `<article class="dprog clickable" data-pcard="${p.id}">
         <h4>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h4><p class="small">${esc(L(p.p))}</p>
         ${p.second ? `<p class="small muted"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : ""}
-        <div class="chips"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span></div></article>`).join("")}</section>`
+        <div class="chips"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
+        <button type="button" class="viewbtn" data-program="${p.id}">${esc(S.pd.details)} →</button></div></article>`).join("")}</section>`
+    : "";
+
+  const sess = sessionsForSchool(school);
+  const sessHtml = sess.length
+    ? `<section class="dsec"><h3>${esc(S.forSchool)}</h3>${sess.map((e) => sessionRow(e)).join("")}<p class="small muted">${esc(S.calNote)}</p></section>`
     : "";
 
   const kv = school.kv
@@ -59,6 +121,8 @@ function render(school) {
     : "";
 
   const boardNote = school.board === "fr" ? `<p class="small muted">${esc(d.frenchNote)}</p>` : "";
+  const site = sess.map((e) => e.site).find(Boolean);
+  const siteBtn = site ? `<a class="btn" href="${site}" target="_blank" rel="noopener">${esc(S.website)} ↗</a>` : "";
   const official = OFFICIAL[school.board]
     ? `<a class="btn" href="${OFFICIAL[school.board]}" target="_blank" rel="noopener">${esc(d.officialLink)} ↗</a>` : "";
   const cmp = ctx.onCompare
@@ -66,17 +130,49 @@ function render(school) {
 
   dlg.setAttribute("aria-label", school.name);
   dlg.className = `sdlg board-${school.board}`;
-  dlg.innerHTML = `<div class="dhead board-${school.board}">
-      <div class="mono" aria-hidden="true">${esc(initials)}</div>
-      <div class="dtitle"><h2>${esc(school.name)}</h2><p class="small muted">${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}</p></div>
-      <button type="button" class="dclose" id="d-close" aria-label="${esc(d.close)}">✕</button></div>
-    <div class="dbody">
-      ${fraser}
-      <section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>
-      ${hostedHtml}${kv}${boardNote}
-    </div>
-    <div class="dfoot">${cmp}${official}<button type="button" class="btn" id="d-copy">${esc(d.copy)}</button><span class="small muted" id="d-msg" role="status" aria-live="polite"></span></div>`;
+  dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
+    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${kv}${boardNote}</div>` +
+    footHtml(cmp + siteBtn + (site ? "" : official));
 }
+
+/* ---------------- program profile ---------------- */
+
+function renderProgram(p) {
+  const lang = langOf();
+  const u = UI[lang];
+  const S = u.sess;
+  const P = S.pd;
+  const info = PROGRAM_INFO[p.id] || {};
+  const L = Lx;
+  const sess = sessionsForProgram(p);
+  const hosts = p.hosts.map((h) => {
+    const school = schoolByKey(h.n);
+    const name = h.n.replace(/ CSS| SS/g, "");
+    const label = school
+      ? `<button type="button" class="viewlink" data-school="${school.id}">${esc(h.n)}</button>`
+      : esc(h.n);
+    return `<li${h.m ? ' class="miss"' : ""}>${label}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`;
+  }).join("");
+
+  const links = [...(info.links || []), ...(p.board === "peel" ? [PEEL_MAIN_LINK] : [])]
+    .map((l) => `<a class="btn" href="${l.u}" target="_blank" rel="noopener">${esc(L(l.l))} ↗</a>`).join("");
+
+  dlg.setAttribute("aria-label", L(p.name));
+  dlg.className = `sdlg board-${p.board === "peel" ? "peel" : "dpcdsb"}`;
+  dlg.innerHTML = headHtml(TAG_ICON[p.tag] || "★", L(p.name), `${esc(L(BOARDS[p.board]))} · ${esc(u.startsAt[p.start])}`, `board-${p.board === "peel" ? "peel" : "dpcdsb"}`) +
+    `<div class="dbody">
+      <section class="dsec"><p>${esc(L(p.p))}</p>${info.who ? `<p class="dfocus"><b>${esc(P.who)}:</b> ${esc(L(info.who))}</p>` : ""}
+        ${p.second ? `<p class="small muted"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : ""}</section>
+      ${info.reqs ? `<section class="dsec"><h3>${esc(P.reqs)}</h3><ul class="dnotes">${info.reqs.map((r) => `<li>${esc(L(r))}</li>`).join("")}</ul></section>` : ""}
+      ${info.how ? `<section class="dsec"><h3>${esc(P.how)}</h3><p class="small">${esc(L(info.how))}</p>${info.dates ? `<p class="small muted">${esc(L(info.dates))}</p>` : ""}</section>` : ""}
+      ${info.keyDates ? `<section class="dsec"><h3>${esc(P.keyDates)}</h3><p class="small">${esc(L(info.keyDates))}</p></section>` : ""}
+      ${sess.length ? `<section class="dsec"><h3>${esc(P.sessions)}</h3>${sess.map((e) => sessionRow(e, { showSchool: true })).join("")}<p class="small muted">${esc(S.calNote)}</p></section>` : ""}
+      <section class="dsec"><h3>${esc(P.hosts)}</h3><ul class="hosts">${hosts}</ul></section>
+      ${links ? `<section class="dsec"><h3>${esc(P.links)}</h3><div class="sbtns">${links}</div></section>` : ""}
+    </div>` + footHtml("");
+}
+
+/* ---------------- open / close ---------------- */
 
 function ensureDialog() {
   if (dlg) return;
@@ -84,71 +180,87 @@ function ensureDialog() {
   dlg.className = "sdlg";
   document.body.appendChild(dlg);
   dlg.addEventListener("click", (e) => {
-    if (e.target === dlg) return closeSchool(); // click on the backdrop
-    if (e.target.closest("#d-close")) return closeSchool();
-    if (e.target.closest("#d-copy")) {
-      const url = location.origin + location.pathname + location.search + HASH + currentId;
-      const d = UI[ctx.getLang()].detail;
+    if (e.target === dlg) return closeProfile(); // click on the backdrop
+    if (e.target.closest("#d-close")) return closeProfile();
+    const ics = e.target.closest("[data-ics]");
+    if (ics) return icsForEvent(ics.dataset.ics);
+    if (e.target.closest("#d-copy") && current) {
+      const url = location.origin + location.pathname + location.search + "#" + current.type + "-" + current.id;
+      const d = UI[langOf()].detail;
       navigator.clipboard?.writeText(url).then(() => { dlg.querySelector("#d-msg").textContent = d.copied; }).catch(() => {});
     }
-    if (e.target.closest("#d-compare") && ctx.onCompare) {
-      ctx.onCompare(currentId);
-      const d = UI[ctx.getLang()].detail;
-      dlg.querySelector("#d-compare").textContent = ctx.isCompared?.(currentId) ? d.inCompare : d.addCompare;
+    if (e.target.closest("#d-compare") && ctx.onCompare && current?.type === "school") {
+      ctx.onCompare(current.id);
+      const d = UI[langOf()].detail;
+      dlg.querySelector("#d-compare").textContent = ctx.isCompared?.(current.id) ? d.inCompare : d.addCompare;
     }
   });
   // Esc or a programmatic close: keep the URL in sync.
   dlg.addEventListener("close", () => {
-    if (currentId && location.hash.startsWith(HASH)) history.replaceState(null, "", location.pathname + location.search);
-    currentId = null;
+    if (current && /^#(school|program)-/.test(location.hash)) history.replaceState(null, "", location.pathname + location.search);
+    current = null;
+    depth = 0;
   });
 }
 
-export function openSchool(id) {
-  const school = SCHOOLS.find((s) => s.id === id);
-  if (!school) return;
+function openProfile(type, id) {
+  const item = type === "school" ? SCHOOLS.find((s) => s.id === id) : PROGRAMS.find((p) => p.id === id);
+  if (!item) return;
   ensureDialog();
-  currentId = id;
-  render(school);
+  current = { type, id };
+  type === "school" ? renderSchool(item) : renderProgram(item);
   if (!dlg.open) dlg.showModal();
   dlg.querySelector(".dbody").scrollTop = 0;
-  if (location.hash !== HASH + id) history.pushState({ school: id }, "", location.pathname + location.search + HASH + id);
+  const hash = `#${type}-${id}`;
+  if (location.hash !== hash) { history.pushState({ profile: true }, "", location.pathname + location.search + hash); depth++; }
 }
 
-export function closeSchool() {
+export const openSchool = (id) => openProfile("school", id);
+export const openProgram = (id) => openProfile("program", id);
+
+export function closeProfile() {
   if (!dlg?.open) return;
-  // If we pushed a history entry, going back closes it and keeps Back consistent.
-  if (history.state?.school) history.back();
+  // Undo every history entry pushed while the modal was open (a program can open a school, etc.),
+  // so closing lands back on the page and Back stays consistent.
+  if (depth > 0) { const n = depth; depth = 0; history.go(-n); }
   else dlg.close();
 }
+export const closeSchool = closeProfile;
+
+const fromHash = () => {
+  const m = location.hash.match(/^#(school|program)-(.+)$/);
+  return m ? { type: m[1], id: m[2] } : null;
+};
 
 export function initSchoolDetail(options = {}) {
   ctx = { ...ctx, ...options };
   let cardTimer = null;
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-school]");
-    if (t) { e.preventDefault(); openSchool(t.dataset.school); return; }
+    const ics = e.target.closest("[data-ics]");
+    if (ics && !dlg?.contains(ics)) { icsForEvent(ics.dataset.ics); return; }
+
+    const s = e.target.closest("[data-school]");
+    if (s) { e.preventDefault(); openSchool(s.dataset.school); return; }
+    const p = e.target.closest("[data-program]");
+    if (p) { e.preventDefault(); openProgram(p.dataset.program); return; }
 
     // Whole-card click. It must never get in the way of copying text, so it does nothing when the
     // person is selecting (drag, double or triple click) and waits a moment before opening.
-    const card = e.target.closest("[data-card]");
-    if (!card || e.target.closest("a, button, input, label, select, textarea, summary, dialog")) return;
+    const card = e.target.closest("[data-card], [data-pcard]");
+    if (!card || e.target.closest("a, button, input, label, select, textarea, summary")) return;
     clearTimeout(cardTimer);
     if (e.detail > 1) return; // double / triple click = selecting a word or paragraph
-    const id = card.dataset.card;
+    const open = card.dataset.card ? () => openSchool(card.dataset.card) : () => openProgram(card.dataset.pcard);
     cardTimer = setTimeout(() => {
       if (String(window.getSelection?.() || "").trim()) return; // text is selected: leave it alone
-      openSchool(id);
+      open();
     }, 260);
   });
   window.addEventListener("popstate", () => {
-    if (location.hash.startsWith(HASH)) openSchool(location.hash.slice(HASH.length));
+    const h = fromHash();
+    if (h) { depth = Math.max(0, depth - 1); openProfile(h.type, h.id); }
     else if (dlg?.open) dlg.close();
   });
-  if (location.hash.startsWith(HASH)) openSchool(location.hash.slice(HASH.length));
-}
-
-/** Re-render the open profile (e.g. after a language change). */
-export function refreshSchool() {
-  if (dlg?.open && currentId) { const s = SCHOOLS.find((x) => x.id === currentId); if (s) render(s); }
+  const h = fromHash();
+  if (h) openProfile(h.type, h.id);
 }

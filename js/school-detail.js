@@ -23,7 +23,36 @@ const langOf = () => ctx.getLang();
 const Lx = (o) => (o == null ? "" : typeof o === "string" ? o : o[langOf()] || o.en);
 const schoolByKey = (name) => SCHOOLS.find((s) => schoolKey(s.name) === schoolKey(name));
 
+/* ---------------- verification stamp and error reports ---------------- */
+
+export const VERIFIED = "2026-09-29"; // update whenever the data is re-checked against official sources
+const REPO = "https://github.com/cristhianc12/highschool-navigator-mississauga";
+const VTXT = {
+  es: { checked: "Datos verificados el", report: "Reportar un error", title: "Error en los datos", body: (n) => `Sitio: ${n}\n\n¿Qué está mal o desactualizado?\n\nFuente oficial (enlace):\n` },
+  en: { checked: "Data checked on", report: "Report an error", title: "Data error", body: (n) => `Page: ${n}\n\nWhat is wrong or out of date?\n\nOfficial source (link):\n` },
+  fr: { checked: "Données vérifiées le", report: "Signaler une erreur", title: "Erreur dans les données", body: (n) => `Page : ${n}\n\nQu'est-ce qui est erroné ou périmé?\n\nSource officielle (lien) :\n` },
+};
+export function reportUrl(name, lang) {
+  const t = VTXT[lang] || VTXT.en;
+  return `${REPO}/issues/new?title=${encodeURIComponent(`${t.title}: ${name}`)}&body=${encodeURIComponent(t.body(name))}`;
+}
+export function verifiedHtml(name) {
+  const lang = langOf();
+  const t = VTXT[lang];
+  const locale = { es: "es-CO", en: "en-CA", fr: "fr-CA" }[lang];
+  const date = new Date(VERIFIED + "T12:00:00").toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
+  return `<p class="dverified small muted">${esc(t.checked)} ${esc(date)} · <a href="${reportUrl(name, lang)}" target="_blank" rel="noopener">${esc(t.report)}</a></p>`;
+}
+
 /* ---------------- shared pieces ---------------- */
+
+function trendChip(f, u) {
+  if (f.prev == null) return "";
+  const d = Math.round((f.score - f.prev) * 10) / 10;
+  const t = esc(u.fraserPrev(f.prev.toFixed(1)));
+  if (d === 0) return `<span class="trend flat" title="${t}">= 0.0</span>`;
+  return `<span class="trend ${d > 0 ? "up" : "down"}" title="${t}"><span aria-hidden="true">${d > 0 ? "▲" : "▼"}</span> ${d > 0 ? "+" : "−"}${Math.abs(d).toFixed(1)}</span>`;
+}
 
 function sessionRow(e, opts = {}) {
   const u = UI[langOf()];
@@ -91,7 +120,7 @@ function renderSchool(school) {
 
   const fraser = f
     ? `<section class="dsec"><h3>${esc(d.fraserH)}</h3>
-        <div class="dfraser"><div class="dscore">${f.score.toFixed(1)}<small> ${esc(u.fraserOf)}</small></div>
+        <div class="dfraser"><div class="dscore">${f.score.toFixed(1)}<small> ${esc(u.fraserOf)}</small></div>${trendChip(f, u)}
         <div class="dbar"><div class="bar" role="img" aria-label="${f.score.toFixed(1)} ${esc(u.fraserOf)}"><i style="width:${f.score * 10}%"></i></div>
         <p class="small muted">${esc(u.fraserRank(f.rank))}${f.prev == null ? "" : ` · ${esc(u.fraserPrev(f.prev.toFixed(1)))}`}</p></div></div>
         ${school.fnote ? `<p class="small warnnote">${esc(L(school.fnote))}</p>` : ""}
@@ -132,7 +161,7 @@ function renderSchool(school) {
   dlg.setAttribute("aria-label", school.name);
   dlg.className = `sdlg board-${school.board}`;
   dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
-    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${kv}${boardNote}</div>` +
+    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
     footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
 }
 
@@ -170,6 +199,7 @@ function renderProgram(p) {
       ${sess.length ? `<section class="dsec"><h3>${esc(P.sessions)}</h3>${sess.map((e) => sessionRow(e, { showSchool: true })).join("")}<p class="small muted">${esc(S.calNote)}</p></section>` : ""}
       <section class="dsec"><h3>${esc(P.hosts)}</h3><ul class="hosts">${hosts}</ul></section>
       ${links ? `<section class="dsec"><h3>${esc(P.links)}</h3><div class="sbtns">${links}</div></section>` : ""}
+      ${verifiedHtml(L(p.name))}
     </div>` + footHtml(starBtn("program", p.id, { label: true }));
 }
 

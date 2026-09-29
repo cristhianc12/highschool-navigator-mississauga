@@ -259,6 +259,17 @@ button.opener:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .prog .meta .viewbtn{margin-left:auto}
 .btn.small{padding:6px 11px;font-size:13px}
 
+.dverified{padding-top:14px;border-top:1px solid var(--line);margin-top:6px}
+.trend{font:700 12.5px var(--font-body);padding:2px 8px;border-radius:999px;background:var(--surface2);color:var(--muted);white-space:nowrap}
+.trend.up{color:var(--accent)}
+
+/* AP vs IB explainer */
+.explain{min-width:760px}
+.explain th[scope="row"]{width:150px}
+.explain td{font-size:14px;line-height:1.45}
+.explain thead th{white-space:nowrap}
+.explain thead .viewlink{font-size:12.5px;margin-left:6px}
+
 /* My list */
 .star{all:unset;box-sizing:border-box;cursor:pointer;flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:17px;border:1px solid var(--line);background:var(--surface);transition:transform .12s,border-color .12s}
 .star:hover{border-color:var(--accent);transform:scale(1.08)}

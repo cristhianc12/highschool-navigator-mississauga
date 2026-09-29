@@ -1,5 +1,6 @@
-import { initSchoolDetail, renderSessionRow } from "./school-detail.js";
+import { initSchoolDetail, renderSessionRow, reportUrl } from "./school-detail.js";
 import { SESSIONS } from "./sessions.js";
+import { EXPLAINER } from "./explainer.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 
@@ -68,6 +69,14 @@ function progChips(s) {
   return s.progs.map((p) => `<span class="chip" ${p.n ? `title="${esc(L(p.n))}"` : ""}>${TAG_ICON[p.k] || ""} ${esc(L(TAGS[p.k]))}</span>`).join("");
 }
 
+// Change versus the previous year (2023-24 -> 2024-25). Neutral colours: it is information, not a verdict.
+function trendChip(f, u) {
+  if (f.prev == null) return "";
+  const d = Math.round((f.score - f.prev) * 10) / 10;
+  if (d === 0) return `<span class="trend flat" title="${esc(u.fraserPrev(f.prev.toFixed(1)))}">= 0.0</span>`;
+  return `<span class="trend ${d > 0 ? "up" : "down"}" title="${esc(u.fraserPrev(f.prev.toFixed(1)))}"><span aria-hidden="true">${d > 0 ? "▲" : "▼"}</span> ${d > 0 ? "+" : "−"}${Math.abs(d).toFixed(1)}</span>`;
+}
+
 function fraserBlock(s) {
   const u = t();
   if (!s.fraser) return `<div class="fraser"><span class="small muted">${esc(u.fraserNone)}</span></div>`;
@@ -77,6 +86,7 @@ function fraserBlock(s) {
   const sticker = state.tone === "teen" && f.score === 6.7 ? `<span class="sticker">${esc(u.sticker)}</span>` : "";
   return `<div class="fraser">
     <div class="fraser-pill"><small>${esc(u.fraserLabel)}</small>${f.score.toFixed(1)}<small>${esc(u.fraserOf)}</small></div>
+    ${trendChip(f, u)}
     ${sticker}
     <div class="bar" role="img" aria-label="${f.score.toFixed(1)} ${esc(u.fraserOf)}"><i style="width:${f.score * 10}%"></i></div>
     <div class="meta">${esc(u.fraserRank(f.rank))}${prev}${s.fnote ? ` · <span class="warnnote">${esc(L(s.fnote))}</span>` : ""}</div>
@@ -123,6 +133,15 @@ function tagOptions(current) {
   const u = t();
   return `<option value="">${esc(u.all)}</option>` +
     Object.keys(TAGS).map((k) => `<option value="${k}" ${current === k ? "selected" : ""}>${esc(L(TAGS[k]))}</option>`).join("");
+}
+
+function explainerHtml() {
+  const E = EXPLAINER;
+  const head = E.cols.map((c) => `<th scope="col">${esc(L(c.head))}${c.program ? ` <button type="button" class="viewlink" data-program="${c.program}">${esc(L(E.see))} →</button>` : ""}</th>`).join("");
+  const rows = E.rows.map((r) => `<tr><th scope="row">${esc(L(r.l))}</th>${r.c.map((cell) => `<td>${esc(L(cell))}</td>`).join("")}</tr>`).join("");
+  return `<section id="comparativa"><div class="sec-head"><h2>${esc(L(E.h))}</h2><p>${esc(L(E.p))}</p></div>
+    <div class="cmp-wrap"><table class="cmp-table explain"><thead><tr><th scope="col"></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="small muted" style="margin-top:10px">${esc(L(E.note))}</p></section>`;
 }
 
 function timeline() {
@@ -234,6 +253,8 @@ function renderShell() {
 
   <section id="grados"><div class="sec-head"><h2>${esc(u.gradosH)}</h2><p>${esc(u.gradosP)}</p></div>${timeline()}</section>
 
+  ${explainerHtml()}
+
   <section id="siglas"><div class="sec-head"><h2>${esc(u.siglasH)}</h2></div>
     <dl class="gl">${u.glossary.map(([k, d, m]) => `<div class="gl-row"><dt>${esc(k)}</dt><dd>${esc(d)}${m ? ` <span>${esc(m)}</span>` : ""}</dd></div>`).join("")}</dl></section>
 
@@ -251,7 +272,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
   bindFilters();
   renderResults();
   renderCompare();

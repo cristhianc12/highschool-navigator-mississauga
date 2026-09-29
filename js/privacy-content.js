@@ -14,6 +14,7 @@ export const PRIV = {
         "Mientras haces el cuestionario, tu avance se guarda en esta pestaña del navegador (sessionStorage) para que no pierdas tu resultado si abres otra página. Se queda en tu dispositivo y desaparece al cerrar la pestaña.",
         "Usamos Vercel Web Analytics, que mide visitas de forma agregada, sin cookies y sin identificarte.",
         "Las fuentes y la librería del PDF se sirven desde este mismo sitio: no cargamos recursos de terceros.",
+        "Los enlaces a sitios oficiales y a GitHub (para reportar errores) solo se abren si haces clic en ellos; esos sitios tienen sus propias políticas de privacidad.",
       ] },
       { h: "El cuestionario", p: ["Las respuestas se procesan en tu navegador para mostrarte el resultado. El PDF también se genera en tu dispositivo.", "Solo si marcas «Acepto compartir mis respuestas de forma anónima» y pulsas Enviar, guardamos:"], ul: [
         "el idioma que usabas;",
@@ -48,6 +49,7 @@ export const PRIV = {
         "While you take the questionnaire, your progress is kept in this browser tab (sessionStorage) so you do not lose your results if you open another page. It stays on your device and disappears when you close the tab.",
         "We use Vercel Web Analytics, which measures visits in aggregate, without cookies and without identifying you.",
         "Fonts and the PDF library are served from this same site: we load no third-party resources.",
+        "Links to official sites and to GitHub (to report errors) are only followed if you click them; those sites have their own privacy policies.",
       ] },
       { h: "The questionnaire", p: ["Your answers are processed in your browser to show your result. The PDF is also generated on your device.", "Only if you tick “I agree to share my answers anonymously” and press Send do we store:"], ul: [
         "the language you were using;",
@@ -82,6 +84,7 @@ export const PRIV = {
         "Pendant le questionnaire, ta progression est conservée dans cet onglet du navigateur (sessionStorage) pour que tu ne perdes pas ton résultat si tu ouvres une autre page. Elle reste sur ton appareil et disparaît à la fermeture de l'onglet.",
         "Nous utilisons Vercel Web Analytics, qui mesure les visites de façon agrégée, sans témoins et sans t'identifier.",
         "Les polices et la bibliothèque PDF sont servies depuis ce même site : aucune ressource de tiers n'est chargée.",
+        "Les liens vers les sites officiels et vers GitHub (pour signaler des erreurs) ne sont suivis que si tu cliques dessus; ces sites ont leur propre politique de confidentialité.",
       ] },
       { h: "Le questionnaire", p: ["Tes réponses sont traitées dans ton navigateur pour afficher ton résultat. Le PDF est aussi généré sur ton appareil.", "Seulement si tu coches « J'accepte de partager mes réponses de façon anonyme » et que tu appuies sur Envoyer, nous enregistrons :"], ul: [
         "la langue que tu utilisais;",

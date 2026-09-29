@@ -304,7 +304,7 @@ button.opener:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .mapitem .star{grid-column:2;grid-row:1}
 .mapitem .viewbtn{grid-column:1 / 3;justify-self:start;padding:4px 10px;font-size:12.5px}
 .mapmain{min-width:0}
-.mapstage{position:relative;height:min(74vh,640px);min-height:380px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface2)}
+.mapstage{position:relative;z-index:0;isolation:isolate;height:min(74vh,640px);min-height:380px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface2)}
 .mapstage.leaflet-container{font-family:var(--font-body)}
 .mapstage.picking,.mapstage .picking{cursor:crosshair}
 .maploading{display:grid;place-items:center;height:100%}

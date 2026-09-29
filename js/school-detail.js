@@ -7,6 +7,7 @@ import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content
 import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
 import { starBtn } from "./mylist.js";
 import { EXTRAS } from "./school-extras.js";
+import { ADM_UI, admissionsForProgram, admissionsForSchool } from "./admissions.js";
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -116,6 +117,27 @@ const footHtml = (extra) => `<div class="dfoot">${extra}<button type="button" cl
 
 /* ---------------- school profile ---------------- */
 
+// "What you need to get in": verified admission details for a school-level program (see admissions.js).
+function admissionHtml(entries, where) {
+  if (!entries.length) return "";
+  const A = ADM_UI[langOf()];
+  const L = Lx;
+  const row = (label, body) => (body ? `<dt>${esc(label)}</dt><dd>${body}</dd>` : "");
+  const cards = entries.map((a) => {
+    const school = SCHOOLS.find((s) => s.id === a.school);
+    const prog = PROGRAMS.find((p) => p.id === a.prog);
+    const title = where === "program" ? `${A.forProgram} ${school ? school.name : ""}` : (prog ? L(prog.name) : "");
+    return `<article class="dprog adm"><h4>${esc(title)}</h4><dl class="kv">
+      ${row(A.elig, esc(L(a.elig)))}
+      ${row(A.submit, `<ul class="dnotes">${a.submit.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>`)}
+      ${row(A.marks, esc(L(a.marks)))}
+      ${row(A.fee, esc(L(a.fee)))}
+      ${row(A.dates, esc(L(a.dates)))}</dl>
+      <div class="sbtns"><a class="btn small" href="${a.url}" target="_blank" rel="noopener">${esc(A.src)} ↗</a></div></article>`;
+  }).join("");
+  return `<section class="dsec"><h3>${esc(A.h)}</h3>${cards}<p class="small muted">${esc(A.checked)}</p></section>`;
+}
+
 function renderSchool(school) {
   const lang = langOf();
   const u = UI[lang];
@@ -181,7 +203,7 @@ function renderSchool(school) {
   dlg.setAttribute("aria-label", school.name);
   dlg.className = `sdlg board-${school.board}`;
   dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
-    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
+    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${admissionHtml(admissionsForSchool(school.id), "school")}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
     footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
   // Course list is loaded only when the person opens it (86 KB of data).
   const det = dlg.querySelector("[data-courses]");
@@ -220,6 +242,7 @@ function renderProgram(p) {
     `<div class="dbody">
       <section class="dsec"><p>${esc(L(p.p))}</p>${info.who ? `<p class="dfocus"><b>${esc(P.who)}:</b> ${esc(L(info.who))}</p>` : ""}
         ${p.second ? `<p class="small muted"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : ""}</section>
+      ${admissionHtml(admissionsForProgram(p.id), "program")}
       ${info.reqs ? `<section class="dsec"><h3>${esc(P.reqs)}</h3><ul class="dnotes">${info.reqs.map((r) => `<li>${esc(L(r))}</li>`).join("")}</ul></section>` : ""}
       ${info.how ? `<section class="dsec"><h3>${esc(P.how)}</h3><p class="small">${esc(L(info.how))}</p>${info.dates ? `<p class="small muted">${esc(L(info.dates))}</p>` : ""}</section>` : ""}
       ${info.keyDates ? `<section class="dsec"><h3>${esc(P.keyDates)}</h3><p class="small">${esc(L(info.keyDates))}</p></section>` : ""}

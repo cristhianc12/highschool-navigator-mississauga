@@ -8,7 +8,7 @@ export const LANGS = ["es", "en", "fr"];
 /* Signature line shown discreetly at the bottom of every page. */
 const MADE_WITH = {
   en: "Made with love by a loving parent",
-  es: "Hecho con amor por un papá o mamá que los adora",
+  es: "Hecho con amor por papá y mamá, que los adoran",
   fr: "Fait avec amour par un parent aimant",
 };
 export const madeWith = (lang) => `${MADE_WITH[lang] || MADE_WITH.en} ❤ <b>SBR · CBR</b>`;

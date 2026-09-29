@@ -9,6 +9,13 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
 };
 
+const sess = {
+  get(k) { try { return sessionStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { sessionStorage.setItem(k, v); } catch { /* storage unavailable */ } },
+  del(k) { try { sessionStorage.removeItem(k); } catch { /* storage unavailable */ } },
+};
+const SAVE_KEY = "quizProgress";
+
 const state = {
   lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
@@ -227,7 +234,7 @@ function renderResults() {
     <div class="share">
       <h2>${esc(u.shareH)}</h2>
       <p class="small muted">${esc(u.shareP)}</p>
-      <p class="small"><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a></p>
+      <p class="small"><a href="privacy?lang=${state.lang}" target="_blank" rel="noopener">${esc(u.privacy)}</a></p>
       <label class="check"><input type="checkbox" id="consent" ${state.shared ? "checked disabled" : ""}> ${esc(u.shareCheck)}</label>
       <button type="button" class="btn" id="share" disabled>${esc(u.shareBtn)}</button>
       <p class="small" id="share-msg" role="status" aria-live="polite"></p>
@@ -239,7 +246,22 @@ function renderResults() {
 /* Events                                                              */
 /* ------------------------------------------------------------------ */
 
-function go(step) { state.step = step; if (step >= TOTAL) state.result = recommend(state.answers); render(); }
+function saveProgress() {
+  sess.set(SAVE_KEY, JSON.stringify({ step: state.step, answers: state.answers, shared: state.shared }));
+}
+
+function restoreProgress() {
+  try {
+    const p = JSON.parse(sess.get(SAVE_KEY) || "null");
+    if (!p || typeof p.step !== "number" || typeof p.answers !== "object") return;
+    state.answers = p.answers;
+    state.shared = !!p.shared;
+    state.step = Math.min(Math.max(p.step, -1), TOTAL);
+    if (state.step >= TOTAL) state.result = recommend(state.answers);
+  } catch { /* ignore corrupt data */ }
+}
+
+function go(step) { state.step = step; if (step >= TOTAL) state.result = recommend(state.answers); saveProgress(); render(); }
 
 document.addEventListener("click", (e) => {
   const lang = e.target.closest("[data-lang]");
@@ -254,7 +276,7 @@ document.addEventListener("click", (e) => {
   if (e.target.closest("#prev")) return go(Math.max(0, state.step - 1));
   if (e.target.closest("#skip-q")) return go(state.step + 1);
   if (e.target.closest("#next")) return advance();
-  if (e.target.closest("#retake")) { state.answers = {}; state.result = null; state.shared = false; return go(-1); }
+  if (e.target.closest("#retake")) { state.answers = {}; state.result = null; state.shared = false; sess.del(SAVE_KEY); return go(-1); }
   if (e.target.closest("#pdf")) return makePdf();
   if (e.target.closest("#share")) return share();
   const opt = e.target.closest("[data-opt]");
@@ -268,6 +290,7 @@ function pick(v) {
   if (q.type === "multi") {
     const cur = asArray(state.answers[q.id]);
     state.answers[q.id] = cur.includes(v) ? cur.filter((x) => x !== v) : cur.length < q.max ? [...cur, v] : cur;
+    saveProgress();
     const app = $("#app");
     app.querySelectorAll("[data-opt]").forEach((b) => {
       const on = state.answers[q.id].includes(b.dataset.opt);
@@ -276,6 +299,7 @@ function pick(v) {
     $("#next").disabled = state.answers[q.id].length === 0;
   } else {
     state.answers[q.id] = v;
+    saveProgress();
     render();
     setTimeout(() => { if (state.step < TOTAL && QUESTIONS[state.step]?.id === q.id) advance(); }, 220);
   }
@@ -302,7 +326,7 @@ async function share() {
   };
   try {
     const res = await fetch("/api/submit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    if (res.ok) { state.shared = true; msg.textContent = u.shareOk; $("#consent").disabled = true; return; }
+    if (res.ok) { state.shared = true; saveProgress(); msg.textContent = u.shareOk; $("#consent").disabled = true; return; }
     msg.textContent = res.status === 404 || res.status === 503 ? u.shareOff : u.shareErr;
   } catch {
     msg.textContent = u.shareErr;
@@ -427,4 +451,5 @@ $("#theme-btn").addEventListener("click", () => {
 });
 
 state.lang = detectLang();
+restoreProgress();
 render();

@@ -73,7 +73,12 @@ function sessionRow(e, opts = {}) {
     const pr = PROGRAMS.find((x) => x.id === p.id);
     return pr ? `<button type="button" class="viewlink" data-program="${pr.id}">${TAG_ICON[pr.tag] || ""} ${esc(Lx(pr.name))}</button>` : esc(p.name);
   });
+  const reg = e.links.find((l) => l.label === "Register");
+  const join = e.links.find((l) => l.label === "Join");
+  const virtualNoLink = e.format === "Virtual" && !reg && !join;
   const btns = [
+    reg ? `<a class="btn small primary" href="${reg.url}" target="_blank" rel="noopener">${esc(S.register)} ↗</a>` : "",
+    join ? `<a class="btn small primary" href="${join.url}" target="_blank" rel="noopener">${esc(S.join)} ↗</a>` : "",
     info ? `<a class="btn small" href="${info.url}" target="_blank" rel="noopener">${esc(S.info)} ↗</a>` : "",
     ...flyers.map((f) => `<a class="btn small" href="${f.url}" target="_blank" rel="noopener">${esc(S.flyer)}${/English/.test(f.label) ? " (EN)" : /French/.test(f.label) ? " (FR)" : ""} ↗</a>`),
     e.date ? `<button type="button" class="btn small" data-ics="${e.id}">📅 ${esc(S.cal)}</button>` : "",
@@ -83,6 +88,8 @@ function sessionRow(e, opts = {}) {
     <div class="sbody">
       <div class="stitle">${who}${who ? " · " : ""}${esc(kind)}${what ? `: ${what.startsWith("<") ? what : esc(what)}` : ""}${e.format ? ` <span class="chip">${esc(e.format === "Virtual" ? S.virtual : e.format)}</span>` : ""}</div>
       ${presented.length ? `<div class="small muted">${esc(S.presented)} ${presented.join(", ")}</div>` : ""}
+      ${e.about ? `<p class="small muted">${esc(e.about[langOf()] || e.about.en)}</p>` : ""}
+      ${virtualNoLink ? `<p class="small warnnote">${esc(S.linkTbc)}</p>` : ""}
       ${btns ? `<div class="sbtns">${btns}</div>` : ""}
     </div></div>`;
 }

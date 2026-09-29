@@ -632,6 +632,13 @@ const DPCDSB_RAW = [
 // Peel regional-program information nights. programId matches PROGRAMS[].id in content.js.
 // time/end are 24h; note is the original wording when there are several slots.
 const P = (programId, school, city, date, time, end, note, format) => ({ programId, school, city, date, time, end, note, format });
+const PEEL_PAGE = "https://www.peelschools.org/secondary-regional-learning-choice-programs";
+// Regional-program applications (2027-28): Nov 3 – Nov 24, 2026, per Peel's program page.
+const PEEL_ABOUT = {
+  es: "Las solicitudes a programas regionales de Peel para 2027-28 abren el 3 de nov. de 2026 y cierran el 24 de nov. de 2026.",
+  en: "Peel regional-program applications for 2027-28 open Nov 3, 2026 and close Nov 24, 2026.",
+  fr: "Les demandes aux programmes régionaux de Peel pour 2027-2028 ouvrent le 3 nov. 2026 et ferment le 24 nov. 2026.",
+};
 const PEEL_NIGHTS = [
   P("p-ap", "Central Peel SS", "brampton", "2026-10-22", "17:00", "18:00", "5–6 p.m. or 7–8 p.m."),
   P("p-ap", "John Fraser SS", "mississauga", "2026-10-22", null, null, null, "Virtual"),
@@ -676,9 +683,19 @@ for (const s of DPCDSB_RAW) {
   }
 }
 for (const p of PEEL_NIGHTS) {
-  events.push(ev({ board: "peel", kind: "program", school: p.school, city: p.city, programId: p.programId, date: p.date, time: p.time, end: p.end, timeNote: p.note, format: p.format || null, links: [] }));
+  events.push(ev({ board: "peel", kind: "program", school: p.school, city: p.city, programId: p.programId, date: p.date, time: p.time, end: p.end, timeNote: p.note, format: p.format || null, links: [{ label: "Link", url: PEEL_PAGE }], about: PEEL_ABOUT }));
 }
-events.push(ev({ board: "peel", kind: "general", school: "Peel DSB", city: "virtual", title: "High school programs information night for families of Black students", date: "2026-10-06", time: "18:00", end: "19:00", timeNote: "6–7 p.m.", format: "Virtual", links: [] }));
+events.push(ev({
+  board: "peel", kind: "general", school: "Peel DSB", city: "virtual",
+  title: "High school programs information night for families of Black students",
+  date: "2026-10-06", time: "18:00", end: "19:00", timeNote: "6–7 p.m.", format: "Virtual",
+  links: [
+    { label: "Register", url: "https://events.teams.microsoft.com/event/8120a21a-76ab-4cb5-be5a-4091b4343b76@a494743f-7201-494d-a452-f48c5388c4c0?source=copyLinkLegacyShareLinkDialog" },
+    { label: "Link", url: PEEL_PAGE },
+    { label: "Flyer", url: "https://www.peelschools.org/documents/ee4d5aa0-5ee7-4ded-9c24-bc38a4cccaf7/2026-High-School-Information-Night-For-Families-of-Black-Students-1.pdf" },
+  ],
+  about: PEEL_ABOUT,
+}));
 
 export const SESSIONS = events.sort((a, b) => (a.date || "9999").localeCompare(b.date || "9999") || (a.time || "99").localeCompare(b.time || "99") || a.school.localeCompare(b.school));
 
@@ -713,7 +730,7 @@ export function fmtTime(t, lang) {
 }
 export function eventTime(e, lang) {
   if (e.timeNote && lang === "en") return e.timeNote;
-  if (e.timeNote) return e.timeNote.replace(/p\.m\./g, lang === "fr" ? "h" : "p. m.");
+  if (e.timeNote) return e.timeNote.replace(/p\.m\./g, lang === "fr" ? "h" : "p. m.").replace(/ or /g, lang === "fr" ? " ou " : " o ");
   return fmtTime(e.time, lang);
 }
 

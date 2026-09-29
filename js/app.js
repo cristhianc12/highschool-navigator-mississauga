@@ -184,7 +184,7 @@ function renderShell() {
   const f = state.filters;
   const q = `quiz?lang=${state.lang}`;
   $("#desk-nav").innerHTML =
-    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>`;
+    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
   $("#bnav").innerHTML =
     `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
@@ -281,7 +281,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav><a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
   bindFilters();
   renderResults();
   renderCompare();
@@ -291,9 +291,16 @@ function renderShell() {
 }
 
 // The game is loaded only when someone opens the "Take a break" panel, so it never slows the page.
+window.addEventListener("hashchange", () => {
+  if (location.hash !== "#descanso") return;
+  const box = $("#gamebox");
+  if (box) { box.open = true; box.scrollIntoView({ block: "center" }); }
+});
+
 function bindGame() {
   const box = $("#gamebox");
   if (!box) return;
+  if (location.hash === "#descanso") box.open = true;
   box.addEventListener("toggle", async () => {
     if (!box.open || $("#game-host").childElementCount) return;
     const { mountGame } = await import("./game.js");
@@ -305,7 +312,7 @@ function renderSessions() {
   const u = t();
   const today = new Date().toISOString().slice(0, 10);
   let list = SESSIONS.filter((e) => !e.date || e.date >= today);
-  if (state.sess.area) list = list.filter((e) => e.city === state.sess.area);
+  if (state.sess.area) list = list.filter((e) => e.city === state.sess.area || e.city === "virtual");
   if (state.sess.board) list = list.filter((e) => e.board === state.sess.board);
   $("#sess-count").textContent = u.sess.count(list.length);
   $("#sess-list").innerHTML = list.length

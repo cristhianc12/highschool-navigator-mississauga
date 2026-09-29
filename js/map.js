@@ -68,7 +68,13 @@ function build() {
         <div class="mapcount small muted" aria-live="polite"></div>
         <ul class="maplist" aria-label="${esc(m.listAria)}"></ul>
       </div>
-      <div class="mapmain"><div class="mapstage" id="map-stage" aria-label="${esc(m.aria)}"></div></div>
+      <div class="mapmain"><div class="mapstage" id="map-stage" aria-label="${esc(m.aria)}"></div>
+        <div class="mlegend" role="group" aria-label="${esc(m.legendH)}">
+          ${["dpcdsb", "peel", "fr"].map((b) => `<span><i class="lgpin" style="background:${COLOR[b]}"></i>${esc(BOARDS[b][S.lang])}</span>`).join("")}
+          <span><i class="lgpin mine"></i>⭐ ${esc(m.mine)}</span>
+          <span><i class="lghome">🏠</i>${esc(m.legendHome)}</span>
+          <span class="lgnum">${esc(m.legendNum)}</span>
+        </div></div>
     </div>`;
   const stage = S.host.querySelector("#map-stage");
   if (S.loaded || store.get(CONSENT_KEY) === "1") loadMap(stage); else showGate(stage);
@@ -104,7 +110,7 @@ function updateList() {
 function pinIcon(s) {
   const mine = inList("school", s.id);
   return S.L.divIcon({ className: "pinwrap", iconSize: [36, 36], iconAnchor: [18, 18], tooltipAnchor: [0, -18],
-    html: `<span class="pin ${mine ? "mine" : ""}" style="--pc:${COLOR[s.board]}">${NUM.get(s.id)}${mine ? '<i aria-hidden="true">⭐</i>' : ""}</span>` });
+    html: `<span class="mappin ${mine ? "mine" : ""}" style="--pc:${COLOR[s.board]}">${NUM.get(s.id)}${mine ? '<i aria-hidden="true">⭐</i>' : ""}</span>` });
 }
 
 function popupHtml(s) {

@@ -1,0 +1,130 @@
+{
+ "id": "tcdsb-st-michael-s-choir-sr-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stmichaelchoir",
+ "sources": [
+  "https://www.tcdsb.org/o/stmichaelchoir/page/academics/",
+  "https://www.tcdsb.org/o/stmichaelchoir/page/admissions/",
+  "https://www.tcdsb.org/o/stmichaelchoir/page/course-offerings/",
+  "https://www.tcdsb.org/o/stmichaelchoir/page/enrichment-program/",
+  "https://www.tcdsb.org/o/stmichaelchoir/page/extended-french-program/",
+  "https://www.tcdsb.org/o/stmichaelchoir/page/open-house/",
+  "https://smcs.on.ca/auditions",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Choral Program",
+   "note": {
+    "en": "Choral and sacred-music program for boys who sing in St. Michael's Cathedral Basilica choirs, combined with a full academic curriculum; admission is by audition.",
+    "es": "Programa coral y de música sacra para chicos que cantan en los coros de la Catedral Basílica de St. Michael, combinado con un currículo académico completo; la admisión es por audición.",
+    "fr": "Programme choral et de musique sacrée pour les garçons qui chantent dans les chœurs de la cathédrale-basilique St. Michael, combiné à un curriculum scolaire complet; l'admission se fait par audition."
+   },
+   "entry": "audition",
+   "url": "https://smcs.on.ca/auditions"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French Program",
+   "note": {
+    "en": "All secondary students are enrolled in Extended French: four French language and literature courses plus Canadian History, Geography and World Religions in French lead to the Extended French Certificate.",
+    "es": "Todos los estudiantes de secundaria están en Extended French: cuatro cursos de lengua y literatura francesas más Historia de Canadá, Geografía y Religiones del Mundo en francés llevan al Certificado de Extended French.",
+    "fr": "Tous les élèves du secondaire sont inscrits en Extended French : quatre cours de langue et littérature françaises, plus histoire du Canada, géographie et religions du monde en français, mènent au certificat Extended French."
+   },
+   "entry": "audition",
+   "url": "https://www.tcdsb.org/o/stmichaelchoir/page/extended-french-program/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Academic Enrichment Program",
+   "note": {
+    "en": "Enrichment program from Grade 5 to 12 that tracks extra- and co-curricular progress; in Grades 9-12 it also targets other highly motivated students.",
+    "es": "Programa de enriquecimiento académico de 5.º a 12.º grado que da seguimiento al progreso extra y co-curricular; en 9.º a 12.º también atiende a otros estudiantes muy motivados.",
+    "fr": "Programme d'enrichissement scolaire de la 5e à la 12e année qui suit les progrès parascolaires et co-curriculaires; de la 9e à la 12e année, il vise aussi d'autres élèves très motivés."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stmichaelchoir/page/enrichment-program/"
+  }
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/stmichaelchoir/page/course-offerings/",
+ "admissions": [
+  {
+   "program": "Choral Program (Grades 9-12 audition)",
+   "tag": "arts",
+   "elig": {
+    "en": "Boys entering Grade 9 to 12; all high school students are enrolled in Extended French and should already have a strong French background.",
+    "es": "Chicos que ingresan de 9.º a 12.º grado; todos los estudiantes de secundaria cursan Extended French y deben tener ya una buena base de francés.",
+    "fr": "Garçons qui entrent de la 9e à la 12e année; tous les élèves du secondaire sont inscrits en Extended French et devraient déjà avoir de solides bases en français."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": {
+    "en": "Auditions are booked after the admissions file is complete; no fixed dates are published.",
+    "es": "Las audiciones se agendan cuando el expediente de admisión está completo; no hay fechas fijas publicadas.",
+    "fr": "Les auditions sont fixées une fois le dossier d'admission complet; aucune date fixe n'est publiée."
+   },
+   "submit": [
+    {
+     "en": "Birth certificate",
+     "es": "Certificado de nacimiento",
+     "fr": "Certificat de naissance"
+    },
+    {
+     "en": "Most recent June report card",
+     "es": "Último boletín de junio",
+     "fr": "Dernier bulletin de juin"
+    },
+    {
+     "en": "Credit counselling summary or transcript and attendance profile (Grades 10-12 only)",
+     "es": "Resumen de créditos o transcripción y perfil de asistencia (solo 10.º a 12.º)",
+     "fr": "Sommaire de conseil en crédits ou relevé de notes et profil d'assiduité (10e à 12e année seulement)"
+    },
+    {
+     "en": "Reference from a choir conductor, private instrument or music teacher",
+     "es": "Referencia de un director de coro o de un profesor de música o instrumento",
+     "fr": "Référence d'un chef de chœur ou d'un enseignant de musique ou d'instrument"
+    },
+    {
+     "en": "Student information sheet",
+     "es": "Hoja de información del estudiante",
+     "fr": "Fiche de renseignements de l'élève"
+    },
+    {
+     "en": "Classroom teacher reference form (students entering Grade 9 only)",
+     "es": "Formulario de referencia del profesor de aula (solo para 9.º grado)",
+     "fr": "Formulaire de référence de l'enseignant (élèves entrant en 9e année seulement)"
+    },
+    {
+     "en": "TCDSB registration form",
+     "es": "Formulario de inscripción del TCDSB",
+     "fr": "Formulaire d'inscription du TCDSB"
+    }
+   ],
+   "know": [
+    {
+     "en": "Documents are sent as PDFs to the admissions office; the audition is in person with a conductor.",
+     "es": "Los documentos se envían en PDF a la oficina de admisiones; la audición es presencial con un director.",
+     "fr": "Les documents sont envoyés en PDF au bureau des admissions; l'audition se fait en personne avec un chef de chœur."
+    },
+    {
+     "en": "Prepare O Canada and a piece of your choice; sight-reading, ear training, a short theory assessment and, if you play piano, a piece on piano.",
+     "es": "Prepara O Canada y una pieza de tu elección; lectura a primera vista, entrenamiento auditivo, una breve evaluación de teoría y, si tocas piano, una pieza en piano.",
+     "fr": "Prépare O Canada et une pièce de ton choix; lecture à vue, formation auditive, une courte évaluation de théorie et, si tu joues du piano, une pièce au piano."
+    },
+    {
+     "en": "If the audition goes well there is a family interview, then an offer or a waitlist place about two weeks later.",
+     "es": "Si la audición sale bien hay una entrevista familiar y, unas dos semanas después, una oferta o un lugar en lista de espera.",
+     "fr": "Si l'audition se passe bien, il y a une entrevue familiale, puis une offre ou une place sur la liste d'attente environ deux semaines plus tard."
+    }
+   ],
+   "url": "https://smcs.on.ca/auditions"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No open house date found: the school's open house page only gives admissions contact details and the school was not on the TCDSB open house sheet",
+  "No audition dates or fee for Grade 9 entry published",
+  "St. Michael's Choir School is listed as a Grades 3-12 school; only the secondary information is recorded"
+ ]
+}

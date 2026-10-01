@@ -26,6 +26,7 @@ const pdfText = (buf) => {
 // Google Docs / Slides / Sheets / Drive links only work through their export endpoints.
 function rewrite(url) {
   let m;
+  if (/docs\.google\.com\/(document|presentation|spreadsheets)\/d\/e\//.test(url)) return url; // "published to the web" links are already public
   if ((m = url.match(/docs\.google\.com\/document\/d\/([\w-]+)/))) return `https://docs.google.com/document/d/${m[1]}/export?format=txt`;
   if ((m = url.match(/docs\.google\.com\/presentation\/d\/([\w-]+)/))) return `https://docs.google.com/presentation/d/${m[1]}/export/txt`;
   if ((m = url.match(/docs\.google\.com\/spreadsheets\/d\/([\w-]+)/))) { const g = url.match(/gid=(\d+)/); return `https://docs.google.com/spreadsheets/d/${m[1]}/export?format=csv${g ? `&gid=${g[1]}` : ""}`; }

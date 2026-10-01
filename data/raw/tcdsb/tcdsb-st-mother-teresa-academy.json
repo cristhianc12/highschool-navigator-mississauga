@@ -1,0 +1,42 @@
+{
+ "id": "tcdsb-st-mother-teresa-academy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stmotherteresacatholicacademy",
+ "sources": [
+  "https://www.tcdsb.org/o/stmotherteresacatholicacademy/page/academics/",
+  "https://www.tcdsb.org/o/stmotherteresacatholicacademy/page/shsm/",
+  "https://www.tcdsb.org/o/stmotherteresacatholicacademy/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Arts and Culture, Sports: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Arts and Culture, Sports: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Arts and Culture, Sports : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stmotherteresacatholicacademy/page/shsm/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Sports"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/stmotherteresacatholicacademy/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No other special programs or admission steps stated on the school's pages"
+ ]
+}

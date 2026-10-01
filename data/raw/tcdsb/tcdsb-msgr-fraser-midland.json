@@ -1,0 +1,127 @@
+{
+ "id": "tcdsb-msgr-fraser-midland",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/msgrfrasercollege",
+ "sources": [
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/about-us/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/our-campuses/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/admissions/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/transition-to-work-program/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Alternative Education Program (ages 16-20)",
+   "note": {
+    "en": "Alternative program for students facing challenges in a community school: small personalized settings and up to 2 full credits every nine weeks toward the OSSD.",
+    "es": "Programa alternativo para estudiantes con dificultades en una escuela comunitaria: entornos pequeños y personalizados y hasta 2 créditos completos cada nueve semanas para el OSSD.",
+    "fr": "Programme alternatif pour les élèves qui éprouvent des difficultés dans une école communautaire : petits milieux personnalisés et jusqu'à 2 crédits complets toutes les neuf semaines pour le DESO."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered/"
+  },
+  {
+   "tag": "alt",
+   "name": "Transition2Work (T2W) Program (ages 18-20)",
+   "note": {
+    "en": "Non-credit program for students with special needs that builds life skills, work skills and independence, offered at the Midland and Norfinch campuses.",
+    "es": "Programa sin créditos para estudiantes con necesidades especiales que desarrolla habilidades para la vida y el trabajo y la independencia, ofrecido en los campus Midland y Norfinch.",
+    "fr": "Programme sans crédit pour élèves ayant des besoins particuliers qui développe l'autonomie ainsi que les compétences de vie et de travail, offert aux campus Midland et Norfinch."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/transition-to-work-program/"
+  },
+  {
+   "tag": "other",
+   "name": "Fraser-S.W.A.C. (School Within a College)",
+   "note": {
+    "en": "Ages 18-20: one-semester programs with George Brown, Humber and Seneca colleges earning up to 5 OSSD credits, at least one a Dual Credit; offered at the Isabella, Midland and Norfinch campuses.",
+    "es": "De 18 a 20 años: programas de un semestre con los colegios George Brown, Humber y Seneca que dan hasta 5 créditos OSSD, al menos uno de crédito dual; se ofrece en los campus Isabella, Midland y Norfinch.",
+    "fr": "De 18 à 20 ans : programmes d'un semestre avec les collèges George Brown, Humber et Seneca qui donnent jusqu'à 5 crédits du DESO, dont au moins un crédit double; offert aux campus Isabella, Midland et Norfinch."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered/"
+  },
+  {
+   "tag": "other",
+   "name": "Continuing Education Program (21 and over)",
+   "note": {
+    "en": "Day school adult education at the Isabella and Midland campuses: two full credits at a time, with ESL courses for newcomers, all counting toward the OSSD.",
+    "es": "Educación para adultos en horario diurno en los campus Isabella y Midland: dos créditos completos a la vez, con cursos de ESL para recién llegados, todos válidos para el OSSD.",
+    "fr": "Éducation des adultes de jour aux campus Isabella et Midland : deux crédits complets à la fois, avec des cours d'ESL pour les nouveaux arrivants, tous comptant pour le DESO."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered/"
+  }
+ ],
+ "other": [
+  "OYAP - Baking, Carpentry, Construction Craft Worker, Culinary, Electrical, Plumbing, Residential Air Conditioning",
+  "Continuous Intake Co-op (CIC)",
+  "Blended eLearning",
+  "School Within a College Program (SWAC)"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "admissions": [
+  {
+   "program": "Alternative Education Program (ages 16-20)",
+   "tag": "alt",
+   "elig": {
+    "en": "Students ages 16-20 referred by their current or most recent school.",
+    "es": "Estudiantes de 16 a 20 años derivados por su escuela actual o más reciente.",
+    "fr": "Élèves de 16 à 20 ans aiguillés par leur école actuelle ou la plus récente."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": [
+    {
+     "en": "MFC School Referral Form 2026-2027, completed by your current or last school and sent with the required documents to the campus you choose",
+     "es": "MFC School Referral Form 2026-2027, completado por tu escuela actual o anterior y enviado con los documentos requeridos al campus que elijas",
+     "fr": "MFC School Referral Form 2026-2027, remplie par ton école actuelle ou précédente et envoyée avec les documents requis au campus de ton choix"
+    },
+    {
+     "en": "MFC Registration Form",
+     "es": "Formulario de inscripción de MFC",
+     "fr": "Formulaire d'inscription de MFC"
+    },
+    {
+     "en": "Student Information Release Form",
+     "es": "Formulario de autorización de información del estudiante",
+     "fr": "Formulaire de divulgation de renseignements de l'élève"
+    },
+    {
+     "en": "Student Internet Agreement Form",
+     "es": "Formulario de acuerdo de uso de Internet",
+     "fr": "Formulaire d'entente sur l'utilisation d'Internet"
+    },
+    {
+     "en": "Confirmation of Entry Into Canada Form",
+     "es": "Formulario de confirmación de ingreso a Canadá",
+     "fr": "Formulaire de confirmation d'entrée au Canada"
+    },
+    {
+     "en": "Repeated Course Form",
+     "es": "Formulario de curso repetido",
+     "fr": "Formulaire de cours répété"
+    }
+   ],
+   "know": [
+    {
+     "en": "Once the campus receives the referral package from the sending school, it contacts you for an interview; bring the forms to the interview.",
+     "es": "Cuando el campus recibe el paquete de derivación de la escuela de origen, te contacta para una entrevista; lleva los formularios a la entrevista.",
+     "fr": "Quand le campus reçoit le dossier d'aiguillage de l'école d'origine, il te contacte pour une entrevue; apporte les formulaires à l'entrevue."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/admissions/"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No open house or information night dates found for the campuses",
+  "This roster entry is the Midland campus: the course list is the Midland Campus: Alternative Education 16-20 sheet from the TCDSB 2026-27 course offerings",
+  "The roster website for this school (msgrfraseralternative.org) now serves an unrelated gambling page and was not used; the board school site was used instead"
+ ]
+}

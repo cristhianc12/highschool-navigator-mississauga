@@ -1,0 +1,87 @@
+{
+ "id": "tcdsb-st-joseph-s-college-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stjosephcollege",
+ "sources": [
+  "https://www.tcdsb.org/o/stjosephcollege/page/academics/",
+  "https://www.tcdsb.org/o/stjosephcollege/page/ap-program/",
+  "https://www.tcdsb.org/o/stjosephcollege/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "Pre-AP English for academic-level students in Grade 9, congregated Pre-AP Math and Science, Pre-AP options in Grades 10-11 and AP courses in Grade 12 with optional May exams.",
+    "es": "Pre-AP de inglés para estudiantes de nivel académico en 9.º grado, Pre-AP de matemáticas y ciencias agrupado, opciones Pre-AP en 10.º y 11.º y cursos AP en 12.º con exámenes opcionales en mayo.",
+    "fr": "Pre-AP en anglais pour les élèves du volet théorique en 9e année, Pre-AP en mathématiques et sciences regroupé, options Pre-AP en 10e et 11e et cours AP en 12e avec examens facultatifs en mai."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stjosephcollege/page/ap-program/"
+  },
+  {
+   "tag": "ap",
+   "name": "Congregated Advanced Placement (CAP)",
+   "note": {
+    "en": "Congregated Advanced Placement: school-wide enrichment in English, French, Mathematics, Science and/or Social Studies that prepares students for AP courses in Grades 11 and 12.",
+    "es": "Congregated Advanced Placement: enriquecimiento en toda la escuela en inglés, francés, matemáticas, ciencias y/o estudios sociales que prepara para los cursos AP de 11.º y 12.º grado.",
+    "fr": "Congregated Advanced Placement : enrichissement à l'échelle de l'école en anglais, français, mathématiques, sciences et/ou études sociales qui prépare aux cours AP de 11e et 12e année."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French Program",
+   "note": {
+    "en": "Extended French continues the elementary program: four French courses plus at least three other subjects taught in French lead to the TCDSB Extended French Certificate.",
+    "es": "Extended French continúa el programa de primaria: cuatro cursos de francés más al menos tres materias enseñadas en francés llevan al Certificado de Extended French del TCDSB.",
+    "fr": "Le programme Extended French prolonge celui du primaire : quatre cours de français et au moins trois autres matières enseignées en français mènent au certificat Extended French du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Business, Health and Wellness: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Business, Health and Wellness: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Business, Health and Wellness : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted Program",
+   "note": {
+    "en": "A Gifted Program is listed among the specialty programs available at the school.",
+    "es": "Un Gifted Program figura entre los programas especializados de la escuela.",
+    "fr": "Un programme Gifted figure parmi les programmes spécialisés de l'école."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stjosephcollege/page/academics/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Health and Wellness"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-21",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/stjosephcollege/page/open-house/"
+  }
+ ],
+ "missing": [
+  "Gifted Program is only named; no description or entry process",
+  "AP page says students may apply for Pre-AP in Grades 10-11 but gives no form, deadline or marks"
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "id": "tcdsb-st-joan-of-arc-academy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stjoanofarc",
+ "sources": [
+  "https://www.tcdsb.org/o/stjoanofarc/page/about-us/",
+  "https://www.tcdsb.org/o/stjoanofarc/page/academics/",
+  "https://www.tcdsb.org/o/stjoanofarc/page/ap-program/",
+  "https://www.tcdsb.org/o/stjoanofarc/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP program that lets students take a post-secondary level experience in high school; students who write AP exams can earn university credit.",
+    "es": "Programa AP que ofrece una experiencia de nivel postsecundario durante la secundaria; quienes rinden los exámenes AP pueden obtener créditos universitarios.",
+    "fr": "Programme AP qui offre une expérience de niveau postsecondaire pendant le secondaire; les élèves qui passent les examens AP peuvent obtenir des crédits universitaires."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stjoanofarc/page/ap-program/"
+  },
+  {
+   "tag": "ap",
+   "name": "Congregated Advanced Placement (CAP)",
+   "note": {
+    "en": "Congregated Advanced Placement: school-wide enrichment in English, French, Mathematics, Science and/or Social Studies that prepares students for AP courses in Grades 11 and 12.",
+    "es": "Congregated Advanced Placement: enriquecimiento en toda la escuela en inglés, francés, matemáticas, ciencias y/o estudios sociales que prepara para los cursos AP de 11.º y 12.º grado.",
+    "fr": "Congregated Advanced Placement : enrichissement à l'échelle de l'école en anglais, français, mathématiques, sciences et/ou études sociales qui prépare aux cours AP de 11e et 12e année."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Arts and Culture, Health and Wellness, Information and Communications Technology (ICT), Non-Profit, Education and Child Care, Transportation: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Arts and Culture, Health and Wellness, Information and Communications Technology (ICT), Non-Profit, Education and Child Care, Transportation: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Arts and Culture, Health and Wellness, Information and Communications Technology (ICT), Non-Profit, Education and Child Care, Transportation : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "trades",
+   "name": "OYAP - CITImotive",
+   "note": {
+    "en": "Ontario Youth Apprenticeship Program pathway named CITImotive is listed for the school in the TCDSB specialized programs chart.",
+    "es": "Itinerario del Ontario Youth Apprenticeship Program llamado CITImotive, indicado para la escuela en el cuadro de programas especializados del TCDSB.",
+    "fr": "Parcours du Programme d'apprentissage pour les jeunes de l'Ontario appelé CITImotive, indiqué pour l'école dans le tableau des programmes spécialisés du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Health and Wellness",
+  "Information and Communications Technology (ICT)",
+  "Non-Profit, Education and Child Care",
+  "Transportation"
+ ],
+ "other": [
+  "OYAP - CITImotive"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-20",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/stjoanofarc/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No admission steps stated for AP or CAP; the school's AP website (Google Sites) was not read",
+  "Supplementary application for CAP is mentioned for other TCDSB schools on the chart, not for this school"
+ ]
+}

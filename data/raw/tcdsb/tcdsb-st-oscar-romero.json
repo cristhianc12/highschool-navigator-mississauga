@@ -1,0 +1,108 @@
+{
+ "id": "tcdsb-st-oscar-romero",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stoscarromero",
+ "sources": [
+  "https://www.tcdsb.org/o/stoscarromero/page/academics/",
+  "https://www.tcdsb.org/o/stoscarromero/page/steam-program/",
+  "https://www.tcdsb.org/o/stoscarromero/page/shsm/",
+  "https://www.tcdsb.org/o/stoscarromero/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM Program",
+   "note": {
+    "en": "STEAM cohort in Grades 9 and 10 (Science, Exploring Technologies, English, Math in Grade 9) with a professional digital portfolio, workshops and competitions; Grades 11-12 follow self-directed pathways.",
+    "es": "Cohorte STEAM en 9.º y 10.º grado (ciencias, Exploring Technologies, inglés y matemáticas en 9.º) con un portafolio digital profesional, talleres y competencias; en 11.º y 12.º se siguen itinerarios autodirigidos.",
+    "fr": "Cohorte STEAM en 9e et 10e année (sciences, Exploring Technologies, anglais et mathématiques en 9e) avec un portfolio numérique professionnel, des ateliers et des concours; en 11e et 12e année, les parcours sont autonomes."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stoscarromero/page/steam-program/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Business, Construction Technology and Design, Sports: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Business, Construction Technology and Design, Sports: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Business, Construction Technology and Design, Sports : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stoscarromero/page/shsm/"
+  },
+  {
+   "tag": "trades",
+   "name": "OYAP - Carpentry",
+   "note": {
+    "en": "Ontario Youth Apprenticeship Program in Carpentry is listed for the school in the TCDSB specialized programs chart.",
+    "es": "El Ontario Youth Apprenticeship Program en carpintería figura para la escuela en el cuadro de programas especializados del TCDSB.",
+    "fr": "Le Programme d'apprentissage pour les jeunes de l'Ontario en menuiserie figure pour l'école dans le tableau des programmes spécialisés du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Construction Technology and Design",
+  "Sports"
+ ],
+ "other": [
+  "OYAP - Carpentry"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "admissions": [
+  {
+   "program": "STEAM Program",
+   "tag": "stem",
+   "elig": {
+    "en": "Students applying from Grades 7 and 8; there is no entrance test.",
+    "es": "Estudiantes que postulan desde 7.º y 8.º grado; no hay examen de ingreso.",
+    "fr": "Élèves qui postulent depuis la 7e et la 8e année; il n'y a pas d'examen d'entrée."
+   },
+   "marks": {
+    "en": "Selection relies heavily on Grade 7 and 8 performance and the most recent report card.",
+    "es": "La selección depende mucho del desempeño en 7.º y 8.º grado y del boletín más reciente.",
+    "fr": "La sélection repose beaucoup sur le rendement de la 7e et de la 8e année et sur le bulletin le plus récent."
+   },
+   "fee": null,
+   "dates": null,
+   "submit": [
+    {
+     "en": "Application showing who you are as a learner and your STEAM mindset",
+     "es": "Solicitud que muestre quién eres como estudiante y tu mentalidad STEAM",
+     "fr": "Demande qui montre qui tu es comme apprenant et ta mentalité STEAM"
+    },
+    {
+     "en": "References from your teachers or principal",
+     "es": "Referencias de tus profesores o del director",
+     "fr": "Références de tes enseignants ou de ta direction"
+    },
+    {
+     "en": "Most recent report card",
+     "es": "Boletín más reciente",
+     "fr": "Bulletin le plus récent"
+    }
+   ],
+   "know": null,
+   "url": "https://www.tcdsb.org/o/stoscarromero/page/steam-program/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-07",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/stoscarromero/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No STEAM application deadline or link stated on the school page",
+  "TCDSB chart labels STEAM as Grades 10-12 while the school's page describes Grade 9-10 STEAM cohort courses; the school page is followed",
+  "Romero site on the roster pointed to a board page; the board school page is used"
+ ]
+}

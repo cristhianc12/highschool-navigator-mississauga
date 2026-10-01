@@ -1,0 +1,84 @@
+{
+ "id": "tcdsb-st-basil-the-great-college-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stbasilthegreat",
+ "sources": [
+  "https://www.tcdsb.org/o/stbasilthegreat/page/academics/",
+  "https://www.tcdsb.org/o/stbasilthegreat/page/ib/",
+  "https://www.tcdsb.org/o/stbasilthegreat/page/shsm/",
+  "https://www.tcdsb.org/o/stbasilthegreat/page/school-courses/",
+  "https://www.tcdsb.org/o/stbasilthegreat/page/open-house/",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Programme",
+   "note": {
+    "en": "IB pathway in two parts: SBC Junior in Grades 9 and 10 prepares students for the IB Diploma Programme in Grades 11 and 12.",
+    "es": "Itinerario IB en dos partes: SBC Junior en 9.º y 10.º grado prepara para el IB Diploma Programme de 11.º y 12.º grado.",
+    "fr": "Parcours IB en deux parties : SBC Junior en 9e et 10e année prépare au programme du diplôme IB de 11e et 12e année."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stbasilthegreat/page/ib/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Business, Sports: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Business, Sports: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Business, Sports : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stbasilthegreat/page/shsm/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Sports"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/stbasilthegreat/page/school-courses/",
+ "admissions": [
+  {
+   "program": "International Baccalaureate (IB) Programme",
+   "tag": "ib",
+   "elig": null,
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": null,
+   "know": [
+    {
+     "en": "The TCDSB says IB applications are handled directly through the school (not only the board online application); contact the school for criteria and deadlines.",
+     "es": "El TCDSB indica que las solicitudes al IB se gestionan directamente con la escuela; contacta a la escuela para conocer los criterios y las fechas límite.",
+     "fr": "Le TCDSB indique que les demandes pour l'IB sont traitées directement par l'école; communique avec l'école pour connaître les critères et les dates limites."
+    }
+   ],
+   "url": "https://www.tcdsb.org/page/secondary-school-registration/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-07",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Open House: International Baccalaureate (IB) Program",
+   "url": "https://www.tcdsb.org/o/stbasilthegreat/page/open-house/"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-07",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House: General Program (includes SHSM in Business and Sports)",
+   "url": "https://www.tcdsb.org/o/stbasilthegreat/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No IB admission criteria, marks or deadlines on the school's pages (coordinator message is a PDF link)",
+  "Course list is the TCDSB course-offerings Google Sheet for 2026-27"
+ ]
+}

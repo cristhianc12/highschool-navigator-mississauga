@@ -28,7 +28,7 @@ export function goodTitle(t) {
   if (/[|*\\]/.test(t) || /\/\s*$/.test(t) || /^[A-Z]\d\b/.test(t) || /\b(req\.?|prerequisite)\b/i.test(t)) return false;
   if (JUNK.test(t) || t.split(/\s+/).length > 9) return false;
   if (/\b(university|college|workplace|open)\s*\/\s*\w+/i.test(t)) return false; // "Open/University/College" fragments
-  if (!/[a-z]{3}/i.test(t)) return false;
+  if (!/[a-z]{3}/i.test(t) || (/^[A-Z ]+$/.test(t) && t.length <= 15)) return false; // table headers such as "ARTS"
   return true;
 }
 

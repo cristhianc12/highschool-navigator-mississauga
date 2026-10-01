@@ -1,0 +1,74 @@
+{
+ "id": "tcdsb-neil-mcneil",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/neilmcneil",
+ "sources": [
+  "https://www.tcdsb.org/o/neilmcneil/page/about-us/",
+  "https://www.tcdsb.org/o/neilmcneil/page/academics/",
+  "https://www.tcdsb.org/o/neilmcneil/page/school-courses/",
+  "https://www.tcdsb.org/o/neilmcneil/page/steam-program/",
+  "https://www.tcdsb.org/o/neilmcneil/page/specialist-high-skills-major/",
+  "https://www.tcdsb.org/o/neilmcneil/page/reach-ahead-program/",
+  "https://www.tcdsb.org/o/neilmcneil/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM Program",
+   "note": {
+    "en": "Enriched STEAM program in Science, Technology, Engineering, Art and Mathematics for students who welcome an enriched classroom, with creativity and technology across the curriculum.",
+    "es": "Programa STEAM enriquecido en ciencias, tecnología, ingeniería, arte y matemáticas para estudiantes que buscan un aula enriquecida, con creatividad y tecnología en todo el currículo.",
+    "fr": "Programme STEAM enrichi en sciences, technologie, ingénierie, arts et mathématiques pour les élèves qui aiment une classe enrichie, avec créativité et technologie dans tout le curriculum."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/neilmcneil/page/steam-program/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Construction Design and Technology, Health and Wellness, Information and Communications Technology (ICT): a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Construction Design and Technology, Health and Wellness, Information and Communications Technology (ICT): un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Construction Design and Technology, Health and Wellness, Information and Communications Technology (ICT) : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/neilmcneil/page/specialist-high-skills-major/"
+  },
+  {
+   "tag": "other",
+   "name": "Reach Ahead Program",
+   "note": {
+    "en": "Full-day July summer school for incoming Grade 9 students: earn a high school credit in four weeks while getting to know classmates, teachers and the school.",
+    "es": "Escuela de verano de día completo en julio para estudiantes que entran a 9.º grado: se obtiene un crédito de secundaria en cuatro semanas mientras conoces a tus compañeros, profesores y la escuela.",
+    "fr": "École d'été à temps plein en juillet pour les élèves qui entrent en 9e année : obtiens un crédit du secondaire en quatre semaines tout en découvrant tes camarades, tes enseignants et l'école."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/neilmcneil/page/reach-ahead-program/"
+  }
+ ],
+ "shsm": [
+  "Construction Design and Technology",
+  "Health and Wellness",
+  "Information and Communications Technology (ICT)"
+ ],
+ "other": [
+  "Reach Ahead Program (July summer school for incoming Grade 9)"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/neilmcneil/page/school-courses/",
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/neilmcneil/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No application or entry process stated for the STEAM Program or the SHSM programs on the school's pages",
+  "Course calendar is a published Google Sheet (2026-27) listed on the board course-offerings page; no separate school calendar PDF",
+  "Reach Ahead fee and dates not stated"
+ ]
+}

@@ -60,7 +60,7 @@ export function openSheet(lang, { quizHref, game }, trigger) {
         <a href="${quizHref}" class="mtile hot"><span aria-hidden="true">✨</span>${esc(QUIZ[lang] || QUIZ.en)}</a>
         ${game ? `<a href="#descanso" class="mtile"><span aria-hidden="true">🎮</span>${esc(game)}</a>` : ""}
       </div>
-      <p class="mfoot"><a href="privacy?lang=${lang}">${esc(PRIVACY[lang] || PRIVACY.en)}</a></p></div>`;
+      <p class="mfoot"><a href="/privacy?lang=${lang}">${esc(PRIVACY[lang] || PRIVACY.en)}</a></p></div>`;
   document.body.appendChild(sheet);
   document.documentElement.classList.add("sheet-open");
   sheet.addEventListener("click", (e) => { if (e.target.closest("[data-close]") || e.target.closest("a[href]")) closeSheet(); });

@@ -70,6 +70,8 @@ document.addEventListener("click", (e) => { if (e.target.closest("#f-reset, #pf-
 function detectLang() {
   const fromUrl = new URLSearchParams(location.search).get("lang");
   if (LANGS.includes(fromUrl)) return fromUrl;
+  const fromPath = (location.pathname.match(/^\/(es|fr)(\/|$)/) || [])[1]; // /es/… and /fr/… pages (SEO landing pages)
+  if (fromPath) return fromPath;
   const saved = store.get("lang");
   if (LANGS.includes(saved)) return saved;
   // Device language (es / fr / en); anything else falls back to English.
@@ -287,7 +289,7 @@ function renderShell() {
   });
 
   const f = state.filters;
-  const q = `quiz?lang=${state.lang}`;
+  const q = `/quiz?lang=${state.lang}`;
   $("#desk-nav").innerHTML =
     `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#aplicar">${esc(u.apply.nav)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
@@ -409,7 +411,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:${firstN(SOURCES, 5, "<ul>", "</ul>", ([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`)}</div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p><p class="small muted" id="build"></p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="/privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p><p class="small muted" id="build"></p>`;
   showBuild();
   bindFilters();
   renderResults();
@@ -645,7 +647,7 @@ document.addEventListener("click", (e) => {
 });
 document.addEventListener("click", (e) => {
   const m = e.target.closest("[data-more]");
-  if (m) openSheet(state.lang, { quizHref: `quiz?lang=${state.lang}`, game: state.tone === "teen" ? t().game.h : "" }, m);
+  if (m) openSheet(state.lang, { quizHref: `/quiz?lang=${state.lang}`, game: state.tone === "teen" ? t().game.h : "" }, m);
 });
 $("#theme-btn").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") ||
@@ -657,6 +659,15 @@ $("#theme-btn").addEventListener("click", () => {
 
 state.lang = detectLang();
 loadPrefs();
+// Landing pages and shared links can preselect filters: /?region=york&board=ycdsb&q=ib
+(() => {
+  const u = new URLSearchParams(location.search);
+  const pm = location.pathname.match(/\/(board|region)\/([a-z]+)$/); // /board/peel, /es/region/york…
+  const region = u.get("region") || (pm?.[1] === "region" ? pm[2] : ""), board = u.get("board") || (pm?.[1] === "board" ? pm[2] : ""), q = u.get("q");
+  if (region && REGIONS[region]) state.filters.region = region;
+  if (board && BOARD_META[board]) { state.filters.board = board; state.pf.board = board; state.apBoard = board; state.df.board = board; }
+  if (q) state.filters.q = q.slice(0, 60);
+})();
 // The profile modal is initialised first so its language getter is ready when rows are rendered.
 initSchoolDetail({
   getLang: () => state.lang,

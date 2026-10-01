@@ -191,3 +191,7 @@ Rules: every fact carries the URL of the page that states it; anything not found
 ## Usage statistics (counts only)
 
 `js/track.js` sends short events to `/api/track`, which adds them to daily totals in `metrics_daily` (`db/schema.sql`). Each event is a name plus up to two allow-listed labels. Counted: visits, page views, where visits come from (direct, search, social, school site, email), school and program opens and where from, clicks to official sites (link kind and site name), filters and their values, comparison, My list, map, sessions and course-finder use, questionnaire steps (never answers), time-on-page and scroll bands, device class, OS and browser family, viewport band, language, theme/tone and province. Not collected: IP, user agent text, cookies, any ID, exact times, typed text. It needs no browser permission, is off for Do Not Track / Global Privacy Control and has a toggle on `/privacy`. Reports use `db/queries.sql` (5-count rule); rows are deleted after 24 months. Keep `privacy-content.js`, `api/track.js` and this section in sync when events change.
+
+## Search visibility (SEO)
+
+`node scripts/build-seo.mjs` regenerates the crawlable pages: the home in three languages (`/`, `/es`, `/fr`), one landing page per board and per region (`/board/<id>`, `/region/<id>`, plus `/es/…` and `/fr/…`), and `sitemap.xml` with language alternates. Run it after the roster or the copy changes and commit the output. The interactive app replaces the static body on load, and `?region=`, `?board=` and `?q=` (or the landing-page path) preselect filters.

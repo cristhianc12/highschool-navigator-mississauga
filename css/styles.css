@@ -615,3 +615,5 @@ a,button,select,input{-webkit-tap-highlight-color:transparent}
 .bnav,.totop{touch-action:manipulation}
 .topbar .btn,.topbar .theme{min-height:0}
 @media (max-width:640px){.topbar .listbtn{height:32px;padding-block:0}}
+.seo-static{padding:24px 16px;max-width:760px;margin:0 auto}
+.seo-static ul{padding-left:20px}

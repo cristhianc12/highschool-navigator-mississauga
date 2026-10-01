@@ -2,7 +2,7 @@
 // Strategy: network-first for pages, scripts and styles (so updates always arrive), cache-first for
 // fonts, images and vendor files. It never touches /api/ or /_vercel/ and stores nothing personal.
 // Bump VERSION when the list of files changes.
-const VERSION = "v25";
+const VERSION = "v26";
 const CACHE = `hs-navigator-${VERSION}`;
 const CORE = [
   "/", "/quiz", "/privacy", "/manifest.webmanifest",

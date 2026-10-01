@@ -79,14 +79,14 @@ img{max-width:100%}
 .topbar-in{flex-wrap:wrap;row-gap:6px}
 .topbar-in>.toggle,.topbar-in>.theme,.topbar-in>.listbtn{flex:none}
 .toggle button{white-space:nowrap}
-@media (min-width:860px){.topbar-in{flex-wrap:nowrap}}
-@media (min-width:860px){
+@media (min-width:960px){.topbar-in{flex-wrap:nowrap}}
+@media (min-width:960px){
   .listbtn .lb-text{display:none}
   .desk-nav{gap:0;margin-right:4px}
   .desk-nav a{padding:6px 7px;font-size:13px}
   .toggle button{padding:6px 9px}
 }
-@media (min-width:860px) and (max-width:1360px){
+@media (min-width:960px) and (max-width:1360px){
   .brand span{display:none}
   .desk-nav{margin-right:0}
   .desk-nav a{padding:6px 4px;font-size:12.5px}
@@ -101,7 +101,6 @@ img{max-width:100%}
   .theme{width:30px;height:30px;font-size:13px}
   #contrast-btn{min-width:30px;padding:0 4px;font-size:12px}
   .listbtn{padding-inline:8px}
-  .brand i{display:none}
 }
 
 /* ---------- Bottom nav (mobile) ---------- */
@@ -112,7 +111,7 @@ img{max-width:100%}
 .bnav a span,.bnav button span{font-size:19px;line-height:1.2}
 .bnav a.on:not(.hot),.bnav button[aria-expanded="true"]{color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
 .bnav a.hot{background:var(--cta-bg);color:var(--cta-ink)}
-@media (min-width:860px){.bnav{display:none}body{padding-block-end:48px}.desk-nav{display:flex}}
+@media (min-width:960px){.bnav{display:none}body{padding-block-end:48px}.desk-nav{display:flex}}
 
 /* ---------- Hero ---------- */
 .hero{padding-block:30px 8px}
@@ -352,7 +351,7 @@ button.opener:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .spop .btn{background:#fff;color:#15122B;border-color:#DDD8F5}
 .spop .cta{background:#6D3DF2;color:#fff}
 .spop .star{background:#fff;color:#15122B}
-@media (max-width:860px){
+@media (max-width:959px){
   .mapwrap{grid-template-columns:1fr}
   .mapmain{order:-1}
   .mapstage{height:60vh;min-height:340px}
@@ -580,7 +579,7 @@ html.sheet-open{overflow:hidden}
 @keyframes sheetin{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
 .totop{position:fixed;right:14px;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:35;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(8px);color:var(--ink,inherit);font-size:20px;font-weight:800;box-shadow:var(--shadow);cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s,transform .2s}
 .totop.show{opacity:.92;transform:none;pointer-events:auto}
-@media (min-width:860px){.totop{bottom:24px;right:24px}}
+@media (min-width:960px){.totop{bottom:24px;right:24px}}
 @media (prefers-reduced-motion:reduce){.mpanel{animation:none}.totop{transition:none}}
 section[id]{scroll-margin-top:70px}
 .listmore{margin-top:10px}
@@ -606,7 +605,7 @@ section[id]{scroll-margin-top:70px}
   section{padding-block:26px}
   .dates{grid-template-columns:1fr}
 }
-@media (max-width:860px){
+@media (max-width:959px){
   body{padding-block-end:calc(96px + env(safe-area-inset-bottom,0px))}
   .foot{padding-block-end:24px}
   html{-webkit-text-size-adjust:100%}
@@ -617,3 +616,23 @@ a,button,select,input{-webkit-tap-highlight-color:transparent}
 @media (max-width:640px){.topbar .listbtn{height:32px;padding-block:0}}
 .seo-static{padding:24px 16px;max-width:760px;margin:0 auto}
 .seo-static ul{padding-left:20px}
+
+/* Logo: one SVG that scales smoothly from phones to wide screens; the name appears only when there is room. */
+.brand-logo{display:block;flex:none;width:clamp(34px,4.6vw,44px);height:auto;aspect-ratio:1;filter:drop-shadow(0 2px 5px rgba(60,30,140,.28))}
+.brand{gap:clamp(6px,1vw,10px)}
+@media (max-width:520px){.topbar .listbtn{margin-left:0}.brand{margin-right:auto}}
+@media (max-width:480px){
+  .brand-logo{width:30px}
+  .topbar-in{gap:3px;flex-wrap:nowrap}
+  .topbar .toggle button{padding:6px 7px;font-size:12px}
+  .topbar .theme{width:28px;height:28px}
+  .topbar #contrast-btn{min-width:28px}
+  .topbar .listbtn{padding-inline:7px}
+  .brand{margin-right:2px}
+}
+@media (max-width:359px){.brand-logo{width:26px}.topbar .toggle button{padding:6px 5px}}
+@media (max-width:400px){.topbar #coffee-link{display:none}}
+@media (max-width:759px){.topbar .listbtn .lb-text{display:none}}
+@media (min-width:960px) and (max-width:1100px){.brand-logo{width:30px}.topbar .desk-nav a{padding-inline:3px;font-size:12px}.topbar-in{gap:3px}}
+@media (max-width:700px){.brand span{display:none}}
+@media (max-width:1100px){.topbar .listbtn .lb-text{display:none}}

@@ -319,7 +319,8 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p><p class="small muted" id="build"></p>`;
+  showBuild();
   bindFilters();
   renderResults();
   renderPrograms();
@@ -352,6 +353,16 @@ function sessionAreas(u) {
   const cities = [...new Set(SESSIONS.map((e) => e.city).filter((c) => c && c !== "virtual"))].sort((a, b) => a.localeCompare(b));
   const name = (c) => c.replace(/(^|[ -])(\w)/g, (_, a, b) => a + b.toUpperCase());
   return [["", u.sess.all], ...cities.map((c) => [c, name(c)]), ["virtual", u.sess.virtual]];
+}
+
+// Small build stamp in the footer (commit and environment), so a preview can be told from production.
+let buildInfo = null;
+function showBuild() {
+  const el = $("#build");
+  if (!el) return;
+  const paint = () => { if (buildInfo?.sha) el.textContent = `build ${buildInfo.sha} · ${buildInfo.env}${buildInfo.branch ? " · " + buildInfo.branch : ""}`; };
+  if (buildInfo) return paint();
+  fetch("/api/version", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((j) => { buildInfo = j; paint(); }).catch(() => {});
 }
 
 function renderSessions() {

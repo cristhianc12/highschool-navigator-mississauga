@@ -88,7 +88,7 @@ export const UI = {
       finderPh: "Ej.: Computer Science, Photography, MHF4U…", finderNone: "No encontramos cursos con ese texto.", finderMin: "Escribe al menos 3 letras.",
       finderCount: (n) => `${n} curso${n === 1 ? "" : "s"}`,
       finderSrc: () => `Fuente: calendarios de cursos publicados por cada escuela en su sitio oficial (el año aparece en cada perfil). No todas las escuelas publican su lista de cursos.`,
-      offeredIn: "Se ofrece en",
+      offeredIn: "Se ofrece en", schoolsN: (n) => `${n} escuela${n === 1 ? "" : "s"}`, moreSchools: (n) => `+${n} escuela${n === 1 ? "" : "s"} más`,
     },
     map: {
       nav: "Mapa", h: "Mapa de las escuelas", area: "Zona", areaAll: "todo el GTA",
@@ -324,7 +324,7 @@ export const UI = {
       finderPh: "E.g. Computer Science, Photography, MHF4U…", finderNone: "No courses match that text.", finderMin: "Type at least 3 letters.",
       finderCount: (n) => `${n} course${n === 1 ? "" : "s"}`,
       finderSrc: () => `Source: course calendars published on each school's official website (the year is shown on each profile). Not every school publishes its course list.`,
-      offeredIn: "Offered at",
+      offeredIn: "Offered at", schoolsN: (n) => `${n} school${n === 1 ? "" : "s"}`, moreSchools: (n) => `+${n} more school${n === 1 ? "" : "s"}`,
     },
     map: {
       nav: "Map", h: "School map", area: "Area", areaAll: "whole GTA",
@@ -560,7 +560,7 @@ export const UI = {
       finderPh: "Ex. : Computer Science, Photography, MHF4U…", finderNone: "Aucun cours ne correspond.", finderMin: "Saisis au moins 3 lettres.",
       finderCount: (n) => `${n} cours`,
       finderSrc: () => `Source : calendriers de cours publiés sur le site officiel de chaque école (l'année figure dans chaque profil). Toutes les écoles ne publient pas leur liste de cours.`,
-      offeredIn: "Offert à",
+      offeredIn: "Offert dans", schoolsN: (n) => `${n} école${n === 1 ? "" : "s"}`, moreSchools: (n) => `+${n} école${n === 1 ? "" : "s"} de plus`,
     },
     map: {
       nav: "Carte", h: "Carte des écoles", area: "Secteur", areaAll: "toute la RGT",

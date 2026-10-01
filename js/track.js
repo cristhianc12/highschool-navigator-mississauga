@@ -166,6 +166,7 @@ document.addEventListener("change", (e) => {
   if (f) return track("filter", f[1], t.value);
   const pfm = t.id && t.id.match(/^p-(board|region|tag|start|entry)$/);
   if (pfm) return track("filter", "prog_" + pfm[1], t.value);
+  if (t.id === "cf-board") return once("finderboard", "courses", "finder");
   if (t.id === "s-area") return track("session", "area", t.value);
   if (t.id === "s-board") return track("session", "board", t.value);
   if (t.classList.contains("maparea")) return track("map", "region", t.value);

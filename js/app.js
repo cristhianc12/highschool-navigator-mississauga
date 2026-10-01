@@ -262,7 +262,10 @@ function renderShell() {
   <section id="mapa"><div class="sec-head"><h2>${esc(u.map.h)}</h2><p>${esc(u.map.p)}</p></div><div id="map-host"></div></section>
 
   <section id="materias"><div class="sec-head"><h2>${esc(u.crs.finderH)}</h2><p>${esc(u.crs.finderP)}</p></div>
-    <input type="search" class="mapsearch" id="cf-q" placeholder="${esc(u.crs.finderPh)}" aria-label="${esc(u.crs.finderH)}" autocomplete="off">
+    <form class="filters" onsubmit="return false">
+      <label class="field search">${esc(u.searchLabel)}<input type="search" id="cf-q" placeholder="${esc(u.crs.finderPh)}" autocomplete="off"></label>
+      <label class="field">${esc(u.fSystem)}<select id="cf-board"><option value="">${esc(u.all)}</option></select></label>
+    </form>
     <div id="cf-out" class="cf-out" aria-live="polite"></div>
     <p class="small muted">${esc(u.crs.finderSrc("2025-2026"))}</p></section>
 
@@ -497,19 +500,29 @@ function setCompare(id, on) {
 }
 
 let cfTimer = null;
+// Course finder: runs on typing, on a board change and on "Show more" (the limit is kept on the results element).
+async function runFinder(reset = true) {
+  const out = $("#cf-out");
+  if (!out) return;
+  if (reset) delete out.dataset.limit;
+  const { renderFinder } = await import("./course-finder.js");
+  renderFinder(out, $("#cf-q")?.value || "", state.lang, { board: $("#cf-board")?.value || "" });
+}
 document.addEventListener("input", (e) => {
   if (e.target.id !== "cf-q") return;
   clearTimeout(cfTimer);
-  cfTimer = setTimeout(async () => { const { renderFinder } = await import("./course-finder.js"); renderFinder($("#cf-out"), e.target.value, state.lang); }, 220);
+  cfTimer = setTimeout(runFinder, 220);
 });
 document.addEventListener("change", (e) => {
   if (e.target.matches("[data-cmp]")) setCompare(e.target.dataset.cmp, e.target.checked);
   if (e.target.id === "cmp-add" && e.target.value) setCompare(e.target.value, true);
+  if (e.target.id === "cf-board") runFinder();
   if (e.target.id === "s-area") { state.sess.area = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
   if (e.target.id === "s-board") { state.sess.board = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
 });
 document.addEventListener("click", (e) => {
   if (e.target.closest("#show-more")) { state.shown += PAGE; renderResults(); return; }
+  if (e.target.closest("#cf-show-more")) { const out = $("#cf-out"); out.dataset.limit = (Number(out.dataset.limit) || 10) + 10; runFinder(false); return; }
   if (e.target.closest("#progs-show-more")) { state.progShown += PROG_PAGE; renderPrograms(); return; }
   if (e.target.closest("#sess-show-more")) { state.sessShown += SESS_PAGE; renderSessions(); return; }
   const rm = e.target.closest("[data-remove]");

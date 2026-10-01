@@ -1,0 +1,16 @@
+{
+ "id": "tdsb-calc",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 information night date on the TDSB open house page (the page lists the school without a date or does not list it).",
+  "No published course list for 2026-27 found that could be extracted reliably.",
+  "TDSB lists this site as an adult learning centre; no secondary program information found; official website did not load."
+ ]
+}

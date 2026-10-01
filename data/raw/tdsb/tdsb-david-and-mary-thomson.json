@@ -1,0 +1,66 @@
+{
+ "id": "tdsb-david-and-mary-thomson",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/4130",
+ "sources": [
+  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=4130",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "Advanced Placement courses let students earn a Grade 12 university-preparation credit and take the optional AP exam; course offerings vary by school and year.",
+    "es": "Los cursos Advanced Placement permiten obtener un crédito universitario de 12.º grado y presentar el examen AP opcional; la oferta varía según la escuela y el año.",
+    "fr": "Les cours Advanced Placement permettent d'obtenir un crédit universitaire de 12e année et de passer l'examen AP facultatif; l'offre varie selon l'école et l'année."
+   },
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Grade 11-12 Ministry-approved program that focuses learning on an economic sector while earning the OSSD; sectors listed for this school by the TDSB: Health and Wellness, Horticulture & Landscaping, Information Communications Technology.",
+    "es": "Programa de 11.º y 12.º grado aprobado por el Ministerio que enfoca el aprendizaje en un sector económico mientras se obtiene el OSSD; sectores que el TDSB indica para esta escuela: Health and Wellness, Horticulture & Landscaping, Information Communications Technology.",
+    "fr": "Programme de 11e et 12e année approuvé par le Ministère qui centre l'apprentissage sur un secteur économique tout en obtenant le diplôme OSSD; secteurs indiqués par le TDSB pour cette école : Health and Wellness, Horticulture & Landscaping, Information Communications Technology."
+   },
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+  },
+  {
+   "tag": "stem",
+   "name": "Math and Science Focus (Local)",
+   "note": {
+    "en": "The TDSB lists Math and Science Focus (Local) as a local program available at this school.",
+    "es": "El TDSB incluye Math and Science Focus (Local) como programa local disponible en esta escuela.",
+    "fr": "Le TDSB indique Math and Science Focus (Local) comme programme local offert à cette école."
+   },
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Horticulture & Landscaping",
+  "Information Communications Technology"
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-26",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 open house / information night",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No published course list for 2026-27 found that could be extracted reliably.",
+  "Fees, marks and dates for local programs (AP, SHSM, French Immersion) were not stated on the pages read."
+ ]
+}

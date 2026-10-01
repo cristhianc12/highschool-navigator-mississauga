@@ -1,0 +1,38 @@
+{
+ "id": "tdsb-alpha-ii-alternative-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/5900",
+ "sources": [
+  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=5900",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Secondary Alternative School",
+   "note": {
+    "en": "Alternative schools are small learning environments with a distinct approach to learning; applications are made at each secondary alternative school.",
+    "es": "Las escuelas alternativas son entornos de aprendizaje pequeños con un enfoque distinto; la solicitud se hace en cada escuela secundaria alternativa.",
+    "fr": "Les écoles alternatives sont de petits milieux d'apprentissage avec une approche distinctive; les demandes se font directement à chaque école secondaire alternative."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+  }
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-05",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Grade 9 open house / information night",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No published course list for 2026-27 found that could be extracted reliably."
+ ]
+}

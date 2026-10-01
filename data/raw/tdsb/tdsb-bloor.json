@@ -1,0 +1,119 @@
+{
+ "id": "tdsb-bloor",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/bloorci/",
+ "sources": [
+  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=5505",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Application-and-Admissions",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "Advanced Placement courses let students earn a Grade 12 university-preparation credit and take the optional AP exam; course offerings vary by school and year.",
+    "es": "Los cursos Advanced Placement permiten obtener un crédito universitario de 12.º grado y presentar el examen AP opcional; la oferta varía según la escuela y el año.",
+    "fr": "Les cours Advanced Placement permettent d'obtenir un crédit universitaire de 12e année et de passer l'examen AP facultatif; l'offre varie selon l'école et l'année."
+   },
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Grade 11-12 Ministry-approved program that focuses learning on an economic sector while earning the OSSD; sectors listed for this school by the TDSB: Business, Health and Wellness, Information Communications Technology.",
+    "es": "Programa de 11.º y 12.º grado aprobado por el Ministerio que enfoca el aprendizaje en un sector económico mientras se obtiene el OSSD; sectores que el TDSB indica para esta escuela: Business, Health and Wellness, Information Communications Technology.",
+    "fr": "Programme de 11e et 12e année approuvé par le Ministère qui centre l'apprentissage sur un secteur économique tout en obtenant le diplôme OSSD; secteurs indiqués par le TDSB pour cette école : Business, Health and Wellness, Information Communications Technology."
+   },
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+  },
+  {
+   "tag": "stem",
+   "name": "TOPS on Bloor",
+   "note": {
+    "en": "Specialized Math, Science and Technology program for students with a keen interest in the sciences and mathematics, with enrichment, contests, excursions and senior AP courses.",
+    "es": "Programa especializado de matemáticas, ciencias y tecnología para estudiantes con gran interés en las ciencias y las matemáticas, con enriquecimiento, concursos, excursiones y cursos AP en los grados superiores.",
+    "fr": "Programme spécialisé de mathématiques, de sciences et de technologie pour les élèves très intéressés par les sciences et les mathématiques, avec enrichissement, concours, sorties et cours AP aux niveaux supérieurs."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Health and Wellness",
+  "Information Communications Technology"
+ ],
+ "admissions": [
+  {
+   "program": "TOPS on Bloor",
+   "tag": "stem",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "elig": {
+    "en": "Open to students who meet TDSB age, residency and status requirements (or are registered at a TDSB school) and whose parent/guardian lives in Ontario during the application window; students apply for one type of Specialized Program with one primary choice and optionally one alternate of the same type.",
+    "es": "Para estudiantes que cumplen los requisitos de edad, residencia y estatus del TDSB (o están inscritos en una escuela del TDSB) y cuyo padre/madre/tutor vive en Ontario durante el período de solicitud; se solicita un tipo de Specialized Program con una opción principal y, si quieres, una alterna del mismo tipo.",
+    "fr": "Pour les élèves qui répondent aux exigences du TDSB en matière d'âge, de résidence et de statut (ou qui sont inscrits dans une école du TDSB) et dont le parent/tuteur vit en Ontario pendant la période de demande; tu fais une demande pour un seul type de Specialized Program, avec un choix principal et, si tu veux, un choix de rechange du même type."
+   },
+   "marks": {
+    "en": "No more than 2 of these report card marks below 70%: Language, Math, Science & Technology, Geography, History, French, Arts, Physical and Health Education. Applicants are scored 30% on report card marks and 70% on the demonstration of knowledge and skills.",
+    "es": "No más de 2 de estas calificaciones del boletín por debajo de 70 %: Language, Math, Science & Technology, Geography, History, French, Arts y Physical and Health Education. La puntuación es 30 % boletín y 70 % demostración de conocimientos y habilidades.",
+    "fr": "Pas plus de 2 de ces notes du bulletin sous 70 % : Language, Math, Science & Technology, Geography, History, French, Arts et Physical and Health Education. La note finale compte pour 30 % le bulletin et 70 % la démonstration des connaissances et habiletés."
+   },
+   "fee": null,
+   "dates": {
+    "en": "Application opens November 9 and closes November 27, 2026; in-person assessments take place December 7-17, 2026; acceptances and waitlist status are emailed February 10, 2027 and offers expire February 16, 2027 at 4 p.m.; further offers February 17 and 24, 2027.",
+    "es": "La solicitud abre el 9 de noviembre y cierra el 27 de noviembre de 2026; las evaluaciones presenciales se realizan del 7 al 17 de diciembre de 2026; las aceptaciones y el estado de lista de espera se envían por correo el 10 de febrero de 2027 y las ofertas vencen el 16 de febrero de 2027 a las 4 p. m.; habrá más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "La demande ouvre le 9 novembre et ferme le 27 novembre 2026; les évaluations en personne ont lieu du 7 au 17 décembre 2026; les acceptations et l'état de la liste d'attente sont envoyés par courriel le 10 février 2027 et les offres expirent le 16 février 2027 à 16 h; d'autres offres seront faites les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online Specialized Programs application (Central Program Admissions Office) with your June report card",
+     "es": "Solicitud en línea de Specialized Programs (Central Program Admissions Office) con tu boletín de junio",
+     "fr": "Demande en ligne de Specialized Programs (Central Program Admissions Office) avec ton bulletin de juin"
+    },
+    {
+     "en": "In-person multiple-choice assessment (math reasoning, scientific problem solving, coding) on December 7, 2026",
+     "es": "Evaluación presencial de opción múltiple (razonamiento matemático, resolución de problemas científicos, programación) el 7 de diciembre de 2026",
+     "fr": "Évaluation en personne à choix multiples (raisonnement mathématique, résolution de problèmes scientifiques, codage) le 7 décembre 2026"
+    }
+   ],
+   "know": [
+    {
+     "en": "Meeting the report card benchmark does not guarantee a place; applications are not first come, first served.",
+     "es": "Cumplir el requisito de calificaciones no garantiza un lugar; las solicitudes no se atienden por orden de llegada.",
+     "fr": "Respecter le seuil du bulletin ne garantit pas une place; les demandes ne sont pas traitées selon l'ordre d'arrivée."
+    },
+    {
+     "en": "Transportation is the responsibility of the applicant.",
+     "es": "El transporte es responsabilidad del solicitante.",
+     "fr": "Le transport est à la charge du demandeur."
+    },
+    {
+     "en": "Students are normally admitted in Grade 9; Grade 10 entry is possible if space is available.",
+     "es": "Normalmente se ingresa en 9.º grado; el ingreso en 10.º es posible si hay cupo.",
+     "fr": "L'admission se fait normalement en 9e année; l'entrée en 10e est possible s'il reste des places."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-27",
+   "time": "17:00",
+   "format": "In person",
+   "title": "Grade 9 open house / information night",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No published course list for 2026-27 found that could be extracted reliably.",
+  "Fees, marks and dates for local programs (AP, SHSM, French Immersion) were not stated on the pages read."
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "tdsb-albert-campbell",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/albertcampbell",
+ "sources": [
+  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=4120",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Grade 11-12 Ministry-approved program that focuses learning on an economic sector while earning the OSSD; sectors listed for this school by the TDSB: Arts & Culture, Transportation.",
+    "es": "Programa de 11.º y 12.º grado aprobado por el Ministerio que enfoca el aprendizaje en un sector económico mientras se obtiene el OSSD; sectores que el TDSB indica para esta escuela: Arts & Culture, Transportation.",
+    "fr": "Programme de 11e et 12e année approuvé par le Ministère qui centre l'apprentissage sur un secteur économique tout en obtenant le diplôme OSSD; secteurs indiqués par le TDSB pour cette école : Arts & Culture, Transportation."
+   },
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+  }
+ ],
+ "shsm": [
+  "Arts & Culture",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-12-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 open house / information night",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No published course list for 2026-27 found that could be extracted reliably.",
+  "Fees, marks and dates for local programs (AP, SHSM, French Immersion) were not stated on the pages read."
+ ]
+}

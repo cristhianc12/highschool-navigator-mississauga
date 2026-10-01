@@ -1,0 +1,68 @@
+{
+ "id": "ddsb-pickering",
+ "scrapedAt": "2026-10-01",
+ "site": "https://pickeringhs.ddsb.ca",
+ "sources": [
+  "https://pickeringhs.ddsb.ca/",
+  "https://pickeringhs.ddsb.ca/en/our-school/about-us.aspx",
+  "https://pickeringhs.ddsb.ca/en/students/specialist-high-skills-major.aspx",
+  "https://pickeringhs.ddsb.ca/en/courses/departments.aspx",
+  "https://www.ddsb.ca/students/secondary-school-programs/specialist-high-skills-major/",
+  "https://www.ddsb.ca/students/register-a-child-for-school/",
+  "https://www.ddsb.ca/news/posts/information-nights-for-grade-8-students-transitioning-to-high-school-in-september-2026/",
+  "https://www.ddsb.ca/students/secondary-school-programs/french-immersion/",
+  "https://pickeringhs.ddsb.ca/en/students/resources/Guidance-Documents/Guidance-2425/PHS-Course-Calendar-2025-2026.pdf",
+  "https://www.ddsb.ca/about-ddsb/inclusive-student-services/gifted-placement/"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "SHSM sectors listed by the school: Construction, Information & Communications Technology, Non-Profit, Transportation; students complete 8-10 Grade 11-12 courses, certifications (e.g., First Aid, CPR) and co-op placements to earn the SHSM seal, and enrol in Grade 10.",
+    "es": "Sectores SHSM que indica la escuela: Construction, Information & Communications Technology, Non-Profit, Transportation; el estudiante completa de 8 a 10 cursos de 11.º y 12.º grado, certificaciones (p. ej., First Aid, CPR) y prácticas cooperativas para obtener el sello SHSM, y se inscribe en 10.º grado.",
+    "fr": "Secteurs SHSM indiqués par l'école : Construction, Information & Communications Technology, Non-Profit, Transportation; l'élève réussit de 8 à 10 cours de 11e et 12e année, des certifications (p. ex., First Aid, CPR) et des stages coopératifs pour obtenir le sceau SHSM, et s'inscrit en 10e année."
+   },
+   "entry": "school",
+   "url": "https://pickeringhs.ddsb.ca/en/students/specialist-high-skills-major.aspx"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "The DDSB lists this school as a dual-track secondary school offering French Immersion (continuing from the elementary French Immersion program that starts in Grade 1).",
+    "es": "El DDSB incluye esta escuela entre las secundarias de doble vía que ofrecen inmersión en francés (continuación del programa de primaria que empieza en 1.er grado).",
+    "fr": "Le DDSB indique que cette école secondaire à double voie offre l'immersion française (suite du programme élémentaire qui commence en 1re année)."
+   },
+   "entry": "school",
+   "url": "https://www.ddsb.ca/students/secondary-school-programs/french-immersion/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted courses",
+   "note": {
+    "en": "Gifted-designated courses for students identified as Gifted through an IPRC (the school's own documents list gifted English, Geography and/or Math and Science courses); a DDSB Gifted Certificate needs 8 gifted courses including at least one in Grade 11.",
+    "es": "Cursos designados para estudiantes dotados, identificados mediante un IPRC (los documentos de la escuela incluyen cursos de inglés, geografía, matemáticas y/o ciencias); el certificado de dotados del DDSB requiere 8 cursos, al menos uno de 11.º grado.",
+    "fr": "Cours désignés pour les élèves surdoués identifiés par un CIPR (les documents de l'école mentionnent des cours d'anglais, de géographie, de mathématiques et/ou de sciences); le certificat pour surdoués du DDSB exige 8 cours dont au moins un en 11e année."
+   },
+   "entry": "school",
+   "url": "https://pickeringhs.ddsb.ca/en/students/resources/Guidance-Documents/Guidance-2425/PHS-Course-Calendar-2025-2026.pdf"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 (Grade 9 entry Sept 2027) information night dates published yet; the only DDSB list found (Dec 2025) is for Sept 2026 entry, so no sessions are recorded.",
+  "IB, AP, arts-audition or other application-based programs are not stated on the school pages read.",
+  "Course calendar is the 2025-26 edition (latest published); a few extracted titles may be merged by the PDF layout."
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "shsm": [
+  "Construction",
+  "Information & Communications Technology",
+  "Non-Profit",
+  "Transportation"
+ ],
+ "calendarUrl": "https://pickeringhs.ddsb.ca/en/students/resources/Guidance-Documents/Guidance-2425/PHS-Course-Calendar-2025-2026.pdf"
+}

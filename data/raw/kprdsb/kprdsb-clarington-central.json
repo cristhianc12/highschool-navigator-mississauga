@@ -1,0 +1,57 @@
+{
+  "id": "kprdsb-clarington-central",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.kprschools.ca/claringtoncentral/",
+  "sources": [
+    "https://www.kprschools.ca/claringtoncentral/",
+    "https://www.kprschools.ca/claringtoncentral/learning-and-programs/specialist-high-skills-major/",
+    "https://www.kprschools.ca/claringtoncentral/learning-and-programs/co-operative-education/",
+    "https://www.kprschools.ca/claringtoncentral/learning-and-programs/ontario-youth-apprenticeship-program/",
+    "https://www.kprschools.ca/claringtoncentral/learning-and-programs/departments/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/dual-credit-program/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/cooperative-education/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/ontario-youth-apprenticeship-program-oyap/",
+    "https://www.kprschools.ca/learning-and-programs/french-immersion/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/information-for-grade-8-families/",
+    "https://www.kprschools.ca/claringtoncentral/student-and-family-supports/guidance/course-selection/",
+    "https://www.kprschools.ca/claringtoncentral/student-and-family-supports/guidance/grade-9-information/",
+    "https://www.kprschools.ca/claringtoncentral/learning-and-programs/arts/visual-arts-at-ccss/",
+    "https://docs.google.com/document/d/e/2PACX-1vQ2gOOKc0VWJWflGtz56RBlEKJ-U8KjafvdF6C7SxAM8jIZCfoWFgBwIQqlCrLmXb6U3nFMzfLCkOBt/pub?embedded=true"
+  ],
+  "programs": [
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": null,
+      "url": "https://www.kprschools.ca/claringtoncentral/learning-and-programs/specialist-high-skills-major/",
+      "note": {
+        "en": "The school's page lists these SHSM sectors: Arts and Culture, Business, Environment, Health and Wellness, Hospitality and Tourism.",
+        "es": "La página de la escuela enumera estos sectores SHSM: Arts and Culture, Business, Environment, Health and Wellness, Hospitality and Tourism.",
+        "fr": "La page de l'école énumère ces secteurs SHSM : Arts and Culture, Business, Environment, Health and Wellness, Hospitality and Tourism."
+      }
+    }
+  ],
+  "shsm": [
+    "Arts and Culture",
+    "Business",
+    "Environment",
+    "Health and Wellness",
+    "Hospitality and Tourism"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Ontario Youth Apprenticeship Program (OYAP)",
+    "Dual Credit"
+  ],
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "No 2026-27 Grade 8 information night / open house dates published (the board page only lists the Dec 2025 - Jan 2026 nights of the previous cycle)",
+    "Own school site (*.kprdsb.ca) is blocked by the network proxy; used the school's pages on kprschools.ca",
+    "No application process, fees or marks stated for SHSM, French Immersion or OYAP on the school pages; the board says to contact guidance",
+    "Course titles come from the 2026-27 calendar by automatic extraction; a few rows are noisy",
+    "Grade 9 course selection sheets and information-night slides are 2025-26 / Class of 2030 (previous cycle), not used for dates"
+  ],
+  "calendarUrl": "https://www.kprschools.ca/claringtoncentral/student-and-family-supports/guidance/course-selection/",
+  "focus": null
+}

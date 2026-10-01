@@ -280,7 +280,7 @@ function renderShell() {
     ${supportHtml(state.lang) ? `<p class="small supportline">${supportHtml(state.lang)} · <button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button></p>` : ""}
   </header>
 
-  <section id="explorar"><div class="sec-head"><h2>${esc(u.exploreH)}</h2><p>${esc(u.exploreP)}</p></div>
+  <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
     <form class="filters" id="filters" role="search" onsubmit="return false">
       <label class="field search">${esc(u.searchLabel)}<input type="search" id="f-q" value="${esc(f.q)}" placeholder="${esc(u.searchPh)}"></label>
       <label class="field">${esc(u.fRegion)}<select id="f-region">${regionOptions(f.region)}</select></label>
@@ -290,9 +290,7 @@ function renderShell() {
       <label class="field">${esc(u.fSort)}<select id="f-sort">${Object.entries(u.optSort).map(([v, l]) => `<option value="${v}" ${f.sort === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
       <button type="button" class="btn" id="f-reset">${esc(u.reset)}</button>
     </form>
-    <p class="count" id="count" aria-live="polite"></p></section>
-
-  <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
+    <p class="count" id="count" aria-live="polite"></p>
     <div class="grid dir" id="schools"></div><div id="schools-more" class="morewrap"></div>
     <details class="fraser-note"><summary>${esc(u.fraserWhatH)}</summary><p>${esc(u.fraserWhat)}</p>
       <p><a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p></details></section>

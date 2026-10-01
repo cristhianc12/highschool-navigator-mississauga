@@ -1,0 +1,95 @@
+{
+  "id": "tdsb-winston-churchill",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/churchillci/",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/4196",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Africentric-Secondary-Programs",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+    "https://schoolweb.tdsb.on.ca/churchillci/",
+    "https://sites.google.com/tdsb.on.ca/wccitransportationshsm/home"
+  ],
+  "programs": [
+    {
+      "tag": "other",
+      "name": "Leonard Braithwaite Program (Africentric Secondary Program)",
+      "entry": "apply",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Africentric-Secondary-Programs",
+      "note": {
+        "en": "Africentric program inside Winston Churchill CI: all Grade 9 compulsory courses (English, Science, Geography, Math and Core French) and select Grade 10 courses are taught with an Africentric focus at the academic level; open to students from across the city.",
+        "es": "Programa africéntrico dentro de Winston Churchill CI: todos los cursos obligatorios de 9.º grado (inglés, ciencias, geografía, matemáticas y francés básico) y algunos de 10.º se imparten con enfoque africéntrico en nivel académico; abierto a estudiantes de toda la ciudad.",
+        "fr": "Programme afrocentrique à Winston Churchill CI : tous les cours obligatoires de 9e année (anglais, sciences, géographie, mathématiques et français de base) et certains cours de 10e année sont enseignés avec une orientation afrocentrique au niveau théorique; ouvert aux élèves de toute la ville."
+      }
+    },
+    {
+      "tag": "ap",
+      "name": "Advanced Placement (AP)",
+      "entry": "school",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Local Advanced Placement program: AP courses give a Grade 12 university-preparation credit and optional College Board exams; offerings vary by school and year.",
+        "es": "Programa local de Advanced Placement: los cursos AP dan un crédito universitario de 12.º grado y exámenes opcionales del College Board; la oferta varía según la escuela y el año.",
+        "fr": "Programme local Advanced Placement : les cours AP donnent un crédit préuniversitaire de 12e année et des examens facultatifs du College Board; l'offre varie selon l'école et l'année."
+      }
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/churchillci/",
+      "note": {
+        "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Health and Wellness, Transportation.",
+        "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Health and Wellness, Transportation.",
+        "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Health and Wellness, Transportation."
+      }
+    }
+  ],
+  "shsm": [
+    "Health and Wellness",
+    "Transportation"
+  ],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [
+    {
+      "program": "Leonard Braithwaite Program (Africentric Secondary Program)",
+      "tag": "other",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Africentric-Secondary-Programs",
+      "elig": {
+        "en": "Open to all students interested in Grade 9 and 10 courses with an Africentric focus, from across the city.",
+        "es": "Abierto a todos los estudiantes interesados en cursos de 9.º y 10.º grado con enfoque africéntrico, de toda la ciudad.",
+        "fr": "Ouvert à tous les élèves intéressés par des cours de 9e et de 10e année à orientation afrocentrique, de toute la ville."
+      },
+      "submit": [
+        {
+          "en": "Leonard Braithwaite Program Registration Form, completed through your school's guidance counsellor",
+          "es": "Formulario de registro del Leonard Braithwaite Program, completado con el orientador de tu escuela",
+          "fr": "Formulaire d'inscription au Leonard Braithwaite Program, rempli avec le conseiller en orientation de ton école"
+        }
+      ],
+      "know": [
+        {
+          "en": "No application dates for 2027 are stated on the TDSB page; ask your guidance counsellor.",
+          "es": "La página del TDSB no indica fechas de solicitud para 2027; consulta con tu orientador.",
+          "fr": "La page du TDSB n'indique pas de dates de demande pour 2027; renseigne-toi auprès de ton conseiller en orientation."
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-24",
+      "time": "18:00",
+      "format": "In person",
+      "title": "Open house / information night, 6:00-8:00 PM (Africentric program; local programs: AP, SHSM)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The school's Leonard Braithwaite application on its site is labelled 2025-2026; no 2027 deadlines were found.",
+    "Course selection pages on the school site were not readable (404 or myBlueprint login), so no course list was extracted."
+  ]
+}

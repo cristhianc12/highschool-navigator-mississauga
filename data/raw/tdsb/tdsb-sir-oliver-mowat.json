@@ -1,0 +1,51 @@
+{
+  "id": "tdsb-sir-oliver-mowat",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/mowatci",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/4214",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+    "https://schoolweb.tdsb.on.ca/mowatci"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "Arts Focus (Local)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Arts Focus (Local) is listed as a local program: an opportunity to pursue visual and performing arts at the school itself.",
+        "es": "Arts Focus (Local) figura como programa local: una oportunidad de cursar artes visuales y escénicas en la propia escuela.",
+        "fr": "Arts Focus (Local) est indiqué comme programme local : une occasion de faire des arts visuels et des arts de la scène à l'école même."
+      }
+    },
+    {
+      "tag": "stem",
+      "name": "Math and Science Focus (Local)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Math and Science Focus (Local) is listed as a local program: a math, science and technology focus available at the school itself.",
+        "es": "Math and Science Focus (Local) figura como programa local: un enfoque en matemáticas, ciencias y tecnología disponible en la propia escuela.",
+        "fr": "Math and Science Focus (Local) est indiqué comme programme local : une orientation mathématiques, sciences et technologie offerte dans l'école même."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-12-08",
+      "time": "18:30",
+      "format": "In person",
+      "title": "Open house / information night, 6:30-8:30 PM (local programs: Arts Focus, Math and Science Focus)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The school's own site is marked 'under construction' and shows no program, course or SHSM pages; programs come from the TDSB open-house list and legend.",
+    "No public course list readable without a login was found on the school's pages (TDSB course selection runs through myBlueprint), so no course list was extracted."
+  ]
+}

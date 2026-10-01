@@ -1,0 +1,50 @@
+{
+  "id": "tdsb-sir-john-a-macdonald",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/johnamacdonald",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/4154",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+    "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Student-Success/SHSM",
+    "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Student-Success/Dual-Credit",
+    "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Guidance/Course-Selection",
+    "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Guidance/Admission-Information",
+    "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Technological-Education"
+  ],
+  "programs": [
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM): Health and Wellness",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Student-Success/SHSM",
+      "note": {
+        "en": "Ministry-approved Grade 11-12 Health and Wellness SHSM: students earn sector certifications, take a bundle of credits (anatomy, physiology, human development), meet sector partners and attend college and university workshops.",
+        "es": "SHSM de Health and Wellness aprobado por el Ministerio para 11.º y 12.º grado: los estudiantes obtienen certificaciones del sector, cursan un conjunto de créditos (anatomía, fisiología, desarrollo humano), conocen a socios del sector y asisten a talleres en colegios universitarios y universidades.",
+        "fr": "SHSM Health and Wellness approuvé par le ministère pour la 11e et la 12e année : les élèves obtiennent des certifications du secteur, suivent un bloc de crédits (anatomie, physiologie, développement humain), rencontrent des partenaires du secteur et participent à des ateliers dans des collèges et des universités."
+      }
+    }
+  ],
+  "shsm": [
+    "Health and Wellness"
+  ],
+  "other": [
+    "Dual Credit"
+  ],
+  "calendarUrl": "https://schoolweb.tdsb.on.ca/johnamacdonald/Departments/Guidance/Course-Selection",
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "format": "In person",
+      "title": "Open house / information night, 6:30-8:00 PM (local program: SHSM)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "No separate application process was found for the SHSM (course selection through the school).",
+    "The school's course selection page links 2026-27 option sheets for Grades 10-12 and the TDSB Grade 8 to 9 guide; courses were extracted from those PDFs (myBlueprint itself needs a login)."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "tdsb-west-end-alternative-school",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/westendalt",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/5569",
+    "https://schoolweb.tdsb.on.ca/westendalt",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/Find-your/School/Alternative-Schools"
+  ],
+  "programs": [
+    {
+      "tag": "alt",
+      "name": "West End Alternative School",
+      "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5569",
+      "note": {
+        "en": "Small alternative school for Grades 10-12 offering themed courses plus compulsory courses; applicants must have completed Grade 9 English, Science, Mathematics and Geography at the Applied or Academic level and be aged 16 to 20.",
+        "es": "Pequeña escuela alternativa para 10.º a 12.º grado que ofrece cursos temáticos y obligatorios; los solicitantes deben haber completado inglés, ciencias, matemáticas y geografía de 9.º grado en nivel Applied o Academic y tener entre 16 y 20 años.",
+        "fr": "Petite école alternative de la 10e à la 12e année qui offre des cours thématiques et des cours obligatoires; les candidats doivent avoir terminé l'anglais, les sciences, les mathématiques et la géographie de 9e année au niveau appliqué ou théorique et avoir de 16 à 20 ans."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "The roster website (a Weebly page) was replaced by the school's TDSB-hosted page.",
+    "Registration happens at the start and end of each semester (June/September, December/January) by appointment; no 2026-27 dates or course list were found.",
+    "Open-house list says no Grade 9 is offered and gives no dates."
+  ]
+}

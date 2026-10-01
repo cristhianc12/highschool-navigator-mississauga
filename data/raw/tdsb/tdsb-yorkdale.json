@@ -1,0 +1,33 @@
+{
+  "id": "tdsb-yorkdale",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/yorkdaless",
+  "sources": [
+    "https://schoolweb.tdsb.on.ca/yorkdaless",
+    "https://docs.google.com/spreadsheets/d/1pyQpd1X8lPHK701W8cLR0FhCNS9NrZJnvoy0f0eX5Ug/edit?usp=sharing"
+  ],
+  "programs": [
+    {
+      "tag": "other",
+      "name": "EdVance Program (ages 18-20)",
+      "entry": "apply",
+      "url": "https://schoolweb.tdsb.on.ca/yorkdaless",
+      "note": {
+        "en": "Quadmestered program for students aged 18 to 20 who want to earn their diploma, upgrade for post-secondary goals or enter the Ontario system, earning up to 3 credits every 9 weeks; online registration form and PLAR available for studies outside Ontario.",
+        "es": "Programa en cuatrimestres para estudiantes de 18 a 20 años que quieren obtener su diploma, mejorar sus notas para estudios posteriores o incorporarse al sistema de Ontario, con hasta 3 créditos cada 9 semanas; hay formulario de registro en línea y PLAR para estudios realizados fuera de Ontario.",
+        "fr": "Programme à quadrimestres pour les élèves de 18 à 20 ans qui veulent obtenir leur diplôme, se mettre à niveau pour des études postsecondaires ou intégrer le système ontarien, avec jusqu'à 3 crédits toutes les 9 semaines; formulaire d'inscription en ligne et ERAA pour les études faites hors de l'Ontario."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": "https://docs.google.com/spreadsheets/d/1pyQpd1X8lPHK701W8cLR0FhCNS9NrZJnvoy0f0eX5Ug/edit?usp=sharing",
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "The roster website (yorkdale.net) is the school's registration site; the TDSB-hosted school page that serves the same content is used.",
+    "Not on the TDSB open-house list (adult/EdVance school, no Grade 9 intake); no sessions found.",
+    "The TDSB school profile page was not located.",
+    "The course offerings Google Sheet is linked as calendarUrl, but its rows mix grades and areas, so the extracted list (30 rows) was not reliable and was not kept."
+  ]
+}

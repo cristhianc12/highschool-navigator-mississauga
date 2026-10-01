@@ -1,0 +1,59 @@
+{
+  "id": "tdsb-york-mills",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/yorkmillsci/",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/3450",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+    "https://schoolweb.tdsb.on.ca/yorkmillsci/",
+    "https://schoolweb.tdsb.on.ca/yorkmillsci/Departments/Languages-Core-French-French-Immersion-and-Spanish"
+  ],
+  "programs": [
+    {
+      "tag": "fi",
+      "name": "French Immersion (FI)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "French Immersion is listed as a local program; the TDSB describes it for students with 3,800 to 6,000 hours of French instruction in elementary school, with 10 credits (4 in French, 6 in subjects taught in French) for the certificate.",
+        "es": "French Immersion figura como programa local; el TDSB lo describe para estudiantes con 3800 a 6000 horas de instrucción en francés en primaria, con 10 créditos (4 de francés y 6 de materias impartidas en francés) para el certificado.",
+        "fr": "L'immersion française est indiquée comme programme local; le TDSB la décrit pour les élèves ayant de 3 800 à 6 000 heures d'enseignement en français à l'élémentaire, avec 10 crédits (4 en français et 6 dans des matières enseignées en français) pour le certificat."
+      }
+    },
+    {
+      "tag": "stem",
+      "name": "Math and Science Focus (Local)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Math and Science Focus (Local) is listed as a local program: a math, science and technology focus available at the school itself.",
+        "es": "Math and Science Focus (Local) figura como programa local: un enfoque en matemáticas, ciencias y tecnología disponible en la propia escuela.",
+        "fr": "Math and Science Focus (Local) est indiqué comme programme local : une orientation mathématiques, sciences et technologie offerte dans l'école même."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-24",
+      "time": "18:00",
+      "format": "In person",
+      "title": "Open house / information night, 6:00-8:00 PM (local programs: French Immersion, Math and Science Focus)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "Department course pages exist on the school site but list only a handful of course codes, so no course list was extracted.",
+    "No public course list readable without a login was found on the school's pages (TDSB course selection runs through myBlueprint), so no course list was extracted."
+  ],
+  "kv": {
+    "entry": {
+      "en": "The school's page says York Mills is closed to Out-of-Area Admissions: only students living in the school's area can attend, and no additional application is required.",
+      "es": "La página de la escuela indica que York Mills está cerrada a la admisión fuera de zona: solo pueden asistir los estudiantes que viven en el área de la escuela y no se requiere solicitud adicional.",
+      "fr": "La page de l'école indique que York Mills est fermée aux admissions hors secteur : seuls les élèves qui habitent dans le secteur de l'école peuvent la fréquenter, et aucune demande supplémentaire n'est requise."
+    }
+  }
+}

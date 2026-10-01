@@ -26,6 +26,7 @@ export function goodTitle(t) {
   if (!/^[A-Z0-9]/.test(t)) return false; // official titles start with a capital letter or a digit
   if ((t.match(/\(/g) || []).length !== (t.match(/\)/g) || []).length) return false;
   if (/[|*\\]/.test(t) || /\/\s*$/.test(t) || /^[A-Z]\d\b/.test(t) || /\b(req\.?|prerequisite)\b/i.test(t)) return false;
+  if (/\s[UCMEODW]\s+[A-Z]/.test(t) || /^\d{2,}/.test(t) || /\b(must|should|please|students?|encouraged|recommended)\b/i.test(t)) return false; // two courses glued together, row numbers, prose
   if (JUNK.test(t) || t.split(/\s+/).length > 9) return false;
   if (/\b(university|college|workplace|open)\s*\/\s*\w+/i.test(t)) return false; // "Open/University/College" fragments
   if (!/[a-z]{3}/i.test(t) || (/^[A-Z ]+$/.test(t) && t.length <= 15)) return false; // table headers such as "ARTS"

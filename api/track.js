@@ -30,6 +30,7 @@ const RULES = {
   engage: [E("lt10s", "10-60s", "1-5m", "gt5m"), E("0", "25", "50", "75", "100")],
   school_open: [SCHOOL_IDS, E("card", "map", "compare", "sessions", "courses", "quiz", "profile", "other")],
   program_open: [ID, E("card", "map", "compare", "sessions", "courses", "quiz", "profile", "other")],
+  coffee: [E("topbar", "hero", "footer", "card", "pill", "quiz", "other"), ANY],
   outbound: [E("support", "directions", "report", "fraser", "osm", "register", "flyer", "board", "school", "other"), HOST],
   filter: [E("region", "city", "board", "tag", "start", "entry", "sort", "vibe", "search", "prog_board", "prog_region", "prog_tag", "prog_start", "prog_entry", "prog_search"), (v, a) => ({
     region: empty(REGIONS), city: empty(CITIES), board: empty(BOARDS), tag: empty(TAGS), vibe: empty(TAGS),

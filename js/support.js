@@ -56,3 +56,12 @@ export function initSupportNudge(getLang) {
   };
   addEventListener("scroll", check, { passive: true });
 }
+
+// Always opens in a new tab so the guide stays open (also from in-app browsers and installed copies).
+document.addEventListener("click", (e) => {
+  const a = e.target instanceof Element ? e.target.closest("a[data-support]") : null;
+  if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey) return;
+  e.preventDefault();
+  const w = window.open(a.href, "_blank"); // (the "noopener" feature would make this return null)
+  if (w) { try { w.opener = null; } catch { /* cross-origin already */ } } else window.location.assign(a.href); // pop-up blocked: fall back to the normal link
+});

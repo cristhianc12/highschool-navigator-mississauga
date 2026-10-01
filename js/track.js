@@ -134,6 +134,10 @@ document.addEventListener("click", (e) => {
   if (a) {
     let host = "";
     try { const u = new URL(a.href, location.href); if (u.origin !== location.origin) host = u.hostname.replace(/^www\./, ""); } catch { /* ignore */ }
+    if (a.hasAttribute("data-support")) {
+      const el = a.closest(".topbar") ? "topbar" : a.closest(".hero") ? "hero" : a.closest(".supportcard") ? "card" : a.closest(".coffee-pill") ? "pill" : a.closest(".foot") ? "footer" : pageName() === "quiz" ? "quiz" : "other";
+      track("coffee", el);
+    }
     if (host) { track("outbound", outboundKind(a, host), host.slice(0, 40)); return; }
   }
   const sc = t.closest("[data-school], [data-card]");

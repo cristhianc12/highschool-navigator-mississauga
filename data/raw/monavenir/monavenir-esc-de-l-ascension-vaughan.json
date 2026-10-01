@@ -1,0 +1,26 @@
+{
+ "id": "monavenir-esc-de-l-ascension-vaughan",
+ "scrapedAt": "2026-10-01",
+ "site": "https://esca.cscmonavenir.ca/",
+ "sources": [
+  "https://esca.cscmonavenir.ca/",
+  "https://cscmonavenir.ca/ecole/ecole-secondaire-catholique-de-lascension-woodbridge/",
+  "https://cscmonavenir.ca/programmes-specialises/",
+  "https://cscmonavenir.ca/inscription-secondaire/",
+  "https://cscmonavenir.ca/portes-ouvertes-esc/"
+ ],
+ "programs": [],
+ "focus": {
+  "en": "French-language Catholic school in Woodbridge (Vaughan) for Grades 7 to 11, growing to Grade 12.",
+  "es": "Escuela católica de lengua francesa en Woodbridge (Vaughan) para 7.º a 11.º grado, en expansión.",
+  "fr": "École catholique de langue française à Woodbridge (Vaughan), de la 7e à la 11e année, en pleine expansion."
+ },
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No special programs, MHS or IB listed for this school on its own pages or in the board's MHS list (programmes-specialises).",
+  "Course lists: no school course calendar or course catalogue page with a readable list was found (board 'guide de cheminement' page lists schools without links; school pages hold old or PDF-only forms), so no courses were extracted.",
+  "No 2026-27 information-night dates: the board open-house page offers personalised appointments only and states no dates.",
+  "Hosts on the older csdccs.edu.on.ca domain show a Cloudflare challenge and were not used; all facts come from cscmonavenir.ca pages."
+ ]
+}

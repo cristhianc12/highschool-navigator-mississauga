@@ -1,0 +1,60 @@
+{
+ "id": "mississ",
+ "scrapedAt": "2026-10-01",
+ "site": "https://mississauga.peelschools.org/",
+ "sources": [
+  "https://mississauga.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/32851356-e841-41c5-befb-80c755cd900d/Mississauga-SS.pdf?fingerprint=ppb20251217022651",
+  "https://www.peelschools.org/specialist-high-skills-major"
+ ],
+ "programs": [],
+ "shsm": [
+  "Health & Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/32851356-e841-41c5-befb-80c755cd900d/Mississauga-SS.pdf?fingerprint=ppb20251217022651",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-04",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-04",
+   "time": "17:30",
+   "format": "In person",
+   "title": "MSS Advanced Placement Program Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-04",
+   "time": "17:30",
+   "format": "In person",
+   "title": "EHS & SHSM Info Night: Health & Wellness (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-04",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Peel Region High Performers Program Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Peel Region High Performers Program page on the board site still shows the 2026-27 intake dates (offers Jan 30, 2026), so no 2027-28 dates were recorded"
+ ]
+}

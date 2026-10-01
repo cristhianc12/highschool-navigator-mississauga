@@ -1,0 +1,26 @@
+{
+  "id": "goetz",
+  "scrapedAt": "2026-10-01",
+  "site": "https://goetz.dpcdsb.org/",
+  "sources": [
+    "https://goetz.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://goetz.dpcdsb.org/programs/course-calendar"
+  ],
+  "programs": [],
+  "shsm": [
+    "Arts & Culture",
+    "Information & Communications Technology"
+  ],
+  "calendarUrl": "https://goetz.dpcdsb.org/programs/course-calendar",
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "Programs not restated: this school already has a hand-verified record.",
+    "No course list extracted: the 15 Mississauga schools already have curated course lists.",
+    "No dated school information night: the board schedule lists Fr. Michael Goetz only with the Regional Bakery School Program, without date or time."
+  ]
+}

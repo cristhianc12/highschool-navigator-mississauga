@@ -1,0 +1,82 @@
+{
+  "id": "ycdsb-st-robert",
+  "scrapedAt": "2026-10-01",
+  "site": "https://stro.ycdsb.ca/",
+  "sources": [
+    "https://www.ycdsb.ca/programs-services/secondary/secondary-school-directory/stro/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/ib/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/shsm/",
+    "https://www.ycdsb.ca/admissions/secondary-registration/",
+    "https://stro.ycdsb.ca/our-school/special-programs/",
+    "https://stro.ycdsb.ca/2025/10/09/gr-8-to-9-ib-program-application-process/",
+    "https://www.ycdsb.ca/pathways/co-op/",
+    "https://www.ycdsb.ca/pathways/oyap/",
+    "https://www.ycdsb.ca/pathways/dual-credit-courses/"
+  ],
+  "programs": [
+    {
+      "tag": "ib",
+      "name": "International Baccalaureate (IB) Diploma Programme",
+      "note": {
+        "en": "IB Diploma Programme offered since 2002 and the largest IB program in the board; students apply in the fall of Grade 8 for the Grade 9 Pre-IB class.",
+        "es": "Programa del Diploma IB que se ofrece desde 2002 y el mayor programa IB del consejo; se postula en el otoño de 8.º grado para la clase Pre-IB de 9.º.",
+        "fr": "Programme du diplôme de l'IB offert depuis 2002 et le plus important programme IB du conseil; les élèves postulent à l'automne de la 8e année pour la classe Pre-IB de 9e année."
+      },
+      "entry": "apply",
+      "url": "https://stro.ycdsb.ca/our-school/special-programs/"
+    }
+  ],
+  "shsm": [
+    "Aviation and Aerospace",
+    "Health & Wellness",
+    "Construction",
+    "Justice, Community Safety & Emergency Services"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Dual Credit",
+    "OYAP"
+  ],
+  "admissions": [
+    {
+      "program": "Pre-IB (Grade 9) application",
+      "tag": "ib",
+      "url": "https://stro.ycdsb.ca/2025/10/09/gr-8-to-9-ib-program-application-process/",
+      "elig": {
+        "en": "Students apply in Grade 8; students living within the Cardinal Carter or Father Michael McGivney boundaries are not eligible for the St. Robert IB program, as posted for the previous cycle.",
+        "es": "Se postula en 8.º grado; los estudiantes que viven dentro de los límites de Cardinal Carter o Father Michael McGivney no son elegibles para el programa IB de St. Robert, según lo publicado en el ciclo anterior.",
+        "fr": "On postule en 8e année; les élèves qui habitent dans le secteur de Cardinal Carter ou de Father Michael McGivney ne sont pas admissibles au programme IB de St. Robert, selon l'avis du cycle précédent."
+      },
+      "submit": [
+        {
+          "en": "IB entrance test registration form (posted each fall)",
+          "es": "Formulario de inscripción al examen de ingreso IB (se publica cada otoño)",
+          "fr": "Formulaire d'inscription au test d'admission à l'IB (affiché chaque automne)"
+        }
+      ],
+      "know": [
+        {
+          "en": "Separate registration process applies to the Academic Program at this capped school.",
+          "es": "Existe un proceso de registro aparte para el Programa Académico de esta escuela con cupo limitado.",
+          "fr": "Un processus d'inscription distinct s'applique au programme scolaire de cette école à effectif plafonné."
+        }
+      ]
+    },
+    {
+      "program": "Registration at St. Robert (capped school)",
+      "url": "https://www.ycdsb.ca/admissions/secondary-registration/",
+      "elig": {
+        "en": "Capped school: registration is contingent on the school reaching its enrolment capacity; submit an online registration and the board informs you if the limit is exceeded.",
+        "es": "Escuela con cupo limitado: el registro depende de que se alcance la capacidad de matrícula; envía el registro en línea y se te informará si se supera el límite.",
+        "fr": "École à effectif plafonné : l'inscription dépend de l'atteinte de la capacité; remplis l'inscription en ligne et on t'avisera si la limite est dépassée."
+      }
+    }
+  ],
+  "sessions": [],
+  "missing": [
+    "IB entrance test dates for 2026-27 not found (the posted dates are for the 2025-26 cycle)",
+    "Co-op, Dual Credit and OYAP come from the board pathways pages (co-op is offered in Grades 11-12); the Construction and Justice SHSM are listed on the board SHSM page as centralized for all schools",
+    "No school course calendar or course list found online (guidance pages are Google Sites with no readable course list)",
+    "2026 open house details: the board 2026 Open House page says information will be posted soon (as of 2026-10-01)"
+  ]
+}

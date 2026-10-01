@@ -1,0 +1,83 @@
+{
+ "id": "hcdsb-st-francis-xavier",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/xavier/",
+ "sources": [
+  "https://secondary.hcdsb.org/xavier/",
+  "https://secondary.hcdsb.org/xavier/steam/",
+  "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/",
+  "https://secondary.hcdsb.org/xavier/students/shsm/",
+  "https://secondary.hcdsb.org/xavier/event/gr-8-night-hpp-steam-ap/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM Program",
+   "note": {
+    "en": "Grade 9 STEAM cohort: students take four bundled courses (Science, Technological Design, Math, English) through project-based, inquiry learning.",
+    "es": "Cohorte STEAM de 9.º grado: los estudiantes cursan cuatro materias integradas (Ciencias, Diseño Tecnológico, Matemáticas, Inglés) con aprendizaje por proyectos e indagación.",
+    "fr": "Cohorte STEAM de 9e année : les élèves suivent quatre cours regroupés (sciences, conception technologique, mathématiques, anglais) par projets et par enquête."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/xavier/steam/"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Regional Sports Program",
+   "note": {
+    "en": "Program merging academics and physical development, open to students across Halton Region, with a full-time pathway and a provincial-athlete pathway with a modified timetable.",
+    "es": "Programa que combina estudios y desarrollo físico, abierto a estudiantes de toda la región de Halton, con una vía de tiempo completo y otra para atletas provinciales con horario modificado.",
+    "fr": "Programme alliant études et développement physique, ouvert aux élèves de toute la région de Halton, avec un parcours à temps plein et un parcours pour athlètes provinciaux avec horaire modifié."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of sector courses, certifications, experiential learning and a co-operative education course.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y un curso de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et un cours d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/xavier/students/shsm/"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif."
+   },
+   "entry": "apply",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Fitness and Sports Leadership",
+  "Information & Communications Technology",
+  "Arts & Culture",
+  "Hospitality"
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Night (HPP, STEAM, AP)",
+   "url": "https://secondary.hcdsb.org/xavier/event/gr-8-night-hpp-steam-ap/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages.",
+  "STEAM and High Performance pages still show 2025-26 application dates, so no application dates recorded.",
+  "The Grade 8 night mentions AP but no AP program page was found."
+ ]
+}

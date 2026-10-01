@@ -1,0 +1,144 @@
+{
+  "id": "tdsb-westview-centennial",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/westview",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/3448",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+    "https://schoolweb.tdsb.on.ca/westview/Student-Interest-Programs/ArtSpeaks-Secondary-Arts-Program",
+    "https://schoolweb.tdsb.on.ca/westview/Student-Interest-Programs/LAWS-Program",
+    "https://schoolweb.tdsb.on.ca/westview/Student-Interest-Programs/Specialist-High-Skills-Major-SHSM",
+    "https://schoolweb.tdsb.on.ca/westview/Departments/Student-Support-Services/Course-Selections",
+    "https://schoolweb.tdsb.on.ca/westview/Departments/Student-Support-Services",
+    "https://docs.google.com/document/d/15Dl88AU2x3bvyoQxMNJHqMSr1luzQilIaouVd81ZUuo/edit?tab=t.0"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "ArtSpeaks - Secondary Arts Program",
+      "entry": "audition",
+      "url": "https://schoolweb.tdsb.on.ca/westview/Student-Interest-Programs/ArtSpeaks-Secondary-Arts-Program",
+      "note": {
+        "en": "Four-year Arts program that approaches visual art, media arts, dance and music through a social justice lens; apply by audition or portfolio for Grade 9 or 10 (Grade 10 only if space).",
+        "es": "Programa de Artes de cuatro años que aborda las artes visuales, los medios, la danza y la música desde la justicia social; se solicita con audición o portafolio para 9.º o 10.º grado (10.º solo si hay cupo).",
+        "fr": "Programme d'arts de quatre ans qui aborde les arts visuels, les arts médiatiques, la danse et la musique sous l'angle de la justice sociale; la demande se fait par audition ou portfolio pour la 9e ou la 10e année (10e année seulement s'il y a de la place)."
+      }
+    },
+    {
+      "tag": "arts",
+      "name": "Arts Focus (Local)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Arts Focus (Local) is listed as a local program: an opportunity to pursue visual and performing arts at the school itself.",
+        "es": "Arts Focus (Local) figura como programa local: una oportunidad de cursar artes visuales y escénicas en la propia escuela.",
+        "fr": "Arts Focus (Local) est indiqué comme programme local : une occasion de faire des arts visuels et des arts de la scène à l'école même."
+      }
+    },
+    {
+      "tag": "other",
+      "name": "LAWS (Law in Action Within Schools)",
+      "url": "https://schoolweb.tdsb.on.ca/westview/Student-Interest-Programs/LAWS-Program",
+      "entry": "school",
+      "note": {
+        "en": "Partnership with the University of Toronto Faculty of Law, Osgoode Hall Law School and the TDSB that introduces students in Grades 10-12 to law and justice careers through mock trials, mentorship and tutoring; Core and Newcomer programs.",
+        "es": "Alianza con la Facultad de Derecho de la Universidad de Toronto, Osgoode Hall Law School y el TDSB que acerca a estudiantes de 10.º a 12.º grado al derecho y a las carreras de justicia mediante juicios simulados, mentoría y tutoría; programas Core y Newcomer.",
+        "fr": "Partenariat avec la faculté de droit de l'Université de Toronto, Osgoode Hall Law School et le TDSB qui initie les élèves de la 10e à la 12e année au droit et aux carrières de la justice par des procès simulés, du mentorat et du tutorat; programmes Core et Newcomer."
+      }
+    },
+    {
+      "tag": "other",
+      "name": "LEAP (Literacy Enrichment Academic Program)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "LEAP is listed as a local program: intensive literacy, math and study-skills upgrading for newcomers with restricted educational opportunities in their previous country.",
+        "es": "LEAP figura como programa local: refuerzo intensivo de lectoescritura, matemáticas y habilidades de estudio para recién llegados con oportunidades educativas limitadas en su país anterior.",
+        "fr": "LEAP est indiqué comme programme local : mise à niveau intensive en littératie, en mathématiques et en méthodes d'étude pour les nouveaux arrivants ayant eu un accès limité à l'éducation dans leur pays précédent."
+      }
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/westview/Student-Interest-Programs/Specialist-High-Skills-Major-SHSM",
+      "note": {
+        "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Arts & Culture, Construction, Health and Wellness, Transportation.",
+        "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Arts & Culture, Construction, Health and Wellness, Transportation.",
+        "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Arts & Culture, Construction, Health and Wellness, Transportation."
+      }
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Construction",
+    "Health and Wellness",
+    "Transportation"
+  ],
+  "other": [
+    "Co-operative Education",
+    "OYAP"
+  ],
+  "calendarUrl": "https://schoolweb.tdsb.on.ca/westview/Departments/Student-Support-Services/Course-Selections",
+  "admissions": [
+    {
+      "program": "ArtSpeaks - Secondary Arts Program",
+      "tag": "arts",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+      "elig": {
+        "en": "Open to students with an interest in the Arts; report-card eligibility is no more than 2 marks below 70% (see the TDSB application page). Grade 9 and 10 entry (Grade 10 only if space).",
+        "es": "Abierto a estudiantes con interés en las Artes; para ser elegible no puedes tener más de 2 calificaciones por debajo de 70 % (consulta la página de solicitud del TDSB). Ingreso en 9.º y 10.º grado (10.º solo si hay cupo).",
+        "fr": "Ouvert aux élèves qui s'intéressent aux arts; pour être admissible, tu ne dois pas avoir plus de 2 notes inférieures à 70 % (voir la page de demande du TDSB). Entrée en 9e et en 10e année (10e année seulement s'il y a de la place)."
+      },
+      "dates": {
+        "en": "Application open Nov 9-27, 2026; offers Feb 10, 2027, acceptance deadline Feb 16, 2027 at 4 p.m.; further offers Feb 17 and 24, 2027.",
+        "es": "Solicitud abierta del 9 al 27 de noviembre de 2026; ofertas el 10 de febrero de 2027, plazo para aceptar hasta el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y 24 de febrero de 2027.",
+        "fr": "Demande ouverte du 9 au 27 novembre 2026; offres le 10 février 2027, date limite d'acceptation le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+      },
+      "submit": [
+        {
+          "en": "Online Specialized Programs application",
+          "es": "Solicitud en línea de Programas Especializados",
+          "fr": "Demande en ligne aux programmes spécialisés"
+        },
+        {
+          "en": "Audition or portfolio submitted with the application (Visual Art, Media Arts, Dance or Music streams)",
+          "es": "Audición o portafolio enviado con la solicitud (áreas de Artes Visuales, Medios, Danza o Música)",
+          "fr": "Audition ou portfolio envoyé avec la demande (volets arts visuels, arts médiatiques, danse ou musique)"
+        }
+      ],
+      "know": [
+        {
+          "en": "Share of primary-choice applicants offered a seat in the entry grade for September 2026: 80% to 100%.",
+          "es": "Porcentaje de solicitantes de primera opción a quienes se ofreció un cupo en el grado de entrada para septiembre de 2026: 80 % a 100 %.",
+          "fr": "Pourcentage des candidats de premier choix à qui une place a été offerte dans l'année d'entrée pour septembre 2026 : 80 % à 100 %."
+        },
+        {
+          "en": "Applicants are scored 30% on the previous year's report card and 70% on the demonstration of knowledge and skills; for Arts this is a portfolio or recorded audition submitted with the application.",
+          "es": "Los solicitantes se califican 30 % por el boletín del año anterior y 70 % por la demostración de conocimientos y destrezas; en Artes es un portafolio o una audición grabada que se envía con la solicitud.",
+          "fr": "Les candidats sont notés à 30 % sur le bulletin de l'année précédente et à 70 % sur la démonstration de connaissances et d'habiletés; en arts, il s'agit d'un portfolio ou d'une audition enregistrée envoyé avec la demande."
+        },
+        {
+          "en": "Transportation is not provided for Specialized Programs.",
+          "es": "El transporte no se ofrece para los Programas Especializados.",
+          "fr": "Le transport n'est pas offert pour les programmes spécialisés."
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-12",
+      "time": "18:00",
+      "format": "In person",
+      "title": "Open house / information night, 6:00-8:00 PM (ArtSpeaks Arts program; local programs: Arts Focus, LEAP, SHSM)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The extracted course list comes from the school's 'Courses Offered @ Westview' Google Doc, which is labelled 2025-2026; no 2026-27 list was found.",
+    "TDSB course selection runs through myBlueprint (login), so only publicly readable sheets or PDFs were used for courses."
+  ]
+}

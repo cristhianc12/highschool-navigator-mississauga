@@ -1,0 +1,56 @@
+{
+ "id": "tdsb-albert-campbell",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/albertcampbell",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4120",
+  "https://schoolweb.tdsb.on.ca/albertcampbell/PARENTS/Courses",
+  "https://schoolweb.tdsb.on.ca/albertcampbell/SchoolSiteMap",
+  "https://sites.google.com/tdsb.on.ca/visual-media-arts-shsm/main",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Arts & Culture, Transportation.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Arts & Culture, Transportation.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Arts & Culture, Transportation."
+   }
+  },
+  {
+   "tag": "arts",
+   "name": "Visual and Media Arts with Arts & Culture SHSM",
+   "note": {
+    "en": "The Visual/Media Arts department offers visual and media arts courses, and the Arts & Culture SHSM adds specialized training, experiential learning and industry certifications.",
+    "es": "El departamento de Visual/Media Arts ofrece cursos de artes visuales y de medios, y el SHSM de Arts & Culture agrega formación especializada, aprendizaje experiencial y certificaciones de la industria.",
+    "fr": "Le département de Visual/Media Arts offre des cours d'arts visuels et d'arts médiatiques, et le SHSM Arts & Culture ajoute une formation spécialisée, de l'apprentissage expérientiel et des certifications de l'industrie."
+   },
+   "url": "https://sites.google.com/tdsb.on.ca/visual-media-arts-shsm/main"
+  }
+ ],
+ "shsm": [
+  "Arts & Culture",
+  "Transportation"
+ ],
+ "calendarUrl": "https://schoolweb.tdsb.on.ca/albertcampbell/PARENTS/Courses",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-12-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open house / information night, 6:00-8:00 PM (local program: SHSM)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "Course selection page is on a Google Site that requires a TDSB login, so no course list was extracted.",
+  "No program-specific admission steps found."
+ ]
+}

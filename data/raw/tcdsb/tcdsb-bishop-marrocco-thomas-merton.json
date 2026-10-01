@@ -1,0 +1,167 @@
+{
+ "id": "tcdsb-bishop-marrocco-thomas-merton",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/ap-program",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/regional-arts-centre",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/open-house",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/shsm",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Congregated Advanced Placement (CAP) Program",
+   "note": {
+    "en": "Congregated AP track in Grades 9-11 with Pre-AP courses in business, Canadian and world studies, English, French, math and science, leading to AP exams in Grade 12; students take at least four CAP track courses a year in Grades 9 and 10.",
+    "es": "Trayectoria Congregated AP en 9.º a 11.º con cursos Pre-AP de negocios, estudios canadienses y mundiales, inglés, francés, matemáticas y ciencias, que lleva a exámenes AP en 12.º; en 9.º y 10.º se toman al menos cuatro cursos de la trayectoria CAP por año.",
+    "fr": "Parcours Congregated AP de la 9e à la 11e année avec des cours Pre-AP en affaires, études canadiennes et mondiales, anglais, français, mathématiques et sciences, menant aux examens AP en 12e année; les élèves de 9e et 10e année suivent au moins quatre cours du parcours CAP par an."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/ap-program"
+  },
+  {
+   "tag": "arts",
+   "name": "Regional Arts Program (RAP)",
+   "note": {
+    "en": "Regional Arts Program in dance, dramatic arts, instrumental and vocal music, and visual arts (photography, media arts, video production); graduates receive an Arts Certificate with the OSSD, and admission includes an audition or supplementary application.",
+    "es": "Regional Arts Program en danza, arte dramático, música instrumental y vocal, y artes visuales (fotografía, artes de los medios, producción de video); quienes se gradúan reciben un Arts Certificate junto con el OSSD, y la admisión incluye una audición o una solicitud suplementaria.",
+    "fr": "Regional Arts Program en danse, art dramatique, musique instrumentale et vocale et arts visuels (photographie, arts médiatiques, production vidéo); les finissants reçoivent un Arts Certificate avec le DESO, et l'admission comprend une audition ou une demande supplémentaire."
+   },
+   "entry": "audition",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/regional-arts-centre"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Arts and Culture, Business, Transportation",
+   "note": {
+    "en": "Three SHSM programs for Grades 11 and 12 in Arts and Culture, Business and Transportation.",
+    "es": "Tres programas SHSM para 11.º y 12.º grado en Arts and Culture, Business y Transportation.",
+    "fr": "Trois programmes SHSM pour la 11e et la 12e année en Arts and Culture, Business et Transportation."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/open-house"
+  },
+  {
+   "tag": "other",
+   "name": "Student Training to Acquire Real Life Skills (STARS)",
+   "note": {
+    "en": "STARS program for students in the ME/DD (Multiple Exceptionalities/Developmentally Delayed) program.",
+    "es": "Programa STARS para estudiantes del programa ME/DD (Multiple Exceptionalities/Developmentally Delayed).",
+    "fr": "Programme STARS pour les élèves du programme ME/DD (Multiple Exceptionalities/Developmentally Delayed)."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP",
+  "Grade 9 Summer School Transition Program",
+  "Intensive Support Program (ISP)"
+ ],
+ "admissions": [
+  {
+   "program": "Congregated Advanced Placement (CAP), Grade 9 entry",
+   "tag": "ap",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/ap-program",
+   "elig": {
+    "en": "Grade 8 students applying for Grade 9 entry in September 2027; TCDSB schools list Congregated Advanced Placement as a specialty program with its own application section in SOAR.",
+    "es": "Estudiantes de 8.º grado que postulan para entrar a 9.º en septiembre de 2027; el TCDSB trata Congregated Advanced Placement como programa especializado con su propia sección de solicitud en SOAR.",
+    "fr": "Élèves de 8e année qui font une demande pour la 9e année en septembre 2027; le TCDSB traite le programme Congregated Advanced Placement comme un programme spécialisé avec sa propre section dans SOAR."
+   },
+   "submit": [
+    {
+     "en": "SOAR Congregated Advanced Placement section: community involvement, awards and distinctions, choice of Pre-AP courses (English, Mathematics and Science are mandatory) and a persuasive essay of up to 250 words written by the applicant.",
+     "es": "Sección de Congregated Advanced Placement en SOAR: participación comunitaria, premios y distinciones, elección de cursos Pre-AP (inglés, matemáticas y ciencias son obligatorios) y un ensayo persuasivo de hasta 250 palabras escrito por el solicitante.",
+     "fr": "Section Congregated Advanced Placement de SOAR : engagement communautaire, prix et distinctions, choix des cours Pre-AP (anglais, mathématiques et sciences obligatoires) et essai argumentatif d'au plus 250 mots rédigé par le candidat."
+    },
+    {
+     "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+     "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+     "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+    },
+    {
+     "en": "Principal or designate reference (for TCDSB students SOAR sends the request automatically to the elementary school principal; no family members as references).",
+     "es": "Referencia del director o su designado (para estudiantes del TCDSB, SOAR envía la solicitud automáticamente al director de la primaria; no pueden ser familiares).",
+     "fr": "Référence de la direction ou de son délégué (pour les élèves du TCDSB, SOAR envoie automatiquement la demande à la direction de l'école élémentaire; pas de membres de la famille)."
+    }
+   ],
+   "dates": {
+    "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+    "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+    "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+   },
+   "know": [
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    },
+    {
+     "en": "Applications are completed through the TCDSB's Secondary Online Application Platform (SOAR).",
+     "es": "Las solicitudes se hacen en la plataforma en línea de secundaria del TCDSB (SOAR).",
+     "fr": "Les demandes se font dans la plateforme en ligne du secondaire du TCDSB (SOAR)."
+    }
+   ],
+   "marks": {
+    "en": "The admission team reviews the Grade 7 report card and the Grade 8 progress report card.",
+    "es": "El equipo de admisión revisa el boletín de 7.º grado y el informe de progreso de 8.º grado.",
+    "fr": "L'équipe d'admission examine le bulletin de 7e année et le bulletin d'étape de 8e année."
+   }
+  },
+  {
+   "program": "Regional Arts Program (RAP)",
+   "tag": "arts",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+   "elig": {
+    "en": "The board lists Bishop Marrocco/Thomas Merton among the schools where admission includes an audition or supplementary application form; contact the school for specific application information.",
+    "es": "El consejo escolar incluye a Bishop Marrocco/Thomas Merton entre las escuelas cuya admisión incluye una audición o un formulario de solicitud suplementario; comunícate con la escuela para conocer los detalles.",
+    "fr": "Le conseil compte Bishop Marrocco/Thomas Merton parmi les écoles où l'admission comprend une audition ou un formulaire de demande supplémentaire; communique avec l'école pour les détails."
+   },
+   "submit": [
+    {
+     "en": "Supplemental arts application and audition form (downloaded from SOAR) and, if requested, a portfolio; the school must receive it by October 30, 2026.",
+     "es": "Solicitud suplementaria de artes y formulario de audición (se descargan en SOAR) y, si se pide, un portafolio; la escuela debe recibirlo a más tardar el 30 de octubre de 2026.",
+     "fr": "Demande supplémentaire en arts et formulaire d'audition (téléchargés dans SOAR) et, au besoin, un portfolio; l'école doit les recevoir au plus tard le 30 octobre 2026."
+    },
+    {
+     "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+     "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+     "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+    }
+   ],
+   "dates": {
+    "en": "Arts program applications must reach the school by October 30, 2026; the SOAR window runs September 25 (after 5 PM) to October 30, 2026 (11:59 PM).",
+    "es": "Las solicitudes a programas de artes deben llegar a la escuela antes del 30 de octubre de 2026; el plazo en SOAR va del 25 de septiembre (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.).",
+    "fr": "Les demandes aux programmes d'arts doivent parvenir à l'école avant le 30 octobre 2026; la période SOAR va du 25 septembre (après 17 h) au 30 octobre 2026 (23 h 59)."
+   }
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (6:00 to 8:30 PM): CAP, Regional Arts Program and SHSM",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/open-house"
+  }
+ ],
+ "missing": [
+  "No separate audition requirements or dates for the Regional Arts Program were found on the school's pages (the board points families to the school).",
+  "The AP/CAP page lists course codes for Grades 9-12 but no marks threshold."
+ ]
+}

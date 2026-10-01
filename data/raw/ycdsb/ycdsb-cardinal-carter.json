@@ -1,0 +1,47 @@
+{
+  "id": "ycdsb-cardinal-carter",
+  "scrapedAt": "2026-10-01",
+  "site": "https://cch.ycdsb.ca/",
+  "sources": [
+    "https://www.ycdsb.ca/programs-services/secondary/secondary-school-directory/cch/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/ib/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/shsm/",
+    "https://www.ycdsb.ca/pathways/co-op/",
+    "https://www.ycdsb.ca/pathways/oyap/",
+    "https://www.ycdsb.ca/pathways/dual-credit-courses/",
+    "https://www.ycdsb.ca/admissions/secondary-registration/"
+  ],
+  "programs": [
+    {
+      "tag": "ib",
+      "name": "International Baccalaureate (IB) Diploma Programme",
+      "note": {
+        "en": "Rigorous course of study for highly motivated students in the final two years of secondary school, with credits recognized around the world.",
+        "es": "Plan de estudios exigente para estudiantes muy motivados en los dos últimos años de secundaria, con créditos reconocidos en todo el mundo.",
+        "fr": "Programme d'études rigoureux pour des élèves très motivés pendant les deux dernières années du secondaire, avec des crédits reconnus partout dans le monde."
+      },
+      "entry": null,
+      "url": "https://www.ycdsb.ca/programs-services/secondary/secondary-school-directory/cch/"
+    }
+  ],
+  "shsm": [
+    "Business",
+    "Health & Wellness",
+    "Information and Communications Technology (ICT)",
+    "Construction",
+    "Justice, Community Safety & Emergency Services"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Dual Credit",
+    "OYAP"
+  ],
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "IB application steps and dates for 2026-27 not found (school IB site is a Google Site with no readable text; 2025 posts are for the previous cycle)",
+    "Co-op, Dual Credit and OYAP come from the board pathways pages (co-op is offered in Grades 11-12); the Construction and Justice SHSM are listed on the board SHSM page as centralized for all schools",
+    "No school course calendar or course list found online (guidance pages are Google Sites with no readable course list)",
+    "2026 open house details: the board 2026 Open House page says information will be posted soon (as of 2026-10-01)"
+  ]
+}

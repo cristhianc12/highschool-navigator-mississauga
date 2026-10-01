@@ -1,0 +1,84 @@
+{
+ "id": "tcdsb-msgr-fraser-college-isabella-campus",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/msgrfrasercollege/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/our-campuses",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://5il.co/1od6u"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Alternative Education Program (ages 16-20)",
+   "note": {
+    "en": "Alternative program for students who face challenges in a community school, with small personalized environments and up to 2 full credits every nine weeks toward the OSSD; applicants must be referred by their current or previous school.",
+    "es": "Programa alternativo para estudiantes que enfrentan dificultades en una escuela comunitaria, con entornos pequeños y personalizados y hasta 2 créditos completos cada nueve semanas para el OSSD; los solicitantes deben ser derivados por su escuela actual o anterior.",
+    "fr": "Programme alternatif pour les élèves qui éprouvent des difficultés dans une école communautaire, avec de petits milieux personnalisés et jusqu'à 2 crédits complets toutes les neuf semaines pour le DESO; les candidats doivent être recommandés par leur école actuelle ou précédente."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered"
+  },
+  {
+   "tag": "alt",
+   "name": "Fraser-S.W.A.C. (School Within a College)",
+   "note": {
+    "en": "School Within a College one-semester programs with George Brown, Humber and Seneca for ages 18-20, earning up to 5 OSSD credits, at least one of them a Dual Credit.",
+    "es": "Programas de un semestre School Within a College con George Brown, Humber y Seneca para edades 18-20, con hasta 5 créditos del OSSD, al menos uno de ellos Dual Credit.",
+    "fr": "Programmes d'un semestre School Within a College avec George Brown, Humber et Seneca pour les 18 à 20 ans, donnant jusqu'à 5 crédits du DESO, dont au moins un crédit en double reconnaissance."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered"
+  },
+  {
+   "tag": "other",
+   "name": "Continuing Education Program (21 and over) and Continuous Intake Co-op",
+   "note": {
+    "en": "Day-school adult education for students 21 and over with two full credits at a time and ESL courses, offered at Isabella and Midland; Isabella also lists a Continuous Intake Co-op.",
+    "es": "Educación de adultos de día para mayores de 21 años, con dos créditos completos a la vez y cursos de ESL, en Isabella y Midland; Isabella también lista un Continuous Intake Co-op.",
+    "fr": "Éducation des adultes de jour pour les 21 ans et plus avec deux crédits complets à la fois et des cours d'ALS, offerte à Isabella et à Midland; Isabella indique aussi un Continuous Intake Co-op."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered"
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "Continuing Education (21 and over)",
+  "Continuous Intake Co-op (CIC)"
+ ],
+ "admissions": [
+  {
+   "program": "Alternative Education Program (ages 16-20)",
+   "tag": "alt",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered",
+   "elig": {
+    "en": "Students aged 16-20 who are experiencing challenges in a community school; applicants must be referred by their current or previous school.",
+    "es": "Estudiantes de 16 a 20 años que enfrentan dificultades en una escuela comunitaria; los solicitantes deben ser derivados por su escuela actual o anterior.",
+    "fr": "Élèves de 16 à 20 ans qui éprouvent des difficultés dans une école communautaire; les candidats doivent être recommandés par leur école actuelle ou précédente."
+   },
+   "know": [
+    {
+     "en": "2026-27 terms run Semester 1 from September 2, 2026 to February 1, 2027 and Semester 2 from February 2 to June 30, 2027, with four quadmesters.",
+     "es": "El año 2026-27 tiene el Semestre 1 del 2 de septiembre de 2026 al 1 de febrero de 2027 y el Semestre 2 del 2 de febrero al 30 de junio de 2027, con cuatro cuatrimestres.",
+     "fr": "L'année 2026-2027 comprend le semestre 1 du 2 septembre 2026 au 1er février 2027 et le semestre 2 du 2 février au 30 juin 2027, avec quatre quadrimestres."
+    },
+    {
+     "en": "The campus is at 146 Isabella Street; the same program is also offered at Annex, Midland and Norfinch.",
+     "es": "El campus está en 146 Isabella Street; el mismo programa también se ofrece en Annex, Midland y Norfinch.",
+     "fr": "Le campus est au 146 Isabella Street; le même programme est aussi offert à Annex, Midland et Norfinch."
+    }
+   ]
+  }
+ ],
+ "missing": [
+  "The school website listed in the roster (msgrfraseralternative.org) now serves unrelated gambling content, so it was not used; the official TCDSB school page was used instead.",
+  "Fraser lists OYAP trades (baking, carpentry, culinary, electrical, plumbing and others) at college level on the board chart, but not by campus, so none were recorded as programs for this campus.",
+  "Ages 16-20 Alternative Education is entered by referral from the student's current or previous school, not through the SOAR Grade 9 application; no open houses are listed for this school."
+ ]
+}

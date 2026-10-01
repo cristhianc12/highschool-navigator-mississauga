@@ -1,0 +1,59 @@
+{
+  "id": "dpcdsb-robert-f-hall",
+  "scrapedAt": "2026-10-01",
+  "site": "https://rfhal.dpcdsb.org/",
+  "sources": [
+    "https://rfhal.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://www.dpcdsb.org/download/527381",
+    "https://rfhal.dpcdsb.org/programs/course-calendar",
+    "https://rfhal.dpcdsb.org/programs/guidance-courses/grade-8-information"
+  ],
+  "programs": [
+    {
+      "tag": "ef",
+      "name": "Extended French",
+      "note": {
+        "en": "Secondary Extended French centre for Brampton and Caledon; the program begins in Grade 5 and continues through Grade 12.",
+        "es": "Centro secundario de Extended French para Brampton y Caledon; el programa comienza en 5.º grado y continúa hasta 12.º.",
+        "fr": "Centre secondaire d'Extended French pour Brampton et Caledon; le programme commence en 5e année et se poursuit jusqu'en 12e année."
+      },
+      "entry": "school",
+      "url": "https://www.dpcdsb.org/download/527381"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Arts & Culture, Sports (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Arts & Culture, Sports (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Arts & Culture, Sports (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Sports"
+  ],
+  "calendarUrl": "https://rfhal.dpcdsb.org/programs/course-calendar",
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-05",
+      "time": null,
+      "format": "In person",
+      "title": "Grade 8 Open House and Info Night",
+      "url": "https://rfhal.dpcdsb.org/programs/guidance-courses/grade-8-information"
+    }
+  ],
+  "missing": [
+    "Open house time not published (board schedule and school page give Nov. 5, 2026 only).",
+    "No school page for the Extended French program found; the board centre list is the source."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "tdsb-south-east-alternative-school",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/Find-your/School/Alternative-Schools"
+  ],
+  "programs": [
+    {
+      "tag": "alt",
+      "name": "South East Secondary Alternative School",
+      "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+      "note": {
+        "en": "Quadmestered alternative school for students aged 16 to 20 with few high school credits, offering applied, college and open level courses and welcoming students from across Toronto at many points in the school year.",
+        "es": "Escuela alternativa en cuatrimestres para estudiantes de 16 a 20 años con pocos créditos de secundaria, con cursos de nivel aplicado, college y abierto, que recibe estudiantes de todo Toronto en varios momentos del año escolar.",
+        "fr": "École alternative à quadrimestres pour les élèves de 16 à 20 ans ayant peu de crédits du secondaire, qui offre des cours de niveau appliqué, collège et ouvert et accueille des élèves de tout Toronto à plusieurs moments de l'année scolaire."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "The roster website did not load (404); the TDSB school profile is used as the site.",
+    "Open-house list says no Grade 9 is offered; no dates are listed.",
+    "No course list or admissions steps were found."
+  ]
+}

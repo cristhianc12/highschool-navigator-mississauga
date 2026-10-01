@@ -1,0 +1,100 @@
+{
+ "id": "tcdsb-senator-o-connor-college-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/senatoroconnor",
+ "sources": [
+  "https://www.tcdsb.org/o/senatoroconnor/page/about-us/",
+  "https://www.tcdsb.org/o/senatoroconnor/page/ap-students/",
+  "https://www.tcdsb.org/o/senatoroconnor/page/course-selection/",
+  "https://www.tcdsb.org/o/senatoroconnor/page/open-house/",
+  "https://www.tcdsb.org/o/senatoroconnor/page/arts/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Congregated Advanced Placement (CAP)",
+   "note": {
+    "en": "Congregated Advanced Placement: school-wide enrichment in English, French, Mathematics, Science and/or Social Studies that prepares students for AP courses in Grades 11 and 12.",
+    "es": "Congregated Advanced Placement: enriquecimiento en toda la escuela en inglés, francés, matemáticas, ciencias y/o estudios sociales que prepara para los cursos AP de 11.º y 12.º grado.",
+    "fr": "Congregated Advanced Placement : enrichissement à l'échelle de l'école en anglais, français, mathématiques, sciences et/ou études sociales qui prépare aux cours AP de 11e et 12e année."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French Program",
+   "note": {
+    "en": "Extended French continues the elementary program: four French courses plus at least three other subjects taught in French lead to the TCDSB Extended French Certificate.",
+    "es": "Extended French continúa el programa de primaria: cuatro cursos de francés más al menos tres materias enseñadas en francés llevan al Certificado de Extended French del TCDSB.",
+    "fr": "Le programme Extended French prolonge celui du primaire : quatre cours de français et au moins trois autres matières enseignées en français mènent au certificat Extended French du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion Program",
+   "note": {
+    "en": "French Immersion continues the elementary program: four French courses plus at least six other subjects taught in French lead to the TCDSB French Immersion Certificate.",
+    "es": "French Immersion continúa el programa de primaria: cuatro cursos de francés más al menos seis materias enseñadas en francés llevan al Certificado de French Immersion del TCDSB.",
+    "fr": "Le programme French Immersion prolonge celui du primaire : quatre cours de français et au moins six autres matières enseignées en français mènent au certificat French Immersion du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Business, Health and Wellness, Sports: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Business, Health and Wellness, Sports: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Business, Health and Wellness, Sports : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Health and Wellness",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education (interest form on the course selection page)",
+  "OYAP (handout on the course selection page)"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/senatoroconnor/page/course-selection/",
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-05",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Open House (main presentations 5:30, 6:15 and 7:00 p.m., tickets from 5:00 p.m.)",
+   "url": "https://www.tcdsb.org/o/senatoroconnor/page/open-house/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-05",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House: Advanced Placement presentation (also at 7:00 p.m.), Library",
+   "url": "https://www.tcdsb.org/o/senatoroconnor/page/open-house/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-05",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House: Special Education presentation, Room 142 and 144",
+   "url": "https://www.tcdsb.org/o/senatoroconnor/page/open-house/"
+  }
+ ],
+ "missing": [
+  "School's own AP page (ap-students) has no text about the program; CAP, Extended French, French Immersion and SHSM sectors are taken from the TCDSB specialized programs page and summary chart (2027-28)",
+  "No admission steps or deadlines stated for French programs or CAP",
+  "Course list is the TCDSB course-offerings Google Sheet for 2026-27"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "id": "johnfraser",
+ "scrapedAt": "2026-10-01",
+ "site": "https://johnfraser.peelschools.org/",
+ "sources": [
+  "https://johnfraser.peelschools.org/",
+  "https://johnfraser.peelschools.org/ArtsandCulture-EHS",
+  "https://johnfraser.peelschools.org/arts-and-culture",
+  "https://johnfraser.peelschools.org/AviationAerospace",
+  "https://johnfraser.peelschools.org/health-wellness",
+  "https://johnfraser.peelschools.org/co-operative-education",
+  "https://johnfraser.peelschools.org/dual-credit",
+  "https://johnfraser.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/documents/b1810493-9104-4f09-96d9-abede1b490bb/JohnFraser-SS-716-2026.pdf?fingerprint=ppb20260716191343"
+ ],
+ "programs": [],
+ "shsm": [
+  "Aviation & Aerospace",
+  "Arts and Culture",
+  "Health & Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/b1810493-9104-4f09-96d9-abede1b490bb/JohnFraser-SS-716-2026.pdf?fingerprint=ppb20260716191343",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": null,
+   "format": "Virtual",
+   "title": "RLCP Virtual Info Night: Advanced Placement (time TBD)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "school",
+   "date": "2026-11-26",
+   "time": null,
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (time TBD)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site."
+ ]
+}

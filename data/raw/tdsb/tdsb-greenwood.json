@@ -1,0 +1,27 @@
+{
+ "id": "tdsb-greenwood",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/greenwoodss",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/greenwoodss"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "English as a Second Language (ESL) school for newcomers",
+   "entry": null,
+   "url": "https://schoolweb.tdsb.on.ca/greenwoodss",
+   "note": {
+    "en": "Greenwood describes itself as one of the oldest schools in North America designed specifically for new-immigrant high school students, with an English as a second language program.",
+    "es": "Greenwood se describe como una de las escuelas más antiguas de Norteamérica diseñadas específicamente para estudiantes de secundaria recién inmigrados, con un programa de inglés como segundo idioma.",
+    "fr": "Greenwood se décrit comme l'une des plus anciennes écoles d'Amérique du Nord conçues expressément pour les élèves du secondaire nouvellement immigrés, avec un programme d'anglais langue seconde."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login).",
+  "Not in the TDSB open house table; admission process not described on the pages read."
+ ]
+}

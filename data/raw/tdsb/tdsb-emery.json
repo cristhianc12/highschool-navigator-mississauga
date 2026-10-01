@@ -1,0 +1,101 @@
+{
+ "id": "tdsb-emery",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/emeryci",
+ "sources": [
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3434",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+  "https://schoolweb.tdsb.on.ca/emeryci"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "MST @ Emery CI",
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "note": {
+    "en": "Central Math, Science and Technology (MST) specialized program for Grades 9-12; apply through the TDSB Central Program Admissions Office (2025-26 offer rate for primary-choice applicants: 80% to 100%).",
+    "es": "Programa especializado central de Matemáticas, Ciencias y Tecnología (MST) de 9.º a 12.º grado; se solicita a través de la Oficina Central de Admisión a Programas del TDSB (tasa de ofertas a solicitantes de primera opción en septiembre de 2026: 80 % a 100 %).",
+    "fr": "Programme spécialisé central de mathématiques, sciences et technologie (MST) de la 9e à la 12e année; la demande se fait auprès du Bureau central d'admission aux programmes du TDSB (taux d'offres aux candidats de premier choix pour septembre 2026 : 80 % à 100 %)."
+   }
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Grade 11-12 Specialist High Skills Major offered at this school in: Construction; Transportation.",
+    "es": "Specialist High Skills Major de 11.º y 12.º grado que ofrece esta escuela en: Construction; Transportation.",
+    "fr": "Specialist High Skills Major de 11e et 12e année offert par cette école dans les secteurs suivants : Construction; Transportation."
+   }
+  }
+ ],
+ "admissions": [
+  {
+   "program": "MST @ Emery CI",
+   "tag": "stem",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "elig": {
+    "en": "Eligible if, at the time of application, no more than 2 of the report-card marks (Language, Math, Science & Technology, Geography, History, French, Arts, Health and Physical Education) are below 70%; Grade 9 and 10 entry (Grade 10 only if space).",
+    "es": "Puedes solicitar si, al momento de la solicitud, no más de 2 de las calificaciones del boletín (Lenguaje, Matemáticas, Ciencias y Tecnología, Geografía, Historia, Francés, Artes, Educación Física y Salud) están por debajo de 70 %; ingreso en 9.º y 10.º grado (10.º solo si hay cupo).",
+    "fr": "Tu demande est admissible si, au moment de la demande, au plus 2 des notes du bulletin (langue, mathématiques, sciences et technologie, géographie, histoire, français, arts, éducation physique et santé) sont inférieures à 70 %; entrée en 9e et en 10e année (10e seulement s'il reste des places)."
+   },
+   "marks": {
+    "en": "Applicant score: report-card average of Language, Mathematics and Science & Technology (30%) plus the in-person demonstration of knowledge and skills (70%).",
+    "es": "Puntaje del solicitante: promedio del boletín en Lenguaje, Matemáticas y Ciencias y Tecnología (30 %) más la demostración presencial de conocimientos y destrezas (70 %).",
+    "fr": "Note du candidat : moyenne du bulletin en langue, mathématiques et sciences et technologie (30 %) plus la démonstration de connaissances et d'habiletés en personne (70 %)."
+   },
+   "dates": {
+    "en": "Application open Nov 9-27, 2026; in-person assessment Monday Dec 7, 2026 (Dec 14 if weather closes schools); offers Feb 10, 2027, acceptance deadline Feb 16, 2027 at 4 p.m.; further offers Feb 17 and 24, 2027.",
+    "es": "Solicitud abierta del 9 al 27 de noviembre de 2026; evaluación presencial el lunes 7 de diciembre de 2026 (14 de diciembre si hay cierre por clima); ofertas el 10 de febrero de 2027, plazo para aceptar hasta el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y 24 de febrero de 2027.",
+    "fr": "Demande ouverte du 9 au 27 novembre 2026; évaluation en personne le lundi 7 décembre 2026 (14 décembre en cas de fermeture pour intempéries); offres le 10 février 2027, date limite d'acceptation le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online Specialized Programs application (one primary choice, optionally one alternate of the same program type)",
+     "es": "Solicitud en línea de Programas Especializados (una opción principal y, si quieres, una alternativa del mismo tipo de programa)",
+     "fr": "Demande en ligne aux programmes spécialisés (un choix principal et, si tu veux, un choix de remplacement du même type de programme)"
+    },
+    {
+     "en": "Report card marks (Grade 7 for Grade 9 entry)",
+     "es": "Calificaciones del boletín (7.º grado para ingresar a 9.º)",
+     "fr": "Notes du bulletin (7e année pour l'entrée en 9e)"
+    }
+   ],
+   "know": [
+    {
+     "en": "2025-26 offer rate for primary-choice applicants at this program: 80% to 100%.",
+     "es": "Tasa de ofertas a solicitantes de primera opción en este programa en 2025-26: 80 % a 100 %.",
+     "fr": "Taux d'offres aux candidats de premier choix pour ce programme en 2025-26 : 80 % à 100 %."
+    },
+    {
+     "en": "Transportation is not provided for Specialized Programs; selection is done centrally, so do not contact schools for results.",
+     "es": "El transporte no se ofrece para los Programas Especializados; la selección es central, así que no pidas resultados a las escuelas.",
+     "fr": "Le transport n'est pas offert pour les programmes spécialisés; la sélection se fait de façon centrale, alors ne demande pas les résultats aux écoles."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "title": "Open house / information night",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "format": "In person",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login).",
+  "School site only links a Grade 8 information night slideshow and an MST slideshow (Google Slides), not read."
+ ],
+ "shsm": [
+  "Construction",
+  "Transportation"
+ ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "dpcdsb-cardinal-leger",
+  "scrapedAt": "2026-10-01",
+  "site": "https://leger.dpcdsb.org/",
+  "sources": [
+    "https://leger.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://leger.dpcdsb.org/programs/extended-french",
+    "https://leger.dpcdsb.org/programs/french-immersion",
+    "https://leger.dpcdsb.org/programs/course-calendar"
+  ],
+  "programs": [
+    {
+      "tag": "ef",
+      "name": "Extended French",
+      "note": {
+        "en": "Extended French centre: the program begins in Grade 5 and continues through Grade 12, with 7 secondary credits taught in French.",
+        "es": "Centro de Extended French: el programa comienza en 5.º grado y continúa hasta 12.º, con 7 créditos de secundaria impartidos en francés.",
+        "fr": "Centre d'Extended French : le programme commence en 5e année et se poursuit jusqu'en 12e année, avec 7 crédits du secondaire enseignés en français."
+      },
+      "entry": "school",
+      "url": "https://leger.dpcdsb.org/programs/extended-french"
+    },
+    {
+      "tag": "fi",
+      "name": "French Immersion",
+      "note": {
+        "en": "French Immersion centre: the program begins in Grade 1 and continues through Grade 12, with 10 secondary credits in French.",
+        "es": "Centro de French Immersion: el programa comienza en 1.er grado y continúa hasta 12.º, con 10 créditos de secundaria en francés.",
+        "fr": "Centre d'immersion française : le programme commence en 1re année et se poursuit jusqu'en 12e année, avec 10 crédits du secondaire en français."
+      },
+      "entry": "school",
+      "url": "https://leger.dpcdsb.org/programs/french-immersion"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Arts & Culture, Health & Wellness (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Arts & Culture, Health & Wellness (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Arts & Culture, Health & Wellness (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Health & Wellness"
+  ],
+  "calendarUrl": "https://leger.dpcdsb.org/programs/course-calendar",
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "No separate dated information night found: the board schedule lists Cardinal Leger without a date or time.",
+    "No school page on dual credit or OYAP found."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+ "id": "tcdsb-monsignor-percy-johnson",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/msgrpercyjohnson/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/msgrpercyjohnson/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French listed in the school highlights, the open house program list and the board chart.",
+    "es": "Extended French figura en los datos destacados de la escuela, en la lista de programas de la jornada de puertas abiertas y en el cuadro del consejo.",
+    "fr": "Extended French figure dans les faits saillants de l'école, dans la liste des programmes de la soirée portes ouvertes et dans le tableau du conseil."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement and Enrichment",
+   "note": {
+    "en": "Advanced Placement and Enrichment are named among the programs presented at the school's open house.",
+    "es": "Advanced Placement y Enrichment figuran entre los programas que se presentan en la jornada de puertas abiertas de la escuela.",
+    "fr": "L'Advanced Placement et l'enrichissement figurent parmi les programmes présentés à la soirée portes ouvertes de l'école."
+   },
+   "url": "https://www.tcdsb.org/o/msgrpercyjohnson/page/open-house"
+  },
+  {
+   "tag": "arts",
+   "name": "Instrumental, Vocal and Strings Music; Film Acting",
+   "note": {
+    "en": "Instrumental, Vocal and Strings music programs, with Film Acting among the arts offerings presented at the open house.",
+    "es": "Programas de música instrumental, vocal y de cuerdas, con Film Acting entre las ofertas de artes presentadas en la jornada de puertas abiertas.",
+    "fr": "Programmes de musique instrumentale, vocale et de cordes, avec Film Acting parmi les offres en arts présentées à la soirée portes ouvertes."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "sports",
+   "name": "Specialty Physical Education courses",
+   "note": {
+    "en": "Specialty PE courses in stick sports (hockey, lacrosse, golf), net sports (tennis, volleyball, badminton, pickleball) and foot sports (soccer).",
+    "es": "Cursos especiales de educación física en deportes de palo (hockey, lacrosse, golf), de red (tenis, voleibol, bádminton, pickleball) y de pie (fútbol).",
+    "fr": "Cours spécialisés d'éducation physique en sports de bâton (hockey, crosse, golf), de filet (tennis, volleyball, badminton, pickleball) et de pied (soccer)."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "trades",
+   "name": "OYAP - Hairstyling",
+   "note": {
+    "en": "The board chart lists OYAP Hairstyling at the school; the school profile also lists Hairstyling and Esthetics, Communication Technology and Construction Technology.",
+    "es": "El cuadro del consejo lista OYAP Hairstyling en la escuela; el perfil de la escuela también lista Hairstyling and Esthetics, Communication Technology y Construction Technology.",
+    "fr": "Le tableau du conseil indique OYAP Hairstyling à l'école; le profil de l'école indique aussi Hairstyling and Esthetics, Communication Technology et Construction Technology."
+   },
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Arts and Culture, Business, Health and Wellness",
+   "note": {
+    "en": "Three SHSM programs: Arts and Culture, Business, and Health and Wellness.",
+    "es": "Tres programas SHSM: Arts and Culture, Business, y Health and Wellness.",
+    "fr": "Trois programmes SHSM : Arts and Culture, Business et Health and Wellness."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness"
+ ],
+ "other": [
+  "OYAP",
+  "Summer Transition Program (Grade 9)",
+  "Intensive Support Program (ISP)",
+  "International Languages: Spanish and Italian (Grades 10-12)"
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-14",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House (AP, arts, Extended French, SHSM and trades programs)",
+   "url": "https://www.tcdsb.org/o/msgrpercyjohnson/page/open-house"
+  }
+ ],
+ "missing": [
+  "The school's own pages give no entry requirements or application dates for Extended French or Advanced Placement."
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "id": "tcdsb-msgr-fraser-college-southwest",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/msgrfrasercollege",
+ "sources": [
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/supervised-alternative-learning/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/our-campuses/",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/about-us/"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Supervised Alternative Learning (SAL) Southwest",
+   "note": {
+    "en": "Transition program for students ages 14-18 who are not benefiting from regular school (for example chronic absence), located at St. Rita Catholic School, 178 Edwin Ave., Toronto; apply by referral from the original school.",
+    "es": "Programa de transición para estudiantes de 14 a 18 años que no se benefician de la escuela regular (por ejemplo, ausencias crónicas), ubicado en St. Rita Catholic School, 178 Edwin Ave., Toronto; se solicita por derivación de la escuela de origen.",
+    "fr": "Programme de transition pour les élèves de 14 à 18 ans qui ne profitent pas de l'école ordinaire (par exemple en cas d'absentéisme chronique), situé au St. Rita Catholic School, 178 Edwin Ave., Toronto; la demande se fait par aiguillage de l'école d'origine."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/supervised-alternative-learning/"
+  }
+ ],
+ "calendarUrl": null,
+ "admissions": [
+  {
+   "program": "Supervised Alternative Learning (SAL) Southwest",
+   "tag": "alt",
+   "elig": {
+    "en": "Students ages 14-18 who are not attending or not benefiting from their community school.",
+    "es": "Estudiantes de 14 a 18 años que no asisten o no se benefician de su escuela comunitaria.",
+    "fr": "Élèves de 14 à 18 ans qui ne fréquentent pas leur école communautaire ou n'en tirent pas profit."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": {
+    "en": "The SAL Committee reviews applications at a monthly meeting; SAL plans expire at the end of each school year (one renewal possible) and at age 18.",
+    "es": "El Comité SAL revisa las solicitudes en una reunión mensual; los planes SAL vencen al final de cada año escolar (se puede renovar una vez) y a los 18 años.",
+    "fr": "Le comité SAL examine les demandes à une réunion mensuelle; les plans SAL prennent fin à la fin de chaque année scolaire (un renouvellement possible) et à 18 ans."
+   },
+   "submit": [
+    {
+     "en": "SAL application and a SAL Plan (education, work and personal goals) prepared by the parent with the school social worker and administration",
+     "es": "Solicitud SAL y un Plan SAL (metas educativas, laborales y personales) preparado por la familia con la trabajadora social y la administración de la escuela",
+     "fr": "Demande SAL et plan SAL (objectifs scolaires, professionnels et personnels) préparés par le parent avec le travailleur social et la direction de l'école"
+    }
+   ],
+   "know": [
+    {
+     "en": "Enrolment is limited; talk to your local school's social worker.",
+     "es": "Los cupos son limitados; habla con la trabajadora social de tu escuela local.",
+     "fr": "Les places sont limitées; parle au travailleur social de ton école locale."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/supervised-alternative-learning/"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "SAL is a transition program with no published course list or open house",
+  "The roster website (msgrfraseralternative.org) now serves an unrelated gambling page and was not used; the board school site was used instead",
+  "Roster address matches the SAL Southwest site"
+ ]
+}

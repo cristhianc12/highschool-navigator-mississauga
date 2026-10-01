@@ -1,0 +1,50 @@
+{
+  "id": "pvnccdsb-st-stephen",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.sscss.ca/",
+  "sources": [
+    "https://www.sscss.ca/",
+    "https://www.sscss.ca/School-Life/admission-and-registration/gr-9",
+    "https://www.sscss.ca/academics/specialist-high-skills-major",
+    "https://www.sscss.ca/academics",
+    "https://www.sscss.ca/academics/coursecalendar",
+    "https://www.sscss.ca/academics/departments/GuidanceandCooperativeEducation-Department"
+  ],
+  "programs": [
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": null,
+      "url": "https://www.sscss.ca/academics/specialist-high-skills-major",
+      "note": {
+        "en": "The school offers 8 SHSM sectors: Aviation, Construction, Environment, Hospitality and Tourism, Information and Communications Technology, Justice, Community Safety and Emergency Services, Manufacturing, and Sport, Leadership and Wellness.",
+        "es": "La escuela ofrece 8 sectores SHSM: Aviation, Construction, Environment, Hospitality and Tourism, Information and Communications Technology, Justice, Community Safety and Emergency Services, Manufacturing y Sport, Leadership and Wellness.",
+        "fr": "L'école offre 8 secteurs SHSM : Aviation, Construction, Environment, Hospitality and Tourism, Information and Communications Technology, Justice, Community Safety and Emergency Services, Manufacturing et Sport, Leadership and Wellness."
+      }
+    }
+  ],
+  "shsm": [
+    "Aviation",
+    "Construction",
+    "Environment",
+    "Hospitality and Tourism",
+    "Information and Communications Technology",
+    "Justice, Community Safety and Emergency Services",
+    "Manufacturing",
+    "Sport, Leadership and Wellness"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Dual Credit Opportunities"
+  ],
+  "calendarUrl": "https://www.sscss.ca/academics/coursecalendar",
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "No 2026-27 Grade 8 information night dates found (page shows Jan 21, 2026, previous cycle)",
+    "Course calendar page is labelled 2024-2025 and the linked PDF has no stated year and extracted with many unreadable titles, so no course list was saved",
+    "OYAP is mentioned on the guidance page only as information, so not listed as an offered program",
+    "Board website pvnccdsb.on.ca is blocked (Cloudflare 403)",
+    "No fees, marks or application dates stated for SHSM"
+  ]
+}

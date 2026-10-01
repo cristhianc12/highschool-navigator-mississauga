@@ -1,0 +1,30 @@
+{
+ "id": "stephenlewis",
+ "scrapedAt": "2026-10-01",
+ "site": "https://stephenlewis.peelschools.org/",
+ "sources": [
+  "https://stephenlewis.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/39a8cb9e-1eab-4557-a735-748ca561ec89/Stephen-Lewis-SS.pdf?fingerprint=ppb20251217022816",
+  "https://www.peelschools.org/specialist-high-skills-major"
+ ],
+ "programs": [],
+ "shsm": [
+  "Science & Environmental",
+  "Sports",
+  "Non-Profit and Education"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/39a8cb9e-1eab-4557-a735-748ca561ec89/Stephen-Lewis-SS.pdf?fingerprint=ppb20251217022816",
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 information night listed for this school on the board's Grade 8 information nights page (page checked 2026-10-01)",
+  "Stephen Lewis is not on the board's 2026-27 information night list"
+ ]
+}

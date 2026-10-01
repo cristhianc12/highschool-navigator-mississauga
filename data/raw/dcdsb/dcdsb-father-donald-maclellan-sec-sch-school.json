@@ -1,0 +1,86 @@
+{
+ "id": "dcdsb-father-donald-maclellan-sec-sch-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.dcdsb.ca/fatherdonmaclellan/",
+ "sources": [
+  "https://www.dcdsb.ca/fatherdonmaclellan/",
+  "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/guidance-course-calendar/",
+  "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/pathways-to-student-success/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/secondary-courses-and-calendars/",
+  "https://www.dcdsb.ca/contact-us/register-for-school/secondary-school-registration/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/dual-credits/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/oyap/oyap-level-1-program/",
+  "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/cooperative-education/",
+  "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/reconnect/",
+  "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/centre-for-success/",
+  "https://www.dcdsb.ca/fatherdonmaclellan/our-school/about-our-school/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/alternative-education/"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Reconnect",
+   "entry": "school",
+   "url": "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/reconnect/",
+   "note": {
+    "en": "Alternative program for students aged 16 to 17 who are credit short or have had attendance issues, with small classes, credit recovery, experiential learning and Supervised Alternative Learning, at 458 Fairall St., Unit 7, Ajax.",
+    "es": "Programa alternativo para estudiantes de 16 a 17 años con créditos pendientes o problemas de asistencia, con clases pequeñas, recuperación de créditos, aprendizaje experiencial y aprendizaje alternativo supervisado, en 458 Fairall St., Unit 7, Ajax.",
+    "fr": "Programme alternatif pour les élèves de 16 à 17 ans à qui il manque des crédits ou qui ont eu des problèmes d'assiduité, avec petites classes, récupération de crédits, apprentissage expérientiel et apprentissage alternatif supervisé, au 458 Fairall St., Unit 7, Ajax."
+   }
+  },
+  {
+   "tag": "alt",
+   "name": "Catholic Return Ticket",
+   "entry": "school",
+   "url": "https://www.dcdsb.ca/our-programs-learning/academics/alternative-education/",
+   "note": {
+    "en": "Program for Grade 7 to 12 students on a long-term suspension or expulsion, giving access to academic and non-academic programs or courses.",
+    "es": "Programa para estudiantes de 7.º a 12.º grado con suspensión larga o expulsión, con acceso a programas o cursos académicos y no académicos.",
+    "fr": "Programme pour les élèves de la 7e à la 12e année en suspension de longue durée ou expulsés, donnant accès à des programmes ou cours scolaires et non scolaires."
+   }
+  },
+  {
+   "tag": "alt",
+   "name": "Centre for Success (Durham College)",
+   "entry": "school",
+   "url": "https://www.dcdsb.ca/fatherdonmaclellan/our-programs-services/centre-for-success/",
+   "note": {
+    "en": "Dual-credit program for students in their final year, who spend one semester at Durham College finishing graduation requirements and earning a college credit; students apply through their home school.",
+    "es": "Programa de créditos duales para estudiantes de su último año, que pasan un semestre en Durham College completando los requisitos de graduación y obteniendo un crédito universitario; se solicita por medio de la escuela de origen.",
+    "fr": "Programme de crédits doubles pour les élèves de dernière année, qui passent un semestre au Durham College pour terminer leurs exigences de diplôme et obtenir un crédit collégial; on postule par l'entremise de son école d'origine."
+   }
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credits",
+  "E-Learning",
+  "Student Success",
+  "Prior Learning Assessment and Recognition (PLAR)"
+ ],
+ "admissions": [
+  {
+   "program": "Centre for Success (Durham College)",
+   "tag": "alt",
+   "elig": {
+    "en": "Students aged 17 or older with at least 24 credits who are at risk of not graduating with their peers and can study at college level.",
+    "es": "Estudiantes de 17 años o más con al menos 24 créditos que están en riesgo de no graduarse con sus compañeros y pueden estudiar a nivel universitario.",
+    "fr": "Élèves de 17 ans ou plus ayant au moins 24 crédits, à risque de ne pas obtenir leur diplôme avec leurs pairs et capables d'étudier au niveau collégial."
+   },
+   "know": [
+    {
+     "en": "Students are referred by their home school Guidance department; the program runs at Durham College's Oshawa Campus and Whitby Skills Training Centre.",
+     "es": "La escuela de origen refiere a los estudiantes por medio de Orientación; el programa se imparte en el campus de Oshawa y el Whitby Skills Training Centre de Durham College.",
+     "fr": "L'école d'origine oriente les élèves par l'orientation; le programme se déroule au campus d'Oshawa et au Whitby Skills Training Centre du Durham College."
+    }
+   ],
+   "url": "https://www.dcdsb.ca/our-programs-learning/academics/alternative-education/"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "School is an alternative-education site; no Grade 9 regular-program entry process, course calendar or information nights published.",
+  "No myBlueprint course calendar link on its Guidance page."
+ ]
+}

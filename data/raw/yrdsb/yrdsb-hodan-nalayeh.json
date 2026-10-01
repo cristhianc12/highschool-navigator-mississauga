@@ -1,0 +1,95 @@
+{
+ "id": "yrdsb-hodan-nalayeh",
+ "scrapedAt": "2026-10-01",
+ "site": "https://hodannalayeh-ss.yrdsb.ca/",
+ "sources": [
+  "https://app.myblueprint.ca/public/courses/yrdsb/hodannalayeh",
+  "https://hodannalayeh-ss.yrdsb.ca/",
+  "https://hodannalayeh-ss.yrdsb.ca/advanced-placement",
+  "https://hodannalayeh-ss.yrdsb.ca/course-selection-information",
+  "https://hodannalayeh-ss.yrdsb.ca/french-immersion",
+  "https://hodannalayeh-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-registration",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "University-level AP courses combining Ontario curriculum with AP content, typically at Grade 12, with an optional AP exam each May; no application, students pick AP courses during course selection. Hodan Nalayeh lists AP courses from Grade 11 in English, Math, Biology, Chemistry, Physics and Computer Science.",
+    "es": "Cursos AP de nivel universitario que combinan el currículo de Ontario con contenido AP, normalmente en 12.º grado, con un examen AP opcional cada mayo; no hay solicitud, los estudiantes eligen los cursos AP en la selección de cursos. Hodan Nalayeh indica cursos AP desde 11.º grado en English, Math, Biology, Chemistry, Physics y Computer Science.",
+    "fr": "Cours AP de niveau universitaire combinant le curriculum de l'Ontario et le contenu AP, généralement en 12e année, avec un examen AP facultatif chaque mai; aucune demande, les élèves choisissent les cours AP lors du choix de cours. Hodan Nalayeh indique des cours AP dès la 11e année en English, Math, Biology, Chemistry, Physics et Computer Science."
+   },
+   "entry": "school",
+   "url": "https://hodannalayeh-ss.yrdsb.ca/advanced-placement"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "Secondary French Immersion for students continuing from elementary French Immersion; earning at least 10 French Immersion credits leads to the French Immersion Certificate.",
+    "es": "Inmersión en francés de secundaria para quienes continúan desde la inmersión de primaria; reunir al menos 10 créditos de inmersión da derecho al certificado de inmersión en francés.",
+    "fr": "Immersion française au secondaire pour les élèves qui poursuivent depuis l'immersion à l'élémentaire; au moins 10 crédits d'immersion mènent au certificat d'immersion française."
+   },
+   "entry": "boundary",
+   "url": "https://hodannalayeh-ss.yrdsb.ca/french-immersion"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 courses in a career sector, co-op, certifications and a Red Seal on the OSSD; sectors here: Health and Wellness, Business, Arts and Culture.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos de un sector profesional, cooperativa, certificaciones y un sello rojo en el OSSD; sectores aquí: salud y bienestar, negocios, artes y cultura.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours dans un secteur professionnel, de l'éducation coopérative, des certifications et un sceau rouge sur le DESO; secteurs offerts ici : santé et bien-être, affaires, arts et culture."
+   },
+   "entry": "apply",
+   "url": "https://hodannalayeh-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA) support",
+   "note": {
+    "en": "Timetable support for students who compete at the provincial, national or international level in eligible sports, including up to two Day School Online courses; students apply each year with an application form and a sport verification letter.",
+    "es": "Apoyo de horario para estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles, con hasta dos cursos Day School Online; se solicita cada año con un formulario y una carta de verificación deportiva.",
+    "fr": "Soutien à l'horaire pour les élèves qui concourent aux niveaux provincial, national ou international dans des sports admissibles, y compris jusqu'à deux cours Day School Online; la demande se refait chaque année avec un formulaire et une lettre de vérification sportive."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Business",
+  "Arts and Culture"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP",
+  "High Performance Athlete (HPA) support"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/yrdsb/hodannalayeh",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-18",
+   "time": "18:00",
+   "format": null,
+   "title": "Open House",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course directory is on myBlueprint (a JavaScript app with no readable text), and no course calendar PDF or HTML list was found on the school site",
+  "Co-op, Dual Credit, OYAP and HPA availability taken from the board pages and the Secondary Programs at a Glance table, not from a school-specific page",
+  "No fees stated for programs other than those in admissions"
+ ]
+}

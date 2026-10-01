@@ -1,0 +1,48 @@
+{
+  "id": "kprdsb-clarke",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.kprschools.ca/clarke/",
+  "sources": [
+    "https://www.kprschools.ca/clarke/",
+    "https://www.kprschools.ca/clarke/learning-and-programs/specialist-high-skills-major/",
+    "https://www.kprschools.ca/clarke/learning-and-programs/co-operative-education/",
+    "https://www.kprschools.ca/clarke/learning-and-programs/ontario-youth-apprenticeship-program/",
+    "https://www.kprschools.ca/clarke/learning-and-programs/departments/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/dual-credit-program/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/cooperative-education/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/ontario-youth-apprenticeship-program-oyap/",
+    "https://www.kprschools.ca/learning-and-programs/french-immersion/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/information-for-grade-8-families/",
+    "https://www.kprschools.ca/clarke/learning-and-programs/arts/"
+  ],
+  "programs": [
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": null,
+      "url": "https://www.kprschools.ca/clarke/learning-and-programs/specialist-high-skills-major/",
+      "note": {
+        "en": "The school's page lists these SHSM sectors: Construction, Health and Wellness.",
+        "es": "La página de la escuela enumera estos sectores SHSM: Construction, Health and Wellness.",
+        "fr": "La page de l'école énumère ces secteurs SHSM : Construction, Health and Wellness."
+      }
+    }
+  ],
+  "shsm": [
+    "Construction",
+    "Health and Wellness"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Ontario Youth Apprenticeship Program (OYAP)",
+    "Dual Credit"
+  ],
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "No 2026-27 Grade 8 information night / open house dates published (the board page only lists the Dec 2025 - Jan 2026 nights of the previous cycle)",
+    "Own school site (*.kprdsb.ca) is blocked by the network proxy; used the school's pages on kprschools.ca",
+    "No application process, fees or marks stated for SHSM, French Immersion or OYAP on the school pages; the board says to contact guidance",
+    "Course calendar / course list not found on the school's pages (course lists sit in Edsby, which needs a login)"
+  ]
+}

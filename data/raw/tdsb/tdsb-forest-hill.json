@@ -1,0 +1,53 @@
+{
+ "id": "tdsb-forest-hill",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.fhci.net",
+ "sources": [
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5508",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+  "https://schoolweb.tdsb.on.ca/foresthillci"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "Math and Science Focus (Local)",
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+   "note": {
+    "en": "Local Math and Science Focus program available at this school (not a central application program).",
+    "es": "Programa local de enfoque en Matemáticas y Ciencias disponible en esta escuela (no es un programa central con solicitud).",
+    "fr": "Programme local axé sur les mathématiques et les sciences offert à cette école (et non un programme central sur demande)."
+   }
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Grade 11-12 Specialist High Skills Major offered at this school in: Business.",
+    "es": "Specialist High Skills Major de 11.º y 12.º grado que ofrece esta escuela en: Business.",
+    "fr": "Specialist High Skills Major de 11e et 12e année offert par cette école dans les secteurs suivants : Business."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "title": "Open house / information night",
+   "date": "2026-12-01",
+   "time": "18:00",
+   "format": "In person",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login)."
+ ],
+ "shsm": [
+  "Business"
+ ]
+}

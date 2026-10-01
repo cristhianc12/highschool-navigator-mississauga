@@ -1,0 +1,69 @@
+{
+ "id": "viamonde-ecole-secondaire-jeunes-sans-frontieres",
+ "scrapedAt": "2026-10-01",
+ "site": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-jeunes-sans-frontieres",
+ "sources": [
+  "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-jeunes-sans-frontieres",
+  "https://programmesdexcellence.csviamonde.ca/programmes-accredites",
+  "https://programmesdexcellence.csviamonde.ca/sciences-et-technologies",
+  "https://programmesdexcellence.csviamonde.ca/affaires-et-international",
+  "https://csviamonde.ca/inscriptions-et-nouveaux-eleves/visiter-une-ecole-secondaire",
+  "https://csviamonde.ca/inscriptions-et-nouveaux-eleves/inscription-a-lecole"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "Programme du diplôme du Baccalauréat International (IB)",
+   "note": {
+    "en": "IB Diploma Programme for Grades 11-12: six subject groups plus the core, recognized by universities worldwide.",
+    "es": "Programa del Diploma IB para 11.º y 12.º grado: seis grupos de asignaturas más el tronco común, reconocido por universidades de todo el mundo.",
+    "fr": "Programme du diplôme IB pour la 11e et la 12e année : six groupes de matières et un tronc commun, reconnu par des universités partout dans le monde."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/programmes-accredites"
+  },
+  {
+   "tag": "stem",
+   "name": "Excellence en sciences, technologies, ingénierie et mathématiques (STIM)",
+   "note": {
+    "en": "STEM excellence program built on experiential learning and the inquiry process.",
+    "es": "Programa de excelencia STEM basado en el aprendizaje experiencial y el proceso de indagación.",
+    "fr": "Programme d'excellence STIM fondé sur l'apprentissage expérientiel et le processus d'enquête."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/sciences-et-technologies"
+  },
+  {
+   "tag": "other",
+   "name": "Excellence en affaires et commerce",
+   "note": {
+    "en": "Excellence program in economics, marketing, business, entrepreneurship and finance that prepares students for the Business SHSM.",
+    "es": "Programa de excelencia en economía, marketing, comercio, emprendimiento y finanzas que prepara para la SHSM de negocios.",
+    "fr": "Programme d'excellence en économie, marketing, commerce, entrepreneuriat et finance qui prépare à la Majeure Haute Spécialisation en affaires."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/affaires-et-international"
+  }
+ ],
+ "shsm": [
+  "Santé et bien-être",
+  "Technologies de l'information et des communications",
+  "Affaires",
+  "Environnement",
+  "Sports"
+ ],
+ "focus": {
+  "en": "Brampton French-language school (Grades 7-12) with the IB Diploma Programme, a STEM excellence program and a business excellence program.",
+  "es": "Escuela francófona de Brampton (7.º a 12.º grado) con el Programa del Diploma del IB, un programa de excelencia STEM y uno de negocios.",
+  "fr": "École francophone de Brampton (7e à 12e année) offrant le programme du diplôme de l'IB, un programme d'excellence STIM et un programme d'excellence en affaires et commerce."
+ },
+ "calendarUrl": null,
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 information night or open house dates published (the board says 2026 open houses are over)",
+  "No course calendar or course list published (course choice is in the MyBlueprint portal)",
+  "No program-specific admission process, fees or marks stated on the pages read",
+  "Microsoft Showcase School is named for this school in a board PDF only; not listed on the school page, so not recorded"
+ ]
+}

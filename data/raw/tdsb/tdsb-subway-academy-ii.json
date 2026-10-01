@@ -1,0 +1,39 @@
+{
+  "id": "tdsb-subway-academy-ii",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/subwayacademy2",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/5846",
+    "https://schoolweb.tdsb.on.ca/subwayacademy2",
+    "https://schoolweb.tdsb.on.ca/subwayacademy2/Course-Offerings",
+    "https://schoolweb.tdsb.on.ca/subwayacademy2/Registration",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/Find-your/School/Alternative-Schools"
+  ],
+  "programs": [
+    {
+      "tag": "alt",
+      "name": "Subway Academy II",
+      "url": "https://schoolweb.tdsb.on.ca/subwayacademy2",
+      "note": {
+        "en": "Small semestered alternative school and the only TDSB independent study program, offering Grade 11 and 12 college, mixed, university and open level courses in the arts, First Nations, Métis and Inuit studies, humanities, social sciences, English, some science and most math.",
+        "es": "Pequeña escuela alternativa semestral y único programa de estudio independiente del TDSB, con cursos de 11.º y 12.º grado de nivel college, mixto, universitario y abierto en artes, estudios de las Primeras Naciones, Métis e Inuit, humanidades, ciencias sociales, inglés, algo de ciencias y casi todas las matemáticas.",
+        "fr": "Petite école alternative à semestres et seul programme d'études indépendantes du TDSB, qui offre des cours de 11e et 12e année de niveau collège, mixte, universitaire et ouvert en arts, en études des Premières Nations, des Métis et des Inuits, en sciences humaines, en sciences sociales, en anglais, quelques cours de sciences et la plupart des cours de maths."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [
+    "Credit Recovery",
+    "Co-operative Education",
+    "Dual Credit",
+    "School Within a College (SWAC)"
+  ],
+  "calendarUrl": "https://schoolweb.tdsb.on.ca/subwayacademy2/Course-Offerings",
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "The registration page still shows a September 2025 update, so it was not used for 2026-27 steps; the school asks families to call to discuss registration.",
+    "Open-house list says no Grade 9 is offered and gives no dates."
+  ]
+}

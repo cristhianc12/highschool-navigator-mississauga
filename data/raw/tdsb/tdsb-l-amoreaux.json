@@ -1,0 +1,44 @@
+{
+ "id": "tdsb-l-amoreaux",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/lamoreaux",
+ "sources": [
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4226",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+  "https://schoolweb.tdsb.on.ca/lamoreaux"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Grade 11-12 Specialist High Skills Major offered at this school in: Business; Health and Wellness; Information Communications Technology.",
+    "es": "Specialist High Skills Major de 11.º y 12.º grado que ofrece esta escuela en: Business; Health and Wellness; Information Communications Technology.",
+    "fr": "Specialist High Skills Major de 11e et 12e année offert par cette école dans les secteurs suivants : Business; Health and Wellness; Information Communications Technology."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "title": "Open house / information night",
+   "date": "2026-12-01",
+   "time": "18:00",
+   "format": "In person",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login)."
+ ],
+ "shsm": [
+  "Business",
+  "Health and Wellness",
+  "Information Communications Technology"
+ ]
+}

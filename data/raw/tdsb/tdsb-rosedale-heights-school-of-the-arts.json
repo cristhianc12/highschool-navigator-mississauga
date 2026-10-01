@@ -1,0 +1,92 @@
+{
+ "id": "tdsb-rosedale-heights-school-of-the-arts",
+ "scrapedAt": "2026-10-01",
+ "site": "https://rhsa.ca/",
+ "sources": [
+  "https://rhsa.ca/",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Application-and-Admissions"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Rosedale Heights School of the Arts",
+   "note": {
+    "en": "Specialized arts school: students take at least 2 art courses a year in dance, drama, music (band, strings, vocal), visual art and media arts; entry is by audition or portfolio.",
+    "es": "Escuela especializada en artes: los estudiantes cursan al menos 2 materias de arte por año en danza, teatro, música (banda, cuerdas, voz), artes visuales y artes mediáticas; el ingreso es por audición o portafolio.",
+    "fr": "École spécialisée en arts : les élèves suivent au moins 2 cours d'arts par année en danse, art dramatique, musique (harmonie, cordes, voix), arts visuels et arts médiatiques; l'admission se fait par audition ou portfolio."
+   },
+   "entry": "audition",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts"
+  }
+ ],
+ "admissions": [
+  {
+   "program": "Rosedale Heights School of the Arts (Arts, Grade 9 entry)",
+   "tag": "arts",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+   "elig": {
+    "en": "Open to students who meet TDSB admission requirements and have no more than 2 of the required report-card marks below 70% (the provincial standard); meeting the benchmark does not guarantee a place.",
+    "es": "Pueden solicitar los estudiantes que cumplen los requisitos de admisión del TDSB y tienen como máximo 2 de las calificaciones requeridas por debajo de 70 % (el estándar provincial); cumplir el requisito no garantiza una plaza.",
+    "fr": "Ouvert aux élèves qui répondent aux exigences d'admission du TDSB et qui n'ont pas plus de 2 des notes de bulletin requises sous 70 % (la norme provinciale); atteindre ce seuil ne garantit pas une place."
+   },
+   "marks": {
+    "en": "Arts programs score the Arts (average of 4 areas) and core report-card marks; a portfolio or recorded audition is required.",
+    "es": "Los programas de artes puntúan Artes (promedio de 4 áreas) y las calificaciones principales del boletín; se requiere un portafolio o una audición grabada.",
+    "fr": "Les programmes d'arts tiennent compte des arts (moyenne de 4 volets) et des notes principales du bulletin; un portfolio ou une audition enregistrée est requis."
+   },
+   "dates": {
+    "en": "Online application open Nov 9-27, 2026; applicants submit a portfolio or recorded audition with the application; in-person demonstrations run Dec 7-17, 2026. Offers and waitlist status are emailed Feb 10, 2027 (offers expire Feb 16 at 4 p.m.); further offers Feb 17 and 24, 2027.",
+    "es": "Solicitud en línea abierta del 9 al 27 de noviembre de 2026; los solicitantes presentan un portafolio o una audición grabada con la solicitud; las demostraciones presenciales se realizan del 7 al 17 de diciembre de 2026. Las ofertas y el estado de lista de espera se envían por correo el 10 de febrero de 2027 (las ofertas vencen el 16 de febrero a las 4 p. m.); más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "Demande en ligne ouverte du 9 au 27 novembre 2026; les candidats soumettent un portfolio ou une audition enregistrée avec leur demande; les démonstrations en personne ont lieu du 7 au 17 décembre 2026. Les offres et l'état de la liste d'attente sont envoyés par courriel le 10 février 2027 (les offres expirent le 16 février à 16 h); d'autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online Specialized Programs application (primary choice, optionally an alternate choice of the same program type)",
+     "es": "Solicitud en línea de Programas Especializados (opción principal y, si se desea, una opción alterna del mismo tipo de programa)",
+     "fr": "Demande en ligne aux programmes spécialisés (choix principal et, au besoin, un choix de rechange du même type de programme)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored 30% on report-card marks and 70% on the demonstration of knowledge and skills.",
+     "es": "El puntaje se calcula 30 % con las calificaciones del boletín y 70 % con la demostración de conocimientos y habilidades.",
+     "fr": "La note finale repose à 30 % sur les notes du bulletin et à 70 % sur la démonstration des connaissances et des compétences."
+    },
+    {
+     "en": "Transportation is not provided for Specialized Programs.",
+     "es": "No se ofrece transporte para los Programas Especializados.",
+     "fr": "Aucun transport n'est offert pour les programmes spécialisés."
+    },
+    {
+     "en": "Rosedale Heights admitted 80%-100% of primary applicants for Sept 2026.",
+     "es": "Rosedale Heights ofreció plaza al 80 %-100 % de los solicitantes principales para septiembre de 2026.",
+     "fr": "Rosedale Heights a fait une offre à 80 % à 100 % des candidats principaux pour septembre 2026."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House session 1 (6:00-7:00 p.m.)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "kind": "school",
+   "date": "2026-11-04",
+   "time": "19:00",
+   "format": "In person",
+   "title": "Open House session 2 (7:00-8:00 p.m.)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted.",
+  "A 'Course Selection Deadline' news post exists on rhsa.ca but is for the current-year students."
+ ]
+}

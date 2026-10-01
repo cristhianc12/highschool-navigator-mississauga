@@ -1,0 +1,131 @@
+{
+ "id": "yrdsb-dr-john-m-denison",
+ "scrapedAt": "2026-10-01",
+ "site": "https://denison-ss.yrdsb.ca/",
+ "sources": [
+  "https://app.myblueprint.ca/public/courses/yrdsb/drdenison1",
+  "https://denison-ss.yrdsb.ca/",
+  "https://denison-ss.yrdsb.ca/course-selection",
+  "https://denison-ss.yrdsb.ca/denison-leadership-program",
+  "https://denison-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-registration",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Denison Leadership Program",
+   "note": {
+    "en": "Application-based leadership program with required Grade 9-12 courses and 100 volunteer hours that focuses on leadership and social impact through a human rights and inclusive education lens.",
+    "es": "Programa de liderazgo con solicitud, con cursos obligatorios de 9.º a 12.º grado y 100 horas de voluntariado, centrado en el liderazgo y el impacto social con una mirada de derechos humanos y educación inclusiva.",
+    "fr": "Programme de leadership sur demande, avec des cours obligatoires de la 9e à la 12e année et 100 heures de bénévolat, axé sur le leadership et l'impact social dans une optique de droits de la personne et d'éducation inclusive."
+   },
+   "entry": "apply",
+   "url": "https://denison-ss.yrdsb.ca/denison-leadership-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 courses in a career sector, co-op, certifications and a Red Seal on the OSSD; sectors here: Arts and Culture, Business, Health and Wellness.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos de un sector profesional, cooperativa, certificaciones y un sello rojo en el OSSD; sectores aquí: artes y cultura, negocios, salud y bienestar.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours dans un secteur professionnel, de l'éducation coopérative, des certifications et un sceau rouge sur le DESO; secteurs offerts ici : arts et culture, affaires, santé et bien-être."
+   },
+   "entry": "apply",
+   "url": "https://denison-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA) support",
+   "note": {
+    "en": "Timetable support for students who compete at the provincial, national or international level in eligible sports, including up to two Day School Online courses; students apply each year with an application form and a sport verification letter.",
+    "es": "Apoyo de horario para estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles, con hasta dos cursos Day School Online; se solicita cada año con un formulario y una carta de verificación deportiva.",
+    "fr": "Soutien à l'horaire pour les élèves qui concourent aux niveaux provincial, national ou international dans des sports admissibles, y compris jusqu'à deux cours Day School Online; la demande se refait chaque année avec un formulaire et une lettre de vérification sportive."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP",
+  "High Performance Athlete (HPA) support"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/yrdsb/drdenison1",
+ "admissions": [
+  {
+   "program": "Denison Leadership Program",
+   "tag": "other",
+   "url": "https://denison-ss.yrdsb.ca/denison-leadership-program",
+   "elig": {
+    "en": "Application package including a report card with a 70% minimum average (the page names the Grade 7 report card).",
+    "es": "Paquete de solicitud que incluye un boletín con un promedio mínimo de 70 % (la página menciona el boletín de 7.º grado).",
+    "fr": "Dossier de demande comprenant un bulletin avec une moyenne minimale de 70 % (la page mentionne le bulletin de 7e année)."
+   },
+   "marks": {
+    "en": "Minimum 70% average on the report card.",
+    "es": "Promedio mínimo de 70 % en el boletín.",
+    "fr": "Moyenne minimale de 70 % au bulletin."
+   },
+   "submit": [
+    {
+     "en": "Application package (report card plus application package) due Friday, Dec. 4, 2026 at 3:00 p.m.",
+     "es": "Paquete de solicitud (boletín y paquete de solicitud) a entregar el viernes 4 de diciembre de 2026 a las 15:00.",
+     "fr": "Dossier de demande (bulletin et dossier de demande) à remettre le vendredi 4 décembre 2026 avant 15 h."
+    },
+    {
+     "en": "Attend the in-person assessment at the school cafeteria (two-paragraph written responses to questions given on the day).",
+     "es": "Asiste a la evaluación presencial en la cafetería de la escuela (respuestas escritas de dos párrafos a preguntas dadas ese día).",
+     "fr": "Présente-toi à l'évaluation en personne à la cafétéria de l'école (réponses écrites de deux paragraphes à des questions données le jour même)."
+    }
+   ],
+   "dates": {
+    "en": "Open house for the program Nov. 10, 2026; applications due Dec. 4, 2026; families told before winter break if they advance; assessment on Jan. 6 or 12 (as listed on the page); acceptance by the end of January.",
+    "es": "Noche del programa el 10 de noviembre de 2026; solicitudes hasta el 4 de diciembre de 2026; se informa a las familias antes de las vacaciones de invierno si avanzan; evaluación el 6 o el 12 de enero (según la página); aceptación a fines de enero.",
+    "fr": "Soirée du programme le 10 novembre 2026; demandes à remettre au plus tard le 4 décembre 2026; les familles sont informées avant le congé d'hiver si elles passent à l'étape suivante; évaluation le 6 ou le 12 janvier (selon la page); admission d'ici la fin de janvier."
+   },
+   "know": [
+    {
+     "en": "Graduation requirements for the program include 100 volunteer hours and seven required courses across Grades 9-12.",
+     "es": "Los requisitos de graduación del programa incluyen 100 horas de voluntariado y siete cursos obligatorios entre 9.º y 12.º grado.",
+     "fr": "Les exigences de diplomation du programme comprennent 100 heures de bénévolat et sept cours obligatoires de la 9e à la 12e année."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-11-10",
+   "time": "18:30",
+   "format": null,
+   "title": "Denison Leadership Program Night",
+   "url": "https://denison-ss.yrdsb.ca/denison-leadership-program"
+  },
+  {
+   "kind": "school",
+   "date": "2026-11-26",
+   "time": "18:30",
+   "format": null,
+   "title": "Open House",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course directory is on myBlueprint (a JavaScript app with no readable text), and no course calendar PDF or HTML list was found on the school site",
+  "Co-op, Dual Credit, OYAP and HPA availability taken from the board pages and the Secondary Programs at a Glance table, not from a school-specific page",
+  "No fees stated for programs other than those in admissions"
+ ]
+}

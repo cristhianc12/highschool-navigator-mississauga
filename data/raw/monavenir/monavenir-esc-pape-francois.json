@@ -1,0 +1,76 @@
+{
+ "id": "monavenir-esc-pape-francois",
+ "scrapedAt": "2026-10-01",
+ "site": "https://pf.cscmonavenir.ca/",
+ "sources": [
+  "https://pf.cscmonavenir.ca/",
+  "https://pf.cscmonavenir.ca/programmes-specialises/",
+  "https://cscmonavenir.ca/ecole/ecole-catholique-pape-francois-stouffville/",
+  "https://cscmonavenir.ca/programmes-specialises/",
+  "https://cscmonavenir.ca/inscription-secondaire/"
+ ],
+ "programs": [
+  {
+   "tag": "sports",
+   "name": "Sports-études",
+   "note": {
+    "en": "Sports-Études lets students spend one period a day on a variety of sports with expert advice on technique, nutrition and conditioning; from Grade 9 after an exploration in Grades 7-8.",
+    "es": "Sports-Études permite dedicar un período diario a distintos deportes con asesoría experta en técnica, nutrición y acondicionamiento; desde 9.º tras una exploración en 7.º y 8.º.",
+    "fr": "Le programme Sports-Études permet de consacrer une période par jour à diverses disciplines sportives avec des conseils d'experts en technique, nutrition et conditionnement; dès la 9e année après une exploration en 7e et 8e."
+   },
+   "entry": null,
+   "url": "https://pf.cscmonavenir.ca/programmes-specialises/"
+  },
+  {
+   "tag": "arts",
+   "name": "Arts-études",
+   "note": {
+    "en": "Arts-Études lets students develop artistic talents (visual arts, dance, drama, music and stage production) and take part in a large-scale show; from Grade 9.",
+    "es": "Arts-Études permite desarrollar talentos artísticos (artes visuales, danza, teatro, música y producción escénica) y participar en un espectáculo de gran escala; desde 9.º.",
+    "fr": "Le programme Arts-Études permet de développer ses talents artistiques (arts visuels, danse, théâtre, musique, production scénique) et de participer à un spectacle d'envergure; dès la 9e année."
+   },
+   "entry": null,
+   "url": "https://pf.cscmonavenir.ca/programmes-specialises/"
+  },
+  {
+   "tag": "stem",
+   "name": "Tech-études",
+   "note": {
+    "en": "Tech-Études introduces information and communications technology (programming, web design, software, technical drawing); from Grade 9 each student gets a school-provided device.",
+    "es": "Tech-Études introduce las tecnologías de la información y las comunicaciones (programación, diseño web, software, dibujo técnico); desde 9.º cada estudiante recibe un dispositivo de la escuela.",
+    "fr": "Le programme Tech-études initie aux technologies de l'information et des communications (programmation, design Web, logiciels, dessin technique); dès la 9e année, chaque élève reçoit un outil technologique fourni par l'école."
+   },
+   "entry": null,
+   "url": "https://pf.cscmonavenir.ca/programmes-specialises/"
+  },
+  {
+   "tag": "shsm",
+   "name": "MHS Arts et Culture",
+   "note": {
+    "en": "Specialist High Skills Major in Arts and Culture with experiential learning and sector certifications, stated on the school page.",
+    "es": "Majeure Haute Spécialisation en Artes y cultura con aprendizaje experiencial y certificaciones del sector, según la página de la escuela.",
+    "fr": "Majeure Haute Spécialisation en arts et culture avec apprentissage par l'expérience et certifications sectorielles, selon la page de l'école."
+   },
+   "entry": null,
+   "url": "https://pf.cscmonavenir.ca/programmes-specialises/"
+  }
+ ],
+ "shsm": [
+  "Arts et culture",
+  "Environnement"
+ ],
+ "focus": {
+  "en": "K-12 French Catholic school in Stouffville with Sports, Arts and Tech specialized programs and an MHS.",
+  "es": "Escuela católica francesa de maternal a 12.º en Stouffville con programas especializados de deportes, artes y tecnología y una MHS.",
+  "fr": "École catholique française de la maternelle à la 12e année à Stouffville avec programmes spécialisés en sports, arts et technologie et une MHS."
+ },
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "The school page names MHS Arts et Culture while the board's MHS list names Environnement for this school; both recorded.",
+  "Entry process (selection) for Sports-études, Arts-études and Tech-études not stated.",
+  "Course lists: no school course calendar or course catalogue page with a readable list was found (board 'guide de cheminement' page lists schools without links; school pages hold old or PDF-only forms), so no courses were extracted.",
+  "No 2026-27 information-night dates: the board open-house page offers personalised appointments only and states no dates.",
+  "Hosts on the older csdccs.edu.on.ca domain show a Cloudflare challenge and were not used; all facts come from cscmonavenir.ca pages."
+ ]
+}

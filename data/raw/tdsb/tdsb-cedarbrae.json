@@ -1,0 +1,141 @@
+{
+ "id": "tdsb-cedarbrae",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/cedarbraeci",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4124",
+  "https://schoolweb.tdsb.on.ca/cedarbraeci",
+  "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Grade-8-To-9-Transition",
+  "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Course-Selection",
+  "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Course-Selection/SHSM-Specialist-High-Skills-Major",
+  "https://schoolweb.tdsb.on.ca/Portals/cedarbraeci/docs/2026-2027%20%20Chart%20of%20All%20Courses%20Revised%20March%202026.pdf",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "CCi STEM",
+   "note": {
+    "en": "Specialized STEM program with its own 2026-27 course selection guide: cross-curricular learning applying STEM concepts to real-world scenarios, with science and English courses in Grades 9 and 10 and science, technology or computer science choices in Grades 11 and 12.",
+    "es": "Programa especializado STEM con su propia guía de selección de cursos 2026-27: aprendizaje interdisciplinario que aplica conceptos STEM a situaciones reales, con cursos de ciencias e inglés en 9.º y 10.º grado y opciones de ciencias, tecnología o informática en 11.º y 12.º.",
+    "fr": "Programme spécialisé STEM avec son propre guide de choix de cours 2026-27 : apprentissage interdisciplinaire appliquant les concepts STEM à des situations réelles, avec des cours de sciences et d'anglais en 9e et en 10e année et des choix de sciences, de technologie ou d'informatique en 11e et en 12e année."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Grade-8-To-9-Transition",
+   "entry": "apply"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "The school states that it has a large French Immersion program, with a wide selection of courses and co-curricular activities offered in French; a Grade 9 French Immersion course table and selection guide are published.",
+    "es": "La escuela indica que tiene un amplio programa de French Immersion, con una gran variedad de cursos y actividades extracurriculares en francés; se publican una tabla de cursos de 9.º grado y una guía de selección de French Immersion.",
+    "fr": "L'école indique qu'elle a un vaste programme d'immersion française, avec un grand choix de cours et d'activités parascolaires en français; un tableau des cours de 9e année et un guide de choix de cours de l'immersion sont publiés."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/cedarbraeci"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "The school's course selection page links a 2026-27 document of Immersion and Extended French courses.",
+    "es": "La página de selección de cursos de la escuela enlaza un documento 2026-27 con los cursos de Immersion y Extended French.",
+    "fr": "La page de choix de cours de l'école renvoie à un document 2026-27 des cours d'immersion et d'Extended French."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Course-Selection"
+  },
+  {
+   "tag": "other",
+   "name": "LEAP (Literacy Enrichment Academic Program)",
+   "note": {
+    "en": "LEAP is listed as a local program: intensive literacy, math and study-skills upgrading for newcomers with restricted educational opportunities in their previous country.",
+    "es": "LEAP figura como programa local: refuerzo intensivo de lectoescritura, matemáticas y habilidades de estudio para recién llegados con oportunidades educativas limitadas en su país anterior.",
+    "fr": "LEAP est indiqué comme programme local : mise à niveau intensive en littératie, en mathématiques et en méthodes d'étude pour les nouveaux arrivants ayant eu un accès limité à l'éducation dans leur pays précédent."
+   },
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Course-Selection/SHSM-Specialist-High-Skills-Major",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business, Construction.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business, Construction.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business, Construction."
+   }
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Construction"
+ ],
+ "calendarUrl": "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Course-Selection",
+ "admissions": [
+  {
+   "program": "CCi STEM",
+   "tag": "stem",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "elig": {
+    "en": "Open for Grade 9 and Grade 10 entry (Grade 10 only if space is available); No more than 2 of these report-card marks may be below the Provincial standard (70%): Language, Math, Science & Technology, Geography, History, French, Arts, Physical and Health Education.",
+    "es": "Abierto para ingreso a 9.º y 10.º grado (10.º solo si hay cupo); No más de 2 de estas calificaciones del boletín pueden estar por debajo del estándar provincial (70 %): Language, Math, Science & Technology, Geography, History, French, Arts y Physical and Health Education.",
+    "fr": "Ouvert à l'entrée en 9e et en 10e année (10e seulement s'il reste des places); Au plus 2 de ces notes du bulletin peuvent être inférieures à la norme provinciale (70 %) : Language, Math, Science & Technology, Geography, History, French, Arts et Physical and Health Education."
+   },
+   "marks": {
+    "en": "Marks in the applicant score: average of Language, Mathematics and Science & Technology.",
+    "es": "Calificaciones que cuentan en la puntuación: promedio de Language, Mathematics y Science & Technology.",
+    "fr": "Notes comptées dans le score : moyenne de Language, Mathematics et Science & Technology."
+   },
+   "dates": {
+    "en": "Online application open Nov. 9-27, 2026; in-person assessments Dec. 7-17, 2026; acceptances and waitlist status emailed Feb. 10, 2027; offers expire Feb. 16, 2027 at 4 p.m.; further offers Feb. 17 and 24, 2027.",
+    "es": "Solicitud en línea del 9 al 27 de noviembre de 2026; evaluaciones presenciales del 7 al 17 de diciembre de 2026; aceptaciones y lista de espera por correo el 10 de febrero de 2027; las ofertas vencen el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "Demande en ligne du 9 au 27 novembre 2026; évaluations en personne du 7 au 17 décembre 2026; acceptations et statut de liste d'attente envoyés par courriel le 10 février 2027; les offres expirent le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online TDSB Specialized Programs application (Nov. 9-27, 2026)",
+     "es": "Solicitud en línea de Programas Especializados del TDSB (9 a 27 de noviembre de 2026)",
+     "fr": "Demande en ligne aux programmes spécialisés du TDSB (du 9 au 27 novembre 2026)"
+    },
+    {
+     "en": "Attend the in-person 60-minute multiple-choice assessment on Mon. Dec. 7, 2026 (Mon. Dec. 14 if weather closes schools)",
+     "es": "Presentarte a la evaluación presencial de opción múltiple de 60 minutos el lunes 7 de diciembre de 2026 (el lunes 14 si el clima cierra las escuelas)",
+     "fr": "Te présenter à l'évaluation en personne à choix multiples de 60 minutes le lundi 7 décembre 2026 (le lundi 14 en cas de fermeture pour météo)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored on the previous year's report card (30%) and a demonstration of knowledge and skills (70%); meeting the mark benchmark does not guarantee a seat.",
+     "es": "Los solicitantes se califican según el boletín del año anterior (30 %) y una demostración de conocimientos y habilidades (70 %); cumplir el requisito de calificaciones no garantiza un cupo.",
+     "fr": "Les candidats sont évalués selon le bulletin de l'année précédente (30 %) et une démonstration de connaissances et d'habiletés (70 %); respecter le seuil de notes ne garantit pas une place."
+    },
+    {
+     "en": "Applicants choose one type of Specialized Program: one primary choice and, optionally, an alternate of the SAME type; transportation is the applicant's responsibility.",
+     "es": "Los solicitantes eligen un solo tipo de programa especializado: una opción principal y, si quieren, una alternativa del MISMO tipo; el transporte corre por cuenta del solicitante.",
+     "fr": "Les candidats choisissent un seul type de programme spécialisé : un premier choix et, au besoin, un choix de remplacement du MÊME type; le transport est à la charge du candidat."
+    },
+    {
+     "en": "Share of 2026 primary-choice applicants offered an entry-grade seat: 80% to 100%.",
+     "es": "Porcentaje de solicitantes de primera opción de 2026 que recibieron un cupo en el grado de entrada: 80% to 100%.",
+     "fr": "Part des candidats de premier choix de 2026 ayant reçu une place en année d'entrée : 80% to 100%."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-10",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open house / information night, 6:30-8:30 PM (math and science focus; local programs: LEAP, French Immersion, SHSM)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "The school's Grade 8 information night date was listed as to be determined on the school site; the board listing date was used.",
+  "No admission steps for French Immersion or Extended French found (the board lists them as local programs)."
+ ]
+}

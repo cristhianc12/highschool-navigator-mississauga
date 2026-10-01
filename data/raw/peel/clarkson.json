@@ -1,0 +1,55 @@
+{
+ "id": "clarkson",
+ "scrapedAt": "2026-10-01",
+ "site": "https://clarksonss.peelschools.org/",
+ "sources": [
+  "https://clarksonss.peelschools.org/",
+  "https://clarksonss.peelschools.org/sports",
+  "https://clarksonss.peelschools.org/co-operative-education",
+  "https://clarksonss.peelschools.org/dual-credit",
+  "https://clarksonss.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/4a8ee967-63dd-47a0-85a8-9e292c547182/Clarkson-SS-717-2026.pdf?fingerprint=ppb20260717192340"
+ ],
+ "programs": [],
+ "shsm": [
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/4a8ee967-63dd-47a0-85a8-9e292c547182/Clarkson-SS-717-2026.pdf?fingerprint=ppb20260717192340",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (doors 6 p.m., presentation 6:30 p.m., tours and booths 7-8:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "French Immersion Info Night",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "EHS & SHSM Info Night: Sports and Wellness",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site."
+ ]
+}

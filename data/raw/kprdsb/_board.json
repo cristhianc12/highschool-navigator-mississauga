@@ -1,0 +1,225 @@
+{
+  "board": "kprdsb",
+  "scrapedAt": "2026-10-01",
+  "sources": [
+    "https://www.kprschools.ca/our-schools/register-for-school/",
+    "https://www.kprschools.ca/our-schools/find-a-school/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/specialist-high-skills-major/",
+    "https://www.kprschools.ca/learning-and-programs/french-immersion/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/cooperative-education/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/dual-credit-program/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/ontario-youth-apprenticeship-program-oyap/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/international-baccalaureate/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/information-for-grade-8-families/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/"
+  ],
+  "registration": {
+    "steps": [
+      {
+        "en": "Find your designated school with the board's Find a School tool (it uses your home address).",
+        "es": "Encuentra tu escuela asignada con la herramienta Find a School del consejo escolar (usa tu dirección de domicilio).",
+        "fr": "Trouve ton école de secteur avec l'outil Find a School du conseil (il utilise ton adresse domiciliaire)."
+      },
+      {
+        "en": "Register a new student online with the blue Request an Account link (use a laptop, desktop, Chromebook or full-size tablet, not a phone), or complete the PDF registration form and bring it to the school.",
+        "es": "Registra a un estudiante nuevo en línea con el enlace azul Request an Account (usa una laptop, computadora de escritorio, Chromebook o tableta grande, no un teléfono), o completa el formulario de registro en PDF y llévalo a la escuela.",
+        "fr": "Inscris un nouvel élève en ligne avec le lien bleu Request an Account (utilise un portable, un ordinateur de bureau, un Chromebook ou une grande tablette, pas un téléphone), ou remplis le formulaire d'inscription en PDF et apporte-le à l'école."
+      },
+      {
+        "en": "If you have attended a KPR school before, or are moving between KPR schools, complete the PDF registration form and contact the school to arrange a visit.",
+        "es": "Si ya asististe a una escuela de KPR, o te cambias entre escuelas de KPR, completa el formulario de registro en PDF y comunícate con la escuela para coordinar una visita.",
+        "fr": "Si tu as déjà fréquenté une école de KPR, ou si tu changes d'école au sein de KPR, remplis le formulaire d'inscription en PDF et communique avec l'école pour organiser une visite."
+      },
+      {
+        "en": "Once the registration is confirmed, visit the school to provide the required documents.",
+        "es": "Cuando se confirme el registro, visita la escuela para entregar los documentos requeridos.",
+        "fr": "Une fois l'inscription confirmée, rends-toi à l'école pour remettre les documents requis."
+      },
+      {
+        "en": "To attend a school other than your designated one, fill out the Student Transfer Request form and submit it to your home school; some schools are closed to out-of-boundary students.",
+        "es": "Para asistir a una escuela distinta de la asignada, completa el formulario Student Transfer Request y entrégalo a tu escuela de domicilio; algunas escuelas están cerradas a estudiantes de fuera de su zona.",
+        "fr": "Pour fréquenter une école autre que ton école désignée, remplis le formulaire Student Transfer Request et remets-le à ton école de secteur; certaines écoles sont fermées aux élèves hors secteur."
+      }
+    ],
+    "docs": [
+      {
+        "en": "Birth certificate",
+        "es": "Acta de nacimiento",
+        "fr": "Certificat de naissance"
+      },
+      {
+        "en": "Immunization record",
+        "es": "Registro de vacunación",
+        "fr": "Carnet de vaccination"
+      },
+      {
+        "en": "Proof of address",
+        "es": "Comprobante de domicilio",
+        "fr": "Preuve d'adresse"
+      },
+      {
+        "en": "Citizenship verification",
+        "es": "Verificación de ciudadanía",
+        "fr": "Vérification de la citoyenneté"
+      },
+      {
+        "en": "Custody documents (if applicable)",
+        "es": "Documentos de custodia (si aplica)",
+        "fr": "Documents de garde (le cas échéant)"
+      }
+    ],
+    "note": {
+      "en": "Schools can accept out-of-boundary students only if space is left after in-boundary students are placed. Students are eligible for busing in Grades 9-12 if they live in their school boundary and more than 3.2 km from the school. Contact: Clarington Community Education Centre 905-623-6723 (toll-free 866-551-5032); KPR main office 705-742-9773 (toll-free 1-877-741-4577).",
+      "es": "Los colegios solo pueden aceptar estudiantes de fuera de su zona si queda espacio después de ubicar a los de la zona. Los estudiantes de 9.º a 12.º tienen derecho a transporte escolar si viven dentro del límite de su escuela y a más de 3,2 km de ella. Contacto: Clarington Community Education Centre 905-623-6723 (línea gratuita 866-551-5032); oficina principal de KPR 705-742-9773 (línea gratuita 1-877-741-4577).",
+      "fr": "Les écoles ne peuvent accepter des élèves hors secteur que s'il reste des places après l'affectation des élèves du secteur. Les élèves de la 9e à la 12e année ont droit au transport scolaire s'ils habitent dans le secteur de leur école et à plus de 3,2 km de celle-ci. Coordonnées : Clarington Community Education Centre 905-623-6723 (sans frais 866-551-5032); bureau principal de KPR 705-742-9773 (sans frais 1-877-741-4577)."
+    },
+    "url": "https://www.kprschools.ca/our-schools/register-for-school/",
+    "contact": "Clarington Community Education Centre 905-623-6723 (toll-free 866-551-5032); KPR main office 705-742-9773 (toll-free 1-877-741-4577); https://www.kprschools.ca/our-schools/register-for-school/"
+  },
+  "programs": [
+    {
+      "id": "kprdsb-shsm",
+      "tag": "shsm",
+      "start": "11",
+      "entry": "school",
+      "hosts": [
+        "kprdsb-bowmanville",
+        "kprdsb-clarington-central",
+        "kprdsb-clarke",
+        "kprdsb-courtice"
+      ],
+      "name": {
+        "en": "Specialist High Skills Major (SHSM)",
+        "es": "Specialist High Skills Major (SHSM)",
+        "fr": "Specialist High Skills Major (SHSM)"
+      },
+      "p": {
+        "en": "Ministry-approved sector program: a bundle of 8-10 courses, industry certifications such as first aid and CPR, and co-op placements, earning an SHSM seal on the diploma.",
+        "es": "Programa sectorial aprobado por el Ministerio: un conjunto de 8 a 10 cursos, certificaciones de la industria como primeros auxilios y RCP, y prácticas cooperativas, que da derecho al sello SHSM en el diploma.",
+        "fr": "Programme sectoriel approuvé par le ministère : un ensemble de 8 à 10 cours, des certifications de l'industrie comme les premiers soins et la RCR, et des stages coopératifs, qui donne droit au sceau SHSM sur le diplôme."
+      },
+      "url": "https://www.kprschools.ca/learning-and-programs/secondary-programs/specialist-high-skills-major/",
+      "info": {
+        "how": {
+          "en": "Contact the guidance department of the school to find out which SHSM sectors are currently offered.",
+          "es": "Comunícate con el departamento de orientación de la escuela para saber qué sectores SHSM se ofrecen actualmente.",
+          "fr": "Communique avec le service d'orientation de l'école pour savoir quels secteurs SHSM sont actuellement offerts."
+        }
+      }
+    },
+    {
+      "id": "kprdsb-french-immersion-secondary",
+      "tag": "fi",
+      "start": "9",
+      "entry": "boundary",
+      "hosts": [
+        "kprdsb-bowmanville",
+        "kprdsb-courtice"
+      ],
+      "name": {
+        "en": "French Immersion (secondary)",
+        "es": "French Immersion (secondary)",
+        "fr": "French Immersion (secondary)"
+      },
+      "p": {
+        "en": "Optional program starting in Grade 9: four French as a Second Language courses plus six more credits taught in French earn the KPR Immersion Certificate.",
+        "es": "Programa opcional desde 9.º grado: cuatro cursos de francés como segunda lengua más seis créditos adicionales impartidos en francés dan derecho al Immersion Certificate de KPR.",
+        "fr": "Programme optionnel à partir de la 9e année : quatre cours de français langue seconde et six autres crédits enseignés en français donnent droit au certificat d'immersion de KPR."
+      },
+      "url": "https://www.kprschools.ca/learning-and-programs/french-immersion/",
+      "info": {
+        "reqs": [
+          {
+            "en": "Ten secondary courses, including four FSL courses, are needed to receive the Immersion Certificate; students who leave earlier receive an Attestation des cours.",
+            "es": "Se necesitan diez cursos de secundaria, incluidos cuatro de FSL, para recibir el Immersion Certificate; quienes salen antes reciben una Attestation des cours.",
+            "fr": "Dix cours du secondaire, dont quatre cours de FSL, sont nécessaires pour obtenir le certificat d'immersion; les élèves qui quittent plus tôt reçoivent une Attestation des cours."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kprdsb-oyap",
+      "tag": "trades",
+      "start": "11",
+      "entry": "school",
+      "hosts": [
+        "kprdsb-bowmanville",
+        "kprdsb-clarington-central",
+        "kprdsb-clarke",
+        "kprdsb-courtice"
+      ],
+      "name": {
+        "en": "Ontario Youth Apprenticeship Program (OYAP)",
+        "es": "Ontario Youth Apprenticeship Program (OYAP)",
+        "fr": "Ontario Youth Apprenticeship Program (OYAP)"
+      },
+      "p": {
+        "en": "Students aged 15 or older with at least 14 credits who are in co-op with a skilled-trades placement become registered apprentices while in high school; accelerated programs can earn Level One trade certification.",
+        "es": "Estudiantes de 15 años o más con al menos 14 créditos que hacen cooperativa con una colocación en un oficio especializado se registran como aprendices mientras están en secundaria; los programas acelerados pueden dar la certificación de Nivel Uno del oficio.",
+        "fr": "Les élèves de 15 ans ou plus ayant au moins 14 crédits qui font un stage coop dans un métier spécialisé deviennent apprentis inscrits pendant leurs études secondaires; les programmes accélérés peuvent mener à la certification de niveau un du métier."
+      },
+      "url": "https://www.kprschools.ca/learning-and-programs/secondary-programs/ontario-youth-apprenticeship-program-oyap/",
+      "info": {
+        "how": {
+          "en": "Speak with the co-op department or book a guidance appointment to build a pathway plan; accelerated OYAP applications are made in the second semester of Grade 11.",
+          "es": "Habla con el departamento de cooperativa o pide una cita con orientación para armar un plan de trayectoria; las solicitudes del OYAP acelerado se hacen en el segundo semestre de 11.º grado.",
+          "fr": "Parle au service de coop ou prends rendez-vous en orientation pour établir un plan de parcours; les demandes pour l'OYAP accéléré se font au deuxième semestre de la 11e année."
+        }
+      }
+    },
+    {
+      "id": "kprdsb-dual-credit",
+      "tag": "other",
+      "start": "12",
+      "entry": "school",
+      "hosts": [
+        "kprdsb-bowmanville",
+        "kprdsb-clarington-central",
+        "kprdsb-clarke",
+        "kprdsb-courtice"
+      ],
+      "name": {
+        "en": "Dual Credit Program",
+        "es": "Dual Credit Program",
+        "fr": "Dual Credit Program"
+      },
+      "p": {
+        "en": "Courses offered with area colleges (Durham, Fleming, Loyalist) that count for both a high school credit and a college credit at no charge; typically Grade 12, up to four dual credits.",
+        "es": "Cursos ofrecidos con colegios universitarios de la zona (Durham, Fleming, Loyalist) que cuentan como crédito de secundaria y de college sin costo; normalmente en 12.º grado, hasta cuatro créditos duales.",
+        "fr": "Cours offerts avec des collèges de la région (Durham, Fleming, Loyalist) qui comptent à la fois comme crédit secondaire et crédit collégial sans frais; généralement en 12e année, jusqu'à quatre crédits doubles."
+      },
+      "url": "https://www.kprschools.ca/learning-and-programs/secondary-programs/dual-credit-program/"
+    },
+    {
+      "id": "kprdsb-coop",
+      "tag": "other",
+      "start": "11",
+      "entry": "school",
+      "hosts": [
+        "kprdsb-bowmanville",
+        "kprdsb-clarington-central",
+        "kprdsb-clarke",
+        "kprdsb-courtice"
+      ],
+      "name": {
+        "en": "Cooperative Education (Co-op)",
+        "es": "Cooperative Education (Co-op)",
+        "fr": "Cooperative Education (Co-op)"
+      },
+      "p": {
+        "en": "Experiential learning in Grades 11 and 12: a work placement, usually one semester, earning credits (unpaid, covered by WSIB through a Work Education Agreement).",
+        "es": "Aprendizaje experiencial en 11.º y 12.º grado: una práctica laboral, normalmente de un semestre, que da créditos (no remunerada, cubierta por WSIB mediante un Work Education Agreement).",
+        "fr": "Apprentissage expérientiel en 11e et 12e année : un stage en milieu de travail, habituellement d'un semestre, qui donne des crédits (non rémunéré, couvert par la CSPAAT au moyen d'un Work Education Agreement)."
+      },
+      "url": "https://www.kprschools.ca/learning-and-programs/secondary-programs/cooperative-education/"
+    }
+  ],
+  "sessions": [],
+  "notes": [
+    "Board site is https://www.kprschools.ca (www.kprdsb.ca and the *.kprdsb.ca school sites are blocked by the network proxy).",
+    "The board Grade 8 families page only lists the Dec 2025 - Jan 2026 information nights (previous cycle); no 2026-27 information nights were published yet, so no sessions are recorded.",
+    "No registration dates for the 2027 Grade 9 intake are published on the board pages.",
+    "International Baccalaureate is being discontinued (no new students; offered only at Cobourg CI and Kenner CVI), so no Clarington school hosts it.",
+    "Secondary French Immersion hosts in Clarington are Bowmanville HS and Courtice SS; entry type 'boundary' is used because the board publishes secondary French Immersion boundary maps for Clarington (map PDF has no readable text)."
+  ]
+}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hs-mississauga-navigator.vercel.app/sitemap.xml
+Sitemap: https://highschool-gta-navigator.vercel.app/sitemap.xml

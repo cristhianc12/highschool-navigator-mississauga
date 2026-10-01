@@ -1,0 +1,116 @@
+{
+  "id": "tdsb-wexford-collegiate-school-for-the-arts",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/wexfordcsa",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/4190",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+    "https://schoolweb.tdsb.on.ca/wexfordcsa",
+    "https://schoolweb.tdsb.on.ca/wexfordcsa/Art-Programs",
+    "https://schoolweb.tdsb.on.ca/wexfordcsa/Admissions"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "Wexford Collegiate School for the Arts (Visual & Media Arts and Performing Arts)",
+      "entry": "audition",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+      "note": {
+        "en": "Arts school with a Visual Media Arts stream (portfolio) and a Performing Arts stream (audition: dance, drama, band, vocal music, music theatre); apply for Grade 9 or 10 (Grade 10 only if space).",
+        "es": "Escuela de artes con un área de Artes Visuales y Medios (portafolio) y un área de Artes Escénicas (audición: danza, teatro, banda, música vocal, teatro musical); se solicita para 9.º o 10.º grado (10.º solo si hay cupo).",
+        "fr": "École des arts avec un volet arts visuels et médiatiques (portfolio) et un volet arts de la scène (audition : danse, art dramatique, harmonie, musique vocale, théâtre musical); la demande se fait pour la 9e ou la 10e année (10e année seulement s'il y a de la place)."
+      }
+    },
+    {
+      "tag": "ap",
+      "name": "Advanced Placement (AP)",
+      "entry": "school",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Local Advanced Placement program: AP courses give a Grade 12 university-preparation credit and optional College Board exams; offerings vary by school and year.",
+        "es": "Programa local de Advanced Placement: los cursos AP dan un crédito universitario de 12.º grado y exámenes opcionales del College Board; la oferta varía según la escuela y el año.",
+        "fr": "Programme local Advanced Placement : les cours AP donnent un crédit préuniversitaire de 12e année et des examens facultatifs du College Board; l'offre varie selon l'école et l'année."
+      }
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM): Arts & Culture",
+      "entry": "school",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+      "note": {
+        "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Arts & Culture.",
+        "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Arts & Culture.",
+        "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Arts & Culture."
+      }
+    }
+  ],
+  "shsm": [
+    "Arts & Culture"
+  ],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [
+    {
+      "program": "Wexford Collegiate School for the Arts",
+      "tag": "arts",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+      "elig": {
+        "en": "Open to students with an interest in the Arts; report-card eligibility is no more than 2 marks below 70% (see the TDSB application page). Grade 9 and 10 entry (Grade 10 only if space).",
+        "es": "Abierto a estudiantes con interés en las Artes; para ser elegible no puedes tener más de 2 calificaciones por debajo de 70 % (consulta la página de solicitud del TDSB). Ingreso en 9.º y 10.º grado (10.º solo si hay cupo).",
+        "fr": "Ouvert aux élèves qui s'intéressent aux arts; pour être admissible, tu ne dois pas avoir plus de 2 notes inférieures à 70 % (voir la page de demande du TDSB). Entrée en 9e et en 10e année (10e année seulement s'il y a de la place)."
+      },
+      "dates": {
+        "en": "Application open Nov 9-27, 2026; offers Feb 10, 2027, acceptance deadline Feb 16, 2027 at 4 p.m.; further offers Feb 17 and 24, 2027.",
+        "es": "Solicitud abierta del 9 al 27 de noviembre de 2026; ofertas el 10 de febrero de 2027, plazo para aceptar hasta el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y 24 de febrero de 2027.",
+        "fr": "Demande ouverte du 9 au 27 novembre 2026; offres le 10 février 2027, date limite d'acceptation le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+      },
+      "submit": [
+        {
+          "en": "Online Specialized Programs application",
+          "es": "Solicitud en línea de Programas Especializados",
+          "fr": "Demande en ligne aux programmes spécialisés"
+        },
+        {
+          "en": "Portfolio (Visual Media Arts) or audition (Performing Arts) submitted with the application",
+          "es": "Portafolio (Artes Visuales y Medios) o audición (Artes Escénicas) enviado con la solicitud",
+          "fr": "Portfolio (arts visuels et médiatiques) ou audition (arts de la scène) envoyé avec la demande"
+        }
+      ],
+      "know": [
+        {
+          "en": "Share of primary-choice applicants offered a seat in the entry grade for September 2026: 80% to 100%.",
+          "es": "Porcentaje de solicitantes de primera opción a quienes se ofreció un cupo en el grado de entrada para septiembre de 2026: 80 % a 100 %.",
+          "fr": "Pourcentage des candidats de premier choix à qui une place a été offerte dans l'année d'entrée pour septembre 2026 : 80 % à 100 %."
+        },
+        {
+          "en": "Applicants are scored 30% on the previous year's report card and 70% on the demonstration of knowledge and skills; for Arts this is a portfolio or recorded audition submitted with the application.",
+          "es": "Los solicitantes se califican 30 % por el boletín del año anterior y 70 % por la demostración de conocimientos y destrezas; en Artes es un portafolio o una audición grabada que se envía con la solicitud.",
+          "fr": "Les candidats sont notés à 30 % sur le bulletin de l'année précédente et à 70 % sur la démonstration de connaissances et d'habiletés; en arts, il s'agit d'un portfolio ou d'une audition enregistrée envoyé avec la demande."
+        },
+        {
+          "en": "Transportation is not provided for Specialized Programs.",
+          "es": "El transporte no se ofrece para los Programas Especializados.",
+          "fr": "Le transport n'est pas offert pour les programmes spécialisés."
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-12",
+      "time": "18:00",
+      "format": "In person",
+      "title": "Open house / information night, 6:00-8:00 PM (Arts Focus program; local program: AP)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The school's own admissions pages are written for the 2025 cycle (applications Nov. 24-Dec. 12, 2025), so dates come from the TDSB pages.",
+    "The roster website (wexfordcsa.ca) did not load; the TDSB-hosted school site is used.",
+    "No public course list readable without a login was found on the school's pages (TDSB course selection runs through myBlueprint), so no course list was extracted."
+  ]
+}

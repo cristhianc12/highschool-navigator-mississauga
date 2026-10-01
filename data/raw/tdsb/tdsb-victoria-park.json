@@ -1,0 +1,93 @@
+{
+  "id": "tdsb-victoria-park",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/3447",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/3447",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/International-Baccalaureate",
+    "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Application-and-Admissions"
+  ],
+  "programs": [
+    {
+      "tag": "ib",
+      "name": "International Baccalaureate (IB) Diploma Program",
+      "entry": "apply",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/International-Baccalaureate",
+      "note": {
+        "en": "IB Diploma Program with accelerated Pre-IB courses in Grades 9-10 (Grade 9 and 10 entry); the TDSB lists these IB courses at this school: Standard Level: French (Group 2), Economics (Group 3), Psychology (Group 3), Chemistry (Group 4), Biology (Group 4), Physics (Group 4), Computer Science (Group 4); Higher Level: English (Group 1), Economics (Group 3), Psychology (Group 3), Chemistry (Group 4), Computer Science (Group 4), Mathematics A&A (Group 5).",
+        "es": "Programa del Diploma del IB con cursos Pre-IB acelerados en 9.º y 10.º grado (ingreso en 9.º y 10.º grado); el TDSB indica estos cursos del IB en esta escuela: Standard Level: French (Group 2), Economics (Group 3), Psychology (Group 3), Chemistry (Group 4), Biology (Group 4), Physics (Group 4), Computer Science (Group 4); Higher Level: English (Group 1), Economics (Group 3), Psychology (Group 3), Chemistry (Group 4), Computer Science (Group 4), Mathematics A&A (Group 5).",
+        "fr": "Programme du diplôme de l'IB avec cours pré-IB accélérés en 9e et 10e année (entrée en 9e et en 10e année); le TDSB indique ces cours de l'IB dans cette école : Standard Level : French (Group 2), Economics (Group 3), Psychology (Group 3), Chemistry (Group 4), Biology (Group 4), Physics (Group 4), Computer Science (Group 4); Higher Level : English (Group 1), Economics (Group 3), Psychology (Group 3), Chemistry (Group 4), Computer Science (Group 4), Mathematics A&A (Group 5)."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [
+    {
+      "program": "International Baccalaureate (Grade 9 entry)",
+      "tag": "ib",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/International-Baccalaureate",
+      "elig": {
+        "en": "Open to students who meet TDSB admission requirements and have no more than 2 of the required report-card marks below 70% (the provincial standard); meeting the benchmark does not guarantee a place.",
+        "es": "Pueden solicitar los estudiantes que cumplen los requisitos de admisión del TDSB y tienen como máximo 2 de las calificaciones requeridas por debajo de 70 % (el estándar provincial); cumplir el requisito no garantiza una plaza.",
+        "fr": "Ouvert aux élèves qui répondent aux exigences d'admission du TDSB et qui n'ont pas plus de 2 des notes de bulletin requises sous 70 % (la norme provinciale); atteindre ce seuil ne garantit pas une place."
+      },
+      "marks": {
+        "en": "Applicant score uses the average of Language, Math, Science, French (4 strands), Geography and History marks.",
+        "es": "El puntaje usa el promedio de las calificaciones de Lengua, Matemáticas, Ciencias, Francés (4 áreas), Geografía e Historia.",
+        "fr": "La note utilise la moyenne des notes de langue, de maths, de sciences, de français (4 volets), de géographie et d'histoire."
+      },
+      "dates": {
+        "en": "Online application open Nov 9-27, 2026; in-person assessment Mon Dec 7, 2026 (Dec 14 if weather closes schools). Offers and waitlist status are emailed Feb 10, 2027 (offers expire Feb 16 at 4 p.m.); further offers Feb 17 and 24, 2027.",
+        "es": "Solicitud en línea abierta del 9 al 27 de noviembre de 2026; evaluación presencial el lunes 7 de diciembre de 2026 (14 de diciembre si el clima cierra las escuelas). Las ofertas y el estado de lista de espera se envían por correo el 10 de febrero de 2027 (las ofertas vencen el 16 de febrero a las 4 p. m.); más ofertas el 17 y el 24 de febrero de 2027.",
+        "fr": "Demande en ligne ouverte du 9 au 27 novembre 2026; évaluation en personne le lundi 7 décembre 2026 (14 décembre en cas de fermeture pour intempéries). Les offres et l'état de la liste d'attente sont envoyés par courriel le 10 février 2027 (les offres expirent le 16 février à 16 h); d'autres offres les 17 et 24 février 2027."
+      },
+      "submit": [
+        {
+          "en": "Online Specialized Programs application (primary choice, optionally an alternate choice of the same program type)",
+          "es": "Solicitud en línea de Programas Especializados (opción principal y, si se desea, una opción alterna del mismo tipo de programa)",
+          "fr": "Demande en ligne aux programmes spécialisés (choix principal et, au besoin, un choix de rechange du même type de programme)"
+        }
+      ],
+      "know": [
+        {
+          "en": "Applicants are scored 30% on report-card marks and 70% on the demonstration of knowledge and skills.",
+          "es": "El puntaje se calcula 30 % con las calificaciones del boletín y 70 % con la demostración de conocimientos y habilidades.",
+          "fr": "La note finale repose à 30 % sur les notes du bulletin et à 70 % sur la démonstration des connaissances et des compétences."
+        },
+        {
+          "en": "Transportation is not provided for Specialized Programs.",
+          "es": "No se ofrece transporte para los Programas Especializados.",
+          "fr": "Aucun transport n'est offert pour les programmes spécialisés."
+        },
+        {
+          "en": "The 60-minute in-person assessment has 30 minutes of multiple choice (math reasoning, French proficiency) and a 30-minute opinion-based written question; the TDSB lists Grade 9 and 10 entry at this school.",
+          "es": "La evaluación presencial de 60 minutos tiene 30 minutos de opción múltiple (razonamiento matemático, dominio del francés) y una pregunta escrita de opinión de 30 minutos; el TDSB indica ingreso en 9.º y 10.º grado en esta escuela.",
+          "fr": "L'évaluation en personne de 60 minutes comprend 30 minutes de choix multiples (raisonnement mathématique, maîtrise du français) et une question écrite d'opinion de 30 minutes; le TDSB indique entrée en 9e et en 10e année dans cette école."
+        },
+        {
+          "en": "Share of primary-choice applicants offered a seat in the entry grade for September 2026: 80% to 100%.",
+          "es": "Porcentaje de solicitantes de primera opción a quienes se ofreció un cupo en el grado de entrada para septiembre de 2026: 80 % a 100 %.",
+          "fr": "Pourcentage des candidats de premier choix à qui une place a été offerte dans l'année d'entrée pour septembre 2026 : 80 % à 100 %."
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "format": "In person",
+      "title": "Open house / information night, 6:00-8:00 PM (IB program)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The school's website (victoriaparkci.ca) returned 403/failed to load, so the TDSB school profile is used as the site and the school's own pages were not read.",
+    "IB program fees on the TDSB page are for 2025-26 and 2026 entry only; no 2027 fee recorded.",
+    "No public course list readable without a login was found on the school's pages (TDSB course selection runs through myBlueprint), so no course list was extracted."
+  ]
+}

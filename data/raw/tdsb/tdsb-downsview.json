@@ -1,0 +1,185 @@
+{
+ "id": "tdsb-downsview",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/downsview",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3420",
+  "https://schoolweb.tdsb.on.ca/downsview",
+  "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs",
+  "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs/Africentric-Secondary-Program",
+  "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs/Leadership-Advantage",
+  "https://schoolweb.tdsb.on.ca/downsview/Departments/Experiential-Learning/Cooperative-Education",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Africentric-Secondary-Programs",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "MST Leadership Academy",
+   "note": {
+    "en": "Specialized Math, Science and Technology program focused on academics, project-based learning, career readiness and industry partnerships; the school lists a STEM Advantage Program.",
+    "es": "Programa especializado de Math, Science and Technology centrado en lo académico, el aprendizaje por proyectos, la preparación profesional y las alianzas con la industria; la escuela indica un STEM Advantage Program.",
+    "fr": "Programme spécialisé de Math, Science and Technology axé sur les études, l'apprentissage par projets, la préparation à la carrière et les partenariats avec l'industrie; l'école indique un STEM Advantage Program."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs",
+   "entry": "apply"
+  },
+  {
+   "tag": "other",
+   "name": "Africentric Secondary Program",
+   "note": {
+    "en": "Grade 9 and 10 core courses (English, Math, Geography and others) taught with an Africentric focus; open to students from across the city.",
+    "es": "Cursos básicos de 9.º y 10.º grado (English, Math, Geography y otros) con enfoque afrocéntrico; abierto a estudiantes de toda la ciudad.",
+    "fr": "Cours de base de 9e et 10e année (English, Math, Geography et autres) enseignés selon une approche afrocentrique; ouvert aux élèves de toute la ville."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs/Africentric-Secondary-Program",
+   "entry": "apply"
+  },
+  {
+   "tag": "arts",
+   "name": "Arts Advantage",
+   "note": {
+    "en": "Specialized program with enriched learning in drama, dance, music and visual arts through classroom experiences and co-curricular activities.",
+    "es": "Programa especializado con aprendizaje enriquecido en teatro, danza, música y artes visuales mediante experiencias en el aula y actividades extracurriculares.",
+    "fr": "Programme spécialisé avec un apprentissage enrichi en art dramatique, en danse, en musique et en arts visuels grâce à des expériences en classe et à des activités parascolaires."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs"
+  },
+  {
+   "tag": "other",
+   "name": "Leadership Advantage",
+   "note": {
+    "en": "Leadership program open to all interested students that builds school-driven and student-driven leadership; courses include GPP3O1, IDC4U1 and IDC4UP.",
+    "es": "Programa de liderazgo abierto a todos los estudiantes interesados que desarrolla liderazgo impulsado por la escuela y por los estudiantes; incluye los cursos GPP3O1, IDC4U1 e IDC4UP.",
+    "fr": "Programme de leadership ouvert à tous les élèves intéressés qui développe le leadership à l'initiative de l'école et des élèves; les cours comprennent GPP3O1, IDC4U1 et IDC4UP."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs/Leadership-Advantage",
+   "entry": "apply"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Arts & Culture.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Arts & Culture.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Arts & Culture."
+   }
+  }
+ ],
+ "shsm": [
+  "Arts & Culture"
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "admissions": [
+  {
+   "program": "MST Leadership Academy",
+   "tag": "stem",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "elig": {
+    "en": "Open for Grade 9 and Grade 10 entry (Grade 10 only if space is available); No more than 2 of these report-card marks may be below the Provincial standard (70%): Language, Math, Science & Technology, Geography, History, French, Arts, Physical and Health Education.",
+    "es": "Abierto para ingreso a 9.º y 10.º grado (10.º solo si hay cupo); No más de 2 de estas calificaciones del boletín pueden estar por debajo del estándar provincial (70 %): Language, Math, Science & Technology, Geography, History, French, Arts y Physical and Health Education.",
+    "fr": "Ouvert à l'entrée en 9e et en 10e année (10e seulement s'il reste des places); Au plus 2 de ces notes du bulletin peuvent être inférieures à la norme provinciale (70 %) : Language, Math, Science & Technology, Geography, History, French, Arts et Physical and Health Education."
+   },
+   "marks": {
+    "en": "Marks in the applicant score: average of Language, Mathematics and Science & Technology.",
+    "es": "Calificaciones que cuentan en la puntuación: promedio de Language, Mathematics y Science & Technology.",
+    "fr": "Notes comptées dans le score : moyenne de Language, Mathematics et Science & Technology."
+   },
+   "dates": {
+    "en": "Online application open Nov. 9-27, 2026; in-person assessments Dec. 7-17, 2026; acceptances and waitlist status emailed Feb. 10, 2027; offers expire Feb. 16, 2027 at 4 p.m.; further offers Feb. 17 and 24, 2027.",
+    "es": "Solicitud en línea del 9 al 27 de noviembre de 2026; evaluaciones presenciales del 7 al 17 de diciembre de 2026; aceptaciones y lista de espera por correo el 10 de febrero de 2027; las ofertas vencen el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "Demande en ligne du 9 au 27 novembre 2026; évaluations en personne du 7 au 17 décembre 2026; acceptations et statut de liste d'attente envoyés par courriel le 10 février 2027; les offres expirent le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online TDSB Specialized Programs application (Nov. 9-27, 2026)",
+     "es": "Solicitud en línea de Programas Especializados del TDSB (9 a 27 de noviembre de 2026)",
+     "fr": "Demande en ligne aux programmes spécialisés du TDSB (du 9 au 27 novembre 2026)"
+    },
+    {
+     "en": "Attend the in-person 60-minute multiple-choice assessment on Mon. Dec. 7, 2026 (Mon. Dec. 14 if weather closes schools)",
+     "es": "Presentarte a la evaluación presencial de opción múltiple de 60 minutos el lunes 7 de diciembre de 2026 (el lunes 14 si el clima cierra las escuelas)",
+     "fr": "Te présenter à l'évaluation en personne à choix multiples de 60 minutes le lundi 7 décembre 2026 (le lundi 14 en cas de fermeture pour météo)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored on the previous year's report card (30%) and a demonstration of knowledge and skills (70%); meeting the mark benchmark does not guarantee a seat.",
+     "es": "Los solicitantes se califican según el boletín del año anterior (30 %) y una demostración de conocimientos y habilidades (70 %); cumplir el requisito de calificaciones no garantiza un cupo.",
+     "fr": "Les candidats sont évalués selon le bulletin de l'année précédente (30 %) et une démonstration de connaissances et d'habiletés (70 %); respecter le seuil de notes ne garantit pas une place."
+    },
+    {
+     "en": "Applicants choose one type of Specialized Program: one primary choice and, optionally, an alternate of the SAME type; transportation is the applicant's responsibility.",
+     "es": "Los solicitantes eligen un solo tipo de programa especializado: una opción principal y, si quieren, una alternativa del MISMO tipo; el transporte corre por cuenta del solicitante.",
+     "fr": "Les candidats choisissent un seul type de programme spécialisé : un premier choix et, au besoin, un choix de remplacement du MÊME type; le transport est à la charge du candidat."
+    },
+    {
+     "en": "Share of 2026 primary-choice applicants offered an entry-grade seat: 80% to 100%.",
+     "es": "Porcentaje de solicitantes de primera opción de 2026 que recibieron un cupo en el grado de entrada: 80% to 100%.",
+     "fr": "Part des candidats de premier choix de 2026 ayant reçu une place en année d'entrée : 80% to 100%."
+    }
+   ]
+  },
+  {
+   "program": "Africentric Secondary Program",
+   "tag": "other",
+   "url": "https://schoolweb.tdsb.on.ca/downsview/Advantage-Programs/Africentric-Secondary-Program",
+   "elig": {
+    "en": "Grade 9 and 10 students from across the city; open to all students interested in courses with this focus.",
+    "es": "Estudiantes de 9.º y 10.º grado de toda la ciudad; abierto a todos los interesados en cursos con este enfoque.",
+    "fr": "Élèves de 9e et de 10e année de toute la ville; ouvert à tous les élèves intéressés par des cours axés sur cette approche."
+   },
+   "submit": [
+    {
+     "en": "Application package delivered to the Downsview SS office with a letter explaining why you are interested",
+     "es": "Paquete de solicitud entregado en la oficina de Downsview SS con una carta que explique tu interés",
+     "fr": "Dossier de demande remis au secrétariat de Downsview SS avec une lettre expliquant ton intérêt"
+    },
+    {
+     "en": "An optional attendance form",
+     "es": "Un formulario de asistencia opcional",
+     "fr": "Un formulaire de fréquentation facultative"
+    },
+    {
+     "en": "A copy of your most recent Grade 8 report card",
+     "es": "Una copia de tu boletín de 8.º grado más reciente",
+     "fr": "Une copie de ton plus récent bulletin de 8e année"
+    },
+    {
+     "en": "A completed application form",
+     "es": "Un formulario de solicitud completo",
+     "fr": "Un formulaire de demande rempli"
+    }
+   ],
+   "know": [
+    {
+     "en": "No 2026-27 dates were stated for this application.",
+     "es": "No se indicaron fechas 2026-27 para esta solicitud.",
+     "fr": "Aucune date 2026-27 n'était indiquée pour cette demande."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-17",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open house / information night, 6:00-8:00 PM (MST focus; Africentric program; local programs: Arts, SHSM, Leadership)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No public course calendar found; the school uses TDSB myBlueprint for course selection.",
+  "The STEM Advantage page is on a Google Site that requires a TDSB login, so it was not read.",
+  "The school's 'Course Charts' link is blocked (403), so no course list was extracted.",
+  "No admission steps found for the Arts Advantage."
+ ]
+}

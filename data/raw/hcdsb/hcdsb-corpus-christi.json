@@ -1,0 +1,102 @@
+{
+ "id": "hcdsb-corpus-christi",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/corpuschristi/",
+ "sources": [
+  "https://secondary.hcdsb.org/corpuschristi/",
+  "https://secondary.hcdsb.org/corpuschristi/advanced-placement/",
+  "https://secondary.hcdsb.org/corpuschristi/students/shsm/",
+  "https://secondary.hcdsb.org/corpuschristi/event/gr-8-information-night-ap-information/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/corpuschristi/advanced-placement/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of sector courses, certifications, experiential learning and a co-operative education course.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y un curso de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et un cours d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/corpuschristi/students/shsm/"
+  }
+ ],
+ "shsm": [
+  "Construction",
+  "Health and Wellness",
+  "Art and Design",
+  "Business Leadership"
+ ],
+ "other": [
+  "Ontario Youth Apprenticeship Program (OYAP): Regular OYAP and Concentrated OYAP"
+ ],
+ "admissions": [
+  {
+   "program": "Advanced Placement (AP) Program",
+   "tag": "ap",
+   "elig": {
+    "en": "High-achieving students who learn above grade level and are motivated for a faster pace can apply.",
+    "es": "Pueden postularse estudiantes de alto rendimiento que aprenden por encima de su nivel y están motivados para un ritmo más rápido.",
+    "fr": "Les élèves très performants, qui apprennent au-dessus de leur niveau et sont motivés par un rythme plus rapide, peuvent présenter une demande."
+   },
+   "fee": {
+    "en": "$65 school activity fee plus a one-time $150 AP registration fee payable on acceptance in February 2027.",
+    "es": "Cuota escolar de actividades de $65 más una cuota única de inscripción AP de $150, pagadera al ser aceptado en febrero de 2027.",
+    "fr": "Frais d'activités scolaires de 65 $ plus des frais d'inscription AP uniques de 150 $, payables à l'acceptation en février 2027."
+   },
+   "dates": {
+    "en": "Information night Oct. 15, 2026; application opens Nov. 2, 2026 and is due Dec. 11, 2026 (later applications may be waitlisted); status emailed by Feb. 5, 2027.",
+    "es": "Noche informativa el 15 de oct. de 2026; la solicitud abre el 2 de nov. de 2026 y vence el 11 de dic. de 2026 (las tardías pueden quedar en lista de espera); el estado se envía por correo antes del 5 de feb. de 2027.",
+    "fr": "Soirée d'information le 15 oct. 2026; la demande ouvre le 2 nov. 2026 et est due le 11 déc. 2026 (les demandes tardives peuvent être mises en liste d'attente); statut communiqué par courriel d'ici le 5 févr. 2027."
+   },
+   "submit": [
+    {
+     "en": "An active Gmail account",
+     "es": "Una cuenta de Gmail activa",
+     "fr": "Un compte Gmail actif"
+    },
+    {
+     "en": "PDF copy of the Grade 7 final report card from June",
+     "es": "Copia en PDF del boletín final de 7.º grado de junio",
+     "fr": "Copie PDF du bulletin final de 7e année de juin"
+    }
+   ],
+   "url": "https://secondary.hcdsb.org/corpuschristi/advanced-placement/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Information Night / AP Information (Grade 9 entry 2027)",
+   "url": "https://secondary.hcdsb.org/corpuschristi/advanced-placement/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening and AP information session (board listing: 6:00 p.m.)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages.",
+  "AP course list by grade not found."
+ ]
+}

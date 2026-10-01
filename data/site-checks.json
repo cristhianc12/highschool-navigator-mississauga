@@ -1,0 +1,2405 @@
+{
+ "checked": "2026-10-01",
+ "results": [
+  {
+   "id": "dcdsb-all-saints",
+   "url": "https://www.dcdsb.ca/allsaints/",
+   "finalUrl": "https://www.dcdsb.ca/allsaints/",
+   "status": 200,
+   "title": "All Saints Catholic Secondary School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-archbishop-denis-o-connor",
+   "url": "https://www.dcdsb.ca/doc/",
+   "finalUrl": "https://www.dcdsb.ca/doc/",
+   "status": 200,
+   "title": "Archbishop Denis O’Connor Catholic High School | Archbishop Denis O’Connor Catholic High School | Durham Catholic Distri",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-father-donald-maclellan-sec-sch-school",
+   "url": "https://www.dcdsb.ca/fatherdonmaclellan/",
+   "finalUrl": "https://www.dcdsb.ca/fatherdonmaclellan/",
+   "status": 200,
+   "title": "Father Donald MacLellan Catholic Secondary School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-father-leo-j-austin",
+   "url": "https://www.dcdsb.ca/austin/",
+   "finalUrl": "https://www.dcdsb.ca/austin/",
+   "status": 200,
+   "title": "Father Leo J. Austin Catholic Secondary School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-monsignor-john-pereyma",
+   "url": "https://www.dcdsb.ca/pereyma/",
+   "finalUrl": "https://www.dcdsb.ca/pereyma/",
+   "status": 200,
+   "title": "Monsignor John Pereyma Catholic Secondary School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-monsignor-paul-dwyer",
+   "url": "https://www.dcdsb.ca/pauldwyer/",
+   "finalUrl": "https://www.dcdsb.ca/pauldwyer/",
+   "status": 200,
+   "title": "Monsignor Paul Dwyer Catholic High School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-notre-dame",
+   "url": "https://www.dcdsb.ca/notredame/",
+   "finalUrl": "https://www.dcdsb.ca/notredame/",
+   "status": 200,
+   "title": "Notre Dame Catholic Secondary School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "dcdsb-st-mary",
+   "url": "https://www.dcdsb.ca/stmary/",
+   "finalUrl": "https://www.dcdsb.ca/stmary/",
+   "status": 200,
+   "title": "St. Mary Catholic Secondary School | Durham Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-ajax",
+   "url": "https://ajaxhs.ddsb.ca",
+   "finalUrl": "https://ajaxhs.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Ajax High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-anderson-collegiate-and-vocational-institute",
+   "url": "https://andersoncvi.ddsb.ca",
+   "finalUrl": "https://andersoncvi.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Anderson CVI",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-brock",
+   "url": "https://brockhs.ddsb.ca",
+   "finalUrl": "https://brockhs.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Brock High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-brooklin",
+   "url": "https://brooklinhs.ddsb.ca",
+   "finalUrl": "https://brooklinhs.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Brooklin High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-donald-a-wilson",
+   "url": "https://donaldawilsonss.ddsb.ca",
+   "finalUrl": "https://donaldawilsonss.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Donald A. Wilson Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-dunbarton",
+   "url": "https://dunbartonhs.ddsb.ca",
+   "finalUrl": "https://dunbartonhs.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Dunbarton High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-durham-alternative",
+   "url": "https://dass.ddsb.ca",
+   "finalUrl": "https://dass.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Durham Alternative Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-eastdale-collegiate-and-vocational-institute",
+   "url": "https://eastdalecvi.ddsb.ca",
+   "finalUrl": "https://eastdalecvi.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Eastdale CVI",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-g-l-roberts-collegiate-and-vocational-institute",
+   "url": "https://glrobertscvi.ddsb.ca",
+   "finalUrl": "https://glrobertscvi.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "G.L. Roberts CVI",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-henry-street",
+   "url": "https://henrystreeths.ddsb.ca",
+   "finalUrl": "https://henrystreeths.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Henry St. High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-j-clarke-richardson",
+   "url": "https://jclarkerichardson.ddsb.ca",
+   "finalUrl": "https://jclarkerichardson.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "J. Clarke Richardson Collegiate",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-maxwell-heights",
+   "url": "https://maxwellheights.ddsb.ca",
+   "finalUrl": "https://maxwellheights.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Maxwell Heights Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-o-neill-collegiate-and-vocational-institute",
+   "url": "https://oneillcvi.ddsb.ca",
+   "finalUrl": "https://oneillcvi.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "O'Neill CVI",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-pickering",
+   "url": "https://pickeringhs.ddsb.ca",
+   "finalUrl": "https://pickeringhs.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Pickering High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-pine-ridge",
+   "url": "https://pineridgess.ddsb.ca",
+   "finalUrl": "https://pineridgess.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Pine Ridge Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-port-perry",
+   "url": "https://portperryhs.ddsb.ca",
+   "finalUrl": "https://portperryhs.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Port Perry High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-r-s-mclaughlin-collegiate-and-vocational-institute",
+   "url": "https://rsmclaughlin.ddsb.ca",
+   "finalUrl": "https://rsmclaughlin.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "R.S. McLaughlin CVI",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-sinclair",
+   "url": "https://sinclairss.ddsb.ca",
+   "finalUrl": "https://sinclairss.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Sinclair Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ddsb-uxbridge",
+   "url": "https://uxbridgess.ddsb.ca",
+   "finalUrl": "https://uxbridgess.ddsb.ca/en/index.aspx",
+   "status": 200,
+   "title": "Uxbridge Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-cardinal-ambrozic",
+   "url": "https://ambro.dpcdsb.org/",
+   "finalUrl": "https://ambro.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | Cardinal Ambrozic Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-cardinal-leger",
+   "url": "https://leger.dpcdsb.org/",
+   "finalUrl": "https://leger.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | Cardinal Leger Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-holy-name-of-mary",
+   "url": "https://hnmry.dpcdsb.org/",
+   "finalUrl": "https://hnmry.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | Holy Name of Mary Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-notre-dame",
+   "url": "https://ndame.dpcdsb.org/",
+   "finalUrl": "https://ndame.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | Notre Dame Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-robert-f-hall",
+   "url": "https://rfhal.dpcdsb.org/",
+   "finalUrl": "https://rfhal.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | Robert F. Hall Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-st-augustine",
+   "url": "https://augst.dpcdsb.org/",
+   "finalUrl": "https://augst.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | St. Augustine Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-st-edmund-campion",
+   "url": "https://campi.dpcdsb.org/",
+   "finalUrl": "https://campi.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | St. Edmund Campion Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-st-marguerite-d-youville",
+   "url": "https://dyouv.dpcdsb.org/",
+   "finalUrl": "https://dyouv.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | St. Marguerite d'Youville Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-st-michael",
+   "url": "https://michs.dpcdsb.org/",
+   "finalUrl": "https://michs.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | St. Michael Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-st-roch",
+   "url": "https://rochs.dpcdsb.org/",
+   "finalUrl": "https://rochs.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | St. Roch Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "dpcdsb-st-thomas-aquinas",
+   "url": "https://aquin.dpcdsb.org/",
+   "finalUrl": "https://aquin.dpcdsb.org/",
+   "status": 200,
+   "title": "Home | St. Thomas Aquinas Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-assumption",
+   "url": "https://secondary.hcdsb.org/assumption/",
+   "finalUrl": "https://secondary.hcdsb.org/assumption/",
+   "status": 200,
+   "title": "Assumption Catholic Secondary School, Burlington | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-bishop-paul-francis-reding",
+   "url": "https://secondary.hcdsb.org/bishopreding/",
+   "finalUrl": "https://secondary.hcdsb.org/bishopreding/",
+   "status": 200,
+   "title": "Bishop Reding Catholic Secondary School, Milton | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-christ-the-king",
+   "url": "https://secondary.hcdsb.org/ctk/",
+   "finalUrl": "https://secondary.hcdsb.org/ctk/",
+   "status": 200,
+   "title": "Christ the King Catholic Secondary School, Georgetown | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-corpus-christi",
+   "url": "https://secondary.hcdsb.org/corpuschristi/",
+   "finalUrl": "https://secondary.hcdsb.org/corpuschristi/",
+   "status": 200,
+   "title": "Corpus Christi Catholic Secondary School, Burlington | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-holy-trinity",
+   "url": "https://secondary.hcdsb.org/holytrinity/",
+   "finalUrl": "https://secondary.hcdsb.org/holytrinity/",
+   "status": 200,
+   "title": "Holy Trinity Catholic Secondary School, Oakville | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-notre-dame",
+   "url": "https://secondary.hcdsb.org/notredame/",
+   "finalUrl": "https://secondary.hcdsb.org/notredame/",
+   "status": 200,
+   "title": "Notre Dame Catholic Secondary School, Burlington | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-st-francis-xavier",
+   "url": "https://secondary.hcdsb.org/xavier/",
+   "finalUrl": "https://secondary.hcdsb.org/xavier/",
+   "status": 200,
+   "title": "St. Francis Xavier Catholic Secondary School, Milton | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-st-ignatius-of-loyola",
+   "url": "https://secondary.hcdsb.org/loyola/",
+   "finalUrl": "https://secondary.hcdsb.org/loyola/",
+   "status": 200,
+   "title": "St. Ignatius of Loyola Catholic Secondary School, Oakville | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-st-kateri-tekakwitha-school",
+   "url": "https://secondary.hcdsb.org/stkateri/",
+   "finalUrl": "https://secondary.hcdsb.org/stkateri/",
+   "status": 200,
+   "title": "St. Kateri Tekakwitha Catholic Secondary School | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-st-thomas-aquinas",
+   "url": "https://secondary.hcdsb.org/sta/",
+   "finalUrl": "https://secondary.hcdsb.org/sta/",
+   "status": 200,
+   "title": "St. Thomas Aquinas Catholic Secondary School, Oakville | Halton Catholic District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hcdsb-thomas-merton-online-school",
+   "url": "https://merton.hcdsb.org/",
+   "finalUrl": "https://merton.hcdsb.org/",
+   "status": 200,
+   "title": "Thomas Merton – Adult and Continuing EducationScroll to topScroll to top",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-abbey-park",
+   "url": "https://www.hdsb.ca/aph/",
+   "finalUrl": "https://www.hdsb.ca/aph/",
+   "status": 200,
+   "title": "Abbey Park High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-acton-district-school",
+   "url": "https://www.hdsb.ca/act/",
+   "finalUrl": "https://www.hdsb.ca/act/",
+   "status": 200,
+   "title": "Acton District School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-aldershot",
+   "url": "https://www.hdsb.ca/ald/",
+   "finalUrl": "https://www.hdsb.ca/ald/",
+   "status": 200,
+   "title": "Aldershot District School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-burlington-central",
+   "url": "https://www.hdsb.ca/bch/",
+   "finalUrl": "https://www.hdsb.ca/bch/",
+   "status": 200,
+   "title": "Burlington Central School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-craig-kielburger",
+   "url": "https://www.hdsb.ca/cks/",
+   "finalUrl": "https://www.hdsb.ca/cks/",
+   "status": 200,
+   "title": "Craig Kielburger Secondary School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-dr-frank-j-hayden",
+   "url": "https://www.hdsb.ca/dfh/",
+   "finalUrl": "https://www.hdsb.ca/dfh/",
+   "status": 200,
+   "title": "Dr. Frank J. Hayden Secondary School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-elsie-macgill",
+   "url": "https://www.hdsb.ca/ems/",
+   "finalUrl": "https://www.hdsb.ca/ems/",
+   "status": 200,
+   "title": "Elsie MacGill Secondary School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-garth-webb",
+   "url": "https://www.hdsb.ca/gws/",
+   "finalUrl": "https://www.hdsb.ca/gws/",
+   "status": 200,
+   "title": "Garth Webb Secondary School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-gary-allan-burlington",
+   "url": "https://www.hdsb.ca/gab/",
+   "finalUrl": "https://www.hdsb.ca/gab/",
+   "status": 200,
+   "title": "Gary Allan High School(Formally Adult, Alt. Ed) | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-georgetown-district",
+   "url": "https://www.hdsb.ca/geo/",
+   "finalUrl": "https://www.hdsb.ca/geo/",
+   "status": 200,
+   "title": "Georgetown District High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-iroquois-ridge",
+   "url": "https://www.hdsb.ca/irs/",
+   "finalUrl": "https://www.hdsb.ca/irs/",
+   "status": 200,
+   "title": "Iroquois Ridge High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-m-m-robinson",
+   "url": "https://www.hdsb.ca/mmr/",
+   "finalUrl": "https://www.hdsb.ca/mmr/",
+   "status": 200,
+   "title": "M. M. Robinson High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-milton-district",
+   "url": "https://www.hdsb.ca/mil/",
+   "finalUrl": "https://www.hdsb.ca/mil/",
+   "status": 200,
+   "title": "Milton District High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-nelson",
+   "url": "https://www.hdsb.ca/nel/",
+   "finalUrl": "https://www.hdsb.ca/nel/",
+   "status": 200,
+   "title": "Nelson High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-oakville-trafalgar",
+   "url": "https://www.hdsb.ca/oth/",
+   "finalUrl": "https://www.hdsb.ca/oth/",
+   "status": 200,
+   "title": "Oakville Trafalgar High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-thomas-a-blakelock",
+   "url": "https://www.hdsb.ca/tab/",
+   "finalUrl": "https://www.hdsb.ca/tab/",
+   "status": 200,
+   "title": "T. A. Blakelock High School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "hdsb-white-oaks",
+   "url": "https://www.hdsb.ca/wos/",
+   "finalUrl": "https://www.hdsb.ca/wos/",
+   "status": 200,
+   "title": "White Oaks Secondary School | Halton District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "kprdsb-bowmanville",
+   "url": "https://www.kprschools.ca/bowmanvillehigh/",
+   "finalUrl": "https://www.kprschools.ca/bowmanvillehigh/",
+   "status": 200,
+   "title": "Bowmanville High School | Kawartha Pine Ridge District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "kprdsb-clarington-central",
+   "url": "https://www.kprschools.ca/claringtoncentral/",
+   "finalUrl": "https://www.kprschools.ca/claringtoncentral/",
+   "status": 200,
+   "title": "Clarington Central Secondary School | Kawartha Pine Ridge District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "kprdsb-clarke",
+   "url": "https://www.kprschools.ca/clarke/",
+   "finalUrl": "https://www.kprschools.ca/clarke/",
+   "status": 200,
+   "title": "Clarke High School | Kawartha Pine Ridge District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "kprdsb-courtice",
+   "url": "https://www.kprschools.ca/courticesecondary/",
+   "finalUrl": "https://www.kprschools.ca/courticesecondary/",
+   "status": 200,
+   "title": "Courtice Secondary School | Kawartha Pine Ridge District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-de-l-ascension-vaughan",
+   "url": "https://esca.cscmonavenir.ca/",
+   "finalUrl": "https://esca.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique de l'Ascension",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-monseigneur-de-charbonnel",
+   "url": "https://esmdc.cscmonavenir.ca/",
+   "finalUrl": "https://esmdc.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique Monseigneur-de-Charbonnel",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-pape-francois",
+   "url": "https://pf.cscmonavenir.ca/",
+   "finalUrl": "https://pf.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École catholique Pape-François",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-pere-philippe-lamarche",
+   "url": "https://esppl.cscmonavenir.ca/",
+   "finalUrl": "https://esppl.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique Père-Philippe-Lamarche",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-renaissance",
+   "url": "https://esr.cscmonavenir.ca/",
+   "finalUrl": "https://esr.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique Renaissance",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-saint-charles-garnier",
+   "url": "https://esscg.cscmonavenir.ca/",
+   "finalUrl": "https://esscg.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique Saint-Charles-Garnier",
+   "verdict": "ok"
+  },
+  {
+   "id": "monavenir-esc-saint-frere-andre",
+   "url": "https://essfa.cscmonavenir.ca/",
+   "finalUrl": "https://essfa.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique Saint-Frère-André",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "monavenir-esc-sainte-trinite",
+   "url": "https://esst.cscmonavenir.ca/",
+   "finalUrl": "https://esst.cscmonavenir.ca/",
+   "status": 200,
+   "title": "Accueil - École secondaire catholique Sainte-Trinité",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-applewood-acres",
+   "url": "https://applewoodacres.peelschools.org/",
+   "finalUrl": "https://applewoodacres.peelschools.org/",
+   "status": 200,
+   "title": "Home - Applewood Acres Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-bramalea",
+   "url": "https://bramalea.peelschools.org/",
+   "finalUrl": "https://bramalea.peelschools.org/",
+   "status": 200,
+   "title": "Home - Bramalea Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-brampton-centennial",
+   "url": "https://bramptoncentennial.peelschools.org/",
+   "finalUrl": "https://bramptoncentennial.peelschools.org/",
+   "status": 200,
+   "title": "Home - Brampton Centennial Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-castlebrooke",
+   "url": "https://castlebrooke.peelschools.org/",
+   "finalUrl": "https://castlebrooke.peelschools.org/",
+   "status": 200,
+   "title": "Home - Castlebrooke Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-central-peel",
+   "url": "https://centralpeel.peelschools.org/",
+   "finalUrl": "https://centralpeel.peelschools.org/",
+   "status": 200,
+   "title": "Home - Central Peel Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-chinguacousy",
+   "url": "https://chinguacousy.peelschools.org/",
+   "finalUrl": "https://chinguacousy.peelschools.org/",
+   "status": 200,
+   "title": "Home - Chinguacousy Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-david-suzuki",
+   "url": "https://davidsuzuki.peelschools.org/",
+   "finalUrl": "https://davidsuzuki.peelschools.org/",
+   "status": 200,
+   "title": "Home - David Suzuki Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-fletcher-s-meadow",
+   "url": "https://fletchersmeadow.peelschools.org/",
+   "finalUrl": "https://fletchersmeadow.peelschools.org/",
+   "status": 200,
+   "title": "Home - Fletcher's Meadow Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-harold-m-brathwaite",
+   "url": "https://haroldmbrathwaite.peelschools.org/",
+   "finalUrl": "https://haroldmbrathwaite.peelschools.org/",
+   "status": 200,
+   "title": "Home - Harold M. Brathwaite Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-heart-lake",
+   "url": "https://heartlake.peelschools.org/",
+   "finalUrl": "https://heartlake.peelschools.org/",
+   "status": 200,
+   "title": "Home - Heart Lake Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-humberview",
+   "url": "https://humberview.peelschools.org/",
+   "finalUrl": "https://humberview.peelschools.org/",
+   "status": 200,
+   "title": "Home - Humberview Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-jean-augustine",
+   "url": "https://jeanaugustine.peelschools.org/",
+   "finalUrl": "https://jeanaugustine.peelschools.org/",
+   "status": 200,
+   "title": "Home - Jean Augustine Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-judith-nyman",
+   "url": "https://judithnyman.peelschools.org/",
+   "finalUrl": "https://judithnyman.peelschools.org/",
+   "status": 200,
+   "title": "Home - Judith Nyman Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-louise-arbour",
+   "url": "https://louisearbour.peelschools.org/",
+   "finalUrl": "https://louisearbour.peelschools.org/",
+   "status": 200,
+   "title": "Home - Louise Arbour Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-mayfield",
+   "url": "https://mayfield.peelschools.org/",
+   "finalUrl": "https://mayfield.peelschools.org/",
+   "status": 200,
+   "title": "Home - Mayfield Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-north-park",
+   "url": "https://northpark.peelschools.org/",
+   "finalUrl": "https://northpark.peelschools.org/",
+   "status": 200,
+   "title": "Home - North Park Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-parkholme",
+   "url": "https://parkholme.peelschools.org/",
+   "finalUrl": "https://parkholme.peelschools.org/",
+   "status": 200,
+   "title": "Home - Parkholme Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-peel-alternative-north",
+   "url": "https://pasnorth.peelschools.org/",
+   "finalUrl": "https://pasnorth.peelschools.org/",
+   "status": 200,
+   "title": "Home - Peel Alternative School North",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-peel-alternative-north-isr",
+   "url": "https://pasnorth.peelschools.org/",
+   "finalUrl": "https://pasnorth.peelschools.org/",
+   "status": 200,
+   "title": "Home - Peel Alternative School North",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-peel-alternative-south",
+   "url": "https://passouth.peelschools.org/",
+   "finalUrl": "https://passouth.peelschools.org/",
+   "status": 200,
+   "title": "Home - Peel Alternative School South",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-peel-alternative-south-isr",
+   "url": "https://passouth.peelschools.org/",
+   "finalUrl": "https://passouth.peelschools.org/",
+   "status": 200,
+   "title": "Home - Peel Alternative School South",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-sandalwood-heights",
+   "url": "https://sandalwoodheights.peelschools.org/",
+   "finalUrl": "https://sandalwoodheights.peelschools.org/",
+   "status": 200,
+   "title": "Home - Sandalwood Heights Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-the-woodlands",
+   "url": "https://thewoodlandsss.peelschools.org/",
+   "finalUrl": "https://thewoodlandsss.peelschools.org/",
+   "status": 200,
+   "title": "Home - The Woodlands Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "peel-turner-fenton",
+   "url": "https://turnerfenton.peelschools.org/",
+   "finalUrl": "https://turnerfenton.peelschools.org/",
+   "status": 200,
+   "title": "Home - Turner Fenton Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "pvnccdsb-holy-trinity",
+   "url": "https://www.htcss.ca/",
+   "finalUrl": "https://www.htcss.ca/",
+   "status": 200,
+   "title": "Holy Trinity Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "pvnccdsb-st-stephen",
+   "url": "https://www.sscss.ca/",
+   "finalUrl": "https://www.sscss.ca/",
+   "status": 200,
+   "title": "St. Stephen Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-bishop-allen-academy",
+   "url": "https://www.tcdsb.org/o/bishopallen/",
+   "finalUrl": "https://www.tcdsb.org/o/bishopallen/",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-bishop-marrocco-thomas-merton",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/",
+   "finalUrl": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-brebeuf-college-school",
+   "url": "https://www.tcdsb.org/o/brebeufcollege/",
+   "finalUrl": "https://www.tcdsb.org/o/brebeufcollege/",
+   "status": 200,
+   "title": "Brebeuf College School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-cardinal-carter-academy-for-the-arts",
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/",
+   "finalUrl": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/",
+   "status": 200,
+   "title": "Cardinal Carter Academy for the Arts",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-chaminade-college-school",
+   "url": "https://www.tcdsb.org/o/chaminadecollege/",
+   "finalUrl": "https://www.tcdsb.org/o/chaminadecollege/",
+   "status": 200,
+   "title": "Chaminade College School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-dante-alighieri-academy",
+   "url": "https://www.tcdsb.org/o/dantealighieri/",
+   "finalUrl": "https://www.tcdsb.org/o/dantealighieri/",
+   "status": 200,
+   "title": "Dante Alighieri Academy Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-father-henry-carr",
+   "url": "https://www.tcdsb.org/o/fatherhenrycarr/",
+   "finalUrl": "https://www.tcdsb.org/o/fatherhenrycarr/",
+   "status": 200,
+   "title": "Father Henry Carr Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-father-john-redmond",
+   "url": "https://www.tcdsb.org/o/fatherjohnredmond/",
+   "finalUrl": "https://www.tcdsb.org/o/fatherjohnredmond/",
+   "status": 200,
+   "title": "Father John Redmond Catholic Secondary School and Regional Arts Centre",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-francis-libermann",
+   "url": "https://www.tcdsb.org/o/francislibermann/",
+   "finalUrl": "https://www.tcdsb.org/o/francislibermann/",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-james-cardinal-mcguigan",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/",
+   "finalUrl": "https://www.tcdsb.org/o/jamescardinalmcguigan/",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-loretto-abbey",
+   "url": "https://www.tcdsb.org/o/lorettoabbey/",
+   "finalUrl": "https://www.tcdsb.org/o/lorettoabbey/",
+   "status": 200,
+   "title": "Loretto Abbey Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-loretto-college-school",
+   "url": "https://www.tcdsb.org/o/lorettocollege/",
+   "finalUrl": "https://www.tcdsb.org/o/lorettocollege/",
+   "status": 200,
+   "title": "Loretto College School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-madonna",
+   "url": "https://www.tcdsb.org/o/madonna/",
+   "finalUrl": "https://www.tcdsb.org/o/madonna/",
+   "status": 200,
+   "title": "Madonna Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-marshall-mcluhan",
+   "url": "https://www.tcdsb.org/o/marshallmcluhan/",
+   "finalUrl": "https://www.tcdsb.org/o/marshallmcluhan/",
+   "status": 200,
+   "title": "Marshall McLuhan Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-mary-ward",
+   "url": "https://www.tcdsb.org/o/maryward/",
+   "finalUrl": "https://www.tcdsb.org/o/maryward/",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-michael-power-st-joseph",
+   "url": "https://www.tcdsb.org/o/michaelpowerstjoseph/",
+   "finalUrl": "https://www.tcdsb.org/o/michaelpowerstjoseph/",
+   "status": 200,
+   "title": "Michael Power - St. Joseph High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-monsignor-percy-johnson",
+   "url": "https://www.tcdsb.org/o/msgrpercyjohnson/",
+   "finalUrl": "https://www.tcdsb.org/o/msgrpercyjohnson/",
+   "status": 200,
+   "title": "Monsignor Percy Johnson Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-msgr-fraser-college-isabella-campus",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/",
+   "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege/",
+   "status": 200,
+   "title": "Monsignor Fraser College",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-msgr-fraser-college-norfinch-campus",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/",
+   "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege/",
+   "status": 200,
+   "title": "Monsignor Fraser College",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-msgr-fraser-college-northeast",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege",
+   "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-msgr-fraser-college-southwest",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege",
+   "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege",
+   "status": 200,
+   "title": "Monsignor Fraser College",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-msgr-fraser-midland",
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege",
+   "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege",
+   "status": 200,
+   "title": "Monsignor Fraser College",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-neil-mcneil",
+   "url": "https://www.tcdsb.org/o/neilmcneil",
+   "finalUrl": "https://www.tcdsb.org/o/neilmcneil",
+   "status": 200,
+   "title": "Neil McNeil High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-notre-dame",
+   "url": "https://www.tcdsb.org/o/notredame",
+   "finalUrl": "https://www.tcdsb.org/o/notredame",
+   "status": 200,
+   "title": "Home | Notre Dame High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-senator-o-connor-college-school",
+   "url": "https://www.tcdsb.org/o/senatoroconnor",
+   "finalUrl": "https://www.tcdsb.org/o/senatoroconnor",
+   "status": 200,
+   "title": "Senator O'Connor College School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-basil-the-great-college-school",
+   "url": "https://www.tcdsb.org/o/stbasilthegreat",
+   "finalUrl": "https://www.tcdsb.org/o/stbasilthegreat",
+   "status": 200,
+   "title": "St. Basil-the-Great College School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-joan-of-arc-academy",
+   "url": "https://www.tcdsb.org/o/stjoanofarc",
+   "finalUrl": "https://www.tcdsb.org/o/stjoanofarc",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-st-john-henry-newman",
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman",
+   "finalUrl": "https://www.tcdsb.org/o/stjohnhenrynewman",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-st-john-paul-ii",
+   "url": "https://www.tcdsb.org/o/stjohnpaulii",
+   "finalUrl": "https://www.tcdsb.org/o/stjohnpaulii",
+   "status": 200,
+   "title": "St. John Paul II Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-joseph-morrow-park",
+   "url": "https://www.tcdsb.org/o/stjosephsmorrowpark",
+   "finalUrl": "https://www.tcdsb.org/o/stjosephsmorrowpark",
+   "status": 200,
+   "title": "St. Joseph's Morrow Park Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-joseph-s-college-school",
+   "url": "https://www.tcdsb.org/o/stjosephcollege",
+   "finalUrl": "https://www.tcdsb.org/o/stjosephcollege",
+   "status": 200,
+   "title": "St. Joseph's College School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-martin-school-st-martin",
+   "url": "https://www.tcdsb.org/o/stmartin",
+   "finalUrl": "https://www.tcdsb.org/o/stmartin",
+   "status": 200,
+   "title": "Home | St. Martin Catholic School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-mary-academy",
+   "url": "https://www.tcdsb.org/o/stmarycatholicacademy",
+   "finalUrl": "https://www.tcdsb.org/o/stmarycatholicacademy",
+   "status": 200,
+   "title": "Client Challenge",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tcdsb-st-michael-s-choir-sr-school",
+   "url": "https://www.tcdsb.org/o/stmichaelchoir",
+   "finalUrl": "https://www.tcdsb.org/o/stmichaelchoir",
+   "status": 200,
+   "title": "St. Michael's Choir School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-mother-teresa-academy",
+   "url": "https://www.tcdsb.org/o/stmotherteresacatholicacademy",
+   "finalUrl": "https://www.tcdsb.org/o/stmotherteresacatholicacademy",
+   "status": 200,
+   "title": "St. Mother Teresa Catholic Academy",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-oscar-romero",
+   "url": "https://www.tcdsb.org/o/stoscarromero",
+   "finalUrl": "https://www.tcdsb.org/o/stoscarromero",
+   "status": 200,
+   "title": "St. Oscar Romero Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tcdsb-st-patrick",
+   "url": "https://www.tcdsb.org/o/stpatrick",
+   "finalUrl": "https://www.tcdsb.org/o/stpatrick",
+   "status": 200,
+   "title": "St. Patrick Catholic Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-a-y-jackson",
+   "url": "https://schoolweb.tdsb.on.ca/ayjackson/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/ayjackson/",
+   "status": 200,
+   "title": "EQAO Results 2024- 2025",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-agincourt",
+   "url": "https://schoolweb.tdsb.on.ca/agincourtci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/agincourtci",
+   "status": 200,
+   "title": "Agincourt Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-albert-campbell",
+   "url": "https://schoolweb.tdsb.on.ca/albertcampbell",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/albertcampbell",
+   "status": 200,
+   "title": "Albert Campbell Collegiate Institute Albert Campbell",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-alpha-ii-alternative-school",
+   "url": "https://schoolweb.tdsb.on.ca/alpha2/",
+   "finalUrl": "https://sites.google.com/student.tdsb.on.ca/alpha-ii-alternative-school/about-us",
+   "status": 200,
+   "title": "ABOUT US",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-alternative-scarborough-education-1",
+   "url": "https://schoolweb.tdsb.on.ca/ase1",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/ase1",
+   "status": 200,
+   "title": "Alternative Schools East",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-avondale-alternative-school",
+   "url": "https://schoolweb.tdsb.on.ca/avondalesa",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/avondalesa",
+   "status": 200,
+   "title": "Avondale Alternative Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-birchmount-park",
+   "url": "https://schoolweb.tdsb.on.ca/birchmountpark/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/birchmountpark/",
+   "status": 200,
+   "title": "Birchmount Park Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-bloor",
+   "url": "https://schoolweb.tdsb.on.ca/bloorci/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/bloorci/",
+   "status": 200,
+   "title": "Bloor Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-burnhamthorpe",
+   "url": "https://schoolweb.tdsb.on.ca/burnhamthorpe",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/burnhamthorpe",
+   "status": 200,
+   "title": "Burnhamthorpe Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-c-w-jefferys",
+   "url": "https://schoolweb.tdsb.on.ca/cwjefferys/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/cwjefferys/",
+   "status": 200,
+   "title": "C W Jefferys Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-calc",
+   "url": "https://www.calconline.net",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/CityALC",
+   "status": 200,
+   "title": "City ALC",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tdsb-cedarbrae",
+   "url": "https://schoolweb.tdsb.on.ca/cedarbraeci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/cedarbraeci",
+   "status": 200,
+   "title": "Welcome to Cedarbrae Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-central-etobicoke",
+   "url": "https://schoolweb.tdsb.on.ca/centraletobicoke/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/centraletobicoke/",
+   "status": 200,
+   "title": "Central Etobicoke High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-central-technical-school",
+   "url": "https://schoolweb.tdsb.on.ca/centraltechnicalschool",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/centraltechnicalschool",
+   "status": 200,
+   "title": "Central Technical School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-central-toronto-academy",
+   "url": "https://schoolweb.tdsb.on.ca/centraltorontoacademy",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/centraltorontoacademy",
+   "status": 200,
+   "title": "Central Toronto Academy",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-contact-alternative-school-school",
+   "url": "https://schoolweb.tdsb.on.ca/contact/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/contact/",
+   "status": 200,
+   "title": "Contact Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-danforth-and-technical-school",
+   "url": "https://schoolweb.tdsb.on.ca/danforthcti",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/danforthcti",
+   "status": 200,
+   "title": "Danforth Collegiate and Technical Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-david-and-mary-thomson",
+   "url": "https://schoolweb.tdsb.on.ca/dmthomson",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/dmthomson",
+   "status": 200,
+   "title": "David and Mary Thomson Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-delphi-alternative-school",
+   "url": "https://schoolweb.tdsb.on.ca/delphi",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/delphi",
+   "status": 200,
+   "title": "Delphi Secondary Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-don-mills",
+   "url": "https://schoolweb.tdsb.on.ca/donmillsci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/donmillsci",
+   "status": 200,
+   "title": "Don Mills Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-downsview",
+   "url": "https://schoolweb.tdsb.on.ca/downsview",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/downsview",
+   "status": 200,
+   "title": "Home",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-dr-norman-bethune",
+   "url": "https://schoolweb.tdsb.on.ca/drnormanbethuneci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/drnormanbethuneci",
+   "status": 200,
+   "title": "News And Information",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tdsb-drewry",
+   "url": "https://schoolweb.tdsb.on.ca/drewry",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/drewry",
+   "status": 200,
+   "title": "Drewry Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-earl-haig",
+   "url": "https://schoolweb.tdsb.on.ca/earlhaig",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/earlhaig",
+   "status": 200,
+   "title": "Earl Haig Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-east-york",
+   "url": "https://schoolweb.tdsb.on.ca/eastyork",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/eastyork",
+   "status": 200,
+   "title": "East York Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-east-york-alternative",
+   "url": "https://schoolweb.tdsb.on.ca/eastyorkalternative",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/eastyorkalternative",
+   "status": 200,
+   "title": "East York Alternative Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-eastdale",
+   "url": "https://schoolweb.tdsb.on.ca/eastdaleci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/eastdaleci",
+   "status": 200,
+   "title": "Eastdale Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-emery",
+   "url": "https://schoolweb.tdsb.on.ca/emeryci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/emeryci",
+   "status": 200,
+   "title": "Welcome to Emery C.I.",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-emery-edvance",
+   "url": "https://schoolweb.tdsb.on.ca/emeryedvance",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/emeryedvance",
+   "status": 200,
+   "title": "Emery EdVance Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-etobicoke",
+   "url": "https://www.etobicokeci.ca",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/etobicokeci",
+   "status": 200,
+   "title": "Etobicoke Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-etobicoke-alternative-school",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/2906",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/2906",
+   "status": 200,
+   "title": "Etobicoke Secondary Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-etobicoke-school-of-the-arts",
+   "url": "https://esainfo.ca",
+   "finalUrl": "https://www.esainfo.ca/",
+   "status": 200,
+   "title": "Etobicoke School of the Arts (ESA) – ESA is a specialized public arts-academic high school located in Toronto, Canada.",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-forest-hill",
+   "url": "https://www.fhci.net",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/foresthillci",
+   "status": 200,
+   "title": "Forest Hill Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-frank-oke",
+   "url": "https://schoolweb.tdsb.on.ca/frankoke/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/frankoke/",
+   "status": 200,
+   "title": "Frank Oke Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-george-s-henry-academy",
+   "url": "https://schoolweb.tdsb.on.ca/georgeshenry",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/georgeshenry",
+   "status": 200,
+   "title": "George S Henry Academy",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-georges-vanier",
+   "url": "https://schoolweb.tdsb.on.ca/georgesvanier",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/georgesvanier",
+   "status": 200,
+   "title": "Georges Vanier Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-greenwood",
+   "url": "https://schoolweb.tdsb.on.ca/greenwoodss",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/greenwoodss",
+   "status": 200,
+   "title": "Greenwood Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-harbord",
+   "url": "https://schoolweb.tdsb.on.ca/harbordci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/harbordci",
+   "status": 200,
+   "title": "Harbord Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-heydon-park",
+   "url": "https://schoolweb.tdsb.on.ca/heydonpark",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/heydonpark",
+   "status": 200,
+   "title": "Heydon Park Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-humberside",
+   "url": "https://schoolweb.tdsb.on.ca/humbersideci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/humbersideci",
+   "status": 200,
+   "title": "Humberside Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-inglenook-community-school",
+   "url": "https://schoolweb.tdsb.on.ca/inglenook",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/inglenook",
+   "status": 200,
+   "title": "Inglenook Community School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-jarvis",
+   "url": "https://schoolweb.tdsb.on.ca/jarvisci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/jarvisci",
+   "status": 200,
+   "title": "Upcoming Events!",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tdsb-john-polanyi",
+   "url": "https://schoolweb.tdsb.on.ca/johnpolanyi",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/johnpolanyi",
+   "status": 200,
+   "title": "John Polanyi Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-kapapamahchakwew-wandering-spirit-scho",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5909",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/5909",
+   "status": 200,
+   "title": "Kapapamahchakwew - Wandering Spirit School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-kipling",
+   "url": "https://schoolweb.tdsb.on.ca/kiplingci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/kiplingci",
+   "status": 200,
+   "title": "Kipling Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-l-amoreaux",
+   "url": "https://schoolweb.tdsb.on.ca/lamoreaux",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/lamoreaux",
+   "status": 200,
+   "title": "Welcome to L'Amoreaux C.I.",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-lakeshore",
+   "url": "https://www.lakeshorecollegiate.ca",
+   "finalUrl": "http://schoolweb.tdsb.on.ca/lakeshoreci/Home.aspx",
+   "status": 403,
+   "title": "",
+   "verdict": "blocked"
+  },
+  {
+   "id": "tdsb-lawrence-park",
+   "url": "https://schoolweb.tdsb.on.ca/lawrenceparkci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/lawrenceparkci",
+   "status": 200,
+   "title": "Lawrence Park CI",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-leaside",
+   "url": "https://schoolweb.tdsb.on.ca/leasidehs",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/leasidehs",
+   "status": 200,
+   "title": "Leaside High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-lester-b-pearson",
+   "url": "https://schoolweb.tdsb.on.ca/pearsonci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/pearsonci",
+   "status": 200,
+   "title": "Lester B Pearson Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-malvern",
+   "url": "https://schoolweb.tdsb.on.ca/malvernci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/malvernci",
+   "status": 200,
+   "title": "Malvern Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-maplewood",
+   "url": "https://schoolweb.tdsb.on.ca/maplewood",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/maplewood",
+   "status": 200,
+   "title": "Maplewood High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-marc-garneau",
+   "url": "https://schoolweb.tdsb.on.ca/marcgarneau/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/marcgarneau/",
+   "status": 200,
+   "title": "Marc Garneau Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-martingrove",
+   "url": "https://sites.google.com/tdsb.on.ca/martingroveci/mci-home",
+   "finalUrl": "https://sites.google.com/tdsb.on.ca/martingroveci/mci-home",
+   "status": 200,
+   "title": "MCI Home",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-native-learning-centre",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5512",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/5512",
+   "status": 200,
+   "title": "Native Learning Centre",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-native-learning-centre-east",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4806",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4806",
+   "status": 200,
+   "title": "Native Learning Centre East",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-newtonbrook",
+   "url": "https://schoolweb.tdsb.on.ca/newtonbrook",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/newtonbrook",
+   "status": 200,
+   "title": "Newtonbrook Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-north-albion",
+   "url": "https://schoolweb.tdsb.on.ca/naci/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/naci/",
+   "status": 200,
+   "title": "Welcome to NACI!",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-north-east-alternative-school",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/3948",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/3948",
+   "status": 200,
+   "title": "North East Secondary Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-north-toronto",
+   "url": "https://www.ntci.on.ca",
+   "finalUrl": "https://ntci.on.ca/",
+   "status": 200,
+   "title": "NTCI (old website) – 17 Broadway Ave",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-north-west-alternative-school",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/3412",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/3412",
+   "status": 200,
+   "title": "North West Secondary Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-oakwood",
+   "url": "https://sites.google.com/tdsb.on.ca/oakwoodcollegiateinstitute/home",
+   "finalUrl": "https://sites.google.com/tdsb.on.ca/oakwoodcollegiateinstitute/home",
+   "status": 200,
+   "title": "Oakwood Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-oasis-alternative",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5584",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/5584",
+   "status": 200,
+   "title": "Oasis Alternative Secondary School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-parkdale",
+   "url": "https://schoolweb.tdsb.on.ca/parkdale/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/parkdale/",
+   "status": 200,
+   "title": "Parkdale Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-parkview-alternative-school",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4176",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4176",
+   "status": 200,
+   "title": "Parkview Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-r-h-king-academy",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4148",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4148",
+   "status": 200,
+   "title": "R H King Academy",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-richview",
+   "url": "https://schoolweb.tdsb.on.ca/richview",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/richview",
+   "status": 200,
+   "title": "Welcome to Richview CI, Home of the Saints!",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-riverdale",
+   "url": "https://schoolweb.tdsb.on.ca/riverdale/home.aspx",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/riverdale/",
+   "status": 200,
+   "title": "Open House",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tdsb-rosedale-heights-school-of-the-arts",
+   "url": "https://rhsa.ca/",
+   "finalUrl": "https://rhsa.ca/",
+   "status": 200,
+   "title": "Rosedale Heights School of the Arts | Rosedale Heights School of the Arts Homepage",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-runnymede",
+   "url": "https://sites.google.com/tdsb.on.ca/runnymedeci/home",
+   "finalUrl": "https://sites.google.com/tdsb.on.ca/runnymedeci/home",
+   "status": 200,
+   "title": "Home",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-satec-w-a-porter",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4178",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4178",
+   "status": 200,
+   "title": "SATEC @ W A Porter Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-scarborough-centre-for-alternative-studi",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4175",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4175",
+   "status": 200,
+   "title": "Scarborough Centre for Alternative Studies",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-school-of-experiential-education",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/2831",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/2831",
+   "status": 200,
+   "title": "School of Experiential Education",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-school-of-life-experience",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5823",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/5823",
+   "status": 200,
+   "title": "School of Life Experience",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-seed-alternative-school",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5596",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/5596",
+   "status": 200,
+   "title": "SEED Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-silverthorn",
+   "url": "https://schoolweb.tdsb.on.ca/silverthornci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/silverthornci",
+   "status": 200,
+   "title": "Welcome to Silverthorn Collegiate",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-sir-john-a-macdonald",
+   "url": "https://schoolweb.tdsb.on.ca/johnamacdonald",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/johnamacdonald",
+   "status": 200,
+   "title": "Macdonald Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-sir-oliver-mowat",
+   "url": "https://schoolweb.tdsb.on.ca/mowatci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/mowatci",
+   "status": 200,
+   "title": "Sir Oliver Mowat Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-sir-wilfrid-laurier",
+   "url": "https://schoolweb.tdsb.on.ca/laurier",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/laurier",
+   "status": 200,
+   "title": "Sir Wilfrid Laurier Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-sir-william-osler",
+   "url": "https://schoolweb.tdsb.on.ca/sirwilliamosler",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/sirwilliamosler",
+   "status": 200,
+   "title": "Sir William Osler High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-south-east-alternative-school",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+   "status": 200,
+   "title": "South East Secondary Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-stephen-leacock",
+   "url": "https://schoolweb.tdsb.on.ca/stephenleacockci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/stephenleacockci",
+   "status": 200,
+   "title": "Stephen Leacock Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-subway-academy-i",
+   "url": "https://schoolweb.tdsb.on.ca/subwayacademy1/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/subwayacademy1/",
+   "status": 200,
+   "title": "Subway Academy 1",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-subway-academy-ii",
+   "url": "https://schoolweb.tdsb.on.ca/subwayacademy2",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/subwayacademy2",
+   "status": 200,
+   "title": "Subway Academy II",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-the-student-school",
+   "url": "https://schoolweb.tdsb.on.ca/thestudentschool",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/thestudentschool",
+   "status": 200,
+   "title": "THE STUDENT SCHOOL",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-thistletown",
+   "url": "https://schoolweb.tdsb.on.ca/thistletownci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/thistletownci",
+   "status": 200,
+   "title": "Thistletown Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-ursula-franklin-academy",
+   "url": "https://schoolweb.tdsb.on.ca/ufa/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/ufa/",
+   "status": 200,
+   "title": "Ursula Franklin Academy > Home",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-victoria-park",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/3447",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/3447",
+   "status": 200,
+   "title": "Victoria Park Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-west-end-alternative-school",
+   "url": "https://schoolweb.tdsb.on.ca/westendalt",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/westendalt",
+   "status": 200,
+   "title": "West End Alternative School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-west-hill",
+   "url": "https://westhillci.com/",
+   "finalUrl": "https://westhillci.com/",
+   "status": 200,
+   "title": "Homeemail-color-circle-outline",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-west-humber",
+   "url": "https://schoolweb.tdsb.on.ca/whci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/whci",
+   "status": 200,
+   "title": "West Humber Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-western-technical-and-commercial-school",
+   "url": "https://sites.google.com/tdsb.on.ca/wtcs",
+   "finalUrl": "https://sites.google.com/tdsb.on.ca/wtcs",
+   "status": 200,
+   "title": "Home",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-weston",
+   "url": "https://sites.google.com/tdsb.on.ca/westonci",
+   "finalUrl": "https://sites.google.com/tdsb.on.ca/westonci",
+   "status": 200,
+   "title": "Weston Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-westview-centennial",
+   "url": "https://schoolweb.tdsb.on.ca/westview",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/westview",
+   "status": 200,
+   "title": "ArtSpeaks - Secondary Arts Program",
+   "verdict": "mismatch"
+  },
+  {
+   "id": "tdsb-wexford-collegiate-school-for-the-arts",
+   "url": "https://schoolweb.tdsb.on.ca/wexfordcsa",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/wexfordcsa",
+   "status": 200,
+   "title": "Wexford Collegiate School for the Arts",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-william-lyon-mackenzie",
+   "url": "https://schoolweb.tdsb.on.ca/wlmac",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/wlmac",
+   "status": 200,
+   "title": "William Lyon Mackenzie Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-winston-churchill",
+   "url": "https://schoolweb.tdsb.on.ca/churchillci/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/churchillci/",
+   "status": 200,
+   "title": "Winston Churchill Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-woburn",
+   "url": "https://schoolweb.tdsb.on.ca/woburnci/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/woburnci/",
+   "status": 200,
+   "title": "Woburn Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-york-humber",
+   "url": "https://yorkhumber.ca/",
+   "finalUrl": "https://yorkhumber.ca/",
+   "status": 200,
+   "title": "York Humber High School",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-york-memorial",
+   "url": "https://www.yorkmemorialci.ca/ymci-home",
+   "finalUrl": "https://www.yorkmemorialci.ca/ymci-home",
+   "status": 200,
+   "title": "York Memorial C.I.",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-york-mills",
+   "url": "https://schoolweb.tdsb.on.ca/yorkmillsci/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/yorkmillsci/",
+   "status": 200,
+   "title": "York Mills Collegiate Institute",
+   "verdict": "ok"
+  },
+  {
+   "id": "tdsb-yorkdale",
+   "url": "https://schoolweb.tdsb.on.ca/yorkdaless",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/yorkdaless",
+   "status": 200,
+   "title": "Home Yorkdale Secondary School | EdVance Program",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-college-francais-secondaire",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/college-francais",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/college-francais",
+   "status": 200,
+   "title": "Collège français | École secondaire à Toronto, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-etienne-brule",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-etienne-brule",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-etienne-brule",
+   "status": 200,
+   "title": "École secondaire Étienne-Brûlé | École secondaire à Toronto, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-gaetan-gervais",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-gaetan-gervais",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-gaetan-gervais",
+   "status": 200,
+   "title": "École secondaire Gaétan-Gervais | École secondaire à Oakville, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-jeunes-sans-frontieres",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-jeunes-sans-frontieres",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-jeunes-sans-frontieres",
+   "status": 200,
+   "title": "École secondaire Jeunes sans frontières | École secondaire à Brampton, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-michelle-o-bonsawin",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/ecole-secondaire-michelle-obonsawin",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/ecole-secondaire-michelle-obonsawin",
+   "status": 200,
+   "title": "École secondaire Michelle-O'Bonsawin | École secondaire à Toronto, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-norval-morrisseau",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-norval-morrisseau",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-norval-morrisseau",
+   "status": 200,
+   "title": "École secondaire Norval-Morrisseau | École secondaire à Richmond Hill, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-ronald-marion",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-ronald-marion",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-ronald-marion",
+   "status": 200,
+   "title": "École secondaire Ronald-Marion | École secondaire à Pickering, Ontario",
+   "verdict": "ok"
+  },
+  {
+   "id": "viamonde-ecole-secondaire-toronto-ouest",
+   "url": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-toronto-ouest",
+   "finalUrl": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-toronto-ouest",
+   "status": 200,
+   "title": "École secondaire Toronto Ouest | École secondaire à Toronto",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-cardinal-carter",
+   "url": "https://cch.ycdsb.ca/",
+   "finalUrl": "https://cch.ycdsb.ca/",
+   "status": 200,
+   "title": "Cardinal Carter Catholic High School – Pax et Lux, Peace and Light",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-father-bressani",
+   "url": "https://fbh.ycdsb.ca",
+   "finalUrl": "https://fbh.ycdsb.ca/",
+   "status": 200,
+   "title": "Father Bressani Catholic High School – A School for International Studies, Advanced Placement Centre of Excellence and F",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-father-michael-mcgivney",
+   "url": "https://fmmh.ycdsb.ca/",
+   "finalUrl": "https://fmmh.ycdsb.ca/",
+   "status": 200,
+   "title": "Father Michael McGivney Catholic Academy – IB World School",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-holy-cross-academy",
+   "url": "https://hocr.ycdsb.ca/",
+   "finalUrl": "https://hocr.ycdsb.ca/",
+   "status": 200,
+   "title": "Holy Cross Catholic Academy – Sharing The Future…",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-our-lady-of-the-lake-academy",
+   "url": "https://ollh.ycdsb.ca/",
+   "finalUrl": "https://ollh.ycdsb.ca/",
+   "status": 200,
+   "title": "Our Lady of the Lake Catholic Academy",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-our-lady-queen-of-the-world-ca",
+   "url": "https://olqwh.ycdsb.ca/",
+   "finalUrl": "https://olqwh.ycdsb.ca/",
+   "status": 200,
+   "title": "Our Lady Queen of the World Catholic Academy – Choose Love Always.",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-sacred-heart",
+   "url": "https://sahe.ycdsb.ca/",
+   "finalUrl": "https://sahe.ycdsb.ca/",
+   "status": 200,
+   "title": "Sacred Heart Catholic High School – A Community Called in the Development of the Whole Person",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-augustine",
+   "url": "https://stau.ycdsb.ca",
+   "finalUrl": "https://stau.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Augustine Catholic High School – Unitas Veritas Caritas (Unity Truth Love)",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-brother-andre",
+   "url": "https://sba.ycdsb.ca/",
+   "finalUrl": "https://sba.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Brother André Catholic High School – Open the Door. Let in the Light.",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-elizabeth",
+   "url": "https://seh.ycdsb.ca/",
+   "finalUrl": "https://seh.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Elizabeth Catholic High School – Valuing learning and excellence through collaboration and innovation.",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-jean-de-brebeuf",
+   "url": "https://sjdbh.ycdsb.ca/",
+   "finalUrl": "https://sjdbh.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Jean de Brebeuf Catholic High School – Educating the Mind. Nurturing the Soul.",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-joan-of-arc",
+   "url": "https://stjo.ycdsb.ca/",
+   "finalUrl": "https://stjo.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Joan of Arc Catholic High School – In Spirit and Truth",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-luke-learning-centre",
+   "url": "https://stluke.ycdsb.ca/",
+   "finalUrl": "https://stluke.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Luke Catholic Learning Centre – Faith. Resilience. Hope.",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-maximilian-kolbe",
+   "url": "https://smkh.ycdsb.ca/",
+   "finalUrl": "https://smkh.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Maximilian Kolbe Catholic High School – Choice, Not Chance, Determines Destiny!",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-robert",
+   "url": "https://stro.ycdsb.ca/",
+   "finalUrl": "https://stro.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Robert Catholic High School – Knowledge is the Beginning",
+   "verdict": "ok"
+  },
+  {
+   "id": "ycdsb-st-theresa-of-lisieux",
+   "url": "https://stlh.ycdsb.ca/",
+   "finalUrl": "https://stlh.ycdsb.ca/",
+   "status": 200,
+   "title": "St. Theresa of Lisieux Catholic High School – Remember that nothing is small in the eyes of God. Do all that you do with",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-alexander-mackenzie",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/",
+   "finalUrl": "https://alexandermackenzie-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-aurora",
+   "url": "https://aurora-hs.yrdsb.ca/",
+   "finalUrl": "https://aurora-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-bayview",
+   "url": "https://bayview-ss.yrdsb.ca/",
+   "finalUrl": "https://bayview-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-bill-crothers",
+   "url": "https://billcrothers-ss.yrdsb.ca/",
+   "finalUrl": "https://billcrothers-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Homepage | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-bill-hogarth",
+   "url": "https://billhogarth-ss.yrdsb.ca/",
+   "finalUrl": "https://billhogarth-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-bur-oak",
+   "url": "https://buroak-ss.yrdsb.ca/",
+   "finalUrl": "https://buroak-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-dr-g-w-williams",
+   "url": "https://drgwwilliams-ss.yrdsb.ca/",
+   "finalUrl": "https://drgwwilliams-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-dr-john-m-denison",
+   "url": "https://denison-ss.yrdsb.ca/",
+   "finalUrl": "https://denison-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-emily-carr",
+   "url": "https://emilycarr-ss.yrdsb.ca/",
+   "finalUrl": "https://emilycarr-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-hodan-nalayeh",
+   "url": "https://hodannalayeh-ss.yrdsb.ca/",
+   "finalUrl": "https://hodannalayeh-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-huron-heights",
+   "url": "https://huronheights-ss.yrdsb.ca/",
+   "finalUrl": "https://huronheights-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-keswick",
+   "url": "https://keswick-hs.yrdsb.ca/",
+   "finalUrl": "https://keswick-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-king-city",
+   "url": "https://kingcity-ss.yrdsb.ca/",
+   "finalUrl": "https://kingcity-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-langstaff",
+   "url": "https://langstaff-ss.yrdsb.ca/",
+   "finalUrl": "https://langstaff-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-maple",
+   "url": "https://maple-hs.yrdsb.ca/",
+   "finalUrl": "https://maple-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-markham-district",
+   "url": "https://markhamdistrict-hs.yrdsb.ca/",
+   "finalUrl": "https://markhamdistrict-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-markville",
+   "url": "https://markville-ss.yrdsb.ca/",
+   "finalUrl": "https://markville-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-middlefield",
+   "url": "https://middlefield-ci.yrdsb.ca/",
+   "finalUrl": "https://middlefield-ci.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-milliken-mills",
+   "url": "https://millikenmills-hs.yrdsb.ca/",
+   "finalUrl": "https://millikenmills-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Homepage | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-newmarket",
+   "url": "https://newmarket-hs.yrdsb.ca/",
+   "finalUrl": "https://newmarket-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-pierre-elliott-trudeau",
+   "url": "https://trudeau-hs.yrdsb.ca/",
+   "finalUrl": "https://trudeau-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-richmond-green",
+   "url": "https://richmondgreen-ss.yrdsb.ca/",
+   "finalUrl": "https://richmondgreen-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-richmond-hill",
+   "url": "https://richmondhill-hs.yrdsb.ca/",
+   "finalUrl": "https://richmondhill-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-sir-william-mulock",
+   "url": "https://mulock-ss.yrdsb.ca/",
+   "finalUrl": "https://mulock-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-stephen-lewis",
+   "url": "https://stephenlewis-ss.yrdsb.ca/",
+   "finalUrl": "https://stephenlewis-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-stouffville-district",
+   "url": "https://stouffvilledistrict-ss.yrdsb.ca/",
+   "finalUrl": "https://stouffvilledistrict-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-sutton-district",
+   "url": "https://suttondistrict-hs.yrdsb.ca/",
+   "finalUrl": "https://suttondistrict-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-thornhill",
+   "url": "https://thornhill-ss.yrdsb.ca/",
+   "finalUrl": "https://thornhill-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-thornlea",
+   "url": "https://thornlea-ss.yrdsb.ca/",
+   "finalUrl": "https://thornlea-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-tommy-douglas",
+   "url": "https://tommydouglas-ss.yrdsb.ca/",
+   "finalUrl": "https://tommydouglas-ss.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-unionville",
+   "url": "https://unionville-hs.yrdsb.ca/",
+   "finalUrl": "https://unionville-hs.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-westmount",
+   "url": "https://westmount-ci.yrdsb.ca/",
+   "finalUrl": "https://westmount-ci.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  },
+  {
+   "id": "yrdsb-woodbridge-college",
+   "url": "https://woodbridgecollege.yrdsb.ca/",
+   "finalUrl": "https://woodbridgecollege.yrdsb.ca/",
+   "status": 200,
+   "title": "Home | York Region District School Board",
+   "verdict": "ok"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "id": "tcdsb-madonna",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/madonna/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/madonna/page/steam-program",
+  "https://www.tcdsb.org/o/madonna/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM Program",
+   "note": {
+    "en": "STEAM pathway open to all interested students, with a customized course pathway and a Certificate of Distinction on completion; Grade 9 students can register in September, and the board chart lists Grades 10-12.",
+    "es": "Trayectoria STEAM abierta a todos los estudiantes interesados, con un recorrido de cursos personalizado y un Certificate of Distinction al completarla; los de 9.º pueden inscribirse en septiembre y el cuadro del consejo lista 10.º a 12.º.",
+    "fr": "Parcours STEAM ouvert à tous les élèves intéressés, avec un parcours de cours personnalisé et un Certificate of Distinction à la fin; les élèves de 9e année peuvent s'inscrire en septembre et le tableau du conseil indique la 10e à la 12e année."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/madonna/page/steam-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Health and Wellness, Non-Profit, Arts and Culture, Business",
+   "note": {
+    "en": "Four SHSM programs: Health and Wellness, Non-Profit, Arts and Culture, and Business.",
+    "es": "Cuatro programas SHSM: Health and Wellness, Non-Profit, Arts and Culture y Business.",
+    "fr": "Quatre programmes SHSM : Health and Wellness, Non-Profit, Arts and Culture et Business."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "other",
+   "name": "Indigenous Studies focus",
+   "note": {
+    "en": "Indigenous Studies focus in Grade 9 Visual Arts and Grade 11 English.",
+    "es": "Enfoque de Indigenous Studies en Artes Visuales de 9.º grado e inglés de 11.º grado.",
+    "fr": "Accent sur les études autochtones en arts visuels de 9e année et en anglais de 11e année."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Non-Profit, Education and Child Care",
+  "Arts and Culture",
+  "Business"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP",
+  "Dual Credit",
+  "Grade 9 Summer Transition Program",
+  "Intensive Support Program (ISP)",
+  "English as a Second Language (ESL) Levels A to E"
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-06",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/madonna/page/open-house"
+  }
+ ],
+ "missing": [
+  "The STEAM page does not state an application process or dates beyond saying Grade 9 students can register in September."
+ ]
+}

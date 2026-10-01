@@ -1,0 +1,29 @@
+{
+ "id": "tdsb-frank-oke",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/frankoke/",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/6532",
+  "https://sites.google.com/tdsb.on.ca/frankokeandhaneycentre/frank-oke"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Programs for students with a Mild Intellectual Disability",
+   "entry": "school",
+   "url": "https://sites.google.com/tdsb.on.ca/frankokeandhaneycentre/frank-oke",
+   "note": {
+    "en": "Small secondary school dedicated to students with a Mild Intellectual Disability, with academic, employability and life-skills programs from Grade 9 to the year of the student's 21st birthday.",
+    "es": "Escuela secundaria pequeña dedicada a estudiantes con discapacidad intelectual leve, con programas académicos, de empleabilidad y de habilidades para la vida desde 9.º grado hasta el año en que el estudiante cumple 21 años.",
+    "fr": "Petite école secondaire consacrée aux élèves ayant une déficience intellectuelle légère, avec des programmes scolaires, d'employabilité et d'habiletés de vie de la 9e année jusqu'à l'année des 21 ans de l'élève."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login).",
+  "School is not in the TDSB open house table; placement process (special education) not described on the pages read.",
+  "Roster site URL returned 404; replaced with the working schoolweb address."
+ ]
+}

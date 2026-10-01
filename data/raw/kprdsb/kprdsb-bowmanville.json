@@ -1,0 +1,62 @@
+{
+  "id": "kprdsb-bowmanville",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.kprschools.ca/bowmanvillehigh/",
+  "sources": [
+    "https://www.kprschools.ca/bowmanvillehigh/",
+    "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/specialist-high-skills-major/",
+    "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/co-operative-education/",
+    "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/ontario-youth-apprenticeship-program/",
+    "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/departments/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/dual-credit-program/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/cooperative-education/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/ontario-youth-apprenticeship-program-oyap/",
+    "https://www.kprschools.ca/learning-and-programs/french-immersion/",
+    "https://www.kprschools.ca/learning-and-programs/secondary-programs/information-for-grade-8-families/",
+    "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/arts/"
+  ],
+  "programs": [
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": null,
+      "url": "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/specialist-high-skills-major/",
+      "note": {
+        "en": "The school's page lists these SHSM sectors: Arts and Culture, Construction, Health and Wellness, Manufacturing, Transportation.",
+        "es": "La página de la escuela enumera estos sectores SHSM: Arts and Culture, Construction, Health and Wellness, Manufacturing, Transportation.",
+        "fr": "La page de l'école énumère ces secteurs SHSM : Arts and Culture, Construction, Health and Wellness, Manufacturing, Transportation."
+      }
+    },
+    {
+      "tag": "fi",
+      "name": "French Immersion",
+      "entry": "boundary",
+      "url": "https://www.kprschools.ca/bowmanvillehigh/learning-and-programs/departments/",
+      "note": {
+        "en": "French Immersion is offered as an optional program starting in Grade 9: four FSL courses plus six credits taught in French lead to the KPR Immersion Certificate.",
+        "es": "French Immersion se ofrece como programa opcional desde 9.º grado: cuatro cursos de FSL más seis créditos impartidos en francés conducen al Immersion Certificate de KPR.",
+        "fr": "Le programme French Immersion est offert en option à partir de la 9e année : quatre cours de FSL et six crédits enseignés en français mènent au certificat d'immersion de KPR."
+      }
+    }
+  ],
+  "shsm": [
+    "Arts and Culture",
+    "Construction",
+    "Health and Wellness",
+    "Manufacturing",
+    "Transportation"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Ontario Youth Apprenticeship Program (OYAP)",
+    "Dual Credit"
+  ],
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "No 2026-27 Grade 8 information night / open house dates published (the board page only lists the Dec 2025 - Jan 2026 nights of the previous cycle)",
+    "Own school site (*.kprdsb.ca) is blocked by the network proxy; used the school's pages on kprschools.ca",
+    "No application process, fees or marks stated for SHSM, French Immersion or OYAP on the school pages; the board says to contact guidance",
+    "Course calendar / course list not found on the school's pages (course lists sit in Edsby, which needs a login)"
+  ]
+}

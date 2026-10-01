@@ -1,0 +1,43 @@
+{
+  "id": "tdsb-sir-william-osler",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/sirwilliamosler",
+  "sources": [
+    "https://schoolweb.tdsb.on.ca/sirwilliamosler",
+    "https://schoolweb.tdsb.on.ca/sirwilliamosler/MID-Program",
+    "https://schoolweb.tdsb.on.ca/sirwilliamosler/DD-Program"
+  ],
+  "programs": [
+    {
+      "tag": "other",
+      "name": "Mild Intellectual Disability (MID) Program",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/sirwilliamosler/MID-Program",
+      "note": {
+        "en": "Special education program for students with a Mild Intellectual Disability, with courses in pathways (in-school co-op), academics, food school, Indigenous education, construction technology, physical education and horticulture.",
+        "es": "Programa de educación especial para estudiantes con discapacidad intelectual leve, con cursos de itinerarios (cooperativo dentro de la escuela), materias académicas, cocina, educación indígena, tecnología de la construcción, educación física y horticultura.",
+        "fr": "Programme d'éducation spécialisée pour les élèves ayant une déficience intellectuelle légère, avec des cours de parcours (coop à l'école), de matières scolaires, de cuisine, d'éducation autochtone, de technologie de la construction, d'éducation physique et d'horticulture."
+      }
+    },
+    {
+      "tag": "other",
+      "name": "Developmental Disability (DD) Program",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/sirwilliamosler/DD-Program",
+      "note": {
+        "en": "Special education program for students with a Developmental Disability that builds daily living and social skills through in-school experiential learning (school apartment, grocery store, sensory room, physical education).",
+        "es": "Programa de educación especial para estudiantes con discapacidad del desarrollo que fortalece las habilidades de la vida diaria y sociales mediante aprendizaje experiencial dentro de la escuela (apartamento escolar, tienda de comestibles, sala sensorial, educación física).",
+        "fr": "Programme d'éducation spécialisée pour les élèves ayant une déficience développementale qui développe l'autonomie quotidienne et les habiletés sociales par un apprentissage expérientiel à l'école (appartement scolaire, épicerie, salle sensorielle, éducation physique)."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "Osler is a special education school (MID and DD programs); no regular Grade 9 open house, application, course list or SHSM information is published on its pages.",
+    "The school is not on the TDSB open-house list and its TDSB profile page was not located."
+  ]
+}

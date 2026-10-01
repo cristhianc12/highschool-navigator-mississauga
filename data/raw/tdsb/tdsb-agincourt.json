@@ -1,0 +1,73 @@
+{
+ "id": "tdsb-agincourt",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/agincourtci",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4106",
+  "https://schoolweb.tdsb.on.ca/agincourtci/About-Our-School",
+  "https://schoolweb.tdsb.on.ca/agincourtci/Grade-9-Program",
+  "https://schoolweb.tdsb.on.ca/agincourtci/Elective-Courses",
+  "https://schoolweb.tdsb.on.ca/agincourtci/Departments/French",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "fi",
+   "name": "French Immersion (FI)",
+   "note": {
+    "en": "French Immersion is listed as a local program at Agincourt CI; the TDSB describes it for students with 3,800 to 6,000 hours of French instruction in elementary school, with 10 credits (4 in French, 6 in subjects taught in French) for the certificate.",
+    "es": "French Immersion figura como programa local en Agincourt CI; el TDSB lo describe para estudiantes con 3800 a 6000 horas de instrucción en francés en primaria, con 10 créditos (4 de francés y 6 de materias impartidas en francés) para el certificado.",
+    "fr": "L'immersion française est indiquée comme programme local à Agincourt CI; le TDSB la décrit pour les élèves ayant de 3 800 à 6 000 heures d'enseignement en français à l'élémentaire, avec 10 crédits (4 en français et 6 dans des matières enseignées en français) pour le certificat."
+   },
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "The school's French department lists Core French, Extended French and French Immersion among its program offerings.",
+    "es": "El departamento de francés de la escuela incluye Core French, Extended French y French Immersion entre sus programas.",
+    "fr": "Le département de français de l'école indique Core French, Extended French et French Immersion parmi ses programmes."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/agincourtci/Departments/French"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business, Manufacturing, Non-Profit, Education and Child Care, Sports.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business, Manufacturing, Non-Profit, Education and Child Care, Sports.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business, Manufacturing, Non-Profit, Education and Child Care, Sports."
+   }
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Manufacturing",
+  "Non-Profit, Education and Child Care",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-12-10",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open house / information night, 6:30-8:30 PM (local programs: French Immersion, SHSM)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "The school's home page and registration page state closure to out-of-area admission only for 2024-25 and 2025-26, so no entry rule is recorded.",
+  "The 'Elective Courses' page lists only about 10 courses, too few for a course list; no course calendar found.",
+  "No program-specific admission steps found for French Immersion or SHSM."
+ ]
+}

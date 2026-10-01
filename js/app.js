@@ -1,14 +1,22 @@
 import "./pwa.js";
+import "./track.js";
+import "./a11y.js";
 import { initSchoolDetail, renderSessionRow, reportUrl } from "./school-detail.js";
 import { SESSIONS } from "./sessions.js";
 import { EXPLAINER } from "./explainer.js";
 import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
+import { ensureAllDetails, ensureSchools } from "./details.js";
+import { supportHtml } from "./support.js";
+import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const MAX_COMPARE = 4;
+const PAGE = 24; // schools rendered per "show more" step (the GTA directory has 300+)
+// Regional programs (cards below) exist for these boards, all in Peel for now.
+const PROG_REGION = { dpcdsb: "peel", peel: "peel" };
 
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
@@ -18,8 +26,9 @@ const store = {
 const state = {
   lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
-  filters: { q: "", system: "", tag: "", start: "", entry: "", sort: "name" },
-  sess: { area: "mississauga", board: "" },
+  filters: { q: "", region: "", city: "", board: "", tag: "", start: "", entry: "", sort: "name" },
+  shown: PAGE,
+  sess: { area: "", board: "" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
 
@@ -43,12 +52,14 @@ const norm = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCa
 function schoolText(s) {
   const kv = s.kv ? Object.values(s.kv).map(L).join(" ") : "";
   const progs = s.progs.map((p) => `${L(TAGS[p.k])} ${L(p.n)}`).join(" ");
-  return `${s.name} ${s.addr} ${L(BOARDS[s.board])} ${progs} ${kv} ${s.focus ? L(s.focus) : ""}`;
+  return `${s.name} ${s.addr} ${s.city} ${L(REGION_SHORT[s.region])} ${L(BOARDS[s.board])} ${progs} ${kv} ${s.focus ? L(s.focus) : ""}`;
 }
 
 function schoolMatches(s) {
   const f = state.filters;
-  if (f.system && s.board !== f.system) return false;
+  if (f.region && s.region !== f.region) return false;
+  if (f.city && s.city !== f.city) return false;
+  if (f.board && s.board !== f.board) return false;
   if (f.tag && !s.progs.some((p) => p.k === f.tag)) return false;
   if (f.q && !norm(schoolText(s)).includes(norm(f.q))) return false;
   return true;
@@ -56,7 +67,8 @@ function schoolMatches(s) {
 
 function programMatches(p) {
   const f = state.filters;
-  if (f.system && p.board !== f.system) return false;
+  if (f.board && p.board !== f.board) return false;
+  if (f.region && !(p.regions || [PROG_REGION[p.board]]).includes(f.region)) return false;
   if (f.tag && p.tag !== f.tag) return false;
   if (f.start && p.start !== f.start) return false;
   if (f.entry && p.entry !== f.entry) return false;
@@ -100,10 +112,10 @@ function schoolCard(s) {
   const initials = s.name.replace(/[^A-Za-zÀ-ÿ ]/g, "").split(" ").filter((w) => /^[A-ZÀ-Ý]/.test(w) && !/^(SS|CSS)$/.test(w)).slice(0, 2).map((w) => w[0]).join("") || s.name[0];
   const progs = s.progs.length
     ? `<div class="chips">${progChips(s)}</div>`
-    : `<p class="muted small">${esc(u.noPrograms)}</p>`;
+    : `<p class="muted small">${esc(s.pending ? u.pendingDetail : u.noPrograms)}</p>`;
   const checked = state.compare.includes(s.id);
   return `
-  <article class="card school clickable board-${s.board}" data-id="${s.id}" data-card="${s.id}">
+  <article class="card school clickable board-${boardClass(s.board)}" data-id="${s.id}" data-card="${s.id}">
     <div class="top"><div class="mono" aria-hidden="true">${esc(initials)}</div><div><h3 class="name">${esc(s.name)}</h3><div class="sub">${esc(L(BOARDS[s.board]))} · ${esc(s.addr)}</div></div>${starBtn("school", s.id)}</div>
     ${progs}
     ${fraserBlock(s)}
@@ -129,6 +141,16 @@ function options(map, current) {
   const u = t();
   return `<option value="">${esc(u.all)}</option>` +
     Object.entries(map).map(([v, label]) => `<option value="${v}" ${current === v ? "selected" : ""}>${esc(label)}</option>`).join("");
+}
+
+const allOpt = () => `<option value="">${esc(t().all)}</option>`;
+const regionOptions = (cur) => allOpt() + REGION_ORDER.map((r) => `<option value="${r}" ${cur === r ? "selected" : ""}>${esc(L(REGIONS[r]))}</option>`).join("");
+function cityOptions(region, cur) {
+  const cities = [...new Set(SCHOOLS.filter((s) => !region || s.region === region).map((s) => s.city))].sort((a, b) => a.localeCompare(b));
+  return allOpt() + cities.map((c) => `<option value="${esc(c)}" ${cur === c ? "selected" : ""}>${esc(c)}</option>`).join("");
+}
+function boardOptions(cur) {
+  return allOpt() + SYSTEM_ORDER.map((g) => `<optgroup label="${esc(L(SYSTEMS[g]))}">${BOARD_ORDER.filter((b) => BOARD_META[b].system === g).map((b) => `<option value="${b}" ${cur === b ? "selected" : ""}>${esc(L(BOARDS[b]))}</option>`).join("")}</optgroup>`).join("");
 }
 
 function tagOptions(current) {
@@ -203,19 +225,22 @@ function renderShell() {
     <p class="lead">${esc(u.lead)}</p>
     <div class="stats">
       <div class="stat"><b>${SCHOOLS.length}</b><span>${esc(u.statSchools)}</span></div>
-      <div class="stat"><b>3</b><span>${esc(u.statBoards)}</span></div>
+      <div class="stat"><b>${new Set(SCHOOLS.map((s) => s.board)).size}</b><span>${esc(u.statBoards)}</span></div>
       <div class="stat"><b>${dpCount}</b><span>${esc(u.statPrograms)}</span></div>
     </div>
     <div class="vibes" role="group" aria-label="${esc(u.vibesLabel)}"><span class="vibes-label">${esc(u.vibesLabel)}</span>${vibes}</div>
     <div class="quiz-cta"><div><h2>${esc(u.quiz.h)}</h2><p>${esc(u.quiz.p)}</p></div><a class="cta" href="${q}">${esc(u.quiz.btn)} →</a></div>
     <p class="notice">${u.notice}</p>
     <p class="scope muted small">${esc(u.scope)}</p>
+    ${supportHtml(state.lang) ? `<p class="small supportline">${supportHtml(state.lang)} · <button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button></p>` : ""}
   </header>
 
   <section id="explorar"><div class="sec-head"><h2>${esc(u.exploreH)}</h2><p>${esc(u.exploreP)}</p></div>
     <form class="filters" id="filters" role="search" onsubmit="return false">
       <label class="field search">${esc(u.searchLabel)}<input type="search" id="f-q" value="${esc(f.q)}" placeholder="${esc(u.searchPh)}"></label>
-      <label class="field">${esc(u.fSystem)}<select id="f-system">${options(u.optSystem, f.system)}</select></label>
+      <label class="field">${esc(u.fRegion)}<select id="f-region">${regionOptions(f.region)}</select></label>
+      <label class="field">${esc(u.fCity)}<select id="f-city">${cityOptions(f.region, f.city)}</select></label>
+      <label class="field">${esc(u.fSystem)}<select id="f-board">${boardOptions(f.board)}</select></label>
       <label class="field">${esc(u.fTag)}<select id="f-tag">${tagOptions(f.tag)}</select></label>
       <label class="field">${esc(u.fStart)}<select id="f-start">${options(u.optStart, f.start)}</select></label>
       <label class="field">${esc(u.fEntry)}<select id="f-entry">${options(u.optEntry, f.entry)}</select></label>
@@ -225,7 +250,7 @@ function renderShell() {
     <p class="count" id="count" aria-live="polite"></p></section>
 
   <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
-    <div class="grid dir" id="schools"></div>
+    <div class="grid dir" id="schools"></div><div id="schools-more" class="morewrap"></div>
     <details class="fraser-note"><summary>${esc(u.fraserWhatH)}</summary><p>${esc(u.fraserWhat)}</p>
       <p><a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p></details></section>
 
@@ -242,6 +267,9 @@ function renderShell() {
   <section id="regionales"><div class="sec-head"><h2>${esc(u.regionalesH)}</h2><p>${esc(u.regionalesP)}</p></div>
     <div class="grid" id="prog-dpcdsb"></div></section>
 
+  <section id="otherprogs" hidden><div class="sec-head"><h2>${esc(u.otherH)}</h2><p>${esc(u.otherP)}</p></div>
+    <div id="prog-other"></div></section>
+
   <section id="peel"><div class="sec-head"><h2>${esc(u.peelH)}</h2><p>${esc(u.peelP)}</p></div>
     <div class="grid" id="prog-peel"></div>
     <div class="grid" style="margin-top:14px">
@@ -250,8 +278,8 @@ function renderShell() {
 
   <section id="charlas"><div class="sec-head"><h2>${esc(u.sess.h)}</h2><p>${esc(u.sess.p)}</p></div>
     <form class="filters" id="sess-filters" onsubmit="return false">
-      <label class="field">${esc(u.sess.area)}<select id="s-area">${[["mississauga", u.sess.miss], ["brampton", u.sess.bramp], ["caledon", u.sess.caledon], ["virtual", u.sess.virtual], ["", u.sess.all]].map(([v, l]) => `<option value="${v}" ${state.sess.area === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
-      <label class="field">${esc(u.sess.board)}<select id="s-board">${[["", u.sess.allBoards], ["dpcdsb", u.optSystem.dpcdsb], ["peel", u.optSystem.peel]].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
+      <label class="field">${esc(u.sess.area)}<select id="s-area">${sessionAreas(u).map(([v, l]) => `<option value="${v}" ${state.sess.area === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
+      <label class="field">${esc(u.sess.board)}<select id="s-board">${[["", u.sess.allBoards], ...[...new Set(SESSIONS.map((e) => e.board).filter(Boolean))].sort((a, b) => BOARD_ORDER.indexOf(a) - BOARD_ORDER.indexOf(b)).map((b) => [b, L(BOARDS[b])])].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
     </form>
     <p class="count" id="sess-count" aria-live="polite"></p>
     <div class="slist" id="sess-list"></div>
@@ -281,7 +309,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
   bindFilters();
   renderResults();
   renderCompare();
@@ -308,8 +336,19 @@ function bindGame() {
   });
 }
 
+// Areas come from the sessions themselves, so new boards' cities appear as soon as their sessions are published.
+function sessionAreas(u) {
+  const cities = [...new Set(SESSIONS.map((e) => e.city).filter((c) => c && c !== "virtual"))].sort((a, b) => a.localeCompare(b));
+  const name = (c) => c.replace(/(^|[ -])(\w)/g, (_, a, b) => a + b.toUpperCase());
+  return [["", u.sess.all], ...cities.map((c) => [c, name(c)]), ["virtual", u.sess.virtual]];
+}
+
 function renderSessions() {
   const u = t();
+  // The area and board lists come from the sessions themselves: refresh them when more boards' sessions have loaded.
+  const sa = $("#s-area"), sb = $("#s-board");
+  if (sa) sa.innerHTML = sessionAreas(u).map(([v, l]) => `<option value="${v}" ${state.sess.area === v ? "selected" : ""}>${esc(l)}</option>`).join("");
+  if (sb) sb.innerHTML = [["", u.sess.allBoards], ...[...new Set(SESSIONS.map((e) => e.board).filter(Boolean))].sort((a, b) => BOARD_ORDER.indexOf(a) - BOARD_ORDER.indexOf(b)).map((b) => [b, L(BOARDS[b])])].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("");
   const today = new Date().toISOString().slice(0, 10);
   let list = SESSIONS.filter((e) => !e.date || e.date >= today);
   if (state.sess.area) list = list.filter((e) => e.city === state.sess.area || e.city === "virtual");
@@ -331,30 +370,51 @@ function renderResults() {
   const pe = progs.filter((p) => p.board === "peel");
   const empty = `<div class="empty">${esc(u.noResults)}</div>`;
 
-  $("#schools").innerHTML = schools.length ? schools.map(schoolCard).join("") : empty;
+  const shown = schools.slice(0, state.shown);
+  const more = schools.length > shown.length
+    ? `<div class="showmore"><button type="button" class="btn" id="show-more">${esc(u.showMore(Math.min(PAGE, schools.length - shown.length), schools.length - shown.length))}</button></div>` : "";
+  $("#schools").innerHTML = schools.length ? shown.map(schoolCard).join("") : empty;
+  $("#schools-more").innerHTML = more;
   const mh = $("#map-host");
   if (mh) renderMap(mh, { lang: state.lang, matchIds: schools.map((s) => s.id) });
   $("#prog-dpcdsb").innerHTML = dp.length ? dp.map(programCard).join("") : empty;
   $("#prog-peel").innerHTML = pe.length ? pe.map(programCard).join("") : empty;
+  // Programs of the other boards (loaded from their collected details), grouped by board.
+  const other = progs.filter((p) => p.board !== "dpcdsb" && p.board !== "peel");
+  const sec = $("#otherprogs");
+  if (sec) {
+    sec.hidden = !PROGRAMS.some((p) => p.board !== "dpcdsb" && p.board !== "peel");
+    $("#prog-other").innerHTML = other.length
+      ? BOARD_ORDER.map((b) => { const l = other.filter((p) => p.board === b); return l.length ? `<h3 class="boardh">${esc(L(BOARDS[b]))}</h3><div class="grid">${l.map(programCard).join("")}</div>` : ""; }).join("")
+      : empty;
+  }
   $("#count").textContent = u.resultCount(schools.length, progs.length);
+}
+
+function compareOptions(free) {
+  return BOARD_ORDER.map((b) => {
+    const list = free.filter((s) => s.board === b);
+    return list.length ? `<optgroup label="${esc(L(BOARDS[b]))}">${list.map((s) => `<option value="${s.id}">${esc(s.name)}${s.city !== "Mississauga" ? ` · ${esc(s.city)}` : ""}</option>`).join("")}</optgroup>` : "";
+  }).join("");
 }
 
 function renderCompare() {
   const u = t();
   const chosen = state.compare.map(byId).filter(Boolean);
+  ensureSchools(chosen.map((s) => s.id)).then((changed) => { if (changed) renderCompare(); }); // profiles of the compared schools load on demand
   const free = SCHOOLS.filter((s) => !state.compare.includes(s.id)).sort((a, b) => a.name.localeCompare(b.name));
   const canAdd = chosen.length < MAX_COMPARE;
   $("#cmp-toggles").innerHTML =
     chosen.map((s) => `<button type="button" class="btn chosen" data-remove="${s.id}" aria-label="${esc(u.compRemove)} ${esc(s.name)}">${esc(s.name)} ✕</button>`).join("") +
     (canAdd
-      ? `<select id="cmp-add" class="btn" aria-label="${esc(u.compAdd)}"><option value="">${esc(u.compAdd)}</option>${free.map((s) => `<option value="${s.id}">${esc(s.name)}</option>`).join("")}</select>`
+      ? `<select id="cmp-add" class="btn" aria-label="${esc(u.compAdd)}"><option value="">${esc(u.compAdd)}</option>${compareOptions(free)}</select>`
       : `<span class="muted small">${esc(u.compareMax)}</span>`);
 
   if (chosen.length < 2) { $("#cmp-out").innerHTML = `<div class="empty">${esc(u.compEmpty)}</div>`; return; }
   const dash = u.none;
   const row = (label, fn) => `<tr><th scope="row">${esc(label)}</th>${chosen.map((s) => `<td>${fn(s)}</td>`).join("")}</tr>`;
   const r = u.compRows;
-  const kv = (k) => (s) => (s.kv ? esc(L(s.kv[k])) : dash);
+  const kv = (k) => (s) => (s.kv && s.kv[k] ? esc(L(s.kv[k])) : dash);
   $("#cmp-out").innerHTML = `<div class="cmp-wrap"><table class="cmp-table">
     <thead><tr><th scope="col">${esc(u.compCol)}</th>${chosen.map((s) => `<th scope="col"><button type="button" class="viewlink" data-school="${s.id}">${esc(s.name)}</button></th>`).join("")}</tr></thead>
     <tbody>
@@ -377,9 +437,14 @@ function renderCompare() {
 
 function bindFilters() {
   const f = state.filters;
-  $("#f-q").addEventListener("input", (e) => { f.q = e.target.value.trim(); renderResults(); });
-  for (const k of ["system", "tag", "start", "entry", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => { f[k] = e.target.value; renderResults(); });
-  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", system: "", tag: "", start: "", entry: "", sort: "name" }); renderShell(); });
+  $("#f-q").addEventListener("input", (e) => { f.q = e.target.value.trim(); state.shown = PAGE; renderResults(); });
+  for (const k of ["region", "city", "board", "tag", "start", "entry", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => {
+    f[k] = e.target.value;
+    if (k === "region") { f.city = ""; $("#f-city").innerHTML = cityOptions(f.region, ""); }
+    state.shown = PAGE;
+    renderResults();
+  });
+  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", region: "", city: "", board: "", tag: "", start: "", entry: "", sort: "name" }); state.shown = PAGE; renderShell(); });
 }
 
 function setCompare(id, on) {
@@ -407,6 +472,7 @@ document.addEventListener("change", (e) => {
   if (e.target.id === "s-board") { state.sess.board = e.target.value; renderSessions(); }
 });
 document.addEventListener("click", (e) => {
+  if (e.target.closest("#show-more")) { state.shown += PAGE; renderResults(); return; }
   const rm = e.target.closest("[data-remove]");
   if (rm) setCompare(rm.dataset.remove, false);
   const tone = e.target.closest("[data-tone]");
@@ -420,6 +486,7 @@ document.addEventListener("click", (e) => {
   if (vibe) {
     const k = vibe.dataset.vibe;
     state.filters.tag = state.filters.tag === k ? "" : k;
+    state.shown = PAGE;
     renderShell();
     $("#escuelas")?.scrollIntoView({ behavior: "smooth" });
     return;
@@ -448,3 +515,5 @@ initSchoolDetail({
 });
 initMyList({ getLang: () => state.lang });
 renderShell();
+// Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
+ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderSessions(); renderCompare(); } });

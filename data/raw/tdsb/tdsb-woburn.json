@@ -1,0 +1,129 @@
+{
+  "id": "tdsb-woburn",
+  "scrapedAt": "2026-10-01",
+  "site": "https://schoolweb.tdsb.on.ca/woburnci/",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/4202",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+    "https://schoolweb.tdsb.on.ca/woburnci/The-Woburn-Arts-Collective",
+    "https://schoolweb.tdsb.on.ca/woburnci/Advanced-Placement-AP",
+    "https://schoolweb.tdsb.on.ca/woburnci/SHSM",
+    "https://schoolweb.tdsb.on.ca/woburnci/Departments/Special-Education-Gifted",
+    "https://schoolweb.tdsb.on.ca/woburnci/Grade-8-Information"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "Woburn Arts Collective",
+      "entry": "audition",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+      "note": {
+        "en": "Arts program in which students choose a focus subject (Dance, Drama, Visual Art or Music in Grade 9) plus an Integrated Arts course every year; apply by audition or portfolio for Grade 9 or 10 (Grade 10 only if space).",
+        "es": "Programa de Artes en el que los estudiantes eligen una materia de enfoque (Danza, Teatro, Artes Visuales o Música en 9.º grado) más un curso de Artes Integradas cada año; se solicita con audición o portafolio para 9.º o 10.º grado (10.º solo si hay cupo).",
+        "fr": "Programme d'arts où les élèves choisissent une matière principale (danse, art dramatique, arts visuels ou musique en 9e année) et suivent chaque année un cours d'arts intégrés; la demande se fait par audition ou portfolio pour la 9e ou la 10e année (10e année seulement s'il y a de la place)."
+      }
+    },
+    {
+      "tag": "gifted",
+      "name": "Gifted Intensive Support Program",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/woburnci/Departments/Special-Education-Gifted",
+      "note": {
+        "en": "Gifted Intensive Support Program entered through the IPRC process and linked to the school boundary; students take four gifted-level courses in Grades 9-10 and two in Grades 11-12 and are integrated for other subjects.",
+        "es": "Programa de Apoyo Intensivo para estudiantes dotados al que se accede mediante el proceso IPRC y que depende del límite de la escuela; los estudiantes cursan cuatro materias de nivel para dotados en 9.º y 10.º y dos en 11.º y 12.º, y se integran en las demás.",
+        "fr": "Programme de soutien intensif pour élèves surdoués auquel on accède par le processus CIPR et lié au secteur de l'école; les élèves suivent quatre cours de niveau surdoué en 9e et 10e année et deux en 11e et 12e année, et sont intégrés pour les autres matières."
+      }
+    },
+    {
+      "tag": "ap",
+      "name": "Advanced Placement (AP) preparation courses",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/woburnci/Advanced-Placement-AP",
+      "note": {
+        "en": "The school offers AP preparation courses in Calculus, English, Chemistry and Physics.",
+        "es": "La escuela ofrece cursos de preparación AP en Calculus, English, Chemistry y Physics.",
+        "fr": "L'école offre des cours de préparation AP en Calculus, English, Chemistry et Physics."
+      }
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": "school",
+      "url": "https://schoolweb.tdsb.on.ca/woburnci/SHSM",
+      "note": {
+        "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business, Health and Wellness, Information Communications Technology.",
+        "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business, Health and Wellness, Information Communications Technology.",
+        "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business, Health and Wellness, Information Communications Technology."
+      }
+    }
+  ],
+  "shsm": [
+    "Business",
+    "Health and Wellness",
+    "Information Communications Technology"
+  ],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [
+    {
+      "program": "Woburn Arts Collective",
+      "tag": "arts",
+      "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Arts",
+      "elig": {
+        "en": "Open to students with an interest in the Arts; report-card eligibility is no more than 2 marks below 70% (see the TDSB application page). Grade 9 and 10 entry (Grade 10 only if space).",
+        "es": "Abierto a estudiantes con interés en las Artes; para ser elegible no puedes tener más de 2 calificaciones por debajo de 70 % (consulta la página de solicitud del TDSB). Ingreso en 9.º y 10.º grado (10.º solo si hay cupo).",
+        "fr": "Ouvert aux élèves qui s'intéressent aux arts; pour être admissible, tu ne dois pas avoir plus de 2 notes inférieures à 70 % (voir la page de demande du TDSB). Entrée en 9e et en 10e année (10e année seulement s'il y a de la place)."
+      },
+      "dates": {
+        "en": "Application open Nov 9-27, 2026; offers Feb 10, 2027, acceptance deadline Feb 16, 2027 at 4 p.m.; further offers Feb 17 and 24, 2027.",
+        "es": "Solicitud abierta del 9 al 27 de noviembre de 2026; ofertas el 10 de febrero de 2027, plazo para aceptar hasta el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y 24 de febrero de 2027.",
+        "fr": "Demande ouverte du 9 au 27 novembre 2026; offres le 10 février 2027, date limite d'acceptation le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+      },
+      "submit": [
+        {
+          "en": "Online Specialized Programs application",
+          "es": "Solicitud en línea de Programas Especializados",
+          "fr": "Demande en ligne aux programmes spécialisés"
+        },
+        {
+          "en": "Audition or portfolio submitted with the application",
+          "es": "Audición o portafolio enviado con la solicitud",
+          "fr": "Audition ou portfolio envoyé avec la demande"
+        }
+      ],
+      "know": [
+        {
+          "en": "Share of primary-choice applicants offered a seat in the entry grade for September 2026: 80% to 100%.",
+          "es": "Porcentaje de solicitantes de primera opción a quienes se ofreció un cupo en el grado de entrada para septiembre de 2026: 80 % a 100 %.",
+          "fr": "Pourcentage des candidats de premier choix à qui une place a été offerte dans l'année d'entrée pour septembre 2026 : 80 % à 100 %."
+        },
+        {
+          "en": "Applicants are scored 30% on the previous year's report card and 70% on the demonstration of knowledge and skills; for Arts this is a portfolio or recorded audition submitted with the application.",
+          "es": "Los solicitantes se califican 30 % por el boletín del año anterior y 70 % por la demostración de conocimientos y destrezas; en Artes es un portafolio o una audición grabada que se envía con la solicitud.",
+          "fr": "Les candidats sont notés à 30 % sur le bulletin de l'année précédente et à 70 % sur la démonstration de connaissances et d'habiletés; en arts, il s'agit d'un portfolio ou d'une audition enregistrée envoyé avec la demande."
+        },
+        {
+          "en": "Transportation is not provided for Specialized Programs.",
+          "es": "El transporte no se ofrece para los Programas Especializados.",
+          "fr": "Le transport n'est pas offert pour les programmes spécialisés."
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-17",
+      "time": "17:30",
+      "format": "In person",
+      "title": "Open house / information night, 5:30-8:00 PM: Gifted ISP presentation 5:30, regular program 6:00, Arts Focus program 6:30",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The AP page says AP-intent courses were introduced for 2024/2025; the course list may have changed.",
+    "No public course list readable without a login was found on the school's pages (TDSB course selection runs through myBlueprint), so no course list was extracted."
+  ]
+}

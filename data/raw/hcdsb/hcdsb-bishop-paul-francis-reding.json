@@ -1,0 +1,54 @@
+{
+ "id": "hcdsb-bishop-paul-francis-reding",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/bishopreding/",
+ "sources": [
+  "https://secondary.hcdsb.org/bishopreding/",
+  "https://secondary.hcdsb.org/bishopreding/students/sports/",
+  "https://secondary.hcdsb.org/bishopreding/events/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif."
+   },
+   "entry": "apply",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French from Grade 9: French as a subject plus at least one other subject taught in French, for students with at least 1260 hours of French (seven credits).",
+    "es": "Francés extendido desde 9.º grado: francés como materia y al menos otra materia en francés, para estudiantes con al menos 1260 horas de francés (siete créditos).",
+    "fr": "Français approfondi dès la 9e année : le français comme matière et au moins une autre matière enseignée en français, pour les élèves ayant au moins 1 260 heures de français (sept crédits)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  }
+ ],
+ "shsm": [],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-20",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening and AP information session (Reding and its Family of Schools)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages.",
+  "No special programs, SHSM page or 2026-27 information night found on the school's pages."
+ ]
+}

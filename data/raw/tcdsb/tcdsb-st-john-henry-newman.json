@@ -1,0 +1,144 @@
+{
+ "id": "tcdsb-st-john-henry-newman",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stjohnhenrynewman",
+ "sources": [
+  "https://www.tcdsb.org/o/stjohnhenrynewman/page/academics/",
+  "https://www.tcdsb.org/o/stjohnhenrynewman/page/ap-program/",
+  "https://www.tcdsb.org/o/stjohnhenrynewman/page/french/",
+  "https://www.tcdsb.org/o/stjohnhenrynewman/page/shsm/",
+  "https://www.tcdsb.org/o/stjohnhenrynewman/page/school-courses/",
+  "https://www.tcdsb.org/o/stjohnhenrynewman/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP program in an enriched environment that lets students study subjects at university level and earn first-year university credit for each AP exam passed; full AP preparation begins in Grade 10.",
+    "es": "Programa AP en un entorno enriquecido para estudiar materias a nivel universitario y obtener créditos universitarios de primer año por cada examen AP aprobado; la preparación completa de AP comienza en 10.º grado.",
+    "fr": "Programme AP dans un milieu enrichi qui permet d'étudier des matières au niveau universitaire et d'obtenir des crédits universitaires de première année pour chaque examen AP réussi; la préparation complète à l'AP commence en 10e année."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/ap-program/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French Program",
+   "note": {
+    "en": "Extended French continues the elementary program: four French courses plus at least three other subjects taught in French lead to the TCDSB Extended French Certificate.",
+    "es": "Extended French continúa el programa de primaria: cuatro cursos de francés más al menos tres materias enseñadas en francés llevan al Certificado de Extended French del TCDSB.",
+    "fr": "Le programme Extended French prolonge celui du primaire : quatre cours de français et au moins trois autres matières enseignées en français mènent au certificat Extended French du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion Program",
+   "note": {
+    "en": "French Immersion continues the elementary program: four French courses plus at least six other subjects taught in French lead to the TCDSB French Immersion Certificate.",
+    "es": "French Immersion continúa el programa de primaria: cuatro cursos de francés más al menos seis materias enseñadas en francés llevan al Certificado de French Immersion del TCDSB.",
+    "fr": "Le programme French Immersion prolonge celui du primaire : quatre cours de français et au moins six autres matières enseignées en français mènent au certificat French Immersion du TCDSB."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/french/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Arts and Culture, Health and Wellness, Hospitality and Tourism, Information and Communications Technology (ICT), Non-Profit, Education and Child Care, Sports: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Arts and Culture, Health and Wellness, Hospitality and Tourism, Information and Communications Technology (ICT), Non-Profit, Education and Child Care, Sports: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Arts and Culture, Health and Wellness, Hospitality and Tourism, Information and Communications Technology (ICT), Non-Profit, Education and Child Care, Sports : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/shsm/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted Program",
+   "note": {
+    "en": "A Gifted Program is listed among the school's course subject areas.",
+    "es": "Un Gifted Program figura entre las áreas de cursos de la escuela.",
+    "fr": "Un programme Gifted figure parmi les domaines de cours de l'école."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/school-courses/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Health and Wellness",
+  "Hospitality and Tourism",
+  "Information and Communications Technology (ICT)",
+  "Non-Profit, Education and Child Care",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/stjohnhenrynewman/page/school-courses/",
+ "admissions": [
+  {
+   "program": "Advanced Placement (AP) Program",
+   "tag": "ap",
+   "elig": null,
+   "marks": null,
+   "fee": null,
+   "dates": {
+    "en": "Completed Statement of Interest due to Student Services no later than the last week of February.",
+    "es": "La Statement of Interest completada debe entregarse a Student Services a más tardar la última semana de febrero.",
+    "fr": "La Statement of Interest remplie doit être remise à Student Services au plus tard la dernière semaine de février."
+   },
+   "submit": [
+    {
+     "en": "Completed Statement of Interest (form linked on the AP page)",
+     "es": "Statement of Interest completada (formulario enlazado en la página de AP)",
+     "fr": "Statement of Interest remplie (formulaire lié sur la page AP)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Students confirm their interest once at the school in Grade 9 and begin preparing for the full AP program, which starts in Grade 10.",
+     "es": "Los estudiantes confirman su interés una vez en la escuela, en 9.º grado, y empiezan a prepararse para el programa AP completo, que comienza en 10.º grado.",
+     "fr": "Les élèves confirment leur intérêt une fois à l'école, en 9e année, et commencent à se préparer au programme AP complet, qui débute en 10e année."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/ap-program/"
+  },
+  {
+   "program": "Specialist High Skills Major (SHSM)",
+   "tag": "shsm",
+   "elig": null,
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": [
+    {
+     "en": "SHSM application form, handed in together with the course selection sheet",
+     "es": "Formulario de solicitud de SHSM, entregado junto con la hoja de selección de cursos",
+     "fr": "Formulaire de demande SHSM, remis avec la feuille de choix de cours"
+    }
+   ],
+   "know": null,
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/shsm/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-01",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/stjohnhenrynewman/page/open-house/"
+  }
+ ],
+ "missing": [
+  "The Gifted Program is only named on the course-subject list; no description or entry process",
+  "Extended French and French Immersion details come from the TCDSB specialized programs page; the school page says French Immersion is offered in several courses",
+  "Brock University SHSM scholarship (automatic $500 for graduates entering with 80%+) is stated on the school SHSM page but not recorded as a program fact"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "id": "tdsb-avondale-alternative-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/avondalesa",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3409",
+  "https://schoolweb.tdsb.on.ca/avondalesa/About-Us",
+  "https://schoolweb.tdsb.on.ca/avondalesa/Academics",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Avondale Secondary Alternative School",
+   "note": {
+    "en": "Small alternative school for Grades 10 to 12 (semestered) with classes of about 10 to 15 students, academic and university/college preparation courses, and arts and wellness courses taught by working artists.",
+    "es": "Escuela alternativa pequeña para 10.º a 12.º grado (por semestres) con clases de unos 10 a 15 estudiantes, cursos académicos y de preparación universitaria/colegial, y cursos de artes y bienestar impartidos por artistas profesionales.",
+    "fr": "Petite école alternative pour les 10e à 12e années (par semestre) avec des classes d'environ 10 à 15 élèves, des cours théoriques et de préparation à l'université/au collège, et des cours d'arts et de bien-être donnés par des artistes professionnels."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/avondalesa/Academics"
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "An 'Information Form' page exists for applications, but admission steps and dates for 2026-27 were not stated on the pages read.",
+  "The TDSB open-house page lists no date and asks families to contact the school directly."
+ ]
+}

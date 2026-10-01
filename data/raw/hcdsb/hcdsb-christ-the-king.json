@@ -1,0 +1,110 @@
+{
+ "id": "hcdsb-christ-the-king",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/ctk/",
+ "sources": [
+  "https://secondary.hcdsb.org/ctk/",
+  "https://secondary.hcdsb.org/ctk/advanced-placement-2/",
+  "https://secondary.hcdsb.org/ctk/students/shsm/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional. Grade 9 AP Prep courses: English, Mathematics, Science, Geography.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional. Cursos AP Prep de 9.º grado: Inglés, Matemáticas, Ciencias, Geografía.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif. Cours AP Prep de 9e année : anglais, mathématiques, sciences, géographie."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/ctk/advanced-placement-2/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of sector courses, certifications, experiential learning and a co-operative education course.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y un curso de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et un cours d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/ctk/students/shsm/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "Secondary French Immersion begins in Grade 9 for students who completed the board's elementary French Immersion (minimum 3800 hours).",
+    "es": "La inmersión en francés secundaria comienza en 9.º grado para estudiantes que cursaron la inmersión en primaria del consejo (mínimo 3800 horas).",
+    "fr": "L'immersion française au secondaire commence en 9e année pour les élèves ayant fait l'immersion à l'élémentaire du conseil (minimum 3 800 heures)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French from Grade 9: French as a subject plus at least one other subject taught in French, for students with at least 1260 hours of French (seven credits).",
+    "es": "Francés extendido desde 9.º grado: francés como materia y al menos otra materia en francés, para estudiantes con al menos 1260 horas de francés (siete créditos).",
+    "fr": "Français approfondi dès la 9e année : le français comme matière et au moins une autre matière enseignée en français, pour les élèves ayant au moins 1 260 heures de français (sept crédits)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness",
+  "Information and Communication Technology",
+  "Transportation"
+ ],
+ "admissions": [
+  {
+   "program": "Advanced Placement (AP) Preparation",
+   "tag": "ap",
+   "elig": {
+    "en": "Students who are high achievers (level 4) in the core subjects can apply; admission beyond Grade 9 is case by case through Student Services.",
+    "es": "Pueden postularse estudiantes con alto rendimiento (nivel 4) en las materias básicas; la admisión después de 9.º grado se decide caso por caso a través de Student Services.",
+    "fr": "Les élèves très performants (niveau 4) dans les matières de base peuvent présenter une demande; l'admission après la 9e année est évaluée au cas par cas par les Services aux élèves."
+   },
+   "fee": {
+    "en": "One-time AP registration fee of $150 for newly admitted students (does not cover the optional AP exams in Grade 12); deadline April 30, 2027.",
+    "es": "Cuota única de inscripción AP de $150 para los estudiantes admitidos (no cubre los exámenes AP opcionales de 12.º grado); fecha límite 30 de abril de 2027.",
+    "fr": "Frais d'inscription AP uniques de 150 $ pour les nouveaux élèves admis (n'inclut pas les examens AP facultatifs de 12e année); date limite : 30 avril 2027."
+   },
+   "dates": {
+    "en": "Application opens Nov. 12, 2026. Round 1 deadline Nov. 26, 2026 (offers Dec. 4, 2026, spot guaranteed); Round 2 deadline Dec. 18, 2026 (offers Jan. 8, 2027, subject to space).",
+    "es": "La solicitud abre el 12 de nov. de 2026. Ronda 1: hasta el 26 de nov. de 2026 (ofertas el 4 de dic. de 2026, cupo garantizado); ronda 2: hasta el 18 de dic. de 2026 (ofertas el 8 de ene. de 2027, según disponibilidad).",
+    "fr": "La demande ouvre le 12 nov. 2026. Ronde 1 : date limite le 26 nov. 2026 (offres le 4 déc. 2026, place garantie); ronde 2 : date limite le 18 déc. 2026 (offres le 8 janv. 2027, selon les places disponibles)."
+   },
+   "submit": [
+    {
+     "en": "Online AP application (after the Nov. 12 information night), then HCDSB registration",
+     "es": "Solicitud AP en línea (después de la noche informativa del 12 de nov.) y luego inscripción en HCDSB",
+     "fr": "Demande AP en ligne (après la soirée d'information du 12 nov.), puis inscription au HCDSB"
+    }
+   ],
+   "url": "https://secondary.hcdsb.org/ctk/advanced-placement-2/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-11-12",
+   "time": "18:00",
+   "format": "In person",
+   "title": "AP Program Information Session (Grade 9 entry 2027-28), 6:00-8:30 PM",
+   "url": "https://secondary.hcdsb.org/ctk/advanced-placement-2/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages.",
+  "SHSM sector descriptions on the page are marked 'coming soon'."
+ ]
+}

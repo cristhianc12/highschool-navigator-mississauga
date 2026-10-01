@@ -1,0 +1,130 @@
+{
+ "id": "tcdsb-brebeuf-college-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/brebeufcollege/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/brebeufcollege/page/congregated-it-ap-program",
+  "https://www.tcdsb.org/o/brebeufcollege/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Congregated IT AP Program",
+   "note": {
+    "en": "Cohorted, enriched Information Technology Advanced Placement program with a STEM focus, experiential learning and fast-tracking that can earn AP credits in Grade 11.",
+    "es": "Programa cohortizado y enriquecido de Advanced Placement en tecnología de la información con enfoque STEM, aprendizaje experiencial y avance acelerado que puede dar créditos AP en 11.º grado.",
+    "fr": "Programme Advanced Placement en technologies de l'information, enrichi et en cohorte, axé sur les STIM, avec apprentissage expérientiel et accélération pouvant donner des crédits AP en 11e année."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/brebeufcollege/page/congregated-it-ap-program"
+  },
+  {
+   "tag": "stem",
+   "name": "S.T.E.M. (Grades 10-12)",
+   "note": {
+    "en": "The board's specialized programs chart lists a S.T.E.M. program for Grades 10-12 at Brebeuf College.",
+    "es": "El cuadro de programas especializados del consejo lista un programa S.T.E.M. para 10.º a 12.º grado en Brebeuf College.",
+    "fr": "Le tableau des programmes spécialisés du conseil indique un programme S.T.E.M. de la 10e à la 12e année à Brebeuf College."
+   },
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: ICT, Arts and Culture, Health and Wellness, Business",
+   "note": {
+    "en": "Four SHSM programs: Information and Communications Technology, Arts and Culture, Health and Wellness, and Business.",
+    "es": "Cuatro programas SHSM: Information and Communications Technology, Arts and Culture, Health and Wellness y Business.",
+    "fr": "Quatre programmes SHSM : Information and Communications Technology, Arts and Culture, Health and Wellness et Business."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted program",
+   "note": {
+    "en": "Gifted, Resource, ESL, Co-operative Education and SHSM programs are available to students with appropriate qualifications at this all-boys school.",
+    "es": "Los programas Gifted, de recursos, ESL, de educación cooperativa y SHSM están disponibles para estudiantes con las calificaciones adecuadas en esta escuela solo para varones.",
+    "fr": "Les programmes pour élèves surdoués, de ressources, d'ALS, d'éducation coopérative et SHSM sont offerts aux élèves ayant les qualifications requises dans cette école de garçons."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Information and Communications Technology",
+  "Arts and Culture",
+  "Health and Wellness",
+  "Business"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Advanced Placement Program (senior grades)"
+ ],
+ "admissions": [
+  {
+   "program": "Congregated IT AP, Grade 9 entry",
+   "tag": "ap",
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "elig": {
+    "en": "Grade 8 students applying for Grade 9 entry in September 2027; TCDSB schools list Congregated Advanced Placement as a specialty program with its own application section in SOAR.",
+    "es": "Estudiantes de 8.º grado que postulan para entrar a 9.º en septiembre de 2027; el TCDSB trata Congregated Advanced Placement como programa especializado con su propia sección de solicitud en SOAR.",
+    "fr": "Élèves de 8e année qui font une demande pour la 9e année en septembre 2027; le TCDSB traite le programme Congregated Advanced Placement comme un programme spécialisé avec sa propre section dans SOAR."
+   },
+   "submit": [
+    {
+     "en": "SOAR Congregated Advanced Placement section: community involvement, awards and distinctions, choice of Pre-AP courses (English, Mathematics and Science are mandatory) and a persuasive essay of up to 250 words written by the applicant.",
+     "es": "Sección de Congregated Advanced Placement en SOAR: participación comunitaria, premios y distinciones, elección de cursos Pre-AP (inglés, matemáticas y ciencias son obligatorios) y un ensayo persuasivo de hasta 250 palabras escrito por el solicitante.",
+     "fr": "Section Congregated Advanced Placement de SOAR : engagement communautaire, prix et distinctions, choix des cours Pre-AP (anglais, mathématiques et sciences obligatoires) et essai argumentatif d'au plus 250 mots rédigé par le candidat."
+    },
+    {
+     "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+     "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+     "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+    },
+    {
+     "en": "Principal or designate reference (for TCDSB students SOAR sends the request automatically to the elementary school principal; no family members as references).",
+     "es": "Referencia del director o su designado (para estudiantes del TCDSB, SOAR envía la solicitud automáticamente al director de la primaria; no pueden ser familiares).",
+     "fr": "Référence de la direction ou de son délégué (pour les élèves du TCDSB, SOAR envoie automatiquement la demande à la direction de l'école élémentaire; pas de membres de la famille)."
+    }
+   ],
+   "dates": {
+    "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+    "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+    "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+   },
+   "know": [
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    },
+    {
+     "en": "The board chart lists the program as 'Congregated IT AP'.",
+     "es": "El cuadro del consejo lista el programa como 'Congregated IT AP'.",
+     "fr": "Le tableau du conseil nomme le programme « Congregated IT AP »."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-21",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/brebeufcollege/page/open-house"
+  }
+ ],
+ "missing": [
+  "The school's own pages do not state marks, fees or separate dates for the IT AP program; the board SOAR guide was used for the process.",
+  "The all-boys status comes from the school profile page; Brebeuf's pages do not describe a separate admissions page beyond SOAR."
+ ]
+}

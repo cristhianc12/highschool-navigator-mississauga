@@ -1,0 +1,131 @@
+{
+ "id": "tdsb-central-toronto-academy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/centraltorontoacademy",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5805",
+  "https://schoolweb.tdsb.on.ca/centraltorontoacademy",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Secondary-Schools-Without-a-Boundary",
+  "https://www.tdsb.on.ca/Find-your/School/Out-of-Area-Admissions/Secondary",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Secondary School without a Boundary (SSWAB)",
+   "note": {
+    "en": "The legacy commercial boundary was dissolved: all interested students must apply through the SSWAB process, which is the only entry point to CTA.",
+    "es": "El límite comercial anterior fue eliminado: todos los estudiantes interesados deben solicitar mediante el proceso SSWAB, que es la única vía de ingreso a CTA.",
+    "fr": "L'ancien secteur commercial a été aboli : tous les élèves intéressés doivent faire une demande par le processus SSWAB, qui est la seule voie d'entrée à CTA."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/centraltorontoacademy",
+   "entry": "apply"
+  },
+  {
+   "tag": "stem",
+   "name": "STEM program with mandatory programming course",
+   "note": {
+    "en": "The school fuses science, technology, engineering and math learning in a STEM program with a mandatory computer programming course and Chromebooks for Grade 9 and 10 students.",
+    "es": "La escuela integra ciencias, tecnología, ingeniería y matemáticas en un programa STEM con un curso obligatorio de programación y Chromebooks para estudiantes de 9.º y 10.º grado.",
+    "fr": "L'école intègre les sciences, la technologie, le génie et les mathématiques dans un programme STEM avec un cours de programmation obligatoire et des Chromebooks pour les élèves de 9e et de 10e année."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/centraltorontoacademy"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "Advanced Placement is listed as a local program, and the school's page shows a Grade 11 student in an AP Chemistry class.",
+    "es": "Advanced Placement figura como programa local, y la página de la escuela muestra a una estudiante de 11.º grado en una clase de AP Chemistry.",
+    "fr": "Advanced Placement est indiqué comme programme local, et la page de l'école montre une élève de 11e année dans un cours d'AP Chemistry."
+   },
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "arts",
+   "name": "Arts Focus (Local)",
+   "note": {
+    "en": "Arts Focus (Local) is listed as a local program at CTA: an opportunity to pursue visual and performing arts at the school.",
+    "es": "Arts Focus (Local) figura como programa local en CTA: una oportunidad de cursar artes visuales y escénicas en la escuela.",
+    "fr": "Arts Focus (Local) est indiqué comme programme local à CTA : une occasion de faire des arts visuels et des arts de la scène à l'école."
+   },
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://schoolweb.tdsb.on.ca/centraltorontoacademy",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business, Sports.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business, Sports.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business, Sports."
+   }
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "admissions": [
+  {
+   "program": "Central Toronto Academy (SSWAB)",
+   "tag": "other",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Secondary-Schools-Without-a-Boundary",
+   "elig": {
+    "en": "All interested students, wherever they live, must apply; the legacy technical/commercial boundary was dissolved.",
+    "es": "Todos los estudiantes interesados, vivan donde vivan, deben solicitar ingreso; el límite técnico/comercial anterior fue eliminado.",
+    "fr": "Tous les élèves intéressés, peu importe leur adresse, doivent faire une demande; l'ancien secteur technique/commercial a été aboli."
+   },
+   "dates": {
+    "en": "Secondary Out-of-Area Admissions application opens Jan. 4, 2027 and closes 4:00 p.m. Fri. Jan. 22, 2027.",
+    "es": "La solicitud de admisión fuera de zona abre el 4 de enero de 2027 y cierra el viernes 22 de enero de 2027 a las 4:00 p. m.",
+    "fr": "La demande d'admission hors secteur ouvre le 4 janvier 2027 et ferme le vendredi 22 janvier 2027 à 16 h."
+   },
+   "submit": [
+    {
+     "en": "Online Secondary Out-of-Area Admissions application (it includes the SSWAB choice)",
+     "es": "Solicitud en línea de admisión fuera de zona (incluye la opción SSWAB)",
+     "fr": "Demande en ligne d'admission hors secteur (elle comprend le choix SSWAB)"
+    }
+   ],
+   "know": [
+    {
+     "en": "You may include one Out-of-Area choice and one SSWAB choice; if offered both you can accept only one and declining cannot be undone.",
+     "es": "Puedes incluir una opción fuera de zona y una SSWAB; si recibes ofertas de ambas solo puedes aceptar una y rechazar no se puede deshacer.",
+     "fr": "Tu peux inclure un choix hors secteur et un choix SSWAB; si tu reçois les deux offres, tu ne peux en accepter qu'une et un refus est irréversible."
+    },
+    {
+     "en": "Priority Technology seat: accepting it means taking one technology course each year, or the student returns to the home school.",
+     "es": "Cupo de Priority Technology: aceptarlo implica tomar un curso de tecnología cada año; de lo contrario el estudiante vuelve a su escuela de zona.",
+     "fr": "Place Priority Technology : l'accepter oblige à suivre un cours de technologie chaque année, sinon l'élève retourne à son école de secteur."
+    },
+    {
+     "en": "Transportation is the applicant's responsibility.",
+     "es": "El transporte es responsabilidad del solicitante.",
+     "fr": "Le transport est à la charge du candidat."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-12-01",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open house / information night, 6:00-8:00 PM (Secondary School without a Boundary; local programs: Arts Focus, AP, SHSM)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No public course calendar found; the school uses TDSB myBlueprint for course selection.",
+  "The school home page still shows the Dec. 4, 2025 open house and 2026 application window; board dates were used.",
+  "The school pages do not describe its AP courses in detail."
+ ]
+}

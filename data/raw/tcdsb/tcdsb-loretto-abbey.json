@@ -1,0 +1,108 @@
+{
+ "id": "tcdsb-loretto-abbey",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/lorettoabbey/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/lorettoabbey/page/extended-french-program",
+  "https://www.tcdsb.org/o/lorettoabbey/page/ap-program",
+  "https://www.tcdsb.org/o/lorettoabbey/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ef",
+   "name": "Extended French Program",
+   "note": {
+    "en": "Extended French stream of four years that builds fluency and understanding of francophone culture; students with at least 1260 hours of elementary French instruction (Extended French, French Immersion or a French-language school) qualify.",
+    "es": "Programa Extended French de cuatro años que desarrolla fluidez y comprensión de la cultura francófona; califican estudiantes con al menos 1260 horas de instrucción de francés en primaria (Extended French, inmersión o escuela de lengua francesa).",
+    "fr": "Programme Extended French de quatre ans qui développe l'aisance en français et la compréhension de la culture francophone; les élèves ayant au moins 1260 heures d'enseignement du français à l'élémentaire (Extended French, immersion ou école de langue française) sont admissibles."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/lorettoabbey/page/extended-french-program"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement Program (Pre-AP and AP courses)",
+   "note": {
+    "en": "About 25 Pre-AP (Grades 9-10) and AP (Grades 11-12) courses; students apply to the school first and choose their Pre-AP courses after acceptance.",
+    "es": "Unos 25 cursos Pre-AP (9.º y 10.º) y AP (11.º y 12.º); los estudiantes primero postulan a la escuela y eligen sus cursos Pre-AP después de ser aceptados.",
+    "fr": "Environ 25 cours Pre-AP (9e et 10e année) et AP (11e et 12e année); les élèves présentent d'abord une demande à l'école et choisissent leurs cours Pre-AP après leur acceptation."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/lorettoabbey/page/ap-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Business, Non-Profit/Education/Child Care, Sports",
+   "note": {
+    "en": "SHSM programs combining courses, experiential learning and co-op in Business, Non-Profit, Education and Child Care, and Sports (the school page and board chart both list these sectors).",
+    "es": "Programas SHSM que combinan cursos, aprendizaje experiencial y cooperativa en Business, Non-Profit, Education and Child Care, y Sports (la página de la escuela y el cuadro del consejo listan estos sectores).",
+    "fr": "Programmes SHSM qui combinent cours, apprentissage expérientiel et coop en Business, Non-Profit, Education and Child Care et Sports (la page de l'école et le tableau du conseil indiquent ces secteurs)."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "arts",
+   "name": "Drama, Music and Visual Arts",
+   "note": {
+    "en": "The school profile cites a tradition of excellence in the Arts including Drama, Music and Visual Arts.",
+    "es": "El perfil de la escuela menciona una tradición de excelencia en las artes, incluidos Teatro, Música y Artes Visuales.",
+    "fr": "Le profil de l'école cite une tradition d'excellence en arts, y compris l'art dramatique, la musique et les arts visuels."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Non-Profit, Education and Child Care",
+  "Sports"
+ ],
+ "other": [
+  "Grade 9 Summer School credit course"
+ ],
+ "admissions": [
+  {
+   "program": "Extended French Program",
+   "tag": "ef",
+   "url": "https://www.tcdsb.org/o/lorettoabbey/page/extended-french-program",
+   "elig": {
+    "en": "Students with a minimum of 1260 hours of elementary French instruction (Extended French, French Immersion or a full-French school) may apply.",
+    "es": "Pueden postular estudiantes con un mínimo de 1260 horas de instrucción de francés en primaria (Extended French, inmersión o escuela totalmente en francés).",
+    "fr": "Les élèves ayant au moins 1260 heures d'enseignement du français à l'élémentaire (Extended French, immersion ou école entièrement française) peuvent présenter une demande."
+   },
+   "know": [
+    {
+     "en": "Acceptance depends on the number of applicants in the given year and all other admission policies.",
+     "es": "La aceptación depende del número de solicitantes de cada año y de las demás políticas de admisión.",
+     "fr": "L'acceptation dépend du nombre de candidats cette année-là et de toutes les autres politiques d'admission."
+    },
+    {
+     "en": "The program is selected as the program type (Extended French) in the Regular program section of the SOAR application.",
+     "es": "El programa se elige como tipo de programa (Extended French) en la sección de programa Regular de la solicitud en SOAR.",
+     "fr": "Le programme se choisit comme type de programme (Extended French) dans la section du programme Régulier de la demande SOAR."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "17:00",
+   "format": "In person",
+   "title": "Open House (5:00 to 9:00 PM): register for Session 1 or Session 2",
+   "url": "https://www.tcdsb.org/o/lorettoabbey/page/open-house"
+  }
+ ],
+ "missing": [
+  "The Extended French page did not state a separate application deadline; the regular SOAR dates apply.",
+  "The school's AP flyer was not opened."
+ ]
+}

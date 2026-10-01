@@ -1,0 +1,212 @@
+{
+ "board": "ddsb",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.ddsb.ca/students/register-a-child-for-school/",
+  "https://www.ddsb.ca/students/secondary-school-programs/",
+  "https://www.ddsb.ca/students/secondary-school-programs/specialist-high-skills-major/",
+  "https://www.ddsb.ca/students/secondary-school-programs/french-immersion/",
+  "https://www.ddsb.ca/about-ddsb/inclusive-student-services/gifted-placement/",
+  "https://www.ddsb.ca/students/secondary-school-programs/cooperative-education/",
+  "https://www.ddsb.ca/students/secondary-school-programs/ontario-youth-apprenticeship-program-oyap/",
+  "https://www.ddsb.ca/students/secondary-school-programs/regional-centre-for-success/",
+  "https://www.ddsb.ca/students/secondary-school-programs/durham-hairstylist-academy/",
+  "https://www.ddsb.ca/students/programs-opportunities/30-credits-my-way-graduation/",
+  "https://www.ddsb.ca/news/posts/information-nights-for-grade-8-students-transitioning-to-high-school-in-september-2026/",
+  "https://www.ddsb.ca/news/posts/ddsb-announces-names-for-four-new-schools-opening-this-fall/"
+ ],
+ "registration": {
+  "steps": [
+   {
+    "en": "Use the DDSB school locator to find your designated home school; all students register at their home school.",
+    "es": "Usa el localizador de escuelas del DDSB para encontrar tu escuela de zona; todos los estudiantes se inscriben en su escuela de zona.",
+    "fr": "Utilise le localisateur d'écoles du DDSB pour trouver ton école de secteur; tous les élèves s'inscrivent à leur école de secteur."
+   },
+   {
+    "en": "New students (not currently in a DDSB school): complete the new student online registration (2026-2027 registration is open).",
+    "es": "Estudiantes nuevos (que no están en una escuela del DDSB): completa el registro en línea para estudiantes nuevos (el registro 2026-2027 está abierto).",
+    "fr": "Nouveaux élèves (qui ne sont pas dans une école du DDSB) : remplis l'inscription en ligne pour nouveaux élèves (l'inscription 2026-2027 est ouverte)."
+   },
+   {
+    "en": "Wait for the school to contact you for an appointment, then bring your supporting documents and complete registration.",
+    "es": "Espera a que la escuela te contacte para una cita; luego lleva tus documentos de respaldo y completa la inscripción.",
+    "fr": "Attends que l'école communique avec toi pour un rendez-vous, puis apporte tes documents et termine l'inscription."
+   },
+   {
+    "en": "Returning DDSB students verify their information each year in the Parent Portal (returning student verification form).",
+    "es": "Los estudiantes que continúan en el DDSB verifican su información cada año en el Parent Portal (returning student verification form).",
+    "fr": "Les élèves qui reviennent au DDSB vérifient leurs renseignements chaque année dans le Parent Portal (returning student verification form)."
+   },
+   {
+    "en": "To attend a school outside your home area, register at the home school first and review the Permission to Enrol Procedure; school staff will discuss options with you.",
+    "es": "Para asistir a una escuela fuera de tu zona, inscríbete primero en la escuela de zona y revisa el Permission to Enrol Procedure; el personal escolar hablará contigo sobre las opciones.",
+    "fr": "Pour fréquenter une école hors de ton secteur, inscris-toi d'abord à l'école de secteur et consulte le Permission to Enrol Procedure; le personnel de l'école discutera des options avec toi."
+   }
+  ],
+  "docs": [
+   {
+    "en": "Proof of Canadian citizenship or residency status (birth certificate, passport, Permanent Residency card, Record of Landing or study permit)",
+    "es": "Prueba de ciudadanía canadiense o estatus de residencia (acta de nacimiento, pasaporte, tarjeta de residente permanente, Record of Landing o permiso de estudio)",
+    "fr": "Preuve de citoyenneté canadienne ou de statut de résidence (acte de naissance, passeport, carte de résident permanent, Record of Landing ou permis d'études)"
+   },
+   {
+    "en": "Proof of residency in Durham (e.g., purchase agreement, ownership title, lease or rental agreement, property tax assessment)",
+    "es": "Prueba de residencia en Durham (p. ej., contrato de compra, título de propiedad, contrato de arriendo o alquiler, evaluación de impuestos)",
+    "fr": "Preuve de résidence à Durham (p. ex., contrat d'achat, titre de propriété, bail ou contrat de location, évaluation foncière)"
+   },
+   {
+    "en": "Immunization records",
+    "es": "Registros de vacunación",
+    "fr": "Dossier de vaccination"
+   },
+   {
+    "en": "Application for direction of school support",
+    "es": "Application for direction of school support (formulario de dirección del apoyo escolar)",
+    "fr": "Application for direction of school support (demande d'affectation du soutien scolaire)"
+   },
+   {
+    "en": "Most recent report card",
+    "es": "Boletín de calificaciones más reciente",
+    "fr": "Bulletin scolaire le plus récent"
+   },
+   {
+    "en": "Secondary school: transcript of marks, record of community service hours and Ontario Secondary School Literacy Test results (if applicable)",
+    "es": "Secundaria: historial de calificaciones, registro de horas de servicio comunitario y resultados de la Ontario Secondary School Literacy Test (si aplica)",
+    "fr": "Secondaire : relevé de notes, registre des heures de service communautaire et résultats du Test provincial de compétences linguistiques (le cas échéant)"
+   },
+   {
+    "en": "If applicable: proof of custody, court order, or a copy of the Individual Education Plan from another board",
+    "es": "Si aplica: prueba de custodia, orden judicial o copia del Individual Education Plan de otro consejo",
+    "fr": "Le cas échéant : preuve de garde, ordonnance du tribunal ou copie du Plan d'enseignement individualisé d'un autre conseil"
+   }
+  ],
+  "note": {
+   "en": "International and non-resident students (no Canadian citizenship or permanent residency) register through a separate DDSB page. Forms in other languages (including Spanish) can be printed and emailed to the school.",
+   "es": "Los estudiantes internacionales y no residentes (sin ciudadanía canadiense ni residencia permanente) se inscriben en otra página del DDSB. Hay formularios en otros idiomas (incluido el español) que se pueden imprimir y enviar por correo electrónico a la escuela.",
+   "fr": "Les élèves internationaux et non résidents (sans citoyenneté canadienne ni résidence permanente) s'inscrivent par une page distincte du DDSB. Des formulaires dans d'autres langues (dont l'espagnol) peuvent être imprimés et envoyés par courriel à l'école."
+  },
+  "contact": "Durham District School Board, 400 Taunton Road East, Whitby, ON L1R 2K6; phone 905-666-5500; toll free 1-800-265-3968",
+  "url": "https://www.ddsb.ca/students/register-a-child-for-school/",
+  "dates": [
+   {
+    "en": "Registration for the 2026-2027 school year is open (no specific closing date stated).",
+    "es": "El registro para el año escolar 2026-2027 está abierto (no se indica fecha de cierre).",
+    "fr": "L'inscription pour l'année scolaire 2026-2027 est ouverte (aucune date limite précisée)."
+   }
+  ]
+ },
+ "programs": [
+  {
+   "id": "shsm",
+   "tag": "shsm",
+   "name": {
+    "en": "Specialist High Skills Major (SHSM)",
+    "es": "Specialist High Skills Major (SHSM)",
+    "fr": "Specialist High Skills Major (SHSM)"
+   },
+   "p": {
+    "en": "Career-focused program with 8-10 courses in a sector, certifications (First Aid, CPR, WHMIS) and at least 2 co-op credits; the DDSB offers sectors across its secondary schools. Recruitment and enrolment are in Grade 10 and the program is taken in Grades 11-12.",
+    "es": "Programa enfocado en una carrera con 8 a 10 cursos de un sector, certificaciones (First Aid, CPR, WHMIS) y al menos 2 créditos de cooperativa; el DDSB ofrece sectores en sus escuelas secundarias. El reclutamiento y la inscripción son en 10.º grado y se cursa en 11.º y 12.º.",
+    "fr": "Programme axé sur une carrière avec 8 à 10 cours d'un secteur, des certifications (First Aid, CPR, WHMIS) et au moins 2 crédits de coop; le DDSB offre des secteurs dans ses écoles secondaires. Le recrutement et l'inscription ont lieu en 10e année et le programme se suit en 11e et 12e année."
+   },
+   "start": 11,
+   "entry": "school",
+   "hosts": [
+    "ddsb-ajax",
+    "ddsb-anderson-collegiate-and-vocational-institute",
+    "ddsb-brock",
+    "ddsb-brooklin",
+    "ddsb-donald-a-wilson",
+    "ddsb-dunbarton",
+    "ddsb-durham-alternative",
+    "ddsb-eastdale-collegiate-and-vocational-institute",
+    "ddsb-g-l-roberts-collegiate-and-vocational-institute",
+    "ddsb-henry-street",
+    "ddsb-j-clarke-richardson",
+    "ddsb-maxwell-heights",
+    "ddsb-o-neill-collegiate-and-vocational-institute",
+    "ddsb-pickering",
+    "ddsb-pine-ridge",
+    "ddsb-port-perry",
+    "ddsb-r-s-mclaughlin-collegiate-and-vocational-institute",
+    "ddsb-sinclair",
+    "ddsb-uxbridge"
+   ],
+   "url": "https://www.ddsb.ca/students/secondary-school-programs/specialist-high-skills-major/",
+   "info": {
+    "who": {
+     "en": "Students in Grades 11-12 heading to apprenticeship, college, university or the workplace.",
+     "es": "Estudiantes de 11.º y 12.º grado que se dirigen a aprendizaje de oficios, colegio, universidad o trabajo.",
+     "fr": "Élèves de 11e et 12e année qui visent l'apprentissage, le collège, l'université ou le marché du travail."
+    },
+    "how": {
+     "en": "Talk with your school principal, Guidance Department Head or Student Success Leader to enrol in Grade 10.",
+     "es": "Habla con la dirección, la jefatura de Orientación o el líder de Student Success de tu escuela para inscribirte en 10.º grado.",
+     "fr": "Parle à la direction, à la chef du département d'orientation ou au responsable Student Success de ton école pour t'inscrire en 10e année."
+    }
+   }
+  },
+  {
+   "id": "french-immersion",
+   "tag": "fi",
+   "name": {
+    "en": "French Immersion (secondary)",
+    "es": "French Immersion (secundaria)",
+    "fr": "Immersion française (secondaire)"
+   },
+   "p": {
+    "en": "French Immersion begins in Grade 1 and continues at seven to eight DDSB secondary schools; students who do not take it study Core French.",
+    "es": "La inmersión en francés empieza en 1.er grado y continúa en varias escuelas secundarias del DDSB; quienes no la toman estudian francés básico (Core French).",
+    "fr": "L'immersion française commence en 1re année et se poursuit dans plusieurs écoles secondaires du DDSB; les élèves qui ne la suivent pas étudient le français de base (Core French)."
+   },
+   "start": 9,
+   "entry": "school",
+   "hosts": [
+    "ddsb-ajax",
+    "ddsb-pickering",
+    "ddsb-dunbarton",
+    "ddsb-r-s-mclaughlin-collegiate-and-vocational-institute",
+    "ddsb-port-perry",
+    "ddsb-uxbridge",
+    "ddsb-anderson-collegiate-and-vocational-institute",
+    "ddsb-donald-a-wilson"
+   ],
+   "url": "https://www.ddsb.ca/students/secondary-school-programs/french-immersion/"
+  },
+  {
+   "id": "gifted",
+   "tag": "gifted",
+   "name": {
+    "en": "Gifted placement",
+    "es": "Programa para estudiantes dotados (Gifted)",
+    "fr": "Placement pour élèves surdoués (Gifted)"
+   },
+   "p": {
+    "en": "Students identified as Gifted by an IPRC can stay in a regular class with an IEP or be placed in a self-contained gifted class; the schools listed publish gifted courses in their own documents.",
+    "es": "Los estudiantes identificados como dotados por un IPRC pueden permanecer en una clase regular con un IEP o ser ubicados en una clase de dotados; las escuelas indicadas publican cursos para dotados en sus documentos.",
+    "fr": "Les élèves identifiés comme surdoués par un CIPR peuvent rester en classe ordinaire avec un PEI ou être placés dans une classe distincte; les écoles indiquées publient des cours pour surdoués dans leurs documents."
+   },
+   "start": 9,
+   "entry": "school",
+   "hosts": [
+    "ddsb-anderson-collegiate-and-vocational-institute",
+    "ddsb-pickering",
+    "ddsb-port-perry"
+   ],
+   "url": "https://www.ddsb.ca/about-ddsb/inclusive-student-services/gifted-placement/",
+   "info": {
+    "who": {
+     "en": "Students identified as Gifted through an IPRC (after a nomination and assessment).",
+     "es": "Estudiantes identificados como dotados mediante un IPRC (tras nominación y evaluación).",
+     "fr": "Élèves identifiés comme surdoués par un CIPR (après une nomination et une évaluation)."
+    },
+    "how": {
+     "en": "Nominate through the school's Special Education Resource Teacher (SERT) in early September; testing happens mid-October to mid-November.",
+     "es": "Nomina al estudiante mediante el Special Education Resource Teacher (SERT) de la escuela a principios de septiembre; las pruebas son de mediados de octubre a mediados de noviembre.",
+     "fr": "Fais la nomination par l'enseignant-ressource en éducation spécialisée (SERT) de l'école au début de septembre; les tests ont lieu de la mi-octobre à la mi-novembre."
+    }
+   }
+  }
+ ],
+ "sessions": []
+}

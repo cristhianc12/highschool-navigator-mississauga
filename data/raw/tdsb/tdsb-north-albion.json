@@ -1,0 +1,49 @@
+{
+ "id": "tdsb-north-albion",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/naci/",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/naci/",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "Math and Science Focus (Local)",
+   "note": {
+    "en": "Local Math and Science Focus program offered at the school for students with a deep interest in math, science or technology.",
+    "es": "Programa local de enfoque en matemáticas y ciencias que ofrece la escuela para estudiantes con gran interés en matemáticas, ciencias o tecnología.",
+    "fr": "Programme local axé sur les mathématiques et les sciences offert à l'école pour les élèves très intéressés par les maths, les sciences ou la technologie."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major: a Ministry-approved program that lets students focus on one economic sector while meeting graduation requirements and prepares them for apprenticeship, college, university or work.",
+    "es": "Specialist High Skills Major: programa aprobado por el Ministerio que permite concentrarse en un sector económico mientras se cumplen los requisitos de graduación y prepara para el aprendizaje de oficios, el colegio universitario, la universidad o el trabajo.",
+    "fr": "Specialist High Skills Major : programme approuvé par le ministère qui permet de se concentrer sur un secteur économique tout en respectant les exigences d'obtention du diplôme, et qui prépare à l'apprentissage, au collège, à l'université ou au travail."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-26",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "SHSM sector names not found on pages read.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted.",
+  "Work-list site northalbionci.ca did not load; the TDSB school site is used."
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "monavenir-esc-pere-philippe-lamarche",
+ "scrapedAt": "2026-10-01",
+ "site": "https://esppl.cscmonavenir.ca/",
+ "sources": [
+  "https://esppl.cscmonavenir.ca/",
+  "https://esppl.cscmonavenir.ca/programme-du-diplome/",
+  "https://cscmonavenir.ca/ecole/ecole-secondaire-catholique-pere-philippe-lamarche-scarborough/",
+  "https://cscmonavenir.ca/programmes-specialises/",
+  "https://cscmonavenir.ca/inscription-secondaire/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "IB Diploma Programme (candidate school)",
+   "note": {
+    "en": "The school states it is a candidate school wishing to offer the IB Diploma Programme; candidate status does not guarantee authorization.",
+    "es": "La escuela indica que es un centro candidato que desea ofrecer el Programa del Diploma del IB; la candidatura no garantiza la autorización.",
+    "fr": "L'école indique être un établissement candidat souhaitant proposer le Programme du diplôme de l'IB; le statut de candidat ne garantit pas l'autorisation."
+   },
+   "entry": null,
+   "url": "https://esppl.cscmonavenir.ca/programme-du-diplome/"
+  },
+  {
+   "tag": "shsm",
+   "name": "MHS construction",
+   "note": {
+    "en": "Specialist High Skills Major (MHS) in Construction for Grades 11-12, listed among the board's MHS programs.",
+    "es": "Majeure Haute Spécialisation (MHS) en Construcción para 11.º y 12.º grado, incluida entre los programas MHS del consejo.",
+    "fr": "Majeure Haute Spécialisation (MHS) en construction pour la 11e et la 12e année, offerte parmi les programmes MHS du conseil."
+   },
+   "entry": null,
+   "url": "https://cscmonavenir.ca/programmes-specialises/"
+  }
+ ],
+ "shsm": [
+  "Construction"
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "Board school page mentions Sport, Leadership and Health programs but no page describing them was found.",
+  "IB status: school page says candidate school; board school page says it offers the IB.",
+  "Course lists: no school course calendar or course catalogue page with a readable list was found (board 'guide de cheminement' page lists schools without links; school pages hold old or PDF-only forms), so no courses were extracted.",
+  "No 2026-27 information-night dates: the board open-house page offers personalised appointments only and states no dates.",
+  "Hosts on the older csdccs.edu.on.ca domain show a Cloudflare challenge and were not used; all facts come from cscmonavenir.ca pages."
+ ]
+}

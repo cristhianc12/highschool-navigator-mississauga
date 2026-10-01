@@ -1,0 +1,620 @@
+{
+ "board": "peel",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.peelschools.org/registration",
+  "https://www.peelschools.org/documents/1c454e57-95b9-40cf-a26c-6a24948e7024/PS%20Enrollment%20-%20New%20Student%20Reg%20-%20Parent%20Tip%20Sheet.pdf?fingerprint=ppb20251217022201",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/explore-high-skills",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights"
+ ],
+ "registration": {
+  "steps": [
+   {
+    "en": "Find the secondary school for your home address with the board's School Finder (school locator).",
+    "es": "Encuentra la escuela secundaria que corresponde a tu domicilio con el localizador de escuelas (School Finder) del consejo.",
+    "fr": "Trouve l'école secondaire de ton adresse avec le localisateur d'écoles (School Finder) du conseil."
+   },
+   {
+    "en": "Go to the board's Register for School page and, for Grades 1-12, create ONE PowerSchool Enrollment parent account per household (verify your email with the code you receive).",
+    "es": "Entra a la página Register for School del consejo y, para 1.º a 12.º grado, crea UNA cuenta de padres de PowerSchool Enrollment por hogar (verifica tu correo con el código que recibes).",
+    "fr": "Va à la page Register for School du conseil et, de la 1re à la 12e année, crée UN compte parent PowerSchool Enrollment par foyer (vérifie ton courriel avec le code reçu)."
+   },
+   {
+    "en": "Add your child and complete the online New Student Registration Form, attaching the required documents.",
+    "es": "Agrega a tu hijo o hija y completa el formulario en línea New Student Registration Form, adjuntando los documentos requeridos.",
+    "fr": "Ajoute ton enfant et remplis le formulaire en ligne New Student Registration Form en joignant les documents requis."
+   },
+   {
+    "en": "Submit the form; the school reviews and approves it, and must see the original documents.",
+    "es": "Envía el formulario; la escuela lo revisa y lo aprueba, y debe ver los documentos originales.",
+    "fr": "Soumets le formulaire; l'école l'examine et l'approuve, et doit voir les documents originaux."
+   },
+   {
+    "en": "For Regional Learning Choice Programs and Explore High Skills, apply separately through the board's application portal (Nov 3-24, 2026 for 2027-28).",
+    "es": "Para los Programas Regionales de Elección y Explore High Skills, postula por separado en el portal de solicitudes del consejo (del 3 al 24 de noviembre de 2026 para 2027-28).",
+    "fr": "Pour les programmes régionaux au choix et Explore High Skills, postule séparément par le portail de demandes du conseil (du 3 au 24 novembre 2026 pour 2027-28)."
+   }
+  ],
+  "docs": [
+   {
+    "en": "Proof of age",
+    "es": "Prueba de edad",
+    "fr": "Preuve d'âge"
+   },
+   {
+    "en": "Proof of address",
+    "es": "Prueba de domicilio",
+    "fr": "Preuve d'adresse"
+   },
+   {
+    "en": "Immunization record",
+    "es": "Registro de vacunas",
+    "fr": "Carnet de vaccination"
+   },
+   {
+    "en": "Proof of immigration status or citizenship",
+    "es": "Prueba de estatus migratorio o ciudadanía",
+    "fr": "Preuve de statut d'immigration ou de citoyenneté"
+   }
+  ],
+  "note": {
+   "en": "The Education Act and the board require parents/guardians to give the school documents that confirm the child's age, address, immunization and immigration status; originals must be shown. The board's tip sheet lists these categories but not the exact accepted documents.",
+   "es": "La Ley de Educación y el consejo exigen que los padres o tutores entreguen a la escuela documentos que confirmen la edad, el domicilio, las vacunas y el estatus migratorio del estudiante; se deben mostrar los originales. La guía del consejo menciona estas categorías pero no los documentos exactos aceptados.",
+   "fr": "La Loi sur l'éducation et le conseil exigent que les parents ou tuteurs remettent à l'école des documents confirmant l'âge, l'adresse, la vaccination et le statut d'immigration de l'élève; les originaux doivent être présentés. Le guide du conseil mentionne ces catégories mais pas les documents exacts acceptés."
+  },
+  "url": "https://www.peelschools.org/registration",
+  "dates": [
+   {
+    "en": "Regional Learning Choice Programs and Explore High Skills for Grade 9 entry in 2027-28: apply Nov 3-24, 2026; first-round offers Feb 2, 2027 after 3 p.m.",
+    "es": "Programas Regionales de Elección y Explore High Skills para ingresar a 9.º en 2027-28: postula del 3 al 24 de noviembre de 2026; primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m.",
+    "fr": "Programmes régionaux au choix et Explore High Skills pour l'admission en 9e année en 2027-28 : postule du 3 au 24 novembre 2026; premières offres le 2 février 2027 après 15 h."
+   },
+   {
+    "en": "Course selection for Grades 8-12 happens in the fall in myBlueprint.",
+    "es": "La selección de cursos de 8.º a 12.º grado se hace en otoño en myBlueprint.",
+    "fr": "Le choix de cours de la 8e à la 12e année se fait à l'automne dans myBlueprint."
+   }
+  ],
+  "contact": "PowerSchool Enrollment technical support 1-866-434-6276 (press 1-1-5-1), Monday to Friday 8 a.m. to 8 p.m., chat at help.powerschool.com; for questions about a specific school or program, contact that school. https://www.peelschools.org/registration"
+ },
+ "programs": [
+  {
+   "id": "peel-rlcp-ap",
+   "tag": "ap",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "peel-central-peel",
+    "johnfraser"
+   ],
+   "name": {
+    "en": "Advanced Placement (AP) - RLCP",
+    "es": "Advanced Placement (AP) - RLCP",
+    "fr": "Advanced Placement (AP) - RLCP"
+   },
+   "p": {
+    "en": "University-readiness program that enriches the Ontario curriculum before senior AP courses; for motivated students with strong numeracy and literacy foundations (Central Peel SS and John Fraser SS).",
+    "es": "Programa preparatorio para la universidad que enriquece el currículo de Ontario antes de los cursos AP de nivel superior; para estudiantes motivados con buena base de numeración y lectoescritura (Central Peel SS y John Fraser SS).",
+    "fr": "Programme préparatoire à l'université qui enrichit le curriculum de l'Ontario avant les cours AP de fin de secondaire; pour les élèves motivés ayant de solides bases en numératie et en littératie (Central Peel SS et John Fraser SS)."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card",
+      "es": "Boletín final de 7.º grado",
+      "fr": "Bulletin final de 7e année"
+     },
+     {
+      "en": "In-person numeracy and literacy assessment, Dec 5, 2026 at both schools (time set by the school)",
+      "es": "Evaluación presencial de numeración y lectoescritura, 5 de diciembre de 2026 en ambas escuelas (hora fijada por la escuela)",
+      "fr": "Évaluation en personne en numératie et en littératie, 5 décembre 2026 dans les deux écoles (heure fixée par l'école)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 22, 2026 (Central Peel 5-6 or 7-8 p.m.; John Fraser virtual, time TBA).",
+     "es": "Noches informativas el 22 de octubre de 2026 (Central Peel 5-6 o 7-8 p. m.; John Fraser virtual, hora por confirmar).",
+     "fr": "Soirées d'information le 22 octobre 2026 (Central Peel 17 h-18 h ou 19 h-20 h; John Fraser virtuelle, heure à confirmer)."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-arts",
+   "tag": "arts",
+   "start": "9",
+   "entry": "audition",
+   "hosts": [
+    "cawthra",
+    "peel-mayfield"
+   ],
+   "name": {
+    "en": "Arts - RLCP",
+    "es": "Arts - RLCP",
+    "fr": "Arts - RLCP"
+   },
+   "p": {
+    "en": "Regional Arts Program in Dance, Drama, Music (instrumental/vocal) or Visual Arts; students living south of the 401 attend Cawthra Park SS and those north of the 401 attend Mayfield SS. Second entry point in Grade 10.",
+    "es": "Programa regional de Artes en Danza, Teatro, Música (instrumental/vocal) o Artes Visuales; quienes viven al sur de la 401 van a Cawthra Park SS y quienes viven al norte, a Mayfield SS. Segunda entrada en 10.º grado.",
+    "fr": "Programme régional d'arts en danse, art dramatique, musique (instrumentale/vocale) ou arts visuels; les élèves au sud de la 401 vont à Cawthra Park SS et ceux au nord, à Mayfield SS. Deuxième point d'entrée en 10e année."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card (Grade 8 for Grade 10 entry)",
+      "es": "Boletín final de 7.º grado (de 8.º para ingresar en 10.º)",
+      "fr": "Bulletin final de 7e année (de 8e pour l'admission en 10e)"
+     },
+     {
+      "en": "Written response (5 questions)",
+      "es": "Respuesta escrita (5 preguntas)",
+      "fr": "Réponse écrite (5 questions)"
+     },
+     {
+      "en": "Audition (vocal music, instrumental music, dance, drama) or portfolio (visual arts)",
+      "es": "Audición (música vocal, música instrumental, danza, teatro) o portafolio (artes visuales)",
+      "fr": "Audition (musique vocale, musique instrumentale, danse, art dramatique) ou portfolio (arts visuels)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 27, 2026 (Cawthra Park 6 or 7 p.m.; Mayfield 6:30-8:30 p.m.); auditions Jan 27-28, 2027; Grade 10 entry dates set by the school.",
+     "es": "Noches informativas el 27 de octubre de 2026 (Cawthra Park 6 o 7 p. m.; Mayfield 6:30-8:30 p. m.); audiciones el 27 y 28 de enero de 2027; fechas de ingreso a 10.º fijadas por la escuela.",
+     "fr": "Soirées d'information le 27 octobre 2026 (Cawthra Park 18 h ou 19 h; Mayfield 18 h 30-20 h 30); auditions les 27 et 28 janvier 2027; dates d'admission en 10e fixées par l'école."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-ib",
+   "tag": "ib",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "erindale",
+    "glenforest",
+    "peel-harold-m-brathwaite",
+    "peel-turner-fenton"
+   ],
+   "name": {
+    "en": "International Baccalaureate (IB) - RLCP",
+    "es": "International Baccalaureate (IB) - RLCP",
+    "fr": "International Baccalaureate (IB) - RLCP"
+   },
+   "p": {
+    "en": "IB Diploma Programme reached through the Middle Years Programme at Glenforest and Turner Fenton or the PDSB Pre-IB at Harold M. Brathwaite and Erindale; second entry point in Grade 11.",
+    "es": "Programa del Diploma IB al que se llega por el Programa de los Años Intermedios en Glenforest y Turner Fenton o por el Pre-IB del PDSB en Harold M. Brathwaite y Erindale; segunda entrada en 11.º grado.",
+    "fr": "Programme du diplôme IB accessible par le Programme d'éducation intermédiaire à Glenforest et Turner Fenton ou par le Pre-IB du PDSB à Harold M. Brathwaite et Erindale; deuxième point d'entrée en 11e année."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card",
+      "es": "Boletín final de 7.º grado",
+      "fr": "Bulletin final de 7e année"
+     },
+     {
+      "en": "In-person assessment Dec 12, 2026 (not at Erindale SS)",
+      "es": "Evaluación presencial el 12 de diciembre de 2026 (no en Erindale SS)",
+      "fr": "Évaluation en personne le 12 décembre 2026 (pas à Erindale SS)"
+     },
+     {
+      "en": "Grade 11 entry: Grade 9 final report, Grade 10 math, MCR3U and Grade 10 Academic French (FSF2D, FIF2D or FEF2D) completed",
+      "es": "Ingreso en 11.º: boletín final de 9.º, matemáticas de 10.º, MCR3U y francés académico de 10.º (FSF2D, FIF2D o FEF2D) completados",
+      "fr": "Admission en 11e : bulletin final de 9e, mathématiques de 10e, MCR3U et français théorique de 10e (FSF2D, FIF2D ou FEF2D) réussis"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 21, 2026 (Erindale TBA; Glenforest 6:30-7:30 p.m.; Harold M. Brathwaite 6:30-8:30 p.m.; Turner Fenton 7-8 p.m.).",
+     "es": "Noches informativas el 21 de octubre de 2026 (Erindale por confirmar; Glenforest 6:30-7:30 p. m.; Harold M. Brathwaite 6:30-8:30 p. m.; Turner Fenton 7-8 p. m.).",
+     "fr": "Soirées d'information le 21 octobre 2026 (Erindale à confirmer; Glenforest 18 h 30-19 h 30; Harold M. Brathwaite 18 h 30-20 h 30; Turner Fenton 19 h-20 h)."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-ibt",
+   "tag": "ibt",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "meadowvale",
+    "peel-north-park"
+   ],
+   "name": {
+    "en": "International Business and Technology (IBT) - RLCP",
+    "es": "International Business and Technology (IBT) - RLCP",
+    "fr": "International Business and Technology (IBT) - RLCP"
+   },
+   "p": {
+    "en": "Project-based, inquiry-driven program on Business or Technology (robotics, STEM, emerging technologies) with a global focus (Meadowvale SS and North Park SS).",
+    "es": "Programa basado en proyectos e indagación sobre Negocios o Tecnología (robótica, STEM, tecnologías emergentes) con enfoque global (Meadowvale SS y North Park SS).",
+    "fr": "Programme par projets et par enquête en affaires ou en technologie (robotique, STIM, technologies émergentes) avec une perspective mondiale (Meadowvale SS et North Park SS)."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card",
+      "es": "Boletín final de 7.º grado",
+      "fr": "Bulletin final de 7e année"
+     },
+     {
+      "en": "Video submission (maximum 1 min 30 sec)",
+      "es": "Video (máximo 1 min 30 s)",
+      "fr": "Vidéo (maximum 1 min 30 s)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 28, 2026, 6-8 p.m. at both schools.",
+     "es": "Noches informativas el 28 de octubre de 2026, 6-8 p. m. en ambas escuelas.",
+     "fr": "Soirées d'information le 28 octobre 2026, 18 h-20 h dans les deux écoles."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-skilled-trades",
+   "tag": "trades",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "peel-judith-nyman",
+    "westcredit"
+   ],
+   "name": {
+    "en": "Regional Skilled Trades - RLCP",
+    "es": "Regional Skilled Trades - RLCP",
+    "fr": "Regional Skilled Trades - RLCP"
+   },
+   "p": {
+    "en": "Program for experiential learners with courses in Construction Technology, Transportation Technology, Hospitality and Personal Services (Judith Nyman SS and West Credit SS); new Grade 11 entry in 2027-28.",
+    "es": "Programa para estudiantes de aprendizaje experiencial con cursos de Tecnología de la Construcción, Tecnología del Transporte, Hostelería y Servicios Personales (Judith Nyman SS y West Credit SS); nueva entrada en 11.º grado en 2027-28.",
+    "fr": "Programme pour apprenants expérientiels avec cours de technologie de la construction, de technologie des transports, d'hôtellerie et de services personnels (Judith Nyman SS et West Credit SS); nouvelle admission en 11e année en 2027-28."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card",
+      "es": "Boletín final de 7.º grado",
+      "fr": "Bulletin final de 7e année"
+     },
+     {
+      "en": "Judith Nyman: written response (1 question), artifact of your choice, survey of interest and audition",
+      "es": "Judith Nyman: respuesta escrita (1 pregunta), artefacto a tu elección, encuesta de intereses y audición",
+      "fr": "Judith Nyman : réponse écrite (1 question), artefact de ton choix, sondage d'intérêts et audition"
+     },
+     {
+      "en": "West Credit: artifact of your choice and audition (Jan 27, 2027)",
+      "es": "West Credit: artefacto a tu elección y audición (27 de enero de 2027)",
+      "fr": "West Credit : artefact de ton choix et audition (27 janvier 2027)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 29, 2026 (Judith Nyman 6:30-8:30 p.m.; West Credit 6-8 p.m.).",
+     "es": "Noches informativas el 29 de octubre de 2026 (Judith Nyman 6:30-8:30 p. m.; West Credit 6-8 p. m.).",
+     "fr": "Soirées d'information le 29 octobre 2026 (Judith Nyman 18 h 30-20 h 30; West Credit 18 h-20 h)."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-scitech",
+   "tag": "stem",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "peel-chinguacousy",
+    "portcredit"
+   ],
+   "name": {
+    "en": "SciTech - RLCP",
+    "es": "SciTech - RLCP",
+    "fr": "SciTech - RLCP"
+   },
+   "p": {
+    "en": "Hands-on science and technology program built with post-secondary and industry partners, using industry-standard technology, guest speakers, excursions and competitions (Chinguacousy SS and Port Credit SS).",
+    "es": "Programa práctico de ciencia y tecnología creado con aliados postsecundarios y de la industria, con tecnología estándar, invitados, excursiones y competencias (Chinguacousy SS y Port Credit SS).",
+    "fr": "Programme pratique de sciences et technologie conçu avec des partenaires postsecondaires et de l'industrie, avec technologie de pointe, conférenciers, sorties et concours (Chinguacousy SS et Port Credit SS)."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card (no written response or audition)",
+      "es": "Boletín final de 7.º grado (sin respuesta escrita ni audición)",
+      "fr": "Bulletin final de 7e année (pas de réponse écrite ni d'audition)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 22, 2026 (Chinguacousy 6-7 or 7-8 p.m.; Port Credit 5-6 or 7-8 p.m.).",
+     "es": "Noches informativas el 22 de octubre de 2026 (Chinguacousy 6-7 o 7-8 p. m.; Port Credit 5-6 o 7-8 p. m.).",
+     "fr": "Soirées d'information le 22 octobre 2026 (Chinguacousy 18 h-19 h ou 19 h-20 h; Port Credit 17 h-18 h ou 19 h-20 h)."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-strings",
+   "tag": "strings",
+   "start": "9",
+   "entry": "audition",
+   "hosts": [
+    "peel-central-peel",
+    "portcredit"
+   ],
+   "name": {
+    "en": "Strings - RLCP",
+    "es": "Strings - RLCP",
+    "fr": "Strings - RLCP"
+   },
+   "p": {
+    "en": "Peel Regional Strings: study a string instrument from beginner to highly advanced level and play in an orchestra (Central Peel SS and Port Credit SS).",
+    "es": "Peel Regional Strings: estudia un instrumento de cuerda desde nivel principiante hasta muy avanzado y toca en una orquesta (Central Peel SS y Port Credit SS).",
+    "fr": "Peel Regional Strings : étudie un instrument à cordes, du niveau débutant à très avancé, et joue dans un orchestre (Central Peel SS et Port Credit SS)."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card",
+      "es": "Boletín final de 7.º grado",
+      "fr": "Bulletin final de 7e année"
+     },
+     {
+      "en": "Written response (2 questions)",
+      "es": "Respuesta escrita (2 preguntas)",
+      "fr": "Réponse écrite (2 questions)"
+     },
+     {
+      "en": "Audition (Central Peel Dec 5, 2026; Port Credit date TBD)",
+      "es": "Audición (Central Peel 5 de diciembre de 2026; fecha de Port Credit por definir)",
+      "fr": "Audition (Central Peel 5 décembre 2026; date de Port Credit à déterminer)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information nights Oct 22, 2026 (5-6 or 7-8 p.m. at both schools).",
+     "es": "Noches informativas el 22 de octubre de 2026 (5-6 o 7-8 p. m. en ambas escuelas).",
+     "fr": "Soirées d'information le 22 octobre 2026 (17 h-18 h ou 19 h-20 h dans les deux écoles)."
+    }
+   }
+  },
+  {
+   "id": "peel-rlcp-transportation",
+   "tag": "stem",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "peel-bramalea"
+   ],
+   "name": {
+    "en": "Transportation, Engineering and Technology - RLCP",
+    "es": "Transportation, Engineering and Technology - RLCP",
+    "fr": "Transportation, Engineering and Technology - RLCP"
+   },
+   "p": {
+    "en": "Program at Bramalea SS covering land, marine and aerospace transportation, with industry and education partners and every post-secondary pathway.",
+    "es": "Programa en Bramalea SS sobre transporte terrestre, marítimo y aeroespacial, con aliados de la industria y la educación y todas las rutas posteriores.",
+    "fr": "Programme à Bramalea SS couvrant le transport terrestre, maritime et aérospatial, avec des partenaires de l'industrie et de l'éducation et toutes les voies postsecondaires."
+   },
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary; international visa students are not eligible (work or study permit holders may apply).",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º en 2027-28, cumplen los criterios del programa y viven en su zona; los estudiantes con visa internacional no son elegibles (quienes tienen permiso de trabajo o estudio pueden postular).",
+     "fr": "Élèves de 8e année qui entrent en 9e année en 2027-28, répondent aux critères du programme et habitent dans son secteur; les élèves étrangers sous visa ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler)."
+    },
+    "how": {
+     "en": "Online application through the board's application site, review of the Grade 7 final report (plus any written response, audition or assessment), then a central random selection; the application fee is paid through School Cash Online.",
+     "es": "Solicitud en línea en el sitio de solicitudes del consejo, revisión del boletín final de 7.º grado (y de respuestas escritas, audiciones o evaluaciones, si corresponde) y luego un sorteo central; la tarifa de solicitud se paga por School Cash Online.",
+     "fr": "Demande en ligne sur le site de demandes du conseil, examen du bulletin final de 7e année (et des réponses écrites, auditions ou évaluations, le cas échéant), puis tirage au sort central; les frais de demande se paient par School Cash Online."
+    },
+    "dates": {
+     "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); second round Feb 16-19, third Feb 23-26, fourth Mar 8-11, 2027; waitlist offers from Mar 30, 2027 to Sept 9, 2027.",
+     "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); segunda ronda del 16 al 19 de febrero, tercera del 23 al 26 de febrero, cuarta del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027.",
+     "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); deuxième ronde du 16 au 19 février, troisième du 23 au 26 février, quatrième du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027."
+    },
+    "reqs": [
+     {
+      "en": "Grade 7 final report card",
+      "es": "Boletín final de 7.º grado",
+      "fr": "Bulletin final de 7e année"
+     },
+     {
+      "en": "Written response (4 questions)",
+      "es": "Respuesta escrita (4 preguntas)",
+      "fr": "Réponse écrite (4 questions)"
+     }
+    ],
+    "keyDates": {
+     "en": "Information night Nov 5, 2026, 7-8 p.m.",
+     "es": "Noche informativa el 5 de noviembre de 2026, 7-8 p. m.",
+     "fr": "Soirée d'information le 5 novembre 2026, 19 h-20 h."
+    }
+   }
+  },
+  {
+   "id": "peel-ehs",
+   "tag": "other",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "peel-bramalea",
+    "peel-castlebrooke",
+    "peel-chinguacousy",
+    "johnfraser",
+    "peel-the-woodlands",
+    "peel-harold-m-brathwaite",
+    "peel-north-park",
+    "peel-sandalwood-heights",
+    "glenforest",
+    "peel-humberview",
+    "mississ",
+    "rickhansen",
+    "meadowvale",
+    "stephenlewis",
+    "applewood",
+    "clarkson",
+    "peel-david-suzuki",
+    "streetsville",
+    "lma"
+   ],
+   "name": {
+    "en": "Explore High Skills (EHS)",
+    "es": "Explore High Skills (EHS)",
+    "fr": "Explore High Skills (EHS)"
+   },
+   "p": {
+    "en": "Grade 9-10 pathway programs focused on a sector (e.g. Business, Health and Wellness, ICT, Sports, Transportation, Construction); offered at schools with SHSM programs, open at all skill levels and a possible entry into Grade 11-12 SHSM.",
+    "es": "Programas de ruta de 9.º y 10.º grado centrados en un sector (p. ej., Negocios, Salud y Bienestar, TIC, Deportes, Transporte, Construcción); se ofrecen en escuelas con programas SHSM, están abiertos a todos los niveles y son una posible puerta de entrada a los SHSM de 11.º y 12.º.",
+    "fr": "Programmes de cheminement de la 9e et de la 10e année axés sur un secteur (p. ex., affaires, santé et bien-être, TIC, sports, transport, construction); offerts dans les écoles ayant des programmes SHSM, ouverts à tous les niveaux et porte d'entrée possible vers les SHSM de la 11e et de la 12e année."
+   },
+   "url": "https://www.peelschools.org/explore-high-skills",
+   "info": {
+    "who": {
+     "en": "Grade 8 students entering Grade 9 (and Grade 9 students entering Grade 10) in 2027-28, in all skill levels and pathways.",
+     "es": "Estudiantes de 8.º grado que pasan a 9.º (y de 9.º que pasan a 10.º) en 2027-28, de todos los niveles y rutas.",
+     "fr": "Élèves de 8e année qui entrent en 9e année (et de 9e qui entrent en 10e) en 2027-28, de tous les niveaux et cheminements."
+    },
+    "how": {
+     "en": "Apply during the board application window; offers are made in rounds for in-boundary, out-of-boundary and out-of-board students alike.",
+     "es": "Postula durante el periodo de solicitud del consejo; las ofertas se hacen en rondas, tanto para estudiantes dentro como fuera de la zona y de otros consejos.",
+     "fr": "Postule pendant la période de demande du conseil; les offres se font par rondes, pour les élèves du secteur, hors secteur et hors conseil."
+    },
+    "dates": {
+     "en": "Applications Nov 3-24, 2026; offers Feb 2-5, Feb 16-19, Feb 23-26 and Mar 8-11, 2027; waitlist offers from Mar 30 to Sept 9, 2027 at 3 p.m.",
+     "es": "Solicitudes del 3 al 24 de noviembre de 2026; ofertas del 2 al 5 de febrero, del 16 al 19 de febrero, del 23 al 26 de febrero y del 8 al 11 de marzo de 2027; ofertas de lista de espera del 30 de marzo al 9 de septiembre de 2027 a las 3 p. m.",
+     "fr": "Demandes du 3 au 24 novembre 2026; offres du 2 au 5 février, du 16 au 19 février, du 23 au 26 février et du 8 au 11 mars 2027; offres de la liste d'attente du 30 mars au 9 septembre 2027 à 15 h."
+    },
+    "reqs": [
+     {
+      "en": "Students earn 20 of the 40 community involvement hours and sector-related certifications (e.g. First Aid/CPR)",
+      "es": "Los estudiantes obtienen 20 de las 40 horas de servicio comunitario y certificaciones del sector (p. ej., primeros auxilios/RCP)",
+      "fr": "Les élèves obtiennent 20 des 40 heures de bénévolat et des certifications sectorielles (p. ex., premiers soins/RCR)"
+     }
+    ]
+   }
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "general",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "format": "Virtual",
+   "title": "High School Programs Information Night for Families of Black Students (Grades 7-8; RLCP, Explore High Skills and Regional Skilled Trades; 6-7 p.m.)",
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  }
+ ],
+ "notes": [
+  "Dates for RLCP are for 2027-28 entry: application Nov 3-24, 2026; first-round offers Feb 2, 2027 (Grade 9 entry), Feb 8 (Arts Grade 10 entry), Feb 1 (IB and Regional Skilled Trades Grade 11 entry).",
+  "Fee amounts for RLCP application and annual program fees are not stated on the pages.",
+  "Board hosts for Explore High Skills are taken from the board's program table; the EHS program descriptions on the page are labelled 2025-2026 (dates on the page are 2027-28).",
+  "Explore High Skills 'Architecture and Construction' description lists Glenforest, but the table lists Glenforest under Design Technology.",
+  "The Peel Region High Performers Program and the SHSM board page were not read in detail and are not recorded as board programs.",
+  "Entry value 'apply' used for EHS because the board page says applications are open for it."
+ ]
+}

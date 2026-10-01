@@ -1,0 +1,50 @@
+{
+ "id": "streetsville",
+ "scrapedAt": "2026-10-01",
+ "site": "https://streetsville.peelschools.org/",
+ "sources": [
+  "https://streetsville.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/8ae30081-63bc-4b7c-b258-0eafafe2697c/Streetsville-SS.pdf?fingerprint=ppb20251217024559",
+  "https://www.peelschools.org/specialist-high-skills-major"
+ ],
+ "programs": [],
+ "shsm": [
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/8ae30081-63bc-4b7c-b258-0eafafe2697c/Streetsville-SS.pdf?fingerprint=ppb20251217024559",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-09-24",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-09-24",
+   "time": "18:00",
+   "format": "In person",
+   "title": "SHSM & EHS Info Night: Sports (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-09-24",
+   "time": "18:00",
+   "format": "In person",
+   "title": "French Immersion Info Night (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": []
+}

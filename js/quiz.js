@@ -1,4 +1,8 @@
 import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
+import { systemOf, boardClass, isCatholic } from "./geo.js";
+import { trackQuiz } from "./track.js";
+import "./a11y.js";
+import { supportHtml } from "./support.js";
 import "./pwa.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 import { initSchoolDetail } from "./school-detail.js";
@@ -47,13 +51,14 @@ const asArray = (v) => (Array.isArray(v) ? v : v ? [v] : []);
 
 function recommend(a) {
   const tagScore = {};
-  const sp = { prog: 0, regular: 0, board: null, transport: 0 };
+  const sp = { prog: 0, regular: 0, board: null, transport: 0, region: null };
   for (const q of QUESTIONS) {
     for (const v of asArray(a[q.id])) {
       const opt = q.o.find((o) => o.v === v);
       if (!opt) continue;
       for (const [k, w] of Object.entries(opt.w)) {
         if (k === "_board") sp.board = w;
+        else if (k === "_region") sp.region = w;
         else if (k === "_transport") sp.transport = w;
         else if (k === "_prog") sp.prog += w;
         else if (k === "_regular") sp.regular += w;
@@ -62,7 +67,7 @@ function recommend(a) {
     }
   }
 
-  const boardOk = (b) => sp.board === "catholic" ? b !== "peel" : sp.board === "public" ? b === "peel" : true;
+  const boardOk = (b) => sp.board === "catholic" ? isCatholic(b) : sp.board === "public" ? !isCatholic(b) : true;
 
   const rows = SCHOOLS.filter((s) => boardOk(s.board) && s.progs.length).map((s) => {
     let sc = 0;
@@ -78,7 +83,8 @@ function recommend(a) {
     if (sp.prog) sc += 1;
     if (sp.regular) sc -= 1;
     if (hits.length && sp.transport) sc -= sp.transport;
-    if (sp.board === "french" && s.board === "fr") sc += 6;
+    if (sp.board === "french" && systemOf(s.board) === "french") sc += 6;
+    if (hits.length && sp.region && s.region === sp.region) sc += 1; // a little closer to home
     hits.sort((x, y) => y.w - x.w);
     return { s, sc, hits };
   }).sort((x, y) => y.sc - x.sc || x.s.name.localeCompare(y.s.name));
@@ -203,9 +209,9 @@ function renderResults() {
     ? r.schools.map((row) => {
       const s = row.s;
       const why = row.hits.slice(0, 2).map((h) => `<li>${esc(L(TAGS[h.k]))}: ${esc(L(TAG_WHY[h.k]))}</li>`).join("");
-      const notes = [row.dependsOnRegional ? u.transportNote : "", s.board === "fr" ? u.frenchNote : ""].filter(Boolean)
+      const notes = [row.dependsOnRegional ? u.transportNote : "", systemOf(s.board) === "french" ? u.frenchNote : ""].filter(Boolean)
         .map((n) => `<p class="muted small">${esc(n)}</p>`).join("");
-      return `<article class="res clickable board-${s.board}" data-card="${s.id}">
+      return `<article class="res clickable board-${boardClass(s.board)}" data-card="${s.id}">
         <div class="res-top"><h3>${esc(s.name)}</h3><span class="res-tags"><span class="band ${bandOf(row.ratio)}">${esc(u.bands[bandOf(row.ratio)])}</span>${starBtn("school", s.id)}</span></div>
         <div class="sub">${esc(L(BOARDS[s.board]))}</div>
         <div class="chips">${s.progs.map((p) => `<span class="chip">${esc(L(TAGS[p.k]))}</span>`).join("")}</div>
@@ -234,6 +240,7 @@ function renderResults() {
         <label class="check"><input type="checkbox" id="consent" ${state.shared ? "checked disabled" : ""}> ${esc(u.shareCheck)}</label>
         <button type="button" class="btn small" id="share" disabled>${esc(u.shareBtn)}</button>
       </div>
+      ${supportHtml(state.lang) ? `<p class="small supportline">${supportHtml(state.lang)}</p>` : ""}
       <details class="tb-info"><summary>${esc(u.shareH)}</summary>
         <p class="small muted">${esc(u.shareP)}</p>
         <p class="small"><a href="privacy?lang=${state.lang}" target="_blank" rel="noopener">${esc(u.privacy)}</a></p></details>
@@ -271,7 +278,11 @@ function restoreProgress() {
   } catch { /* ignore corrupt data */ }
 }
 
-function go(step) { state.step = step; if (step >= TOTAL) state.result = recommend(state.answers); saveProgress(); render(); }
+function go(step) {
+  if (step === 0 && state.step < 0) trackQuiz("start");
+  else if (step > 0 && step < TOTAL && step > state.step) trackQuiz("step", `q${step}`);
+  else if (step >= TOTAL && state.step < TOTAL) trackQuiz("done");
+  state.step = step; if (step >= TOTAL) state.result = recommend(state.answers); saveProgress(); render(); }
 
 document.addEventListener("click", (e) => {
   const lang = e.target.closest("[data-lang]");
@@ -287,7 +298,7 @@ document.addEventListener("click", (e) => {
   if (e.target.closest("#skip-q")) return go(state.step + 1);
   if (e.target.closest("#next")) return advance();
   if (e.target.closest("#retake")) { state.answers = {}; state.result = null; state.shared = false; sess.del(SAVE_KEY); return go(-1); }
-  if (e.target.closest("#pdf")) return makePdf();
+  if (e.target.closest("#pdf")) { trackQuiz("pdf"); return makePdf(); }
   if (e.target.closest("#share")) return share();
   const opt = e.target.closest("[data-opt]");
   if (opt) pick(opt.dataset.opt);
@@ -336,7 +347,7 @@ async function share() {
   };
   try {
     const res = await fetch("/api/submit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    if (res.ok) { state.shared = true; saveProgress(); msg.textContent = u.shareOk; $("#consent").disabled = true; return; }
+    if (res.ok) { trackQuiz("share"); state.shared = true; saveProgress(); msg.textContent = u.shareOk; $("#consent").disabled = true; return; }
     msg.textContent = res.status === 404 || res.status === 503 ? u.shareOff : u.shareErr;
   } catch {
     msg.textContent = u.shareErr;
@@ -411,7 +422,7 @@ async function makePdf() {
       write(`${L(BOARDS[row.s.board])} · ${row.s.progs.map((p) => L(TAGS[p.k])).join(", ")}`, { size: 9.5, color: muted, gap: 0.5 });
       row.hits.slice(0, 2).forEach((h) => write(`- ${L(TAGS[h.k])}: ${L(TAG_WHY[h.k])}`, { size: 10, indent: 3, gap: 0 }));
       if (row.dependsOnRegional) write(u.transportNote, { size: 9, color: muted, indent: 3, gap: 0 });
-      if (row.s.board === "fr") write(u.frenchNote, { size: 9, color: muted, indent: 3, gap: 0 });
+      if (systemOf(row.s.board) === "french") write(u.frenchNote, { size: 9, color: muted, indent: 3, gap: 0 });
       y += 2.5;
     });
     if (r.wantsRegular) write(u.regularNote, { size: 9.5, color: muted });

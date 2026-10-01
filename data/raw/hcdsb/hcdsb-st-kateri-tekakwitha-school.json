@@ -1,0 +1,104 @@
+{
+ "id": "hcdsb-st-kateri-tekakwitha-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/stkateri/",
+ "sources": [
+  "https://secondary.hcdsb.org/stkateri/",
+  "https://secondary.hcdsb.org/stkateri/international-baccalaureate-ib-programme/",
+  "https://secondary.hcdsb.org/stkateri/st-kateri-pre-ib-programme/",
+  "https://secondary.hcdsb.org/stkateri/advanced-placement/",
+  "https://secondary.hcdsb.org/stkateri/french-immersion/",
+  "https://secondary.hcdsb.org/stkateri/ib-programme-faq/",
+  "https://secondary.hcdsb.org/stkateri/event/grade-8-information-night-ib-ap-french-immersion-extended-french/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Programme with Pre-IB",
+   "note": {
+    "en": "Authorized IB World School: Pre-IB in Grades 9-10 prepares students for the IB Diploma Programme in Grades 11-12.",
+    "es": "Escuela del Mundo IB autorizada: el Pre-IB de 9.º y 10.º grado prepara para el Programa del Diploma IB de 11.º y 12.º grado.",
+    "fr": "École du monde IB autorisée : le Pre-IB de 9e et 10e année prépare au Programme du diplôme IB de 11e et 12e année."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/stkateri/international-baccalaureate-ib-programme/"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional. Grade 9 AP-Prep courses: English, French, Geography, Mathematics, Religion, Science.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional. Cursos AP-Prep de 9.º grado: Inglés, Francés, Geografía, Matemáticas, Religión, Ciencias.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif. Cours AP-Prep de 9e année : anglais, français, géographie, mathématiques, religion, sciences."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/stkateri/advanced-placement/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion in Grade 9 for students with at least 3800 hours of elementary French Immersion; 10 French courses earn the certificate.",
+    "es": "Inmersión en francés en 9.º grado para estudiantes con al menos 3800 horas de inmersión en primaria; 10 cursos de francés dan el certificado.",
+    "fr": "Immersion française en 9e année pour les élèves ayant au moins 3 800 heures d'immersion à l'élémentaire; 10 cours de français donnent droit au certificat."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/stkateri/french-immersion/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French in Grade 9 for students with at least 1260 hours of elementary Extended French; 7 French courses earn the certificate.",
+    "es": "Francés extendido en 9.º grado para estudiantes con al menos 1260 horas en primaria; 7 cursos de francés dan el certificado.",
+    "fr": "Français approfondi en 9e année pour les élèves ayant au moins 1 260 heures à l'élémentaire; 7 cours de français donnent droit au certificat."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/stkateri/french-immersion/"
+  }
+ ],
+ "shsm": [],
+ "admissions": [
+  {
+   "program": "IB Programme (Pre-IB, Grade 9 entry)",
+   "tag": "ib",
+   "elig": {
+    "en": "Open to students in Halton Region and outside it; no minimum grades and no entrance tests, acceptance depends on the number of applicants.",
+    "es": "Abierto a estudiantes de la región de Halton y de fuera de ella; sin notas mínimas ni pruebas de ingreso, la aceptación depende del número de solicitantes.",
+    "fr": "Ouvert aux élèves de la région de Halton et d'ailleurs; aucune note minimale ni test d'entrée, l'acceptation dépend du nombre de candidats."
+   },
+   "know": [
+    {
+     "en": "A committee reviews learning skills, Grade 7-8 marks in Math, English and French, and a 150-word student essay.",
+     "es": "Un comité revisa habilidades de aprendizaje, notas de 7.º y 8.º en Matemáticas, Inglés y Francés, y un ensayo de 150 palabras.",
+     "fr": "Un comité examine les habiletés d'apprentissage, les notes de 7e et 8e année en mathématiques, anglais et français, et un texte de 150 mots."
+    },
+    {
+     "en": "Completing Grade 10 Pre-IB is required to enter the Grade 11-12 Diploma Programme.",
+     "es": "Completar el Pre-IB de 10.º grado es obligatorio para entrar al Programa del Diploma de 11.º y 12.º.",
+     "fr": "Terminer le Pre-IB de 10e année est obligatoire pour accéder au Programme du diplôme de 11e et 12e année."
+    }
+   ],
+   "url": "https://secondary.hcdsb.org/stkateri/ib-programme-faq/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Information Night (IB, AP, French Immersion, Extended French)",
+   "url": "https://secondary.hcdsb.org/stkateri/event/grade-8-information-night-ib-ap-french-immersion-extended-french/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages.",
+  "Pre-IB and AP pages show 2025-26 dates and fees only (application closed Dec 12, 2025), so none recorded for 2026-27.",
+  "No SHSM page found."
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "tdsb-york-humber",
+  "scrapedAt": "2026-10-01",
+  "site": "https://yorkhumber.ca/",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/6594",
+    "https://yorkhumber.ca/",
+    "https://yorkhumber.ca/Departments/Special-Education-Mild-Intellectual-Disabilities-Program",
+    "https://yorkhumber.ca/Departments/Experiential-Learning-Cooperative-Education-Post-21-Transitions"
+  ],
+  "programs": [
+    {
+      "tag": "other",
+      "name": "Special education programs (MID, DD and Deaf/Hard of Hearing)",
+      "entry": "school",
+      "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/6594",
+      "note": {
+        "en": "School for students with intensive special education needs (Developmental Disability, Mild Intellectual Disability, Deaf/Hard of Hearing) focused on career, life and employability skills, with experiential learning in food services, cosmetology, auto shop and carpentry.",
+        "es": "Escuela para estudiantes con necesidades intensivas de educación especial (discapacidad del desarrollo, discapacidad intelectual leve, sordos o con dificultades auditivas) centrada en habilidades profesionales, de vida y de empleabilidad, con aprendizaje experiencial en servicios de alimentos, cosmetología, taller de autos y carpintería.",
+        "fr": "École pour les élèves ayant des besoins importants en éducation spécialisée (déficience développementale, déficience intellectuelle légère, surdité ou malentendance) axée sur les compétences professionnelles, de vie et d'employabilité, avec un apprentissage expérientiel en services alimentaires, cosmétologie, mécanique automobile et menuiserie."
+      }
+    }
+  ],
+  "shsm": [],
+  "other": [
+    "Co-operative Education"
+  ],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "The open-house list shows only a December 11, 2025 date, which is for the previous cycle, so no 2026-27 session is recorded.",
+    "No course list, SHSM or separate admissions steps were found (placement of students with special education needs is through the IPRC process)."
+  ]
+}

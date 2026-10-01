@@ -1,0 +1,131 @@
+{
+ "id": "peel-harold-m-brathwaite",
+ "scrapedAt": "2026-10-01",
+ "site": "https://haroldmbrathwaite.peelschools.org/",
+ "sources": [
+  "https://haroldmbrathwaite.peelschools.org/",
+  "https://haroldmbrathwaite.peelschools.org/ib",
+  "https://haroldmbrathwaite.peelschools.org/business-SHSM",
+  "https://haroldmbrathwaite.peelschools.org/business-explore-high-skills",
+  "https://haroldmbrathwaite.peelschools.org/co-operative-education",
+  "https://haroldmbrathwaite.peelschools.org/dual-credit",
+  "https://haroldmbrathwaite.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/explore-high-skills",
+  "https://www.peelschools.org/documents/96cb6e95-d617-4549-9863-13f6cbf901cd/Harold-M-Brathwaite-SS.pdf?fingerprint=ppb20251217024824"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Programme - RLCP",
+   "note": {
+    "en": "Regional Learning Choice Program: students reach the IB Diploma Programme through the PDSB Pre-IB program using the Ontario curriculum.",
+    "es": "Programa regional de elección: los estudiantes llegan al Programa del Diploma IB mediante el programa Pre-IB del PDSB, con el currículo de Ontario.",
+    "fr": "Programme régional au choix : l'élève accède au Programme du diplôme IB par le programme Pre-IB du PDSB, avec le curriculum de l'Ontario."
+   },
+   "entry": "apply",
+   "url": "https://haroldmbrathwaite.peelschools.org/ib"
+  },
+  {
+   "tag": "shsm",
+   "name": "Business - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Business for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Negocios para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Affaires pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://haroldmbrathwaite.peelschools.org/business-SHSM"
+  },
+  {
+   "tag": "other",
+   "name": "Business - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Business: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Negocios: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Affaires : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://haroldmbrathwaite.peelschools.org/business-explore-high-skills"
+  },
+  {
+   "tag": "other",
+   "name": "Justice, Community Safety, and Emergency Services - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Justice, Community Safety, and Emergency Services: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Justicia, Seguridad Comunitaria y Servicios de Emergencia: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Justice, sécurité communautaire et services d'urgence : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://www.peelschools.org/explore-high-skills"
+  }
+ ],
+ "shsm": [
+  "Business"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/96cb6e95-d617-4549-9863-13f6cbf901cd/Harold-M-Brathwaite-SS.pdf?fingerprint=ppb20251217024824",
+ "admissions": [
+  {
+   "program": "International Baccalaureate (IB) Programme - RLCP",
+   "tag": "ib",
+   "elig": {
+    "en": "Open to Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary (apply to the RLCP for your home address). International visa students are not eligible; work or study permit holders may apply.",
+    "es": "Abierto a estudiantes de 8.º grado que pasan a 9.º en 2027-28 y cumplen los criterios del programa y viven dentro de su zona (postula al RLCP que corresponde a tu domicilio). Los estudiantes con visa internacional no son elegibles; quienes tienen permiso de trabajo o estudio pueden postular.",
+    "fr": "Ouvert aux élèves de 8e année qui entrent en 9e année en 2027-28, qui répondent aux critères du programme et habitent dans son secteur (postule au RLCP qui correspond à ton adresse). Les élèves étrangers sous visa ne sont pas admissibles; les titulaires d'un permis de travail ou d'études peuvent postuler."
+   },
+   "marks": {
+    "en": "Grade 7 final report card and an in-person assessment on Dec 12, 2026 (time set by the school). Grade 11 entry (second chance): Grade 9 final report plus completed Grade 10 math, Grade 11 University Math MCR3U and Grade 10 Academic French (FSF2D, FIF2D or FEF2D).",
+    "es": "Boletín final de 7.º grado y una evaluación presencial el 12 de diciembre de 2026 (hora fijada por la escuela). Ingreso en 11.º grado (segunda oportunidad): boletín final de 9.º grado más matemáticas de 10.º, Matemáticas Universitarias MCR3U de 11.º y Francés Académico de 10.º (FSF2D, FIF2D o FEF2D) completados.",
+    "fr": "Bulletin final de 7e année et évaluation en personne le 12 décembre 2026 (heure fixée par l'école). Admission en 11e année (deuxième chance) : bulletin final de 9e année, plus mathématiques de 10e, mathématiques universitaires MCR3U de 11e et français théorique de 10e (FSF2D, FIF2D ou FEF2D) réussis."
+   },
+   "fee": {
+    "en": "A non-refundable application fee plus an annual program fee (amounts not stated), paid through School Cash Online.",
+    "es": "Una tarifa de solicitud no reembolsable más una tarifa anual del programa (montos no indicados), pagadas por School Cash Online.",
+    "fr": "Des frais de demande non remboursables plus des frais annuels de programme (montants non indiqués), payés par School Cash Online."
+   },
+   "dates": {
+    "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); later rounds Feb 16, Feb 23 and Mar 8, 2027; waitlist offers from Mar 30, 2027.",
+    "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); rondas siguientes el 16 y 23 de febrero y el 8 de marzo de 2027; ofertas de lista de espera desde el 30 de marzo de 2027.",
+    "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); autres rondes les 16 et 23 février et le 8 mars 2027; offres de la liste d'attente dès le 30 mars 2027."
+   },
+   "know": [
+    {
+     "en": "After the review of the Grade 7 final report (and any written response or audition), applicants who meet the criteria go into a central random selection run by the board, not the school; remaining students go on that school's waitlist.",
+     "es": "Tras revisar el boletín final de 7.º grado (y la respuesta escrita o audición, si corresponde), los postulantes que cumplen los criterios entran a un sorteo central del consejo escolar, no de la escuela; los demás pasan a la lista de espera de esa escuela.",
+     "fr": "Après l'examen du bulletin final de 7e année (et de la réponse écrite ou de l'audition, le cas échéant), les candidats qui répondent aux critères entrent dans un tirage au sort central fait par le conseil, non par l'école; les autres vont sur la liste d'attente de cette école."
+    },
+    {
+     "en": "Students who self-identify as African, Black, Afro-Caribbean, First Nations, Inuit or Métis and meet the criteria are accepted without the random selection.",
+     "es": "Los estudiantes que se autoidentifican como africanos, negros, afrocaribeños, de las Primeras Naciones, inuit o métis y cumplen los criterios son aceptados sin pasar por el sorteo.",
+     "fr": "Les élèves qui s'auto-identifient comme africains, noirs, afro-caribéens, des Premières Nations, inuits ou métis et qui répondent aux critères sont admis sans passer par le tirage au sort."
+    },
+    {
+     "en": "Students in Peel are offered spots first; out-of-region applicants only if spaces remain. Busing for RLCP students in Grades 6-10 is planned for 2026-27, subject to Ministry funding.",
+     "es": "Los estudiantes de Peel reciben ofertas primero; los de fuera de la región solo si quedan cupos. Se planea ofrecer transporte escolar a estudiantes de RLCP de 6.º a 10.º grado en 2026-27, sujeto al financiamiento del Ministerio.",
+     "fr": "Les élèves de Peel reçoivent les offres en premier; ceux de l'extérieur de la région seulement s'il reste des places. Le transport est prévu pour les élèves de RLCP de la 6e à la 10e année en 2026-27, sous réserve du financement du ministère."
+    }
+   ],
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-21",
+   "time": "18:30",
+   "format": "In person",
+   "title": "RLCP Info Night: International Baccalaureate (6:30-8:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "The board's Explore High Skills page lists a Justice, Community Safety and Emergency Services EHS at this school; the school's own navigation shows only Business EHS and Business SHSM."
+ ]
+}

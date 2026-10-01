@@ -1,0 +1,132 @@
+{
+ "id": "peel-turner-fenton",
+ "scrapedAt": "2026-10-01",
+ "site": "https://turnerfenton.peelschools.org/",
+ "sources": [
+  "https://turnerfenton.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/2041a3eb-086d-496a-adc9-6ca236f072c8/Turner-Fenton-SS.pdf?fingerprint=ppb20251217022232",
+  "https://turnerfenton.peelschools.org/ib",
+  "https://turnerfenton.peelschools.org/extended-french",
+  "https://turnerfenton.peelschools.org/hospitality-and-tourism",
+  "https://www.peelschools.org/transportation-shsm",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/specialist-high-skills-major"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Programme - RLCP",
+   "note": {
+    "en": "IB Diploma Programme accessed through the Middle Years Programme (MYP IB) at Turner Fenton, using the Ontario curriculum.",
+    "es": "Programa del Diploma IB al que se accede mediante el Middle Years Programme (MYP IB) en Turner Fenton, con el currículo de Ontario.",
+    "fr": "Programme du diplôme IB accessible par le Middle Years Programme (MYP IB) à Turner Fenton, avec le curriculum de l'Ontario."
+   },
+   "entry": "apply",
+   "url": "https://turnerfenton.peelschools.org/ib"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French: in high school, four credits in Extended French and three in other subjects taught in French, leading to a Certificate of Extended French Studies.",
+    "es": "Extended French: en secundaria, cuatro créditos en Extended French y tres en otras materias impartidas en francés, con Certificate of Extended French Studies.",
+    "fr": "Extended French : au secondaire, quatre crédits en Extended French et trois dans d'autres matières enseignées en français, menant à un Certificate of Extended French Studies."
+   },
+   "entry": "apply",
+   "url": "https://turnerfenton.peelschools.org/extended-french"
+  },
+  {
+   "tag": "shsm",
+   "name": "Hospitality and Tourism - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Hospitality and Tourism for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Hospitalidad y Turismo para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Accueil et tourisme pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://turnerfenton.peelschools.org/hospitality-and-tourism"
+  },
+  {
+   "tag": "shsm",
+   "name": "Transportation - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Transportation for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Transporte para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Transport pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://www.peelschools.org/transportation-shsm"
+  }
+ ],
+ "shsm": [
+  "Hospitality and Tourism",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/2041a3eb-086d-496a-adc9-6ca236f072c8/Turner-Fenton-SS.pdf?fingerprint=ppb20251217022232",
+ "admissions": [
+  {
+   "program": "International Baccalaureate (IB) Programme - RLCP",
+   "tag": "ib",
+   "elig": {
+    "en": "Open to Grade 8 students entering Grade 9 in 2027-28; PDSB Grade 8 students in the IB Middle Years Program may enter the IB Diploma pathway directly. Grade 11 entry requires Grade 10 math, MCR3U and Grade 10 Academic French (FSF2D, FIF2D or FEF2D).",
+    "es": "Abierto a estudiantes de 8.º grado que pasan a 9.º en 2027-28; los estudiantes de 8.º del PDSB en el IB Middle Years Program pueden entrar directamente. La entrada en 11.º requiere matemáticas de 10.º, MCR3U y francés académico de 10.º (FSF2D, FIF2D o FEF2D).",
+    "fr": "Ouvert aux élèves de 8e année qui entrent en 9e année en 2027-28; les élèves de 8e année du PDSB dans le IB Middle Years Program peuvent entrer directement. L'entrée en 11e année exige les mathématiques de 10e, MCR3U et le français théorique de 10e (FSF2D, FIF2D ou FEF2D)."
+   },
+   "marks": {
+    "en": "Grade 7 final report card plus an in-person assessment (Dec 12, 2026); Grade 11 entry uses Grade 9 final marks.",
+    "es": "Boletín final de 7.º grado más una evaluación presencial (12 de diciembre de 2026); la entrada en 11.º usa las notas finales de 9.º.",
+    "fr": "Bulletin final de 7e année plus une évaluation en personne (12 décembre 2026); l'entrée en 11e année utilise les notes finales de 9e."
+   },
+   "fee": {
+    "en": "A non-refundable application fee plus an annual program fee (amounts not stated).",
+    "es": "Una tarifa de solicitud no reembolsable más una tarifa anual del programa (montos no indicados).",
+    "fr": "Des frais de demande non remboursables plus des frais annuels de programme (montants non indiqués)."
+   },
+   "dates": {
+    "en": "Apply Nov 3, 2026 to Nov 24, 2026; assessment Dec 12, 2026; first-round offers Feb 2, 2027 (Grade 11 entry: Feb 1, 2027).",
+    "es": "Postula del 3 al 24 de noviembre de 2026; evaluación el 12 de diciembre de 2026; primera ronda de ofertas el 2 de febrero de 2027 (entrada en 11.º: 1 de febrero de 2027).",
+    "fr": "Postule du 3 au 24 novembre 2026; évaluation le 12 décembre 2026; première ronde d'offres le 2 février 2027 (entrée en 11e : 1er février 2027)."
+   },
+   "submit": [
+    {
+     "en": "Online application on the PDSB application website",
+     "es": "Solicitud en línea en el sitio de solicitudes del PDSB",
+     "fr": "Demande en ligne sur le site de demande du PDSB"
+    },
+    {
+     "en": "Proof of enrolment or completion of required courses at registration (Grade 11 entry)",
+     "es": "Comprobante de inscripción o finalización de los cursos requeridos al registrarte (entrada en 11.º)",
+     "fr": "Preuve d'inscription ou de réussite des cours requis à l'inscription (entrée en 11e)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Qualified applicants enter a central random selection; each school has its own waitlist.",
+     "es": "Los solicitantes que califican entran a un sorteo central; cada escuela tiene su lista de espera.",
+     "fr": "Les candidats admissibles entrent dans un tirage au sort central; chaque école a sa liste d'attente."
+    }
+   ],
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-21",
+   "time": "19:00",
+   "format": "In person",
+   "title": "RLCP Info Night: International Baccalaureate (7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Fees amounts for regional/pathway programs are not stated on the pages"
+ ]
+}

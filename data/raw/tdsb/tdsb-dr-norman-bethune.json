@@ -1,0 +1,45 @@
+{
+ "id": "tdsb-dr-norman-bethune",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/drnormanbethuneci",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4116",
+  "https://schoolweb.tdsb.on.ca/drnormanbethuneci",
+  "https://schoolweb.tdsb.on.ca/drnormanbethuneci/Guidance/Course-Selection-Information",
+  "https://schoolweb.tdsb.on.ca/Portals/drnormanbethuneci/docs/Guidance/2026-27%20Course%20Selection%20Chart.pdf",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business."
+   }
+  }
+ ],
+ "shsm": [
+  "Business"
+ ],
+ "calendarUrl": "https://schoolweb.tdsb.on.ca/drnormanbethuneci/Guidance/Course-Selection-Information",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-26",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open house / information night, 6:30-8:15 PM (local program: SHSM)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No program pages (SHSM details, co-op, arts) were readable on the school site beyond the board listing.",
+  "The 2026-27 course selection chart PDF produced some rows with partial titles; the extractor's quality gate was applied unchanged."
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "id": "tdsb-c-w-jefferys",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/cwjefferys/",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3441",
+  "https://schoolweb.tdsb.on.ca/cwjefferys/Programs",
+  "https://schoolweb.tdsb.on.ca/cwjefferys/Programs/ESTe2M-Program-",
+  "https://schoolweb.tdsb.on.ca/cwjefferys/Programs/Leadership",
+  "https://schoolweb.tdsb.on.ca/cwjefferys/Programs/LAWS-Program",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "ESTe2M (Enriched Science, Technology, Engineering, Equity and Mathematics)",
+   "note": {
+    "en": "Certificate program that integrates STEM with social justice: 10 courses over four years, with students grouped together for five of them, earning an ESTe2M certificate with the OSSD.",
+    "es": "Programa de certificado que integra STEM con justicia social: 10 cursos a lo largo de cuatro años, con estudiantes agrupados en cinco de ellos, y un certificado ESTe2M junto con el OSSD.",
+    "fr": "Programme de certificat qui intègre les STEM à la justice sociale : 10 cours sur quatre ans, les élèves étant regroupés pour cinq d'entre eux, avec un certificat ESTe2M en plus du DESO (OSSD)."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/cwjefferys/Programs/ESTe2M-Program-",
+   "entry": "apply"
+  },
+  {
+   "tag": "other",
+   "name": "LAWS (Law in Action Within Schools)",
+   "note": {
+    "en": "Enrichment in Canadian law with mock trials and model UN competitions, mentoring by a partner law firm; open to all interested students.",
+    "es": "Enriquecimiento en derecho canadiense con juicios simulados y competencias de modelo de la ONU, con mentoría de un bufete asociado; abierto a todos los interesados.",
+    "fr": "Enrichissement en droit canadien avec procès simulés et compétitions de simulation de l'ONU, mentorat par un cabinet d'avocats partenaire; ouvert à tous les élèves intéressés."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/cwjefferys/Programs/LAWS-Program",
+   "entry": "school"
+  },
+  {
+   "tag": "other",
+   "name": "Leadership program",
+   "note": {
+    "en": "Student leadership starting with a three-day Grade 9 camp, then the Leader-in-Training credit in senior grades and outdoor adventure learning options.",
+    "es": "Liderazgo estudiantil que empieza con un campamento de tres días en 9.º grado, seguido del crédito Leader-in-Training en los grados superiores y opciones de aprendizaje de aventura al aire libre.",
+    "fr": "Leadership étudiant qui commence par un camp de trois jours en 9e année, suivi du crédit Leader-in-Training aux niveaux supérieurs et d'options d'apprentissage en plein air."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/cwjefferys/Programs/Leadership",
+   "entry": "school"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business."
+   }
+  }
+ ],
+ "shsm": [
+  "Business"
+ ],
+ "admissions": [
+  {
+   "program": "ESTe2M",
+   "tag": "stem",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "elig": {
+    "en": "Open for Grade 9 and Grade 10 entry (Grade 10 only if space is available); No more than 2 of these report-card marks may be below the Provincial standard (70%): Language, Math, Science & Technology, Geography, History, French, Arts, Physical and Health Education.",
+    "es": "Abierto para ingreso a 9.º y 10.º grado (10.º solo si hay cupo); No más de 2 de estas calificaciones del boletín pueden estar por debajo del estándar provincial (70 %): Language, Math, Science & Technology, Geography, History, French, Arts y Physical and Health Education.",
+    "fr": "Ouvert à l'entrée en 9e et en 10e année (10e seulement s'il reste des places); Au plus 2 de ces notes du bulletin peuvent être inférieures à la norme provinciale (70 %) : Language, Math, Science & Technology, Geography, History, French, Arts et Physical and Health Education."
+   },
+   "marks": {
+    "en": "Marks in the applicant score: average of Language, Mathematics and Science & Technology.",
+    "es": "Calificaciones que cuentan en la puntuación: promedio de Language, Mathematics y Science & Technology.",
+    "fr": "Notes comptées dans le score : moyenne de Language, Mathematics et Science & Technology."
+   },
+   "dates": {
+    "en": "Online application open Nov. 9-27, 2026; in-person assessments Dec. 7-17, 2026; acceptances and waitlist status emailed Feb. 10, 2027; offers expire Feb. 16, 2027 at 4 p.m.; further offers Feb. 17 and 24, 2027.",
+    "es": "Solicitud en línea del 9 al 27 de noviembre de 2026; evaluaciones presenciales del 7 al 17 de diciembre de 2026; aceptaciones y lista de espera por correo el 10 de febrero de 2027; las ofertas vencen el 16 de febrero de 2027 a las 4 p. m.; más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "Demande en ligne du 9 au 27 novembre 2026; évaluations en personne du 7 au 17 décembre 2026; acceptations et statut de liste d'attente envoyés par courriel le 10 février 2027; les offres expirent le 16 février 2027 à 16 h; autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online TDSB Specialized Programs application (Nov. 9-27, 2026)",
+     "es": "Solicitud en línea de Programas Especializados del TDSB (9 a 27 de noviembre de 2026)",
+     "fr": "Demande en ligne aux programmes spécialisés du TDSB (du 9 au 27 novembre 2026)"
+    },
+    {
+     "en": "Attend the in-person 60-minute multiple-choice assessment on Mon. Dec. 7, 2026 (Mon. Dec. 14 if weather closes schools)",
+     "es": "Presentarte a la evaluación presencial de opción múltiple de 60 minutos el lunes 7 de diciembre de 2026 (el lunes 14 si el clima cierra las escuelas)",
+     "fr": "Te présenter à l'évaluation en personne à choix multiples de 60 minutes le lundi 7 décembre 2026 (le lundi 14 en cas de fermeture pour météo)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored on the previous year's report card (30%) and a demonstration of knowledge and skills (70%); meeting the mark benchmark does not guarantee a seat.",
+     "es": "Los solicitantes se califican según el boletín del año anterior (30 %) y una demostración de conocimientos y habilidades (70 %); cumplir el requisito de calificaciones no garantiza un cupo.",
+     "fr": "Les candidats sont évalués selon le bulletin de l'année précédente (30 %) et une démonstration de connaissances et d'habiletés (70 %); respecter le seuil de notes ne garantit pas une place."
+    },
+    {
+     "en": "Applicants choose one type of Specialized Program: one primary choice and, optionally, an alternate of the SAME type; transportation is the applicant's responsibility.",
+     "es": "Los solicitantes eligen un solo tipo de programa especializado: una opción principal y, si quieren, una alternativa del MISMO tipo; el transporte corre por cuenta del solicitante.",
+     "fr": "Les candidats choisissent un seul type de programme spécialisé : un premier choix et, au besoin, un choix de remplacement du MÊME type; le transport est à la charge du candidat."
+    },
+    {
+     "en": "Share of 2026 primary-choice applicants offered an entry-grade seat: 80% to 100%.",
+     "es": "Porcentaje de solicitantes de primera opción de 2026 que recibieron un cupo en el grado de entrada: 80% to 100%.",
+     "fr": "Part des candidats de premier choix de 2026 ayant reçu une place en année d'entrée : 80% to 100%."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-10",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open house / information night, 6:00-8:00 PM (ESTe2M math and science program)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No public course calendar found; the school uses TDSB myBlueprint for course selection.",
+  "The school's pages do not describe SHSM beyond the board listing."
+ ]
+}

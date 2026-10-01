@@ -1,0 +1,75 @@
+{
+ "id": "lma",
+ "scrapedAt": "2026-10-01",
+ "site": "https://lincolnmalexander.peelschools.org/",
+ "sources": [
+  "https://lincolnmalexander.peelschools.org/",
+  "https://lincolnmalexander.peelschools.org/hospitality-and-tourism",
+  "https://lincolnmalexander.peelschools.org/transportation-shsm",
+  "https://lincolnmalexander.peelschools.org/transportation-ehs",
+  "https://lincolnmalexander.peelschools.org/co-operative-education",
+  "https://lincolnmalexander.peelschools.org/dual-credit",
+  "https://lincolnmalexander.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/bc8f0cca-3e73-4beb-b92f-824dcb2342d9/Lincoln-M-Alexander-SS.pdf?fingerprint=ppb20251217025709"
+ ],
+ "programs": [],
+ "shsm": [
+  "Hospitality and Tourism",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/bc8f0cca-3e73-4beb-b92f-824dcb2342d9/Lincoln-M-Alexander-SS.pdf?fingerprint=ppb20251217025709",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-22",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:30",
+   "format": "In person",
+   "title": "EHS Info Night: Transportation (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:30",
+   "format": "In person",
+   "title": "SHSM Info Night: Transportation, Hospitality & Tourism (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:30",
+   "format": "In person",
+   "title": "ESL & ELD Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:30",
+   "format": "In person",
+   "title": "French Immersion Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site.",
+  "The school's 'Vocational' page is empty."
+ ]
+}

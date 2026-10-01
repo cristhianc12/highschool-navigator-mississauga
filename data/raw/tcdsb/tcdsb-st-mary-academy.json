@@ -1,0 +1,85 @@
+{
+ "id": "tcdsb-st-mary-academy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stmarycatholicacademy",
+ "sources": [
+  "https://www.tcdsb.org/o/stmarycatholicacademy/page/academics/",
+  "https://www.tcdsb.org/o/stmarycatholicacademy/page/ib-program/",
+  "https://www.tcdsb.org/o/stmarycatholicacademy/page/shsm/",
+  "https://www.tcdsb.org/o/stmarycatholicacademy/page/open-house/",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Program",
+   "note": {
+    "en": "Authorized IB World School offering the IB Diploma Program.",
+    "es": "Escuela autorizada IB World School que ofrece el IB Diploma Program.",
+    "fr": "École du monde IB autorisée qui offre le programme du diplôme IB."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stmarycatholicacademy/page/ib-program/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM) in Transportation",
+   "note": {
+    "en": "SHSM in transportation technology: ten Grade 11-12 credits, industry certifications, experiential learning and reach-ahead experiences, with a red seal on the diploma.",
+    "es": "SHSM en tecnología del transporte: diez créditos de 11.º y 12.º grado, certificaciones de la industria, aprendizaje experiencial y experiencias de adelanto, con sello rojo en el diploma.",
+    "fr": "SHSM en technologie des transports : dix crédits de 11e et 12e année, certifications de l'industrie, apprentissage expérientiel et expériences d'anticipation, avec un sceau rouge sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stmarycatholicacademy/page/shsm/"
+  }
+ ],
+ "shsm": [
+  "Transportation"
+ ],
+ "other": [
+  "STARS (Student Training to Acquire Real Life Skills Program)"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "admissions": [
+  {
+   "program": "International Baccalaureate (IB) Diploma Program",
+   "tag": "ib",
+   "elig": null,
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": null,
+   "know": [
+    {
+     "en": "The TCDSB says IB applications are handled directly through the school; contact the school's IB coordinator for criteria and deadlines.",
+     "es": "El TCDSB indica que las solicitudes al IB se gestionan directamente con la escuela; contacta al coordinador de IB de la escuela para conocer criterios y fechas límite.",
+     "fr": "Le TCDSB indique que les demandes pour l'IB sont traitées directement par l'école; communique avec la coordination IB de l'école pour connaître les critères et les dates limites."
+    }
+   ],
+   "url": "https://www.tcdsb.org/page/secondary-school-registration/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (All Programs)",
+   "url": "https://www.tcdsb.org/o/stmarycatholicacademy/page/open-house/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-14",
+   "time": "18:00",
+   "format": "In person",
+   "title": "International Baccalaureate (IB) Program Open House",
+   "url": "https://www.tcdsb.org/o/stmarycatholicacademy/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No IB admission criteria, marks or deadlines on the school's pages",
+  "STARS is named only in the TCDSB chart (no description found)"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ycdsb-st-luke-learning-centre",
+  "scrapedAt": "2026-10-01",
+  "site": "https://stluke.ycdsb.ca/",
+  "sources": [
+    "https://www.ycdsb.ca/programs-services/secondary/secondary-school-directory/stluke/",
+    "https://stluke.ycdsb.ca/our-school/",
+    "https://stluke.ycdsb.ca/programs/",
+    "https://www.ycdsb.ca/admissions/secondary-registration/"
+  ],
+  "programs": [
+    {
+      "tag": "alt",
+      "name": "Alternative Education Program",
+      "note": {
+        "en": "Alternative program for referred secondary students with individualized, student-centred learning, smaller classes and tailored course pathway plans toward graduation requirements.",
+        "es": "Programa alternativo para estudiantes de secundaria derivados, con aprendizaje individualizado centrado en el estudiante, clases pequeñas y planes de cursos a la medida para cumplir los requisitos de graduación.",
+        "fr": "Programme alternatif pour des élèves du secondaire aiguillés vers le centre, avec un apprentissage individualisé centré sur l'élève, de petites classes et des parcours de cours adaptés aux exigences d'obtention du diplôme."
+      },
+      "entry": "school",
+      "url": "https://stluke.ycdsb.ca/our-school/"
+    }
+  ],
+  "admissions": [],
+  "sessions": [],
+  "missing": [
+    "Referral and admission steps for the Alternative Education Program not found beyond 'students who are referred'",
+    "No course calendar, SHSM, co-op or information sessions published",
+    "2026 open house details: the board 2026 Open House page says information will be posted soon (as of 2026-10-01)"
+  ]
+}

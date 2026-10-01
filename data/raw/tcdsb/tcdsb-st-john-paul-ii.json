@@ -1,0 +1,91 @@
+{
+ "id": "tcdsb-st-john-paul-ii",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stjohnpaulii",
+ "sources": [
+  "https://www.tcdsb.org/o/stjohnpaulii/page/academics/",
+  "https://www.tcdsb.org/o/stjohnpaulii/page/ib-programme/",
+  "https://www.tcdsb.org/o/stjohnpaulii/page/shsm/",
+  "https://www.tcdsb.org/o/stjohnpaulii/page/open-house/",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Programme",
+   "note": {
+    "en": "IB Diploma Programme offered at the school; Grade 8 families can learn about it at a dedicated IB open house.",
+    "es": "El IB Diploma Programme se ofrece en la escuela; las familias de 8.º grado pueden informarse en una jornada abierta dedicada al IB.",
+    "fr": "Le programme du diplôme IB est offert à l'école; les familles d'élèves de 8e année peuvent s'informer lors de portes ouvertes consacrées à l'IB."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stjohnpaulii/page/ib-programme/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Arts and Culture, Business, Health and Wellness, Hospitality and Tourism, Information and Communications Technology (ICT), Sports: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Arts and Culture, Business, Health and Wellness, Hospitality and Tourism, Information and Communications Technology (ICT), Sports: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Arts and Culture, Business, Health and Wellness, Hospitality and Tourism, Information and Communications Technology (ICT), Sports : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stjohnpaulii/page/shsm/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness",
+  "Hospitality and Tourism",
+  "Information and Communications Technology (ICT)",
+  "Sports"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "admissions": [
+  {
+   "program": "International Baccalaureate (IB) Diploma Programme",
+   "tag": "ib",
+   "elig": null,
+   "marks": null,
+   "fee": null,
+   "dates": {
+    "en": "The school points to the TCDSB registration page for dates: online application opens September 25, 2026; specialty program applications close October 30, 2026 (11:59 p.m.); specialty offers go out November 27 and December 4, 2026.",
+    "es": "La escuela remite a la página de inscripción del TCDSB para las fechas: la solicitud en línea abre el 25 de septiembre de 2026; las solicitudes a programas especializados cierran el 30 de octubre de 2026 (23:59); las ofertas salen el 27 de noviembre y el 4 de diciembre de 2026.",
+    "fr": "L'école renvoie à la page d'inscription du TCDSB pour les dates : la demande en ligne ouvre le 25 septembre 2026; les demandes aux programmes spécialisés ferment le 30 octobre 2026 (23 h 59); les offres sont envoyées les 27 novembre et 4 décembre 2026."
+   },
+   "submit": null,
+   "know": [
+    {
+     "en": "The TCDSB says IB applications are handled directly through the school; contact the school's IB coordinator for criteria and deadlines.",
+     "es": "El TCDSB indica que las solicitudes al IB se gestionan directamente con la escuela; contacta al coordinador de IB de la escuela para conocer criterios y fechas límite.",
+     "fr": "Le TCDSB indique que les demandes pour l'IB sont traitées directement par l'école; communique avec la coordination IB de l'école pour connaître les critères et les dates limites."
+    }
+   ],
+   "url": "https://www.tcdsb.org/page/secondary-school-registration/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-05",
+   "time": "18:00",
+   "format": "In person",
+   "title": "International Baccalaureate (IB) Program Open House",
+   "url": "https://www.tcdsb.org/o/stjohnpaulii/page/open-house/"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-21",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (General)",
+   "url": "https://www.tcdsb.org/o/stjohnpaulii/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No IB admission criteria or marks stated on the school's pages; the school's IB website (ibstjohnpaulii.com) was not read",
+  "Sector list is from the TCDSB summary chart (2027-28); the school's SHSM page lists the sectors only as images/links"
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "id": "hcdsb-holy-trinity",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/holytrinity/",
+ "sources": [
+  "https://secondary.hcdsb.org/holytrinity/",
+  "https://secondary.hcdsb.org/holytrinity/advanced-placement/",
+  "https://secondary.hcdsb.org/holytrinity/students/shsm/",
+  "https://secondary.hcdsb.org/holytrinity/calendar/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional. Grade 9 AP Prep courses: English, Mathematics, Science, Geography, French.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional. Cursos AP Prep de 9.º grado: Inglés, Matemáticas, Ciencias, Geografía, Francés.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif. Cours AP Prep de 9e année : anglais, mathématiques, sciences, géographie, français."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/holytrinity/advanced-placement/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of sector courses, certifications, experiential learning and a co-operative education course.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y un curso de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et un cours d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/holytrinity/students/shsm/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French from Grade 9: French as a subject plus at least one other subject taught in French, for students with at least 1260 hours of French (seven credits).",
+    "es": "Francés extendido desde 9.º grado: francés como materia y al menos otra materia en francés, para estudiantes con al menos 1260 horas de francés (siete créditos).",
+    "fr": "Français approfondi dès la 9e année : le français comme matière et au moins une autre matière enseignée en français, pour les élèves ayant au moins 1 260 heures de français (sept crédits)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Arts and Culture",
+  "Mechatronics",
+  "Construction Technology",
+  "Tech Studies"
+ ],
+ "admissions": [
+  {
+   "program": "Advanced Placement (AP) Prep",
+   "tag": "ap",
+   "elig": {
+    "en": "Students who are high achievers (level 4) in the core subjects can apply; administration approval is required to enter the program.",
+    "es": "Pueden postularse estudiantes con alto rendimiento (nivel 4) en las materias básicas; se requiere la aprobación de la administración.",
+    "fr": "Les élèves très performants (niveau 4) dans les matières de base peuvent postuler; l'approbation de la direction est requise."
+   },
+   "know": [
+    {
+     "en": "Applications are available at publicized information nights and in the Student Services office; questions to HTAP@hcdsb.org.",
+     "es": "Las solicitudes están disponibles en las noches informativas publicadas y en la oficina de Student Services; preguntas a HTAP@hcdsb.org.",
+     "fr": "Les demandes sont offertes lors des soirées d'information annoncées et au bureau des Services aux élèves; questions à HTAP@hcdsb.org."
+    }
+   ],
+   "url": "https://secondary.hcdsb.org/holytrinity/advanced-placement/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "AP Program information session (Grades 7-8)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening (Holy Trinity Family of Schools)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages.",
+  "The only AP information session listed is for 2025; no 2026-27 session or application dates found."
+ ]
+}

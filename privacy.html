@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Privacy policy | Highschool Navigator</title>
-<meta name="description" content="What data Highschool Navigator Mississauga uses and what it never stores.">
-<link rel="canonical" href="https://hs-mississauga-navigator.vercel.app/privacy">
+<meta name="description" content="What data Highschool Navigator GTA uses and what it never stores.">
+<link rel="canonical" href="https://highschool-gta-navigator.vercel.app/privacy">
 <meta name="theme-color" content="#F6F4FF">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/icon-192.png">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="preload" href="assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/styles.css?v=8">
+<link rel="stylesheet" href="css/styles.css?v=10">
 <style>
 .priv{max-width:760px;padding-block:28px 40px}
 .priv h1{font-size:clamp(2rem,6vw,3rem);margin-bottom:6px}
@@ -23,7 +23,7 @@
 .priv .topbar-in .btn{margin-right:auto}
 </style>
 <script>
-try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); var c = localStorage.getItem("contrast"); if (c ? c === "high" : matchMedia("(prefers-contrast: more)").matches) document.documentElement.setAttribute("data-contrast", "high"); } catch (e) {}
 </script>
 </head>
 <body>
@@ -36,6 +36,7 @@ try { var t = localStorage.getItem("theme"); if (t) document.documentElement.set
       <button type="button" data-lang="fr" aria-pressed="false">FR</button>
     </div>
     <button type="button" class="theme" id="theme-btn" aria-label="Theme">◐</button>
+    <button type="button" class="theme" id="contrast-btn" aria-pressed="false" aria-label="High contrast" title="High contrast"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
   </div>
 </div>
 <main class="wrap priv" id="main"><div id="app"><noscript><p class="notice">JavaScript required. / Se requiere JavaScript.</p></noscript></div></main>

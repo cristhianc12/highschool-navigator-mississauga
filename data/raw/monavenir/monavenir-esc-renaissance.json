@@ -1,0 +1,79 @@
+{
+ "id": "monavenir-esc-renaissance",
+ "scrapedAt": "2026-10-01",
+ "site": "https://esr.cscmonavenir.ca/",
+ "sources": [
+  "https://esr.cscmonavenir.ca/",
+  "https://esr.cscmonavenir.ca/programmes-ib/",
+  "https://esr.cscmonavenir.ca/programmes-ib/criteres-dadmission/",
+  "https://esr.cscmonavenir.ca/portail-parent-eleve/programme-mhs-majeure-haute-specialisation/",
+  "https://cscmonavenir.ca/ecole/ecole-secondaire-catholique-renaissance-aurora/",
+  "https://cscmonavenir.ca/programmes-specialises/",
+  "https://cscmonavenir.ca/inscription-secondaire/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "IB Diploma Programme (Programme du diplôme de l'IB)",
+   "note": {
+    "en": "IB Diploma Programme offered to Grade 11 and 12 students.",
+    "es": "Programa del Diploma del IB para estudiantes de 11.º y 12.º grado.",
+    "fr": "Programme du diplôme de l'IB offert aux élèves de 11e et 12e année."
+   },
+   "entry": "apply",
+   "url": "https://esr.cscmonavenir.ca/programmes-ib/"
+  },
+  {
+   "tag": "shsm",
+   "name": "MHS Santé/Bien-être et Affaires",
+   "note": {
+    "en": "Specialist High Skills Major in Health and Wellness or Business: 4 specialization credits, 2 co-op credits, 3 contextualized courses and at least 7 certifications.",
+    "es": "Majeure Haute Spécialisation en Salud y bienestar o en Negocios: 4 créditos de especialización, 2 de cooperativa, 3 cursos contextualizados y al menos 7 certificaciones.",
+    "fr": "Majeure Haute Spécialisation en santé et bien-être ou en affaires : 4 crédits de spécialisation, 2 crédits COOP, 3 cours contextualisés et au moins 7 certifications."
+   },
+   "entry": null,
+   "url": "https://esr.cscmonavenir.ca/portail-parent-eleve/programme-mhs-majeure-haute-specialisation/"
+  }
+ ],
+ "shsm": [
+  "Santé et bien-être",
+  "Affaires"
+ ],
+ "admissions": [
+  {
+   "program": "IB Diploma Programme",
+   "tag": "ib",
+   "elig": {
+    "en": "Age 16 to 19; enrolled at the university-prep (D) level in English, French, history, mathematics and science; all 16 credits of Grades 9-10; passed the provincial literacy test.",
+    "es": "16 a 19 años; matriculado en nivel preuniversitario (D) en inglés, francés, historia, matemáticas y ciencias; los 16 créditos de 9.º y 10.º; haber aprobado la prueba provincial de competencia lingüística.",
+    "fr": "16 à 19 ans; inscrit au niveau théorique (D) en English, français, histoire, mathématiques et sciences; avoir les 16 crédits de 9e et 10e année; avoir réussi le Test provincial de compétences linguistiques."
+   },
+   "marks": {
+    "en": "An average of 70% or more in Grade 10 courses is suggested.",
+    "es": "Se sugiere un promedio de 70 % o más en los cursos de 10.º.",
+    "fr": "Une moyenne de 70 % et plus dans les cours de 10e année est suggérée."
+   },
+   "fee": {
+    "en": "Students pay exam registration fees; contact the IB coordinator if this causes hardship.",
+    "es": "Debes pagar los derechos de inscripción a los exámenes; si hay dificultades económicas, habla con la coordinadora del IB.",
+    "fr": "Tu dois payer les frais d'inscription aux examens; en cas de difficultés financières, communique avec la coordonnatrice IB."
+   },
+   "submit": [
+    {
+     "en": "Fill in the course-choice form on MyBlueprint by the date set by guidance.",
+     "es": "Completa el formulario de elección de cursos en MyBlueprint antes de la fecha fijada por orientación.",
+     "fr": "Remplis le formulaire de choix de cours sur MyBlueprint selon la date établie par l'orientation."
+    }
+   ],
+   "url": "https://esr.cscmonavenir.ca/programmes-ib/criteres-dadmission/"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "Off-sector admissions are no longer accepted at this school (school page).",
+  "Course list: the school's course page is only a stub (links to one project page); IB course page not extracted as a full course list.",
+  "Course lists: no school course calendar or course catalogue page with a readable list was found (board 'guide de cheminement' page lists schools without links; school pages hold old or PDF-only forms), so no courses were extracted.",
+  "No 2026-27 information-night dates: the board open-house page offers personalised appointments only and states no dates.",
+  "Hosts on the older csdccs.edu.on.ca domain show a Cloudflare challenge and were not used; all facts come from cscmonavenir.ca pages."
+ ]
+}

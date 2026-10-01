@@ -1,0 +1,198 @@
+{
+ "id": "yrdsb-huron-heights",
+ "scrapedAt": "2026-10-01",
+ "site": "https://huronheights-ss.yrdsb.ca/",
+ "sources": [
+  "https://app.myblueprint.ca/public/courses/yrdsb/hheights1",
+  "https://huronheights-ss.yrdsb.ca/",
+  "https://huronheights-ss.yrdsb.ca/arts-huron",
+  "https://huronheights-ss.yrdsb.ca/arts-huron/Application",
+  "https://huronheights-ss.yrdsb.ca/course-selection",
+  "https://huronheights-ss.yrdsb.ca/french-immersion",
+  "https://huronheights-ss.yrdsb.ca/pathways-programs/Exploring-Opportunities-Regional-Program",
+  "https://huronheights-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/personalized-alternative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-registration",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Arts Huron (Specialized Arts Program)",
+   "note": {
+    "en": "Specialized arts program with admission by application at Grade 9; students earn an Arts Huron certificate by completing 8 Arts Huron credits in dance, music (guitar, instrumental, vocal), drama or visual arts.",
+    "es": "Programa especializado de artes con ingreso por solicitud en 9.º grado; los estudiantes obtienen el certificado Arts Huron al completar 8 créditos de Arts Huron en danza, música (guitarra, instrumental, vocal), teatro o artes visuales.",
+    "fr": "Programme spécialisé en arts avec admission sur demande en 9e année; les élèves obtiennent le certificat Arts Huron en réussissant 8 crédits Arts Huron en danse, musique (guitare, instrumental, vocal), art dramatique ou arts visuels."
+   },
+   "entry": "audition",
+   "url": "https://huronheights-ss.yrdsb.ca/arts-huron"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "Secondary French Immersion for students continuing from elementary French Immersion; earning at least 10 French Immersion credits leads to the French Immersion Certificate.",
+    "es": "Inmersión en francés de secundaria para quienes continúan desde la inmersión de primaria; reunir al menos 10 créditos de inmersión da derecho al certificado de inmersión en francés.",
+    "fr": "Immersion française au secondaire pour les élèves qui poursuivent depuis l'immersion à l'élémentaire; au moins 10 crédits d'immersion mènent au certificat d'immersion française."
+   },
+   "entry": "boundary",
+   "url": "https://huronheights-ss.yrdsb.ca/french-immersion"
+  },
+  {
+   "tag": "other",
+   "name": "Quadmester Program",
+   "note": {
+    "en": "Quadmester courses are nine-week, two-period courses that run four times a year; courses and class sizes vary by school.",
+    "es": "Los cursos Quadmester son cursos de nueve semanas y dos períodos que se ofrecen cuatro veces al año; los cursos y el tamaño de las clases varían según la escuela.",
+    "fr": "Les cours Quadmester sont des cours de neuf semaines à deux périodes offerts quatre fois par année; les cours et la taille des classes varient selon l'école."
+   },
+   "entry": "school",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/personalized-alternative-education"
+  },
+  {
+   "tag": "trades",
+   "name": "Exploring Opportunities Program (EOP)",
+   "note": {
+    "en": "Regional Exploring Opportunities Program combining in-school learning with hands-on work-based experiences; sector focus here: Construction, Manufacturing and Transportation.",
+    "es": "Programa regional Exploring Opportunities que combina aprendizaje en la escuela con experiencias prácticas en el trabajo; enfoque sectorial aquí: construcción, manufactura y transporte.",
+    "fr": "Programme régional Exploring Opportunities qui allie apprentissage à l'école et expériences pratiques en milieu de travail; secteur visé ici : construction, fabrication et transport."
+   },
+   "entry": "apply",
+   "url": "https://huronheights-ss.yrdsb.ca/pathways-programs/Exploring-Opportunities-Regional-Program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 courses in a career sector, co-op, certifications and a Red Seal on the OSSD; sectors here: Arts and Culture, Business, Construction, Health and Wellness, Hospitality and Tourism, Manufacturing, Non-profit, Transportation.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos de un sector profesional, cooperativa, certificaciones y un sello rojo en el OSSD; sectores aquí: artes y cultura, negocios, construcción, salud y bienestar, hostelería y turismo, manufactura, sin fines de lucro, transporte.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours dans un secteur professionnel, de l'éducation coopérative, des certifications et un sceau rouge sur le DESO; secteurs offerts ici : arts et culture, affaires, construction, santé et bien-être, tourisme et accueil, fabrication, organismes sans but lucratif, transport."
+   },
+   "entry": "apply",
+   "url": "https://huronheights-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA) support",
+   "note": {
+    "en": "Timetable support for students who compete at the provincial, national or international level in eligible sports, including up to two Day School Online courses; students apply each year with an application form and a sport verification letter.",
+    "es": "Apoyo de horario para estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles, con hasta dos cursos Day School Online; se solicita cada año con un formulario y una carta de verificación deportiva.",
+    "fr": "Soutien à l'horaire pour les élèves qui concourent aux niveaux provincial, national ou international dans des sports admissibles, y compris jusqu'à deux cours Day School Online; la demande se refait chaque année avec un formulaire et une lettre de vérification sportive."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Construction",
+  "Health and Wellness",
+  "Hospitality and Tourism",
+  "Manufacturing",
+  "Non-profit",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP",
+  "High Performance Athlete (HPA) support"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/yrdsb/hheights1",
+ "admissions": [
+  {
+   "program": "Arts Huron (Grade 9 entry)",
+   "tag": "arts",
+   "url": "https://huronheights-ss.yrdsb.ca/arts-huron/Application",
+   "elig": {
+    "en": "Live in the Program Area Boundary shown on the YRDSB School Locator and be currently in Grade 8 or Grade 9.",
+    "es": "Vivir en el límite del área del programa indicado en el localizador de escuelas del YRDSB y estar actualmente en 8.º o 9.º grado.",
+    "fr": "Habiter dans le secteur du programme indiqué dans le localisateur d'écoles du YRDSB et être actuellement en 8e ou 9e année."
+   },
+   "submit": [
+    {
+     "en": "Complete the online registration through Edsby.",
+     "es": "Completa la inscripción en línea mediante Edsby.",
+     "fr": "Remplis l'inscription en ligne dans Edsby."
+    },
+    {
+     "en": "Attend the discipline workshop and a 10-minute interview (dance, drama); the music, visual arts and other disciplines follow their own audition or portfolio steps on the page.",
+     "es": "Asiste al taller de la disciplina y a una entrevista de 10 minutos (danza, teatro); música, artes visuales y otras disciplinas siguen sus propios pasos de audición o portafolio en la página.",
+     "fr": "Participe à l'atelier de la discipline et à une entrevue de 10 minutes (danse, art dramatique); la musique, les arts visuels et les autres disciplines suivent leurs propres étapes d'audition ou de portfolio décrites sur la page."
+    }
+   ],
+   "dates": {
+    "en": "Registration opens in November for the following school year; the school holds an Arts Huron Information Night on Nov. 5, 2026.",
+    "es": "La inscripción abre en noviembre para el año escolar siguiente; la escuela organiza una noche informativa de Arts Huron el 5 de noviembre de 2026.",
+    "fr": "L'inscription ouvre en novembre pour l'année scolaire suivante; l'école tient une soirée d'information Arts Huron le 5 novembre 2026."
+   },
+   "know": [
+    {
+     "en": "Students may apply to two disciplines but accept only one offer; limited space means meeting the success criteria does not guarantee admission.",
+     "es": "Puedes solicitar dos disciplinas pero aceptar solo una oferta; al haber cupo limitado, cumplir los criterios de éxito no garantiza la admisión.",
+     "fr": "Tu peux faire une demande dans deux disciplines mais n'accepter qu'une offre; les places étant limitées, répondre aux critères de réussite ne garantit pas l'admission."
+    },
+    {
+     "en": "Students must join the program by Grade 10 to earn the certificate (7 courses in the major plus 1 arts course outside it).",
+     "es": "Para obtener el certificado hay que ingresar al programa a más tardar en 10.º grado (7 cursos en la disciplina principal y 1 curso de artes fuera de ella).",
+     "fr": "Pour obtenir le certificat, il faut se joindre au programme au plus tard en 10e année (7 cours dans la discipline principale et 1 cours d'arts hors de celle-ci)."
+    }
+   ]
+  },
+  {
+   "program": "Exploring Opportunities Program (EOP)",
+   "tag": "trades",
+   "url": "https://huronheights-ss.yrdsb.ca/pathways-programs/Exploring-Opportunities-Regional-Program",
+   "elig": {
+    "en": "Students 16 or older who want hands-on learning and show aptitude and interest in one of the sectors offered.",
+    "es": "Estudiantes de 16 años o más que quieren aprender de forma práctica y muestran aptitud e interés en uno de los sectores ofrecidos.",
+    "fr": "Élèves de 16 ans ou plus qui veulent apprendre de façon pratique et qui montrent des aptitudes et de l'intérêt pour l'un des secteurs offerts."
+   },
+   "submit": [
+    {
+     "en": "Contact the EOP school to request the application information and forms.",
+     "es": "Comunícate con la escuela del EOP para pedir la información y los formularios de solicitud.",
+     "fr": "Communique avec l'école du EOP pour demander les renseignements et les formulaires de demande."
+    }
+   ],
+   "know": [
+    {
+     "en": "Application processes and timelines vary by school.",
+     "es": "Los procesos y plazos de solicitud varían según la escuela.",
+     "fr": "Les processus et les échéanciers de demande varient selon l'école."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "18:30",
+   "format": null,
+   "title": "Arts Huron Information Night",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  },
+  {
+   "kind": "school",
+   "date": "2026-11-12",
+   "time": "18:30",
+   "format": null,
+   "title": "Open House",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course directory is on myBlueprint (a JavaScript app with no readable text), and no course calendar PDF or HTML list was found on the school site",
+  "Co-op, Dual Credit, OYAP and HPA availability taken from the board pages and the Secondary Programs at a Glance table, not from a school-specific page",
+  "No fees stated for programs other than those in admissions",
+  "Arts Huron application page shows 2025-26 dates and fees, so none recorded for 2026-27"
+ ]
+}

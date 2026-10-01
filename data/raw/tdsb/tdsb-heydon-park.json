@@ -1,0 +1,29 @@
+{
+ "id": "tdsb-heydon-park",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/heydonpark",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5710",
+  "https://sites.google.com/tdsb.on.ca/heydonparkss/programs/spark-program"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "SPARK Program",
+   "entry": "school",
+   "url": "https://sites.google.com/tdsb.on.ca/heydonparkss/programs/spark-program",
+   "note": {
+    "en": "In-house certification program that documents workplace readiness and experiential learning (specialized tech courses, certifications, co-op placements) on a SPARK Passport.",
+    "es": "Programa interno de certificación que documenta la preparación laboral y el aprendizaje experiencial (cursos técnicos especializados, certificaciones, prácticas cooperativas) en un SPARK Passport.",
+    "fr": "Programme interne de certification qui documente la préparation au travail et l'apprentissage expérientiel (cours techniques spécialisés, certifications, stages coopératifs) dans un SPARK Passport."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "TDSB school page states that Heydon Park is not admitting any new Grade 9 or 10 students for 2026-2027 and is under review; check before relying on it for 2027.",
+  "Not in the TDSB open house table; no 2026-27 information night found (school site has a 2024 Grade 8 open house slideshow only).",
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login)."
+ ]
+}

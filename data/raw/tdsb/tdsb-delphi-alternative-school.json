@@ -1,0 +1,63 @@
+{
+ "id": "tdsb-delphi-alternative-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/delphi",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4109",
+  "https://schoolweb.tdsb.on.ca/delphi",
+  "https://schoolweb.tdsb.on.ca/delphi/About-Us",
+  "https://schoolweb.tdsb.on.ca/delphi/Application",
+  "https://schoolweb.tdsb.on.ca/delphi/FAQs",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Delphi Secondary Alternative School",
+   "note": {
+    "en": "Small alternative school (TDSB profile: Grades 10-12) with mostly academic-level courses, small classes, independent and group learning, and an integrated approach for self-motivated learners.",
+    "es": "Escuela alternativa pequeña (perfil del TDSB: 10.º a 12.º grado) con cursos mayormente de nivel académico, clases pequeñas, aprendizaje independiente y grupal, y un enfoque integrado para estudiantes automotivados.",
+    "fr": "Petite école alternative (profil du TDSB : 10e à 12e année) avec surtout des cours de niveau théorique, de petites classes, de l'apprentissage individuel et en groupe et une approche intégrée pour les élèves motivés."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/delphi/About-Us",
+   "entry": "apply"
+  }
+ ],
+ "admissions": [
+  {
+   "program": "Delphi Secondary Alternative School",
+   "tag": "alt",
+   "url": "https://schoolweb.tdsb.on.ca/delphi/Application",
+   "elig": {
+    "en": "Students are normally admitted at the start of each semester (September, February) and may be admitted at other times; the school suits self-motivated learners comfortable with an all-academic program.",
+    "es": "Los estudiantes se admiten normalmente al inicio de cada semestre (septiembre, febrero) y pueden ser admitidos en otros momentos; la escuela es adecuada para estudiantes automotivados que se sientan cómodos con un programa totalmente académico.",
+    "fr": "Les élèves sont normalement admis au début de chaque semestre (septembre, février) et peuvent l'être à d'autres moments; l'école convient aux élèves motivés à l'aise dans un programme entièrement théorique."
+   },
+   "submit": [
+    {
+     "en": "Grade 8 students: ask your school administration to contact Delphi (phone 416-396-6919) to determine next steps",
+     "es": "Estudiantes de 8.º grado: pide a la administración de tu escuela que se comunique con Delphi (teléfono 416-396-6919) para definir los siguientes pasos",
+     "fr": "Élèves de 8e année : demande à la direction de ton école de communiquer avec Delphi (téléphone 416-396-6919) pour établir les prochaines étapes"
+    },
+    {
+     "en": "Current Grade 9-12 students: ask your guidance counsellor to get Delphi's Student Information Form",
+     "es": "Estudiantes actuales de 9.º a 12.º: pide a tu orientador el Student Information Form de Delphi",
+     "fr": "Élèves actuels de la 9e à la 12e année : demande à ton conseiller en orientation le Student Information Form de Delphi"
+    }
+   ],
+   "know": [
+    {
+     "en": "The school offers an open house each year (the application page mentions March 6 at 6:00 PM, without a year) and a meet-and-greet; students under 18 attend with a parent/guardian.",
+     "es": "La escuela ofrece una jornada de puertas abiertas cada año (la página de solicitud menciona el 6 de marzo a las 6:00 p. m., sin año) y una reunión de presentación; los menores de 18 años asisten con un padre/madre/tutor.",
+     "fr": "L'école tient une journée portes ouvertes chaque année (la page de demande mentionne le 6 mars à 18 h, sans année) et une rencontre de présentation; les élèves de moins de 18 ans y vont avec un parent/tuteur."
+    }
+   ]
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "The 2026-27 open house date was not stated (the school site says it will be determined; the application page gives March 6 without a year, so it is not recorded as a session).",
+  "The Staff and Courses page has no course list; no course calendar found.",
+  "The TDSB page profile lists Grades 10-12 while the school's about page says Grades 9 to 12."
+ ]
+}

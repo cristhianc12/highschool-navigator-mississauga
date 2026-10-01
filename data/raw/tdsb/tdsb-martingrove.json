@@ -1,0 +1,60 @@
+{
+ "id": "tdsb-martingrove",
+ "scrapedAt": "2026-10-01",
+ "site": "https://sites.google.com/tdsb.on.ca/martingroveci/mci-home",
+ "sources": [
+  "https://sites.google.com/tdsb.on.ca/martingroveci/mci-home",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "Advanced Placement courses let students earn a Grade 12 university-preparation credit and do university-level work; offerings vary by school and year.",
+    "es": "Los cursos Advanced Placement permiten obtener un crédito de 12.º grado de preparación universitaria y realizar trabajo de nivel universitario; la oferta varía según la escuela y el año.",
+    "fr": "Les cours Advanced Placement permettent d'obtenir un crédit de 12e année de préparation universitaire et de faire un travail de niveau universitaire; l'offre varie selon l'école et l'année."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major: a Ministry-approved program that lets students focus on one economic sector while meeting graduation requirements and prepares them for apprenticeship, college, university or work.",
+    "es": "Specialist High Skills Major: programa aprobado por el Ministerio que permite concentrarse en un sector económico mientras se cumplen los requisitos de graduación y prepara para el aprendizaje de oficios, el colegio universitario, la universidad o el trabajo.",
+    "fr": "Specialist High Skills Major : programme approuvé par le ministère qui permet de se concentrer sur un secteur économique tout en respectant les exigences d'obtention du diplôme, et qui prépare à l'apprentissage, au collège, à l'université ou au travail."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "other",
+   "name": "Leadership (Local)",
+   "note": {
+    "en": "Local Leadership program: students develop communication, teamwork and conflict-management skills and take leadership or peer-support roles in the school or community.",
+    "es": "Programa local de liderazgo: los estudiantes desarrollan habilidades de comunicación, trabajo en equipo y manejo de conflictos, y asumen roles de liderazgo o apoyo entre pares en la escuela o la comunidad.",
+    "fr": "Programme local de leadership : les élèves développent des compétences en communication, en travail d'équipe et en gestion de conflits et assument des rôles de leadership ou d'entraide dans l'école ou la communauté."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-25",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "SHSM sector names not stated on pages that could be read (school site is a JavaScript Google Site).",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted.",
+  "Programs taken from the TDSB open house listing and legend."
+ ]
+}

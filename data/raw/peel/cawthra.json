@@ -1,0 +1,49 @@
+{
+ "id": "cawthra",
+ "scrapedAt": "2026-10-01",
+ "site": "https://cawthrapark.peelschools.org/",
+ "sources": [
+  "https://cawthrapark.peelschools.org/",
+  "https://cawthrapark.peelschools.org/arts-and-culture",
+  "https://cawthrapark.peelschools.org/health-wellness",
+  "https://cawthrapark.peelschools.org/co-operative-education",
+  "https://cawthrapark.peelschools.org/dual-credit",
+  "https://cawthrapark.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/5a9acdb0-b76c-49a2-9607-361f020e4ec1/CawthraPark-SS-716-2026.pdf?fingerprint=ppb20260716201510"
+ ],
+ "programs": [],
+ "shsm": [
+  "Arts and Culture",
+  "Health & Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/5a9acdb0-b76c-49a2-9607-361f020e4ec1/CawthraPark-SS-716-2026.pdf?fingerprint=ppb20260716201510",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-27",
+   "time": "17:15",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5:15-8:30 p.m.; two identical 50-minute presentations at 6 and 7 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-27",
+   "time": "18:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Arts (presentations at 6 and 7 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site."
+ ]
+}

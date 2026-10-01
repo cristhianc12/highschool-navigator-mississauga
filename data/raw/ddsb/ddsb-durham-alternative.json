@@ -1,0 +1,101 @@
+{
+ "id": "ddsb-durham-alternative",
+ "scrapedAt": "2026-10-01",
+ "site": "https://dass.ddsb.ca",
+ "sources": [
+  "https://dass.ddsb.ca/",
+  "https://dass.ddsb.ca/en/our-school/about-us.aspx",
+  "https://dass.ddsb.ca/en/students/specialist-high-skills-major.aspx",
+  "https://dass.ddsb.ca/en/courses/departments.aspx",
+  "https://www.ddsb.ca/students/secondary-school-programs/specialist-high-skills-major/",
+  "https://www.ddsb.ca/students/register-a-child-for-school/",
+  "https://www.ddsb.ca/news/posts/information-nights-for-grade-8-students-transitioning-to-high-school-in-september-2026/",
+  "https://dass.ddsb.ca/en/dass-student-enrollment-information.aspx"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "SHSM sectors listed by the school: Health & Wellness, Hospitality and Tourism, Construction, Arts and Culture; students complete 8-10 Grade 11-12 courses, certifications (e.g., First Aid, CPR) and co-op placements to earn the SHSM seal, and enrol in Grade 10.",
+    "es": "Sectores SHSM que indica la escuela: Health & Wellness, Hospitality and Tourism, Construction, Arts and Culture; el estudiante completa de 8 a 10 cursos de 11.º y 12.º grado, certificaciones (p. ej., First Aid, CPR) y prácticas cooperativas para obtener el sello SHSM, y se inscribe en 10.º grado.",
+    "fr": "Secteurs SHSM indiqués par l'école : Health & Wellness, Hospitality and Tourism, Construction, Arts and Culture; l'élève réussit de 8 à 10 cours de 11e et 12e année, des certifications (p. ex., First Aid, CPR) et des stages coopératifs pour obtenir le sceau SHSM, et s'inscrit en 10e année."
+   },
+   "entry": "school",
+   "url": "https://dass.ddsb.ca/en/students/specialist-high-skills-major.aspx"
+  },
+  {
+   "tag": "alt",
+   "name": "Durham Alternative Secondary School (DASS)",
+   "note": {
+    "en": "Alternative school for students aged 17-21 on two campuses (Oshawa and Pickering) with flexible timetables, four nine-week sessions a year, co-op, dual credits and Student Success programs.",
+    "es": "Escuela alternativa para estudiantes de 17 a 21 años en dos campus (Oshawa y Pickering), con horarios flexibles, cuatro sesiones de nueve semanas al año, cooperativa, créditos duales y programas Student Success.",
+    "fr": "École alternative pour les élèves de 17 à 21 ans sur deux campus (Oshawa et Pickering), avec horaires flexibles, quatre sessions de neuf semaines par an, coop, crédits doubles et programmes Student Success."
+   },
+   "entry": "apply",
+   "url": "https://dass.ddsb.ca/en/our-school/about-us.aspx"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 (Grade 9 entry Sept 2027) information night dates published yet; the only DDSB list found (Dec 2025) is for Sept 2026 entry, so no sessions are recorded.",
+  "IB, AP, arts-audition or other application-based programs are not stated on the school pages read.",
+  "DASS about page lists three SHSMs (Hospitality and Tourism, Construction, Arts and Culture) while its SHSM page details only Health & Wellness; all four are recorded.",
+  "No readable course calendar/course list for 2026-27 found (courses are in a myBlueprint catalogue that needs JavaScript, or in presentations); courses not extracted."
+ ],
+ "admissions": [
+  {
+   "program": "Durham Alternative Secondary School (DASS)",
+   "tag": "alt",
+   "elig": {
+    "en": "Students must be 17 years old (younger: contact the home secondary school); at 21 or older contact Durham Continuing Education. Grade 9 and 10 courses do not need to be completed.",
+    "es": "El estudiante debe tener 17 años (si es menor, comunícate con tu escuela secundaria de zona); a los 21 años o más, comunícate con Durham Continuing Education. No necesitas haber completado los cursos de 9.º y 10.º.",
+    "fr": "L'élève doit avoir 17 ans (plus jeune : communique avec ton école secondaire de secteur); à 21 ans ou plus, communique avec Durham Continuing Education. Les cours de 9e et 10e année n'ont pas à être terminés."
+   },
+   "submit": [
+    {
+     "en": "Non-DDSB students: register as a new DDSB student online (choose Grade 12), then submit the Non-DDSB Student Application form.",
+     "es": "Si no eres estudiante del DDSB: regístrate en línea como estudiante nuevo del DDSB (elige 12.º grado) y envía el formulario Non-DDSB Student Application.",
+     "fr": "Si tu n'es pas élève du DDSB : inscris-toi en ligne comme nouvel élève du DDSB (choisis la 12e année), puis envoie le formulaire Non-DDSB Student Application."
+    },
+    {
+     "en": "DDSB students: your home school principal or vice-principal submits the DDSB Student Only Referral Application.",
+     "es": "Si eres estudiante del DDSB: la dirección de tu escuela de zona envía el formulario DDSB Student Only Referral Application.",
+     "fr": "Si tu es élève du DDSB : la direction de ton école de secteur envoie le formulaire DDSB Student Only Referral Application."
+    },
+    {
+     "en": "After applying, call DASS to book a consultation appointment (905-579-1990 Oshawa, 905-839-2913 Pickering).",
+     "es": "Después de postular, llama a DASS para reservar una cita de consulta (905-579-1990 Oshawa, 905-839-2913 Pickering).",
+     "fr": "Après ta demande, appelle DASS pour réserver un rendez-vous de consultation (905-579-1990 Oshawa, 905-839-2913 Pickering)."
+    }
+   ],
+   "know": [
+    {
+     "en": "International and non-resident students must first complete international verification through DDSB registration.",
+     "es": "Los estudiantes internacionales y no residentes deben completar primero la verificación internacional en el registro del DDSB.",
+     "fr": "Les élèves internationaux et non résidents doivent d'abord faire la vérification internationale par l'inscription du DDSB."
+    }
+   ],
+   "url": "https://dass.ddsb.ca/en/dass-student-enrollment-information.aspx"
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP",
+  "Dual Credit",
+  "Centres for Success (Durham College)",
+  "PLAR",
+  "Workplace certifications (Safe Food Handling, Smart Serve, First Aid, CPR, WHMIS)"
+ ],
+ "focus": {
+  "en": "Flexible alternative secondary school for ages 17-21 working toward the OSSD.",
+  "es": "Escuela secundaria alternativa flexible para jóvenes de 17 a 21 años que buscan el OSSD.",
+  "fr": "École secondaire alternative flexible pour les 17 à 21 ans qui visent l'OSSD."
+ },
+ "shsm": [
+  "Health & Wellness",
+  "Hospitality and Tourism",
+  "Construction",
+  "Arts and Culture"
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "id": "tlkennedy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://tlkennedy.peelschools.org/",
+ "sources": [
+  "https://tlkennedy.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/fc232ff7-7c1c-4e12-bbab-bb4d4c4626fa/TL-Kennedy-SS.pdf?fingerprint=ppb20251217031222",
+  "https://www.peelschools.org/specialist-high-skills-major"
+ ],
+ "programs": [],
+ "shsm": [
+  "Business",
+  "Information and Communications Technology"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/fc232ff7-7c1c-4e12-bbab-bb4d4c4626fa/TL-Kennedy-SS.pdf?fingerprint=ppb20251217031222",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": []
+}

@@ -1,0 +1,82 @@
+{
+ "id": "peel-jean-augustine",
+ "scrapedAt": "2026-10-01",
+ "site": "https://jeanaugustine.peelschools.org/",
+ "sources": [
+  "https://jeanaugustine.peelschools.org/",
+  "https://jeanaugustine.peelschools.org/advanced-placement",
+  "https://jeanaugustine.peelschools.org/shsm",
+  "https://jeanaugustine.peelschools.org/business-SHSM",
+  "https://jeanaugustine.peelschools.org/health-wellness",
+  "https://jeanaugustine.peelschools.org/co-operative-education",
+  "https://jeanaugustine.peelschools.org/dual-credit",
+  "https://jeanaugustine.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/7197229e-c502-465f-ad31-2da89839e5e0/JeanAugustineSS-CCC-2026-27-July3.pdf?fingerprint=ppb20260703133651"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "Jean Augustine's own AP program: university-readiness enrichment for motivated students, preparing for senior AP courses and exams; families apply and are asked to weigh the extra commitment.",
+    "es": "Programa AP propio de Jean Augustine: enriquecimiento preparatorio para la universidad para estudiantes motivados, con cursos y exámenes AP de nivel superior; las familias postulan y deben considerar el compromiso adicional.",
+    "fr": "Programme AP propre à Jean Augustine : enrichissement préparatoire à l'université pour les élèves motivés, menant aux cours et examens AP de fin de secondaire; les familles postulent et doivent évaluer l'engagement supplémentaire."
+   },
+   "entry": "apply",
+   "url": "https://jeanaugustine.peelschools.org/advanced-placement"
+  },
+  {
+   "tag": "shsm",
+   "name": "Business - SHSM",
+   "note": {
+    "en": "The school states it has applied to offer a Specialist High Skills Major in Business starting September 2026 (Grades 11-12).",
+    "es": "La escuela indica que solicitó ofrecer un Specialist High Skills Major en Negocios desde septiembre de 2026 (11.º y 12.º grado).",
+    "fr": "L'école indique avoir demandé à offrir un Specialist High Skills Major en affaires à compter de septembre 2026 (11e et 12e année)."
+   },
+   "entry": null,
+   "url": "https://jeanaugustine.peelschools.org/shsm"
+  },
+  {
+   "tag": "shsm",
+   "name": "Health & Wellness - SHSM",
+   "note": {
+    "en": "The school states it has applied to offer a Specialist High Skills Major in Health Science starting September 2026 (Grades 11-12); it has a Health & Wellness SHSM page.",
+    "es": "La escuela indica que solicitó ofrecer un Specialist High Skills Major en Ciencias de la Salud desde septiembre de 2026 (11.º y 12.º grado); tiene una página de SHSM de Salud y Bienestar.",
+    "fr": "L'école indique avoir demandé à offrir un Specialist High Skills Major en sciences de la santé à compter de septembre 2026 (11e et 12e année); elle a une page SHSM Santé et bien-être."
+   },
+   "entry": null,
+   "url": "https://jeanaugustine.peelschools.org/health-wellness"
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/7197229e-c502-465f-ad31-2da89839e5e0/JeanAugustineSS-CCC-2026-27-July3.pdf?fingerprint=ppb20260703133651",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-29",
+   "time": "17:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5-7 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-12",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Advanced Placement Info Night (6-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "SHSM approval: the school's SHSM page says it 'has applied to offer' Business and Health Science from Sept 2026, so the sectors are not listed under shsm until confirmed.",
+  "AP page gives no application dates or entry criteria for 2027."
+ ]
+}

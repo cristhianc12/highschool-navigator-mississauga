@@ -1,0 +1,18 @@
+{
+ "id": "peel-peel-alternative-north-isr",
+ "scrapedAt": "2026-10-01",
+ "site": "https://pasnorth.peelschools.org/",
+ "sources": [
+  "https://pasnorth.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights"
+ ],
+ "programs": [],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 information night listed for this school on the board's Grade 8 information nights page (page checked 2026-10-01)",
+  "Course list is shared with the main Peel Alternative School campus calendar; not extracted separately",
+  "The roster entry 'ISR' could not be matched to a separate page; PAS North/South pages used for the campus"
+ ]
+}

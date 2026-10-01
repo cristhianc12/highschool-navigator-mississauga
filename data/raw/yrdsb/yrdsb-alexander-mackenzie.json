@@ -1,0 +1,232 @@
+{
+ "id": "yrdsb-alexander-mackenzie",
+ "scrapedAt": "2026-10-01",
+ "site": "https://alexandermackenzie-hs.yrdsb.ca/",
+ "sources": [
+  "https://alexandermackenzie-hs.yrdsb.ca/",
+  "https://alexandermackenzie-hs.yrdsb.ca/arts-mackenzie",
+  "https://alexandermackenzie-hs.yrdsb.ca/arts-mackenzie/Application-and-Admissions",
+  "https://alexandermackenzie-hs.yrdsb.ca/arts-mackenzie/Arts-Mackenzie-Information-Night---For-Program-starting-September-2026",
+  "https://alexandermackenzie-hs.yrdsb.ca/course-selection",
+  "https://alexandermackenzie-hs.yrdsb.ca/international-baccalaureate-ib-programme/Application-and-Admissions",
+  "https://alexandermackenzie-hs.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://app.myblueprint.ca/public/courses/yrdsb/mackenzie1",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/exploring-opportunities-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/international-baccalaureate-ib-programme",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-registration",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Programme",
+   "note": {
+    "en": "Enriched courses in Grades 9-10, then the two-year IB Diploma Programme in Grades 11-12, leading to both the OSSD and the IB Diploma; students apply to the IB school that serves their home address.",
+    "es": "Cursos enriquecidos en 9.º y 10.º grado y luego el Programa del Diploma IB de dos años en 11.º y 12.º, que conduce al OSSD y al Diploma IB; los estudiantes solicitan en la escuela IB que corresponde a su domicilio.",
+    "fr": "Cours enrichis en 9e et 10e année, puis programme du diplôme de l'IB de deux ans en 11e et 12e année, menant au DESO et au diplôme de l'IB; les élèves présentent leur demande à l'école IB de leur adresse."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/international-baccalaureate-ib-programme"
+  },
+  {
+   "tag": "arts",
+   "name": "Arts Mackenzie (Specialized Arts Program)",
+   "note": {
+    "en": "Four-year specialized arts program with two specialized arts credits per year (at least eight arts credits in the chosen discipline) in dance, music, theatre or visual arts, leading to a Specialized Arts certificate; admission is by application and selection process in Grade 8.",
+    "es": "Programa especializado de artes de cuatro años con dos créditos de artes especializados por año (al menos ocho créditos de artes en la disciplina elegida) en danza, música, teatro o artes visuales, que conduce a un certificado de artes especializadas; el ingreso es por solicitud y proceso de selección en 8.º grado.",
+    "fr": "Programme spécialisé en arts de quatre ans avec deux crédits d'arts spécialisés par année (au moins huit crédits d'arts dans la discipline choisie) en danse, musique, théâtre ou arts visuels, menant à un certificat d'arts spécialisés; l'admission se fait sur demande et processus de sélection en 8e année."
+   },
+   "entry": "audition",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/arts-mackenzie"
+  },
+  {
+   "tag": "trades",
+   "name": "Exploring Opportunities Program (EOP)",
+   "note": {
+    "en": "Regional Exploring Opportunities Program combining in-school learning with hands-on work-based experiences; sector focus here: Transportation.",
+    "es": "Programa regional Exploring Opportunities que combina aprendizaje en la escuela con experiencias prácticas en el trabajo; enfoque sectorial aquí: transporte.",
+    "fr": "Programme régional Exploring Opportunities qui allie apprentissage à l'école et expériences pratiques en milieu de travail; secteur visé ici : transport."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/exploring-opportunities-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 courses in a career sector, co-op, certifications and a Red Seal on the OSSD; sectors here: Health and Wellness, Transportation, Arts and Culture, Business.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos de un sector profesional, cooperativa, certificaciones y un sello rojo en el OSSD; sectores aquí: salud y bienestar, transporte, artes y cultura, negocios.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours dans un secteur professionnel, de l'éducation coopérative, des certifications et un sceau rouge sur le DESO; secteurs offerts ici : santé et bien-être, transport, arts et culture, affaires."
+   },
+   "entry": "apply",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA) support",
+   "note": {
+    "en": "Timetable support for students who compete at the provincial, national or international level in eligible sports, including up to two Day School Online courses; students apply each year with an application form and a sport verification letter.",
+    "es": "Apoyo de horario para estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles, con hasta dos cursos Day School Online; se solicita cada año con un formulario y una carta de verificación deportiva.",
+    "fr": "Soutien à l'horaire pour les élèves qui concourent aux niveaux provincial, national ou international dans des sports admissibles, y compris jusqu'à deux cours Day School Online; la demande se refait chaque année avec un formulaire et une lettre de vérification sportive."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Transportation",
+  "Arts and Culture",
+  "Business"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP",
+  "High Performance Athlete (HPA) support"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/yrdsb/mackenzie1",
+ "admissions": [
+  {
+   "program": "IB Diploma Programme (Grade 9 entry in September 2027)",
+   "tag": "ib",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/international-baccalaureate-ib-programme/Application-and-Admissions",
+   "elig": {
+    "en": "Live in York Region within the school's IB catchment area at the time of application and be currently in Grade 8; applications from outside the catchment are not considered.",
+    "es": "Vivir en la región de York dentro del área de captación IB de la escuela al momento de la solicitud y estar actualmente en 8.º grado; no se consideran solicitudes de fuera del área.",
+    "fr": "Habiter dans la région de York, dans le secteur IB de l'école, au moment de la demande et être actuellement en 8e année; les demandes de l'extérieur du secteur ne sont pas considérées."
+   },
+   "submit": [
+    {
+     "en": "Apply online through the central YRDSB IB application on Edsby (a parent Edsby account is needed).",
+     "es": "Presenta la solicitud en línea mediante la solicitud central de IB del YRDSB en Edsby (se necesita una cuenta de padre/madre en Edsby).",
+     "fr": "Présente la demande en ligne par la demande centrale IB du YRDSB dans Edsby (un compte de parent Edsby est nécessaire)."
+    },
+    {
+     "en": "Choose an assessment date during the application.",
+     "es": "Elige una fecha de evaluación durante la solicitud.",
+     "fr": "Choisis une date d'évaluation pendant la demande."
+    }
+   ],
+   "know": [
+    {
+     "en": "The process is not first-come, first-served, but late applications are not accepted.",
+     "es": "El proceso no es por orden de llegada, pero no se aceptan solicitudes tardías.",
+     "fr": "Le processus n'est pas du premier arrivé, premier servi, mais les demandes tardives ne sont pas acceptées."
+    },
+    {
+     "en": "No special preparation or study is recommended for the admissions process.",
+     "es": "No se recomienda ninguna preparación o estudio especial para el proceso de admisión.",
+     "fr": "Aucune préparation ni étude particulière n'est recommandée pour le processus d'admission."
+    },
+    {
+     "en": "Individual results or standings are not released.",
+     "es": "No se comunican los resultados ni las posiciones individuales.",
+     "fr": "Les résultats et classements individuels ne sont pas communiqués."
+    }
+   ],
+   "dates": {
+    "en": "IB information night Oct. 15, 2026; the application window runs Oct. 16, 2026 to Nov. 12, 2026 at 11:00 a.m.; assessment on Thursday Nov. 19, 2026 at 6:00 p.m. or Saturday Nov. 21, 2026 at 9:00 a.m.",
+    "es": "Noche informativa de IB el 15 de octubre de 2026; la ventana de solicitud va del 16 de octubre al 12 de noviembre de 2026 hasta las 11:00; evaluación el jueves 19 de noviembre de 2026 a las 18:00 o el sábado 21 de noviembre de 2026 a las 9:00.",
+    "fr": "Soirée d'information IB le 15 octobre 2026; la période de demande va du 16 octobre au 12 novembre 2026 jusqu'à 11 h; évaluation le jeudi 19 novembre 2026 à 18 h ou le samedi 21 novembre 2026 à 9 h."
+   }
+  },
+  {
+   "program": "Arts Mackenzie (Grade 9 entry in September 2027)",
+   "tag": "arts",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/arts-mackenzie/Application-and-Admissions",
+   "elig": {
+    "en": "Students in Grade 8 or 9 who live within the YRDSB Central Arts boundaries.",
+    "es": "Estudiantes de 8.º o 9.º grado que viven dentro de los límites del programa de artes central del YRDSB.",
+    "fr": "Élèves de 8e ou 9e année qui habitent dans les limites du secteur des arts du centre du YRDSB."
+   },
+   "submit": [
+    {
+     "en": "Register online through Edsby (one application per family; a second discipline is named in the Edsby application).",
+     "es": "Inscríbete en línea mediante Edsby (una solicitud por familia; la segunda disciplina se indica en la solicitud de Edsby).",
+     "fr": "Inscris-toi en ligne dans Edsby (une demande par famille; la deuxième discipline est indiquée dans la demande Edsby)."
+    },
+    {
+     "en": "Take part in the Artistic Demonstration for your discipline.",
+     "es": "Participa en la demostración artística de tu disciplina.",
+     "fr": "Participe à la démonstration artistique de ta discipline."
+    }
+   ],
+   "dates": {
+    "en": "Registration opens in November for the following school year and the school holds an Arts Mackenzie Information Night on Nov. 10, 2026; the Artistic Demonstration takes place in December.",
+    "es": "La inscripción abre en noviembre para el año escolar siguiente y la escuela organiza una noche informativa de Arts Mackenzie el 10 de noviembre de 2026; la demostración artística se realiza en diciembre.",
+    "fr": "L'inscription ouvre en novembre pour l'année scolaire suivante et l'école tient une soirée d'information Arts Mackenzie le 10 novembre 2026; la démonstration artistique a lieu en décembre."
+   },
+   "know": [
+    {
+     "en": "Transportation is not provided to YRDSB Specialized Arts programs.",
+     "es": "No se ofrece transporte a los programas de artes especializados del YRDSB.",
+     "fr": "Le transport n'est pas offert aux programmes d'arts spécialisés du YRDSB."
+    }
+   ]
+  },
+  {
+   "program": "Exploring Opportunities Program (EOP)",
+   "tag": "trades",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/exploring-opportunities-program",
+   "elig": {
+    "en": "Students 16 or older who want hands-on learning and show aptitude and interest in one of the sectors offered.",
+    "es": "Estudiantes de 16 años o más que quieren aprender de forma práctica y muestran aptitud e interés en uno de los sectores ofrecidos.",
+    "fr": "Élèves de 16 ans ou plus qui veulent apprendre de façon pratique et qui montrent des aptitudes et de l'intérêt pour l'un des secteurs offerts."
+   },
+   "submit": [
+    {
+     "en": "Contact the EOP school to request the application information and forms.",
+     "es": "Comunícate con la escuela del EOP para pedir la información y los formularios de solicitud.",
+     "fr": "Communique avec l'école du EOP pour demander les renseignements et les formulaires de demande."
+    }
+   ],
+   "know": [
+    {
+     "en": "Application processes and timelines vary by school.",
+     "es": "Los procesos y plazos de solicitud varían según la escuela.",
+     "fr": "Les processus et les échéanciers de demande varient selon l'école."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "19:00",
+   "format": null,
+   "title": "IB Information Night",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/international-baccalaureate-ib-programme/Application-and-Admissions"
+  },
+  {
+   "kind": "school",
+   "date": "2026-11-05",
+   "time": "18:30",
+   "format": null,
+   "title": "Open House",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-10",
+   "time": "18:30",
+   "format": null,
+   "title": "Arts Mackenzie Information Night",
+   "url": "https://alexandermackenzie-hs.yrdsb.ca/arts-mackenzie/Arts-Mackenzie-Information-Night---For-Program-starting-September-2026"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course directory is on myBlueprint (a JavaScript app with no readable text), and no course calendar PDF or HTML list was found on the school site",
+  "Co-op, Dual Credit, OYAP and HPA availability taken from the board pages and the Secondary Programs at a Glance table, not from a school-specific page",
+  "No fees stated for programs other than those in admissions",
+  "IB information night time: school page says 7:00 p.m., board page lists 6:30-8:00 p.m. (school page used)",
+  "Arts Mackenzie application page still shows older-cycle dates and fee, so no 2026-27 application dates or fees recorded beyond the information night"
+ ]
+}

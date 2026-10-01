@@ -3,6 +3,8 @@
 // Names are kept as published (English). Only what the school pages state is listed; if a school does not
 // appear here with SHSM information, it means the page did not name any (confirm with the school).
 
+import { ROSTER } from "./data/roster.js";
+
 const D = (code) => ({ site: `https://${code}.dpcdsb.org/`, cal: `https://${code}.dpcdsb.org/programs/course-calendar`, src: "dpcdsb" });
 const P = (sub) => ({ site: `https://${sub}.peelschools.org/`, src: "peel" });
 
@@ -41,5 +43,8 @@ export const EXTRAS = {
   clarkson: { ...P("clarksonss"), shsm: ["Sports"], other: ["Co-operative Education", "Dual Credit", "OYAP", "Pathways programs"] },
   tlkennedy: { ...P("tlkennedy"), shsm: ["Business", "Information & Communications Technology"], other: ["Co-operative Education", "Dual Credit", "OYAP", "Pathways programs"] },
   westcredit: { ...P("westcredit"), shsm: ["Construction", "Hospitality"], other: ["Co-operative Education", "Dual Credit", "OYAP", "Pathways programs"] },
-  gordon: { shsm: ["Hospitality & Tourism"], other: [], src: "peel" },
 };
+
+// Every other GTA school gets its official website from Ontario open data until its scraped details are published.
+const https = (u) => (/^https?:\/\//i.test(u) ? u : "https://" + u).replace(/^http:/i, "https:");
+for (const r of ROSTER) if (!EXTRAS[r.id] && r.site) EXTRAS[r.id] = { site: https(r.site), src: r.board };

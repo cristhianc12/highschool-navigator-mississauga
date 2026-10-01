@@ -1,0 +1,97 @@
+{
+ "id": "hdsb-abbey-park",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.hdsb.ca/aph/",
+ "sources": [
+  "https://www.hdsb.ca/aph/",
+  "https://www.hdsb.ca/aph/our-school/about-us/",
+  "https://www.hdsb.ca/aph/academics-student-experience/course-selection/",
+  "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/cooperative-education/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/dual-credit-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/ontario-youth-apprenticeship-program-oyap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+  "https://www.haltonpathways.ca/schools/abbey-park-high-school"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) courses",
+   "note": {
+    "en": "Grade 11 and 12 Advanced Placement courses follow the Ontario curriculum with university-level extensions; the external AP exam in May is optional.",
+    "es": "Los cursos de Advanced Placement de 11.º y 12.º grado siguen el currículo de Ontario con extensiones de nivel universitario; el examen externo de AP de mayo es opcional.",
+    "fr": "Les cours Advanced Placement de 11e et 12e année suivent le curriculum de l'Ontario avec des approfondissements de niveau universitaire; l'examen externe AP de mai est facultatif."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Secondary Gifted Cluster (SGC)",
+   "note": {
+    "en": "Secondary Gifted Cluster: students identified as Gifted through IPRC are grouped within regular classes with a curriculum differentiated in breadth, depth and pace.",
+    "es": "Secondary Gifted Cluster: estudiantes identificados como dotados mediante IPRC se agrupan dentro de clases regulares con un currículo diferenciado en amplitud, profundidad y ritmo.",
+    "fr": "Secondary Gifted Cluster : les élèves identifiés comme surdoués par le CIPR sont regroupés dans des classes ordinaires avec un curriculum différencié en ampleur, en profondeur et en rythme."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 sector courses, certifications, experiential learning and a co-op placement.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos del sector, certificaciones, aprendizaje experiencial y una colocación de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours sectoriels, des certifications, de l'apprentissage expérientiel et un stage d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://www.haltonpathways.ca/schools/abbey-park-high-school"
+  },
+  {
+   "tag": "strings",
+   "name": "Strings Program",
+   "note": {
+    "en": "Strings Program with classroom instruction, ensembles and performances for beginners and experienced players.",
+    "es": "Programa de cuerdas con instrucción en clase, conjuntos y presentaciones para principiantes y con experiencia.",
+    "fr": "Programme de cordes avec enseignement en classe, ensembles et prestations pour débutants et musiciens expérimentés."
+   },
+   "entry": null,
+   "url": "https://www.hdsb.ca/aph/our-school/about-us/"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Tech Design focus (Information and Communications Tech.)",
+  "International Development, Law & Social Justice",
+  "Electric Vehicle Technology and Engineering (Transportation)"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "focus": {
+  "en": "Oakville school offering Advanced Placement, SHSM, a Strings Program and a Secondary Gifted Cluster.",
+  "es": "Escuela de Oakville con Advanced Placement, SHSM, un programa de cuerdas y un Secondary Gifted Cluster.",
+  "fr": "École d'Oakville offrant Advanced Placement, des SHSM, un programme de cordes et un Secondary Gifted Cluster."
+ },
+ "calendarUrl": "https://www.hdsb.ca/aph/academics-student-experience/course-selection/",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": null,
+   "title": "Grade 8 Information Night (6-7:30 p.m.)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  }
+ ],
+ "missing": [
+  "Gr 9 course selection PDFs are the 2025 sheets, labelled 2025 (not 2026-27)",
+  "No SHSM or admissions detail on the school's own SHSM page (page empty); sectors taken from Halton Pathways",
+  "No fees stated for IB beyond the Grade 9-10 prep being free",
+  "Co-op, Dual Credit and OYAP availability taken from the board pages (all secondary schools), not from a school-specific page"
+ ]
+}

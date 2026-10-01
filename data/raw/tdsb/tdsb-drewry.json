@@ -1,0 +1,40 @@
+{
+ "id": "tdsb-drewry",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/drewry",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3512",
+  "https://schoolweb.tdsb.on.ca/drewry/About-Us",
+  "https://schoolweb.tdsb.on.ca/drewry/Departments/Mild-Intellectual-Disabilities-Program",
+  "https://schoolweb.tdsb.on.ca/drewry/Departments/Developmental-Disabilities",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Mild Intellectual Disabilities (MID) program",
+   "note": {
+    "en": "Supported functional academic and work-based program with small classes and non-credit courses (such as transit training, exploring the world of work and social skills) leading to a certificate of accomplishment.",
+    "es": "Programa académico funcional y laboral con apoyo, de grupos pequeños y cursos sin créditos (como entrenamiento en transporte, exploración del mundo laboral y habilidades sociales) que conduce a un certificate of accomplishment.",
+    "fr": "Programme académique fonctionnel et axé sur le travail, avec soutien, petites classes et cours sans crédit (comme la formation au transport en commun, la découverte du monde du travail et les habiletés sociales) menant à un certificate of accomplishment."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/drewry/Departments/Mild-Intellectual-Disabilities-Program"
+  },
+  {
+   "tag": "other",
+   "name": "Developmental Disabilities (DD) program",
+   "note": {
+    "en": "Non-credit life-skills program for students 14 to 21 that emphasizes communication, social development, daily living, functional academics and experiential learning, leading to a certificate of accomplishment.",
+    "es": "Programa de habilidades para la vida sin créditos para estudiantes de 14 a 21 años que enfatiza la comunicación, el desarrollo social, la vida diaria, lo académico funcional y el aprendizaje experiencial, y conduce a un certificate of accomplishment.",
+    "fr": "Programme d'habiletés de vie sans crédit pour les élèves de 14 à 21 ans qui met l'accent sur la communication, le développement social, la vie quotidienne, les matières fonctionnelles et l'apprentissage expérientiel, menant à un certificate of accomplishment."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/drewry/Departments/Developmental-Disabilities"
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "Small special-needs school; the pages read do not describe the placement process or any open house (the TDSB page says to contact the school directly).",
+  "No course calendar found; courses on the school pages are non-credit."
+ ]
+}

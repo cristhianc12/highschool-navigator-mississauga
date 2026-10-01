@@ -1,0 +1,29 @@
+{
+ "id": "tdsb-kapapamahchakwew-wandering-spirit-scho",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/5909",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5909",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Indigenous Education school (Grades 9-12)",
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5909",
+   "note": {
+    "en": "Wandering Spirit School states a vision of empowering future leaders with a strong cultural identity; the TDSB lists Indigenous Education as a centralized program type.",
+    "es": "Wandering Spirit School declara la visión de formar futuros líderes con una identidad cultural sólida; el TDSB incluye la Educación Indígena como tipo de programa centralizado.",
+    "fr": "Wandering Spirit School énonce la vision de former de futurs leaders dotés d'une forte identité culturelle; le TDSB présente l'éducation autochtone comme un type de programme centralisé."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login).",
+  "Roster site (schoolweb /fnst) no longer works; the TDSB school page is used instead.",
+  "Not in the TDSB open house table; admission process not found."
+ ]
+}

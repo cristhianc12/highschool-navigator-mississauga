@@ -1,0 +1,28 @@
+{
+ "id": "tdsb-north-west-alternative-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/3412",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3412",
+  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "North West Secondary Alternative School",
+   "note": {
+    "en": "Alternative school (Grades 10-12, quadmestered) for students at least 16 years old with a minimum of 10 credits including 5 compulsory Grade 9 credits; experiential learning and guidance, student success and counselling supports.",
+    "es": "Escuela alternativa (10.º a 12.º grado, por cuatrimestres) para estudiantes de al menos 16 años con un mínimo de 10 créditos, incluidos 5 créditos obligatorios de 9.º grado; aprendizaje experiencial y apoyos de orientación, éxito estudiantil y consejería.",
+    "fr": "École alternative (10e à 12e année, par quadrimestres) pour élèves d'au moins 16 ans ayant au moins 10 crédits, dont 5 crédits obligatoires de 9e année; apprentissage expérientiel et soutiens en orientation, en réussite scolaire et en counselling."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/3412"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No open house date listed ('Please contact the school directly').",
+  "Applications are received at the school itself (TDSB alternative schools page); no further admission steps published.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

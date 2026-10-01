@@ -1,0 +1,40 @@
+{
+ "id": "tcdsb-st-martin-school-st-martin",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stmartin",
+ "sources": [
+  "https://www.tcdsb.org/o/stmartin/page/about-us/",
+  "https://www.tcdsb.org/o/stmartin/page/our-school/"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "St. Martin Catholic School alternative program (Grades 9-12)",
+   "note": {
+    "en": "Semester-based alternative program with customized courses and non-academic support from a multidisciplinary team; enrolment is limited to students approved for a board expulsion under the Education Act.",
+    "es": "Programa alternativo por semestres con cursos personalizados y apoyo no académico de un equipo multidisciplinario; la matrícula se limita a estudiantes aprobados para una expulsión del consejo según la Education Act.",
+    "fr": "Programme alternatif par semestres avec des cours personnalisés et un soutien non scolaire offert par une équipe multidisciplinaire; l'inscription est réservée aux élèves dont une expulsion du conseil a été approuvée en vertu de la Loi sur l'éducation."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/stmartin/page/about-us/"
+  },
+  {
+   "tag": "alt",
+   "name": "Voluntary Intervention Program (Grades 10-12)",
+   "note": {
+    "en": "Voluntary program hosted at the St. Martin campus for Grades 10-12; admission follows criteria set by school administration, so contact your secondary school administration.",
+    "es": "Programa voluntario en el campus St. Martin para 10.º a 12.º grado; la admisión sigue criterios fijados por la administración escolar, así que contacta a la administración de tu escuela secundaria.",
+    "fr": "Programme volontaire offert au campus St. Martin pour la 10e à la 12e année; l'admission suit des critères établis par la direction, alors communique avec la direction de ton école secondaire."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/stmartin/page/about-us/"
+  }
+ ],
+ "calendarUrl": null,
+ "sessions": [],
+ "missing": [
+  "School is not on the TCDSB course-offerings list or open house sheet; no course list or open house found",
+  "Admission is by board expulsion approval or administration criteria, so no application process is published",
+  "The roster website (msgrfraseralternative.org) now serves an unrelated gambling page and was not used; the board school site was used instead"
+ ]
+}

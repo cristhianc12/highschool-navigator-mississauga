@@ -1,0 +1,16 @@
+{
+ "id": "tdsb-emery-edvance",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/emeryedvance",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/emeryedvance"
+ ],
+ "programs": [],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "School is for students aged 18-20 (quadmestered), not a Grade 9 entry school; no programs listed.",
+  "A 2026-27 course offerings Google Sheet exists (wide quad/period grid) but the extractor mis-parsed it, so no course list was saved.",
+  "Roster 'site' was a Twitter page; replaced with the school's TDSB page."
+ ]
+}

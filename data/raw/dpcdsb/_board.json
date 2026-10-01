@@ -1,0 +1,483 @@
+{
+  "board": "dpcdsb",
+  "scrapedAt": "2026-10-01",
+  "sources": [
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/regional-stem-program",
+    "https://www.dpcdsb.org/programs-services/secondary/advanced-placement",
+    "https://www.dpcdsb.org/programs-services/secondary/international-baccalaureate",
+    "https://www.dpcdsb.org/programs-services/secondary/regional-arts-program",
+    "https://www.dpcdsb.org/programs-services/secondary/regional-sports-program",
+    "https://www.dpcdsb.org/programs-services/secondary/bakery-school",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/programs-services/languages/extended-french",
+    "https://www.dpcdsb.org/programs-services/languages/french-immersion",
+    "https://www.dpcdsb.org/download/527381",
+    "https://www.dpcdsb.org/download/527385",
+    "https://campi.dpcdsb.org/download/573271",
+    "https://ndame.dpcdsb.org/programs/i-b-program",
+    "https://dyouv.dpcdsb.org/programs/guidance-courses/regional-stem-program",
+    "https://augst.dpcdsb.org/programs/212756",
+    "https://rochs.dpcdsb.org/programs/regional-arts-program",
+    "https://aquin.dpcdsb.org/download/539882",
+    "https://hnmry.dpcdsb.org/our-school/about-us",
+    "https://michs.dpcdsb.org/programs/guidance-courses/arts-advantage"
+  ],
+  "registration": {
+    "steps": [
+      {
+        "en": "Find your home Catholic secondary school with the Peel Region or Dufferin County Find My School tools; students already in a DPCDSB elementary school are enrolled automatically in their local Catholic secondary school for Grade 9.",
+        "es": "Encuentra tu escuela secundaria católica de zona con las herramientas Find My School de la Región de Peel o del condado de Dufferin; los estudiantes que ya están en una primaria del DPCDSB se inscriben automáticamente en su secundaria católica local para 9.º grado.",
+        "fr": "Trouve ton école secondaire catholique de secteur avec les outils Find My School de la région de Peel ou du comté de Dufferin; les élèves déjà inscrits dans une école élémentaire du DPCDSB sont inscrits automatiquement à leur école secondaire catholique locale pour la 9e année."
+      },
+      {
+        "en": "Create an account on the Online Application System, then complete and submit the Online Application Form (a printable registration form is also available at the school office).",
+        "es": "Crea una cuenta en el Online Application System y luego completa y envía el formulario de solicitud en línea (también hay un formulario de inscripción imprimible en la oficina de la escuela).",
+        "fr": "Crée un compte dans l'Online Application System, puis remplis et soumets le formulaire de demande en ligne (un formulaire d'inscription imprimable est aussi offert au secrétariat de l'école)."
+      },
+      {
+        "en": "Watch for the email confirming receipt of your application; if you did not upload the supporting documents, it explains how to submit them (all must be originals, in English).",
+        "es": "Espera el correo que confirma la recepción de tu solicitud; si no subiste los documentos de apoyo, explica cómo entregarlos (todos deben ser originales y estar en inglés).",
+        "fr": "Attends le courriel confirmant la réception de ta demande; si tu n'as pas téléversé les pièces justificatives, il explique comment les remettre (toutes doivent être des originaux, en anglais)."
+      },
+      {
+        "en": "The school's Guidance Department contacts you to verify the documents and the student's course schedule.",
+        "es": "El Departamento de Orientación de la escuela se comunica contigo para verificar los documentos y el horario de cursos del estudiante.",
+        "fr": "Le service d'orientation de l'école communique avec toi pour vérifier les documents et l'horaire de cours de l'élève."
+      },
+      {
+        "en": "For a regional program (AP, IB, Arts, Sports, Bakery, STEM), contact or visit the host school: each program has its own application and dates.",
+        "es": "Para un programa regional (AP, IB, artes, deportes, panadería, STEM), comunícate con la escuela sede o visítala: cada programa tiene su propia solicitud y fechas.",
+        "fr": "Pour un programme régional (AP, IB, arts, sports, boulangerie, STEM), communique avec l'école hôte ou visite-la : chaque programme a sa propre demande et ses propres dates."
+      }
+    ],
+    "docs": [
+      {
+        "en": "Proof of age: birth certificate or passport",
+        "es": "Prueba de edad: acta de nacimiento o pasaporte",
+        "fr": "Preuve d'âge : acte de naissance ou passeport"
+      },
+      {
+        "en": "Updated immunization records: report them to Region of Peel Public Health or Wellington-Dufferin-Guelph Public Health online and give the reference number to the school",
+        "es": "Registro de vacunación actualizado: repórtalo en línea a Region of Peel Public Health o Wellington-Dufferin-Guelph Public Health y entrega el número de referencia a la escuela",
+        "fr": "Dossier de vaccination à jour : déclare-le en ligne à Region of Peel Public Health ou à Wellington-Dufferin-Guelph Public Health et remets le numéro de référence à l'école"
+      },
+      {
+        "en": "Proof of Canadian citizenship: birth certificate, passport or permanent resident status",
+        "es": "Prueba de ciudadanía canadiense: acta de nacimiento, pasaporte o estatus de residente permanente",
+        "fr": "Preuve de citoyenneté canadienne : acte de naissance, passeport ou statut de résident permanent"
+      },
+      {
+        "en": "Proof of home address: two of property tax bill, current utility bill, electronic bill, real estate document or Government of Canada issued forms",
+        "es": "Prueba de domicilio: dos de los siguientes: impuesto predial, factura de servicios vigente, factura electrónica, documento inmobiliario o formularios emitidos por el Gobierno de Canadá",
+        "fr": "Preuve d'adresse : deux parmi compte de taxes, facture de services publics courante, facture électronique, document immobilier ou formulaires émis par le gouvernement du Canada"
+      },
+      {
+        "en": "Emergency rural address number, if applicable",
+        "es": "Número de dirección rural de emergencia, si aplica",
+        "fr": "Numéro d'adresse rurale d'urgence, le cas échéant"
+      },
+      {
+        "en": "Proof of English Separate School Support: Application for Direction of School Support and/or Separate School Lease Agreement Form (can be done at registration)",
+        "es": "Prueba de apoyo a la escuela separada inglesa: Application for Direction of School Support y/o Separate School Lease Agreement Form (se puede hacer al inscribirte)",
+        "fr": "Preuve d'appui à l'école séparée anglaise : Application for Direction of School Support et/ou Separate School Lease Agreement Form (peut se faire à l'inscription)"
+      }
+    ],
+    "note": {
+      "en": "All documents must be originals and in English. Under Open Access, students of Public School Supporters can also attend Catholic secondary schools, subject to the board's admissions requirements. For 2027-2028, Cardinal Ambrozic, St. Edmund Campion, St. Marcellinus and St. Roch have limited registration availability. Flex Boundaries applications go directly to the school. Families of students with higher needs must also complete the Entry Planning Form for Students with Differing Abilities after the online application. Regional programs have a non-refundable application fee and an annual program fee, and the board does not provide transportation for them.",
+      "es": "Todos los documentos deben ser originales y estar en inglés. Bajo el Open Access, los estudiantes de contribuyentes de escuelas públicas también pueden asistir a secundarias católicas, sujeto a los requisitos de admisión del consejo. Para 2027-2028, Cardinal Ambrozic, St. Edmund Campion, St. Marcellinus y St. Roch tienen disponibilidad limitada de inscripción. Las solicitudes de Flex Boundaries se envían directamente a la escuela. Las familias de estudiantes con necesidades mayores deben completar además el Entry Planning Form for Students with Differing Abilities después de la solicitud en línea. Los programas regionales tienen una tarifa de solicitud no reembolsable y una tarifa anual del programa, y el consejo no ofrece transporte para ellos.",
+      "fr": "Tous les documents doivent être des originaux et rédigés en anglais. En vertu de l'Open Access, les élèves de contribuables des écoles publiques peuvent aussi fréquenter les écoles secondaires catholiques, sous réserve des exigences d'admission du conseil. Pour 2027-2028, Cardinal Ambrozic, St. Edmund Campion, St. Marcellinus et St. Roch ont une disponibilité d'inscription limitée. Les demandes de Flex Boundaries sont adressées directement à l'école. Les familles d'élèves ayant des besoins plus importants doivent aussi remplir l'Entry Planning Form for Students with Differing Abilities après la demande en ligne. Les programmes régionaux comportent des frais de demande non remboursables et des frais annuels de programme, et le conseil n'offre pas de transport pour ceux-ci."
+    },
+    "url": "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "dates": [
+      {
+        "en": "Information sessions / open houses: Oct. 8 to Nov. 26, 2026 (schedule on the board site); registration is open now for 2026-27 and 2027-28.",
+        "es": "Sesiones informativas / jornadas de puertas abiertas: del 8 de octubre al 26 de noviembre de 2026 (calendario en el sitio del consejo); la inscripción está abierta para 2026-27 y 2027-28.",
+        "fr": "Séances d'information / portes ouvertes : du 8 octobre au 26 novembre 2026 (calendrier sur le site du conseil); l'inscription est ouverte pour 2026-27 et 2027-28."
+      },
+      {
+        "en": "Regional Bakery School application (Goetz): first-round deadline Jan. 8, 2027.",
+        "es": "Solicitud de Regional Bakery School (Goetz): fecha límite de la primera ronda el 8 de enero de 2027.",
+        "fr": "Demande à la Regional Bakery School (Goetz) : date limite de la première ronde le 8 janvier 2027."
+      },
+      {
+        "en": "Brampton regional programs: St. Edmund Campion AP applications Nov. 27 to Dec. 18, 2026; Notre Dame Preparatory IB Nov. 27 deadline; St. Augustine iSTEAM opens Nov. 3 and St. Marguerite d'Youville STEM opens Oct. 23 (round 1 deadline Jan. 8, 2027); St. Roch Regional Arts applications Nov. 5 to Dec. 7, 2026.",
+        "es": "Programas regionales de Brampton: solicitudes AP de St. Edmund Campion del 27 de noviembre al 18 de diciembre de 2026; Preparatory IB de Notre Dame con fecha límite el 27 de noviembre; iSTEAM de St. Augustine abre el 3 de noviembre y STEM de St. Marguerite d'Youville abre el 23 de octubre (fecha límite de la ronda 1: 8 de enero de 2027); solicitudes de Regional Arts de St. Roch del 5 de noviembre al 7 de diciembre de 2026.",
+        "fr": "Programmes régionaux de Brampton : demandes AP de St. Edmund Campion du 27 novembre au 18 décembre 2026; Preparatory IB de Notre Dame, date limite le 27 novembre; iSTEAM de St. Augustine ouvre le 3 novembre et STEM de St. Marguerite d'Youville ouvre le 23 octobre (date limite de la ronde 1 : 8 janvier 2027); demandes Regional Arts de St. Roch du 5 novembre au 7 décembre 2026."
+      }
+    ],
+    "contact": "DPCDSB Admissions Department, 905-890-1221, admissions@dpcdsb.org; for regional programs contact the host school directly; Extended French and French Immersion: 905-890-0708 ext. 24588 or 24374."
+  },
+  "programs": [
+    {
+      "id": "dpcdsb-ap-campion",
+      "tag": "ap",
+      "start": "9",
+      "entry": "apply",
+      "hosts": [
+        "dpcdsb-st-edmund-campion"
+      ],
+      "name": {
+        "en": "Regional Advanced Placement: St. Edmund Campion C.S.S. (Brampton)",
+        "es": "Regional Advanced Placement: St. Edmund Campion C.S.S. (Brampton)",
+        "fr": "Regional Advanced Placement: St. Edmund Campion C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Regional AP site for students living in Brampton, Caledon and Dufferin: Pre-AP courses in Grades 9-11 lead to AP English, Math, Science and French in Grade 12.",
+        "es": "Sede regional de AP para estudiantes de Brampton, Caledon y Dufferin: los cursos Pre-AP de 9.º a 11.º conducen a AP de inglés, matemáticas, ciencias y francés en 12.º.",
+        "fr": "Site régional d'AP pour les élèves de Brampton, Caledon et Dufferin : les cours Pre-AP de la 9e à la 11e année mènent aux cours AP d'anglais, de mathématiques, de sciences et de français en 12e année."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/secondary/advanced-placement",
+      "info": {
+        "who": {
+          "en": "Students entering Grade 9 who live in Brampton, Caledon or Dufferin; later entry is possible in Grades 10-12.",
+          "es": "Estudiantes que entran a 9.º grado y viven en Brampton, Caledon o Dufferin; es posible ingresar después, de 10.º a 12.º.",
+          "fr": "Élèves qui entrent en 9e année et vivent à Brampton, Caledon ou Dufferin; l'entrée ultérieure est possible de la 10e à la 12e année."
+        },
+        "how": {
+          "en": "Online application from the school website plus the school's registration form; $25 processing fee.",
+          "es": "Solicitud en línea desde el sitio de la escuela más el formulario de inscripción de la escuela; tarifa de trámite de $25.",
+          "fr": "Demande en ligne sur le site de l'école plus le formulaire d'inscription de l'école; frais de traitement de 25 $."
+        },
+        "dates": {
+          "en": "Grade 9 applications open Nov. 27, 2026 (9:00 am) and are due Dec. 18, 2026 at noon; Grade 8 decisions on or before Jan. 31, 2027.",
+          "es": "Las solicitudes de 9.º abren el 27 de noviembre de 2026 (9:00) y vencen el 18 de diciembre de 2026 al mediodía; decisiones para 8.º a más tardar el 31 de enero de 2027.",
+          "fr": "Les demandes pour la 9e année ouvrent le 27 novembre 2026 (9 h) et sont dues le 18 décembre 2026 à midi; décisions pour la 8e année au plus tard le 31 janvier 2027."
+        },
+        "keyDates": {
+          "en": "Open house with AP session: Nov. 26, 2026, 6:30 pm.",
+          "es": "Jornada de puertas abiertas con sesión de AP: 26 de noviembre de 2026, 18:30.",
+          "fr": "Portes ouvertes avec séance AP : 26 novembre 2026, 18 h 30."
+        },
+        "reqs": [
+          {
+            "en": "AP exams cost $150 each, paid the year the exam is written",
+            "es": "Cada examen AP cuesta $150, que se paga el año en que se rinde",
+            "fr": "Chaque examen AP coûte 150 $, payés l'année où il est passé"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dpcdsb-ib-notre-dame",
+      "tag": "ib",
+      "start": "9",
+      "entry": "apply",
+      "hosts": [
+        "dpcdsb-notre-dame"
+      ],
+      "name": {
+        "en": "International Baccalaureate Diploma Programme: Notre Dame C.S.S. (Brampton)",
+        "es": "International Baccalaureate Diploma Programme: Notre Dame C.S.S. (Brampton)",
+        "fr": "International Baccalaureate Diploma Programme: Notre Dame C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Regional IB World School in Brampton offering the Diploma Programme in Grades 11-12, with an optional Preparatory IB DP programme from Grade 9.",
+        "es": "IB World School regional en Brampton que ofrece el Diploma Programme en 11.º y 12.º, con un programa preparatorio opcional (Preparatory IB DP) desde 9.º.",
+        "fr": "IB World School régionale à Brampton offrant le Programme du diplôme en 11e et 12e année, avec un programme préparatoire facultatif (Preparatory IB DP) dès la 9e année."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/secondary/international-baccalaureate",
+      "info": {
+        "who": {
+          "en": "Students entering Grade 9 who want the Preparatory IB DP Programme.",
+          "es": "Estudiantes que entran a 9.º y quieren el Preparatory IB DP Programme.",
+          "fr": "Élèves qui entrent en 9e année et veulent le Preparatory IB DP Programme."
+        },
+        "how": {
+          "en": "Online application with a $40 non-refundable fee paid through School Cash Online; then offer letter and registration package.",
+          "es": "Solicitud en línea con una tarifa no reembolsable de $40 pagada por School Cash Online; luego carta de oferta y paquete de inscripción.",
+          "fr": "Demande en ligne avec des frais non remboursables de 40 $ payés par School Cash Online; puis lettre d'offre et trousse d'inscription."
+        },
+        "dates": {
+          "en": "Application and fee due Nov. 27, 2026; offers emailed Dec. 11; registration package and fee due Jan. 8, 2027.",
+          "es": "Solicitud y tarifa vencen el 27 de noviembre de 2026; ofertas por correo el 11 de diciembre; paquete de inscripción y tarifa vencen el 8 de enero de 2027.",
+          "fr": "Demande et frais dus le 27 novembre 2026; offres envoyées par courriel le 11 décembre; trousse d'inscription et frais dus le 8 janvier 2027."
+        },
+        "keyDates": {
+          "en": "Open house: Oct. 29, 2026, 5:30-7:30 pm; application links available Oct. 30.",
+          "es": "Puertas abiertas: 29 de octubre de 2026, 17:30 a 19:30; enlaces de solicitud disponibles el 30 de octubre.",
+          "fr": "Portes ouvertes : 29 octobre 2026, 17 h 30 à 19 h 30; liens de demande disponibles le 30 octobre."
+        },
+        "reqs": [
+          {
+            "en": "Admitted students follow the prescribed course template",
+            "es": "Los estudiantes admitidos siguen la plantilla de cursos prescrita",
+            "fr": "Les élèves admis suivent le modèle de cours prescrit"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dpcdsb-stem-dyouville",
+      "tag": "stem",
+      "start": "9",
+      "entry": "apply",
+      "hosts": [
+        "dpcdsb-st-marguerite-d-youville"
+      ],
+      "name": {
+        "en": "Regional STEM Program: St. Marguerite d'Youville C.S.S. (Brampton)",
+        "es": "Regional STEM Program: St. Marguerite d'Youville C.S.S. (Brampton)",
+        "fr": "Regional STEM Program: St. Marguerite d'Youville C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Competitive regional STEM program from Grade 9 with focused science, technology, engineering and math courses, hands-on projects, certifications and industry partnerships.",
+        "es": "Programa regional STEM competitivo desde 9.º con cursos de ciencias, tecnología, ingeniería y matemáticas, proyectos prácticos, certificaciones y alianzas con la industria.",
+        "fr": "Programme régional STEM compétitif dès la 9e année avec des cours de sciences, technologie, ingénierie et mathématiques, des projets pratiques, des certifications et des partenariats avec l'industrie."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/secondary/regional-stem-program",
+      "info": {
+        "who": {
+          "en": "Students entering Grade 9 within Peel Region and Dufferin County.",
+          "es": "Estudiantes que entran a 9.º dentro de la Región de Peel y el condado de Dufferin.",
+          "fr": "Élèves qui entrent en 9e année dans la région de Peel et le comté de Dufferin."
+        },
+        "dates": {
+          "en": "Application opens Oct. 23, 2026; equal consideration deadline for round 1 is Jan. 8, 2027.",
+          "es": "La solicitud abre el 23 de octubre de 2026; fecha límite de igual consideración de la ronda 1: 8 de enero de 2027.",
+          "fr": "La demande ouvre le 23 octobre 2026; date limite de considération égale pour la ronde 1 : 8 janvier 2027."
+        },
+        "keyDates": {
+          "en": "Open house with STEM presentation: Oct. 22, 2026, 7:00 pm.",
+          "es": "Puertas abiertas con presentación STEM: 22 de octubre de 2026, 19:00.",
+          "fr": "Portes ouvertes avec présentation STEM : 22 octobre 2026, 19 h."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-isteam-augustine",
+      "tag": "stem",
+      "start": "9",
+      "entry": "apply",
+      "hosts": [
+        "dpcdsb-st-augustine"
+      ],
+      "name": {
+        "en": "Regional STEM Program (iSTEAM): St. Augustine C.S.S. (Brampton)",
+        "es": "Regional STEM Program (iSTEAM): St. Augustine C.S.S. (Brampton)",
+        "fr": "Regional STEM Program (iSTEAM): St. Augustine C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Four-year iSTEAM pathway from Grade 9 in innovation, science, technology, engineering, arts and math, with specialized courses, work placements and STEM competitions.",
+        "es": "Trayectoria iSTEAM de cuatro años desde 9.º en innovación, ciencias, tecnología, ingeniería, artes y matemáticas, con cursos especializados, prácticas laborales y competencias STEM.",
+        "fr": "Parcours iSTEAM de quatre ans dès la 9e année en innovation, sciences, technologie, ingénierie, arts et mathématiques, avec cours spécialisés, stages et compétitions STEM."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/secondary/regional-stem-program",
+      "info": {
+        "who": {
+          "en": "Students entering Grade 9 within Peel Region and Dufferin County.",
+          "es": "Estudiantes que entran a 9.º dentro de la Región de Peel y el condado de Dufferin.",
+          "fr": "Élèves qui entrent en 9e année dans la région de Peel et le comté de Dufferin."
+        },
+        "dates": {
+          "en": "Application opens Nov. 3, 2026; equal consideration deadline for round 1 is Jan. 8, 2027.",
+          "es": "La solicitud abre el 3 de noviembre de 2026; fecha límite de igual consideración de la ronda 1: 8 de enero de 2027.",
+          "fr": "La demande ouvre le 3 novembre 2026; date limite de considération égale pour la ronde 1 : 8 janvier 2027."
+        },
+        "keyDates": {
+          "en": "Open house with STEM presentation: Nov. 12, 2026, 7:00 pm.",
+          "es": "Puertas abiertas con presentación STEM: 12 de noviembre de 2026, 19:00.",
+          "fr": "Portes ouvertes avec présentation STEM : 12 novembre 2026, 19 h."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-rap-roch",
+      "tag": "arts",
+      "start": "9",
+      "entry": "audition",
+      "hosts": [
+        "dpcdsb-st-roch"
+      ],
+      "name": {
+        "en": "Regional Arts Program: St. Roch C.S.S. (Brampton)",
+        "es": "Regional Arts Program: St. Roch C.S.S. (Brampton)",
+        "fr": "Regional Arts Program: St. Roch C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Regional Arts Program with majors in Dance, Drama, Instrumental Music, Media Arts and Vocal Music alongside the Ontario curriculum.",
+        "es": "Programa regional de artes con especialidades en danza, teatro, música instrumental, artes mediáticas y música vocal junto con el currículo de Ontario.",
+        "fr": "Programme régional d'arts avec des majeures en danse, art dramatique, musique instrumentale, arts médiatiques et musique vocale en plus du curriculum de l'Ontario."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/secondary/regional-arts-program",
+      "info": {
+        "how": {
+          "en": "Online application and parent survey, Grade 8 teacher reference, $25 fee and the latest report card; then audition.",
+          "es": "Solicitud en línea y encuesta para padres, referencia del docente de 8.º, tarifa de $25 y el boletín más reciente; luego audición.",
+          "fr": "Demande en ligne et sondage aux parents, recommandation de l'enseignant de 8e année, frais de 25 $ et dernier bulletin; puis audition."
+        },
+        "dates": {
+          "en": "Applications Nov. 5 to Dec. 7, 2026; auditions Jan. 27-29, 2027; first-round offers Feb. 4; accept by Feb. 11, 2027.",
+          "es": "Solicitudes del 5 de noviembre al 7 de diciembre de 2026; audiciones del 27 al 29 de enero de 2027; ofertas de la primera ronda el 4 de febrero; aceptar a más tardar el 11 de febrero de 2027.",
+          "fr": "Demandes du 5 novembre au 7 décembre 2026; auditions du 27 au 29 janvier 2027; offres de la première ronde le 4 février; acceptation au plus tard le 11 février 2027."
+        },
+        "keyDates": {
+          "en": "Regional Arts open house: Nov. 4, 2026, 6:30 pm; audition workshop Jan. 9, 2027.",
+          "es": "Puertas abiertas de Regional Arts: 4 de noviembre de 2026, 18:30; taller de audición el 9 de enero de 2027.",
+          "fr": "Portes ouvertes Regional Arts : 4 novembre 2026, 18 h 30; atelier d'audition le 9 janvier 2027."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-rap-aquinas",
+      "tag": "arts",
+      "start": "9",
+      "entry": "audition",
+      "hosts": [
+        "dpcdsb-st-thomas-aquinas"
+      ],
+      "name": {
+        "en": "Regional Arts Program: St. Thomas Aquinas C.S.S. (Brampton)",
+        "es": "Regional Arts Program: St. Thomas Aquinas C.S.S. (Brampton)",
+        "fr": "Regional Arts Program: St. Thomas Aquinas C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Regional Centre for the Arts with majors in Dance, Dramatic Arts, Visual Arts, Instrumental Music and Vocal Music, entered by application and audition.",
+        "es": "Regional Centre for the Arts con especialidades en danza, artes dramáticas, artes visuales, música instrumental y música vocal, al que se ingresa por solicitud y audición.",
+        "fr": "Regional Centre for the Arts avec des majeures en danse, art dramatique, arts visuels, musique instrumentale et musique vocale, accessible par demande et audition."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/secondary/regional-arts-program",
+      "info": {
+        "how": {
+          "en": "Application form, student letter of intent, report cards, Education Planner sign-off, enrollment contract and a $25 audition fee.",
+          "es": "Formulario de solicitud, carta de intención, boletines, hoja de firma del Education Planner, contrato de inscripción y tarifa de audición de $25.",
+          "fr": "Formulaire de demande, lettre d'intention, bulletins, feuille d'approbation de l'Education Planner, contrat d'inscription et frais d'audition de 25 $."
+        },
+        "keyDates": {
+          "en": "Regional Arts open house: Nov. 24, 2026, 6:30 pm.",
+          "es": "Puertas abiertas de Regional Arts: 24 de noviembre de 2026, 18:30.",
+          "fr": "Portes ouvertes Regional Arts : 24 novembre 2026, 18 h 30."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-ef-brampton-caledon",
+      "tag": "ef",
+      "start": "9",
+      "entry": "school",
+      "hosts": [
+        "dpcdsb-cardinal-leger",
+        "dpcdsb-robert-f-hall",
+        "dpcdsb-st-thomas-aquinas"
+      ],
+      "name": {
+        "en": "Extended French (secondary centres in Brampton and Caledon)",
+        "es": "Extended French (secondary centres in Brampton and Caledon)",
+        "fr": "Extended French (secondary centres in Brampton and Caledon)"
+      },
+      "p": {
+        "en": "Secondary Extended French centres receive students from feeder Extended French elementary schools (the program starts in Grade 5); 7 secondary credits are taught in French and students may challenge the DELF in Grade 12.",
+        "es": "Los centros secundarios de Extended French reciben estudiantes de las primarias de Extended French (el programa empieza en 5.º); 7 créditos de secundaria se imparten en francés y los estudiantes pueden presentar el DELF en 12.º.",
+        "fr": "Les centres secondaires d'Extended French accueillent les élèves des écoles élémentaires d'Extended French (le programme commence en 5e année); 7 crédits du secondaire sont enseignés en français et les élèves peuvent passer le DELF en 12e année."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/languages/extended-french",
+      "info": {
+        "who": {
+          "en": "Students from the feeder elementary Extended French schools; later entry needs space plus prior enrolment or proven French proficiency.",
+          "es": "Estudiantes de las primarias de Extended French de origen; el ingreso posterior requiere cupo y haber estado inscrito antes o demostrar dominio del francés.",
+          "fr": "Élèves des écoles élémentaires d'Extended French du secteur; l'entrée ultérieure exige de la place et une inscription antérieure ou une compétence démontrée en français."
+        },
+        "how": {
+          "en": "Admission is by application with a random selection if applications exceed space (entry point is Grade 5).",
+          "es": "La admisión es por solicitud con sorteo si las solicitudes superan los cupos (el punto de entrada es 5.º grado).",
+          "fr": "L'admission se fait sur demande avec tirage au sort si les demandes dépassent les places (le point d'entrée est la 5e année)."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-fi-leger",
+      "tag": "fi",
+      "start": "9",
+      "entry": "school",
+      "hosts": [
+        "dpcdsb-cardinal-leger"
+      ],
+      "name": {
+        "en": "French Immersion (secondary centre in Brampton: Cardinal Leger)",
+        "es": "French Immersion (secondary centre in Brampton: Cardinal Leger)",
+        "fr": "French Immersion (secondary centre in Brampton: Cardinal Leger)"
+      },
+      "p": {
+        "en": "Secondary French Immersion centre in Brampton: 10 credits in French plus 4 FSL credits; the program begins in Grade 1 and students may challenge the DELF in Grade 12.",
+        "es": "Centro secundario de French Immersion en Brampton: 10 créditos en francés más 4 de FSL; el programa empieza en 1.er grado y los estudiantes pueden presentar el DELF en 12.º.",
+        "fr": "Centre secondaire d'immersion française à Brampton : 10 crédits en français plus 4 crédits de FSL; le programme commence en 1re année et les élèves peuvent passer le DELF en 12e année."
+      },
+      "url": "https://www.dpcdsb.org/programs-services/languages/french-immersion",
+      "info": {
+        "who": {
+          "en": "Students continuing from elementary French Immersion; later entry needs space plus prior enrolment or French fluency (an assessment may be required).",
+          "es": "Estudiantes que continúan desde French Immersion de primaria; el ingreso posterior requiere cupo y haber estado inscrito antes o fluidez en francés (puede requerirse una evaluación).",
+          "fr": "Élèves qui poursuivent l'immersion française de l'élémentaire; l'entrée ultérieure exige de la place et une inscription antérieure ou une maîtrise du français (une évaluation peut être exigée)."
+        },
+        "how": {
+          "en": "Admission is by application with a centralized random selection if applications exceed space (entry point is Grade 1); no busing is provided.",
+          "es": "La admisión es por solicitud con sorteo centralizado si las solicitudes superan los cupos (el punto de entrada es 1.er grado); no hay transporte.",
+          "fr": "L'admission se fait sur demande avec tirage au sort centralisé si les demandes dépassent les places (le point d'entrée est la 1re année); aucun transport n'est offert."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-all-girls-holy-name",
+      "tag": "other",
+      "start": "9",
+      "entry": "apply",
+      "hosts": [
+        "dpcdsb-holy-name-of-mary"
+      ],
+      "name": {
+        "en": "Regional All-Girls' Catholic Secondary School: Holy Name of Mary C.S.S. (Brampton)",
+        "es": "Regional All-Girls' Catholic Secondary School: Holy Name of Mary C.S.S. (Brampton)",
+        "fr": "Regional All-Girls' Catholic Secondary School: Holy Name of Mary C.S.S. (Brampton)"
+      },
+      "p": {
+        "en": "Publicly funded regional all-girls' school for Grades 9-12, open to students of all faiths living in Brampton, Caledon, Mississauga and Orangeville.",
+        "es": "Escuela regional católica solo para niñas de 9.º a 12.º, financiada con fondos públicos y abierta a estudiantes de todas las confesiones de Brampton, Caledon, Mississauga y Orangeville.",
+        "fr": "École catholique régionale pour filles seulement, de la 9e à la 12e année, financée par les fonds publics et ouverte aux élèves de toutes confessions de Brampton, Caledon, Mississauga et Orangeville."
+      },
+      "url": "https://hnmry.dpcdsb.org/our-school/about-us",
+      "info": {
+        "how": {
+          "en": "Register through the board's online secondary registration.",
+          "es": "Inscríbete mediante la inscripción secundaria en línea del consejo.",
+          "fr": "Inscris-toi par l'inscription secondaire en ligne du conseil."
+        },
+        "keyDates": {
+          "en": "Open house: Nov. 4, 2026, doors 6:00 pm, presentation 6:30 pm.",
+          "es": "Puertas abiertas: 4 de noviembre de 2026, apertura 18:00, presentación 18:30.",
+          "fr": "Portes ouvertes : 4 novembre 2026, ouverture 18 h, présentation 18 h 30."
+        }
+      }
+    },
+    {
+      "id": "dpcdsb-arts-advantage-michael",
+      "tag": "arts",
+      "start": "10",
+      "entry": "apply",
+      "hosts": [
+        "dpcdsb-st-michael"
+      ],
+      "name": {
+        "en": "Arts Advantage: St. Michael C.S.S. (Bolton)",
+        "es": "Arts Advantage: St. Michael C.S.S. (Bolton)",
+        "fr": "Arts Advantage: St. Michael C.S.S. (Bolton)"
+      },
+      "p": {
+        "en": "Students major in Dramatic Arts, Visual Arts, Comprehensive Music or Dance from Grades 10 to 12, by application.",
+        "es": "Los estudiantes se especializan en artes dramáticas, artes visuales, música integral o danza de 10.º a 12.º, mediante solicitud.",
+        "fr": "Les élèves choisissent une majeure en art dramatique, arts visuels, musique générale ou danse de la 10e à la 12e année, sur demande."
+      },
+      "url": "https://michs.dpcdsb.org/programs/guidance-courses/arts-advantage"
+    }
+  ],
+  "sessions": [],
+  "notes": [
+    "Mississauga regional programs (AP at St. Joseph, IB at St. Paul and St. Francis Xavier, Arts at Iona, STEAM at St. Joan of Arc, Sports at St. Martin, Bakery at Goetz, Extended French/French Immersion) were not restated; only Brampton/Caledon hosts are listed here.",
+    "The board's information-session schedule PDF lists Extended French for St. Roch, while the secondary Extended French centre list (download/527381) lists St. Thomas Aquinas; Extended French is recorded for Aquinas (centre list) and not for St. Roch.",
+    "The board STEM page says STEM registration opens in November (dates to be confirmed); the school pages give Oct. 23 (d'Youville) and Nov. 3 (St. Augustine), which are used.",
+    "Board sports, bakery and regional AP/IB pages describe 2027-28 entry with dates still to be confirmed except Bakery (first-round deadline Jan. 8, 2027), which is already on the site for Goetz.",
+    "St. Oscar Romero (alternative program) is not in the 2026 information-session schedule; Cardinal Leger and Fr. Michael Goetz appear without dates.",
+    "Course calendars on the school sites (extracted for the 11 Brampton/Caledon schools) do not state a school year; they were read in October 2026 and recorded as 2026-2027."
+  ]
+}

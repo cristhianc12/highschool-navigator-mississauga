@@ -1,0 +1,24 @@
+{
+ "id": "famille",
+ "scrapedAt": "2026-10-01",
+ "site": "https://essf.cscmonavenir.ca/",
+ "sources": [
+  "https://essf.cscmonavenir.ca/",
+  "https://essf.cscmonavenir.ca/programmes-academiques/",
+  "https://cscmonavenir.ca/ecole/ecole-secondaire-catholique-sainte-famille-mississauga/"
+ ],
+ "programs": [],
+ "shsm": [
+  "Construction",
+  "Santé et bien-être",
+  "Sports"
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "calendarUrl/courses: the school's 'calendrier' page is an events calendar and no course catalogue was found.",
+  "MHS Sports section on the school page is empty (no description).",
+  "Only April-May 2025 area-boundary meetings found (not 2026-27 information nights).",
+  "Hosts on the older csdccs.edu.on.ca domain show a Cloudflare challenge and were not used; all facts come from cscmonavenir.ca pages."
+ ]
+}

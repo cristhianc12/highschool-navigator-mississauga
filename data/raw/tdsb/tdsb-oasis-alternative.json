@@ -1,0 +1,28 @@
+{
+ "id": "tdsb-oasis-alternative",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/5584",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5584",
+  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Oasis Alternative Secondary School",
+   "note": {
+    "en": "Small alternative school (Grades 9-12) with the OASIS Arts and Social Change Program, the OASIS Triangle Program for LGBTQI2+ students, and the OASIS Skateboard Factory.",
+    "es": "Escuela alternativa pequeña (9.º a 12.º grado) con el OASIS Arts and Social Change Program, el OASIS Triangle Program para estudiantes LGBTQI2+ y el OASIS Skateboard Factory.",
+    "fr": "Petite école alternative (9e à 12e année) avec l'OASIS Arts and Social Change Program, l'OASIS Triangle Program pour les élèves LGBTQI2+ et l'OASIS Skateboard Factory."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5584"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No open house date listed ('Please contact the school directly').",
+  "Applications are received at the school itself (TDSB alternative schools page); no further admission steps published.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

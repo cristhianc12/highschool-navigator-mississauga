@@ -1,0 +1,66 @@
+{
+ "id": "tdsb-east-york-alternative",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/eastyorkalternative",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/1928",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://schoolweb.tdsb.on.ca/eastyorkalternative/About-EYA/How-to-Apply",
+  "https://schoolweb.tdsb.on.ca/eastyorkalternative/Courses",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "East York Alternative Secondary School (Grades 10-12)",
+   "entry": "apply",
+   "url": "https://schoolweb.tdsb.on.ca/eastyorkalternative/About-EYA/How-to-Apply",
+   "note": {
+    "en": "Small alternative school for Grades 10-12 (about 120 students) with up to 3 credits per quad, flexible co-op, OYAP and credit recovery; most applicants are 16-20 and have their Grade 9 credits or can recover them.",
+    "es": "Escuela alternativa pequeña de 10.º a 12.º grado (unos 120 estudiantes) con hasta 3 créditos por cuatrimestre, cooperativa flexible, OYAP y recuperación de créditos; la mayoría de los solicitantes tiene entre 16 y 20 años y ya completó sus créditos de 9.º o puede recuperarlos.",
+    "fr": "Petite école alternative de la 10e à la 12e année (environ 120 élèves) avec jusqu'à 3 crédits par quadrimestre, éducation coopérative flexible, OYAP et récupération de crédits; la plupart des candidats ont de 16 à 20 ans et ont leurs crédits de 9e année ou peuvent les récupérer."
+   }
+  }
+ ],
+ "admissions": [
+  {
+   "program": "East York Alternative Secondary School",
+   "tag": "alt",
+   "url": "https://schoolweb.tdsb.on.ca/eastyorkalternative/About-EYA/How-to-Apply",
+   "elig": {
+    "en": "Most students are 16-20 years old with Grade 9 credits completed or recoverable; students 18 and over can use Prior Learning Assessments.",
+    "es": "La mayoría de los estudiantes tiene entre 16 y 20 años y ya completó los créditos de 9.º o puede recuperarlos; quienes tienen 18 años o más pueden usar evaluaciones de aprendizaje previo.",
+    "fr": "La plupart des élèves ont de 16 à 20 ans et ont leurs crédits de 9e année ou peuvent les récupérer; les élèves de 18 ans et plus peuvent utiliser l'évaluation et la reconnaissance des acquis."
+   },
+   "submit": [
+    {
+     "en": "Online interest form (Apply Here button on the school site)",
+     "es": "Formulario de interés en línea (botón Apply Here en el sitio de la escuela)",
+     "fr": "Formulaire d'intérêt en ligne (bouton Apply Here sur le site de l'école)"
+    },
+    {
+     "en": "Copy of your Student Status Sheet or transcript",
+     "es": "Copia de tu hoja de estado del estudiante o de tu expediente",
+     "fr": "Copie de ton relevé de situation de l'élève ou de ton relevé de notes"
+    }
+   ],
+   "dates": {
+    "en": "Accepting applications for Semester 1 of 2026-27 (first day of school Sept 8, 2026).",
+    "es": "Se reciben solicitudes para el primer semestre de 2026-27 (primer día de clases: 8 de septiembre de 2026).",
+    "fr": "Les demandes sont acceptées pour le semestre 1 de 2026-2027 (première journée de classe : 8 septembre 2026)."
+   }
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login).",
+  "Courses page describes course areas but no full course list with codes was found as text (some lists are Drive files).",
+  "No open house date: TDSB page says to contact the school directly.",
+  "Page 'How to Apply' is for 2026-27; no 2027-28 dates published."
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP",
+  "Credit Recovery"
+ ]
+}

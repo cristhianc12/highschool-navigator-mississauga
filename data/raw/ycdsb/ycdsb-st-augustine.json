@@ -1,0 +1,66 @@
+{
+  "id": "ycdsb-st-augustine",
+  "scrapedAt": "2026-10-01",
+  "site": "https://stau.ycdsb.ca",
+  "sources": [
+    "https://www.ycdsb.ca/programs-services/secondary/secondary-school-directory/stau/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/shsm/",
+    "https://www.ycdsb.ca/admissions/secondary-registration/",
+    "https://thinkstreamsta.ca/",
+    "https://stau.ycdsb.ca/2025/11/24/2026-2027-regular-program-application/",
+    "https://www.ycdsb.ca/pathways/co-op/",
+    "https://www.ycdsb.ca/pathways/oyap/",
+    "https://www.ycdsb.ca/pathways/dual-credit-courses/"
+  ],
+  "programs": [
+    {
+      "tag": "stem",
+      "name": "STREAM Focus Program",
+      "note": {
+        "en": "Interdisciplinary, inquiry and problem-based learning with an academic component and a non-academic SHIELD component (service, health, experiential learning, leadership); students apply online.",
+        "es": "Aprendizaje interdisciplinario basado en indagación y resolución de problemas, con un componente académico y otro no académico (SHIELD: servicio, salud, aprendizaje experiencial y liderazgo); se postula en línea.",
+        "fr": "Apprentissage interdisciplinaire par enquête et résolution de problèmes, avec une composante scolaire et une composante non scolaire SHIELD (service, santé, apprentissage expérientiel, leadership); la demande se fait en ligne."
+      },
+      "entry": "apply",
+      "url": "https://thinkstreamsta.ca/"
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Business",
+    "Information and Communications Technology (ICT)",
+    "Non-Profit",
+    "Construction",
+    "Justice, Community Safety & Emergency Services"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Dual Credit",
+    "OYAP"
+  ],
+  "admissions": [
+    {
+      "program": "Registration at St. Augustine (capped school)",
+      "elig": {
+        "en": "This is a capped school with a different registration process: students from feeder schools receive information about it, and the criteria and process are posted on the school's website in early November.",
+        "es": "Es una escuela con cupo limitado y con un proceso de registro distinto: los estudiantes de las escuelas de origen reciben la información, y los criterios y el proceso se publican en el sitio web de la escuela a principios de noviembre.",
+        "fr": "C'est une école à effectif plafonné avec un processus d'inscription différent : les élèves des écoles d'origine reçoivent l'information, et les critères et le processus sont affichés sur le site de l'école au début de novembre."
+      },
+      "url": "https://www.ycdsb.ca/admissions/secondary-registration/",
+      "know": [
+        {
+          "en": "The STREAM Focus Program has its own online application and a $50 application fee in the last cycle; check thinkstreamsta.ca for the 2026-27 steps.",
+          "es": "El programa STREAM Focus tiene su propia solicitud en línea y, en el ciclo anterior, una tarifa de $50; consulta thinkstreamsta.ca para los pasos de 2026-27.",
+          "fr": "Le programme STREAM Focus a sa propre demande en ligne et, au dernier cycle, des frais de 50 $; consulte thinkstreamsta.ca pour les étapes de 2026-27."
+        }
+      ]
+    }
+  ],
+  "sessions": [],
+  "missing": [
+    "2026-27 STREAM and pre-admission dates not found (pages posted are for the 2026-27 intake, i.e. the previous cycle)",
+    "Co-op, Dual Credit and OYAP come from the board pathways pages (co-op is offered in Grades 11-12); the Construction and Justice SHSM are listed on the board SHSM page as centralized for all schools",
+    "No school course calendar or course list found online (guidance pages are Google Sites with no readable course list)",
+    "2026 open house details: the board 2026 Open House page says information will be posted soon (as of 2026-10-01)"
+  ]
+}

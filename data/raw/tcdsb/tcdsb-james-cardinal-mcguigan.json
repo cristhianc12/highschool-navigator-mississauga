@@ -1,0 +1,157 @@
+{
+ "id": "tcdsb-james-cardinal-mcguigan",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/jamescardinalmcguigan/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/jamescardinalmcguigan/page/high-performance-athletics-program",
+  "https://www.tcdsb.org/o/jamescardinalmcguigan/page/steam",
+  "https://www.tcdsb.org/o/jamescardinalmcguigan/page/advanced-credit-experience-ace",
+  "https://www.tcdsb.org/o/jamescardinalmcguigan/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "sports",
+   "name": "High Performance Athletic (HPA) Program",
+   "note": {
+    "en": "High Performance Athletic program for Grades 9-12 (launched September 2024) with two pathways, a developmental one for full-time students and one for provincial or national level athletes with modified timetables, plus CCAA and NCAA eligibility support.",
+    "es": "Programa High Performance Athletic para 9.º a 12.º grado (iniciado en septiembre de 2024) con dos vías: una de desarrollo para estudiantes de tiempo completo y otra para atletas de nivel provincial o nacional con horario modificado, además de apoyo para la elegibilidad CCAA y NCAA.",
+    "fr": "Programme High Performance Athletic de la 9e à la 12e année (lancé en septembre 2024) avec deux parcours : un parcours de développement pour les élèves à temps plein et un parcours pour athlètes de niveau provincial ou national avec horaire modifié, plus un soutien pour l'admissibilité CCAA et NCAA."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/high-performance-athletics-program"
+  },
+  {
+   "tag": "stem",
+   "name": "STEAM Program",
+   "note": {
+    "en": "Enriched STEAM classroom for students who enjoy math, science and technology; a STEAM certificate requires 4 additional math, science or technology courses in Grades 11-12, and the board chart lists it for Grades 10-12.",
+    "es": "Aula STEAM enriquecida para estudiantes que disfrutan de matemáticas, ciencias y tecnología; el certificado STEAM requiere 4 cursos adicionales de matemáticas, ciencias o tecnología en 11.º y 12.º, y el cuadro del consejo lo lista para 10.º a 12.º grado.",
+    "fr": "Classe STEAM enrichie pour les élèves qui aiment les mathématiques, les sciences et la technologie; le certificat STEAM exige 4 cours supplémentaires de mathématiques, de sciences ou de technologie en 11e et 12e année, et le tableau du conseil l'indique de la 10e à la 12e année."
+   },
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/steam"
+  },
+  {
+   "tag": "sports",
+   "name": "Specialized Soccer Program with York University",
+   "note": {
+    "en": "The board chart lists a Specialized Soccer Program with York University at James Cardinal McGuigan.",
+    "es": "El cuadro del consejo lista un Specialized Soccer Program with York University en James Cardinal McGuigan.",
+    "fr": "Le tableau du conseil indique un Specialized Soccer Program with York University à James Cardinal McGuigan."
+   },
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true"
+  },
+  {
+   "tag": "other",
+   "name": "York University Advanced Credit Experience (ACE)",
+   "note": {
+    "en": "Grade 12 partnership with York University, the only TCDSB school offering ACE: credits from both institutions, a co-op placement at York University and up to $5,000 toward a York bursary.",
+    "es": "Alianza de 12.º grado con York University; es la única escuela del TCDSB que ofrece ACE: créditos de ambas instituciones, una práctica cooperativa en York University y hasta $5,000 para una beca de York.",
+    "fr": "Partenariat de 12e année avec York University; c'est la seule école du TCDSB qui offre ACE : crédits des deux établissements, un stage coop à York University et jusqu'à 5 000 $ pour une bourse de York."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/advanced-credit-experience-ace"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (six sectors)",
+   "note": {
+    "en": "Six SHSM sectors: Arts and Culture, Health and Wellness, Hospitality and Tourism, Information and Communications Technology, Sports and Transportation.",
+    "es": "Seis sectores SHSM: Arts and Culture, Health and Wellness, Hospitality and Tourism, Information and Communications Technology, Sports y Transportation.",
+    "fr": "Six secteurs SHSM : Arts and Culture, Health and Wellness, Hospitality and Tourism, Information and Communications Technology, Sports et Transportation."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/open-house"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Health and Wellness",
+  "Hospitality and Tourism",
+  "Information and Communications Technology",
+  "Sports",
+  "Transportation"
+ ],
+ "other": [
+  "Summer Transition Program (Grade 9, HIF1O1)",
+  "Intensive Support Program (ISP)"
+ ],
+ "admissions": [
+  {
+   "program": "High Performance Athletic (HPA) Program",
+   "tag": "sports",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/high-performance-athletics-program",
+   "elig": {
+    "en": "Open to all students who wish to apply; applicants submit an application, and a committee reviews all applications.",
+    "es": "Abierto a todos los estudiantes que quieran postular; los solicitantes presentan una solicitud y un comité revisa todas las solicitudes.",
+    "fr": "Ouvert à tous les élèves qui souhaitent présenter une demande; les candidats déposent une demande et un comité examine toutes les demandes."
+   },
+   "submit": [
+    {
+     "en": "HPA application form (download, fill in and email to HPAJCM@gmail.com).",
+     "es": "Formulario de solicitud HPA (descárgalo, complétalo y envíalo por correo a HPAJCM@gmail.com).",
+     "fr": "Formulaire de demande HPA (télécharge-le, remplis-le et envoie-le par courriel à HPAJCM@gmail.com)."
+    },
+    {
+     "en": "Grade 7 report card.",
+     "es": "Boletín de 7.º grado.",
+     "fr": "Bulletin de 7e année."
+    },
+    {
+     "en": "Recommendation letters from a coach and a teacher.",
+     "es": "Cartas de recomendación de un entrenador y de un profesor.",
+     "fr": "Lettres de recommandation d'un entraîneur et d'un enseignant."
+    },
+    {
+     "en": "Sports Athletic Program application form (downloaded from SOAR), which the school must receive by October 30, 2026, in addition to the online application.",
+     "es": "Formulario de solicitud del programa deportivo (se descarga en SOAR), que la escuela debe recibir a más tardar el 30 de octubre de 2026, además de la solicitud en línea.",
+     "fr": "Formulaire de demande du programme sportif (téléchargé dans SOAR), que l'école doit recevoir au plus tard le 30 octobre 2026, en plus de la demande en ligne."
+    }
+   ],
+   "dates": {
+    "en": "The school page says HPA applications open in September 2026; the board guide says the sports form must reach the school by October 30, 2026.",
+    "es": "La página de la escuela dice que las solicitudes HPA abren en septiembre de 2026; la guía del consejo dice que el formulario deportivo debe llegar a la escuela antes del 30 de octubre de 2026.",
+    "fr": "La page de l'école indique que les demandes HPA ouvrent en septembre 2026; le guide du conseil indique que le formulaire sportif doit parvenir à l'école avant le 30 octobre 2026."
+   },
+   "know": [
+    {
+     "en": "All applicants are invited to an Athletic Combine at York University's track and field centre.",
+     "es": "Todos los solicitantes están invitados a un Athletic Combine en el centro de atletismo de York University.",
+     "fr": "Tous les candidats sont invités à un Athletic Combine au centre d'athlétisme de York University."
+    },
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-20",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Open House: High Performance Athletic (HPA) Program session",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/open-house"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-20",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House: general program (STEAM and SHSM)",
+   "url": "https://www.tcdsb.org/o/jamescardinalmcguigan/page/open-house"
+  }
+ ],
+ "missing": [
+  "The HPA page still shows 2025 deadlines and combine dates, so the 2026 combine date and HPA deadlines were not recorded.",
+  "Fees for the HPA program were not found."
+ ]
+}

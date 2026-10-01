@@ -1,0 +1,150 @@
+{
+ "id": "tcdsb-st-patrick",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/stpatrick",
+ "sources": [
+  "https://www.tcdsb.org/o/stpatrick/page/specialty-programs/",
+  "https://www.tcdsb.org/o/stpatrick/page/enriched-arts/",
+  "https://www.tcdsb.org/o/stpatrick/page/media-technology/",
+  "https://www.tcdsb.org/o/stpatrick/page/advanced-placement/",
+  "https://www.tcdsb.org/o/stpatrick/page/specialist-high-skills-major/",
+  "https://www.tcdsb.org/o/stpatrick/page/co-op/",
+  "https://www.tcdsb.org/o/stpatrick/page/open-house/",
+  "https://sites.google.com/tcdsb.ca/stpatrickcssenrichedarts/programs/mta",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information/"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Enriched Arts Program",
+   "note": {
+    "en": "Auditioned Enriched Arts Program in Drama, Dance, Music (Instrumental and Guitar) and/or Visual Arts for Grade 8 students with talent and passion in the arts.",
+    "es": "Programa Enriched Arts por audición en teatro, danza, música (instrumental y guitarra) y/o artes visuales para estudiantes de 8.º grado con talento y pasión por las artes.",
+    "fr": "Programme Enriched Arts sur audition en art dramatique, danse, musique (instrumentale et guitare) et/ou arts visuels pour les élèves de 8e année qui ont du talent et de la passion pour les arts."
+   },
+   "entry": "audition",
+   "url": "https://www.tcdsb.org/o/stpatrick/page/enriched-arts/"
+  },
+  {
+   "tag": "arts",
+   "name": "Media Technology Arts (MTA)",
+   "note": {
+    "en": "Six-credit, four-year auditioned stream in media arts and communications technology (illustration, animation, photo/video or graphic design), entered from Grade 8 by portfolio.",
+    "es": "Itinerario de seis créditos y cuatro años, con audición, en artes de medios y tecnología de la comunicación (ilustración, animación, foto/video o diseño gráfico), al que se entra desde 8.º grado con portafolio.",
+    "fr": "Parcours de six crédits sur quatre ans, sur audition, en arts médiatiques et technologie des communications (illustration, animation, photo/vidéo ou design graphique), auquel on accède depuis la 8e année par portfolio."
+   },
+   "entry": "audition",
+   "url": "https://sites.google.com/tcdsb.ca/stpatrickcssenrichedarts/programs/mta"
+  },
+  {
+   "tag": "ap",
+   "name": "Pre-AP and Advanced Placement (AP)",
+   "note": {
+    "en": "Pre-AP English, Math and Science in Grade 10 and AP English, Math and Science in Grades 11-12, preparing for the College Board AP exams written in Grade 12.",
+    "es": "Pre-AP de inglés, matemáticas y ciencias en 10.º grado y AP de inglés, matemáticas y ciencias en 11.º y 12.º, que preparan para los exámenes AP del College Board de 12.º grado.",
+    "fr": "Pre-AP en anglais, mathématiques et sciences en 10e année et AP en anglais, mathématiques et sciences en 11e et 12e année, qui préparent aux examens AP du College Board en 12e année."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/stpatrick/page/advanced-placement/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major programs in Construction Technology and Design, Hospitality and Tourism: a bundle of sector courses, industry certifications and a co-op placement that earns the SHSM seal on the diploma.",
+    "es": "Programas Specialist High Skills Major en Construction Technology and Design, Hospitality and Tourism: un conjunto de cursos del sector, certificaciones de la industria y una colocación de educación cooperativa que da el sello SHSM en el diploma.",
+    "fr": "Programmes Specialist High Skills Major en Construction Technology and Design, Hospitality and Tourism : un ensemble de cours sectoriels, des certifications de l'industrie et un stage d'éducation coopérative qui donnent le sceau SHSM sur le diplôme."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/stpatrick/page/specialist-high-skills-major/"
+  }
+ ],
+ "shsm": [
+  "Construction Technology and Design",
+  "Hospitality and Tourism"
+ ],
+ "other": [
+  "Co-operative Education (2, 3 and 4 credit placements, plus in-school DCO3O1)"
+ ],
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings/",
+ "admissions": [
+  {
+   "program": "Enriched Arts Program",
+   "tag": "arts",
+   "elig": {
+    "en": "Grade 8 students may audition in Drama, Dance, Music (Instrumental and Guitar) and/or Visual Arts.",
+    "es": "Los estudiantes de 8.º grado pueden audicionar en teatro, danza, música (instrumental y guitarra) y/o artes visuales.",
+    "fr": "Les élèves de 8e année peuvent passer une audition en art dramatique, danse, musique (instrumentale et guitare) et/ou arts visuels."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": null,
+   "know": [
+    {
+     "en": "The application and audition details are on the program's Google Site (programs for 2026/27).",
+     "es": "Los detalles de solicitud y audición están en el sitio Google del programa (programas 2026/27).",
+     "fr": "Les détails de la demande et de l'audition sont sur le site Google du programme (programmes 2026-2027)."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/stpatrick/page/enriched-arts/"
+  },
+  {
+   "program": "Media Technology Arts (MTA)",
+   "tag": "arts",
+   "elig": {
+    "en": "Grade 8 students may apply directly from Grade 8.",
+    "es": "Los estudiantes de 8.º grado pueden postular directamente desde 8.º.",
+    "fr": "Les élèves de 8e année peuvent postuler directement depuis la 8e année."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": [
+    {
+     "en": "Portfolio submission following the Portfolio Criteria on the program site",
+     "es": "Entrega de un portafolio según los Portfolio Criteria del sitio del programa",
+     "fr": "Soumission d'un portfolio selon les Portfolio Criteria du site du programme"
+    }
+   ],
+   "know": [
+    {
+     "en": "Candidates are chosen for technological and artistic skill, creative thinking and willingness to learn.",
+     "es": "Se elige a los candidatos por sus habilidades tecnológicas y artísticas, su pensamiento creativo y su disposición a aprender.",
+     "fr": "Les candidats sont choisis pour leurs compétences technologiques et artistiques, leur pensée créative et leur volonté d'apprendre."
+    }
+   ],
+   "url": "https://sites.google.com/tcdsb.ca/stpatrickcssenrichedarts/programs/mta"
+  },
+  {
+   "program": "Pre-AP and Advanced Placement (AP)",
+   "tag": "ap",
+   "elig": {
+    "en": "TCDSB students complete the Pre-Advanced Placement Application (an online form).",
+    "es": "Los estudiantes del TCDSB completan la Pre-Advanced Placement Application (formulario en línea).",
+    "fr": "Les élèves du TCDSB remplissent la Pre-Advanced Placement Application (formulaire en ligne)."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": null,
+   "know": null,
+   "url": "https://www.tcdsb.org/o/stpatrick/page/advanced-placement/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (includes Media Technology audition and SHSM in Construction information)",
+   "url": "https://www.tcdsb.org/o/stpatrick/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No audition or portfolio dates found for Enriched Arts and MTA",
+  "Process for non-TCDSB students applying to Pre-AP is not described on the AP page",
+  "Audition criteria PDFs on the board-hosted admissions documents were not read"
+ ]
+}

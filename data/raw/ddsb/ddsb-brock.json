@@ -1,0 +1,42 @@
+{
+ "id": "ddsb-brock",
+ "scrapedAt": "2026-10-01",
+ "site": "https://brockhs.ddsb.ca",
+ "sources": [
+  "https://brockhs.ddsb.ca/",
+  "https://brockhs.ddsb.ca/en/our-school/about-us.aspx",
+  "https://brockhs.ddsb.ca/en/students/specialist-high-skills-major.aspx",
+  "https://brockhs.ddsb.ca/en/courses/departments.aspx",
+  "https://www.ddsb.ca/students/secondary-school-programs/specialist-high-skills-major/",
+  "https://www.ddsb.ca/students/register-a-child-for-school/",
+  "https://www.ddsb.ca/news/posts/information-nights-for-grade-8-students-transitioning-to-high-school-in-september-2026/"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "SHSM sectors listed by the school: Arts & Culture, Hospitality & Tourism, Sports, Transportation; students complete 8-10 Grade 11-12 courses, certifications (e.g., First Aid, CPR) and co-op placements to earn the SHSM seal, and enrol in Grade 10.",
+    "es": "Sectores SHSM que indica la escuela: Arts & Culture, Hospitality & Tourism, Sports, Transportation; el estudiante completa de 8 a 10 cursos de 11.º y 12.º grado, certificaciones (p. ej., First Aid, CPR) y prácticas cooperativas para obtener el sello SHSM, y se inscribe en 10.º grado.",
+    "fr": "Secteurs SHSM indiqués par l'école : Arts & Culture, Hospitality & Tourism, Sports, Transportation; l'élève réussit de 8 à 10 cours de 11e et 12e année, des certifications (p. ex., First Aid, CPR) et des stages coopératifs pour obtenir le sceau SHSM, et s'inscrit en 10e année."
+   },
+   "entry": "school",
+   "url": "https://brockhs.ddsb.ca/en/students/specialist-high-skills-major.aspx"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 (Grade 9 entry Sept 2027) information night dates published yet; the only DDSB list found (Dec 2025) is for Sept 2026 entry, so no sessions are recorded.",
+  "IB, AP, arts-audition or other application-based programs are not stated on the school pages read.",
+  "No readable course calendar/course list for 2026-27 found (courses are in a myBlueprint catalogue that needs JavaScript, or in presentations); courses not extracted."
+ ],
+ "other": [
+  "Co-operative Education"
+ ],
+ "shsm": [
+  "Arts & Culture",
+  "Hospitality & Tourism",
+  "Sports",
+  "Transportation"
+ ]
+}

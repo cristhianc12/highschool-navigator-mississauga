@@ -1,0 +1,35 @@
+{
+ "id": "westcredit",
+ "scrapedAt": "2026-10-01",
+ "site": "https://westcredit.peelschools.org/",
+ "sources": [
+  "https://westcredit.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/7cda3785-be26-4830-843a-16e8f77a7303/West-Credit-SS.pdf?fingerprint=ppb20251217024257",
+  "https://www.peelschools.org/specialist-high-skills-major"
+ ],
+ "programs": [],
+ "shsm": [
+  "Construction",
+  "Hospitality"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/7cda3785-be26-4830-843a-16e8f77a7303/West-Credit-SS.pdf?fingerprint=ppb20251217024257",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-29",
+   "time": "18:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Regional Skilled Trades (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": []
+}

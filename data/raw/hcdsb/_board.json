@@ -1,0 +1,322 @@
+{
+ "board": "hcdsb",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.hcdsb.org/parents/register-your-child/secondary-9-12/",
+  "https://www.hcdsb.org/schools/transferring-schools/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/learning-resources/steam-program/",
+  "https://www.hcdsb.org/learning-resources/international-bacclaureate-ib/",
+  "https://www.hcdsb.org/learning-resources/alternative-learning-programs/",
+  "https://www.hcdsb.org/learning-resources/secondary-school/",
+  "https://www.hcdsb.org/wp-content/uploads/2025/05/HCDSB-Transition-guide-2025-26-web.pdf",
+  "https://secondary.hcdsb.org/assumption/join-our-school/",
+  "https://secondary.hcdsb.org/bishopreding/join-our-school/",
+  "https://secondary.hcdsb.org/notredame/steam/",
+  "https://secondary.hcdsb.org/loyola/steam/",
+  "https://secondary.hcdsb.org/xavier/steam/",
+  "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/",
+  "https://secondary.hcdsb.org/ctk/advanced-placement-2/",
+  "https://secondary.hcdsb.org/corpuschristi/advanced-placement/",
+  "https://secondary.hcdsb.org/holytrinity/advanced-placement/",
+  "https://secondary.hcdsb.org/stkateri/advanced-placement/",
+  "https://secondary.hcdsb.org/stkateri/international-baccalaureate-ib-programme/",
+  "https://secondary.hcdsb.org/sta/ib-programme/",
+  "https://secondary.hcdsb.org/stkateri/french-immersion/"
+ ],
+ "registration": {
+  "steps": [
+   {
+    "en": "Find your designated (home) school with the board's School Finder Tool.",
+    "es": "Encuentra tu escuela designada (de residencia) con la herramienta School Finder Tool del consejo.",
+    "fr": "Trouve ton école désignée (de secteur) avec l'outil School Finder Tool du conseil."
+   },
+   {
+    "en": "Registration is only for students new to HCDSB: if you are already at an HCDSB elementary school in the secondary school's Family of Schools, you do not register online.",
+    "es": "La inscripción es solo para estudiantes nuevos en HCDSB: si ya estás en una primaria del HCDSB de la Family of Schools de la secundaria, no te inscribes en línea.",
+    "fr": "L'inscription est réservée aux élèves nouveaux au HCDSB : si tu es déjà dans une école élémentaire du HCDSB de la Family of Schools de l'école secondaire, tu ne t'inscris pas en ligne."
+   },
+   {
+    "en": "Create an account in the PowerSchool online registration portal (or log in) and choose 'Register for Next School Year' (2026-2027).",
+    "es": "Crea una cuenta en el portal de inscripción en línea PowerSchool (o inicia sesión) y elige 'Register for Next School Year' (2026-2027).",
+    "fr": "Crée un compte dans le portail d'inscription en ligne PowerSchool (ou ouvre une session) et choisis « Register for Next School Year » (2026-2027)."
+   },
+   {
+    "en": "Upload the required documents in the portal, or bring them to your home school by appointment.",
+    "es": "Sube los documentos requeridos en el portal o llévalos a tu escuela de residencia con cita previa.",
+    "fr": "Téléverse les documents requis dans le portail ou apporte-les à ton école de secteur sur rendez-vous."
+   },
+   {
+    "en": "Families new to the school must show parent/guardian identification in person.",
+    "es": "Las familias nuevas en la escuela deben presentar en persona la identificación del padre, madre o tutor.",
+    "fr": "Les familles nouvelles à l'école doivent présenter en personne une pièce d'identité du parent ou tuteur."
+   },
+   {
+    "en": "To attend a school other than your home school, register at your home school first, then apply through Cross Boundary School Attendance: secondary applications go to the home school from Jan. 1 to Mar. 1 of the preceding year and decisions are emailed by mid-March; later applications depend on space. Approval is not guaranteed.",
+    "es": "Para asistir a una escuela distinta de la tuya, inscríbete primero en tu escuela de residencia y luego solicita por Cross Boundary School Attendance: las solicitudes de secundaria se entregan en la escuela de residencia del 1 de enero al 1 de marzo del año anterior y las decisiones se envían por correo a mediados de marzo; las tardías dependen del cupo. La aprobación no está garantizada.",
+    "fr": "Pour fréquenter une autre école que celle de ton secteur, inscris-toi d'abord à ton école de secteur, puis fais une demande par Cross Boundary School Attendance : les demandes au secondaire sont remises à l'école de secteur du 1er janvier au 1er mars de l'année précédente et les décisions sont envoyées par courriel à la mi-mars; les demandes tardives dépendent des places. L'approbation n'est pas garantie."
+   }
+  ],
+  "docs": [
+   {
+    "en": "Child's birth certificate",
+    "es": "Acta de nacimiento del estudiante",
+    "fr": "Acte de naissance de l'enfant"
+   },
+   {
+    "en": "Proof of address: official documents showing your name and address (e.g., utility bills, government-issued statements, property tax bills, current agreement of purchase and sale); more recent documents are preferred",
+    "es": "Prueba de domicilio: documentos oficiales con tu nombre y dirección (p. ej., facturas de servicios, documentos gubernamentales, impuesto a la propiedad, contrato vigente de compraventa); se prefieren los más recientes",
+    "fr": "Preuve d'adresse : documents officiels indiquant ton nom et ton adresse (p. ex., factures de services publics, relevés gouvernementaux, comptes de taxes foncières, convention d'achat-vente en cours); les plus récents sont préférés"
+   }
+  ],
+  "note": {
+   "en": "Families already in an HCDSB elementary school of the Family of Schools do not need to register online; registration is for students new to the board.",
+   "es": "Las familias que ya están en una primaria del HCDSB de la Family of Schools no necesitan inscribirse en línea; la inscripción es para estudiantes nuevos en el consejo.",
+   "fr": "Les familles déjà dans une école élémentaire du HCDSB de la Family of Schools n'ont pas à s'inscrire en ligne; l'inscription s'adresse aux élèves nouveaux au conseil."
+  },
+  "contact": "Contact your home secondary school to make an appointment; school contact pages are at secondary.hcdsb.org.",
+  "url": "https://www.hcdsb.org/parents/register-your-child/secondary-9-12/",
+  "dates": [
+   {
+    "en": "Cross boundary applications for secondary schools: Jan. 1 to Mar. 1 (preceding year); open/closed school list posted in March.",
+    "es": "Solicitudes de traslado fuera de zona en secundaria: del 1 de enero al 1 de marzo (año anterior); la lista de escuelas abiertas/cerradas se publica en marzo.",
+    "fr": "Demandes de transfert hors secteur au secondaire : du 1er janvier au 1er mars (année précédente); la liste des écoles ouvertes/fermées est publiée en mars."
+   }
+  ]
+ },
+ "programs": [
+  {
+   "id": "hcdsb-steam",
+   "tag": "stem",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-notre-dame",
+    "hcdsb-st-ignatius-of-loyola",
+    "hcdsb-st-francis-xavier"
+   ],
+   "name": {
+    "en": "STEAM Program",
+    "es": "STEAM Program",
+    "fr": "STEAM Program"
+   },
+   "p": {
+    "en": "STEAM in blended delivery: Grades 9-12 at Loyola and Xavier, Grades 9-10 at Notre Dame; acceptance is based on fit with the student's goals and interests, not elementary grades.",
+    "es": "STEAM en formato combinado: 9.º a 12.º en Loyola y Xavier, 9.º y 10.º en Notre Dame; la aceptación se basa en la afinidad con las metas e intereses del estudiante, no en las notas de primaria.",
+    "fr": "STEAM en formule mixte : de la 9e à la 12e année à Loyola et Xavier, 9e et 10e année à Notre Dame; l'acceptation repose sur l'adéquation avec les objectifs et intérêts de l'élève, pas sur les notes de l'élémentaire."
+   },
+   "url": "https://www.hcdsb.org/learning-resources/steam-program/",
+   "info": {
+    "who": {
+     "en": "All Grade 8 students can apply; grades are not used. Applicants must confirm course selection in myBlueprint.",
+     "es": "Todos los estudiantes de 8.º pueden postularse; no se usan las notas. Deben confirmar la selección de cursos en myBlueprint.",
+     "fr": "Tous les élèves de 8e année peuvent postuler; les notes ne sont pas utilisées. Les candidats doivent confirmer leur choix de cours dans myBlueprint."
+    }
+   }
+  },
+  {
+   "id": "hcdsb-ap",
+   "tag": "ap",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-assumption",
+    "hcdsb-bishop-paul-francis-reding",
+    "hcdsb-christ-the-king",
+    "hcdsb-corpus-christi",
+    "hcdsb-holy-trinity",
+    "hcdsb-st-kateri-tekakwitha-school",
+    "hcdsb-st-francis-xavier"
+   ],
+   "name": {
+    "en": "Advanced Placement (AP) Prep",
+    "es": "Advanced Placement (AP) Prep",
+    "fr": "Advanced Placement (AP) Prep"
+   },
+   "p": {
+    "en": "AP Preparation courses from Grade 9 leading to university-level AP courses; school-run application.",
+    "es": "Cursos de preparación AP desde 9.º grado que llevan a cursos AP de nivel universitario; solicitud gestionada por cada escuela.",
+    "fr": "Cours de préparation AP dès la 9e année menant à des cours AP de niveau universitaire; demande gérée par chaque école."
+   },
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "id": "hcdsb-ib",
+   "tag": "ib",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-st-kateri-tekakwitha-school",
+    "hcdsb-st-thomas-aquinas"
+   ],
+   "name": {
+    "en": "International Baccalaureate (IB) Diploma Programme",
+    "es": "International Baccalaureate (IB) Diploma Programme",
+    "fr": "International Baccalaureate (IB) Diploma Programme"
+   },
+   "p": {
+    "en": "Pre-IB from Grade 9 preparing for the IB Diploma Programme in Grades 11-12.",
+    "es": "Pre-IB desde 9.º grado como preparación para el Programa del Diploma IB de 11.º y 12.º.",
+    "fr": "Pre-IB dès la 9e année en préparation au Programme du diplôme IB de 11e et 12e année."
+   },
+   "url": "https://www.hcdsb.org/learning-resources/international-bacclaureate-ib/"
+  },
+  {
+   "id": "hcdsb-hpp",
+   "tag": "sports",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-st-francis-xavier"
+   ],
+   "name": {
+    "en": "High Performance Regional Sports Program",
+    "es": "High Performance Regional Sports Program",
+    "fr": "High Performance Regional Sports Program"
+   },
+   "p": {
+    "en": "Academics plus athletic development, open to students across Halton Region, with full-time and provincial-athlete pathways.",
+    "es": "Estudios y desarrollo atlético, abierto a estudiantes de toda la región de Halton, con vías de tiempo completo y de atletas provinciales.",
+    "fr": "Études et développement athlétique, ouvert aux élèves de toute la région de Halton, avec parcours à temps plein et parcours d'athlètes provinciaux."
+   },
+   "url": "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/"
+  },
+  {
+   "id": "hcdsb-french-immersion",
+   "tag": "fi",
+   "start": "9",
+   "entry": "school",
+   "hosts": [
+    "hcdsb-notre-dame",
+    "hcdsb-st-kateri-tekakwitha-school",
+    "hcdsb-st-ignatius-of-loyola",
+    "hcdsb-christ-the-king"
+   ],
+   "name": {
+    "en": "French Immersion",
+    "es": "French Immersion",
+    "fr": "French Immersion"
+   },
+   "p": {
+    "en": "Secondary French Immersion begins in Grade 9 for students who completed the board's elementary French Immersion (minimum 3800 hours).",
+    "es": "La inmersión en francés secundaria comienza en 9.º grado para estudiantes que cursaron la inmersión en primaria del consejo (mínimo 3800 horas).",
+    "fr": "L'immersion française au secondaire commence en 9e année pour les élèves ayant fait l'immersion à l'élémentaire du conseil (minimum 3 800 heures)."
+   },
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  },
+  {
+   "id": "hcdsb-extended-french",
+   "tag": "ef",
+   "start": "9",
+   "entry": "school",
+   "hosts": [
+    "hcdsb-notre-dame",
+    "hcdsb-christ-the-king",
+    "hcdsb-bishop-paul-francis-reding",
+    "hcdsb-st-kateri-tekakwitha-school",
+    "hcdsb-st-ignatius-of-loyola",
+    "hcdsb-holy-trinity",
+    "hcdsb-st-thomas-aquinas"
+   ],
+   "name": {
+    "en": "Extended French",
+    "es": "Extended French",
+    "fr": "Extended French"
+   },
+   "p": {
+    "en": "Extended French from Grade 9: French as a subject plus at least one other subject taught in French, for students with at least 1260 hours of French (seven credits).",
+    "es": "Francés extendido desde 9.º grado: francés como materia y al menos otra materia en francés, para estudiantes con al menos 1260 horas de francés (siete créditos).",
+    "fr": "Français approfondi dès la 9e année : le français comme matière et au moins une autre matière enseignée en français, pour les élèves ayant au moins 1 260 heures de français (sept crédits)."
+   },
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  },
+  {
+   "id": "hcdsb-alternative-learning",
+   "tag": "alt",
+   "start": "9",
+   "entry": "school",
+   "hosts": [
+    "hcdsb-thomas-merton-online-school"
+   ],
+   "name": {
+    "en": "Alternative Learning Programs (Change, Transformations, Crossroads, New Hope)",
+    "es": "Alternative Learning Programs (Change, Transformations, Crossroads, New Hope)",
+    "fr": "Alternative Learning Programs (Change, Transformations, Crossroads, New Hope)"
+   },
+   "p": {
+    "en": "Programs run by the Thomas Merton Centre for students under 18 who are struggling academically or otherwise at their home school, with a re-entry plan back to school.",
+    "es": "Programas del Thomas Merton Centre para estudiantes menores de 18 años con dificultades académicas o de otro tipo en su escuela, con un plan de reingreso.",
+    "fr": "Programmes du Thomas Merton Centre pour les élèves de moins de 18 ans en difficulté à leur école d'origine, avec un plan de retour à l'école."
+   },
+   "url": "https://www.hcdsb.org/learning-resources/alternative-learning-programs/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening and IB Information Session at St. Thomas Aquinas (Oakville); IB session 7:15 p.m.",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evenings at Corpus Christi (Burlington, with AP) and Holy Trinity (Oakville)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-20",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening at Bishop P.F. Reding (Milton, with AP)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Information Evening at Assumption (Burlington, with AP)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "AP information session at Holy Trinity (Oakville)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-29",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evenings at Notre Dame (Burlington, with STEAM) and St. Ignatius of Loyola (Oakville)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Information Evenings at St. Kateri Tekakwitha (Milton, with IB and AP) and St. Francis Xavier (Milton, with HPP, AP and STEAM)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-12",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening at Christ the King (Georgetown, with AP)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  }
+ ]
+}

@@ -4,17 +4,16 @@
 // close and focus restoration. The URL hash (#school-<id> / #program-<id>) makes a profile shareable,
 // and the browser Back button closes it.
 import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content.js";
+import { BOARD_META, systemOf, boardClass } from "./geo.js";
 import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
 import { starBtn } from "./mylist.js";
 import { EXTRAS } from "./school-extras.js";
 import { ADM_UI, REG_UI, REGISTRATION, admissionsForProgram, admissionsForSchool } from "./admissions.js";
+import { ensureSchool, ensureBoardExtras, ensureBoards } from "./details.js";
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const OFFICIAL = {
-  dpcdsb: "https://www.dpcdsb.org/schools/school-directory",
-  peel: "https://www.peelschools.org/",
-};
+const officialDir = (board) => BOARD_META[board]?.site;
 
 let dlg = null;
 let ctx = { getLang: () => "en", onCompare: null, isCompared: null };
@@ -30,20 +29,21 @@ const schoolByKey = (name) => SCHOOLS.find((s) => schoolKey(s.name) === schoolKe
 export const VERIFIED = "2026-09-29"; // update whenever the data is re-checked against official sources
 const REPO = "https://github.com/cristhianc12/highschool-navigator-mississauga";
 const VTXT = {
-  es: { checked: "Datos verificados el", report: "Reportar un error", title: "Error en los datos", body: (n) => `Sitio: ${n}\n\n¿Qué está mal o desactualizado?\n\nFuente oficial (enlace):\n` },
-  en: { checked: "Data checked on", report: "Report an error", title: "Data error", body: (n) => `Page: ${n}\n\nWhat is wrong or out of date?\n\nOfficial source (link):\n` },
-  fr: { checked: "Données vérifiées le", report: "Signaler une erreur", title: "Erreur dans les données", body: (n) => `Page : ${n}\n\nQu'est-ce qui est erroné ou périmé?\n\nSource officielle (lien) :\n` },
+  es: { collected: "Datos recopilados del sitio oficial el", missing: "No encontrado en las páginas de la escuela:", checked: "Datos verificados el", report: "Reportar un error", title: "Error en los datos", body: (n) => `Sitio: ${n}\n\n¿Qué está mal o desactualizado?\n\nFuente oficial (enlace):\n` },
+  en: { collected: "Collected from the official website on", missing: "Not found on the school's pages:", checked: "Data checked on", report: "Report an error", title: "Data error", body: (n) => `Page: ${n}\n\nWhat is wrong or out of date?\n\nOfficial source (link):\n` },
+  fr: { collected: "Recueillies du site officiel le", missing: "Non trouvé sur les pages de l'école :", checked: "Données vérifiées le", report: "Signaler une erreur", title: "Erreur dans les données", body: (n) => `Page : ${n}\n\nQu'est-ce qui est erroné ou périmé?\n\nSource officielle (lien) :\n` },
 };
 export function reportUrl(name, lang) {
   const t = VTXT[lang] || VTXT.en;
   return `${REPO}/issues/new?title=${encodeURIComponent(`${t.title}: ${name}`)}&body=${encodeURIComponent(t.body(name))}`;
 }
-export function verifiedHtml(name) {
+export function verifiedHtml(name, opts = {}) {
   const lang = langOf();
   const t = VTXT[lang];
   const locale = { es: "es-CO", en: "en-CA", fr: "fr-CA" }[lang];
-  const date = new Date(VERIFIED + "T12:00:00").toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
-  return `<p class="dverified small muted">${esc(t.checked)} ${esc(date)} · <a href="${reportUrl(name, lang)}" target="_blank" rel="noopener">${esc(t.report)}</a></p>`;
+  const date = new Date((opts.collected || VERIFIED) + "T12:00:00").toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
+  const missing = opts.missing?.length ? `<br>${esc(t.missing)} ${opts.missing.map(esc).join("; ")}` : "";
+  return `<p class="dverified small muted">${esc(opts.collected ? t.collected : t.checked)} ${esc(date)} · <a href="${reportUrl(name, lang)}" target="_blank" rel="noopener">${esc(t.report)}</a>${missing}</p>`;
 }
 
 /* ---------------- shared pieces ---------------- */
@@ -126,7 +126,7 @@ function admissionHtml(entries, where) {
   const cards = entries.map((a) => {
     const school = SCHOOLS.find((s) => s.id === a.school);
     const prog = PROGRAMS.find((p) => p.id === a.prog);
-    const title = where === "program" ? `${A.forProgram} ${school ? school.name : ""}` : (prog ? L(prog.name) : "");
+    const title = where === "program" ? `${A.forProgram} ${school ? school.name : ""}` : (prog ? L(prog.name) : (a.program || ""));
     return `<article class="dprog adm"><h4>${esc(title)}</h4><dl class="kv">
       ${row(A.elig, esc(L(a.elig)))}
       ${row(A.submit, `<ul class="dnotes">${a.submit.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>`)}
@@ -151,7 +151,8 @@ function registrationHtml(school) {
     <p class="small"><b>${esc(R.steps)}</b></p><ol class="dnotes">${reg.steps.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ol>
     ${reg.docs.length ? `<p class="small"><b>${esc(R.docs)}</b></p><ul class="dnotes">${reg.docs.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>` : ""}
     <p class="small muted">${esc(L(reg.note))}</p>
-    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(reg.contact)}</p>` : ""}
+    ${reg.dates?.length ? `<p class="small"><b>${esc(R.dates)}</b></p><ul class="dnotes">${reg.dates.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>` : ""}
+    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(typeof reg.contact === "object" ? L(reg.contact) : reg.contact)}</p>` : ""}
     <p class="small muted">${esc(R.note)}</p>
     <div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div></section>`;
 }
@@ -177,8 +178,8 @@ function renderSchool(school) {
 
   const chips = school.progs.length
     ? `<div class="chips">${school.progs.map((p) => `<span class="chip">${TAG_ICON[p.k] || ""} ${esc(L(TAGS[p.k]))}</span>`).join("")}</div>
-       <ul class="dnotes">${school.progs.filter((p) => p.n).map((p) => `<li><b>${esc(L(TAGS[p.k]))}:</b> ${esc(L(p.n))}</li>`).join("")}</ul>`
-    : `<p class="muted">${esc(u.noPrograms)}</p>`;
+       <ul class="dnotes">${school.progs.filter((p) => p.n).map((p) => `<li><b>${esc(p.name || L(TAGS[p.k]))}:</b> ${esc(L(p.n))}${p.url ? ` <a href="${p.url}" target="_blank" rel="noopener" aria-label="${esc(UI[lang].crs.siteL)}">↗</a>` : ""}</li>`).join("")}</ul>`
+    : `<p class="muted">${esc(school.pending ? u.pendingDetail : u.noPrograms)}</p>`;
 
   const hostedHtml = hostedList.length
     ? `<section class="dsec"><h3>${esc(d.hostedH)}</h3>${hostedList.map((p) => `<article class="dprog clickable" data-pcard="${p.id}">
@@ -201,27 +202,27 @@ function renderSchool(school) {
         ${ex.other?.length ? `<p class="small"><b>${esc(crs.otherL)}:</b> ${ex.other.map(esc).join(" · ")}</p>` : ""}
         <div class="sbtns">${ex.site ? `<a class="btn small" href="${ex.site}" target="_blank" rel="noopener">${esc(crs.siteL)} ↗</a>` : ""}${ex.cal ? `<a class="btn small" href="${ex.cal}" target="_blank" rel="noopener">${esc(crs.calL)} ↗</a>` : ""}</div></section>`
     : "";
-  const coursesHtml = ex?.cal
+  const coursesHtml = (ex?.courses || (ex?.cal && school.board === "dpcdsb"))
     ? `<section class="dsec"><h3>${esc(crs.h)}</h3><details class="dcourses" data-courses="${school.id}"><summary>${esc(crs.show)}</summary><div class="dcourses-body"></div></details></section>`
     : (ex?.src === "peel" ? `<section class="dsec"><p class="small muted">${esc(crs.peelNote)}</p></section>` : "");
 
-  const kv = school.kv
-    ? `<section class="dsec"><h3>${esc(d.detailsH)}</h3><p class="dfocus"><b>${esc(u.lblFocus)}</b> ${esc(L(school.focus))}</p>
-        <dl class="kv">${["distinct", "shsm", "langs", "entry"].map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(school.kv[k]))}</dd>`).join("")}</dl></section>`
+  const kv = school.kv || school.focus
+    ? `<section class="dsec"><h3>${esc(d.detailsH)}</h3>${school.focus ? `<p class="dfocus"><b>${esc(u.lblFocus)}</b> ${esc(L(school.focus))}</p>` : ""}
+        <dl class="kv">${["distinct", "shsm", "langs", "entry"].filter((k) => school.kv?.[k]).map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(school.kv[k]))}</dd>`).join("")}</dl></section>`
     : "";
 
-  const boardNote = school.board === "fr" ? `<p class="small muted">${esc(d.frenchNote)}</p>` : "";
+  const boardNote = systemOf(school.board) === "french" ? `<p class="small muted">${esc(d.frenchNote)}</p>` : "";
   const site = sess.map((e) => e.site).find(Boolean);
   const siteBtn = site ? `<a class="btn" href="${site}" target="_blank" rel="noopener">${esc(S.website)} ↗</a>` : "";
-  const official = OFFICIAL[school.board]
-    ? `<a class="btn" href="${OFFICIAL[school.board]}" target="_blank" rel="noopener">${esc(d.officialLink)} ↗</a>` : "";
+  const official = officialDir(school.board)
+    ? `<a class="btn" href="${officialDir(school.board)}" target="_blank" rel="noopener">${esc(d.officialLink)} ↗</a>` : "";
   const cmp = ctx.onCompare
     ? `<button type="button" class="btn" id="d-compare">${esc(ctx.isCompared?.(school.id) ? d.inCompare : d.addCompare)}</button>` : "";
 
   dlg.setAttribute("aria-label", school.name);
-  dlg.className = `sdlg board-${school.board}`;
-  dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
-    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${admissionHtml(admissionsForSchool(school.id), "school")}${registrationHtml(school)}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
+  dlg.className = `sdlg board-${boardClass(school.board)}`;
+  dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${boardClass(school.board)}`) +
+    `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${admissionHtml(admissionsForSchool(school.id), "school")}${registrationHtml(school)}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name, { collected: school.collected, missing: school.missing })}</div>` +
     footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
   // Course list is loaded only when the person opens it (86 KB of data).
   const det = dlg.querySelector("[data-courses]");
@@ -255,15 +256,15 @@ function renderProgram(p) {
     .map((l) => `<a class="btn" href="${l.u}" target="_blank" rel="noopener">${esc(L(l.l))} ↗</a>`).join("");
 
   dlg.setAttribute("aria-label", L(p.name));
-  dlg.className = `sdlg board-${p.board === "peel" ? "peel" : "dpcdsb"}`;
-  dlg.innerHTML = headHtml(TAG_ICON[p.tag] || "★", L(p.name), `${esc(L(BOARDS[p.board]))} · ${esc(u.startsAt[p.start])}`, `board-${p.board === "peel" ? "peel" : "dpcdsb"}`) +
+  dlg.className = `sdlg board-${boardClass(p.board)}`;
+  dlg.innerHTML = headHtml(TAG_ICON[p.tag] || "★", L(p.name), `${esc(L(BOARDS[p.board]))} · ${esc(u.startsAt[p.start])}`, `board-${boardClass(p.board)}`) +
     `<div class="dbody">
       <section class="dsec"><p>${esc(L(p.p))}</p>${info.who ? `<p class="dfocus"><b>${esc(P.who)}:</b> ${esc(L(info.who))}</p>` : ""}
         ${p.second ? `<p class="small muted"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : ""}</section>
       ${admissionHtml(admissionsForProgram(p.id), "program")}
       ${info.reqs ? `<section class="dsec"><h3>${esc(P.reqs)}</h3><ul class="dnotes">${info.reqs.map((r) => `<li>${esc(L(r))}</li>`).join("")}</ul></section>` : ""}
       ${info.how ? `<section class="dsec"><h3>${esc(P.how)}</h3><p class="small">${esc(L(info.how))}</p>${info.dates ? `<p class="small muted">${esc(L(info.dates))}</p>` : ""}</section>` : ""}
-      ${info.keyDates ? `<section class="dsec"><h3>${esc(P.keyDates)}</h3><p class="small">${esc(L(info.keyDates))}</p></section>` : ""}
+      ${info.keyDates && L(info.keyDates) !== L(info.dates) ? `<section class="dsec"><h3>${esc(P.keyDates)}</h3><p class="small">${esc(L(info.keyDates))}</p></section>` : ""}
       ${sess.length ? `<section class="dsec"><h3>${esc(P.sessions)}</h3>${sess.map((e) => sessionRow(e, { showSchool: true })).join("")}<p class="small muted">${esc(S.calNote)}</p></section>` : ""}
       <section class="dsec"><h3>${esc(P.hosts)}</h3><ul class="hosts">${hosts}</ul></section>
       ${links ? `<section class="dsec"><h3>${esc(P.links)}</h3><div class="sbtns">${links}</div></section>` : ""}
@@ -302,12 +303,25 @@ function ensureDialog() {
   });
 }
 
-function openProfile(type, id) {
-  const item = type === "school" ? SCHOOLS.find((s) => s.id === id) : PROGRAMS.find((p) => p.id === id);
+const findItem = (type, id) => (type === "school" ? SCHOOLS.find((s) => s.id === id) : PROGRAMS.find((p) => p.id === id));
+
+async function openProfile(type, id) {
+  let item = findItem(type, id);
+  // A shared link to a program of another board arrives before that board's details are loaded.
+  if (!item && type === "program") { await ensureBoards(); item = findItem(type, id); }
   if (!item) return;
   ensureDialog();
   current = { type, id };
   type === "school" ? renderSchool(item) : renderProgram(item);
+  // Collected details (programs, admissions, sessions...) load per board; refresh the open profile when they arrive.
+  const refresh = (changed) => {
+    if (!changed || !dlg.open || current?.type !== type || current.id !== id) return;
+    const y = dlg.querySelector(".dbody")?.scrollTop || 0;
+    type === "school" ? renderSchool(item) : renderProgram(item);
+    const b = dlg.querySelector(".dbody");
+    if (b) b.scrollTop = y;
+  };
+  (type === "school" ? ensureSchool(id) : ensureBoardExtras(item.board)).then(refresh);
   if (!dlg.open) dlg.showModal();
   dlg.querySelector(".dbody").scrollTop = 0;
   const hash = `#${type}-${id}`;

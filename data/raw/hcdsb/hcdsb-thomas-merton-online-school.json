@@ -1,0 +1,40 @@
+{
+ "id": "hcdsb-thomas-merton-online-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://merton.hcdsb.org/",
+ "sources": [
+  "https://secondary.hcdsb.org/x/",
+  "https://merton.hcdsb.org/",
+  "https://merton.hcdsb.org/secondary-students/",
+  "https://merton.hcdsb.org/secondary-students/co-op-education/",
+  "https://merton.hcdsb.org/secondary-students/alternative-learning/"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Alternative Learning (Transformations, Crossroads, New Hope)",
+   "note": {
+    "en": "Alternative Learning programs for secondary students struggling academically or otherwise, entered by referral from the home school's principal or vice-principal.",
+    "es": "Programas de aprendizaje alternativo para estudiantes de secundaria con dificultades académicas o de otro tipo, con ingreso por derivación del director o subdirector de su escuela.",
+    "fr": "Programmes d'apprentissage alternatif pour des élèves du secondaire en difficulté, sur recommandation de la direction ou de la direction adjointe de l'école d'origine."
+   },
+   "entry": "school",
+   "url": "https://merton.hcdsb.org/secondary-students/alternative-learning/"
+  }
+ ],
+ "shsm": [],
+ "other": [
+  "Co-operative Education (secondary students, enrolment ongoing)",
+  "Night School",
+  "Summer School",
+  "International Language Credit Courses"
+ ],
+ "admissions": [],
+ "sessions": [],
+ "calendarUrl": null,
+ "missing": [
+  "This is the Thomas Merton Centre for Adult and Continuing Education (night, summer, day-school credit courses), not a Grade 9 entry school.",
+  "No course calendar extracted: night and summer course lists are PDF information packages for the current year.",
+  "Night school dates 2026-27 exist (Sem 1 from Sept 28, 2026) but are for current students, not Grade 9 entry."
+ ]
+}

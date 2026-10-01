@@ -1,0 +1,71 @@
+{
+  "id": "tdsb-york-memorial",
+  "scrapedAt": "2026-10-01",
+  "site": "https://www.yorkmemorialci.ca/ymci-home",
+  "sources": [
+    "https://www.tdsb.on.ca/Find-your/Schools/schno/6697",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+    "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+    "https://www.yorkmemorialci.ca/ymci-home"
+  ],
+  "programs": [
+    {
+      "tag": "ap",
+      "name": "R.U.S.H. Pre-AP and Advanced Placement (AP)",
+      "entry": "school",
+      "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/6697",
+      "note": {
+        "en": "The TDSB school profile says York Memorial offers the R.U.S.H. (Roadmap to University Success with Honours) Pre-AP and Advanced Placement (AP) programs.",
+        "es": "El perfil del TDSB indica que York Memorial ofrece los programas R.U.S.H. (Roadmap to University Success with Honours) Pre-AP y Advanced Placement (AP).",
+        "fr": "Le profil du TDSB indique que York Memorial offre les programmes R.U.S.H. (Roadmap to University Success with Honours) Pre-AP et Advanced Placement (AP)."
+      }
+    },
+    {
+      "tag": "stem",
+      "name": "Math and Science Focus (Local)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+      "note": {
+        "en": "Math and Science Focus (Local) is listed as a local program: a math, science and technology focus available at the school itself.",
+        "es": "Math and Science Focus (Local) figura como programa local: un enfoque en matemáticas, ciencias y tecnología disponible en la propia escuela.",
+        "fr": "Math and Science Focus (Local) est indiqué comme programme local : une orientation mathématiques, sciences et technologie offerte dans l'école même."
+      }
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "entry": "school",
+      "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/6697",
+      "note": {
+        "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Arts & Culture, Construction, Health and Wellness, Information Communications Technology, Non-Profit, Education and Child Care.",
+        "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Arts & Culture, Construction, Health and Wellness, Information Communications Technology, Non-Profit, Education and Child Care.",
+        "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Arts & Culture, Construction, Health and Wellness, Information Communications Technology, Non-Profit, Education and Child Care."
+      }
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Construction",
+    "Health and Wellness",
+    "Information Communications Technology",
+    "Non-Profit, Education and Child Care"
+  ],
+  "other": [],
+  "calendarUrl": null,
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-26",
+      "time": "18:15",
+      "format": "In person",
+      "title": "Open house / information night, 6:15-8:30 PM (local programs: AP, MST, SHSM)",
+      "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+    }
+  ],
+  "missing": [
+    "The school's own site is a Google Sites page whose menus are not readable by the crawler, so only its home page was read.",
+    "The TDSB profile says the school is using the former George Harvey site while York Memorial is rebuilt.",
+    "No public course list readable without a login was found on the school's pages (TDSB course selection runs through myBlueprint), so no course list was extracted."
+  ]
+}

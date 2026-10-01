@@ -1,0 +1,30 @@
+{
+ "id": "tdsb-eastdale",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/eastdaleci",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/eastdaleci/Our-Programs",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://schoolweb.tdsb.on.ca/Portals/eastdaleci/docs/post%20Eastdale%20pathways%20options%20for%20website(1).pdf"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Diploma and Certificate Programs (Special Education)",
+   "entry": "school",
+   "url": "https://schoolweb.tdsb.on.ca/eastdaleci/Our-Programs",
+   "note": {
+    "en": "Eastdale offers four pathways: Certificate of Accomplishment and Employability Skills Certificate for students centrally placed through Special Education, plus the OSSC (14 credits) and the OSSD (30 credits).",
+    "es": "Eastdale ofrece cuatro vías: Certificate of Accomplishment y Employability Skills Certificate para estudiantes ubicados centralmente por Educación Especial, además del OSSC (14 créditos) y el OSSD (30 créditos).",
+    "fr": "Eastdale offre quatre parcours : le Certificate of Accomplishment et l'Employability Skills Certificate pour les élèves placés de façon centrale par l'éducation de l'enfance en difficulté, ainsi que l'OSSC (14 crédits) et l'OSSD (30 crédits)."
+   }
+  }
+ ],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "Course calendar or course list: no public course list found on the school's own pages (TDSB course selection runs through myBlueprint, which needs a TDSB login).",
+  "School is not listed in the TDSB open house table; no information night found.",
+  "Admission is through special education placement; no application process described on the school pages."
+ ]
+}

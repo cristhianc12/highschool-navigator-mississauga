@@ -1,0 +1,62 @@
+{
+ "id": "tcdsb-dante-alighieri-academy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/dantealighieri/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/dantealighieri/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Arts and Culture, Business, Health and Wellness",
+   "note": {
+    "en": "Three SHSM programs for senior students in Arts and Culture, Business and Health and Wellness.",
+    "es": "Tres programas SHSM para estudiantes de los últimos años en Arts and Culture, Business y Health and Wellness.",
+    "fr": "Trois programmes SHSM pour les élèves des dernières années en Arts and Culture, Business et Health and Wellness."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "sports",
+   "name": "Soccer Program",
+   "note": {
+    "en": "The board chart lists a Soccer Program at Dante Alighieri Academy; the school profile mentions athletics including its soccer program.",
+    "es": "El cuadro del consejo lista un Soccer Program en Dante Alighieri Academy; el perfil de la escuela menciona atletismo, incluido su programa de fútbol.",
+    "fr": "Le tableau du conseil indique un Soccer Program à Dante Alighieri Academy; le profil de l'école mentionne l'athlétisme, y compris son programme de soccer."
+   },
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP",
+  "Dual Credit",
+  "Grade 9 Summer Transition Program",
+  "Intensive Support Program (ISP)"
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/dantealighieri/page/open-house"
+  }
+ ],
+ "missing": [
+  "The school's pages do not describe how to apply to the Soccer Program.",
+  "The open house page gives 70 Playfair Ave. as the location, which differs from the roster address; the roster address was not changed."
+ ]
+}

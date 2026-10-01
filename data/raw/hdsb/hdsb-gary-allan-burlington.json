@@ -1,0 +1,34 @@
+{
+ "id": "hdsb-gary-allan-burlington",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.hdsb.ca/gab/",
+ "sources": [
+  "https://www.hdsb.ca/academics-resources/adult-alternative-and-continuing-education/",
+  "https://www.hdsb.ca/gab/",
+  "https://www.hdsb.ca/gab/our-school/about-us/"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Alternative Education",
+   "note": {
+    "en": "Gary Allan High School continues to deliver Alternative Education programs for current students; Adult, Alternative and Continuing Education is overseen by Gary Allan Learning Centres.",
+    "es": "Gary Allan High School sigue ofreciendo programas de educación alternativa para sus estudiantes actuales; la educación para adultos, alternativa y continua está a cargo de los Gary Allan Learning Centres.",
+    "fr": "Gary Allan High School continue d'offrir des programmes d'éducation alternative à ses élèves actuels; l'éducation des adultes, alternative et continue relève des Gary Allan Learning Centres."
+   },
+   "entry": null,
+   "url": "https://www.hdsb.ca/academics-resources/adult-alternative-and-continuing-education/"
+  }
+ ],
+ "shsm": [],
+ "other": [],
+ "focus": null,
+ "calendarUrl": null,
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "School's hdsb.ca pages reuse Abbey Park template text (page body 'WYSIWYG EDITOR', Abbey Park program copy); no school-specific program, admission, course or session information",
+  "garyallan.ca is blocked by the network proxy and its pages returned no content",
+  "No course list published"
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "id": "tdsb-birchmount-park",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/birchmountpark/",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4118",
+  "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/Exceptional-Athlete-Program",
+  "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/About",
+  "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/SHSM-Programs",
+  "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/Special-Education-Programs/Gifted",
+  "https://schoolweb.tdsb.on.ca/birchmountpark/Guidance/Registration-Information",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Leadership",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+ ],
+ "programs": [
+  {
+   "tag": "sports",
+   "name": "Birchmount Exceptional Athlete Program (BEAP)",
+   "note": {
+    "en": "TDSB Specialized Program for student-athletes that combines academics with rigorous athletic training at school and at Variety Village; students take Personal Fitness courses in Grades 9 to 11, then Recreation Leadership and a capstone project in Grade 12, with the Health & Wellness SHSM as an option.",
+    "es": "Programa especializado del TDSB para estudiantes-atletas que combina lo académico con un entrenamiento deportivo riguroso en la escuela y en Variety Village; se cursa Personal Fitness de 9.º a 11.º grado y luego Recreation Leadership y un proyecto final en 12.º grado, con el SHSM de Health & Wellness como opción.",
+    "fr": "Programme spécialisé du TDSB pour élèves-athlètes qui combine les études et un entraînement sportif rigoureux à l'école et à Variety Village; les élèves suivent Personal Fitness de la 9e à la 11e année, puis Recreation Leadership et un projet de synthèse en 12e année, avec le SHSM Health & Wellness en option."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/Exceptional-Athlete-Program",
+   "entry": "apply"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "The board's information-night listing shows Advanced Placement as a local program at Birchmount Park CI; the school pages reviewed do not describe it.",
+    "es": "El listado de noches informativas del consejo muestra Advanced Placement como programa local en Birchmount Park CI; las páginas de la escuela revisadas no lo describen.",
+    "fr": "La liste des soirées d'information du conseil indique Advanced Placement comme programme local à Birchmount Park CI; les pages de l'école consultées ne le décrivent pas."
+   },
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "school",
+   "url": "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/SHSM-Programs",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Health and Wellness, Manufacturing.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Health and Wellness, Manufacturing.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Health and Wellness, Manufacturing."
+   }
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted Program",
+   "note": {
+    "en": "Special education Gifted program with enhanced breadth and depth of curriculum; placement is offered through the IPRC process and linked to home address.",
+    "es": "Programa de educación especial para estudiantes dotados con mayor amplitud y profundidad del currículo; la colocación se ofrece mediante el proceso IPRC y depende del domicilio.",
+    "fr": "Programme d'éducation spécialisée pour élèves surdoués avec un curriculum plus large et plus approfondi; le placement est offert par le processus CIPR et lié à l'adresse du domicile."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/birchmountpark/Programs/Special-Education-Programs/Gifted",
+   "entry": "school"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Manufacturing"
+ ],
+ "other": [
+  "Intensive Support Programs (Developmental Disabilities, Gifted, Physical Disabilities)"
+ ],
+ "admissions": [
+  {
+   "program": "Birchmount Exceptional Athlete Program (BEAP)",
+   "tag": "sports",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Leadership",
+   "elig": {
+    "en": "Open for Grade 9 entry through the TDSB Specialized Programs application; No more than 2 of these report-card marks may be below the Provincial standard (70%): Language, Math, Science & Technology, Geography, History, French, Arts, Physical and Health Education.",
+    "es": "Abierto para ingreso a 9.º grado mediante la solicitud de programas especializados del TDSB; No más de 2 de estas calificaciones del boletín pueden estar por debajo del estándar provincial (70 %): Language, Math, Science & Technology, Geography, History, French, Arts y Physical and Health Education.",
+    "fr": "Ouvert à l'entrée en 9e année par la demande aux programmes spécialisés du TDSB; Au plus 2 de ces notes du bulletin peuvent être inférieures à la norme provinciale (70 %) : Language, Math, Science & Technology, Geography, History, French, Arts et Physical and Health Education."
+   },
+   "marks": {
+    "en": "Marks in the applicant score: average of Language, Physical Education and Health Education.",
+    "es": "Calificaciones que cuentan en la puntuación: promedio de Language, Physical Education y Health Education.",
+    "fr": "Notes comptées dans le score : moyenne de Language, Physical Education et Health Education."
+   },
+   "dates": {
+    "en": "Online application Nov. 9-27, 2026; in-person assessment Wed. Dec. 9, 2026 (Mon. Dec. 14 if weather closes schools); acceptances emailed Feb. 10, 2027, offers expire Feb. 16, 2027 at 4 p.m.",
+    "es": "Solicitud en línea del 9 al 27 de noviembre de 2026; evaluación presencial el miércoles 9 de diciembre de 2026 (lunes 14 si el clima cierra las escuelas); aceptaciones por correo el 10 de febrero de 2027, las ofertas vencen el 16 de febrero de 2027 a las 4 p. m.",
+    "fr": "Demande en ligne du 9 au 27 novembre 2026; évaluation en personne le mercredi 9 décembre 2026 (lundi 14 en cas de fermeture pour météo); acceptations envoyées par courriel le 10 février 2027, les offres expirent le 16 février 2027 à 16 h."
+   },
+   "submit": [
+    {
+     "en": "Online TDSB Specialized Programs application",
+     "es": "Solicitud en línea de programas especializados del TDSB",
+     "fr": "Demande en ligne aux programmes spécialisés du TDSB"
+    },
+    {
+     "en": "60-minute written in-person assessment: two questions on personal experiences and opinions about leadership qualities and civic-mindedness",
+     "es": "Evaluación escrita presencial de 60 minutos: dos preguntas sobre experiencias y opiniones personales acerca de cualidades de liderazgo y civismo",
+     "fr": "Évaluation écrite en personne de 60 minutes : deux questions sur les expériences et opinions personnelles concernant les qualités de leadership et le civisme"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored on the previous year's report card (30%) and a demonstration of knowledge and skills (70%); meeting the mark benchmark does not guarantee a seat.",
+     "es": "Los solicitantes se califican según el boletín del año anterior (30 %) y una demostración de conocimientos y habilidades (70 %); cumplir el requisito de calificaciones no garantiza un cupo.",
+     "fr": "Les candidats sont évalués selon le bulletin de l'année précédente (30 %) et une démonstration de connaissances et d'habiletés (70 %); respecter le seuil de notes ne garantit pas une place."
+    },
+    {
+     "en": "Applicants choose one type of Specialized Program: one primary choice and, optionally, an alternate of the SAME type; transportation is the applicant's responsibility.",
+     "es": "Los solicitantes eligen un solo tipo de programa especializado: una opción principal y, si quieren, una alternativa del MISMO tipo; el transporte corre por cuenta del solicitante.",
+     "fr": "Les candidats choisissent un seul type de programme spécialisé : un premier choix et, au besoin, un choix de remplacement du MÊME type; le transport est à la charge du candidat."
+    },
+    {
+     "en": "Share of 2026 primary-choice applicants offered an entry-grade seat: 80% to 100%.",
+     "es": "Porcentaje de solicitantes de primera opción de 2026 que recibieron un cupo en el grado de entrada: 80% to 100%.",
+     "fr": "Part des candidats de premier choix de 2026 ayant reçu une place en année d'entrée : 80% to 100%."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-12",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open house / information night, 6:30-8:30 PM (BEAP athletic leadership; local programs: AP, SHSM)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No public course calendar found; the school uses TDSB myBlueprint for course selection.",
+  "The school's own BEAP page still shows the September 2026 application dates; the board Specialized Programs pages (Nov. 9-27, 2026) were used.",
+  "The school's pages do not describe its AP offering."
+ ]
+}

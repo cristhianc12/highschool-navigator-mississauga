@@ -1,0 +1,167 @@
+{
+ "id": "tcdsb-father-henry-carr",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/fatherhenrycarr/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/fatherhenrycarr/page/ap-program",
+  "https://www.tcdsb.org/o/fatherhenrycarr/page/gifted",
+  "https://www.tcdsb.org/o/fatherhenrycarr/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Congregated Advanced Placement (AP) Program",
+   "note": {
+    "en": "TCDSB Regional Centre for Congregated AP: Pre-AP classes start in Grade 9 in mathematics, science, English, French and social sciences and lead to AP courses in Grades 11-12 and AP exams written in May at the school.",
+    "es": "Centro regional del TCDSB para Congregated AP: las clases Pre-AP empiezan en 9.º grado en matemáticas, ciencias, inglés, francés y ciencias sociales y llevan a cursos AP en 11.º y 12.º y a exámenes AP que se rinden en mayo en la escuela.",
+    "fr": "Centre régional du TCDSB pour le Congregated AP : les classes Pre-AP commencent en 9e année en mathématiques, sciences, anglais, français et sciences sociales et mènent à des cours AP en 11e et 12e année et à des examens AP passés en mai à l'école."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/fatherhenrycarr/page/ap-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Transportation, JCSES, Arts and Culture",
+   "note": {
+    "en": "Three SHSM programs: Transportation, Justice, Community Safety and Emergency Services, and Arts and Culture.",
+    "es": "Tres programas SHSM: Transportation, Justice, Community Safety and Emergency Services, y Arts and Culture.",
+    "fr": "Trois programmes SHSM : Transportation, Justice, Community Safety and Emergency Services et Arts and Culture."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/fatherhenrycarr/page/open-house"
+  },
+  {
+   "tag": "sports",
+   "name": "Carr York Soccer Program (CYSP)",
+   "note": {
+    "en": "Carr York Soccer Program is listed on the board chart and in the school highlights; the board's SOAR guide includes a York Soccer Program application with a sports form to be received by October 30, 2026.",
+    "es": "El Carr York Soccer Program figura en el cuadro del consejo y en los datos destacados de la escuela; la guía de SOAR del consejo incluye una solicitud del York Soccer Program con un formulario deportivo que debe recibirse antes del 30 de octubre de 2026.",
+    "fr": "Le Carr York Soccer Program figure dans le tableau du conseil et dans les faits saillants de l'école; le guide SOAR du conseil comprend une demande au York Soccer Program avec un formulaire sportif à recevoir avant le 30 octobre 2026."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "sports",
+   "name": "The Prep Basketball Program",
+   "note": {
+    "en": "Junior and senior Prep Basketball listed on the board chart and in the school highlights.",
+    "es": "Prep Basketball júnior y sénior figura en el cuadro del consejo y en los datos destacados de la escuela.",
+    "fr": "Le Prep Basketball junior et sénior figure dans le tableau du conseil et dans les faits saillants de l'école."
+   },
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "other",
+   "name": "Fast Forward school-work transition pathways",
+   "note": {
+    "en": "Fast Forward prescriptive school-work transition pathways in Transportation (Auto) Technology and Health Care for students heading to college, apprenticeship or the workplace.",
+    "es": "Trayectorias prescriptivas de transición escuela-trabajo Fast Forward en Transportation (Auto) Technology y Health Care para estudiantes que van a college, aprendizaje de oficios o trabajo.",
+    "fr": "Parcours prescriptifs de transition école-travail Fast Forward en Transportation (Auto) Technology et Health Care pour les élèves qui se dirigent vers le collège, l'apprentissage ou le marché du travail."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/fatherhenrycarr/page/gifted"
+  }
+ ],
+ "shsm": [
+  "Transportation",
+  "Justice, Community Safety and Emergency Services (JCSES)",
+  "Arts and Culture"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP",
+  "Dual Credit",
+  "Intensive Support Program (ISP)"
+ ],
+ "admissions": [
+  {
+   "program": "Congregated Advanced Placement (CAP), Grade 9 entry",
+   "tag": "ap",
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "elig": {
+    "en": "Grade 8 students applying for Grade 9 entry in September 2027; TCDSB schools list Congregated Advanced Placement as a specialty program with its own application section in SOAR.",
+    "es": "Estudiantes de 8.º grado que postulan para entrar a 9.º en septiembre de 2027; el TCDSB trata Congregated Advanced Placement como programa especializado con su propia sección de solicitud en SOAR.",
+    "fr": "Élèves de 8e année qui font une demande pour la 9e année en septembre 2027; le TCDSB traite le programme Congregated Advanced Placement comme un programme spécialisé avec sa propre section dans SOAR."
+   },
+   "submit": [
+    {
+     "en": "SOAR Congregated Advanced Placement section: community involvement, awards and distinctions, choice of Pre-AP courses (English, Mathematics and Science are mandatory) and a persuasive essay of up to 250 words written by the applicant.",
+     "es": "Sección de Congregated Advanced Placement en SOAR: participación comunitaria, premios y distinciones, elección de cursos Pre-AP (inglés, matemáticas y ciencias son obligatorios) y un ensayo persuasivo de hasta 250 palabras escrito por el solicitante.",
+     "fr": "Section Congregated Advanced Placement de SOAR : engagement communautaire, prix et distinctions, choix des cours Pre-AP (anglais, mathématiques et sciences obligatoires) et essai argumentatif d'au plus 250 mots rédigé par le candidat."
+    },
+    {
+     "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+     "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+     "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+    },
+    {
+     "en": "Principal or designate reference (for TCDSB students SOAR sends the request automatically to the elementary school principal; no family members as references).",
+     "es": "Referencia del director o su designado (para estudiantes del TCDSB, SOAR envía la solicitud automáticamente al director de la primaria; no pueden ser familiares).",
+     "fr": "Référence de la direction ou de son délégué (pour les élèves du TCDSB, SOAR envoie automatiquement la demande à la direction de l'école élémentaire; pas de membres de la famille)."
+    }
+   ],
+   "dates": {
+    "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+    "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+    "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+   },
+   "know": [
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    },
+    {
+     "en": "The school page says all TCDSB students may apply to the Congregated Pre-AP/AP program, and the board chart notes the application is a supplementary application on SOAR.",
+     "es": "La página de la escuela dice que todos los estudiantes del TCDSB pueden postular al programa Congregated Pre-AP/AP, y el cuadro del consejo indica que es una solicitud suplementaria en SOAR.",
+     "fr": "La page de l'école indique que tous les élèves du TCDSB peuvent présenter une demande au programme Congregated Pre-AP/AP, et le tableau du conseil précise qu'il s'agit d'une demande supplémentaire dans SOAR."
+    }
+   ]
+  },
+  {
+   "program": "Carr York Soccer Program (CYSP)",
+   "tag": "sports",
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "submit": [
+    {
+     "en": "Sports Athletic Program application form (downloaded from SOAR), which the school must receive by October 30, 2026, in addition to the online application.",
+     "es": "Formulario de solicitud del programa deportivo (se descarga en SOAR), que la escuela debe recibir a más tardar el 30 de octubre de 2026, además de la solicitud en línea.",
+     "fr": "Formulaire de demande du programme sportif (téléchargé dans SOAR), que l'école doit recevoir au plus tard le 30 octobre 2026, en plus de la demande en ligne."
+    }
+   ],
+   "dates": {
+    "en": "The online application and the sports form must reach the school by October 30, 2026.",
+    "es": "La solicitud en línea y el formulario deportivo deben llegar a la escuela antes del 30 de octubre de 2026.",
+    "fr": "La demande en ligne et le formulaire sportif doivent parvenir à l'école avant le 30 octobre 2026."
+   },
+   "know": [
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House (CAP and SHSM information)",
+   "url": "https://www.tcdsb.org/o/fatherhenrycarr/page/open-house"
+  }
+ ],
+ "missing": [
+  "The school pages do not state which schools use the 'York Soccer Program' application; the board guide names the program without listing schools.",
+  "No separate marks threshold for the CAP application is stated on the school's pages."
+ ]
+}

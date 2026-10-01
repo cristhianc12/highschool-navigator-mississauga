@@ -1,30 +1,29 @@
 {
  "id": "tdsb-avondale-alternative-school",
  "scrapedAt": "2026-10-01",
- "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/3409",
+ "site": "https://schoolweb.tdsb.on.ca/avondalesa",
  "sources": [
-  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=3409",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
-  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3409",
+  "https://schoolweb.tdsb.on.ca/avondalesa/About-Us",
+  "https://schoolweb.tdsb.on.ca/avondalesa/Academics",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
  ],
  "programs": [
   {
    "tag": "alt",
-   "name": "Secondary Alternative School",
+   "name": "Avondale Secondary Alternative School",
    "note": {
-    "en": "Alternative schools are small learning environments with a distinct approach to learning; applications are made at each secondary alternative school.",
-    "es": "Las escuelas alternativas son entornos de aprendizaje pequeños con un enfoque distinto; la solicitud se hace en cada escuela secundaria alternativa.",
-    "fr": "Les écoles alternatives sont de petits milieux d'apprentissage avec une approche distinctive; les demandes se font directement à chaque école secondaire alternative."
+    "en": "Small alternative school for Grades 10 to 12 (semestered) with classes of about 10 to 15 students, academic and university/college preparation courses, and arts and wellness courses taught by working artists.",
+    "es": "Escuela alternativa pequeña para 10.º a 12.º grado (por semestres) con clases de unos 10 a 15 estudiantes, cursos académicos y de preparación universitaria/colegial, y cursos de artes y bienestar impartidos por artistas profesionales.",
+    "fr": "Petite école alternative pour les 10e à 12e années (par semestre) avec des classes d'environ 10 à 15 élèves, des cours théoriques et de préparation à l'université/au collège, et des cours d'arts et de bien-être donnés par des artistes professionnels."
    },
-   "entry": "apply",
-   "url": "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+   "url": "https://schoolweb.tdsb.on.ca/avondalesa/Academics"
   }
  ],
  "admissions": [],
  "sessions": [],
  "missing": [
-  "No 2026-27 information night date on the TDSB open house page (the page lists the school without a date or does not list it).",
-  "No published course list for 2026-27 found that could be extracted reliably."
+  "An 'Information Form' page exists for applications, but admission steps and dates for 2026-27 were not stated on the pages read.",
+  "The TDSB open-house page lists no date and asks families to contact the school directly."
  ]
 }

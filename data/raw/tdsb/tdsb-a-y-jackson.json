@@ -3,35 +3,52 @@
  "scrapedAt": "2026-10-01",
  "site": "https://schoolweb.tdsb.on.ca/ayjackson/",
  "sources": [
-  "https://docs.google.com/spreadsheets/d/1QhLjFRpkc9v7Ld1c7xioSWBM00n9BksuzIesKMK3WV4/edit?usp=sharing",
-  "https://schoolweb.tdsb.on.ca/ayjackson/Student-Services",
-  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=3432",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3432",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Advanced-Placement",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Specialist-High-Skills-Major-Program-SHSM",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Dual-Credits-and-SWAC",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Extended-Interest-STEM-Certificate",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/OYAP-and-Apprenticeship-Programs",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Departments/Co-Op",
+  "https://schoolweb.tdsb.on.ca/ayjackson/Student-Services/Course-Selection",
+  "https://schoolweb.tdsb.on.ca/ayjackson/AY-Jackson-SS-Home/Registration-Information",
   "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+  "https://docs.google.com/spreadsheets/d/1dmazN9QxTpeVcJW4F32179Katmdd8-lz1QMMarYaLos/edit?usp=sharing"
  ],
  "programs": [
   {
    "tag": "ap",
-   "name": "Advanced Placement (AP)",
+   "name": "Advanced Placement (AP) courses",
    "note": {
-    "en": "Advanced Placement courses let students earn a Grade 12 university-preparation credit and take the optional AP exam; course offerings vary by school and year.",
-    "es": "Los cursos Advanced Placement permiten obtener un crédito universitario de 12.º grado y presentar el examen AP opcional; la oferta varía según la escuela y el año.",
-    "fr": "Les cours Advanced Placement permettent d'obtenir un crédit universitaire de 12e année et de passer l'examen AP facultatif; l'offre varie selon l'école et l'année."
+    "en": "AP courses are offered only in Grade 12 (course codes end in 0); AP exams are written in May, can be taken by any student and are paid for separately; AP is not an optional-attendance program for students outside the school's area.",
+    "es": "Los cursos AP se ofrecen solo en 12.º grado (los códigos terminan en 0); los exámenes AP se rinden en mayo, los puede tomar cualquier estudiante y se pagan aparte; AP no es un programa de asistencia opcional para estudiantes de fuera de la zona de la escuela.",
+    "fr": "Les cours AP sont offerts seulement en 12e année (les codes se terminent par 0); les examens AP ont lieu en mai, tout élève peut les passer et ils se paient à part; l'AP n'est pas un programme de fréquentation facultative pour les élèves hors du secteur de l'école."
    },
-   "entry": "school",
-   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+   "url": "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Advanced-Placement",
+   "entry": "school"
   },
   {
    "tag": "shsm",
    "name": "Specialist High Skills Major (SHSM)",
-   "note": {
-    "en": "Grade 11-12 Ministry-approved program that focuses learning on an economic sector while earning the OSSD; sectors listed for this school by the TDSB: Business, Health and Wellness, Information Communications Technology.",
-    "es": "Programa de 11.º y 12.º grado aprobado por el Ministerio que enfoca el aprendizaje en un sector económico mientras se obtiene el OSSD; sectores que el TDSB indica para esta escuela: Business, Health and Wellness, Information Communications Technology.",
-    "fr": "Programme de 11e et 12e année approuvé par le Ministère qui centre l'apprentissage sur un secteur économique tout en obtenant le diplôme OSSD; secteurs indiqués par le TDSB pour cette école : Business, Health and Wellness, Information Communications Technology."
-   },
    "entry": "school",
-   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+   "url": "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Specialist-High-Skills-Major-Program-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business, Health and Wellness, Information Communications Technology.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business, Health and Wellness, Information Communications Technology.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business, Health and Wellness, Information Communications Technology."
+   }
+  },
+  {
+   "tag": "stem",
+   "name": "AYJ Extended Interest STEM Certificate",
+   "note": {
+    "en": "School certificate earned with 5 STEM credits across science, technology and math, at least 3 STEM contests and a peer-tutoring role; no application needed.",
+    "es": "Certificado de la escuela que se obtiene con 5 créditos STEM en ciencias, tecnología y matemáticas, al menos 3 concursos STEM y una función de tutoría entre pares; no requiere solicitud.",
+    "fr": "Certificat de l'école obtenu avec 5 crédits STEM en sciences, en technologie et en mathématiques, au moins 3 concours STEM et un rôle de tutorat par les pairs; aucune demande requise."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/ayjackson/Special-Programs-Honours-and-Awards/Extended-Interest-STEM-Certificate",
+   "entry": "school"
   }
  ],
  "shsm": [
@@ -40,8 +57,12 @@
   "Information Communications Technology"
  ],
  "other": [
-  "Co-operative Education"
+  "Co-operative Education",
+  "Dual Credit",
+  "School Within a College (SWAC)",
+  "OYAP"
  ],
+ "calendarUrl": "https://schoolweb.tdsb.on.ca/ayjackson/Student-Services/Course-Selection",
  "admissions": [],
  "sessions": [
   {
@@ -49,12 +70,13 @@
    "date": "2026-11-25",
    "time": "18:30",
    "format": "In person",
-   "title": "Grade 9 open house / information night",
+   "title": "Open house / information night, 6:30-8:30 PM (local programs: AP, SHSM)",
    "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
   }
  ],
  "missing": [
-  "Fees, marks and dates for local programs (AP, SHSM, French Immersion) were not stated on the pages read."
- ],
- "calendarUrl": "https://schoolweb.tdsb.on.ca/ayjackson/Student-Services"
+  "The school's page names its SHSMs as Business, Biotechnology and ICT while the TDSB SHSM list shows Business, Health and Wellness and ICT; the TDSB sector names are used.",
+  "Registration page on the school site is for September 2024, so it was not used; A Y Jackson is shown as closed to out-of-area admissions there.",
+  "No separate admissions process found for AP or SHSM beyond course selection."
+ ]
 }

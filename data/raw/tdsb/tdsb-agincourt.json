@@ -3,34 +3,46 @@
  "scrapedAt": "2026-10-01",
  "site": "https://schoolweb.tdsb.on.ca/agincourtci",
  "sources": [
-  "https://sites.google.com/tdsb.on.ca/aci-course-selection/home",
-  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=4106",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4106",
+  "https://schoolweb.tdsb.on.ca/agincourtci/About-Our-School",
+  "https://schoolweb.tdsb.on.ca/agincourtci/Grade-9-Program",
+  "https://schoolweb.tdsb.on.ca/agincourtci/Elective-Courses",
+  "https://schoolweb.tdsb.on.ca/agincourtci/Departments/French",
   "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
   "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
  ],
  "programs": [
   {
    "tag": "fi",
-   "name": "French Immersion",
+   "name": "French Immersion (FI)",
    "note": {
-    "en": "French Immersion for students with 3,800 to 6,000 hours of French instruction in elementary school; 10 credits (4 in French and 6 in other subjects taught in French) earn the Certificate of Bilingual Studies.",
-    "es": "Inmersión en francés para estudiantes con 3800 a 6000 horas de instrucción en francés en primaria; 10 créditos (4 de francés y 6 de otras materias en francés) dan el Certificate of Bilingual Studies.",
-    "fr": "Immersion française pour les élèves ayant de 3 800 à 6 000 heures d'enseignement du français à l'élémentaire; 10 crédits (4 en français et 6 dans d'autres matières enseignées en français) mènent au Certificate of Bilingual Studies."
+    "en": "French Immersion is listed as a local program at Agincourt CI; the TDSB describes it for students with 3,800 to 6,000 hours of French instruction in elementary school, with 10 credits (4 in French, 6 in subjects taught in French) for the certificate.",
+    "es": "French Immersion figura como programa local en Agincourt CI; el TDSB lo describe para estudiantes con 3800 a 6000 horas de instrucción en francés en primaria, con 10 créditos (4 de francés y 6 de materias impartidas en francés) para el certificado.",
+    "fr": "L'immersion française est indiquée comme programme local à Agincourt CI; le TDSB la décrit pour les élèves ayant de 3 800 à 6 000 heures d'enseignement en français à l'élémentaire, avec 10 crédits (4 en français et 6 dans des matières enseignées en français) pour le certificat."
    },
-   "entry": "school",
    "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "The school's French department lists Core French, Extended French and French Immersion among its program offerings.",
+    "es": "El departamento de francés de la escuela incluye Core French, Extended French y French Immersion entre sus programas.",
+    "fr": "Le département de français de l'école indique Core French, Extended French et French Immersion parmi ses programmes."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/agincourtci/Departments/French"
   },
   {
    "tag": "shsm",
    "name": "Specialist High Skills Major (SHSM)",
-   "note": {
-    "en": "Grade 11-12 Ministry-approved program that focuses learning on an economic sector while earning the OSSD; sectors listed for this school by the TDSB: Business, Manufacturing, Non-Profit, Education and Child Care, Sports.",
-    "es": "Programa de 11.º y 12.º grado aprobado por el Ministerio que enfoca el aprendizaje en un sector económico mientras se obtiene el OSSD; sectores que el TDSB indica para esta escuela: Business, Manufacturing, Non-Profit, Education and Child Care, Sports.",
-    "fr": "Programme de 11e et 12e année approuvé par le Ministère qui centre l'apprentissage sur un secteur économique tout en obtenant le diplôme OSSD; secteurs indiqués par le TDSB pour cette école : Business, Manufacturing, Non-Profit, Education and Child Care, Sports."
-   },
    "entry": "school",
-   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM"
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Specialist-High-Skills-Major-SHSM",
+   "note": {
+    "en": "Ministry-approved Grade 11-12 program that lets students focus on an economic sector while earning the OSSD; the TDSB lists these sectors at this school: Business, Manufacturing, Non-Profit, Education and Child Care, Sports.",
+    "es": "Programa aprobado por el Ministerio para 11.º y 12.º grado que permite enfocarse en un sector económico mientras se obtiene el OSSD; el TDSB indica estos sectores en esta escuela: Business, Manufacturing, Non-Profit, Education and Child Care, Sports.",
+    "fr": "Programme approuvé par le ministère pour la 11e et la 12e année qui permet de se concentrer sur un secteur économique tout en obtenant le diplôme (OSSD); le TDSB indique ces secteurs dans cette école : Business, Manufacturing, Non-Profit, Education and Child Care, Sports."
+   }
   }
  ],
  "shsm": [
@@ -49,13 +61,13 @@
    "date": "2026-12-10",
    "time": "18:30",
    "format": "In person",
-   "title": "Grade 9 open house / information night",
+   "title": "Open house / information night, 6:30-8:30 PM (local programs: French Immersion, SHSM)",
    "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
   }
  ],
  "missing": [
-  "No published course list for 2026-27 found that could be extracted reliably.",
-  "Fees, marks and dates for local programs (AP, SHSM, French Immersion) were not stated on the pages read."
- ],
- "calendarUrl": "https://sites.google.com/tdsb.on.ca/aci-course-selection/home"
+  "The school's home page and registration page state closure to out-of-area admission only for 2024-25 and 2025-26, so no entry rule is recorded.",
+  "The 'Elective Courses' page lists only about 10 courses, too few for a course list; no course calendar found.",
+  "No program-specific admission steps found for French Immersion or SHSM."
+ ]
 }

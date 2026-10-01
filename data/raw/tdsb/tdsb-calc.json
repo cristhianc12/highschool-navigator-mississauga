@@ -1,16 +1,28 @@
 {
  "id": "tdsb-calc",
  "scrapedAt": "2026-10-01",
+ "site": "https://www.calconline.net",
  "sources": [
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5893",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5894",
+  "https://sites.google.com/tdsb.on.ca/calconline"
  ],
- "programs": [],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Adult credit courses and Ed-Vance (ages 18-20)",
+   "note": {
+    "en": "The City Adult Learning Centre offers credit courses for adults completing the OSSD, preparing for college or university, or gaining job training; the Ed-Vance program serves 18 to 20 year olds at 1 Danforth.",
+    "es": "El City Adult Learning Centre ofrece cursos con créditos para adultos que completan el OSSD, se preparan para el colegio o la universidad o buscan capacitación laboral; el programa Ed-Vance atiende a jóvenes de 18 a 20 años en 1 Danforth.",
+    "fr": "Le City Adult Learning Centre offre des cours à crédit pour adultes qui terminent le DESO (OSSD), se préparent au collège ou à l'université ou suivent une formation professionnelle; le programme Ed-Vance s'adresse aux 18 à 20 ans au 1 Danforth."
+   },
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5893"
+  }
+ ],
  "admissions": [],
  "sessions": [],
  "missing": [
-  "No 2026-27 information night date on the TDSB open house page (the page lists the school without a date or does not list it).",
-  "No published course list for 2026-27 found that could be extracted reliably.",
-  "TDSB lists this site as an adult learning centre; no secondary program information found; official website did not load."
+  "Adult and 18-20 program; not an entry point for Grade 9 students, and no open house listed on the TDSB page.",
+  "No course list or admission dates found."
  ]
 }

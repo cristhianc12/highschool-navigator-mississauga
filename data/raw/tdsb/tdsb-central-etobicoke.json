@@ -3,15 +3,24 @@
  "scrapedAt": "2026-10-01",
  "site": "https://schoolweb.tdsb.on.ca/centraletobicoke/",
  "sources": [
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  "https://schoolweb.tdsb.on.ca/centraletobicoke/Our-School",
+  "https://schoolweb.tdsb.on.ca/centraletobicoke/"
  ],
- "programs": [],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Alternative curriculum (Locally Developed, Workplace, Open and K-level courses)",
+   "note": {
+    "en": "School providing a unique, alternative curriculum with courses at Locally Developed, Workplace, Open and K (non-credit) levels to prepare students for work, lifelong learning and community life.",
+    "es": "Escuela con un currículo alternativo y propio, con cursos de nivel Locally Developed, Workplace, Open y K (sin créditos), para preparar a los estudiantes para el trabajo, el aprendizaje continuo y la vida comunitaria.",
+    "fr": "École offrant un curriculum alternatif unique avec des cours de niveau Locally Developed, Workplace, Open et K (sans crédit) pour préparer les élèves au travail, à l'apprentissage continu et à la vie communautaire."
+   },
+   "url": "https://schoolweb.tdsb.on.ca/centraletobicoke/Our-School"
+  }
+ ],
  "admissions": [],
  "sessions": [],
  "missing": [
-  "No 2026-27 information night date on the TDSB open house page (the page lists the school without a date or does not list it).",
-  "No published course list for 2026-27 found that could be extracted reliably.",
-  "School site had no program pages (only transition-story documents); not listed on the TDSB open house page."
+  "Not on the TDSB open-house list; no admission process, dates or course list found."
  ]
 }

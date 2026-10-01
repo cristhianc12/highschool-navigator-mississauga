@@ -1,24 +1,23 @@
 {
  "id": "tdsb-alpha-ii-alternative-school",
  "scrapedAt": "2026-10-01",
- "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/5900",
+ "site": "https://schoolweb.tdsb.on.ca/alpha2/",
  "sources": [
-  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=5900",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5900",
+  "https://sites.google.com/student.tdsb.on.ca/alpha-ii-alternative-school/about-us",
   "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
-  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
  ],
  "programs": [
   {
    "tag": "alt",
-   "name": "Secondary Alternative School",
+   "name": "ALPHA II Alternative School",
    "note": {
-    "en": "Alternative schools are small learning environments with a distinct approach to learning; applications are made at each secondary alternative school.",
-    "es": "Las escuelas alternativas son entornos de aprendizaje pequeños con un enfoque distinto; la solicitud se hace en cada escuela secundaria alternativa.",
-    "fr": "Les écoles alternatives sont de petits milieux d'apprentissage avec une approche distinctive; les demandes se font directement à chaque école secondaire alternative."
+    "en": "TDSB alternative school listed for Grades 7 to 12; its own site describes it as an alternative free school.",
+    "es": "Escuela alternativa del TDSB indicada para 7.º a 12.º grado; su propio sitio la describe como una escuela alternativa libre.",
+    "fr": "École alternative du TDSB indiquée pour les 7e à 12e années; son propre site la décrit comme une école alternative libre."
    },
-   "entry": "apply",
-   "url": "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+   "url": "https://sites.google.com/student.tdsb.on.ca/alpha-ii-alternative-school/about-us"
   }
  ],
  "admissions": [],
@@ -28,11 +27,12 @@
    "date": "2026-11-05",
    "time": "17:30",
    "format": "In person",
-   "title": "Grade 9 open house / information night",
+   "title": "Open house / information night, 5:30-7:30 PM (alternative school; contact the school for details)",
    "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
   }
  ],
  "missing": [
-  "No published course list for 2026-27 found that could be extracted reliably."
+  "The school's own pages give no program, course or admission details beyond a welcome video.",
+  "The TDSB open-house page asks families to contact the school directly for more information."
  ]
 }

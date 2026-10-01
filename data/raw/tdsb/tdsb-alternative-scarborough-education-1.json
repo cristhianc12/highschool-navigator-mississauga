@@ -3,28 +3,26 @@
  "scrapedAt": "2026-10-01",
  "site": "https://schoolweb.tdsb.on.ca/ase1",
  "sources": [
-  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=4110",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
-  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4110",
+  "https://schoolweb.tdsb.on.ca/ase1",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
  ],
  "programs": [
   {
    "tag": "alt",
-   "name": "Secondary Alternative School",
+   "name": "Alternative Scarborough Education 1",
    "note": {
-    "en": "Alternative schools are small learning environments with a distinct approach to learning; applications are made at each secondary alternative school.",
-    "es": "Las escuelas alternativas son entornos de aprendizaje pequeños con un enfoque distinto; la solicitud se hace en cada escuela secundaria alternativa.",
-    "fr": "Les écoles alternatives sont de petits milieux d'apprentissage avec une approche distinctive; les demandes se font directement à chaque école secondaire alternative."
+    "en": "TDSB alternative secondary school in Scarborough listed for Grades 11 to 12.",
+    "es": "Escuela secundaria alternativa del TDSB en Scarborough indicada para 11.º y 12.º grado.",
+    "fr": "École secondaire alternative du TDSB à Scarborough indiquée pour les 11e et 12e années."
    },
-   "entry": "apply",
-   "url": "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4110"
   }
  ],
  "admissions": [],
  "sessions": [],
  "missing": [
-  "No 2026-27 information night date on the TDSB open house page (the page lists the school without a date or does not list it).",
-  "No published course list for 2026-27 found that could be extracted reliably."
+  "The school's site only shows links (calendar, profile, library); no program, course or admission details found.",
+  "The TDSB open-house page lists no date and asks families to contact the school directly."
  ]
 }

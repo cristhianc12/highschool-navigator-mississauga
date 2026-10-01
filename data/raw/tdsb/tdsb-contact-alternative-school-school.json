@@ -1,33 +1,60 @@
 {
  "id": "tdsb-contact-alternative-school-school",
  "scrapedAt": "2026-10-01",
- "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/5589",
+ "site": "https://schoolweb.tdsb.on.ca/contact/",
  "sources": [
-  "https://www.tdsb.on.ca/DesktopModules/Tdsb.Webteam.Modules.SPC/schoolprofile.aspx?schno=5589",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
-  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
-  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5589",
+  "https://schoolweb.tdsb.on.ca/contact",
+  "https://schoolweb.tdsb.on.ca/contact/Registration",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
  ],
  "programs": [
   {
    "tag": "alt",
-   "name": "Secondary Alternative School",
+   "name": "Contact Alternative School",
    "note": {
-    "en": "Alternative schools are small learning environments with a distinct approach to learning; applications are made at each secondary alternative school.",
-    "es": "Las escuelas alternativas son entornos de aprendizaje pequeños con un enfoque distinto; la solicitud se hace en cada escuela secundaria alternativa.",
-    "fr": "Les écoles alternatives sont de petits milieux d'apprentissage avec une approche distinctive; les demandes se font directement à chaque école secondaire alternative."
+    "en": "Small alternative school (Grades 10-12, about 60 students) for students who have had challenges earning credits in a mainstream setting, with a college pathway and some university prerequisites.",
+    "es": "Escuela alternativa pequeña (10.º a 12.º grado, unos 60 estudiantes) para estudiantes que han tenido dificultades para obtener créditos en un entorno regular, con una ruta hacia el colegio y algunos prerrequisitos universitarios.",
+    "fr": "Petite école alternative (10e à 12e année, environ 60 élèves) pour les élèves qui ont eu de la difficulté à obtenir leurs crédits dans un milieu ordinaire, avec un parcours collégial et quelques préalables universitaires."
    },
-   "entry": "apply",
-   "url": "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+   "url": "https://schoolweb.tdsb.on.ca/contact",
+   "entry": "apply"
   }
  ],
- "other": [
-  "Co-operative Education"
+ "admissions": [
+  {
+   "program": "Contact Alternative School",
+   "tag": "alt",
+   "url": "https://schoolweb.tdsb.on.ca/contact/Registration",
+   "submit": [
+    {
+     "en": "Email a copy of your credit history (such as a Student Status Sheet or Credit Counselling Summary)",
+     "es": "Envía por correo una copia de tu historial de créditos (por ejemplo, un Student Status Sheet o Credit Counselling Summary)",
+     "fr": "Envoie par courriel une copie de ton historique de crédits (par exemple un Student Status Sheet ou un Credit Counselling Summary)"
+    },
+    {
+     "en": "If applicable, a copy of your IEP",
+     "es": "Si corresponde, una copia de tu IEP",
+     "fr": "Au besoin, une copie de ton PEI (IEP)"
+    },
+    {
+     "en": "Your name, phone number and email (and a parent/guardian's contact if you are under 18)",
+     "es": "Tu nombre, teléfono y correo (y el contacto de tu padre/madre/tutor si eres menor de 18 años)",
+     "fr": "Ton nom, ton numéro de téléphone et ton courriel (et les coordonnées d'un parent/tuteur si tu as moins de 18 ans)"
+    }
+   ],
+   "know": [
+    {
+     "en": "The Curriculum Leader and Guidance Counsellor reviews the documents and follows up by email with next steps.",
+     "es": "El líder curricular y orientador revisa los documentos y responde por correo con los siguientes pasos.",
+     "fr": "Le responsable du curriculum et conseiller en orientation examine les documents et répond par courriel avec les prochaines étapes."
+    }
+   ]
+  }
  ],
- "admissions": [],
  "sessions": [],
  "missing": [
-  "No 2026-27 information night date on the TDSB open house page (the page lists the school without a date or does not list it).",
-  "No published course list for 2026-27 found that could be extracted reliably."
+  "The 'Courses' page of the school site was empty, so no course list was found.",
+  "The TDSB open-house page lists no date and asks families to contact the school directly."
  ]
 }

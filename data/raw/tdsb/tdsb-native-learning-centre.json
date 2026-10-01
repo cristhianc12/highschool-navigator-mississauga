@@ -1,0 +1,28 @@
+{
+ "id": "tdsb-native-learning-centre",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/5512",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/5512",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4806"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Native Learning Centre",
+   "note": {
+    "en": "Alternative high school (Grades 9-12) at 83 Alexander St; the TDSB lists it as a school for Indigenous learners (see Native Learning Centre East for the program description).",
+    "es": "Escuela secundaria alternativa (9.º a 12.º grado) en 83 Alexander St; el TDSB la presenta como una escuela para estudiantes indígenas (la descripción del programa está en Native Learning Centre East).",
+    "fr": "École secondaire alternative (9e à 12e année) au 83 Alexander St; le TDSB la présente comme une école pour apprenants autochtones (voir Native Learning Centre East pour la description du programme)."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/5512"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "The school's own TDSB page gives little program detail (grades 9-12, address and phone only); the continuous-intake description comes from the sister Native Learning Centre East page.",
+  "No open house listed.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

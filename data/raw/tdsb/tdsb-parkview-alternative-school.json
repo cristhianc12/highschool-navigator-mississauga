@@ -1,0 +1,28 @@
+{
+ "id": "tdsb-parkview-alternative-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/4176",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4176",
+  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Parkview Alternative School",
+   "note": {
+    "en": "Alternative school for students ages 16-20 with few completed credits, offering applied courses in Grades 9-12 in four 45-day sessions with entry in February, April, September and November.",
+    "es": "Escuela alternativa para estudiantes de 16 a 20 años con pocos créditos completados, con cursos aplicados de 9.º a 12.º grado en cuatro sesiones de 45 días y ingreso en febrero, abril, septiembre y noviembre.",
+    "fr": "École alternative pour élèves de 16 à 20 ans ayant peu de crédits, offrant des cours appliqués de la 9e à la 12e année en quatre sessions de 45 jours, avec admission en février, en avril, en septembre et en novembre."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4176"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No open house date listed ('Please contact the school directly').",
+  "Applications are received at the school itself (TDSB alternative schools page); no further admission steps published.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

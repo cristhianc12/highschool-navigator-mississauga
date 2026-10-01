@@ -1,0 +1,85 @@
+{
+ "id": "tdsb-monarch-park",
+ "scrapedAt": "2026-10-01",
+ "site": null,
+ "sources": [
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/International-Baccalaureate",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Application-and-Admissions",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate Diploma Program",
+   "note": {
+    "en": "IB Diploma Program with Pre-IB courses in Grades 9-10; Monarch Park offers French, Psychology, Global Politics, Biology, Chemistry and Mathematics A&A at Standard Level and English, Psychology, Global Politics and Biology at Higher Level.",
+    "es": "Programa del Diploma IB con cursos Pre-IB en 9.º y 10.º grado; Monarch Park ofrece Francés, Psicología, Política Global, Biología, Química y Matemáticas A&A en Nivel Estándar, e Inglés, Psicología, Política Global y Biología en Nivel Superior.",
+    "fr": "Programme du diplôme IB avec cours Pre-IB en 9e et 10e année; Monarch Park offre français, psychologie, politique mondiale, biologie, chimie et mathématiques A&A au niveau standard, et anglais, psychologie, politique mondiale et biologie au niveau supérieur."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/International-Baccalaureate"
+  }
+ ],
+ "admissions": [
+  {
+   "program": "International Baccalaureate (Grade 9 entry)",
+   "tag": "ib",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/International-Baccalaureate",
+   "elig": {
+    "en": "Open to students who meet TDSB admission requirements and have no more than 2 of the required report-card marks below 70% (the provincial standard); meeting the benchmark does not guarantee a place.",
+    "es": "Pueden solicitar los estudiantes que cumplen los requisitos de admisión del TDSB y tienen como máximo 2 de las calificaciones requeridas por debajo de 70 % (el estándar provincial); cumplir el requisito no garantiza una plaza.",
+    "fr": "Ouvert aux élèves qui répondent aux exigences d'admission du TDSB et qui n'ont pas plus de 2 des notes de bulletin requises sous 70 % (la norme provinciale); atteindre ce seuil ne garantit pas une place."
+   },
+   "marks": {
+    "en": "Applicant score uses the average of Language, Math, Science, French (4 strands), Geography and History marks.",
+    "es": "El puntaje usa el promedio de las calificaciones de Lengua, Matemáticas, Ciencias, Francés (4 áreas), Geografía e Historia.",
+    "fr": "La note utilise la moyenne des notes de langue, de maths, de sciences, de français (4 volets), de géographie et d'histoire."
+   },
+   "dates": {
+    "en": "Online application open Nov 9-27, 2026; in-person assessment Mon Dec 7, 2026 (Dec 14 if weather closes schools). Offers and waitlist status are emailed Feb 10, 2027 (offers expire Feb 16 at 4 p.m.); further offers Feb 17 and 24, 2027.",
+    "es": "Solicitud en línea abierta del 9 al 27 de noviembre de 2026; evaluación presencial el lunes 7 de diciembre de 2026 (14 de diciembre si el clima cierra las escuelas). Las ofertas y el estado de lista de espera se envían por correo el 10 de febrero de 2027 (las ofertas vencen el 16 de febrero a las 4 p. m.); más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "Demande en ligne ouverte du 9 au 27 novembre 2026; évaluation en personne le lundi 7 décembre 2026 (14 décembre en cas de fermeture pour intempéries). Les offres et l'état de la liste d'attente sont envoyés par courriel le 10 février 2027 (les offres expirent le 16 février à 16 h); d'autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online Specialized Programs application (primary choice, optionally an alternate choice of the same program type)",
+     "es": "Solicitud en línea de Programas Especializados (opción principal y, si se desea, una opción alterna del mismo tipo de programa)",
+     "fr": "Demande en ligne aux programmes spécialisés (choix principal et, au besoin, un choix de rechange du même type de programme)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored 30% on report-card marks and 70% on the demonstration of knowledge and skills.",
+     "es": "El puntaje se calcula 30 % con las calificaciones del boletín y 70 % con la demostración de conocimientos y habilidades.",
+     "fr": "La note finale repose à 30 % sur les notes du bulletin et à 70 % sur la démonstration des connaissances et des compétences."
+    },
+    {
+     "en": "Transportation is not provided for Specialized Programs.",
+     "es": "No se ofrece transporte para los Programas Especializados.",
+     "fr": "Aucun transport n'est offert pour les programmes spécialisés."
+    },
+    {
+     "en": "The 60-minute assessment has 30 minutes of multiple choice (math reasoning, French proficiency) and a 30-minute opinion-based written question; Monarch Park Grade 9 and 10 entry admitted 60%-80% of primary applicants for Sept 2026.",
+     "es": "La evaluación de 60 minutos incluye 30 minutos de opción múltiple (razonamiento matemático, dominio del francés) y una pregunta escrita de opinión de 30 minutos; en Monarch Park se ofreció plaza al 60 %-80 % de los solicitantes principales de 9.º y 10.º grado para septiembre de 2026.",
+     "fr": "L'évaluation de 60 minutes comprend 30 minutes à choix multiples (raisonnement mathématique, maîtrise du français) et une question écrite d'opinion de 30 minutes; à Monarch Park, 60 % à 80 % des candidats principaux de 9e et 10e année ont reçu une offre pour septembre 2026."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-17",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Open House (International Baccalaureate)",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "The site URL in the work list (schools.tdsb.on.ca/monarch) did not load; schoolweb.tdsb.on.ca/monarchpark is unverified, so site is null.",
+  "IB fees stated on the TDSB page are for 2025-26/2026 entry only; not recorded as 2027 fees.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

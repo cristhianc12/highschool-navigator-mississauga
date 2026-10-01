@@ -1,0 +1,34 @@
+{
+  "id": "cabot",
+  "scrapedAt": "2026-10-01",
+  "site": "https://cabot.dpcdsb.org/",
+  "sources": [
+    "https://cabot.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://cabot.dpcdsb.org/programs/course-calendar"
+  ],
+  "programs": [],
+  "shsm": [
+    "Business",
+    "Information & Communications Technology"
+  ],
+  "calendarUrl": "https://cabot.dpcdsb.org/programs/course-calendar",
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-11",
+      "time": "18:00",
+      "format": null,
+      "title": "Secondary school information session / open house",
+      "url": "https://www.dpcdsb.org/download/573064"
+    }
+  ],
+  "missing": [
+    "Programs not restated: this school already has a hand-verified record.",
+    "No course list extracted: the 15 Mississauga schools already have curated course lists."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "dpcdsb-holy-name-of-mary",
+  "scrapedAt": "2026-10-01",
+  "site": "https://hnmry.dpcdsb.org/",
+  "sources": [
+    "https://hnmry.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://hnmry.dpcdsb.org/our-school/about-us",
+    "https://hnmry.dpcdsb.org/programs/course-calendar",
+    "https://hnmry.dpcdsb.org/download/572785"
+  ],
+  "programs": [
+    {
+      "tag": "other",
+      "name": "Regional All-Girls' Catholic Secondary School",
+      "note": {
+        "en": "Publicly funded regional all-girls' school for Grades 9-12, open to students of all faiths living in Brampton, Caledon, Mississauga and Orangeville.",
+        "es": "Escuela regional católica solo para niñas de 9.º a 12.º grado, financiada con fondos públicos y abierta a estudiantes de todas las confesiones que vivan en Brampton, Caledon, Mississauga y Orangeville.",
+        "fr": "École secondaire catholique régionale pour filles seulement, de la 9e à la 12e année, financée par les fonds publics et ouverte aux élèves de toutes confessions vivant à Brampton, Caledon, Mississauga et Orangeville."
+      },
+      "entry": "apply",
+      "url": "https://hnmry.dpcdsb.org/our-school/about-us"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Business, Health & Wellness, Non-Profit, Education & Child Care (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Business, Health & Wellness, Non-Profit, Education & Child Care (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Business, Health & Wellness, Non-Profit, Education & Child Care (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Business",
+    "Health & Wellness",
+    "Non-Profit, Education & Child Care"
+  ],
+  "calendarUrl": "https://hnmry.dpcdsb.org/programs/course-calendar",
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-04",
+      "time": "18:30",
+      "format": "In person",
+      "title": "Open House (all-girls regional school): doors open 6:00 pm, presentation 6:30 pm, classroom tours 7:00-8:00 pm",
+      "url": "https://hnmry.dpcdsb.org/download/572785"
+    }
+  ],
+  "missing": [
+    "Health & Wellness SHSM is marked 'Pending Approval' on the school page although the board SHSM list shows it.",
+    "No school page on dual credit or OYAP found."
+  ]
+}

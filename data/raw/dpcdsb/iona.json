@@ -1,0 +1,35 @@
+{
+  "id": "iona",
+  "scrapedAt": "2026-10-01",
+  "site": "https://ionas.dpcdsb.org/",
+  "sources": [
+    "https://ionas.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://ionas.dpcdsb.org/programs/course-calendar"
+  ],
+  "programs": [],
+  "shsm": [
+    "Arts & Culture",
+    "Business",
+    "Justice, Community Safety & Emergency Services"
+  ],
+  "calendarUrl": "https://ionas.dpcdsb.org/programs/course-calendar",
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "format": null,
+      "title": "Secondary school information session / open house (Regional Arts Program is hosted here)",
+      "url": "https://www.dpcdsb.org/download/573064"
+    }
+  ],
+  "missing": [
+    "Programs not restated: this school already has a hand-verified record.",
+    "No course list extracted: the 15 Mississauga schools already have curated course lists."
+  ]
+}

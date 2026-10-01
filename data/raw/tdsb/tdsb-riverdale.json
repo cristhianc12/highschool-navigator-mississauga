@@ -1,0 +1,26 @@
+{
+ "id": "tdsb-riverdale",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/riverdale/home.aspx",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/riverdale/home.aspx",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-25",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No specialized or local programs listed for the school on the TDSB open house page.",
+  "The school's 'Program Overview 2026 Intake' PDF describes the Nov 26, 2025 open house (previous cycle) and lists departmental courses only, so it was not used.",
+  "A Co-op Education page exists on the school site but was not read.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

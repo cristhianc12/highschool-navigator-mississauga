@@ -1,0 +1,118 @@
+{
+  "id": "dpcdsb-st-edmund-campion",
+  "scrapedAt": "2026-10-01",
+  "site": "https://campi.dpcdsb.org/",
+  "sources": [
+    "https://campi.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://campi.dpcdsb.org/programs/ap-program",
+    "https://campi.dpcdsb.org/programs/course-calendar",
+    "https://campi.dpcdsb.org/download/573271",
+    "https://campi.dpcdsb.org/download/573266"
+  ],
+  "programs": [
+    {
+      "tag": "ap",
+      "name": "Advanced Placement (AP) Program (Pre-AP in Grades 9-11)",
+      "note": {
+        "en": "Regional Advanced Placement site for students living in Brampton, Caledon and Dufferin: Pre-AP courses in Grades 9-11 lead to AP courses in English, Math, Science and French in Grade 12.",
+        "es": "Sede regional de Advanced Placement para estudiantes de Brampton, Caledon y Dufferin: los cursos Pre-AP de 9.º a 11.º conducen a cursos AP de inglés, matemáticas, ciencias y francés en 12.º.",
+        "fr": "Site régional d'Advanced Placement pour les élèves de Brampton, Caledon et Dufferin : les cours Pre-AP de la 9e à la 11e année mènent aux cours AP d'anglais, de mathématiques, de sciences et de français en 12e année."
+      },
+      "entry": "apply",
+      "url": "https://campi.dpcdsb.org/programs/ap-program"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Arts & Culture, Information & Communications Technology, Non-Profit, Education & Child Care, Sports (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Arts & Culture, Information & Communications Technology, Non-Profit, Education & Child Care, Sports (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Arts & Culture, Information & Communications Technology, Non-Profit, Education & Child Care, Sports (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Information & Communications Technology",
+    "Non-Profit, Education & Child Care",
+    "Sports"
+  ],
+  "calendarUrl": "https://campi.dpcdsb.org/programs/course-calendar",
+  "other": [
+    "Co-operative Education"
+  ],
+  "admissions": [
+    {
+      "program": "Advanced Placement (AP) Program / Pre-AP",
+      "tag": "ap",
+      "elig": {
+        "en": "Open to Grade 8 applicants for Grade 9 Pre-AP (and Grade 9-11 students for later entry); the school states the only requirements are curiosity and willingness to work hard, and decisions follow review of the applications.",
+        "es": "Abierto a solicitantes de 8.º grado para el Pre-AP de 9.º (y a estudiantes de 9.º a 11.º para ingreso posterior); la escuela indica que los únicos requisitos son curiosidad y disposición para trabajar duro, y las decisiones siguen a la revisión de las solicitudes.",
+        "fr": "Ouvert aux candidats de 8e année pour le Pre-AP de 9e année (et aux élèves de 9e à 11e année pour une entrée ultérieure); l'école indique que les seules exigences sont la curiosité et la volonté de travailler fort, et les décisions suivent l'examen des demandes."
+      },
+      "marks": null,
+      "fee": {
+        "en": "$25 application processing fee; AP exams cost $150 each (paid the year the exam is written).",
+        "es": "Tarifa de trámite de solicitud de $25; cada examen AP cuesta $150 (se paga el año en que se rinde el examen).",
+        "fr": "Frais de traitement de la demande de 25 $; chaque examen AP coûte 150 $ (payés l'année où l'examen est passé)."
+      },
+      "dates": {
+        "en": "Grade 9 applications open Nov. 27, 2026 at 9:00 am and are due Dec. 18, 2026 at noon; Grade 8 decisions are expected on or before Jan. 31, 2027. Grade 10-12 applications open Feb. 5, 2027 and are due Mar. 12, 2027 at noon.",
+        "es": "Las solicitudes de 9.º abren el 27 de noviembre de 2026 a las 9:00 y vencen el 18 de diciembre de 2026 al mediodía; se esperan decisiones para 8.º a más tardar el 31 de enero de 2027. Las de 10.º a 12.º abren el 5 de febrero de 2027 y vencen el 12 de marzo de 2027 al mediodía.",
+        "fr": "Les demandes pour la 9e année ouvrent le 27 novembre 2026 à 9 h et sont dues le 18 décembre 2026 à midi; les décisions pour les élèves de 8e année sont attendues au plus tard le 31 janvier 2027. Celles de la 10e à la 12e année ouvrent le 5 février 2027 et sont dues le 12 mars 2027 à midi."
+      },
+      "submit": [
+        {
+          "en": "The AP application (online, from the school website) and the $25 fee",
+          "es": "La solicitud AP (en línea, desde el sitio de la escuela) y la tarifa de $25",
+          "fr": "La demande AP (en ligne, sur le site de l'école) et les frais de 25 $"
+        },
+        {
+          "en": "The St. Edmund Campion registration form (this speeds up registration if accepted)",
+          "es": "El formulario de inscripción de St. Edmund Campion (agiliza la inscripción si te aceptan)",
+          "fr": "Le formulaire d'inscription de St. Edmund Campion (cela accélère l'inscription si tu es accepté)"
+        }
+      ],
+      "know": [
+        {
+          "en": "Seats depend on how many seats the feeder-school students reserve; the school is capped at 450 seats per grade.",
+          "es": "Los cupos dependen de cuántos reservan los estudiantes de las escuelas de origen; la escuela tiene un tope de 450 cupos por grado.",
+          "fr": "Les places dépendent du nombre de places réservées par les élèves des écoles nourricières; l'école est plafonnée à 450 places par niveau."
+        },
+        {
+          "en": "Busing is only for students inside the Campion boundary who are eligible for transportation.",
+          "es": "El transporte escolar es solo para estudiantes dentro del límite de Campion que cumplan los requisitos.",
+          "fr": "Le transport scolaire est offert seulement aux élèves du secteur de Campion qui y sont admissibles."
+        }
+      ],
+      "url": "https://campi.dpcdsb.org/download/573271"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-26",
+      "time": "17:00",
+      "format": "In person",
+      "title": "Open House for incoming students and parents: school showcase 5:00 pm, information presentation 6:00 pm",
+      "url": "https://campi.dpcdsb.org/download/573266"
+    },
+    {
+      "kind": "program",
+      "date": "2026-11-26",
+      "time": "18:30",
+      "format": "In person",
+      "title": "Advanced Placement (AP) information session, 6:30-7:00 pm",
+      "url": "https://campi.dpcdsb.org/download/573266"
+    }
+  ],
+  "missing": [
+    "Board page states the school has limited registration availability for 2027-28."
+  ]
+}

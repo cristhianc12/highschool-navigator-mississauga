@@ -1,0 +1,125 @@
+{
+  "id": "dpcdsb-st-thomas-aquinas",
+  "scrapedAt": "2026-10-01",
+  "site": "https://aquin.dpcdsb.org/",
+  "sources": [
+    "https://aquin.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://aquin.dpcdsb.org/download/539882",
+    "https://www.dpcdsb.org/download/527381",
+    "https://aquin.dpcdsb.org/programs/course-calendar"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "Regional Arts Program (Regional Centre for the Arts)",
+      "note": {
+        "en": "Regional Arts Program with majors in Dance, Dramatic Arts, Visual Arts, Instrumental Music and Vocal Music, entered by application and audition.",
+        "es": "Programa regional de artes con especialidades en danza, artes dramáticas, artes visuales, música instrumental y música vocal, al que se ingresa por solicitud y audición.",
+        "fr": "Programme régional d'arts avec des majeures en danse, art dramatique, arts visuels, musique instrumentale et musique vocale, accessible par demande et audition."
+      },
+      "entry": "audition",
+      "url": "https://aquin.dpcdsb.org/download/539882"
+    },
+    {
+      "tag": "ef",
+      "name": "Extended French",
+      "note": {
+        "en": "Secondary Extended French centre for Brampton and Caledon; the program begins in Grade 5 and continues through Grade 12.",
+        "es": "Centro secundario de Extended French para Brampton y Caledon; el programa comienza en 5.º grado y continúa hasta 12.º.",
+        "fr": "Centre secondaire d'Extended French pour Brampton et Caledon; le programme commence en 5e année et se poursuit jusqu'en 12e année."
+      },
+      "entry": "school",
+      "url": "https://www.dpcdsb.org/download/527381"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Arts & Culture, Transportation (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Arts & Culture, Transportation (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Arts & Culture, Transportation (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Transportation"
+  ],
+  "calendarUrl": "https://aquin.dpcdsb.org/programs/course-calendar",
+  "admissions": [
+    {
+      "program": "Regional Arts Program (Regional Centre for the Arts)",
+      "tag": "arts",
+      "elig": {
+        "en": "Applicants choose a major: Dance, Dramatic Arts, Visual Arts, Instrumental Music or Vocal Music; an audition is part of the process.",
+        "es": "Los solicitantes eligen una especialidad: danza, artes dramáticas, artes visuales, música instrumental o música vocal; la audición forma parte del proceso.",
+        "fr": "Les candidats choisissent une majeure : danse, art dramatique, arts visuels, musique instrumentale ou musique vocale; une audition fait partie du processus."
+      },
+      "marks": null,
+      "fee": {
+        "en": "$25 non-refundable audition fee (preferably paid online).",
+        "es": "Tarifa de audición no reembolsable de $25 (preferiblemente en línea).",
+        "fr": "Frais d'audition non remboursables de 25 $ (de préférence payés en ligne)."
+      },
+      "dates": null,
+      "submit": [
+        {
+          "en": "Completed application form",
+          "es": "Formulario de solicitud completo",
+          "fr": "Formulaire de demande rempli"
+        },
+        {
+          "en": "Student letter of intent (typed, about 250-300 words)",
+          "es": "Carta de intención del estudiante (a computadora, de unas 250 a 300 palabras)",
+          "fr": "Lettre d'intention de l'élève (dactylographiée, d'environ 250 à 300 mots)"
+        },
+        {
+          "en": "Final Grade 7 and most recent report cards",
+          "es": "Boletines finales de 7.º grado y el más reciente",
+          "fr": "Bulletins finaux de 7e année et le plus récent"
+        },
+        {
+          "en": "Education Planner sign-off sheet and enrollment contract",
+          "es": "Hoja de firma del Education Planner y contrato de inscripción",
+          "fr": "Feuille d'approbation de l'Education Planner et contrat d'inscription"
+        }
+      ],
+      "know": [
+        {
+          "en": "The application package on the school site is an undated template; check the school for this year's deadlines.",
+          "es": "El paquete de solicitud del sitio de la escuela es una plantilla sin fecha; consulta a la escuela las fechas límite de este año.",
+          "fr": "La trousse de demande du site de l'école est un modèle sans date; renseigne-toi auprès de l'école pour connaître les dates limites de cette année."
+        }
+      ],
+      "url": "https://aquin.dpcdsb.org/download/539882"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-10-28",
+      "time": "17:00",
+      "format": null,
+      "title": "Grade 8 information night / open house",
+      "url": "https://www.dpcdsb.org/download/573064"
+    },
+    {
+      "kind": "program",
+      "date": "2026-11-24",
+      "time": "18:30",
+      "format": null,
+      "title": "Regional Arts Program open house",
+      "url": "https://www.dpcdsb.org/download/573064"
+    }
+  ],
+  "missing": [
+    "Regional Arts Program dates (application window, auditions) are not published on text pages; the school's RAP pages hold only downloads and an undated template.",
+    "The board's session schedule does not list Extended French for this school's open house; the Extended French centre list does list it."
+  ]
+}

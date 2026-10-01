@@ -1,0 +1,24 @@
+{
+ "id": "tdsb-north-toronto",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.ntci.on.ca",
+ "sources": [
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.ntci.on.ca"
+ ],
+ "programs": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-12-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "The ntci.on.ca page read is labelled 'old website' and has no program or admissions content; the TDSB listing shows no specialized or local programs.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

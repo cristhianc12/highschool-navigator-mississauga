@@ -1,0 +1,28 @@
+{
+ "id": "tdsb-north-east-alternative-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/3948",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/3948",
+  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "North East Secondary Alternative School",
+   "note": {
+    "en": "Small community-based alternative school (Grades 11-12, quadmestered) for students ages 16-20, with nutrition program, in- and out-of-school supports and differentiated course offerings.",
+    "es": "Escuela alternativa pequeña y comunitaria (11.º y 12.º grado, por cuatrimestres de 9 semanas) para estudiantes de 16 a 20 años, con programa de nutrición, apoyos dentro y fuera de la escuela y cursos diferenciados.",
+    "fr": "Petite école alternative communautaire (11e et 12e année, par quadrimestres) pour élèves de 16 à 20 ans, avec programme de nutrition, soutiens à l'intérieur et à l'extérieur de l'école et cours différenciés."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/3948"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "No open house date listed ('Please contact the school directly').",
+  "Applications are received at the school itself (TDSB alternative schools page); no further admission steps published.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "id": "tdsb-scarborough-centre-for-alternative-studi",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tdsb.on.ca/Find-your/Schools/schno/4175",
+ "sources": [
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4175",
+  "https://www.tdsb.on.ca/alternativeschools/SecondarySchools"
+ ],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Scarborough Centre for Alternative Studies (EdVance Program)",
+   "note": {
+    "en": "Dual-track school (Grades 10-12) with an Adult Program for learners 21 and over and the EdVance Program for young adults 18-20 returning to school, preparing for university, college, apprenticeship and graduation.",
+    "es": "Escuela de doble vía (10.º a 12.º grado) con un programa para adultos (21 años o más) y el programa EdVance para jóvenes de 18 a 20 años que regresan a la escuela y se preparan para la universidad, el colegio universitario, el aprendizaje de oficios y la graduación.",
+    "fr": "École à double volet (10e à 12e année) avec un programme pour adultes (21 ans et plus) et le programme EdVance pour les jeunes de 18 à 20 ans qui reviennent aux études et se préparent à l'université, au collège, à l'apprentissage et à l'obtention du diplôme."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4175"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "The school is not listed on the TDSB open house page.",
+  "The work-list site (scasonline.com) and the school's schoolweb pages returned 403; the TDSB school page was used.",
+  "Students must be 18 or older, so Grade 9 entry does not apply.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

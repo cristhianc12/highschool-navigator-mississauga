@@ -1,0 +1,112 @@
+{
+  "id": "dpcdsb-st-roch",
+  "scrapedAt": "2026-10-01",
+  "site": "https://rochs.dpcdsb.org/",
+  "sources": [
+    "https://rochs.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://rochs.dpcdsb.org/programs/regional-arts-program",
+    "https://rochs.dpcdsb.org/programs/course-calendar",
+    "https://rochs.dpcdsb.org/our-school/secondary-school-information-sessions"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "Regional Arts Program (RAP)",
+      "note": {
+        "en": "Regional Arts Program with majors in Dance, Drama, Instrumental Music, Media Arts and Vocal Music alongside the Ontario curriculum, entered by application and audition.",
+        "es": "Programa regional de artes con especialidades en danza, teatro, música instrumental, artes mediáticas y música vocal junto con el currículo de Ontario, al que se ingresa por solicitud y audición.",
+        "fr": "Programme régional d'arts avec des majeures en danse, art dramatique, musique instrumentale, arts médiatiques et musique vocale en plus du curriculum de l'Ontario, accessible par demande et audition."
+      },
+      "entry": "audition",
+      "url": "https://rochs.dpcdsb.org/programs/regional-arts-program"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Business (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Business (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Business (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Business"
+  ],
+  "calendarUrl": "https://rochs.dpcdsb.org/programs/course-calendar",
+  "admissions": [
+    {
+      "program": "Regional Arts Program (RAP)",
+      "tag": "arts",
+      "elig": {
+        "en": "Students entering Grade 9 who want a major in Dance, Drama, Instrumental Music, Media Arts or Vocal Music.",
+        "es": "Estudiantes que entran a 9.º grado y quieren una especialidad en danza, teatro, música instrumental, artes mediáticas o música vocal.",
+        "fr": "Élèves qui entrent en 9e année et veulent une majeure en danse, art dramatique, musique instrumentale, arts médiatiques ou musique vocale."
+      },
+      "marks": null,
+      "fee": {
+        "en": "$25 application fee, paid through School Cash Online.",
+        "es": "Tarifa de solicitud de $25, pagada por School Cash Online.",
+        "fr": "Frais de demande de 25 $, payés par School Cash Online."
+      },
+      "dates": {
+        "en": "Open house Nov. 4, 2026; applications Nov. 5 to Dec. 7, 2026; audition workshop Jan. 9, 2027; auditions Jan. 27-29; first-round offers posted Feb. 4; deadline to accept Feb. 11, 2027.",
+        "es": "Jornada de puertas abiertas el 4 de noviembre de 2026; solicitudes del 5 de noviembre al 7 de diciembre de 2026; taller de audición el 9 de enero de 2027; audiciones del 27 al 29 de enero; ofertas de la primera ronda el 4 de febrero; plazo para aceptar el 11 de febrero de 2027.",
+        "fr": "Portes ouvertes le 4 novembre 2026; demandes du 5 novembre au 7 décembre 2026; atelier d'audition le 9 janvier 2027; auditions du 27 au 29 janvier; offres de la première ronde publiées le 4 février; date limite d'acceptation le 11 février 2027."
+      },
+      "submit": [
+        {
+          "en": "Online student application and parent survey",
+          "es": "Solicitud en línea del estudiante y encuesta para padres",
+          "fr": "Demande en ligne de l'élève et sondage aux parents"
+        },
+        {
+          "en": "Grade 8 teacher reference",
+          "es": "Referencia del docente de 8.º grado",
+          "fr": "Recommandation de l'enseignant de 8e année"
+        },
+        {
+          "en": "Copy of the most recent report card",
+          "es": "Copia del boletín de calificaciones más reciente",
+          "fr": "Copie du bulletin le plus récent"
+        }
+      ],
+      "know": [
+        {
+          "en": "Presentations are made in DPCDSB Grade 8 classrooms in October 2026.",
+          "es": "Se hacen presentaciones en las aulas de 8.º grado del DPCDSB en octubre de 2026.",
+          "fr": "Des présentations ont lieu dans les classes de 8e année du DPCDSB en octobre 2026."
+        }
+      ],
+      "url": "https://rochs.dpcdsb.org/programs/regional-arts-program"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-18",
+      "time": "18:00",
+      "format": "In person",
+      "title": "Grade 8 Open House: school tours 6:00-6:45 pm, presentation 7:00 pm",
+      "url": "https://rochs.dpcdsb.org/our-school/secondary-school-information-sessions"
+    },
+    {
+      "kind": "program",
+      "date": "2026-11-04",
+      "time": "18:30",
+      "format": "In person",
+      "title": "Regional Arts Program Open House",
+      "url": "https://rochs.dpcdsb.org/our-school/secondary-school-information-sessions"
+    }
+  ],
+  "missing": [
+    "The board session schedule lists Extended French for St. Roch, but the board's secondary Extended French centre list shows St. Thomas Aquinas instead; Extended French was not recorded for St. Roch.",
+    "Board page states the school has limited registration availability for 2027-28."
+  ]
+}

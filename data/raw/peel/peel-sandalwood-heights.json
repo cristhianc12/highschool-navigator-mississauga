@@ -1,16 +1,101 @@
 {
  "id": "peel-sandalwood-heights",
  "scrapedAt": "2026-10-01",
- "site": "https://schools.peelschools.org/sec/sandalwoodheights/Pages/default.aspx",
+ "site": "https://sandalwoodheights.peelschools.org/",
  "sources": [
-  "https://schools.peelschools.org/sec/sandalwoodheights/Pages/default.aspx"
+  "https://sandalwoodheights.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/1ea9fca6-33c4-4dd0-9cd8-a910348100bd/Sandwalwood-Heights-SS.pdf?fingerprint=ppb20251217022216",
+  "https://sandalwoodheights.peelschools.org/business-explore-high-skills",
+  "https://sandalwoodheights.peelschools.org/health-wellness-ehs",
+  "https://sandalwoodheights.peelschools.org/business-SHSM",
+  "https://www.peelschools.org/specialist-high-skills-major"
  ],
- "programs": [],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Localized Advanced Placement (AP) Program",
+   "note": {
+    "en": "The school lists a Localized AP Program on its Grade 8 information night.",
+    "es": "La escuela anuncia un programa Localized AP en su noche informativa de 8.º grado.",
+    "fr": "L'école annonce un programme Localized AP lors de sa soirée d'information de 8e année."
+   },
+   "entry": null,
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "tag": "other",
+   "name": "Business - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Business: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Negocios: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Affaires : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://sandalwoodheights.peelschools.org/business-explore-high-skills"
+  },
+  {
+   "tag": "other",
+   "name": "Health & Wellness - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Health & Wellness: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Salud y Bienestar: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Santé et bien-être : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://sandalwoodheights.peelschools.org/health-wellness-ehs"
+  },
+  {
+   "tag": "shsm",
+   "name": "Business - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Business for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Negocios para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Affaires pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://sandalwoodheights.peelschools.org/business-SHSM"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Health & Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/1ea9fca6-33c4-4dd0-9cd8-a910348100bd/Sandwalwood-Heights-SS.pdf?fingerprint=ppb20251217022216",
  "admissions": [],
- "sessions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (6-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "EHS and SHSM Info Night: Business, Health & Wellness (6-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Localized AP Program Info Night (6-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
  "missing": [
-  "schools.peelschools.org (school site) is unreachable from the collection environment: its TLS certificate is expired, and the egress proxy blocks it for fetch tools; no school page could be read",
-  "www.peelschools.org (board site) returns 403 Request blocked (CloudFront) and was not accessible",
-  "Programs, SHSM, co-op, course calendar and courses, admissions and 2026-27 information sessions were not collected for this school"
+  "Fees amounts for regional/pathway programs are not stated on the pages"
  ]
 }

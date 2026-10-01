@@ -1,0 +1,64 @@
+{
+  "id": "dpcdsb-st-michael",
+  "scrapedAt": "2026-10-01",
+  "site": "https://michs.dpcdsb.org/",
+  "sources": [
+    "https://michs.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://michs.dpcdsb.org/programs/guidance-courses/arts-advantage",
+    "https://michs.dpcdsb.org/programs/course-calendar",
+    "https://michs.dpcdsb.org/programs/guidance-courses/oyap"
+  ],
+  "programs": [
+    {
+      "tag": "arts",
+      "name": "Arts Advantage",
+      "note": {
+        "en": "Students can major in Dramatic Arts, Visual Arts, Comprehensive Music or Dance from Grades 10 to 12, by application.",
+        "es": "Los estudiantes pueden especializarse en artes dramáticas, artes visuales, música integral o danza de 10.º a 12.º grado, mediante solicitud.",
+        "fr": "Les élèves peuvent choisir une majeure en art dramatique, arts visuels, musique générale ou danse de la 10e à la 12e année, sur demande."
+      },
+      "entry": "apply",
+      "url": "https://michs.dpcdsb.org/programs/guidance-courses/arts-advantage"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Hospitality & Tourism, Information & Communications Technology, Sports (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Hospitality & Tourism, Information & Communications Technology, Sports (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Hospitality & Tourism, Information & Communications Technology, Sports (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Hospitality & Tourism",
+    "Information & Communications Technology",
+    "Sports"
+  ],
+  "calendarUrl": "https://michs.dpcdsb.org/programs/course-calendar",
+  "other": [
+    "Co-operative Education",
+    "OYAP"
+  ],
+  "admissions": [],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-11-04",
+      "time": "18:00",
+      "format": null,
+      "title": "Secondary school information session / open house",
+      "url": "https://www.dpcdsb.org/download/573064"
+    }
+  ],
+  "missing": [
+    "Large Group Sports Focus Courses (soccer, hockey, baseball) are described on school pages but without entry, grades or dates, so not recorded as a program.",
+    "Arts Advantage page is undated (mentions a 2021 start); no current application dates found."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+ "id": "tdsb-northern",
+ "scrapedAt": "2026-10-01",
+ "site": null,
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/northern",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Secondary-Schools-Without-a-Boundary",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Application-and-Admissions",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Beyond-8"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Secondary School without a Boundary (SSWAB)",
+   "note": {
+    "en": "Northern Secondary is one of five TDSB schools without a boundary: students outside the Northern collegiate boundary must apply through the Out-of-Area Admissions process to attend.",
+    "es": "Northern Secondary es una de las cinco escuelas del TDSB sin límite geográfico: los estudiantes que viven fuera del límite del colegio deben solicitar admisión mediante el proceso de Admisiones Fuera de Zona.",
+    "fr": "Northern Secondary est l'une des cinq écoles du TDSB sans zone de desserte : les élèves qui habitent hors de la zone de l'école doivent présenter une demande par le processus d'admission hors secteur."
+   },
+   "entry": "apply",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Secondary-Schools-Without-a-Boundary"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "Advanced Placement courses let students earn a Grade 12 university-preparation credit and do university-level work; offerings vary by school and year.",
+    "es": "Los cursos Advanced Placement permiten obtener un crédito de 12.º grado de preparación universitaria y realizar trabajo de nivel universitario; la oferta varía según la escuela y el año.",
+    "fr": "Les cours Advanced Placement permettent d'obtenir un crédit de 12e année de préparation universitaire et de faire un travail de niveau universitaire; l'offre varie selon l'école et l'année."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major: a Ministry-approved program that lets students focus on one economic sector while meeting graduation requirements and prepares them for apprenticeship, college, university or work.",
+    "es": "Specialist High Skills Major: programa aprobado por el Ministerio que permite concentrarse en un sector económico mientras se cumplen los requisitos de graduación y prepara para el aprendizaje de oficios, el colegio universitario, la universidad o el trabajo.",
+    "fr": "Specialist High Skills Major : programme approuvé par le ministère qui permet de se concentrer sur un secteur économique tout en respectant les exigences d'obtention du diplôme, et qui prépare à l'apprentissage, au collège, à l'université ou au travail."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "admissions": [
+  {
+   "program": "Secondary School without a Boundary application (Northern SS)",
+   "tag": "other",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Secondary-Schools-Without-a-Boundary",
+   "elig": {
+    "en": "All interested students who live outside the Northern collegiate boundary apply for Northern Secondary through the SSWAB option of the Out-of-Area Admissions application.",
+    "es": "Todos los estudiantes interesados que viven fuera del límite del colegio Northern solicitan mediante la opción SSWAB de la solicitud de Admisiones Fuera de Zona.",
+    "fr": "Tous les élèves intéressés qui habitent hors de la zone de Northern présentent une demande par l'option SSWAB de la demande d'admission hors secteur."
+   },
+   "dates": {
+    "en": "Out-of-Area online application opens Jan 5, 2027 and is due Jan 23, 2027 at 4:00 p.m.",
+    "es": "La solicitud en línea de Admisiones Fuera de Zona abre el 5 de enero de 2027 y vence el 23 de enero de 2027 a las 4:00 p. m.",
+    "fr": "La demande en ligne d'admission hors secteur ouvre le 5 janvier 2027 et doit être soumise avant le 23 janvier 2027 à 16 h."
+   },
+   "know": [
+    {
+     "en": "Applicants can apply for one Out-of-Area option, one SSWAB option, or both; if offered both they may accept only one and a declined seat cannot be reinstated.",
+     "es": "Se puede solicitar una opción Fuera de Zona, una opción SSWAB o ambas; si se ofrecen ambas, solo se puede aceptar una y un cupo rechazado no se puede recuperar.",
+     "fr": "On peut présenter une demande hors secteur, une demande SSWAB ou les deux; si les deux sont offertes, on ne peut en accepter qu'une et une place refusée ne peut pas être rétablie."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-26",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "Work-list site northern-secondary.com did not load; the TDSB school site address is unverified (not read).",
+  "Out-of-Area application opens Jan 5, 2027 and is due Jan 23, 2027 at 4 p.m. (from the TDSB Beyond 8 page, not a Northern page).",
+  "SHSM sector names not found.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

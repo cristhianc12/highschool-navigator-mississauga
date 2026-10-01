@@ -1,0 +1,126 @@
+{
+ "id": "tdsb-marc-garneau",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/marcgarneau/",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/marcgarneau/",
+  "https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/TOPS",
+  "https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/SHSM",
+  "https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/Co-op",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+  "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Application-and-Admissions",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "TOPS (Talented Offerings For Programs In the Sciences)",
+   "note": {
+    "en": "Enriched math, science and language arts program (TOPS); students are cored together for most classes over four years and no gifted designation is required. Grade 9 entry is through the TDSB Math, Science and Technology application.",
+    "es": "Programa enriquecido de matemáticas, ciencias y lengua (TOPS); los estudiantes cursan juntos la mayoría de las clases durante cuatro años y no se exige designación de dotado. El ingreso a 9.º grado es mediante la solicitud de Matemáticas, Ciencias y Tecnología del TDSB.",
+    "fr": "Programme enrichi de maths, de sciences et de langue (TOPS); les élèves suivent la plupart des cours ensemble pendant quatre ans et aucune désignation de surdoué n'est exigée. L'admission en 9e année se fait par la demande du TDSB en mathématiques, sciences et technologie."
+   },
+   "entry": "apply",
+   "url": "https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/TOPS"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Three SHSM sectors: Health & Wellness, Hospitality and Tourism, and Information and Communication Technology (ICT), with co-op placements and industry certifications.",
+    "es": "Tres sectores SHSM: Health & Wellness, Hospitality and Tourism e Information and Communication Technology (ICT), con prácticas cooperativas y certificaciones de la industria.",
+    "fr": "Trois secteurs SHSM : Health & Wellness, Hospitality and Tourism et Information and Communication Technology (ICT), avec stages coopératifs et certifications de l'industrie."
+   },
+   "entry": null,
+   "url": "https://schoolweb.tdsb.on.ca/marcgarneau/Academic-Departments/SHSM"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "note": {
+    "en": "Advanced Placement courses let students earn a Grade 12 university-preparation credit and do university-level work; offerings vary by school and year.",
+    "es": "Los cursos Advanced Placement permiten obtener un crédito de 12.º grado de preparación universitaria y realizar trabajo de nivel universitario; la oferta varía según la escuela y el año.",
+    "fr": "Les cours Advanced Placement permettent d'obtenir un crédit de 12e année de préparation universitaire et de faire un travail de niveau universitaire; l'offre varie selon l'école et l'année."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "shsm": [
+  "Health & Wellness",
+  "Hospitality and Tourism",
+  "Information and Communication Technology (ICT)"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "admissions": [
+  {
+   "program": "TOPS (Math, Science and Technology)",
+   "tag": "stem",
+   "url": "https://www.tdsb.on.ca/cpao/Central-Program-Admissions-Office/Specialized-Programs/Math-Science-and-Technology",
+   "elig": {
+    "en": "Open to students who meet TDSB admission requirements and have no more than 2 of the required report-card marks below 70% (the provincial standard); meeting the benchmark does not guarantee a place.",
+    "es": "Pueden solicitar los estudiantes que cumplen los requisitos de admisión del TDSB y tienen como máximo 2 de las calificaciones requeridas por debajo de 70 % (el estándar provincial); cumplir el requisito no garantiza una plaza.",
+    "fr": "Ouvert aux élèves qui répondent aux exigences d'admission du TDSB et qui n'ont pas plus de 2 des notes de bulletin requises sous 70 % (la norme provinciale); atteindre ce seuil ne garantit pas une place."
+   },
+   "marks": {
+    "en": "Applicant score uses the average of Language, Mathematics and Science & Technology marks.",
+    "es": "El puntaje usa el promedio de las calificaciones de Lengua, Matemáticas y Ciencia y Tecnología.",
+    "fr": "La note utilise la moyenne des notes de langue, de mathématiques et de sciences et technologie."
+   },
+   "dates": {
+    "en": "Online application open Nov 9-27, 2026; in-person assessment Mon Dec 7, 2026 (Dec 14 if weather closes schools). Offers and waitlist status are emailed Feb 10, 2027 (offers expire Feb 16 at 4 p.m.); further offers Feb 17 and 24, 2027.",
+    "es": "Solicitud en línea abierta del 9 al 27 de noviembre de 2026; evaluación presencial el lunes 7 de diciembre de 2026 (14 de diciembre si el clima cierra las escuelas). Las ofertas y el estado de lista de espera se envían por correo el 10 de febrero de 2027 (las ofertas vencen el 16 de febrero a las 4 p. m.); más ofertas el 17 y el 24 de febrero de 2027.",
+    "fr": "Demande en ligne ouverte du 9 au 27 novembre 2026; évaluation en personne le lundi 7 décembre 2026 (14 décembre en cas de fermeture pour intempéries). Les offres et l'état de la liste d'attente sont envoyés par courriel le 10 février 2027 (les offres expirent le 16 février à 16 h); d'autres offres les 17 et 24 février 2027."
+   },
+   "submit": [
+    {
+     "en": "Online Specialized Programs application (primary choice, optionally an alternate choice of the same program type)",
+     "es": "Solicitud en línea de Programas Especializados (opción principal y, si se desea, una opción alterna del mismo tipo de programa)",
+     "fr": "Demande en ligne aux programmes spécialisés (choix principal et, au besoin, un choix de rechange du même type de programme)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants are scored 30% on report-card marks and 70% on the demonstration of knowledge and skills.",
+     "es": "El puntaje se calcula 30 % con las calificaciones del boletín y 70 % con la demostración de conocimientos y habilidades.",
+     "fr": "La note finale repose à 30 % sur les notes du bulletin et à 70 % sur la démonstration des connaissances et des compétences."
+    },
+    {
+     "en": "Transportation is not provided for Specialized Programs.",
+     "es": "No se ofrece transporte para los Programas Especializados.",
+     "fr": "Aucun transport n'est offert pour les programmes spécialisés."
+    },
+    {
+     "en": "The 60-minute in-person demonstration is multiple choice (mathematical reasoning, scientific problem solving and innovation, coding) based on Grade 7 expectations.",
+     "es": "La demostración presencial de 60 minutos es de opción múltiple (razonamiento matemático, resolución de problemas científicos e innovación, programación) y se basa en los contenidos de 7.º grado.",
+     "fr": "La démonstration en personne de 60 minutes est à choix multiples (raisonnement mathématique, résolution de problèmes scientifiques et innovation, codage) et porte sur les attentes de la 7e année."
+    }
+   ]
+  }
+ ],
+ "focus": {
+  "en": "Toronto school with the TOPS enriched math and science program and three SHSM sectors.",
+  "es": "Escuela de Toronto con el programa enriquecido TOPS de matemáticas y ciencias y tres sectores SHSM.",
+  "fr": "École de Toronto avec le programme enrichi TOPS en maths et sciences et trois secteurs SHSM."
+ },
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted.",
+  "No fees stated beyond the board pages.",
+  "Co-op, Dual Credit and OYAP pages exist on the school site (Co-op page read; Dual Credit and OYAP pages listed but not read in detail)."
+ ]
+}

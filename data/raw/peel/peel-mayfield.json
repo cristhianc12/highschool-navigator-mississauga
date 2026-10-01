@@ -1,16 +1,133 @@
 {
  "id": "peel-mayfield",
  "scrapedAt": "2026-10-01",
- "site": "https://schools.peelschools.org/sec/mayfield/Pages/default.aspx",
+ "site": "https://mayfield.peelschools.org/",
  "sources": [
-  "https://schools.peelschools.org/sec/mayfield/Pages/default.aspx"
+  "https://mayfield.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/abbe5928-9675-4de1-a007-bde39ca77558/Mayfield-SS-717-2026.pdf?fingerprint=ppb20260717192803",
+  "https://mayfield.peelschools.org/arts",
+  "https://mayfield.peelschools.org/AviationAerospace",
+  "https://mayfield.peelschools.org/business-SHSM",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/specialist-high-skills-major"
  ],
- "programs": [],
- "admissions": [],
- "sessions": [],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Arts - Regional Learning Choice Program (RLCP)",
+   "note": {
+    "en": "Regional Arts Program with Dance, Drama, Music (instrumental/vocal) or Visual Arts; Mayfield serves students living north of the 401.",
+    "es": "Programa regional de Artes con Danza, Teatro, Música (instrumental/vocal) o Artes Visuales; Mayfield atiende a estudiantes que viven al norte de la 401.",
+    "fr": "Programme régional d'arts avec danse, art dramatique, musique (instrumentale/vocale) ou arts visuels; Mayfield accueille les élèves qui habitent au nord de la 401."
+   },
+   "entry": "audition",
+   "url": "https://mayfield.peelschools.org/arts"
+  },
+  {
+   "tag": "shsm",
+   "name": "Aviation & Aerospace - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Aviation & Aerospace for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Aviación y Aeroespacial para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Aviation et aérospatiale pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://mayfield.peelschools.org/AviationAerospace"
+  },
+  {
+   "tag": "shsm",
+   "name": "Business - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Business for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Negocios para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Affaires pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://mayfield.peelschools.org/business-SHSM"
+  }
+ ],
+ "shsm": [
+  "Aviation & Aerospace",
+  "Business"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/abbe5928-9675-4de1-a007-bde39ca77558/Mayfield-SS-717-2026.pdf?fingerprint=ppb20260717192803",
+ "admissions": [
+  {
+   "program": "Arts - Regional Learning Choice Program (RLCP)",
+   "tag": "arts",
+   "elig": {
+    "en": "Open to Grade 8 students entering Grade 9 in 2027-28; students living north of the 401 are placed at Mayfield. International visa students are not eligible; work or study permit holders may apply.",
+    "es": "Abierto a estudiantes de 8.º grado que pasan a 9.º en 2027-28; quienes viven al norte de la 401 van a Mayfield. Los estudiantes con visa internacional no son elegibles; quienes tienen permiso de trabajo o estudio pueden postular.",
+    "fr": "Ouvert aux élèves de 8e année qui entrent en 9e année en 2027-28; ceux qui habitent au nord de la 401 sont placés à Mayfield. Les élèves étrangers sous visa ne sont pas admissibles; les titulaires d'un permis de travail ou d'études peuvent postuler."
+   },
+   "marks": {
+    "en": "Grade 7 final report card, a written response (5 questions) and an audition (vocal music, instrumental music, dance, drama) or a portfolio (visual arts).",
+    "es": "Boletín final de 7.º grado, una respuesta escrita (5 preguntas) y una audición (música vocal, música instrumental, danza, teatro) o un portafolio (artes visuales).",
+    "fr": "Bulletin final de 7e année, une réponse écrite (5 questions) et une audition (musique vocale, musique instrumentale, danse, art dramatique) ou un portfolio (arts visuels)."
+   },
+   "fee": {
+    "en": "A non-refundable application fee plus an annual program fee (amounts not stated), paid through School Cash Online.",
+    "es": "Una tarifa de solicitud no reembolsable más una tarifa anual del programa (montos no indicados), pagadas por School Cash Online.",
+    "fr": "Des frais de demande non remboursables plus des frais annuels de programme (montants non indiqués), payés par School Cash Online."
+   },
+   "dates": {
+    "en": "Apply Nov 3, 2026 to Nov 24, 2026; auditions Jan 27-28, 2027; first-round offers Feb 2, 2027 (accept by Feb 5); grade 10 entry also available.",
+    "es": "Postula del 3 al 24 de noviembre de 2026; audiciones el 27 y 28 de enero de 2027; primera ronda de ofertas el 2 de febrero de 2027 (aceptar antes del 5 de febrero); también hay entrada en 10.º grado.",
+    "fr": "Postule du 3 au 24 novembre 2026; auditions les 27 et 28 janvier 2027; première ronde d'offres le 2 février 2027 (accepte avant le 5 février); entrée en 10e année aussi possible."
+   },
+   "submit": [
+    {
+     "en": "Online application on the PDSB application website",
+     "es": "Solicitud en línea en el sitio de solicitudes del PDSB",
+     "fr": "Demande en ligne sur le site de demande du PDSB"
+    },
+    {
+     "en": "Written response (5 questions)",
+     "es": "Respuesta escrita (5 preguntas)",
+     "fr": "Réponse écrite (5 questions)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Applicants who meet the criteria enter a central random selection; there is one waitlist per school.",
+     "es": "Los solicitantes que cumplen los criterios entran a un sorteo central; hay una lista de espera por escuela.",
+     "fr": "Les candidats qui répondent aux critères entrent dans un tirage au sort central; chaque école a sa liste d'attente."
+    },
+    {
+     "en": "Students who self-identify as African, Black, Afro-Caribbean, First Nations, Inuit or Métis and meet the criteria are accepted without random selection.",
+     "es": "Los estudiantes que se autoidentifican como africanos, negros, afrocaribeños, de las Primeras Naciones, inuit o métis y cumplen los criterios son aceptados sin sorteo.",
+     "fr": "Les élèves qui s'identifient comme Africains, Noirs, Afro-Caribéens, des Premières Nations, Inuits ou Métis et qui répondent aux critères sont admis sans tirage au sort."
+    }
+   ],
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-27",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (6:30-8:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-27",
+   "time": "18:30",
+   "format": "In person",
+   "title": "RLCP Info Night: Arts (6:30-8:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
  "missing": [
-  "schools.peelschools.org (school site) is unreachable from the collection environment: its TLS certificate is expired, and the egress proxy blocks it for fetch tools; no school page could be read",
-  "www.peelschools.org (board site) returns 403 Request blocked (CloudFront) and was not accessible",
-  "Programs, SHSM, co-op, course calendar and courses, admissions and 2026-27 information sessions were not collected for this school"
+  "Fees amounts for regional/pathway programs are not stated on the pages"
  ]
 }

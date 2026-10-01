@@ -1,0 +1,95 @@
+{
+  "id": "dpcdsb-notre-dame",
+  "scrapedAt": "2026-10-01",
+  "site": "https://ndame.dpcdsb.org/",
+  "sources": [
+    "https://ndame.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://ndame.dpcdsb.org/programs/i-b-program",
+    "https://ndame.dpcdsb.org/programs/course-calendar"
+  ],
+  "programs": [
+    {
+      "tag": "ib",
+      "name": "IB Diploma Programme (Preparatory IB DP in Grades 9-10)",
+      "note": {
+        "en": "Notre Dame is an IB World School offering the Diploma Programme; Grade 9 students can join the Preparatory IB DP Programme, which is not part of the official IB programmes and is not required to enter the 2-year Diploma Programme.",
+        "es": "Notre Dame es un IB World School que ofrece el Diploma Programme; los estudiantes de 9.º grado pueden unirse al Preparatory IB DP Programme, que no forma parte de los programas oficiales del IB ni es requisito para entrar al Diploma Programme de 2 años.",
+        "fr": "Notre Dame est un IB World School qui offre le Programme du diplôme; les élèves de 9e année peuvent se joindre au Preparatory IB DP Programme, qui ne fait pas partie des programmes officiels de l'IB et n'est pas obligatoire pour entrer au Programme du diplôme de 2 ans."
+      },
+      "entry": "apply",
+      "url": "https://ndame.dpcdsb.org/programs/i-b-program"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Hospitality & Tourism, Transportation (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Hospitality & Tourism, Transportation (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Hospitality & Tourism, Transportation (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Hospitality & Tourism",
+    "Transportation"
+  ],
+  "calendarUrl": "https://ndame.dpcdsb.org/programs/course-calendar",
+  "admissions": [
+    {
+      "program": "Preparatory IB Diploma Programme (Grade 9)",
+      "tag": "ib",
+      "elig": null,
+      "marks": null,
+      "fee": {
+        "en": "$40 non-refundable application fee, paid through School Cash Online.",
+        "es": "Tarifa de solicitud no reembolsable de $40, pagada por School Cash Online.",
+        "fr": "Frais de demande non remboursables de 40 $, payés par School Cash Online."
+      },
+      "dates": {
+        "en": "Open house Oct. 29, 2026; application links Oct. 30; application and fee due Nov. 27; offer letters Dec. 11; registration forms Dec. 14; registration package and fee due Jan. 8, 2027.",
+        "es": "Jornada de puertas abiertas el 29 de octubre de 2026; enlaces de solicitud el 30 de octubre; solicitud y tarifa vencen el 27 de noviembre; cartas de oferta el 11 de diciembre; formularios de inscripción el 14 de diciembre; paquete de inscripción y tarifa vencen el 8 de enero de 2027.",
+        "fr": "Portes ouvertes le 29 octobre 2026; liens de demande le 30 octobre; demande et frais dus le 27 novembre; lettres d'offre le 11 décembre; formulaires d'inscription le 14 décembre; trousse d'inscription et frais dus le 8 janvier 2027."
+      },
+      "submit": [
+        {
+          "en": "Online application and the application fee",
+          "es": "Solicitud en línea y tarifa de solicitud",
+          "fr": "Demande en ligne et frais de demande"
+        }
+      ],
+      "know": [
+        {
+          "en": "Students admitted follow the prescribed course selection template that matches OSSD courses to IB courses.",
+          "es": "Los estudiantes admitidos siguen la plantilla de selección de cursos prescrita que relaciona los cursos OSSD con los del IB.",
+          "fr": "Les élèves admis suivent le modèle de choix de cours prescrit qui associe les cours du DESO aux cours de l'IB."
+        },
+        {
+          "en": "Regional programs add an annual program fee and no board transportation is provided.",
+          "es": "Los programas regionales suman una tarifa anual del programa y el consejo no ofrece transporte.",
+          "fr": "Les programmes régionaux ajoutent des frais annuels de programme et le conseil n'offre pas de transport."
+        }
+      ],
+      "url": "https://ndame.dpcdsb.org/programs/i-b-program"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-10-29",
+      "time": "17:30",
+      "format": "In person",
+      "title": "Open House 5:30-7:30 pm, including the Preparatory IB Diploma Programme",
+      "url": "https://ndame.dpcdsb.org/programs/i-b-program"
+    }
+  ],
+  "missing": [
+    "IB fee beyond the $40 application fee and the annual program fee amount were not stated on the page.",
+    "Regional IB program page on the board site does not list amounts for the annual fee."
+  ]
+}

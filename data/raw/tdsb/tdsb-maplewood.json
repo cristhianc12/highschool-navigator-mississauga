@@ -1,0 +1,33 @@
+{
+ "id": "tdsb-maplewood",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schoolweb.tdsb.on.ca/maplewood",
+ "sources": [
+  "https://schoolweb.tdsb.on.ca/maplewood",
+  "https://www.tdsb.on.ca/Find-your/Schools/schno/4136",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+ ],
+ "programs": [
+  {
+   "tag": "other",
+   "name": "Maplewood High School specialized program",
+   "note": {
+    "en": "Specialized school of about 140 students with special needs; students work toward an Ontario Certificate of Accomplishment and some toward an Employability Skills Achievement Certificate.",
+    "es": "Escuela especializada de unos 140 estudiantes con necesidades especiales; los estudiantes trabajan hacia un Ontario Certificate of Accomplishment y algunos hacia un Employability Skills Achievement Certificate.",
+    "fr": "École spécialisée d'environ 140 élèves ayant des besoins particuliers; les élèves visent un Ontario Certificate of Accomplishment et certains un Employability Skills Achievement Certificate."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4136"
+  }
+ ],
+ "focus": {
+  "en": "Small specialized school in Scarborough for students with special needs, focused on independence, employability skills and transition to work.",
+  "es": "Escuela pequeña y especializada en Scarborough para estudiantes con necesidades especiales, centrada en la independencia, las habilidades laborales y la transición al trabajo.",
+  "fr": "Petite école spécialisée à Scarborough pour élèves ayant des besoins particuliers, axée sur l'autonomie, les compétences d'employabilité et la transition vers le travail."
+ },
+ "sessions": [],
+ "missing": [
+  "Open house listed as 'By Appointment Only' with no date.",
+  "No admission process described on the school's pages; No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

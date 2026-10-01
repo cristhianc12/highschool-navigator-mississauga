@@ -2,7 +2,7 @@
 // Polite page reader for the scraping agents. Prints readable text (HTML or PDF) and the page's links,
 // with an on-disk cache and a per-host delay, so agents spend tokens on content, not markup.
 //   node scripts/pipeline/crawl.mjs page <url> [--links] [--max=12000] [--find=regex]   (Google Docs/Slides/Sheets/Drive links and CSV are handled)
-//   node scripts/pipeline/crawl.mjs links <url> [--match=regex]       (links only)
+//   node scripts/pipeline/crawl.mjs links <url> [--match=regex] [--all]  (links only; --all includes menus and footers)
 //   node scripts/pipeline/crawl.mjs sitemap <origin> [--match=regex]  (urls from sitemap.xml)
 // Needs: NODE_USE_ENV_PROXY=1 (this environment routes traffic through a proxy).
 import { load } from "cheerio";
@@ -59,7 +59,7 @@ async function read(url0) {
   const $ = load(html);
   const links = [];
   const scope = $("main, [role=main], #content, article").first();
-  (scope.length ? scope.find("a[href]") : $("a[href]")).each((_, a) => {
+  (scope.length && !opt.all ? scope.find("a[href]") : $("a[href]")).each((_, a) => {
     let href = $(a).attr("href");
     if (!href || /^(mailto:|tel:|javascript:|#)/i.test(href)) return;
     try { href = new URL(href, head.url).href.replace(/#.*$/, ""); } catch { return; }

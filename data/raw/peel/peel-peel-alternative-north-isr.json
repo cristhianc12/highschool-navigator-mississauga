@@ -1,16 +1,18 @@
 {
  "id": "peel-peel-alternative-north-isr",
  "scrapedAt": "2026-10-01",
- "site": "https://schools.peelschools.org/sec/pas/Pages/default.aspx",
+ "site": "https://pasnorth.peelschools.org/",
  "sources": [
-  "https://schools.peelschools.org/sec/pas/Pages/default.aspx"
+  "https://pasnorth.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights"
  ],
  "programs": [],
  "admissions": [],
  "sessions": [],
  "missing": [
-  "schools.peelschools.org (school site) is unreachable from the collection environment: its TLS certificate is expired, and the egress proxy blocks it for fetch tools; no school page could be read",
-  "www.peelschools.org (board site) returns 403 Request blocked (CloudFront) and was not accessible",
-  "Programs, SHSM, co-op, course calendar and courses, admissions and 2026-27 information sessions were not collected for this school"
+  "No 2026-27 information night listed for this school on the board's Grade 8 information nights page (page checked 2026-10-01)",
+  "Course list is shared with the main Peel Alternative School campus calendar; not extracted separately",
+  "The roster entry 'ISR' could not be matched to a separate page; PAS North/South pages used for the campus"
  ]
 }

@@ -1,0 +1,49 @@
+{
+ "id": "tdsb-oakwood",
+ "scrapedAt": "2026-10-01",
+ "site": "https://sites.google.com/tdsb.on.ca/oakwoodcollegiateinstitute/home",
+ "sources": [
+  "https://sites.google.com/tdsb.on.ca/oakwoodcollegiateinstitute/home",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights",
+  "https://www.tdsb.on.ca/High-School/Going-to-High-School/Legend"
+ ],
+ "programs": [
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion for students with a minimum of 3,800 to 6,000 hours of French instruction in elementary school; 10 credits (4 in French, 6 in subjects taught in French) earn the Certificate of Bilingual Studies.",
+    "es": "Inmersión en francés para estudiantes con un mínimo de 3800 a 6000 horas de instrucción en francés en primaria; 10 créditos (4 de francés y 6 de materias en francés) otorgan el Certificate of Bilingual Studies.",
+    "fr": "Immersion française pour les élèves ayant au moins 3 800 à 6 000 heures d'enseignement en français à l'élémentaire; 10 crédits (4 en français et 6 dans des matières enseignées en français) donnent le Certificate of Bilingual Studies."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major: a Ministry-approved program that lets students focus on one economic sector while meeting graduation requirements and prepares them for apprenticeship, college, university or work.",
+    "es": "Specialist High Skills Major: programa aprobado por el Ministerio que permite concentrarse en un sector económico mientras se cumplen los requisitos de graduación y prepara para el aprendizaje de oficios, el colegio universitario, la universidad o el trabajo.",
+    "fr": "Specialist High Skills Major : programme approuvé par le ministère qui permet de se concentrer sur un secteur économique tout en respectant les exigences d'obtention du diplôme, et qui prépare à l'apprentissage, au collège, à l'université ou au travail."
+   },
+   "entry": null,
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-24",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 8 Open House",
+   "url": "https://www.tdsb.on.ca/High-School/Going-to-High-School/Open-Houses-and-Information-Nights"
+  }
+ ],
+ "missing": [
+  "School site is a JavaScript Google Site; only the home page text was readable.",
+  "SHSM sector names not found.",
+  "No course calendar or course list found on the school's own pages (TDSB schools publish course selection through myBlueprint, which requires a login), so no course list was extracted."
+ ]
+}

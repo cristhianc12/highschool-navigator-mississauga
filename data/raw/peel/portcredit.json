@@ -1,16 +1,43 @@
 {
  "id": "portcredit",
  "scrapedAt": "2026-10-01",
- "site": "https://schools.peelschools.org/sec/portcredit/Pages/default.aspx",
+ "site": "https://portcredit.peelschools.org/",
  "sources": [
-  "https://schools.peelschools.org/sec/portcredit/Pages/default.aspx"
+  "https://portcredit.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/f711f0e9-481d-42b9-8aa4-c422fc2ffc46/Port-Credit-SS.pdf?fingerprint=ppb20251217031118",
+  "https://www.peelschools.org/specialist-high-skills-major"
  ],
  "programs": [],
+ "shsm": [
+  "Justice, Community Safety & Emergency Services",
+  "Manufacturing"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/f711f0e9-481d-42b9-8aa4-c422fc2ffc46/Port-Credit-SS.pdf?fingerprint=ppb20251217031118",
  "admissions": [],
- "sessions": [],
- "missing": [
-  "schools.peelschools.org (school site) is unreachable from the collection environment: its TLS certificate is expired, and the egress proxy blocks it for fetch tools; no school page could be read",
-  "www.peelschools.org (board site) returns 403 Request blocked (CloudFront) and was not accessible",
-  "Programs, SHSM, co-op, course calendar and courses, admissions and 2026-27 information sessions were not collected for this school"
- ]
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Sci Tech (5-6 p.m. or 7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Strings (5-6 p.m. or 7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": []
 }

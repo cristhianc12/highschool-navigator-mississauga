@@ -1,0 +1,104 @@
+{
+  "id": "dpcdsb-st-marguerite-d-youville",
+  "scrapedAt": "2026-10-01",
+  "site": "https://dyouv.dpcdsb.org/",
+  "sources": [
+    "https://dyouv.dpcdsb.org/",
+    "https://www.dpcdsb.org/dpcdsb/events/secondary-school-information-sessions",
+    "https://www.dpcdsb.org/download/573064",
+    "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major",
+    "https://www.dpcdsb.org/admissions/secondary-school-registration",
+    "https://dyouv.dpcdsb.org/programs/guidance-courses/regional-stem-program",
+    "https://dyouv.dpcdsb.org/programs/course-calendar",
+    "https://www.dpcdsb.org/download/573342"
+  ],
+  "programs": [
+    {
+      "tag": "stem",
+      "name": "Regional STEM Program",
+      "note": {
+        "en": "Regional STEM program from Grade 9 (started September 2025) with focused science, technology, engineering and mathematics courses, hands-on projects and industry partnerships; completers receive a STEM certificate.",
+        "es": "Programa regional STEM desde 9.º grado (comenzó en septiembre de 2025) con cursos de ciencias, tecnología, ingeniería y matemáticas, proyectos prácticos y alianzas con la industria; quienes lo completan reciben un certificado STEM.",
+        "fr": "Programme régional STEM dès la 9e année (lancé en septembre 2025) avec des cours de sciences, technologie, ingénierie et mathématiques, des projets pratiques et des partenariats avec l'industrie; les élèves qui le terminent reçoivent un certificat STEM."
+      },
+      "entry": "apply",
+      "url": "https://dyouv.dpcdsb.org/programs/guidance-courses/regional-stem-program"
+    },
+    {
+      "tag": "shsm",
+      "name": "Specialist High Skills Major (SHSM)",
+      "note": {
+        "en": "The board lists this school as offering the SHSM in Health & Wellness, Hospitality & Tourism, Information & Communications Technology (Grades 11-12, a bundle of 8-10 courses, certifications and a co-op placement).",
+        "es": "El consejo escolar indica que esta escuela ofrece el SHSM en Health & Wellness, Hospitality & Tourism, Information & Communications Technology (11.º y 12.º grado, un conjunto de 8 a 10 cursos, certificaciones y una colocación de educación cooperativa).",
+        "fr": "Le conseil indique que cette école offre le SHSM en Health & Wellness, Hospitality & Tourism, Information & Communications Technology (11e et 12e année, un ensemble de 8 à 10 cours, des certifications et un stage d'éducation coopérative)."
+      },
+      "entry": null,
+      "url": "https://www.dpcdsb.org/programs-services/secondary/specialist-high-skills-major"
+    }
+  ],
+  "shsm": [
+    "Health & Wellness",
+    "Hospitality & Tourism",
+    "Information & Communications Technology"
+  ],
+  "calendarUrl": "https://dyouv.dpcdsb.org/programs/course-calendar",
+  "other": [
+    "Co-operative Education"
+  ],
+  "admissions": [
+    {
+      "program": "Regional STEM Program",
+      "tag": "stem",
+      "elig": null,
+      "marks": null,
+      "fee": null,
+      "dates": {
+        "en": "Application opens Oct. 23, 2026; equal consideration deadline for round 1 is Jan. 8, 2027; first-round applications are reviewed in January.",
+        "es": "La solicitud abre el 23 de octubre de 2026; la fecha límite de igual consideración de la primera ronda es el 8 de enero de 2027; las solicitudes de la primera ronda se revisan en enero.",
+        "fr": "La demande ouvre le 23 octobre 2026; la date limite de considération égale pour la première ronde est le 8 janvier 2027; les demandes de la première ronde sont examinées en janvier."
+      },
+      "submit": [
+        {
+          "en": "Online application (linked from the school's STEM page)",
+          "es": "Solicitud en línea (enlazada desde la página STEM de la escuela)",
+          "fr": "Demande en ligne (accessible depuis la page STEM de l'école)"
+        }
+      ],
+      "know": [
+        {
+          "en": "Students who complete all requirements receive a STEM certificate at graduation.",
+          "es": "Quienes cumplen todos los requisitos reciben un certificado STEM al graduarse.",
+          "fr": "Les élèves qui remplissent toutes les exigences reçoivent un certificat STEM à la remise des diplômes."
+        },
+        {
+          "en": "Contact: Guidance Department, 905-789-5560 ext. 3.",
+          "es": "Contacto: Departamento de Orientación, 905-789-5560 ext. 3.",
+          "fr": "Contact : service d'orientation, 905-789-5560 poste 3."
+        }
+      ],
+      "url": "https://dyouv.dpcdsb.org/programs/guidance-courses/regional-stem-program"
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "school",
+      "date": "2026-10-22",
+      "time": "17:30",
+      "format": "In person",
+      "title": "Grade 8 Open House: guided tours 5:30 pm, main presentation 6:30 pm",
+      "url": "https://www.dpcdsb.org/download/573342"
+    },
+    {
+      "kind": "program",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "format": "In person",
+      "title": "Regional STEM presentation, 7:00 pm",
+      "url": "https://www.dpcdsb.org/download/573342"
+    }
+  ],
+  "missing": [
+    "STEM application fee not stated on the pages read.",
+    "Board STEM page says registration opens in November; the school page says Oct. 23, 2026 (school page used)."
+  ]
+}

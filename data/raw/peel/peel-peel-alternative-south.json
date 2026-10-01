@@ -1,16 +1,68 @@
 {
  "id": "peel-peel-alternative-south",
  "scrapedAt": "2026-10-01",
- "site": "https://schools.peelschools.org/sec/pas",
+ "site": "https://passouth.peelschools.org/",
  "sources": [
-  "https://schools.peelschools.org/sec/pas"
+  "https://passouth.peelschools.org/",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/15b19a47-daab-415f-be10-7e0028471ac3/Peel-Alternative-School.pdf?fingerprint=ppb20251217022033",
+  "https://www.peelschools.org/alternative-programs"
  ],
- "programs": [],
- "admissions": [],
+ "programs": [
+  {
+   "tag": "alt",
+   "name": "Foundations and Senior Programs",
+   "note": {
+    "en": "Alternative program for PDSB students in at least their third year of high school: Foundations (Grade 9-10 credits) and Senior (Grade 11-12 credits), at least 3 credits per semester.",
+    "es": "Programa alternativo para estudiantes del PDSB con al menos tres años de secundaria: Foundations (créditos de 9.º-10.º) y Senior (créditos de 11.º-12.º), mínimo 3 créditos por semestre.",
+    "fr": "Programme alternatif pour les élèves du PDSB en au moins leur troisième année du secondaire : Foundations (crédits de 9e-10e) et Senior (crédits de 11e-12e), au moins 3 crédits par semestre."
+   },
+   "entry": "school",
+   "url": "https://www.peelschools.org/alternative-programs"
+  },
+  {
+   "tag": "alt",
+   "name": "Intermediate Alternative Program (IAP)",
+   "note": {
+    "en": "Proactive alternative program for PDSB students in their first or second year of high school who are considered in-risk, with small classes and individualized support.",
+    "es": "Programa alternativo preventivo para estudiantes del PDSB en su primer o segundo año de secundaria considerados en riesgo, con grupos pequeños y apoyo individualizado.",
+    "fr": "Programme alternatif proactif pour les élèves du PDSB en première ou deuxième année du secondaire considérés à risque, avec de petites classes et un soutien individualisé."
+   },
+   "entry": "school",
+   "url": "https://www.peelschools.org/alternative-programs"
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/15b19a47-daab-415f-be10-7e0028471ac3/Peel-Alternative-School.pdf?fingerprint=ppb20251217022033",
+ "admissions": [
+  {
+   "program": "Foundations and Senior Programs / Intermediate Alternative Program",
+   "tag": "alt",
+   "elig": {
+    "en": "For PDSB students: Foundations and Senior for students in at least their third year of high school; IAP for students in their first or second year who are considered in-risk.",
+    "es": "Para estudiantes del PDSB: Foundations y Senior para quienes están al menos en su tercer año de secundaria; IAP para quienes están en su primer o segundo año y se consideran en riesgo.",
+    "fr": "Pour les élèves du PDSB : Foundations et Senior pour ceux qui sont au moins en troisième année du secondaire; IAP pour ceux de première ou deuxième année considérés à risque."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": null,
+   "submit": null,
+   "know": [
+    {
+     "en": "Referral is made through the student's PDSB home school, which must have all its supports in place first; students new to the PDSB spend one semester at their home school before referral.",
+     "es": "La derivación se hace a través de la escuela de origen del PDSB, que debe tener antes todos sus apoyos en marcha; los estudiantes nuevos en el PDSB pasan un semestre en su escuela de origen antes de la derivación.",
+     "fr": "L'aiguillage se fait par l'école d'origine du PDSB, qui doit d'abord avoir mis en place tous ses soutiens; les élèves nouveaux au PDSB passent un semestre à leur école d'origine avant l'aiguillage."
+    }
+   ],
+   "url": "https://www.peelschools.org/alternative-programs"
+  }
+ ],
  "sessions": [],
  "missing": [
-  "schools.peelschools.org (school site) is unreachable from the collection environment: its TLS certificate is expired, and the egress proxy blocks it for fetch tools; no school page could be read",
-  "www.peelschools.org (board site) returns 403 Request blocked (CloudFront) and was not accessible",
-  "Programs, SHSM, co-op, course calendar and courses, admissions and 2026-27 information sessions were not collected for this school"
+  "No 2026-27 information night listed for this school on the board's Grade 8 information nights page (page checked 2026-10-01)"
  ]
 }

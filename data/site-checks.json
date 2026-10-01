@@ -627,94 +627,107 @@
   },
   {
    "id": "peel-applewood-acres",
-   "url": "https://schools.peelschools.org/sec/applewood/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://applewoodacres.peelschools.org/",
+   "finalUrl": "https://applewoodacres.peelschools.org/",
+   "status": 200,
+   "title": "Home - Applewood Acres Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-bramalea",
-   "url": "https://schools.peelschools.org/sec/bramalea/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://bramalea.peelschools.org/",
+   "finalUrl": "https://bramalea.peelschools.org/",
+   "status": 200,
+   "title": "Home - Bramalea Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-brampton-centennial",
-   "url": "https://schools.peelschools.org/sec/bramptoncentennial/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://bramptoncentennial.peelschools.org/",
+   "finalUrl": "https://bramptoncentennial.peelschools.org/",
+   "status": 200,
+   "title": "Home - Brampton Centennial Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-castlebrooke",
-   "url": "https://www.castlebrookess.com",
-   "status": 0,
-   "verdict": "dead",
-   "error": "ECONNRESET"
+   "url": "https://castlebrooke.peelschools.org/",
+   "finalUrl": "https://castlebrooke.peelschools.org/",
+   "status": 200,
+   "title": "Home - Castlebrooke Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-central-peel",
-   "url": "https://schools.peelschools.org/sec/centralpeel/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://centralpeel.peelschools.org/",
+   "finalUrl": "https://centralpeel.peelschools.org/",
+   "status": 200,
+   "title": "Home - Central Peel Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-chinguacousy",
-   "url": "https://schools.peelschools.org/sec/chinguacousy/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://chinguacousy.peelschools.org/",
+   "finalUrl": "https://chinguacousy.peelschools.org/",
+   "status": 200,
+   "title": "Home - Chinguacousy Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-david-suzuki",
-   "url": "https://schools.peelschools.org/sec/davidsuzuki/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://davidsuzuki.peelschools.org/",
+   "finalUrl": "https://davidsuzuki.peelschools.org/",
+   "status": 200,
+   "title": "Home - David Suzuki Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-fletcher-s-meadow",
-   "url": "https://schools.peelschools.org/sec/fletchersmeadow/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://fletchersmeadow.peelschools.org/",
+   "finalUrl": "https://fletchersmeadow.peelschools.org/",
+   "status": 200,
+   "title": "Home - Fletcher's Meadow Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-harold-m-brathwaite",
-   "url": "https://schools.peelschools.org/sec/haroldmbrathwaite/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://haroldmbrathwaite.peelschools.org/",
+   "finalUrl": "https://haroldmbrathwaite.peelschools.org/",
+   "status": 200,
+   "title": "Home - Harold M. Brathwaite Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-heart-lake",
-   "url": "https://schools.peelschools.org/sec/heartlake/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://heartlake.peelschools.org/",
+   "finalUrl": "https://heartlake.peelschools.org/",
+   "status": 200,
+   "title": "Home - Heart Lake Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-humberview",
-   "url": "https://schools.peelschools.org/sec/humberview/Pages/default.aspx",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://humberview.peelschools.org/",
+   "finalUrl": "https://humberview.peelschools.org/",
+   "status": 200,
+   "title": "Home - Humberview Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-jean-augustine",
-   "url": "https://schools.peelschools.org/sec/jeanaugustine",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://jeanaugustine.peelschools.org/",
+   "finalUrl": "https://jeanaugustine.peelschools.org/",
+   "status": 200,
+   "title": "Home - Jean Augustine Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-judith-nyman",
-   "url": "https://schools.peelschools.org/sec/judithnyman",
-   "status": 0,
-   "verdict": "dead",
-   "error": "CERT_HAS_EXPIRED"
+   "url": "https://judithnyman.peelschools.org/",
+   "finalUrl": "https://judithnyman.peelschools.org/",
+   "status": 200,
+   "title": "Home - Judith Nyman Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "peel-louise-arbour",
@@ -889,8 +902,8 @@
    "url": "https://www.tcdsb.org/o/francislibermann/",
    "finalUrl": "https://www.tcdsb.org/o/francislibermann/",
    "status": 200,
-   "title": "Francis Libermann Catholic High School",
-   "verdict": "ok"
+   "title": "Client Challenge",
+   "verdict": "mismatch"
   },
   {
    "id": "tcdsb-james-cardinal-mcguigan",
@@ -905,8 +918,8 @@
    "url": "https://www.tcdsb.org/o/lorettoabbey/",
    "finalUrl": "https://www.tcdsb.org/o/lorettoabbey/",
    "status": 200,
-   "title": "Client Challenge",
-   "verdict": "mismatch"
+   "title": "Loretto Abbey Catholic Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "tcdsb-loretto-college-school",
@@ -937,8 +950,8 @@
    "url": "https://www.tcdsb.org/o/maryward/",
    "finalUrl": "https://www.tcdsb.org/o/maryward/",
    "status": 200,
-   "title": "Mary Ward Catholic Secondary School",
-   "verdict": "ok"
+   "title": "Client Challenge",
+   "verdict": "mismatch"
   },
   {
    "id": "tcdsb-michael-power-st-joseph",
@@ -961,8 +974,8 @@
    "url": "https://www.tcdsb.org/o/msgrfrasercollege/",
    "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege/",
    "status": 200,
-   "title": "Client Challenge",
-   "verdict": "mismatch"
+   "title": "Monsignor Fraser College",
+   "verdict": "ok"
   },
   {
    "id": "tcdsb-msgr-fraser-college-norfinch-campus",
@@ -977,8 +990,8 @@
    "url": "https://www.tcdsb.org/o/msgrfrasercollege",
    "finalUrl": "https://www.tcdsb.org/o/msgrfrasercollege",
    "status": 200,
-   "title": "Monsignor Fraser College",
-   "verdict": "ok"
+   "title": "Client Challenge",
+   "verdict": "mismatch"
   },
   {
    "id": "tcdsb-msgr-fraser-college-southwest",
@@ -1017,8 +1030,8 @@
    "url": "https://www.tcdsb.org/o/senatoroconnor",
    "finalUrl": "https://www.tcdsb.org/o/senatoroconnor",
    "status": 200,
-   "title": "Client Challenge",
-   "verdict": "mismatch"
+   "title": "Senator O'Connor College School",
+   "verdict": "ok"
   },
   {
    "id": "tcdsb-st-basil-the-great-college-school",
@@ -1033,24 +1046,24 @@
    "url": "https://www.tcdsb.org/o/stjoanofarc",
    "finalUrl": "https://www.tcdsb.org/o/stjoanofarc",
    "status": 200,
-   "title": "Home | St. Joan of Arc Catholic Academy",
-   "verdict": "ok"
+   "title": "Client Challenge",
+   "verdict": "mismatch"
   },
   {
    "id": "tcdsb-st-john-henry-newman",
    "url": "https://www.tcdsb.org/o/stjohnhenrynewman",
    "finalUrl": "https://www.tcdsb.org/o/stjohnhenrynewman",
    "status": 200,
-   "title": "St. John Henry Newman Catholic High School",
-   "verdict": "ok"
+   "title": "Client Challenge",
+   "verdict": "mismatch"
   },
   {
    "id": "tcdsb-st-john-paul-ii",
    "url": "https://www.tcdsb.org/o/stjohnpaulii",
    "finalUrl": "https://www.tcdsb.org/o/stjohnpaulii",
    "status": 200,
-   "title": "Client Challenge",
-   "verdict": "mismatch"
+   "title": "St. John Paul II Catholic Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "tcdsb-st-joseph-morrow-park",
@@ -1081,8 +1094,8 @@
    "url": "https://www.tcdsb.org/o/stmarycatholicacademy",
    "finalUrl": "https://www.tcdsb.org/o/stmarycatholicacademy",
    "status": 200,
-   "title": "St. Mary Catholic Academy",
-   "verdict": "ok"
+   "title": "Client Challenge",
+   "verdict": "mismatch"
   },
   {
    "id": "tcdsb-st-michael-s-choir-sr-school",
@@ -1105,16 +1118,16 @@
    "url": "https://www.tcdsb.org/o/stoscarromero",
    "finalUrl": "https://www.tcdsb.org/o/stoscarromero",
    "status": 200,
-   "title": "Client Challenge",
-   "verdict": "mismatch"
+   "title": "St. Oscar Romero Catholic Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "tcdsb-st-patrick",
    "url": "https://www.tcdsb.org/o/stpatrick",
    "finalUrl": "https://www.tcdsb.org/o/stpatrick",
    "status": 200,
-   "title": "Client Challenge",
-   "verdict": "mismatch"
+   "title": "St. Patrick Catholic Secondary School",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-a-y-jackson",
@@ -1742,7 +1755,7 @@
   },
   {
    "id": "tdsb-sir-wilfrid-laurier",
-   "url": "https://www.sirwilfridlaurierci.ca",
+   "url": "https://schoolweb.tdsb.on.ca/laurier",
    "finalUrl": "https://schoolweb.tdsb.on.ca/laurier",
    "status": 200,
    "title": "Sir Wilfrid Laurier Collegiate Institute",
@@ -1758,26 +1771,27 @@
   },
   {
    "id": "tdsb-south-east-alternative-school",
-   "url": "https://www.tdsb.on.ca/MOSS/asp_apps/school_landing_page/index.asp?schno=4800",
-   "finalUrl": "https://www.tdsb.on.ca/MOSS/asp_apps/school_landing_page/index.asp?schno=4800",
-   "status": 404,
-   "title": "404 Page Not Found",
-   "verdict": "dead"
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/4800",
+   "status": 200,
+   "title": "South East Secondary Alternative School",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-stephen-leacock",
-   "url": "https://stephenleacock.ca",
-   "finalUrl": "https://beingmusicalbeinghuman.com/",
+   "url": "https://schoolweb.tdsb.on.ca/stephenleacockci",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/stephenleacockci",
    "status": 200,
-   "title": "OMPONG188: Eksplorasi Game Online dari Yang Populer hingga Pendatang Baru",
-   "verdict": "mismatch"
+   "title": "Stephen Leacock Collegiate Institute",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-subway-academy-i",
-   "url": "https://subwayacademyone.com",
-   "status": 0,
-   "verdict": "dead",
-   "error": "fetch failed"
+   "url": "https://schoolweb.tdsb.on.ca/subwayacademy1/",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/subwayacademy1/",
+   "status": 200,
+   "title": "Subway Academy 1",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-subway-academy-ii",
@@ -1789,10 +1803,11 @@
   },
   {
    "id": "tdsb-the-student-school",
-   "url": "https://www.thestudentschool.org",
-   "status": 0,
-   "verdict": "dead",
-   "error": "fetch failed"
+   "url": "https://schoolweb.tdsb.on.ca/thestudentschool",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/thestudentschool",
+   "status": 200,
+   "title": "THE STUDENT SCHOOL",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-thistletown",
@@ -1804,7 +1819,7 @@
   },
   {
    "id": "tdsb-ursula-franklin-academy",
-   "url": "https://www.ufacademy.org",
+   "url": "https://schoolweb.tdsb.on.ca/ufa/",
    "finalUrl": "https://schoolweb.tdsb.on.ca/ufa/",
    "status": 200,
    "title": "Ursula Franklin Academy > Home",
@@ -1812,29 +1827,31 @@
   },
   {
    "id": "tdsb-victoria-park",
-   "url": "https://victoriaparkci.ca",
-   "status": 0,
-   "verdict": "dead",
-   "error": "ECONNRESET"
+   "url": "https://www.tdsb.on.ca/Find-your/Schools/schno/3447",
+   "finalUrl": "https://www.tdsb.on.ca/Find-your/Schools/schno/3447",
+   "status": 200,
+   "title": "Victoria Park Collegiate Institute",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-west-end-alternative-school",
-   "url": "https://westendalternativeschool.weebly.com/",
-   "finalUrl": "https://westendalternativeschool.weebly.com/",
+   "url": "https://schoolweb.tdsb.on.ca/westendalt",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/westendalt",
    "status": 200,
-   "title": "WEST END ALTERNATIVE SCHOOL - Home",
+   "title": "West End Alternative School",
    "verdict": "ok"
   },
   {
    "id": "tdsb-west-hill",
-   "url": "https://schools.tdsb.on.ca/westhill",
-   "status": 0,
-   "verdict": "dead",
-   "error": "ECONNRESET"
+   "url": "https://westhillci.com/",
+   "finalUrl": "https://westhillci.com/",
+   "status": 200,
+   "title": "Homeemail-color-circle-outline",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-west-humber",
-   "url": "https://www.westhumber.com",
+   "url": "https://schoolweb.tdsb.on.ca/whci",
    "finalUrl": "https://schoolweb.tdsb.on.ca/whci",
    "status": 200,
    "title": "West Humber Collegiate Institute",
@@ -1842,7 +1859,7 @@
   },
   {
    "id": "tdsb-western-technical-and-commercial-school",
-   "url": "https://www.wtcs.ca/",
+   "url": "https://sites.google.com/tdsb.on.ca/wtcs",
    "finalUrl": "https://sites.google.com/tdsb.on.ca/wtcs",
    "status": 200,
    "title": "Home",
@@ -1850,10 +1867,11 @@
   },
   {
    "id": "tdsb-weston",
-   "url": "https://www.westonci.ca",
-   "status": 0,
-   "verdict": "dead",
-   "error": "fetch failed"
+   "url": "https://sites.google.com/tdsb.on.ca/westonci",
+   "finalUrl": "https://sites.google.com/tdsb.on.ca/westonci",
+   "status": 200,
+   "title": "Weston Collegiate Institute",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-westview-centennial",
@@ -1865,14 +1883,15 @@
   },
   {
    "id": "tdsb-wexford-collegiate-school-for-the-arts",
-   "url": "https://www.wexfordcsa.ca/",
-   "status": 0,
-   "verdict": "dead",
-   "error": "UND_ERR_CONNECT_TIMEOUT"
+   "url": "https://schoolweb.tdsb.on.ca/wexfordcsa",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/wexfordcsa",
+   "status": 200,
+   "title": "Wexford Collegiate School for the Arts",
+   "verdict": "ok"
   },
   {
    "id": "tdsb-william-lyon-mackenzie",
-   "url": "https://www.wlmac.ca",
+   "url": "https://schoolweb.tdsb.on.ca/wlmac",
    "finalUrl": "https://schoolweb.tdsb.on.ca/wlmac",
    "status": 200,
    "title": "William Lyon Mackenzie Collegiate Institute",
@@ -1880,7 +1899,7 @@
   },
   {
    "id": "tdsb-winston-churchill",
-   "url": "https://www.winstonchurchillci.ca",
+   "url": "https://schoolweb.tdsb.on.ca/churchillci/",
    "finalUrl": "https://schoolweb.tdsb.on.ca/churchillci/",
    "status": 200,
    "title": "Winston Churchill Collegiate Institute",
@@ -1888,7 +1907,7 @@
   },
   {
    "id": "tdsb-woburn",
-   "url": "https://www.woburnci.ca",
+   "url": "https://schoolweb.tdsb.on.ca/woburnci/",
    "finalUrl": "https://schoolweb.tdsb.on.ca/woburnci/",
    "status": 200,
    "title": "Woburn Collegiate Institute",
@@ -1896,7 +1915,7 @@
   },
   {
    "id": "tdsb-york-humber",
-   "url": "https://yorkhumber.ca",
+   "url": "https://yorkhumber.ca/",
    "finalUrl": "https://yorkhumber.ca/",
    "status": 200,
    "title": "York Humber High School",
@@ -1904,10 +1923,10 @@
   },
   {
    "id": "tdsb-york-memorial",
-   "url": "https://schoolweb.tdsb.on.ca/yorkmemorial",
-   "finalUrl": "https://schoolweb.tdsb.on.ca/yorkmemorial",
+   "url": "https://www.yorkmemorialci.ca/ymci-home",
+   "finalUrl": "https://www.yorkmemorialci.ca/ymci-home",
    "status": 200,
-   "title": "York Memorial Collegiate Institute",
+   "title": "York Memorial C.I.",
    "verdict": "ok"
   },
   {
@@ -1920,10 +1939,10 @@
   },
   {
    "id": "tdsb-yorkdale",
-   "url": "https://www.yorkdale.net",
-   "finalUrl": "https://yorkdale.net/",
+   "url": "https://schoolweb.tdsb.on.ca/yorkdaless",
+   "finalUrl": "https://schoolweb.tdsb.on.ca/yorkdaless",
    "status": 200,
-   "title": "Home",
+   "title": "Home Yorkdale Secondary School | EdVance Program",
    "verdict": "ok"
   },
   {

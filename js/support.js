@@ -1,6 +1,6 @@
 // Voluntary support link ("buy us a coffee"). Set SUPPORT_URL to the donation page (Ko-fi, Buy Me a Coffee,
 // GitHub Sponsors...). While it is empty nothing is shown. It is a plain link: no scripts, no widgets.
-export const SUPPORT_URL = "";
+export const SUPPORT_URL = "https://buymeacoffee.com/cristhianc10";
 
 const T = {
   es: { p: "Gratis para la comunidad, sin anuncios. Si te sirvió, puedes", a: "invitarnos un café ☕" },

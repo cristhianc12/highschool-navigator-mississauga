@@ -461,3 +461,9 @@ body:has(dialog.sdlg[open]){overflow:hidden}
 .dfocus{background:var(--accent-soft);border-radius:10px;padding:9px 11px;font-size:14.5px}
 .dfoot{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--bg)}
 .morewrap{display:flex;justify-content:center}.showmore{margin-top:16px}
+.mlake{fill:var(--bg);stroke:var(--muted);stroke-width:2;opacity:.95}
+.mlabel{font:700 20px var(--font-body);fill:var(--muted);opacity:.8;paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.maparea{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.clwrap{background:none;border:0}
+.mcluster{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#2B2A4C;color:#fff;font:800 14px var(--font-body);border:3px solid #fff;box-shadow:0 0 0 4px rgba(43,42,76,.25),0 2px 10px rgba(0,0,0,.4)}
+.mappin.n3{font-size:11px}

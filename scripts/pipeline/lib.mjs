@@ -12,7 +12,7 @@ export const slug = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").to
 
 const lastHit = new Map();
 /** GET with an on-disk cache, a per-host delay and retries. Returns { ok, status, url, text } (text only for text types). */
-export async function get(url, { ttlHours = 24 * 7, delay = 400, binary = false, headers = {} } = {}) {
+export async function get(url, { ttlHours = 24 * 7, delay = 400, binary = false, headers = {}, timeoutMs = 30000 } = {}) {
   await fs.mkdir(CACHE, { recursive: true });
   const key = crypto.createHash("sha1").update(url).digest("hex");
   const file = path.join(CACHE, key + (binary ? ".bin" : ".txt"));
@@ -29,7 +29,7 @@ export async function get(url, { ttlHours = 24 * 7, delay = 400, binary = false,
     if (wait > 0) await sleep(wait);
     lastHit.set(host, Date.now());
     try {
-      const res = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA, "Accept-Language": "en-CA,en;q=0.9", ...headers }, signal: AbortSignal.timeout(30000) });
+      const res = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA, "Accept-Language": "en-CA,en;q=0.9", ...headers }, signal: AbortSignal.timeout(timeoutMs) });
       const meta = { ok: res.ok, status: res.status, url: res.url, type: res.headers.get("content-type") || "" };
       if (res.status >= 500 || res.status === 429) { await sleep(1500 * (attempt + 1)); continue; }
       const buf = Buffer.from(await res.arrayBuffer());

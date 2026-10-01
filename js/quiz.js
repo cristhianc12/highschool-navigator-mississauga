@@ -2,6 +2,7 @@ import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
 import { systemOf, boardClass, isCatholic } from "./geo.js";
 import { trackQuiz } from "./track.js";
 import "./a11y.js";
+import { supportHtml } from "./support.js";
 import "./pwa.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 import { initSchoolDetail } from "./school-detail.js";
@@ -239,6 +240,7 @@ function renderResults() {
         <label class="check"><input type="checkbox" id="consent" ${state.shared ? "checked disabled" : ""}> ${esc(u.shareCheck)}</label>
         <button type="button" class="btn small" id="share" disabled>${esc(u.shareBtn)}</button>
       </div>
+      ${supportHtml(state.lang) ? `<p class="small supportline">${supportHtml(state.lang)}</p>` : ""}
       <details class="tb-info"><summary>${esc(u.shareH)}</summary>
         <p class="small muted">${esc(u.shareP)}</p>
         <p class="small"><a href="privacy?lang=${state.lang}" target="_blank" rel="noopener">${esc(u.privacy)}</a></p></details>

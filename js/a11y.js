@@ -15,6 +15,7 @@ const isHigh = () => document.documentElement.getAttribute("data-contrast") === 
 
 function apply(high) {
   if (high) document.documentElement.setAttribute("data-contrast", "high"); else document.documentElement.removeAttribute("data-contrast");
+  document.querySelectorAll("[data-contrast-toggle]").forEach((x) => x.setAttribute("aria-pressed", String(high)));
   const b = document.getElementById("contrast-btn");
   if (!b) return;
   const t = L[(document.documentElement.lang || "en").slice(0, 2)] || L.en;
@@ -28,7 +29,7 @@ apply(saved ? saved === "high" : matchMedia("(prefers-contrast: more)").matches)
 matchMedia("(prefers-contrast: more)").addEventListener?.("change", (e) => { if (!store.get(KEY)) apply(e.matches); });
 
 document.addEventListener("click", (e) => {
-  if (!e.target.closest("#contrast-btn")) return;
+  if (!e.target.closest("#contrast-btn, [data-contrast-toggle]")) return;
   const next = !isHigh();
   store.set(KEY, next ? "high" : "normal");
   apply(next);

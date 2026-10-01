@@ -8,6 +8,7 @@ import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
 import { ensureAllDetails, ensureSchools } from "./details.js";
+import { supportHtml } from "./support.js";
 import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -231,6 +232,7 @@ function renderShell() {
     <div class="quiz-cta"><div><h2>${esc(u.quiz.h)}</h2><p>${esc(u.quiz.p)}</p></div><a class="cta" href="${q}">${esc(u.quiz.btn)} →</a></div>
     <p class="notice">${u.notice}</p>
     <p class="scope muted small">${esc(u.scope)}</p>
+    ${supportHtml(state.lang) ? `<p class="small supportline">${supportHtml(state.lang)} · <button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button></p>` : ""}
   </header>
 
   <section id="explorar"><div class="sec-head"><h2>${esc(u.exploreH)}</h2><p>${esc(u.exploreP)}</p></div>
@@ -307,7 +309,7 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
   bindFilters();
   renderResults();
   renderCompare();

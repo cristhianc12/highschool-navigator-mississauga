@@ -6,7 +6,8 @@
   "https://secondary.hcdsb.org/assumption/",
   "https://secondary.hcdsb.org/assumption/students/shsm/",
   "https://secondary.hcdsb.org/assumption/events/",
-  "https://secondary.hcdsb.org/assumption/event/grade-8-ap-evening/"
+  "https://secondary.hcdsb.org/assumption/event/grade-8-ap-evening/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
  ],
  "programs": [
   {
@@ -19,6 +20,17 @@
    },
    "entry": "school",
    "url": "https://secondary.hcdsb.org/assumption/students/shsm/"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif."
+   },
+   "entry": "apply",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
   }
  ],
  "shsm": [
@@ -41,7 +53,7 @@
  ],
  "calendarUrl": null,
  "missing": [
-  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No course calendar or course list found on the school's own pages.",
   "The Grade 8 / AP Evening is listed but no AP program page was found, so no AP program is recorded."
  ]
 }

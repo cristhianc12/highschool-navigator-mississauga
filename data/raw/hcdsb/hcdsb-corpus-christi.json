@@ -6,7 +6,8 @@
   "https://secondary.hcdsb.org/corpuschristi/",
   "https://secondary.hcdsb.org/corpuschristi/advanced-placement/",
   "https://secondary.hcdsb.org/corpuschristi/students/shsm/",
-  "https://secondary.hcdsb.org/corpuschristi/event/gr-8-information-night-ap-information/"
+  "https://secondary.hcdsb.org/corpuschristi/event/gr-8-information-night-ap-information/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
  ],
  "programs": [
   {
@@ -83,11 +84,19 @@
    "format": "In person",
    "title": "Grade 8 Information Night / AP Information (Grade 9 entry 2027)",
    "url": "https://secondary.hcdsb.org/corpuschristi/advanced-placement/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening and AP information session (board listing: 6:00 p.m.)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
   }
  ],
  "calendarUrl": null,
  "missing": [
-  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No course calendar or course list found on the school's own pages.",
   "AP course list by grade not found."
  ]
 }

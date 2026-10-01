@@ -9,7 +9,10 @@
   "https://secondary.hcdsb.org/stkateri/advanced-placement/",
   "https://secondary.hcdsb.org/stkateri/french-immersion/",
   "https://secondary.hcdsb.org/stkateri/ib-programme-faq/",
-  "https://secondary.hcdsb.org/stkateri/event/grade-8-information-night-ib-ap-french-immersion-extended-french/"
+  "https://secondary.hcdsb.org/stkateri/event/grade-8-information-night-ib-ap-french-immersion-extended-french/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
  ],
  "programs": [
   {
@@ -94,7 +97,7 @@
  ],
  "calendarUrl": null,
  "missing": [
-  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No course calendar or course list found on the school's own pages.",
   "Pre-IB and AP pages show 2025-26 dates and fees only (application closed Dec 12, 2025), so none recorded for 2026-27.",
   "No SHSM page found."
  ]

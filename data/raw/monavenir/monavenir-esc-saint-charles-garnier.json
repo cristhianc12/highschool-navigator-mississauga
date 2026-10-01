@@ -1,15 +1,66 @@
 {
  "id": "monavenir-esc-saint-charles-garnier",
  "scrapedAt": "2026-10-01",
- "site": "https://esscg.csdccs.edu.on.ca/wp/",
+ "site": "https://esscg.cscmonavenir.ca/",
  "sources": [
-  "https://esscg.csdccs.edu.on.ca/wp/"
+  "https://esscg.cscmonavenir.ca/",
+  "https://esscg.cscmonavenir.ca/programmes-speciaux/",
+  "https://esscg.cscmonavenir.ca/programmes-speciaux/ppcs/",
+  "https://esscg.cscmonavenir.ca/programmes-speciaux/placement-avance-pa/",
+  "https://esscg.cscmonavenir.ca/services-a-leleve/education-cooperative/",
+  "https://cscmonavenir.ca/ecole/ecole-secondaire-catholique-saint-charles-garnier-whitby/",
+  "https://cscmonavenir.ca/programmes-specialises/",
+  "https://cscmonavenir.ca/inscription-secondaire/"
  ],
- "programs": [],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "IB Middle Years Programme (PÉI)",
+   "note": {
+    "en": "Authorized IB Middle Years Programme for ages 11 to 16 (Grades 7-10) with a personal project in Grade 10 and an IB certificate.",
+    "es": "Programa de los Años Intermedios del IB (PAI), autorizado, para 11 a 16 años (7.º a 10.º), con proyecto personal en 10.º y certificado del IB.",
+    "fr": "Programme d'éducation intermédiaire (PÉI) de l'IB, autorisé, pour les 11 à 16 ans (7e à 10e), avec un projet personnel en 10e et un certificat de l'IB."
+   },
+   "entry": "school",
+   "url": "https://esscg.cscmonavenir.ca/programmes-speciaux/ppcs/"
+  },
+  {
+   "tag": "ap",
+   "name": "Placement avancé (AP)",
+   "note": {
+    "en": "College Board Advanced Placement exams are administered at the school (e.g. Calculus AB/BC, English Language and Literature).",
+    "es": "Se administran en la escuela exámenes Advanced Placement del College Board (p. ej., Calculus AB/BC, English Language y Literature).",
+    "fr": "Des examens de Placement avancé (AP) du College Board sont administrés à l'école (p. ex. Calculus AB/BC, English Language et Literature)."
+   },
+   "entry": "school",
+   "url": "https://esscg.cscmonavenir.ca/programmes-speciaux/placement-avance-pa/"
+  },
+  {
+   "tag": "shsm",
+   "name": "MHS Arts et culture",
+   "note": {
+    "en": "Specialist High Skills Major in Arts and Culture, named among what distinguishes the school.",
+    "es": "Majeure Haute Spécialisation en Artes y cultura, mencionada entre lo que distingue a la escuela.",
+    "fr": "Majeure Haute Spécialisation en arts et culture, citée parmi ce qui distingue l'école."
+   },
+   "entry": null,
+   "url": "https://esscg.cscmonavenir.ca/programmes-speciaux/"
+  }
+ ],
+ "shsm": [
+  "Arts et culture"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP (PAJO)"
+ ],
  "admissions": [],
  "sessions": [],
  "missing": [
-  "All official hosts for this board (cscmonavenir.ca, its school subdomains and the older csdccs.edu.on.ca school sites) refused the polite crawler (HTTP 403, Cloudflare bot challenge) and are blocked for other fetch tools, so no page could be read; nothing was recorded. Needs a manual pass.",
-  "Site URL from the roster not verified (blocked)"
+  "School's course-choice page dates from 2021 (not used).",
+  "MHS is not on the board's MHS list; recorded from the school page only.",
+  "Course lists: no school course calendar or course catalogue page with a readable list was found (board 'guide de cheminement' page lists schools without links; school pages hold old or PDF-only forms), so no courses were extracted.",
+  "No 2026-27 information-night dates: the board open-house page offers personalised appointments only and states no dates.",
+  "Hosts on the older csdccs.edu.on.ca domain show a Cloudflare challenge and were not used; all facts come from cscmonavenir.ca pages."
  ]
 }

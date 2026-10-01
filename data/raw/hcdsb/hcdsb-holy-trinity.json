@@ -6,7 +6,10 @@
   "https://secondary.hcdsb.org/holytrinity/",
   "https://secondary.hcdsb.org/holytrinity/advanced-placement/",
   "https://secondary.hcdsb.org/holytrinity/students/shsm/",
-  "https://secondary.hcdsb.org/holytrinity/calendar/"
+  "https://secondary.hcdsb.org/holytrinity/calendar/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
  ],
  "programs": [
   {
@@ -30,6 +33,17 @@
    },
    "entry": "school",
    "url": "https://secondary.hcdsb.org/holytrinity/students/shsm/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French from Grade 9: French as a subject plus at least one other subject taught in French, for students with at least 1260 hours of French (seven credits).",
+    "es": "Francés extendido desde 9.º grado: francés como materia y al menos otra materia en francés, para estudiantes con al menos 1260 horas de francés (siete créditos).",
+    "fr": "Français approfondi dès la 9e année : le français comme matière et au moins une autre matière enseignée en français, pour les élèves ayant au moins 1 260 heures de français (sept crédits)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
   }
  ],
  "shsm": [
@@ -58,10 +72,27 @@
    "url": "https://secondary.hcdsb.org/holytrinity/advanced-placement/"
   }
  ],
- "sessions": [],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "AP Program information session (Grades 7-8)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 8 Information Evening (Holy Trinity Family of Schools)",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
+  }
+ ],
  "calendarUrl": null,
  "missing": [
-  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No course calendar or course list found on the school's own pages.",
   "The only AP information session listed is for 2025; no 2026-27 session or application dates found."
  ]
 }

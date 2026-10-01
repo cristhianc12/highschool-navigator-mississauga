@@ -7,7 +7,8 @@
   "https://secondary.hcdsb.org/xavier/steam/",
   "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/",
   "https://secondary.hcdsb.org/xavier/students/shsm/",
-  "https://secondary.hcdsb.org/xavier/event/gr-8-night-hpp-steam-ap/"
+  "https://secondary.hcdsb.org/xavier/event/gr-8-night-hpp-steam-ap/",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
  ],
  "programs": [
   {
@@ -42,6 +43,17 @@
    },
    "entry": "school",
    "url": "https://secondary.hcdsb.org/xavier/students/shsm/"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "AP Preparation courses start in Grade 9 and lead to university-level AP courses; the external AP exam is optional.",
+    "es": "Los cursos de preparación AP comienzan en 9.º grado y llevan a cursos AP de nivel universitario; el examen externo de AP es opcional.",
+    "fr": "Les cours de préparation AP commencent en 9e année et mènent à des cours AP de niveau universitaire; l'examen externe AP est facultatif."
+   },
+   "entry": "apply",
+   "url": "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
   }
  ],
  "shsm": [
@@ -64,7 +76,7 @@
  ],
  "calendarUrl": null,
  "missing": [
-  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No course calendar or course list found on the school's own pages.",
   "STEAM and High Performance pages still show 2025-26 application dates, so no application dates recorded.",
   "The Grade 8 night mentions AP but no AP program page was found."
  ]

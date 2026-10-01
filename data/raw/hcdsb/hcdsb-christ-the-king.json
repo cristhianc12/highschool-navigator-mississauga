@@ -5,7 +5,10 @@
  "sources": [
   "https://secondary.hcdsb.org/ctk/",
   "https://secondary.hcdsb.org/ctk/advanced-placement-2/",
-  "https://secondary.hcdsb.org/ctk/students/shsm/"
+  "https://secondary.hcdsb.org/ctk/students/shsm/",
+  "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/",
+  "https://www.hcdsb.org/wp-content/uploads/2024/10/Secondary-Sites-Offering-French-Extended-Programs-2025-26.pdf",
+  "https://www.hcdsb.org/2026/09/hcdsb-schools-to-host-information-sessions-for-students-parents-3/"
  ],
  "programs": [
   {
@@ -29,6 +32,28 @@
    },
    "entry": "school",
    "url": "https://secondary.hcdsb.org/ctk/students/shsm/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "Secondary French Immersion begins in Grade 9 for students who completed the board's elementary French Immersion (minimum 3800 hours).",
+    "es": "La inmersión en francés secundaria comienza en 9.º grado para estudiantes que cursaron la inmersión en primaria del consejo (mínimo 3800 horas).",
+    "fr": "L'immersion française au secondaire commence en 9e année pour les élèves ayant fait l'immersion à l'élémentaire du conseil (minimum 3 800 heures)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French from Grade 9: French as a subject plus at least one other subject taught in French, for students with at least 1260 hours of French (seven credits).",
+    "es": "Francés extendido desde 9.º grado: francés como materia y al menos otra materia en francés, para estudiantes con al menos 1260 horas de francés (siete créditos).",
+    "fr": "Français approfondi dès la 9e année : le français comme matière et au moins une autre matière enseignée en français, pour les élèves ayant au moins 1 260 heures de français (sept crédits)."
+   },
+   "entry": "school",
+   "url": "https://www.hcdsb.org/learning-resources/french-programs/secondary-fsl/"
   }
  ],
  "shsm": [
@@ -79,7 +104,7 @@
  ],
  "calendarUrl": null,
  "missing": [
-  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No course calendar or course list found on the school's own pages.",
   "SHSM sector descriptions on the page are marked 'coming soon'."
  ]
 }

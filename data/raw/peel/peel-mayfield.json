@@ -1,0 +1,16 @@
+{
+ "id": "peel-mayfield",
+ "scrapedAt": "2026-10-01",
+ "site": "https://schools.peelschools.org/sec/mayfield/Pages/default.aspx",
+ "sources": [
+  "https://schools.peelschools.org/sec/mayfield/Pages/default.aspx"
+ ],
+ "programs": [],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "schools.peelschools.org (school site) is unreachable from the collection environment: its TLS certificate is expired, and the egress proxy blocks it for fetch tools; no school page could be read",
+  "www.peelschools.org (board site) returns 403 Request blocked (CloudFront) and was not accessible",
+  "Programs, SHSM, co-op, course calendar and courses, admissions and 2026-27 information sessions were not collected for this school"
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "id": "monavenir-esc-renaissance",
+ "scrapedAt": "2026-10-01",
+ "site": "https://esr.csdccs.edu.on.ca/wp/",
+ "sources": [
+  "https://esr.csdccs.edu.on.ca/wp/"
+ ],
+ "programs": [],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "All official hosts for this board (cscmonavenir.ca, its school subdomains and the older csdccs.edu.on.ca school sites) refused the polite crawler (HTTP 403, Cloudflare bot challenge) and are blocked for other fetch tools, so no page could be read; nothing was recorded. Needs a manual pass.",
+  "Site URL from the roster not verified (blocked)"
+ ]
+}

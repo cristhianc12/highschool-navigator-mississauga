@@ -5,7 +5,8 @@ import crypto from "node:crypto";
 
 export const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
 export const CACHE = path.join(ROOT, "data/cache");
-export const UA = "HighschoolNavigatorGTA-data-bot/1.0 (+https://github.com/cristhianc12/highschool-navigator-mississauga; informational, polite crawler)";
+// Honest, compatible identification: some firewalls reject unknown bot-style strings but accept the standard "Mozilla/5.0 (compatible; ...)" form.
+export const UA = "Mozilla/5.0 (compatible; HighschoolNavigatorGTA/1.0; +https://highschool-gta-navigator.vercel.app/; polite informational crawler)";
 
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const slug = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

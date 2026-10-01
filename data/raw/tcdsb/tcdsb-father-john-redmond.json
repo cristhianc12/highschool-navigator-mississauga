@@ -1,0 +1,118 @@
+{
+ "id": "tcdsb-father-john-redmond",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/fatherjohnredmond/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/fatherjohnredmond/page/regional-arts-program",
+  "https://www.tcdsb.org/o/fatherjohnredmond/page/cap-program",
+  "https://www.tcdsb.org/o/fatherjohnredmond/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Regional Arts Program (RAP)",
+   "note": {
+    "en": "Regional Arts Program in Dance, Drama, Music (band, strings, vocal) and Visual Arts with a package of eight specialized arts courses over four years and a specialized Arts certificate; Grade 9 admission is by audition only.",
+    "es": "Regional Arts Program en Danza, Teatro, Música (banda, cuerdas, canto) y Artes Visuales con un paquete de ocho cursos de artes especializados en cuatro años y un certificado de artes; el ingreso a 9.º grado es solo por audición.",
+    "fr": "Regional Arts Program en danse, art dramatique, musique (harmonie, cordes, chant) et arts visuels avec un ensemble de huit cours d'arts spécialisés sur quatre ans et un certificat d'arts spécialisé; l'admission en 9e année se fait uniquement sur audition."
+   },
+   "entry": "audition",
+   "url": "https://www.tcdsb.org/o/fatherjohnredmond/page/regional-arts-program"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement Program (AP Preparation and AP courses)",
+   "note": {
+    "en": "AP Preparation and AP courses that include the Ontario curriculum plus enrichment; the school highlights list AP in mathematics, science, English, French, history and psychology starting in Grade 10.",
+    "es": "Cursos de preparación AP y cursos AP que incluyen el currículo de Ontario más enriquecimiento; los datos destacados de la escuela lista AP en matemáticas, ciencias, inglés, francés, historia y psicología desde 10.º grado.",
+    "fr": "Cours de préparation à l'AP et cours AP qui incluent le curriculum de l'Ontario avec de l'enrichissement; les faits saillants de l'école indiquent l'AP en mathématiques, sciences, anglais, français, histoire et psychologie à partir de la 10e année."
+   },
+   "url": "https://www.tcdsb.org/o/fatherjohnredmond/page/cap-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Health and Wellness, JCSES",
+   "note": {
+    "en": "Two SHSM programs: Health and Wellness, and Justice, Community Safety and Emergency Services.",
+    "es": "Dos programas SHSM: Health and Wellness, y Justice, Community Safety and Emergency Services.",
+    "fr": "Deux programmes SHSM : Health and Wellness et Justice, Community Safety and Emergency Services."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Justice, Community Safety and Emergency Services (JCSES)"
+ ],
+ "other": [
+  "Intensive Support Program (ISP)"
+ ],
+ "admissions": [
+  {
+   "program": "Regional Arts Program (RAP)",
+   "tag": "arts",
+   "url": "https://www.tcdsb.org/o/fatherjohnredmond/page/regional-arts-program",
+   "elig": {
+    "en": "Admission to the Regional Arts Program is by audition only; all students residing in the GTA may apply.",
+    "es": "La admisión al Regional Arts Program es solo por audición; todos los estudiantes que viven en el GTA pueden postular.",
+    "fr": "L'admission au Regional Arts Program se fait uniquement sur audition; tous les élèves résidant dans la RGT peuvent présenter une demande."
+   },
+   "submit": [
+    {
+     "en": "Online application on SOAR (secsoar.tcdsb.org) for one arts discipline.",
+     "es": "Solicitud en línea en SOAR (secsoar.tcdsb.org) para una disciplina artística.",
+     "fr": "Demande en ligne dans SOAR (secsoar.tcdsb.org) pour une discipline artistique."
+    },
+    {
+     "en": "Supplemental arts application and audition form (downloaded from SOAR) and, if requested, a portfolio; the school must receive it by October 30, 2026.",
+     "es": "Solicitud suplementaria de artes y formulario de audición (se descargan en SOAR) y, si se pide, un portafolio; la escuela debe recibirlo a más tardar el 30 de octubre de 2026.",
+     "fr": "Demande supplémentaire en arts et formulaire d'audition (téléchargés dans SOAR) et, au besoin, un portfolio; l'école doit les recevoir au plus tard le 30 octobre 2026."
+    },
+    {
+     "en": "Audition following the school's published audition guide for Dance, Drama, Music (Band, Strings or Vocal) or Visual Arts.",
+     "es": "Audición según la guía de audición publicada por la escuela para Danza, Teatro, Música (Banda, Cuerdas o Canto) o Artes Visuales.",
+     "fr": "Audition selon le guide d'audition publié par l'école pour la danse, l'art dramatique, la musique (harmonie, cordes ou chant) ou les arts visuels."
+    }
+   ],
+   "dates": {
+    "en": "Arts applications must reach the school by October 30, 2026; offers are emailed in Wave 1 on November 27, 2026 and Wave 2 on December 4, 2026 (both after 5 PM).",
+    "es": "Las solicitudes de artes deben llegar a la escuela antes del 30 de octubre de 2026; las ofertas se envían por correo en la Ola 1 el 27 de noviembre de 2026 y en la Ola 2 el 4 de diciembre de 2026 (ambas después de las 5 p. m.).",
+    "fr": "Les demandes en arts doivent parvenir à l'école avant le 30 octobre 2026; les offres sont envoyées par courriel dans la vague 1 le 27 novembre 2026 et la vague 2 le 4 décembre 2026 (toutes deux après 17 h)."
+   },
+   "know": [
+    {
+     "en": "The school refers families to its Admission Handbook for application, audition and course details.",
+     "es": "La escuela remite a las familias a su Admission Handbook para los detalles de solicitud, audición y cursos.",
+     "fr": "L'école renvoie les familles à son Admission Handbook pour les détails de la demande, de l'audition et des cours."
+    },
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House (school, Regional Arts Program and audition process, AP)",
+   "url": "https://www.tcdsb.org/o/fatherjohnredmond/page/open-house"
+  }
+ ],
+ "missing": [
+  "The 'General School Admission' and 'Regional Arts Program Admission' sub-pages had no readable content, and the Admission Handbook was not read.",
+  "The school's CAP page is titled 'Advanced Placement Program' and does not name Congregated AP; the board chart does not list Congregated AP for this school, so no application is recorded."
+ ]
+}

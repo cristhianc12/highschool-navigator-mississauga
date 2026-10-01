@@ -1,0 +1,160 @@
+{
+ "id": "yrdsb-bill-crothers",
+ "scrapedAt": "2026-10-01",
+ "site": "https://billcrothers-ss.yrdsb.ca/",
+ "sources": [
+  "https://app.myblueprint.ca/public/courses/yrdsb/billcrothers",
+  "https://billcrothers-ss.yrdsb.ca/",
+  "https://billcrothers-ss.yrdsb.ca/course-selection",
+  "https://billcrothers-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://billcrothers-ss.yrdsb.ca/school-application",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-registration",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+ ],
+ "programs": [
+  {
+   "tag": "sports",
+   "name": "Bill Crothers Secondary School (BCSS) application program",
+   "note": {
+    "en": "Specialty school linking excellence in education and athletics with healthy, active living; entry is by a school application, not by home address.",
+    "es": "Escuela especializada que une la excelencia educativa y deportiva con una vida sana y activa; el ingreso es por solicitud a la escuela, no por domicilio.",
+    "fr": "École spécialisée qui allie excellence scolaire et sportive à un mode de vie sain et actif; l'admission se fait sur demande à l'école et non selon l'adresse."
+   },
+   "entry": "apply",
+   "url": "https://billcrothers-ss.yrdsb.ca/school-application"
+  },
+  {
+   "tag": "other",
+   "name": "Balanced School Year (BSY)",
+   "note": {
+    "en": "Balanced School Year calendar: school begins in early August.",
+    "es": "Calendario escolar equilibrado (Balanced School Year): las clases comienzan a principios de agosto.",
+    "fr": "Calendrier de l'année scolaire équilibrée (Balanced School Year) : l'école commence au début d'août."
+   },
+   "entry": null,
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 courses in a career sector, co-op, certifications and a Red Seal on the OSSD; sectors here: Health and Wellness.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos de un sector profesional, cooperativa, certificaciones y un sello rojo en el OSSD; sectores aquí: salud y bienestar.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours dans un secteur professionnel, de l'éducation coopérative, des certifications et un sceau rouge sur le DESO; secteurs offerts ici : santé et bien-être."
+   },
+   "entry": "apply",
+   "url": "https://billcrothers-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA) support",
+   "note": {
+    "en": "Timetable support for students who compete at the provincial, national or international level in eligible sports, including up to two Day School Online courses; students apply each year with an application form and a sport verification letter.",
+    "es": "Apoyo de horario para estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles, con hasta dos cursos Day School Online; se solicita cada año con un formulario y una carta de verificación deportiva.",
+    "fr": "Soutien à l'horaire pour les élèves qui concourent aux niveaux provincial, national ou international dans des sports admissibles, y compris jusqu'à deux cours Day School Online; la demande se refait chaque année avec un formulaire et une lettre de vérification sportive."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP",
+  "High Performance Athlete (HPA) support"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/yrdsb/billcrothers",
+ "admissions": [
+  {
+   "program": "Bill Crothers Secondary School application (2027-28)",
+   "tag": "sports",
+   "url": "https://billcrothers-ss.yrdsb.ca/school-application",
+   "elig": {
+    "en": "Application-based entry; the application records the sports the student plays and the level of competition and needs one coach reference and one teacher reference.",
+    "es": "Ingreso por solicitud; la solicitud registra los deportes que practica el estudiante y su nivel de competencia, y requiere una referencia de un entrenador y una de un docente.",
+    "fr": "Admission sur demande; la demande indique les sports pratiqués par l'élève et son niveau de compétition, et exige une référence d'un entraîneur et une d'un enseignant."
+   },
+   "fee": {
+    "en": "$20 paid through School Cash Online (no cash or cheque).",
+    "es": "$20 pagados por School Cash Online (sin efectivo ni cheque).",
+    "fr": "20 $ payés par School Cash Online (ni argent comptant ni chèque)."
+   },
+   "submit": [
+    {
+     "en": "Complete the online application in one sitting (it cannot be saved); a Google account is needed.",
+     "es": "Completa la solicitud en línea de una sola vez (no se puede guardar); se necesita una cuenta de Google.",
+     "fr": "Remplis la demande en ligne en une seule séance (elle ne peut pas être sauvegardée); un compte Google est nécessaire."
+    },
+    {
+     "en": "Give the correct emails of one coach (not a parent or relative) and one teacher for the digital references.",
+     "es": "Indica los correos correctos de un entrenador (no un familiar) y de un docente para las referencias digitales.",
+     "fr": "Indique les courriels exacts d'un entraîneur (pas un parent) et d'un enseignant pour les références numériques."
+    },
+    {
+     "en": "Include the final report card (Grade 7 for current Grade 8 students) and the School Cash Online receipt.",
+     "es": "Incluye el boletín final (de 7.º grado para estudiantes que están en 8.º) y el recibo de School Cash Online.",
+     "fr": "Joins le bulletin final (de la 7e année pour les élèves actuellement en 8e) et le reçu de School Cash Online."
+    },
+    {
+     "en": "Drop the printed application and documents in an envelope in the drop box at the school by the deadline.",
+     "es": "Deja la solicitud impresa y los documentos en un sobre en el buzón de la escuela antes de la fecha límite.",
+     "fr": "Dépose la demande imprimée et les documents dans une enveloppe dans la boîte de dépôt de l'école avant l'échéance."
+    }
+   ],
+   "dates": {
+    "en": "Opens Sept. 25, 2026 at 9:00 a.m.; online closes Oct. 23, 2026 at 8:00 p.m. and the full package is due Oct. 23, 2026; references are emailed the week of Nov. 2, 2026; applicants are emailed their status by Jan. 8, 2027.",
+    "es": "Abre el 25 de septiembre de 2026 a las 9:00; la solicitud en línea cierra el 23 de octubre de 2026 a las 20:00 y el paquete completo vence el 23 de octubre de 2026; las referencias se envían por correo la semana del 2 de noviembre de 2026; los solicitantes reciben su estado por correo a más tardar el 8 de enero de 2027.",
+    "fr": "Ouverture le 25 septembre 2026 à 9 h; la demande en ligne ferme le 23 octobre 2026 à 20 h et le dossier complet est à remettre le 23 octobre 2026; les références sont envoyées par courriel la semaine du 2 novembre 2026; les candidats reçoivent leur statut par courriel au plus tard le 8 janvier 2027."
+   },
+   "know": [
+    {
+     "en": "Students on the waiting list are contacted by email if space opens during 2027-28.",
+     "es": "Los estudiantes en lista de espera reciben un correo si se abre un cupo durante 2027-28.",
+     "fr": "Les élèves sur la liste d'attente sont contactés par courriel si une place se libère en 2027-2028."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-09-16",
+   "time": null,
+   "format": null,
+   "title": "Bill Crothers SS information session (application for 2027-28)",
+   "url": "https://billcrothers-ss.yrdsb.ca/school-application"
+  },
+  {
+   "kind": "school",
+   "date": "2026-09-24",
+   "time": "18:30",
+   "format": null,
+   "title": "Open House",
+   "url": "https://billcrothers-ss.yrdsb.ca/school-application"
+  },
+  {
+   "kind": "program",
+   "date": "2026-09-24",
+   "time": "19:30",
+   "format": null,
+   "title": "Application Information Session",
+   "url": "https://billcrothers-ss.yrdsb.ca/school-application"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course directory is on myBlueprint (a JavaScript app with no readable text), and no course calendar PDF or HTML list was found on the school site",
+  "Co-op, Dual Credit, OYAP and HPA availability taken from the board pages and the Secondary Programs at a Glance table, not from a school-specific page",
+  "No fees stated for programs other than those in admissions",
+  "Full list of SHSM sectors not stated on the school page (only Health and Wellness is named)",
+  "Sports offered and primary-sport rules are on separate athletics pages and were not recorded"
+ ]
+}

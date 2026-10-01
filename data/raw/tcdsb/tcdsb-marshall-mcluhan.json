@@ -1,11 +1,12 @@
 {
- "id": "tcdsb-brebeuf-college-school",
+ "id": "tcdsb-marshall-mcluhan",
  "scrapedAt": "2026-10-01",
- "site": "https://www.tcdsb.org/o/brebeufcollege/",
+ "site": "https://www.tcdsb.org/o/marshallmcluhan/",
  "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
  "sources": [
-  "https://www.tcdsb.org/o/brebeufcollege/page/congregated-it-ap-program",
-  "https://www.tcdsb.org/o/brebeufcollege/page/open-house",
+  "https://www.tcdsb.org/o/marshallmcluhan/page/ap-program",
+  "https://www.tcdsb.org/o/marshallmcluhan/page/extended-french",
+  "https://www.tcdsb.org/o/marshallmcluhan/page/open-house",
   "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
   "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
@@ -15,43 +16,33 @@
  "programs": [
   {
    "tag": "ap",
-   "name": "Congregated IT AP Program",
+   "name": "Congregated Advanced Placement (AP) Program",
    "note": {
-    "en": "Cohorted, enriched Information Technology Advanced Placement program with a STEM focus, experiential learning and fast-tracking that can earn AP credits in Grade 11.",
-    "es": "Programa cohortizado y enriquecido de Advanced Placement en tecnología de la información con enfoque STEM, aprendizaje experiencial y avance acelerado que puede dar créditos AP en 11.º grado.",
-    "fr": "Programme Advanced Placement en technologies de l'information, enrichi et en cohorte, axé sur les STIM, avec apprentissage expérientiel et accélération pouvant donner des crédits AP en 11e année."
+    "en": "TCDSB Regional Centre for Congregated AP in English, Math and Science: Pre-AP in Grades 9-10 and AP classes in Grades 11-12; Grade 9 Preparatory AP is a four-year program for highly motivated students.",
+    "es": "Centro regional del TCDSB para Congregated AP en inglés, matemáticas y ciencias: Pre-AP en 9.º y 10.º y clases AP en 11.º y 12.º; el Grade 9 Preparatory AP es un programa de cuatro años para estudiantes muy motivados.",
+    "fr": "Centre régional du TCDSB pour le Congregated AP en anglais, mathématiques et sciences : Pre-AP en 9e et 10e année et classes AP en 11e et 12e année; le Grade 9 Preparatory AP est un programme de quatre ans pour les élèves très motivés."
    },
    "entry": "apply",
-   "url": "https://www.tcdsb.org/o/brebeufcollege/page/congregated-it-ap-program"
+   "url": "https://www.tcdsb.org/o/marshallmcluhan/page/ap-program"
   },
   {
-   "tag": "stem",
-   "name": "S.T.E.M. (Grades 10-12)",
+   "tag": "ef",
+   "name": "Extended French Program",
    "note": {
-    "en": "The board's specialized programs chart lists a S.T.E.M. program for Grades 10-12 at Brebeuf College.",
-    "es": "El cuadro de programas especializados del consejo lista un programa S.T.E.M. para 10.º a 12.º grado en Brebeuf College.",
-    "fr": "Le tableau des programmes spécialisés du conseil indique un programme S.T.E.M. de la 10e à la 12e année à Brebeuf College."
+    "en": "Continuation of elementary Extended French: seven French credits over Grades 9-12 (four Extended French credits plus Canadian Geography, Canadian History and World Religions in French) leading to the TCDSB Extended French Certificate.",
+    "es": "Continuación del Extended French de primaria: siete créditos de francés en 9.º a 12.º (cuatro de Extended French más Geografía de Canadá, Historia de Canadá y Religiones del mundo en francés) que llevan al Extended French Certificate del TCDSB.",
+    "fr": "Prolongement de l'Extended French du primaire : sept crédits en français de la 9e à la 12e année (quatre crédits d'Extended French plus Géographie du Canada, Histoire du Canada et Grandes religions en français) menant au Certificat de français intensif du TCDSB."
    },
-   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true"
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/marshallmcluhan/page/extended-french"
   },
   {
    "tag": "shsm",
-   "name": "Specialist High Skills Major: ICT, Arts and Culture, Health and Wellness, Business",
+   "name": "Specialist High Skills Major: ICT, Non-Profit, Sports",
    "note": {
-    "en": "Four SHSM programs: Information and Communications Technology, Arts and Culture, Health and Wellness, and Business.",
-    "es": "Cuatro programas SHSM: Information and Communications Technology, Arts and Culture, Health and Wellness y Business.",
-    "fr": "Quatre programmes SHSM : Information and Communications Technology, Arts and Culture, Health and Wellness et Business."
-   },
-   "entry": "school",
-   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
-  },
-  {
-   "tag": "gifted",
-   "name": "Gifted program",
-   "note": {
-    "en": "Gifted, Resource, ESL, Co-operative Education and SHSM programs are available to students with appropriate qualifications at this all-boys school.",
-    "es": "Los programas Gifted, de recursos, ESL, de educación cooperativa y SHSM están disponibles para estudiantes con las calificaciones adecuadas en esta escuela solo para varones.",
-    "fr": "Les programmes pour élèves surdoués, de ressources, d'ALS, d'éducation coopérative et SHSM sont offerts aux élèves ayant les qualifications requises dans cette école de garçons."
+    "en": "Three SHSM sectors in Information and Communication Technology, Non-Profit ('So Just') and Sport, with a bundle of Grade 11-12 courses and industry certifications.",
+    "es": "Tres sectores SHSM en Information and Communication Technology, Non-Profit ('So Just') y Sport, con un paquete de cursos de 11.º y 12.º y certificaciones de la industria.",
+    "fr": "Trois secteurs SHSM en Information and Communication Technology, Non-Profit (« So Just ») et Sport, avec un ensemble de cours de 11e et 12e année et des certifications de l'industrie."
    },
    "entry": "school",
    "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
@@ -59,19 +50,19 @@
  ],
  "shsm": [
   "Information and Communications Technology",
-  "Arts and Culture",
-  "Health and Wellness",
-  "Business"
+  "Non-Profit, Education and Child Care",
+  "Sports"
  ],
  "other": [
   "Co-operative Education",
-  "Advanced Placement Program (senior grades)"
+  "Grade 9 Summer Transition Program",
+  "Intensive Support Program (ISP)"
  ],
  "admissions": [
   {
-   "program": "Congregated IT AP, Grade 9 entry",
+   "program": "Congregated Advanced Placement (CAP), Grade 9 entry",
    "tag": "ap",
-   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "url": "https://www.tcdsb.org/o/marshallmcluhan/page/ap-program",
    "elig": {
     "en": "Grade 8 students applying for Grade 9 entry in September 2027; TCDSB schools list Congregated Advanced Placement as a specialty program with its own application section in SOAR.",
     "es": "Estudiantes de 8.º grado que postulan para entrar a 9.º en septiembre de 2027; el TCDSB trata Congregated Advanced Placement como programa especializado con su propia sección de solicitud en SOAR.",
@@ -106,25 +97,29 @@
      "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
     },
     {
-     "en": "The board chart lists the program as 'Congregated IT AP'.",
-     "es": "El cuadro del consejo lista el programa como 'Congregated IT AP'.",
-     "fr": "Le tableau du conseil nomme le programme « Congregated IT AP »."
+     "en": "Students identified as Gifted and students in the Extended French program are encouraged to apply.",
+     "es": "Se invita a postular a estudiantes identificados como Gifted y a los del programa Extended French.",
+     "fr": "Les élèves identifiés Gifted et ceux du programme Extended French sont encouragés à présenter une demande."
     }
-   ]
+   ],
+   "marks": {
+    "en": "Admission is based on the Specialty Program Application via SOAR, including the most recent report cards, CAT 4 scores, a writing sample, principal and teacher recommendations and the student's willingness to commit.",
+    "es": "La admisión se basa en la solicitud de programa especializado en SOAR, que incluye los boletines más recientes, puntajes CAT 4, una muestra de escritura, recomendaciones del director y de docentes y la disposición del estudiante a comprometerse.",
+    "fr": "L'admission repose sur la demande de programme spécialisé dans SOAR, qui comprend les bulletins les plus récents, les résultats CAT 4, un échantillon d'écriture, des recommandations de la direction et des enseignants et la volonté de l'élève de s'engager."
+   }
   }
  ],
  "sessions": [
   {
    "kind": "school",
-   "date": "2026-10-21",
-   "time": "18:30",
+   "date": "2026-10-07",
+   "time": "18:00",
    "format": "In person",
-   "title": "Open House",
-   "url": "https://www.tcdsb.org/o/brebeufcollege/page/open-house"
+   "title": "Open House for Grade 8 students and families",
+   "url": "https://www.tcdsb.org/o/marshallmcluhan/page/open-house"
   }
  ],
  "missing": [
-  "The school's own pages do not state marks, fees or separate dates for the IT AP program; the board SOAR guide was used for the process.",
-  "The all-boys status comes from the school profile page; Brebeuf's pages do not describe a separate admissions page beyond SOAR."
+  "The Extended French page does not state entry hours or an application deadline."
  ]
 }

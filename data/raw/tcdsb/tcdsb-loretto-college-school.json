@@ -1,0 +1,82 @@
+{
+ "id": "tcdsb-loretto-college-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/lorettocollege/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/lorettocollege/page/steam-program",
+  "https://www.tcdsb.org/o/lorettocollege/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM Specialty Program",
+   "note": {
+    "en": "Cohort STEAM program (Science, Technology, English, the Arts and Mathematics) with hands-on learning, a Design and Innovation Studio and a certificate; the school profile and board chart place it in Grade 10.",
+    "es": "Programa de cohorte STEAM (Ciencias, Tecnología, Inglés, Artes y Matemáticas) con aprendizaje práctico, un Design and Innovation Studio y un certificado; el perfil de la escuela y el cuadro del consejo lo ubican en 10.º grado.",
+    "fr": "Programme de cohorte STEAM (sciences, technologie, anglais, arts et mathématiques) avec apprentissage pratique, un Design and Innovation Studio et un certificat; le profil de l'école et le tableau du conseil le situent en 10e année."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/lorettocollege/page/steam-program"
+  },
+  {
+   "tag": "other",
+   "name": "Healthcare program (Grades 10-12)",
+   "note": {
+    "en": "Specialized Healthcare program for Grades 10, 11 and 12 with experience in a mock healthcare clinic.",
+    "es": "Programa especializado de Healthcare para 10.º, 11.º y 12.º grado con experiencia en una clínica de salud simulada.",
+    "fr": "Programme spécialisé Healthcare pour les 10e, 11e et 12e années avec expérience dans une clinique de santé simulée."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Arts and Culture, Health and Wellness",
+   "note": {
+    "en": "Two SHSM programs in Arts and Culture and Health and Wellness.",
+    "es": "Dos programas SHSM en Arts and Culture y Health and Wellness.",
+    "fr": "Deux programmes SHSM en Arts and Culture et Health and Wellness."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "other",
+   "name": "Student Training to Acquire Real Life Skills (STARS)",
+   "note": {
+    "en": "The board chart lists the STARS program at Loretto College.",
+    "es": "El cuadro del consejo lista el programa STARS en Loretto College.",
+    "fr": "Le tableau du conseil indique le programme STARS à Loretto College."
+   },
+   "entry": "school",
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Health and Wellness"
+ ],
+ "other": [
+  "Grade 9 Summer Transition Program",
+  "Intensive Support Program (ISP)"
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-20",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (STEAM program and SHSM)",
+   "url": "https://www.tcdsb.org/o/lorettocollege/page/open-house"
+  }
+ ],
+ "missing": [
+  "The STEAM program's admission criteria and dates were not found on the school's pages; only the program description was read."
+ ]
+}

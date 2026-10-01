@@ -1,0 +1,131 @@
+{
+ "id": "tcdsb-michael-power-st-joseph",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/michaelpowerstjoseph/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+ "sources": [
+  "https://www.tcdsb.org/o/michaelpowerstjoseph/page/ib",
+  "https://www.tcdsb.org/o/michaelpowerstjoseph/page/open-house",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Programme",
+   "note": {
+    "en": "Pre-IB in Grades 9-10 prepares students for the two-year IB Diploma Programme in Grades 11-12, which also meets the Ontario Secondary School Diploma requirements; it includes Theory of Knowledge, an Extended Essay and Creativity, Activity and Service.",
+    "es": "El Pre-IB de 9.º y 10.º grado prepara para el IB Diploma Programme de dos años en 11.º y 12.º, que también cumple los requisitos del Ontario Secondary School Diploma; incluye Theory of Knowledge, un Extended Essay y Creativity, Activity and Service.",
+    "fr": "Le Pre-IB de 9e et 10e année prépare au programme du diplôme IB de deux ans en 11e et 12e année, qui satisfait aussi aux exigences du diplôme d'études secondaires de l'Ontario; il comprend la Theory of Knowledge, un Extended Essay et Creativity, Activity and Service."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/michaelpowerstjoseph/page/ib"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French Program",
+   "note": {
+    "en": "Extended French listed in the school profile and on the board chart.",
+    "es": "Extended French figura en el perfil de la escuela y en el cuadro del consejo.",
+    "fr": "Extended French figure dans le profil de l'école et dans le tableau du conseil."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Sports, Health and Wellness, JCSES",
+   "note": {
+    "en": "Three SHSM programs: Sports, Health and Wellness, and Justice, Community Safety and Emergency Services.",
+    "es": "Tres programas SHSM: Sports, Health and Wellness, y Justice, Community Safety and Emergency Services.",
+    "fr": "Trois programmes SHSM : Sports, Health and Wellness et Justice, Community Safety and Emergency Services."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted program",
+   "note": {
+    "en": "The school profile lists individualized and enriched experiences in the Gifted, Extended French and Co-operative Education programs.",
+    "es": "El perfil de la escuela lista experiencias individualizadas y enriquecidas en los programas Gifted, Extended French y de educación cooperativa.",
+    "fr": "Le profil de l'école indique des expériences individualisées et enrichies dans les programmes Gifted, Extended French et d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Sports",
+  "Health and Wellness",
+  "Justice, Community Safety and Emergency Services (JCSES)"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Intensive Support Program (ISP)"
+ ],
+ "admissions": [
+  {
+   "program": "International Baccalaureate (IB) Diploma Programme, Grade 9 entry",
+   "tag": "ib",
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "elig": {
+    "en": "The school describes the IB as for motivated, independent learners of high academic standing with leadership skills who welcome challenges and want to take part in school and community life.",
+    "es": "La escuela describe el IB para estudiantes motivados e independientes, con alto nivel académico y habilidades de liderazgo, que aceptan desafíos y quieren participar en la vida escolar y comunitaria.",
+    "fr": "L'école décrit l'IB comme destiné aux élèves motivés et autonomes, de haut niveau scolaire et ayant des compétences de leadership, qui aiment les défis et veulent participer à la vie de l'école et de la communauté."
+   },
+   "submit": [
+    {
+     "en": "SOAR IB section: select the school, then complete community involvement, awards and distinctions, school activities, and a persuasive essay on what makes you a suitable candidate for the IB Diploma Programme in light of the IB Learner Profile.",
+     "es": "Sección IB de SOAR: elige la escuela y completa participación comunitaria, premios y distinciones, actividades escolares y un ensayo persuasivo sobre qué te hace un candidato adecuado para el IB Diploma Programme según el IB Learner Profile.",
+     "fr": "Section IB de SOAR : choisis l'école, puis remplis l'engagement communautaire, les prix et distinctions, les activités scolaires et un essai argumentatif expliquant pourquoi tu es un candidat idoine pour le programme du diplôme IB à la lumière du IB Learner Profile."
+    },
+    {
+     "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+     "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+     "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+    },
+    {
+     "en": "Principal or designate reference (for TCDSB students SOAR sends the request automatically to the elementary school principal; no family members as references).",
+     "es": "Referencia del director o su designado (para estudiantes del TCDSB, SOAR envía la solicitud automáticamente al director de la primaria; no pueden ser familiares).",
+     "fr": "Référence de la direction ou de son délégué (pour les élèves du TCDSB, SOAR envoie automatiquement la demande à la direction de l'école élémentaire; pas de membres de la famille)."
+    }
+   ],
+   "dates": {
+    "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+    "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+    "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+   },
+   "know": [
+    {
+     "en": "The board's registration FAQ says IB applications are handled directly through the IB schools (Michael Power - St. Joseph, St. Basil-the-Great, St. John Paul II and St. Mary) and to contact the school for criteria and deadlines, while the 2026 SOAR guide includes an IB section; check with the school.",
+     "es": "Las preguntas frecuentes de registro del consejo dicen que las solicitudes al IB se tramitan directamente en las escuelas IB (Michael Power - St. Joseph, St. Basil-the-Great, St. John Paul II y St. Mary) y que debes comunicarte con la escuela para los criterios y las fechas límite, mientras que la guía de SOAR de 2026 incluye una sección IB; confirma con la escuela.",
+     "fr": "La FAQ d'inscription du conseil indique que les demandes IB sont traitées directement par les écoles IB (Michael Power - St. Joseph, St. Basil-the-Great, St. John Paul II et St. Mary) et qu'il faut communiquer avec l'école pour les critères et les dates limites, alors que le guide SOAR de 2026 comprend une section IB; vérifie auprès de l'école."
+    },
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-21",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House",
+   "url": "https://www.tcdsb.org/o/michaelpowerstjoseph/page/open-house"
+  }
+ ],
+ "missing": [
+  "The school's IB page states no marks threshold, fees or application dates.",
+  "Fees for IB exams were not found."
+ ]
+}

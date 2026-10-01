@@ -1,91 +1,133 @@
 {
  "id": "tcdsb-bishop-allen-academy",
  "scrapedAt": "2026-10-01",
- "site": "https://www.tcdsb.org/o/bishopallen",
+ "site": "https://www.tcdsb.org/o/bishopallen/",
+ "calendarUrl": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
  "sources": [
-  "https://www.tcdsb.org/o/bishopallen/",
-  "https://www.tcdsb.org/o/bishopallen/page/ap-program/",
-  "https://www.tcdsb.org/o/bishopallen/page/french/",
-  "https://www.tcdsb.org/o/bishopallen/page/shsm/",
-  "https://www.tcdsb.org/o/bishopallen/page/arts-programmes/",
-  "https://www.tcdsb.org/o/bishopallen/page/school-courses/",
-  "https://www.tcdsb.org/o/bishopallen/page/open-house/",
+  "https://www.tcdsb.org/o/bishopallen/page/ap-program",
+  "https://www.tcdsb.org/o/bishopallen/page/french",
+  "https://www.tcdsb.org/o/bishopallen/page/shsm",
+  "https://www.tcdsb.org/o/bishopallen/page/school-courses",
+  "https://www.tcdsb.org/o/bishopallen/page/open-house",
   "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
-  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://www.tcdsb.org/page/secondary-school-registration",
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
  ],
  "programs": [
   {
    "tag": "ap",
-   "name": "Congregated Advanced Placement (AP) Program",
+   "name": "Congregated Advanced Placement (CAP)",
    "note": {
-    "en": "Congregated AP begins in Grade 9 with dedicated AP Preparation courses that lead to senior AP courses and AP exams.",
-    "es": "El programa AP congregado comienza en 9.º grado con cursos de preparación AP que conducen a cursos y exámenes AP de los últimos años.",
-    "fr": "Le programme AP regroupé commence en 9e année avec des cours de préparation AP qui mènent aux cours et examens AP des dernières années."
+    "en": "Congregated AP: the board chart lists Congregated AP at Bishop Allen; AP Prep courses start in Grade 9 and lead to AP courses and optional AP exams in Grades 11-12; Grade 9 entry uses the CAP supplementary application on SOAR.",
+    "es": "Congregated AP: el cuadro del consejo escolar lista Congregated AP en Bishop Allen; los cursos AP Prep empiezan en 9.º grado y llevan a cursos AP y exámenes AP opcionales en 11.º y 12.º; el ingreso a 9.º usa la solicitud suplementaria de CAP en SOAR.",
+    "fr": "Congregated AP : le tableau du conseil indique Congregated AP à Bishop Allen; les cours AP Prep commencent en 9e année et mènent à des cours AP et à des examens AP facultatifs en 11e et 12e année; l'admission en 9e année passe par la demande supplémentaire CAP dans SOAR."
    },
    "entry": "apply",
-   "url": "https://www.tcdsb.org/o/bishopallen/page/ap-program/"
+   "url": "https://www.tcdsb.org/o/bishopallen/page/ap-program"
   },
   {
    "tag": "fi",
    "name": "French Immersion",
    "note": {
-    "en": "Immersion French for students from an early immersion program; 11 French-language credits earn the TCDSB certificate, and the school is the Early Immersion Centre for students west of Yonge Street.",
-    "es": "Inmersión en francés para estudiantes que vienen de un programa de inmersión temprana; 11 créditos en francés dan el certificado del TCDSB y la escuela es el Centro de Inmersión Temprana para quienes viven al oeste de Yonge Street.",
-    "fr": "Immersion française pour les élèves issus d'un programme d'immersion précoce; 11 crédits en français donnent le certificat du TCDSB et l'école est le centre d'immersion précoce pour les élèves à l'ouest de la rue Yonge."
+    "en": "French Immersion for students who began early immersion in Kindergarten or Grade 1; Bishop Allen is the Early Immersion Centre for TCDSB students west of Yonge Street, and 11 French credits earn a TCDSB Certificate of Proficiency.",
+    "es": "Inmersión en francés para estudiantes que comenzaron la inmersión temprana en kínder o 1.er grado; Bishop Allen es el Early Immersion Centre del TCDSB para estudiantes al oeste de Yonge Street, y 11 créditos de francés dan un Certificate of Proficiency del TCDSB.",
+    "fr": "Immersion française pour les élèves qui ont commencé l'immersion précoce à la maternelle ou en 1re année; Bishop Allen est le centre d'immersion précoce du TCDSB pour les élèves à l'ouest de Yonge Street, et 11 crédits de français donnent un Certificate of Proficiency du TCDSB."
    },
    "entry": "apply",
-   "url": "https://www.tcdsb.org/o/bishopallen/page/french/"
-  },
-  {
-   "tag": "shsm",
-   "name": "Specialist High Skills Major (SHSM): Justice, Community Safety and Emergency Services",
-   "note": {
-    "en": "Two-year SHSM in Justice, Community Safety and Emergency Services (JCSES) for Grades 11 and 12.",
-    "es": "SHSM de dos años en Justice, Community Safety and Emergency Services (JCSES) para 11.º y 12.º grado.",
-    "fr": "SHSM de deux ans en Justice, Community Safety and Emergency Services (JCSES) pour la 11e et la 12e année."
-   },
-   "entry": null,
-   "url": "https://www.tcdsb.org/o/bishopallen/page/shsm/"
+   "url": "https://www.tcdsb.org/o/bishopallen/page/french"
   },
   {
    "tag": "arts",
-   "name": "Arts Programs (Drama, Music, Visual Arts)",
+   "name": "Drama, Music and Visual Arts programs",
    "note": {
-    "en": "Drama, Music (Band, Strings, Vocal) and Visual Arts programs beginning in Grade 9.",
-    "es": "Programas de Drama, Música (Banda, Cuerdas, Vocal) y Artes Visuales desde 9.º grado.",
-    "fr": "Programmes d'art dramatique, de musique (harmonie, cordes, voix) et d'arts visuels dès la 9e année."
+    "en": "Drama, Music (band, strings and vocal) and Visual Arts programs beginning in Grade 9.",
+    "es": "Programas de Drama, Música (banda, cuerdas y canto) y Artes Visuales desde 9.º grado.",
+    "fr": "Programmes d'art dramatique, de musique (harmonie, cordes et chant) et d'arts visuels dès la 9e année."
    },
-   "entry": null,
-   "url": "https://www.tcdsb.org/o/bishopallen/page/arts-programmes/"
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major: Justice, Community Safety and Emergency Services (JCSES)",
+   "note": {
+    "en": "Two-year SHSM in Justice, Community Safety and Emergency Services for Grades 11 and 12, which can be combined with AP or French Immersion.",
+    "es": "SHSM de dos años en Justice, Community Safety and Emergency Services para 11.º y 12.º grado, que se puede combinar con AP o inmersión en francés.",
+    "fr": "SHSM de deux ans en Justice, Community Safety and Emergency Services pour la 11e et la 12e année, qui peut se combiner avec l'AP ou l'immersion française."
+   },
+   "entry": "school",
+   "url": "https://www.tcdsb.org/o/bishopallen/page/shsm"
   }
  ],
  "shsm": [
-  "Justice, Community Safety and Emergency Services"
+  "Justice, Community Safety and Emergency Services (JCSES)"
  ],
  "other": [
   "Co-operative Education",
-  "OYAP"
+  "OYAP",
+  "Grade 9 Summer School Credit Transition Program"
  ],
- "focus": {
-  "en": "Congregated Advanced Placement, French Immersion, an SHSM in Justice and Emergency Services and an extensive Arts program.",
-  "es": "Advanced Placement congregado, inmersión en francés, un SHSM en Justicia y Servicios de Emergencia y un amplio programa de artes.",
-  "fr": "Advanced Placement regroupé, immersion française, un SHSM en justice et services d'urgence et un vaste programme d'arts."
- },
- "calendarUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTFNaFvt764PQkq1-27blFXdOuAZ6yDZnKvCASw01N-f3GHjf02lvCY3B1NAw0iLA/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=647288638&single=true",
- "admissions": [],
+ "admissions": [
+  {
+   "program": "Congregated Advanced Placement (CAP), Grade 9 entry",
+   "tag": "ap",
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "elig": {
+    "en": "Grade 8 students applying for Grade 9 entry in September 2027; TCDSB schools list Congregated Advanced Placement as a specialty program with its own application section in SOAR.",
+    "es": "Estudiantes de 8.º grado que postulan para entrar a 9.º en septiembre de 2027; el TCDSB trata Congregated Advanced Placement como programa especializado con su propia sección de solicitud en SOAR.",
+    "fr": "Élèves de 8e année qui font une demande pour la 9e année en septembre 2027; le TCDSB traite le programme Congregated Advanced Placement comme un programme spécialisé avec sa propre section dans SOAR."
+   },
+   "submit": [
+    {
+     "en": "SOAR Congregated Advanced Placement section: community involvement, awards and distinctions, choice of Pre-AP courses (English, Mathematics and Science are mandatory) and a persuasive essay of up to 250 words written by the applicant.",
+     "es": "Sección de Congregated Advanced Placement en SOAR: participación comunitaria, premios y distinciones, elección de cursos Pre-AP (inglés, matemáticas y ciencias son obligatorios) y un ensayo persuasivo de hasta 250 palabras escrito por el solicitante.",
+     "fr": "Section Congregated Advanced Placement de SOAR : engagement communautaire, prix et distinctions, choix des cours Pre-AP (anglais, mathématiques et sciences obligatoires) et essai argumentatif d'au plus 250 mots rédigé par le candidat."
+    },
+    {
+     "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+     "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+     "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+    },
+    {
+     "en": "Principal or designate reference (for TCDSB students SOAR sends the request automatically to the elementary school principal; no family members as references).",
+     "es": "Referencia del director o su designado (para estudiantes del TCDSB, SOAR envía la solicitud automáticamente al director de la primaria; no pueden ser familiares).",
+     "fr": "Référence de la direction ou de son délégué (pour les élèves du TCDSB, SOAR envoie automatiquement la demande à la direction de l'école élémentaire; pas de membres de la famille)."
+    }
+   ],
+   "dates": {
+    "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+    "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+    "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+   },
+   "know": [
+    {
+     "en": "Specialty programs are processed first; accepting a specialty offer places the student in that program and withdraws all other requests, including the Regular program. Families have five days to answer an offer.",
+     "es": "Los programas especializados se procesan primero; al aceptar una oferta, el estudiante queda en ese programa y se retiran todas las demás solicitudes, incluido el programa Regular. Las familias tienen cinco días para responder a una oferta.",
+     "fr": "Les programmes spécialisés sont traités en premier; accepter une offre place l'élève dans ce programme et retire toutes les autres demandes, y compris le programme Régulier. Les familles ont cinq jours pour répondre à une offre."
+    },
+    {
+     "en": "The board chart notes that the CAP application is a supplementary application on SOAR.",
+     "es": "El cuadro del consejo indica que la solicitud de CAP es una solicitud suplementaria en SOAR.",
+     "fr": "Le tableau du conseil précise que la demande CAP est une demande supplémentaire dans SOAR."
+    }
+   ]
+  }
+ ],
  "sessions": [
   {
    "kind": "school",
    "date": "2026-10-22",
    "time": "18:30",
    "format": "In person",
-   "title": "Open House for Grade 8 students and parents, at 2 St. Andrews Blvd. (Bishop Allen relocation site)",
-   "url": "https://www.tcdsb.org/o/bishopallen/page/open-house/"
+   "title": "Open House for Grade 8 students and families",
+   "url": "https://www.tcdsb.org/o/bishopallen/page/open-house"
   }
  ],
  "missing": [
-  "Admission details for the AP program are only referred to the board Secondary School Registration page; no school-specific criteria stated",
-  "No application form, fee or marks for French Immersion stated on the school page"
+  "No course-selection or application dates beyond the board-wide SOAR calendar were found on the school's own pages.",
+  "Bishop Allen's own AP guidelines PDF is for the 2025 cycle, so it was not used for dates or fees.",
+  "The school's open house page lists the temporary building at 2 St. Andrews Blvd. (the school is temporarily relocated for 2026-27); the roster address was not changed."
  ]
 }

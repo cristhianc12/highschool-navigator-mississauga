@@ -1,0 +1,17 @@
+{
+ "id": "yrdsb-access-program",
+ "scrapedAt": "2026-10-01",
+ "site": null,
+ "sources": [
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/secondary-school-programs-and-opportunities"
+ ],
+ "programs": [],
+ "other": [],
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No page describing an ACCESS Program at 39 Dunning Avenue, Aurora was found on yrdsb.ca (the work-list site is the generic school list); it is not listed in Secondary School Programs at a Glance",
+  "Searches only showed the address as a board services location, which was not enough to describe a program"
+ ]
+}

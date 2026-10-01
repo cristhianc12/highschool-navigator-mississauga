@@ -1,0 +1,122 @@
+{
+ "id": "yrdsb-emily-carr",
+ "scrapedAt": "2026-10-01",
+ "site": "https://emilycarr-ss.yrdsb.ca/",
+ "sources": [
+  "https://app.myblueprint.ca/public/courses/yrdsb/emilycarr1",
+  "https://emilycarr-ss.yrdsb.ca/",
+  "https://emilycarr-ss.yrdsb.ca/course-selection",
+  "https://emilycarr-ss.yrdsb.ca/international-baccalaureate-ib-programme",
+  "https://emilycarr-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/personalized-alternative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-registration",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Programme (candidate school)",
+   "note": {
+    "en": "The school is applying to become IB accredited; Grade 8 students are expected to be able to apply in October 2026 for 2027-28, with enriched courses in Grades 9-10 and the Diploma Programme from Grade 11.",
+    "es": "La escuela está en proceso de obtener la acreditación IB; se prevé que los estudiantes de 8.º grado puedan solicitar en octubre de 2026 para el curso 2027-28, con cursos enriquecidos en 9.º y 10.º y el Programa del Diploma desde 11.º.",
+    "fr": "L'école est en voie d'obtenir l'accréditation de l'IB; les élèves de 8e année devraient pouvoir présenter une demande en octobre 2026 pour 2027-2028, avec des cours enrichis en 9e et 10e année et le programme du diplôme dès la 11e année."
+   },
+   "entry": "apply",
+   "url": "https://emilycarr-ss.yrdsb.ca/international-baccalaureate-ib-programme"
+  },
+  {
+   "tag": "other",
+   "name": "Quadmester Program",
+   "note": {
+    "en": "Quadmester courses are nine-week, two-period courses that run four times a year; courses and class sizes vary by school.",
+    "es": "Los cursos Quadmester son cursos de nueve semanas y dos períodos que se ofrecen cuatro veces al año; los cursos y el tamaño de las clases varían según la escuela.",
+    "fr": "Les cours Quadmester sont des cours de neuf semaines à deux périodes offerts quatre fois par année; les cours et la taille des classes varient selon l'école."
+   },
+   "entry": "school",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/personalized-alternative-education"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 courses in a career sector, co-op, certifications and a Red Seal on the OSSD; sectors here: Arts and Culture, Business, Health and Wellness.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos de un sector profesional, cooperativa, certificaciones y un sello rojo en el OSSD; sectores aquí: artes y cultura, negocios, salud y bienestar.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours dans un secteur professionnel, de l'éducation coopérative, des certifications et un sceau rouge sur le DESO; secteurs offerts ici : arts et culture, affaires, santé et bien-être."
+   },
+   "entry": "apply",
+   "url": "https://emilycarr-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29"
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA) support",
+   "note": {
+    "en": "Timetable support for students who compete at the provincial, national or international level in eligible sports, including up to two Day School Online courses; students apply each year with an application form and a sport verification letter.",
+    "es": "Apoyo de horario para estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles, con hasta dos cursos Day School Online; se solicita cada año con un formulario y una carta de verificación deportiva.",
+    "fr": "Soutien à l'horaire pour les élèves qui concourent aux niveaux provincial, national ou international dans des sports admissibles, y compris jusqu'à deux cours Day School Online; la demande se refait chaque année avec un formulaire et une lettre de vérification sportive."
+   },
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP",
+  "High Performance Athlete (HPA) support"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/yrdsb/emilycarr1",
+ "admissions": [
+  {
+   "program": "IB Diploma Programme (candidate school)",
+   "tag": "ib",
+   "url": "https://emilycarr-ss.yrdsb.ca/international-baccalaureate-ib-programme",
+   "dates": {
+    "en": "The application for 2027-28 is anticipated to open in October 2026; the school says more information will be shared as it becomes available.",
+    "es": "Se prevé que la solicitud para 2027-28 abra en octubre de 2026; la escuela indica que compartirá más información cuando esté disponible.",
+    "fr": "La demande pour 2027-2028 devrait ouvrir en octobre 2026; l'école indique que d'autres renseignements seront communiqués dès qu'ils seront disponibles."
+   },
+   "know": [
+    {
+     "en": "Families can check the school locator in fall 2026 to identify their IB school.",
+     "es": "Las familias pueden consultar el localizador de escuelas en el otoño de 2026 para identificar su escuela IB.",
+     "fr": "Les familles peuvent consulter le localisateur d'écoles à l'automne 2026 pour trouver leur école IB."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "19:00",
+   "format": null,
+   "title": "IB Information Night (candidate school)",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-29",
+   "time": "18:30",
+   "format": null,
+   "title": "Open House",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course directory is on myBlueprint (a JavaScript app with no readable text), and no course calendar PDF or HTML list was found on the school site",
+  "Co-op, Dual Credit, OYAP and HPA availability taken from the board pages and the Secondary Programs at a Glance table, not from a school-specific page",
+  "No fees stated for programs other than those in admissions",
+  "IB candidate school: application details not yet published"
+ ]
+}

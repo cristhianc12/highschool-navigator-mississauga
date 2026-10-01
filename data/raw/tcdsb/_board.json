@@ -1,0 +1,537 @@
+{
+ "board": "tcdsb",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.tcdsb.org/page/secondary-school-registration",
+  "https://www.tcdsb.org/page/admissions/",
+  "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+  "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+  "https://www.tcdsb.org/o/teachingandlearning/page/shsm",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered",
+  "https://www.tcdsb.org/page/orientation-centre"
+ ],
+ "registration": {
+  "steps": [
+   {
+    "en": "Check that you live in Toronto (all Toronto students are welcome and you do not need to be baptized Catholic) and find your neighbourhood secondary school on the TCDSB Secondary School Map; applying to your neighbourhood school improves your chance of placement.",
+    "es": "Verifica que vives en Toronto (todos los estudiantes de Toronto son bienvenidos y no necesitas estar bautizado como católico) y encuentra tu escuela secundaria de barrio en el Secondary School Map del TCDSB; postular a la escuela de tu barrio aumenta tus posibilidades de colocación.",
+    "fr": "Vérifie que tu habites à Toronto (tous les élèves de Toronto sont bienvenus et tu n'as pas besoin d'être baptisé catholique) et trouve ton école secondaire de quartier sur le Secondary School Map du TCDSB; faire une demande à l'école de ton quartier augmente tes chances de placement."
+   },
+   {
+    "en": "Go to the secondary school open houses in September-October 2026 to see the programs; if your child attends a TCDSB elementary school, make sure the school has your correct email address.",
+    "es": "Asiste a las jornadas de puertas abiertas de secundaria en septiembre y octubre de 2026 para conocer los programas; si tu hijo(a) va a una primaria del TCDSB, verifica que la escuela tenga tu correo electrónico correcto.",
+    "fr": "Va aux portes ouvertes des écoles secondaires en septembre et octobre 2026 pour découvrir les programmes; si ton enfant fréquente une école élémentaire du TCDSB, assure-toi que l'école a ton adresse courriel à jour."
+   },
+   {
+    "en": "Create an account in SOAR (secsoar.tcdsb.org) and submit the online application between September 25, 2026 (after 5 PM) and October 30, 2026 (11:59 PM) for September 2027; specialty program applications close on October 30, 2026 and regular applications after that date are wait-listed.",
+    "es": "Crea una cuenta en SOAR (secsoar.tcdsb.org) y envía la solicitud en línea entre el 25 de septiembre de 2026 (después de las 5 p. m.) y el 30 de octubre de 2026 (11:59 p. m.) para septiembre de 2027; las solicitudes a programas especializados cierran el 30 de octubre de 2026 y las solicitudes regulares posteriores quedan en lista de espera.",
+    "fr": "Crée un compte dans SOAR (secsoar.tcdsb.org) et soumets la demande en ligne entre le 25 septembre 2026 (après 17 h) et le 30 octobre 2026 (23 h 59) pour septembre 2027; les demandes aux programmes spécialisés ferment le 30 octobre 2026 et les demandes régulières déposées après cette date sont mises sur liste d'attente."
+   },
+   {
+    "en": "For arts and sports programs, also download the supplemental form (and portfolio or audition material) and make sure the school receives it by October 30, 2026.",
+    "es": "Para los programas de artes y deportes, descarga también el formulario suplementario (y el portafolio o el material de audición) y asegúrate de que la escuela lo reciba antes del 30 de octubre de 2026.",
+    "fr": "Pour les programmes d'arts et de sports, télécharge aussi le formulaire supplémentaire (et le portfolio ou le matériel d'audition) et assure-toi que l'école le reçoive avant le 30 octobre 2026."
+   },
+   {
+    "en": "Watch your email: specialty offers come in Wave 1 (November 27, 2026) and Wave 2 (December 4, 2026); regular program placement or redirection notices come in Wave 3 (January 15, 2027) and redirection answers are due January 19, 2027.",
+    "es": "Revisa tu correo: las ofertas de programas especializados llegan en la Ola 1 (27 de noviembre de 2026) y en la Ola 2 (4 de diciembre de 2026); los avisos de colocación o redirección del programa regular llegan en la Ola 3 (15 de enero de 2027) y las respuestas a la redirección vencen el 19 de enero de 2027.",
+    "fr": "Surveille ton courriel : les offres des programmes spécialisés arrivent dans la vague 1 (27 novembre 2026) et la vague 2 (4 décembre 2026); les avis de placement ou de redirection du programme régulier arrivent dans la vague 3 (15 janvier 2027) et les réponses à la redirection sont dues le 19 janvier 2027."
+   },
+   {
+    "en": "New to Canada (ages 14-20) or studying outside Ontario: contact the TCDSB Orientation Centre to start secondary registration instead of the standard application.",
+    "es": "Si eres nuevo en Canadá (14 a 20 años) o estudiaste fuera de Ontario: comunícate con el Orientation Centre del TCDSB para iniciar la inscripción secundaria en lugar de la solicitud estándar.",
+    "fr": "Si tu es nouveau au Canada (14 à 20 ans) ou si tu étudiais hors de l'Ontario : communique avec l'Orientation Centre du TCDSB pour commencer l'inscription au secondaire au lieu de la demande habituelle."
+   }
+  ],
+  "docs": [
+   {
+    "en": "Grade 7 report cards (Term 1 and Term 2) for specialty programs, uploaded by students new to the TCDSB (the TCDSB already has them for its own students).",
+    "es": "Boletines de 7.º grado (Término 1 y 2) para programas especializados, que suben los estudiantes nuevos en el TCDSB (el TCDSB ya los tiene para sus propios estudiantes).",
+    "fr": "Bulletins de 7e année (étapes 1 et 2) pour les programmes spécialisés, téléversés par les élèves nouveaux au TCDSB (le TCDSB les a déjà pour ses propres élèves)."
+   },
+   {
+    "en": "Proof of residential address for applicants from other boards, private schools or outside Toronto.",
+    "es": "Prueba de domicilio para solicitantes de otros consejos escolares, escuelas privadas o de fuera de Toronto.",
+    "fr": "Preuve d'adresse résidentielle pour les candidats d'autres conseils, d'écoles privées ou de l'extérieur de Toronto."
+   },
+   {
+    "en": "Catholic Baptismal Certificate for non-Toronto Catholic applicants who want Priority 4 wait-list status (without it, Priority 6).",
+    "es": "Certificado de bautismo católico para solicitantes católicos de fuera de Toronto que quieren estatus de lista de espera Prioridad 4 (sin él, Prioridad 6).",
+    "fr": "Certificat de baptême catholique pour les candidats catholiques de l'extérieur de Toronto qui souhaitent le statut de liste d'attente de priorité 4 (sans lui, priorité 6)."
+   },
+   {
+    "en": "Principal or designate reference for every specialty program (requested automatically by SOAR for TCDSB students).",
+    "es": "Referencia del director o su designado para cada programa especializado (SOAR la solicita automáticamente para estudiantes del TCDSB).",
+    "fr": "Référence de la direction ou de son délégué pour chaque programme spécialisé (demandée automatiquement par SOAR pour les élèves du TCDSB)."
+   }
+  ],
+  "note": {
+   "en": "Placement is not guaranteed; waiting lists are deleted at the end of September. Moves between TCDSB secondary schools are not made through SOAR: arrange them with the school. Non-TCDSB students may apply to only one secondary school. Students without immigration status are welcome to register.",
+   "es": "La colocación no está garantizada; las listas de espera se eliminan a fines de septiembre. Los traslados entre escuelas secundarias del TCDSB no se hacen por SOAR: se acuerdan con la escuela. Los estudiantes que no son del TCDSB solo pueden postular a una escuela secundaria. Los estudiantes sin estatus migratorio pueden inscribirse.",
+   "fr": "Le placement n'est pas garanti; les listes d'attente sont supprimées à la fin de septembre. Les changements entre écoles secondaires du TCDSB ne se font pas par SOAR : organise-les avec l'école. Les élèves qui ne viennent pas du TCDSB ne peuvent présenter une demande qu'à une seule école secondaire. Les élèves sans statut d'immigration peuvent s'inscrire."
+  },
+  "contact": "TCDSB Admissions and Placement Department, 416-397-6900, admissions.registration@tcdsb.org, https://www.tcdsb.org/page/secondary-school-registration",
+  "url": "https://www.tcdsb.org/page/secondary-school-registration",
+  "dates": [
+   {
+    "en": "Open houses: September-October 2026 (see each school's date).",
+    "es": "Jornadas de puertas abiertas: septiembre y octubre de 2026 (consulta la fecha de cada escuela).",
+    "fr": "Portes ouvertes : septembre-octobre 2026 (voir la date de chaque école)."
+   },
+   {
+    "en": "Application window in SOAR: September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); arts school applications due at the school October 30, 2026.",
+    "es": "Plazo en SOAR: del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a escuelas de artes vencen en la escuela el 30 de octubre de 2026.",
+    "fr": "Période de demande dans SOAR : du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux écoles d'arts sont dues à l'école le 30 octobre 2026."
+   },
+   {
+    "en": "Specialty offers: Wave 1 on November 27, 2026 (accept by December 1, 11:59 PM) and Wave 2 on December 4, 2026 (accept by December 8, 11:59 PM).",
+    "es": "Ofertas especializadas: Ola 1 el 27 de noviembre de 2026 (acepta hasta el 1 de diciembre, 11:59 p. m.) y Ola 2 el 4 de diciembre de 2026 (acepta hasta el 8 de diciembre, 11:59 p. m.).",
+    "fr": "Offres des programmes spécialisés : vague 1 le 27 novembre 2026 (accepte avant le 1er décembre, 23 h 59) et vague 2 le 4 décembre 2026 (accepte avant le 8 décembre, 23 h 59)."
+   },
+   {
+    "en": "Regular program placement or redirection (Wave 3): January 15, 2027 (after 5 PM); redirection responses due January 19, 2027 (11:59 PM); regular applications received after October 30, 2026 are wait-listed from November 2026 to June 2027.",
+    "es": "Colocación o redirección del programa regular (Ola 3): 15 de enero de 2027 (después de las 5 p. m.); respuestas a la redirección hasta el 19 de enero de 2027 (11:59 p. m.); las solicitudes regulares recibidas después del 30 de octubre de 2026 quedan en lista de espera de noviembre de 2026 a junio de 2027.",
+    "fr": "Placement ou redirection du programme régulier (vague 3) : 15 janvier 2027 (après 17 h); réponses à la redirection dues le 19 janvier 2027 (23 h 59); les demandes régulières reçues après le 30 octobre 2026 sont mises sur liste d'attente de novembre 2026 à juin 2027."
+   }
+  ]
+ },
+ "programs": [
+  {
+   "id": "tcdsb-cap",
+   "tag": "ap",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-bishop-allen-academy",
+    "tcdsb-bishop-marrocco-thomas-merton",
+    "tcdsb-brebeuf-college-school",
+    "tcdsb-father-henry-carr",
+    "tcdsb-francis-libermann",
+    "tcdsb-marshall-mcluhan"
+   ],
+   "name": {
+    "en": "Congregated Advanced Placement (CAP)",
+    "es": "Congregated Advanced Placement (CAP)",
+    "fr": "Congregated Advanced Placement (CAP)"
+   },
+   "p": {
+    "en": "Grade 9 specialty program with cohorted Pre-AP classes (English, Math and Science are mandatory) that lead to AP courses and exams in senior grades.",
+    "es": "Programa especializado desde 9.º grado con clases Pre-AP en cohorte (inglés, matemáticas y ciencias son obligatorios) que llevan a cursos y exámenes AP en los últimos años.",
+    "fr": "Programme spécialisé dès la 9e année avec des classes Pre-AP en cohorte (anglais, mathématiques et sciences obligatoires) qui mènent à des cours et à des examens AP dans les dernières années."
+   },
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+   "info": {
+    "who": {
+     "en": "Grade 8 students applying for Grade 9 in September 2027; Brebeuf's version is named Congregated IT AP.",
+     "es": "Estudiantes de 8.º grado que postulan a 9.º en septiembre de 2027; la versión de Brebeuf se llama Congregated IT AP.",
+     "fr": "Élèves de 8e année qui font une demande pour la 9e année en septembre 2027; la version de Brebeuf s'appelle Congregated IT AP."
+    },
+    "how": {
+     "en": "Complete the Congregated Advanced Placement section of the SOAR application for each school you request.",
+     "es": "Completa la sección de Congregated Advanced Placement de la solicitud en SOAR para cada escuela que pidas.",
+     "fr": "Remplis la section Congregated Advanced Placement de la demande SOAR pour chaque école demandée."
+    },
+    "reqs": [
+     {
+      "en": "SOAR Congregated Advanced Placement section: community involvement, awards and distinctions, choice of Pre-AP courses (English, Mathematics and Science are mandatory) and a persuasive essay of up to 250 words written by the applicant.",
+      "es": "Sección de Congregated Advanced Placement en SOAR: participación comunitaria, premios y distinciones, elección de cursos Pre-AP (inglés, matemáticas y ciencias son obligatorios) y un ensayo persuasivo de hasta 250 palabras escrito por el solicitante.",
+      "fr": "Section Congregated Advanced Placement de SOAR : engagement communautaire, prix et distinctions, choix des cours Pre-AP (anglais, mathématiques et sciences obligatoires) et essai argumentatif d'au plus 250 mots rédigé par le candidat."
+     },
+     {
+      "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+      "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+      "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+     },
+     {
+      "en": "Principal or designate reference (for TCDSB students SOAR sends the request automatically to the elementary school principal; no family members as references).",
+      "es": "Referencia del director o su designado (para estudiantes del TCDSB, SOAR envía la solicitud automáticamente al director de la primaria; no pueden ser familiares).",
+      "fr": "Référence de la direction ou de son délégué (pour les élèves du TCDSB, SOAR envoie automatiquement la demande à la direction de l'école élémentaire; pas de membres de la famille)."
+     }
+    ],
+    "dates": {
+     "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+     "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+     "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-ib",
+   "tag": "ib",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-michael-power-st-joseph"
+   ],
+   "name": {
+    "en": "International Baccalaureate (IB) Diploma Programme",
+    "es": "International Baccalaureate (IB) Diploma Programme",
+    "fr": "International Baccalaureate (IB) Diploma Programme"
+   },
+   "p": {
+    "en": "IB pathway that starts in Grades 9-10 (Junior Enriched Learning Program or pre-IB) and leads to the two-year IB Diploma Programme in Grades 11-12.",
+    "es": "Trayectoria IB que empieza en 9.º y 10.º (Junior Enriched Learning Program o pre-IB) y lleva al IB Diploma Programme de dos años en 11.º y 12.º.",
+    "fr": "Parcours IB qui commence en 9e et 10e année (Junior Enriched Learning Program ou pre-IB) et mène au programme du diplôme IB de deux ans en 11e et 12e année."
+   },
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+   "info": {
+    "how": {
+     "en": "The SOAR guide has an IB section (essay on the IB Learner Profile, community involvement, awards, school activities); the board FAQ says IB applications are handled directly through the IB schools, so confirm with the school.",
+     "es": "La guía de SOAR tiene una sección IB (ensayo sobre el IB Learner Profile, participación comunitaria, premios, actividades escolares); las preguntas frecuentes del consejo dicen que las solicitudes IB se tramitan directamente en las escuelas IB, así que confirma con la escuela.",
+     "fr": "Le guide SOAR comprend une section IB (essai sur le IB Learner Profile, engagement communautaire, prix, activités scolaires); la FAQ du conseil indique que les demandes IB sont traitées directement par les écoles IB; confirme donc auprès de l'école."
+    },
+    "dates": {
+     "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+     "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+     "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-steam",
+   "tag": "stem",
+   "start": "10",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-chaminade-college-school",
+    "tcdsb-james-cardinal-mcguigan",
+    "tcdsb-loretto-college-school",
+    "tcdsb-madonna"
+   ],
+   "name": {
+    "en": "S.T.E.A.M. (Science, Technology, Engineering, Arts, Mathematics)",
+    "es": "S.T.E.A.M. (Ciencia, Tecnología, Ingeniería, Artes, Matemáticas)",
+    "fr": "S.T.E.A.M. (sciences, technologie, ingénierie, arts, mathématiques)"
+   },
+   "p": {
+    "en": "Enriched STEAM program at selected schools; the board chart shows it for Grades 10-12 (Grade 10 at Loretto College), and the SOAR guide has a STEAM application section.",
+    "es": "Programa STEAM enriquecido en escuelas seleccionadas; el cuadro del consejo lo muestra para 10.º a 12.º grado (10.º en Loretto College), y la guía de SOAR tiene una sección de solicitud STEAM.",
+    "fr": "Programme STEAM enrichi dans certaines écoles; le tableau du conseil l'indique de la 10e à la 12e année (10e année à Loretto College), et le guide SOAR comprend une section de demande STEAM."
+   },
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+   "info": {
+    "how": {
+     "en": "SOAR's STEAM section asks why you want the program, your two favourite subjects, your academic abilities, school activities and a student self-evaluation; each school sets its own details (Chaminade, for example, asks for an essay and a Grade 9 teacher reference).",
+     "es": "La sección STEAM de SOAR pregunta por qué quieres el programa, tus dos materias favoritas, tus capacidades académicas, tus actividades escolares y una autoevaluación; cada escuela fija sus propios detalles (Chaminade, por ejemplo, pide un ensayo y una referencia de un profesor de 9.º).",
+     "fr": "La section STEAM de SOAR demande pourquoi tu veux le programme, tes deux matières préférées, tes capacités scolaires, tes activités à l'école et une autoévaluation; chaque école fixe ses propres détails (Chaminade, par exemple, demande un essai et une référence d'un enseignant de 9e année)."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-hpa",
+   "tag": "sports",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-james-cardinal-mcguigan"
+   ],
+   "name": {
+    "en": "High Performance Athletic (HPA) Program",
+    "es": "High Performance Athletic (HPA) Program",
+    "fr": "High Performance Athletic (HPA) Program"
+   },
+   "p": {
+    "en": "Sports specialty program at James Cardinal McGuigan for Grades 9-12 with developmental and provincial/national athlete pathways.",
+    "es": "Programa deportivo especializado en James Cardinal McGuigan para 9.º a 12.º grado con vías de desarrollo y de atletas provinciales o nacionales.",
+    "fr": "Programme sportif spécialisé à James Cardinal McGuigan de la 9e à la 12e année, avec des parcours de développement et pour athlètes provinciaux ou nationaux."
+   },
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "info": {
+    "how": {
+     "en": "Apply on SOAR and send the HPA sports application form so the school receives it by October 30, 2026.",
+     "es": "Postula en SOAR y envía el formulario deportivo HPA para que la escuela lo reciba a más tardar el 30 de octubre de 2026.",
+     "fr": "Fais ta demande dans SOAR et envoie le formulaire sportif HPA pour que l'école le reçoive au plus tard le 30 octobre 2026."
+    },
+    "reqs": [
+     {
+      "en": "Sports Athletic Program application form (downloaded from SOAR), which the school must receive by October 30, 2026, in addition to the online application.",
+      "es": "Formulario de solicitud del programa deportivo (se descarga en SOAR), que la escuela debe recibir a más tardar el 30 de octubre de 2026, además de la solicitud en línea.",
+      "fr": "Formulaire de demande du programme sportif (téléchargé dans SOAR), que l'école doit recevoir au plus tard le 30 octobre 2026, en plus de la demande en ligne."
+     }
+    ],
+    "dates": {
+     "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+     "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+     "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-york-soccer",
+   "tag": "sports",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-father-henry-carr",
+    "tcdsb-james-cardinal-mcguigan"
+   ],
+   "name": {
+    "en": "York Soccer Program",
+    "es": "York Soccer Program",
+    "fr": "York Soccer Program"
+   },
+   "p": {
+    "en": "Soccer specialty program (Carr York Soccer Program at Father Henry Carr; Specialized Soccer Program with York University at James Cardinal McGuigan).",
+    "es": "Programa especializado de fútbol (Carr York Soccer Program en Father Henry Carr; Specialized Soccer Program with York University en James Cardinal McGuigan).",
+    "fr": "Programme spécialisé de soccer (Carr York Soccer Program à Father Henry Carr; Specialized Soccer Program with York University à James Cardinal McGuigan)."
+   },
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/2947/Tcdsb/d88faa7a-1bfd-4cf4-95d8-9d8fcc88aaf6/soar-secondary-parent-application-guide.pdf?disposition=inline",
+   "info": {
+    "how": {
+     "en": "Select the York Soccer Program school in SOAR and send the Sports Athletic application form so the school receives it by October 30, 2026.",
+     "es": "Elige la escuela del York Soccer Program en SOAR y envía el formulario deportivo para que la escuela lo reciba a más tardar el 30 de octubre de 2026.",
+     "fr": "Choisis l'école du York Soccer Program dans SOAR et envoie le formulaire sportif pour que l'école le reçoive au plus tard le 30 octobre 2026."
+    },
+    "reqs": [
+     {
+      "en": "Sports Athletic Program application form (downloaded from SOAR), which the school must receive by October 30, 2026, in addition to the online application.",
+      "es": "Formulario de solicitud del programa deportivo (se descarga en SOAR), que la escuela debe recibir a más tardar el 30 de octubre de 2026, además de la solicitud en línea.",
+      "fr": "Formulaire de demande du programme sportif (téléchargé dans SOAR), que l'école doit recevoir au plus tard le 30 octobre 2026, en plus de la demande en ligne."
+     }
+    ],
+    "dates": {
+     "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+     "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+     "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-regional-arts",
+   "tag": "arts",
+   "start": "9",
+   "entry": "audition",
+   "hosts": [
+    "tcdsb-bishop-marrocco-thomas-merton",
+    "tcdsb-father-john-redmond"
+   ],
+   "name": {
+    "en": "Regional Arts Program (RAP)",
+    "es": "Regional Arts Program (RAP)",
+    "fr": "Regional Arts Program (RAP)"
+   },
+   "p": {
+    "en": "Arts specialty program (dance, drama, music and visual arts) at Regional Arts Centres; the board says admission includes an audition or supplementary application form.",
+    "es": "Programa especializado de artes (danza, teatro, música y artes visuales) en Regional Arts Centres; el consejo indica que la admisión incluye una audición o un formulario suplementario.",
+    "fr": "Programme spécialisé en arts (danse, art dramatique, musique et arts visuels) dans les Regional Arts Centres; le conseil indique que l'admission comprend une audition ou un formulaire supplémentaire."
+   },
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/specialized-program-information",
+   "info": {
+    "how": {
+     "en": "Choose the arts program in the SOAR application, download the supplemental application and audition form, and make sure the school receives it by October 30, 2026; a portfolio may be needed.",
+     "es": "Elige el programa de artes en la solicitud de SOAR, descarga la solicitud suplementaria y el formulario de audición, y asegúrate de que la escuela los reciba antes del 30 de octubre de 2026; puede hacer falta un portafolio.",
+     "fr": "Choisis le programme d'arts dans la demande SOAR, télécharge la demande supplémentaire et le formulaire d'audition, et assure-toi que l'école les reçoive avant le 30 octobre 2026; un portfolio peut être nécessaire."
+    },
+    "reqs": [
+     {
+      "en": "Supplemental arts application and audition form (downloaded from SOAR) and, if requested, a portfolio; the school must receive it by October 30, 2026.",
+      "es": "Solicitud suplementaria de artes y formulario de audición (se descargan en SOAR) y, si se pide, un portafolio; la escuela debe recibirlo a más tardar el 30 de octubre de 2026.",
+      "fr": "Demande supplémentaire en arts et formulaire d'audition (téléchargés dans SOAR) et, au besoin, un portfolio; l'école doit les recevoir au plus tard le 30 octobre 2026."
+     },
+     {
+      "en": "Grade 7 report cards (Term 1 and Term 2): already on file for TCDSB students; students new to the TCDSB upload them.",
+      "es": "Boletines de 7.º grado (Término 1 y 2): ya los tiene el TCDSB para sus estudiantes; quienes son nuevos en el TCDSB los suben.",
+      "fr": "Bulletins scolaires de 7e année (étapes 1 et 2) : déjà au dossier pour les élèves du TCDSB; les élèves nouveaux au TCDSB les téléversent."
+     }
+    ],
+    "dates": {
+     "en": "Apply on SOAR from September 25, 2026 (after 5 PM) to October 30, 2026 (11:59 PM); specialty applications close on October 30, 2026. Wave 1 specialty offers are emailed November 27, 2026 (after 5 PM) and must be accepted or declined by December 1, 2026 (11:59 PM); Wave 2 offers go out December 4, 2026 (after 5 PM), with answers due by December 8, 2026 (11:59 PM).",
+     "es": "Postula en SOAR del 25 de septiembre de 2026 (después de las 5 p. m.) al 30 de octubre de 2026 (11:59 p. m.); las solicitudes a programas especializados cierran el 30 de octubre de 2026. Las ofertas de la Ola 1 se envían por correo el 27 de noviembre de 2026 (después de las 5 p. m.) y se aceptan o rechazan hasta el 1 de diciembre de 2026 (11:59 p. m.); las de la Ola 2 salen el 4 de diciembre de 2026 (después de las 5 p. m.), con respuesta hasta el 8 de diciembre de 2026 (11:59 p. m.).",
+     "fr": "Fais ta demande dans SOAR du 25 septembre 2026 (après 17 h) au 30 octobre 2026 (23 h 59); les demandes aux programmes spécialisés ferment le 30 octobre 2026. Les offres de la vague 1 sont envoyées par courriel le 27 novembre 2026 (après 17 h) et doivent être acceptées ou refusées avant le 1er décembre 2026 (23 h 59); celles de la vague 2 sont envoyées le 4 décembre 2026 (après 17 h), avec réponse avant le 8 décembre 2026 (23 h 59)."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-cardinal-carter-arts",
+   "tag": "arts",
+   "start": "9",
+   "entry": "audition",
+   "hosts": [
+    "tcdsb-cardinal-carter-academy-for-the-arts"
+   ],
+   "name": {
+    "en": "Cardinal Carter Academy for the Arts",
+    "es": "Cardinal Carter Academy for the Arts",
+    "fr": "Cardinal Carter Academy for the Arts"
+   },
+   "p": {
+    "en": "Audition-based arts school for Grades 7-12 with six programs (Dance, Drama, Music Band, Strings and Vocal, Visual Arts); entry years are mainly Grades 7 and 9.",
+    "es": "Escuela de artes de 7.º a 12.º grado con audición y seis programas (Danza, Teatro, Música Banda, Cuerdas y Canto, Artes Visuales); los años de ingreso son principalmente 7.º y 9.º.",
+    "fr": "École d'arts sur audition de la 7e à la 12e année avec six programmes (danse, art dramatique, musique harmonie, cordes et chant, arts visuels); les années d'entrée sont surtout la 7e et la 9e."
+   },
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/application-audition",
+   "info": {
+    "how": {
+     "en": "Apply on SOAR for one arts discipline, pay the $20.00 audition fee and make sure the school receives the application package by October 30, 2026.",
+     "es": "Postula en SOAR a una disciplina artística, paga la tarifa de audición de $20.00 y asegúrate de que la escuela reciba el paquete de solicitud antes del 30 de octubre de 2026.",
+     "fr": "Fais ta demande dans SOAR pour une discipline artistique, paie les frais d'audition de 20,00 $ et assure-toi que l'école reçoive le dossier avant le 30 octobre 2026."
+    },
+    "dates": {
+     "en": "Applications due October 30, 2026; offers on November 27, 2026 (Wave 1) and December 4, 2026 (Wave 2), after 5 PM.",
+     "es": "Solicitudes hasta el 30 de octubre de 2026; ofertas el 27 de noviembre de 2026 (Ola 1) y el 4 de diciembre de 2026 (Ola 2), después de las 5 p. m.",
+     "fr": "Demandes dues le 30 octobre 2026; offres le 27 novembre 2026 (vague 1) et le 4 décembre 2026 (vague 2), après 17 h."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-extended-french",
+   "tag": "ef",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-loretto-abbey",
+    "tcdsb-marshall-mcluhan",
+    "tcdsb-mary-ward",
+    "tcdsb-michael-power-st-joseph",
+    "tcdsb-monsignor-percy-johnson"
+   ],
+   "name": {
+    "en": "Extended French",
+    "es": "Extended French",
+    "fr": "Extended French"
+   },
+   "p": {
+    "en": "Continuation of elementary Extended French or French Immersion, chosen as the program type in the Regular program section of SOAR.",
+    "es": "Continuación de Extended French o de inmersión en francés de primaria, que se elige como tipo de programa en la sección de programa Regular de SOAR.",
+    "fr": "Prolongement de l'Extended French ou de l'immersion française du primaire, choisi comme type de programme dans la section du programme Régulier de SOAR."
+   },
+   "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-iNZ6QS2Qs1ulupe1_ETigq5GhqUjTmSsyw3rG9a7yMqP8XCpdgk7pMHw2ATvfu3kwJkH8udDPmTb/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=476777847&single=true",
+   "info": {
+    "how": {
+     "en": "Select Extended French as the program in the Regular program section of the SOAR application, then choose the school.",
+     "es": "Elige Extended French como programa en la sección de programa Regular de la solicitud en SOAR y luego elige la escuela.",
+     "fr": "Choisis Extended French comme programme dans la section du programme Régulier de la demande SOAR, puis choisis l'école."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-french-immersion",
+   "tag": "fi",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "tcdsb-bishop-allen-academy"
+   ],
+   "name": {
+    "en": "French Immersion (Bishop Allen Academy)",
+    "es": "French Immersion (Bishop Allen Academy)",
+    "fr": "French Immersion (Bishop Allen Academy)"
+   },
+   "p": {
+    "en": "French Immersion for students who started early immersion; Bishop Allen is the Early Immersion Centre for TCDSB students west of Yonge Street.",
+    "es": "Inmersión en francés para estudiantes que empezaron la inmersión temprana; Bishop Allen es el Early Immersion Centre del TCDSB para estudiantes al oeste de Yonge Street.",
+    "fr": "Immersion française pour les élèves qui ont commencé l'immersion précoce; Bishop Allen est le centre d'immersion précoce du TCDSB pour les élèves à l'ouest de Yonge Street."
+   },
+   "url": "https://www.tcdsb.org/o/bishopallen/page/french",
+   "info": {
+    "how": {
+     "en": "Select French Immersion as the program in the Regular program section of the SOAR application.",
+     "es": "Elige French Immersion como programa en la sección de programa Regular de la solicitud en SOAR.",
+     "fr": "Choisis French Immersion comme programme dans la section du programme Régulier de la demande SOAR."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-shsm",
+   "tag": "shsm",
+   "start": "11",
+   "entry": "school",
+   "hosts": [
+    "tcdsb-bishop-allen-academy",
+    "tcdsb-bishop-marrocco-thomas-merton",
+    "tcdsb-brebeuf-college-school",
+    "tcdsb-cardinal-carter-academy-for-the-arts",
+    "tcdsb-chaminade-college-school",
+    "tcdsb-dante-alighieri-academy",
+    "tcdsb-father-henry-carr",
+    "tcdsb-father-john-redmond",
+    "tcdsb-francis-libermann",
+    "tcdsb-james-cardinal-mcguigan",
+    "tcdsb-loretto-abbey",
+    "tcdsb-loretto-college-school",
+    "tcdsb-madonna",
+    "tcdsb-marshall-mcluhan",
+    "tcdsb-mary-ward",
+    "tcdsb-michael-power-st-joseph",
+    "tcdsb-monsignor-percy-johnson"
+   ],
+   "name": {
+    "en": "Specialist High Skills Major (SHSM)",
+    "es": "Specialist High Skills Major (SHSM)",
+    "fr": "Specialist High Skills Major (SHSM)"
+   },
+   "p": {
+    "en": "Grade 11-12 program in a career sector that adds an SHSM seal to the Ontario Secondary School Diploma; students register for a program offered by their home school.",
+    "es": "Programa de 11.º y 12.º grado en un sector profesional que agrega el sello SHSM al Ontario Secondary School Diploma; los estudiantes se inscriben en un programa que ofrece su escuela.",
+    "fr": "Programme de 11e et 12e année dans un secteur professionnel qui ajoute le sceau SHSM au diplôme d'études secondaires de l'Ontario; les élèves s'inscrivent à un programme offert par leur école."
+   },
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/shsm",
+   "info": {
+    "how": {
+     "en": "Contact your school's guidance teacher-counsellor about the SHSM sectors your school offers.",
+     "es": "Habla con el orientador de tu escuela sobre los sectores SHSM que ofrece.",
+     "fr": "Communique avec l'enseignant-conseiller en orientation de ton école au sujet des secteurs SHSM offerts."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-fraser-alternative",
+   "tag": "alt",
+   "start": "10",
+   "entry": "school",
+   "hosts": [
+    "tcdsb-msgr-fraser-college-isabella-campus",
+    "tcdsb-msgr-fraser-college-norfinch-campus"
+   ],
+   "name": {
+    "en": "Monsignor Fraser College Alternative Education (ages 16-20)",
+    "es": "Monsignor Fraser College Alternative Education (16 a 20 años)",
+    "fr": "Monsignor Fraser College Alternative Education (16 à 20 ans)"
+   },
+   "p": {
+    "en": "Alternative program with small personalized settings and up to 2 full credits every nine weeks, for students 16-20 referred by their current or previous school.",
+    "es": "Programa alternativo con entornos pequeños y personalizados y hasta 2 créditos completos cada nueve semanas, para estudiantes de 16 a 20 años derivados por su escuela actual o anterior.",
+    "fr": "Programme alternatif avec de petits milieux personnalisés et jusqu'à 2 crédits complets toutes les neuf semaines, pour les 16 à 20 ans recommandés par leur école actuelle ou précédente."
+   },
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered",
+   "info": {
+    "how": {
+     "en": "Ask your current or previous school for a referral; it is not part of the Grade 9 SOAR application.",
+     "es": "Pide a tu escuela actual o anterior una derivación; no forma parte de la solicitud de 9.º grado en SOAR.",
+     "fr": "Demande une recommandation à ton école actuelle ou précédente; ce programme ne fait pas partie de la demande SOAR de 9e année."
+    }
+   }
+  },
+  {
+   "id": "tcdsb-fraser-swac",
+   "tag": "alt",
+   "start": "10",
+   "entry": "school",
+   "hosts": [
+    "tcdsb-msgr-fraser-college-isabella-campus",
+    "tcdsb-msgr-fraser-college-norfinch-campus"
+   ],
+   "name": {
+    "en": "Fraser-S.W.A.C. (School Within a College)",
+    "es": "Fraser-S.W.A.C. (School Within a College)",
+    "fr": "Fraser-S.W.A.C. (School Within a College)"
+   },
+   "p": {
+    "en": "One-semester School Within a College programs with George Brown, Humber and Seneca for ages 18-20, earning up to 5 OSSD credits including at least one Dual Credit.",
+    "es": "Programas de un semestre School Within a College con George Brown, Humber y Seneca para edades 18-20, con hasta 5 créditos del OSSD incluido al menos un Dual Credit.",
+    "fr": "Programmes d'un semestre School Within a College avec George Brown, Humber et Seneca pour les 18 à 20 ans, donnant jusqu'à 5 crédits du DESO dont au moins un crédit en double reconnaissance."
+   },
+   "url": "https://www.tcdsb.org/o/msgrfrasercollege/page/programs-offered"
+  }
+ ],
+ "sessions": [],
+ "notes": [
+  "Board-wide 2026-27 open house dates and times come from the board's published open house schedule sheet; each school's own page was used to confirm them for the 19 schools in this slice.",
+  "The board's registration page says IB applications are handled directly by the IB schools, while the 2026-27 SOAR guide includes an IB section; both statements are kept and families are told to confirm with the school.",
+  "Priority/waiting-list rules for applicants from outside Toronto are in the SOAR guide and are summarised in the registration docs.",
+  "Hosts are limited to the 19 schools of this slice; other TCDSB schools (for example Neil McNeil, Notre Dame, St. Basil-the-Great, St. John Paul II, St. Mary, St. Patrick) offer further CAP, IB, STEAM, Extended French and arts programs that belong to the other slice."
+ ]
+}

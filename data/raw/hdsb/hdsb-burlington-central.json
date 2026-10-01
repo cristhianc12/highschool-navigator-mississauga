@@ -1,0 +1,149 @@
+{
+ "id": "hdsb-burlington-central",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.hdsb.ca/bch/",
+ "sources": [
+  "https://www.hdsb.ca/bch/our-school/about-us/",
+  "https://www.hdsb.ca/bch/academics-student-experience/course-selection/",
+  "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/cooperative-education/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/dual-credit-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/ontario-youth-apprenticeship-program-oyap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/international-baccalaureate-ib-program/",
+  "https://www.hdsb.ca/academics-resources/french-immersion/",
+  "https://www.hdsb.ca/bch/academics-student-experience/programs-pathways-tools/specialist-high-skills-major-shsm/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate Diploma Programme (IBDP Prep and IBDP)",
+   "note": {
+    "en": "IBDP Prep in Grades 9-10 (Ontario credits with extensions) leads to the two-year IB Diploma Programme in Grades 11-12; applications are handled centrally by the board.",
+    "es": "IBDP Prep en 9.º y 10.º grado (créditos de Ontario con extensiones) conduce al Programa del Diploma IB de dos años en 11.º y 12.º; el consejo escolar gestiona las solicitudes de forma centralizada.",
+    "fr": "L'IBDP Prep en 9e et 10e année (crédits de l'Ontario avec approfondissements) mène au Programme du diplôme de l'IB de deux ans en 11e et 12e année; le conseil traite les demandes de façon centralisée."
+   },
+   "entry": "apply",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/international-baccalaureate-ib-program/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion for students who completed French Immersion in an Ontario elementary school or have at least 3800 hours of French by the end of Grade 8; 10 FI credits earn the Certificate of French Immersion Studies.",
+    "es": "Inmersión en francés para estudiantes que completaron la inmersión en una primaria de Ontario o que acumulan al menos 3800 horas de francés al terminar 8.º grado; 10 créditos de FI otorgan el Certificate of French Immersion Studies.",
+    "fr": "Immersion française pour les élèves ayant terminé l'immersion dans une école élémentaire de l'Ontario ou cumulant au moins 3800 heures de français à la fin de la 8e année; 10 crédits d'immersion donnent le Certificate of French Immersion Studies."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Secondary Gifted Cluster (SGC)",
+   "note": {
+    "en": "Secondary Gifted Cluster: students identified as Gifted through IPRC are grouped within regular classes with a curriculum differentiated in breadth, depth and pace.",
+    "es": "Secondary Gifted Cluster: estudiantes identificados como dotados mediante IPRC se agrupan dentro de clases regulares con un currículo diferenciado en amplitud, profundidad y ritmo.",
+    "fr": "Secondary Gifted Cluster : les élèves identifiés comme surdoués par le CIPR sont regroupés dans des classes ordinaires avec un curriculum différencié en ampleur, en profondeur et en rythme."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "other",
+   "name": "ESL/ELD Centre School",
+   "note": {
+    "en": "Centre school for multilingual learners with English as a Second Language / English Literacy Development courses.",
+    "es": "Escuela centro para estudiantes multilingües con cursos de inglés como segundo idioma / desarrollo de la lectoescritura en inglés.",
+    "fr": "École centre pour apprenants multilingues avec cours d'anglais langue seconde / développement de la littératie en anglais."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 sector courses, certifications, experiential learning and a co-op placement.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos del sector, certificaciones, aprendizaje experiencial y una colocación de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours sectoriels, des certifications, de l'apprentissage expérientiel et un stage d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://www.hdsb.ca/bch/academics-student-experience/programs-pathways-tools/specialist-high-skills-major-shsm/"
+  }
+ ],
+ "shsm": [
+  "Arts & Culture",
+  "Construction / Electrical",
+  "Engineering, Manufacturing & Robotics"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "focus": {
+  "en": "Grade 7-12 school in a 1922 heritage building serving English and French Immersion students and offering the IB program.",
+  "es": "Escuela de 7.º a 12.º grado en un edificio patrimonial de 1922, con programas en inglés e inmersión en francés y el programa IB.",
+  "fr": "École de la 7e à la 12e année dans un édifice patrimonial de 1922, offrant les programmes anglais et d'immersion française ainsi que le programme de l'IB."
+ },
+ "calendarUrl": "https://media-003-ca.cdn.govstack.com/hdsb-015-ca/media/pahftndt/2025-2026-bchs-chart-of-course-offerings.pdf",
+ "admissions": [
+  {
+   "program": "IBDP Prep / International Baccalaureate Diploma Programme",
+   "tag": "ib",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/international-baccalaureate-ib-program/",
+   "elig": {
+    "en": "All students interested in IBDP Prep or the IB Diploma are encouraged to apply; applicants are accepted if space is available, otherwise a central random selection is used and unsuccessful applicants are waitlisted.",
+    "es": "Se anima a todos los estudiantes interesados en IBDP Prep o en el Diploma IB a solicitar; se aceptan si hay cupo; si no, se usa una selección aleatoria central y los no seleccionados quedan en lista de espera.",
+    "fr": "Tous les élèves intéressés par l'IBDP Prep ou le diplôme de l'IB sont invités à présenter une demande; ils sont acceptés s'il y a de la place, sinon une sélection aléatoire centrale est utilisée et les candidats non retenus sont placés sur une liste d'attente."
+   },
+   "dates": {
+    "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+    "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+    "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+   },
+   "submit": [
+    {
+     "en": "Online IB application (board application form)",
+     "es": "Solicitud IB en línea (formulario del consejo escolar)",
+     "fr": "Demande IB en ligne (formulaire du conseil scolaire)"
+    }
+   ],
+   "know": [
+    {
+     "en": "The IB Prep program in Grades 9-10 is offered at no cost (HDSB news release, Nov. 2025).",
+     "es": "El programa IB Prep de 9.º y 10.º grado se ofrece sin costo (comunicado del HDSB, nov. de 2025).",
+     "fr": "Le programme IB Prep de 9e et 10e année est offert sans frais (communiqué du HDSB, nov. 2025)."
+    },
+    {
+     "en": "Diploma students take six subjects (3 at Higher Level, 3 at Standard Level) plus Theory of Knowledge, Extended Essay and CAS.",
+     "es": "Los estudiantes del diploma cursan seis asignaturas (3 de nivel superior y 3 de nivel estándar) más Theory of Knowledge, Extended Essay y CAS.",
+     "fr": "Les élèves du diplôme suivent six matières (3 au niveau supérieur, 3 au niveau standard) ainsi que Theory of Knowledge, Extended Essay et CAS."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "format": null,
+   "title": "Grade 8 Information Night and IB Information Night (6:30-8:30 p.m.)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  }
+ ],
+ "missing": [
+  "Course chart is the 2025-2026 BCHS chart of course offerings (2026-27 not found)",
+  "No fees stated for IB beyond the Grade 9-10 prep being free",
+  "Co-op, Dual Credit and OYAP availability taken from the board pages (all secondary schools), not from a school-specific page"
+ ],
+ "kv": {
+  "langs": {
+   "en": "English; French Immersion",
+   "es": "Inglés; inmersión en francés",
+   "fr": "Anglais; immersion française"
+  }
+ }
+}

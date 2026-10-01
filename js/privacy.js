@@ -1,4 +1,5 @@
 import "./pwa.js";
+import "./a11y.js";
 import { trackingOff, setTrackingOff, autoOff } from "./track.js";
 import { LANGS, madeWith } from "./content.js";
 import { PRIV, CONTACT_URL, UPDATED } from "./privacy-content.js";

@@ -116,6 +116,7 @@ const where = (el) =>
 const BOARD_HOSTS = /(dpcdsb|peelschools|tdsb|tcdsb|yrdsb|ycdsb|hdsb|hcdsb|ddsb|dcdsb|csviamonde|cscmonavenir|kprschools|pvnccdsb)\./;
 function outboundKind(a, host) {
   if (/google\.[a-z.]+$/.test(host) && /maps/.test(a.href)) return "directions";
+  if (a.hasAttribute("data-support")) return "support";
   if (/github\.com$/.test(host)) return "report";
   if (/fraserinstitute/.test(host)) return "fraser";
   if (/openstreetmap/.test(host)) return "osm";

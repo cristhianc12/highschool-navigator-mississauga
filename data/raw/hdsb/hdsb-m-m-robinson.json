@@ -1,0 +1,116 @@
+{
+ "id": "hdsb-m-m-robinson",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.hdsb.ca/mmr/",
+ "sources": [
+  "https://www.hdsb.ca/mmr/our-school/about-us/",
+  "https://www.hdsb.ca/mmr/academics-student-experience/course-selection/",
+  "https://www.haltonpathways.ca/schools/mm-robinson-high-school",
+  "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/cooperative-education/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/dual-credit-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/ontario-youth-apprenticeship-program-oyap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+  "https://www.hdsb.ca/academics-resources/french-immersion/",
+  "https://www.hdsb.ca/mmr/academics-student-experience/programs-pathways-tools/specialist-high-skills-major-shsm/"
+ ],
+ "programs": [
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion for students who completed French Immersion in an Ontario elementary school or have at least 3800 hours of French by the end of Grade 8; 10 FI credits earn the Certificate of French Immersion Studies.",
+    "es": "Inmersión en francés para estudiantes que completaron la inmersión en una primaria de Ontario o que acumulan al menos 3800 horas de francés al terminar 8.º grado; 10 créditos de FI otorgan el Certificate of French Immersion Studies.",
+    "fr": "Immersion française pour les élèves ayant terminé l'immersion dans une école élémentaire de l'Ontario ou cumulant au moins 3800 heures de français à la fin de la 8e année; 10 crédits d'immersion donnent le Certificate of French Immersion Studies."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Secondary Gifted Cluster (SGC)",
+   "note": {
+    "en": "Secondary Gifted Cluster: students identified as Gifted through IPRC are grouped within regular classes with a curriculum differentiated in breadth, depth and pace.",
+    "es": "Secondary Gifted Cluster: estudiantes identificados como dotados mediante IPRC se agrupan dentro de clases regulares con un currículo diferenciado en amplitud, profundidad y ritmo.",
+    "fr": "Secondary Gifted Cluster : les élèves identifiés comme surdoués par le CIPR sont regroupés dans des classes ordinaires avec un curriculum différencié en ampleur, en profondeur et en rythme."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "other",
+   "name": "Locally Developed/Essential Pathway Program",
+   "note": {
+    "en": "Locally Developed/Essential pathway with cross-curricular, hands-on courses in literacy and numeracy; placement is arranged with the Grade 8 SERT and the secondary Head of Special Education.",
+    "es": "Trayectoria Locally Developed/Essential con cursos interdisciplinarios y prácticos de lectoescritura y matemáticas; la colocación se coordina con el SERT de 8.º grado y la jefatura de educación especial de secundaria.",
+    "fr": "Parcours Locally Developed/Essential avec cours interdisciplinaires et pratiques en littératie et en numératie; le placement est organisé avec l'enseignant-ressource en éducation spécialisée de 8e année et le chef de l'éducation spécialisée au secondaire."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/locally-developedessential-pathway-program/"
+  },
+  {
+   "tag": "other",
+   "name": "Community Pathways Program (CPP)",
+   "note": {
+    "en": "Community Pathways Program (Grade 9 to age 21) with non-credit courses in communication, daily living and work-readiness skills; no application, students must meet exceptionality requirements and the IPRC process.",
+    "es": "Community Pathways Program (de 9.º grado hasta los 21 años) con cursos sin créditos en comunicación, vida diaria y preparación laboral; sin solicitud, el estudiante debe cumplir los requisitos de excepcionalidad y el proceso IPRC.",
+    "fr": "Community Pathways Program (de la 9e année jusqu'à 21 ans) avec cours sans crédit en communication, vie quotidienne et préparation au travail; aucune demande, l'élève doit répondre aux exigences d'exceptionnalité et au processus du CIPR."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 sector courses, certifications, experiential learning and a co-op placement.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos del sector, certificaciones, aprendizaje experiencial y una colocación de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours sectoriels, des certifications, de l'apprentissage expérientiel et un stage d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://www.hdsb.ca/mmr/academics-student-experience/programs-pathways-tools/specialist-high-skills-major-shsm/"
+  }
+ ],
+ "shsm": [
+  "Arts & Culture",
+  "Business",
+  "Construction and Electrical Focus",
+  "Manufacturing, Engineering & Robotics"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "focus": {
+  "en": "Burlington school with programs in the arts, technology, business and languages (including French Immersion) and OYAP/SHSM.",
+  "es": "Escuela de Burlington con programas en artes, tecnología, negocios e idiomas (incluida la inmersión en francés) y OYAP/SHSM.",
+  "fr": "École de Burlington offrant des programmes en arts, technologie, affaires et langues (dont l'immersion française) ainsi que OYAP/SHSM."
+ },
+ "calendarUrl": "https://docs.google.com/document/d/15JNKGa6A-sws8SghuevcSwP0Y9k6BUE1Ud98JGk8kxM/edit?usp=sharing?tab=t.0",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-25",
+   "time": "18:30",
+   "format": null,
+   "title": "Grade 8 Information Night (6:30-8:30 p.m.)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  }
+ ],
+ "missing": [
+  "Halton Pathways also lists Health & Wellness (Community Services & Health Promotion) and Transportation SHSM for MMR; the school's page lists four sectors",
+  "Board Grade 8 table shows 'Advanced Placement' for MMR but the board AP page does not list MMR; no AP program recorded",
+  "No fees stated for IB beyond the Grade 9-10 prep being free",
+  "Co-op, Dual Credit and OYAP availability taken from the board pages (all secondary schools), not from a school-specific page"
+ ],
+ "kv": {
+  "langs": {
+   "en": "English; French Immersion",
+   "es": "Inglés; inmersión en francés",
+   "fr": "Anglais; immersion française"
+  }
+ }
+}

@@ -1,0 +1,792 @@
+{
+ "board": "hdsb",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.hdsb.ca/students-families/register-for-school/",
+  "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/international-baccalaureate-ib-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/i-stem/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/specialist-high-skills-major-shsm/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/cooperative-education/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/dual-credit-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/ontario-youth-apprenticeship-program-oyap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/locally-developedessential-pathway-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/school-within-a-college-swac/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+  "https://www.hdsb.ca/academics-resources/french-immersion/",
+  "https://www.hdsb.ca/schools/transfer-schools-within-the-hdsb/",
+  "https://www.hdsb.ca/news-spotlight-on-schools/posts/halton-district-school-board-hosts-board-wide-interactive-secondary-school-open-house-event-on-sept-26/",
+  "https://www.hdsb.ca/news-spotlight-on-schools/posts/ap-vs-ib-which-advanced-program-is-right-for-your-child/",
+  "https://www.hdsb.ca/our-board/contact-us/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/the-academy-for-athletic-performance-and-excellence-apex/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/",
+  "https://www.haltonpathways.ca/"
+ ],
+ "registration": {
+  "steps": [
+   {
+    "en": "Find your home school with the board's Find My Local School tool; for out-of-area transfers, contact the school you want to attend directly.",
+    "es": "Encuentre su escuela asignada con la herramienta Find My Local School del consejo escolar; para traslados fuera de zona, comuníquese directamente con la escuela deseada.",
+    "fr": "Trouvez votre école de secteur avec l'outil Find My Local School du conseil; pour un transfert hors secteur, communiquez directement avec l'école souhaitée."
+   },
+   {
+    "en": "Complete the HDSB Student Registration Form (parent/guardian, or the student if 18 or older) and register in person at your local school, OR pre-register online through the HDSB online student pre-registration portal.",
+    "es": "Complete el formulario HDSB Student Registration Form (padre/madre/tutor, o el estudiante si tiene 18 años o más) y regístrese en persona en su escuela, O preinscríbase en línea mediante el portal de preinscripción del HDSB.",
+    "fr": "Remplissez le formulaire HDSB Student Registration Form (parent/tuteur, ou l'élève s'il a 18 ans ou plus) et inscrivez-vous en personne à votre école de secteur, OU préinscrivez-vous en ligne par le portail de préinscription du HDSB."
+   },
+   {
+    "en": "Bring the required original documents to your registration appointment at the school (school office staff contact you after an online pre-registration).",
+    "es": "Lleve los documentos originales requeridos a su cita de inscripción en la escuela (el personal de la oficina escolar le contacta tras una preinscripción en línea).",
+    "fr": "Apportez les documents originaux requis à votre rendez-vous d'inscription à l'école (le personnel du secrétariat communique avec vous après une préinscription en ligne)."
+   },
+   {
+    "en": "New or returning to Ontario: use the Where Do I Register tool to find out whether to start at your home school or at the HDSB Welcome Centre.",
+    "es": "Si es nuevo en Ontario o regresa a la provincia: use la herramienta Where Do I Register para saber si debe comenzar en su escuela o en el HDSB Welcome Centre.",
+    "fr": "Nouveau en Ontario ou de retour dans la province : utilisez l'outil Where Do I Register pour savoir si vous devez commencer à votre école de secteur ou au HDSB Welcome Centre."
+   }
+  ],
+  "docs": [
+   {
+    "en": "Proof of age (e.g., birth certificate, Canadian passport, citizenship or permanent resident documents)",
+    "es": "Prueba de edad (p. ej., acta de nacimiento, pasaporte canadiense, documentos de ciudadanía o de residencia permanente)",
+    "fr": "Preuve d'âge (p. ex., acte de naissance, passeport canadien, documents de citoyenneté ou de résidence permanente)"
+   },
+   {
+    "en": "Proof of address: any two current original documents showing the student's home address and a parent/guardian's name (e.g., property tax bill, bank statement, utility bill)",
+    "es": "Prueba de domicilio: dos documentos originales vigentes que muestren la dirección del estudiante y el nombre de un padre/tutor (p. ej., impuesto predial, estado de cuenta bancario, factura de servicios)",
+    "fr": "Preuve d'adresse : deux documents originaux courants indiquant l'adresse de l'élève et le nom d'un parent/tuteur (p. ex., compte de taxes, relevé bancaire, facture de services publics)"
+   },
+   {
+    "en": "Proof of the child's citizenship (birth certificate, passport, Record of Landing or Permanent Resident Card)",
+    "es": "Prueba de ciudadanía del menor (acta de nacimiento, pasaporte, Record of Landing o tarjeta de residente permanente)",
+    "fr": "Preuve de citoyenneté de l'enfant (acte de naissance, passeport, Record of Landing ou carte de résident permanent)"
+   },
+   {
+    "en": "Proof of the parent/guardian's citizenship or immigration status (passport, citizenship card, PR card, refugee documents, study or work permit)",
+    "es": "Prueba de ciudadanía o estatus migratorio del padre/tutor (pasaporte, tarjeta de ciudadanía, tarjeta PR, documentos de refugio, permiso de estudio o trabajo)",
+    "fr": "Preuve de citoyenneté ou de statut d'immigration du parent/tuteur (passeport, carte de citoyenneté, carte RP, documents de réfugié, permis d'études ou de travail)"
+   },
+   {
+    "en": "Proof of custody (court order) if you are not the parent and the student is under 18",
+    "es": "Prueba de custodia (orden judicial) si no es el padre/madre y el estudiante es menor de 18 años",
+    "fr": "Preuve de garde (ordonnance du tribunal) si vous n'êtes pas le parent et que l'élève a moins de 18 ans"
+   },
+   {
+    "en": "Proof of immunization reported to Halton Region Public Health or a valid vaccine exemption",
+    "es": "Comprobante de vacunación informado a Halton Region Public Health o una exención de vacunas válida",
+    "fr": "Preuve d'immunisation déclarée à la Santé publique de la région de Halton ou exemption vaccinale valide"
+   }
+  ],
+  "note": {
+   "en": "Students who transfer out of their designated school are not eligible for board-provided transportation; programs such as AP, IB and I-STEM have their own central application. Contact: HDSB 905-335-3663 (toll-free 866-786-6120), contact@hdsb.ca; Welcome Centre, 215 Ontario St S, Milton, 905-335-3665 ext. 3440, WelcomeCentre@hdsb.ca.",
+   "es": "Los estudiantes que se trasladan fuera de su escuela asignada no tienen derecho al transporte del consejo escolar; programas como AP, IB e I-STEM tienen su propia solicitud central. Contacto: HDSB 905-335-3663 (línea gratuita 866-786-6120), contact@hdsb.ca; Welcome Centre, 215 Ontario St S, Milton, 905-335-3665 ext. 3440, WelcomeCentre@hdsb.ca.",
+   "fr": "Les élèves qui changent d'école hors de leur école désignée n'ont pas droit au transport fourni par le conseil; des programmes comme AP, IB et I-STEM ont leur propre demande centrale. Coordonnées : HDSB 905-335-3663 (sans frais 866-786-6120), contact@hdsb.ca; Welcome Centre, 215 Ontario St S, Milton, 905-335-3665 poste 3440, WelcomeCentre@hdsb.ca."
+  },
+  "url": "https://www.hdsb.ca/students-families/register-for-school/",
+  "dates": [
+   {
+    "en": "AP, IB and I-STEM Grade 9 applications: Oct. 30 to Nov. 30, 2026 (11:59 p.m.); status by Dec. 4; accept by Dec. 11, 2026.",
+    "es": "Solicitudes AP, IB e I-STEM para 9.º grado: del 30 de octubre al 30 de noviembre de 2026 (11:59 p. m.); estado a más tardar el 4 de diciembre; aceptar a más tardar el 11 de diciembre de 2026.",
+    "fr": "Demandes AP, IB et I-STEM pour la 9e année : du 30 octobre au 30 novembre 2026 (23 h 59); état de la demande au plus tard le 4 décembre; acceptation au plus tard le 11 décembre 2026."
+   }
+  ],
+  "contact": {
+   "phone": "905-335-3663",
+   "tollFree": "866-786-6120",
+   "email": "contact@hdsb.ca",
+   "welcomeCentre": "215 Ontario St S, Milton; 905-335-3665 ext. 3440; WelcomeCentre@hdsb.ca"
+  }
+ },
+ "programs": [
+  {
+   "id": "hdsb-ap-prep",
+   "tag": "ap",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hdsb-acton-district-school",
+    "hdsb-aldershot",
+    "hdsb-dr-frank-j-hayden",
+    "hdsb-garth-webb",
+    "hdsb-milton-district",
+    "hdsb-nelson",
+    "hdsb-thomas-a-blakelock"
+   ],
+   "name": {
+    "en": "Advanced Placement (AP) Prep",
+    "es": "Advanced Placement (AP) Prep",
+    "fr": "Advanced Placement (AP) Prep"
+   },
+   "p": {
+    "en": "Grade 9-10 enriched courses that build independent-learning habits ahead of Grade 11-12 AP courses.",
+    "es": "Cursos enriquecidos de 9.º y 10.º grado que desarrollan hábitos de aprendizaje independiente antes de los cursos AP de 11.º y 12.º.",
+    "fr": "Cours enrichis de 9e et 10e année qui développent l'autonomie d'apprentissage avant les cours AP de 11e et 12e année."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+   "info": {
+    "who": {
+     "en": "All students are welcome; Grade 8 students moving to Grade 9 complete the application to confirm intent to register.",
+     "es": "Todos los estudiantes son bienvenidos; los de 8.º grado que pasan a 9.º completan la solicitud para confirmar su intención de inscribirse.",
+     "fr": "Tous les élèves sont bienvenus; les élèves de 8e année qui passent en 9e année remplissent la demande pour confirmer leur intention de s'inscrire."
+    },
+    "how": {
+     "en": "Online application; if school space is limited, a randomized selection process occurs.",
+     "es": "Solicitud en línea; si el cupo de la escuela es limitado, se realiza una selección aleatoria.",
+     "fr": "Demande en ligne; si les places de l'école sont limitées, un processus de sélection aléatoire est utilisé."
+    },
+    "dates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    },
+    "keyDates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    },
+    "reqs": [
+     {
+      "en": "Students earn the Grade 9 or 10 Ontario credits on the same provincial curriculum with enrichment",
+      "es": "Los estudiantes obtienen los créditos de Ontario de 9.º o 10.º con el mismo currículo provincial más enriquecimiento",
+      "fr": "Les élèves obtiennent les crédits de 9e ou 10e année de l'Ontario selon le même curriculum provincial avec enrichissement"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hdsb-ap-courses",
+   "tag": "ap",
+   "start": "11",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-abbey-park",
+    "hdsb-acton-district-school",
+    "hdsb-aldershot",
+    "hdsb-dr-frank-j-hayden",
+    "hdsb-elsie-macgill",
+    "hdsb-garth-webb",
+    "hdsb-iroquois-ridge",
+    "hdsb-milton-district",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock"
+   ],
+   "name": {
+    "en": "Advanced Placement (AP) courses and exams",
+    "es": "Cursos y exámenes Advanced Placement (AP)",
+    "fr": "Cours et examens Advanced Placement (AP)"
+   },
+   "p": {
+    "en": "Grade 11-12 courses with university-level extensions and an optional external AP exam in May.",
+    "es": "Cursos de 11.º y 12.º con extensiones de nivel universitario y un examen externo AP opcional en mayo.",
+    "fr": "Cours de 11e et 12e année avec approfondissements de niveau universitaire et examen externe AP facultatif en mai."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+   "info": {
+    "who": {
+     "en": "Any student may enrol through regular course selection; AP exams are open to all students registered in the HDSB, including by self-study.",
+     "es": "Cualquier estudiante puede inscribirse mediante la selección regular de cursos; los exámenes AP están abiertos a todos los estudiantes del HDSB, incluso por autoestudio.",
+     "fr": "Tout élève peut s'inscrire par le choix de cours habituel; les examens AP sont ouverts à tous les élèves inscrits au HDSB, y compris par autoapprentissage."
+    },
+    "how": {
+     "en": "Grades 10-12: select AP courses in regular course selection; register and pay for exams in October.",
+     "es": "10.º a 12.º: elija los cursos AP en la selección regular; inscríbase y pague los exámenes en octubre.",
+     "fr": "10e à 12e année : choisir les cours AP lors du choix de cours habituel; s'inscrire aux examens et les payer en octobre."
+    },
+    "reqs": [
+     {
+      "en": "No charge for AP courses or self-study; AP exams cost $140 - $200",
+      "es": "Los cursos AP y el autoestudio no tienen costo; los exámenes AP cuestan de $140 a $200",
+      "fr": "Aucuns frais pour les cours AP ni l'autoapprentissage; les examens AP coûtent de 140 $ à 200 $"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hdsb-ibdp-prep",
+   "tag": "ib",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-georgetown-district",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "IB Diploma Programme Prep (IBDP Prep)",
+    "es": "Preparación para el Diploma IB (IBDP Prep)",
+    "fr": "Préparation au diplôme de l'IB (IBDP Prep)"
+   },
+   "p": {
+    "en": "Grade 9-10 Ontario credit courses with inquiry and research extensions that prepare students for the IB Diploma.",
+    "es": "Cursos con créditos de Ontario de 9.º y 10.º con extensiones de indagación e investigación que preparan para el Diploma IB.",
+    "fr": "Cours à crédits de l'Ontario de 9e et 10e année avec approfondissements d'enquête et de recherche qui préparent au diplôme de l'IB."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/international-baccalaureate-ib-program/",
+   "info": {
+    "who": {
+     "en": "All students interested are encouraged to apply; the IBDP is open to any secondary student.",
+     "es": "Se anima a solicitar a todos los estudiantes interesados; el IBDP está abierto a cualquier estudiante de secundaria.",
+     "fr": "Tous les élèves intéressés sont invités à postuler; l'IBDP est ouvert à tout élève du secondaire."
+    },
+    "how": {
+     "en": "Online application. Accepted if space is available; otherwise central random selection with computer-generated numbers and a waitlist.",
+     "es": "Solicitud en línea. Se acepta si hay cupo; si no, selección aleatoria central con números generados por computadora y lista de espera.",
+     "fr": "Demande en ligne. Acceptation s'il y a de la place; sinon sélection aléatoire centrale par numéros générés par ordinateur et liste d'attente."
+    },
+    "dates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    },
+    "keyDates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    },
+    "reqs": [
+     {
+      "en": "Prep years are graded on Ontario standards only",
+      "es": "Los años de preparación se califican solo con los estándares de Ontario",
+      "fr": "Les années de préparation sont évaluées uniquement selon les normes de l'Ontario"
+     },
+     {
+      "en": "Offered at no cost (HDSB news release, Nov. 2025)",
+      "es": "Se ofrece sin costo (comunicado del HDSB, nov. de 2025)",
+      "fr": "Offert sans frais (communiqué du HDSB, nov. 2025)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hdsb-ibdp",
+   "tag": "ib",
+   "start": "11",
+   "entry": "apply",
+   "hosts": [
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-georgetown-district",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "International Baccalaureate Diploma Programme (IBDP)",
+    "es": "International Baccalaureate Diploma Programme (IBDP)",
+    "fr": "Programme du diplôme de l'International Baccalaureate (IBDP)"
+   },
+   "p": {
+    "en": "Two-year diploma with six subjects (3 Higher Level, 3 Standard Level) plus Theory of Knowledge, Extended Essay and CAS.",
+    "es": "Diploma de dos años con seis asignaturas (3 de nivel superior, 3 de nivel estándar) más Theory of Knowledge, Extended Essay y CAS.",
+    "fr": "Diplôme de deux ans comprenant six matières (3 au niveau supérieur, 3 au niveau standard) plus Theory of Knowledge, Extended Essay et CAS."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/international-baccalaureate-ib-program/",
+   "info": {
+    "who": {
+     "en": "Open to any secondary student who wishes to pursue the IB Diploma.",
+     "es": "Abierto a cualquier estudiante de secundaria que desee cursar el Diploma IB.",
+     "fr": "Ouvert à tout élève du secondaire qui souhaite poursuivre le diplôme de l'IB."
+    },
+    "how": {
+     "en": "Same central online application as IBDP Prep.",
+     "es": "La misma solicitud central en línea que IBDP Prep.",
+     "fr": "La même demande centrale en ligne que pour l'IBDP Prep."
+    },
+    "dates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    },
+    "keyDates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    }
+   }
+  },
+  {
+   "id": "hdsb-i-stem",
+   "tag": "stem",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hdsb-aldershot",
+    "hdsb-elsie-macgill",
+    "hdsb-thomas-a-blakelock"
+   ],
+   "name": {
+    "en": "I-STEM",
+    "es": "I-STEM",
+    "fr": "I-STEM"
+   },
+   "p": {
+    "en": "Four-year regional project-based program with Grade 11 AP Capstone Seminar and three Grade 12 graduation pathways.",
+    "es": "Programa regional de cuatro años basado en proyectos, con AP Capstone Seminar en 11.º y tres vías de graduación en 12.º.",
+    "fr": "Programme régional de quatre ans axé sur les projets, avec l'AP Capstone Seminar en 11e année et trois parcours de fin d'études en 12e année."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/i-stem/",
+   "info": {
+    "who": {
+     "en": "Students registered in the Grade 9 de-streamed pathway who are interested in STEM; open to students from within Halton and Ontario.",
+     "es": "Estudiantes de la trayectoria de 9.º grado sin streaming interesados en STEM; abierto a estudiantes de Halton y de Ontario.",
+     "fr": "Élèves inscrits au parcours décloisonné de 9e année et intéressés par les STIM; ouvert aux élèves de Halton et de l'Ontario."
+    },
+    "how": {
+     "en": "Online application; random selection with waitlist if applications exceed capacity; panel also looks for equitable gender representation; coordinated centrally.",
+     "es": "Solicitud en línea; selección aleatoria con lista de espera si las solicitudes superan la capacidad; el comité busca también una representación de género equitativa; coordinado de forma central.",
+     "fr": "Demande en ligne; sélection aléatoire avec liste d'attente si les demandes dépassent la capacité; le comité veille aussi à une représentation équitable des genres; coordonné de façon centrale."
+    },
+    "dates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    },
+    "keyDates": {
+     "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+     "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+     "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+    }
+   }
+  },
+  {
+   "id": "hdsb-french-immersion",
+   "tag": "fi",
+   "start": "9",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-acton-district-school",
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-garth-webb",
+    "hdsb-georgetown-district",
+    "hdsb-iroquois-ridge",
+    "hdsb-milton-district",
+    "hdsb-m-m-robinson",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "French Immersion (Grades 9-12)",
+    "es": "Inmersión en francés (9.º a 12.º grado)",
+    "fr": "Immersion française (9e à 12e année)"
+   },
+   "p": {
+    "en": "Continuation for students who completed French Immersion or have 3800+ hours of French by Grade 8; 10 FI credits earn the certificate.",
+    "es": "Continuación para estudiantes que completaron la inmersión o tienen más de 3800 horas de francés al terminar 8.º; 10 créditos de FI otorgan el certificado.",
+    "fr": "Poursuite pour les élèves ayant terminé l'immersion ou cumulant plus de 3800 heures de français à la fin de la 8e année; 10 crédits d'immersion donnent le certificat."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+   "info": {
+    "who": {
+     "en": "Students currently in French Immersion in Grade 8, or who have at least 3800 hours of French instruction by the end of Grade 8.",
+     "es": "Estudiantes que cursan inmersión en 8.º grado o que acumulan al menos 3800 horas de francés al terminar 8.º.",
+     "fr": "Élèves en immersion française en 8e année ou ayant au moins 3800 heures d'enseignement du français à la fin de la 8e année."
+    },
+    "how": {
+     "en": "No application required. 4 French Immersion language credits (one per grade) plus 6 other courses taught in French.",
+     "es": "No requiere solicitud. 4 créditos de lengua de FI (uno por grado) más 6 cursos adicionales impartidos en francés.",
+     "fr": "Aucune demande requise. 4 crédits de langue d'immersion (un par année) plus 6 autres cours donnés en français."
+    }
+   }
+  },
+  {
+   "id": "hdsb-secondary-gifted-cluster",
+   "tag": "gifted",
+   "start": "9",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-abbey-park",
+    "hdsb-burlington-central",
+    "hdsb-dr-frank-j-hayden",
+    "hdsb-garth-webb",
+    "hdsb-georgetown-district",
+    "hdsb-iroquois-ridge",
+    "hdsb-milton-district",
+    "hdsb-m-m-robinson",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "Secondary Gifted Cluster (SGC)",
+    "es": "Secondary Gifted Cluster (SGC)",
+    "fr": "Secondary Gifted Cluster (SGC)"
+   },
+   "p": {
+    "en": "Gifted-identified students grouped within regular classes with a curriculum differentiated in breadth, depth and pace.",
+    "es": "Estudiantes identificados como dotados agrupados en clases regulares con un currículo diferenciado en amplitud, profundidad y ritmo.",
+    "fr": "Élèves identifiés comme surdoués regroupés dans des classes ordinaires avec un curriculum différencié en ampleur, en profondeur et en rythme."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+   "info": {
+    "who": {
+     "en": "Students identified as Gifted through IPRC.",
+     "es": "Estudiantes identificados como dotados mediante IPRC.",
+     "fr": "Élèves identifiés comme surdoués par le CIPR."
+    },
+    "how": {
+     "en": "No application required; identification through IPRC. Burlington Central, Dr. Frank J. Hayden, T.A. Blakelock and White Oaks are marked 26/27.",
+     "es": "No requiere solicitud; identificación mediante IPRC. Burlington Central, Dr. Frank J. Hayden, T.A. Blakelock y White Oaks figuran como 26/27.",
+     "fr": "Aucune demande requise; identification par le CIPR. Burlington Central, Dr. Frank J. Hayden, T.A. Blakelock et White Oaks sont indiqués 26/27."
+    }
+   }
+  },
+  {
+   "id": "hdsb-shsm",
+   "tag": "shsm",
+   "start": "11",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-acton-district-school",
+    "hdsb-abbey-park",
+    "hdsb-aldershot",
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-elsie-macgill",
+    "hdsb-garth-webb",
+    "hdsb-georgetown-district",
+    "hdsb-iroquois-ridge",
+    "hdsb-milton-district",
+    "hdsb-m-m-robinson",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "Specialist High Skills Major (SHSM)",
+    "es": "Specialist High Skills Major (SHSM)",
+    "fr": "Specialist High Skills Major (SHSM)"
+   },
+   "p": {
+    "en": "Grade 11-12 sector programs with 8-10 bundled courses, certifications, experiential learning and a co-op placement; sectors vary by school.",
+    "es": "Programas sectoriales de 11.º y 12.º con 8 a 10 cursos agrupados, certificaciones, aprendizaje experiencial y colocación cooperativa; los sectores varían según la escuela.",
+    "fr": "Programmes sectoriels de 11e et 12e année avec 8 à 10 cours regroupés, certifications, apprentissage expérientiel et stage coopératif; les secteurs varient selon l'école."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/specialist-high-skills-major-shsm/",
+   "info": {
+    "who": {
+     "en": "Grade 11 and 12 students; students in Grade 10 or above can indicate interest in myBlueprint and speak with their Guidance Counsellor.",
+     "es": "Estudiantes de 11.º y 12.º; desde 10.º se puede indicar interés en myBlueprint y hablar con el orientador.",
+     "fr": "Élèves de 11e et 12e année; dès la 10e année, on peut indiquer son intérêt dans myBlueprint et en parler avec son conseiller en orientation."
+    },
+    "how": {
+     "en": "No application required (board overview).",
+     "es": "No requiere solicitud (resumen del consejo escolar).",
+     "fr": "Aucune demande requise (aperçu du conseil scolaire)."
+    }
+   }
+  },
+  {
+   "id": "hdsb-oyap",
+   "tag": "trades",
+   "start": "11",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-abbey-park",
+    "hdsb-acton-district-school",
+    "hdsb-aldershot",
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-dr-frank-j-hayden",
+    "hdsb-elsie-macgill",
+    "hdsb-garth-webb",
+    "hdsb-georgetown-district",
+    "hdsb-iroquois-ridge",
+    "hdsb-m-m-robinson",
+    "hdsb-milton-district",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "Ontario Youth Apprenticeship Program (OYAP) and OYAP-FAST",
+    "es": "Ontario Youth Apprenticeship Program (OYAP) y OYAP-FAST",
+    "fr": "Programme d'apprentissage pour les jeunes de l'Ontario (OYAP) et OYAP-FAST"
+   },
+   "p": {
+    "en": "Co-op based apprenticeship training in skilled trades, including OYAP-FAST (8 to 11 co-op credits and an OYAP-FAST seal on the OSSD).",
+    "es": "Formación de aprendices en oficios especializados mediante educación cooperativa, incluido OYAP-FAST (8 a 11 créditos cooperativos y un sello OYAP-FAST en el OSSD).",
+    "fr": "Formation d'apprentissage dans les métiers spécialisés par l'éducation coopérative, y compris OYAP-FAST (8 à 11 crédits coopératifs et un sceau OYAP-FAST sur le DESO)."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/ontario-youth-apprenticeship-program-oyap/",
+   "info": {
+    "who": {
+     "en": "Students 15 or older with 14 credits toward the OSSD (OYAP eligibility); Grades 10-12 for OYAP, Grades 11-12 for OYAP-FAST.",
+     "es": "Estudiantes de 15 años o más con 14 créditos para el OSSD (requisito de OYAP); 10.º a 12.º para OYAP, 11.º y 12.º para OYAP-FAST.",
+     "fr": "Élèves de 15 ans ou plus ayant 14 crédits pour le DESO (admissibilité OYAP); 10e à 12e année pour OYAP, 11e et 12e année pour OYAP-FAST."
+    },
+    "how": {
+     "en": "Select the co-op / 'OYFAST' code in myBlueprint course selection and meet with the Guidance Counsellor; parent/guardian consent required for students under 18.",
+     "es": "Elija el código de cooperativa / 'OYFAST' en myBlueprint y reúnase con el orientador; se requiere consentimiento del padre/tutor para menores de 18 años.",
+     "fr": "Choisissez le code coop / « OYFAST » dans myBlueprint et rencontrez le conseiller en orientation; le consentement du parent/tuteur est requis pour les moins de 18 ans."
+    }
+   }
+  },
+  {
+   "id": "hdsb-dual-credit",
+   "tag": "other",
+   "start": "11",
+   "entry": "apply",
+   "hosts": [
+    "hdsb-abbey-park",
+    "hdsb-acton-district-school",
+    "hdsb-aldershot",
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-dr-frank-j-hayden",
+    "hdsb-elsie-macgill",
+    "hdsb-garth-webb",
+    "hdsb-georgetown-district",
+    "hdsb-iroquois-ridge",
+    "hdsb-m-m-robinson",
+    "hdsb-milton-district",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "Dual Credit Program",
+    "es": "Programa de créditos duales (Dual Credit)",
+    "fr": "Programme de crédits duals (Dual Credit)"
+   },
+   "p": {
+    "en": "Grade 11-12 students earn high school and college credits at no college tuition cost through Humber, Mohawk and Sheridan (maximum 4 credits).",
+    "es": "Estudiantes de 11.º y 12.º obtienen créditos de secundaria y de colegio comunitario sin costo de matrícula con Humber, Mohawk y Sheridan (máximo 4 créditos).",
+    "fr": "Les élèves de 11e et 12e année obtiennent des crédits d'école secondaire et collégiaux sans frais de scolarité collégiaux avec Humber, Mohawk et Sheridan (maximum de 4 crédits)."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/dual-credit-program/",
+   "info": {
+    "who": {
+     "en": "Grade 11 or 12 students working at college (C) or mixed (M) level.",
+     "es": "Estudiantes de 11.º o 12.º con nivel de colegio (C) o mixto (M).",
+     "fr": "Élèves de 11e ou 12e année travaillant au niveau collégial (C) ou mixte (M)."
+    },
+    "how": {
+     "en": "Complete the Dual Credit Application Form; a graduation summary from the guidance team is required.",
+     "es": "Complete el formulario de solicitud de Dual Credit; se requiere un resumen de graduación del equipo de orientación.",
+     "fr": "Remplissez le formulaire de demande Dual Credit; un sommaire de diplomation de l'équipe d'orientation est requis."
+    }
+   }
+  },
+  {
+   "id": "hdsb-swac",
+   "tag": "other",
+   "start": "11",
+   "entry": "apply",
+   "hosts": [
+    "hdsb-abbey-park",
+    "hdsb-acton-district-school",
+    "hdsb-aldershot",
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-dr-frank-j-hayden",
+    "hdsb-elsie-macgill",
+    "hdsb-garth-webb",
+    "hdsb-georgetown-district",
+    "hdsb-iroquois-ridge",
+    "hdsb-m-m-robinson",
+    "hdsb-milton-district",
+    "hdsb-nelson",
+    "hdsb-oakville-trafalgar",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "School Within a College (SWAC)",
+    "es": "School Within a College (SWAC)",
+    "fr": "School Within a College (SWAC)"
+   },
+   "p": {
+    "en": "One-semester program at Sheridan College's Oakville campus earning 4+ credits and 2 college credits.",
+    "es": "Programa de un semestre en el campus de Oakville del Sheridan College con 4 o más créditos y 2 créditos universitarios.",
+    "fr": "Programme d'un semestre au campus d'Oakville du Sheridan College avec 4 crédits ou plus et 2 crédits collégiaux."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/school-within-a-college-swac/",
+   "info": {
+    "who": {
+     "en": "Grade 12 students (or re-engaged students) within a semester of graduating with at least 24 credits, who attempted NBE3C1, NBE3U1 or ENG3C1 and show independent learning skills.",
+     "es": "Estudiantes de 12.º (o reincorporados) a un semestre de graduarse con al menos 24 créditos, que cursaron NBE3C1, NBE3U1 o ENG3C1 y tienen habilidades de aprendizaje independiente.",
+     "fr": "Élèves de 12e année (ou réengagés) à un semestre de l'obtention du diplôme avec au moins 24 crédits, ayant complété ou tenté NBE3C1, NBE3U1 ou ENG3C1 et autonomes dans leurs apprentissages."
+    },
+    "how": {
+     "en": "Complete the SWAC application form; enrolment is not guaranteed and spaces are limited.",
+     "es": "Complete el formulario de solicitud SWAC; la inscripción no está garantizada y los cupos son limitados.",
+     "fr": "Remplissez le formulaire de demande SWAC; l'inscription n'est pas garantie et les places sont limitées."
+    }
+   }
+  },
+  {
+   "id": "hdsb-locally-developed",
+   "tag": "other",
+   "start": "9",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-craig-kielburger",
+    "hdsb-georgetown-district",
+    "hdsb-m-m-robinson",
+    "hdsb-nelson",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "Locally Developed/Essential Pathway Program",
+    "es": "Locally Developed/Essential Pathway Program",
+    "fr": "Locally Developed/Essential Pathway Program"
+   },
+   "p": {
+    "en": "Regional pathway with locally developed credits in English, Math, Science, Geography, French and History in Grades 9-10.",
+    "es": "Trayectoria regional con créditos locales en inglés, matemáticas, ciencias, geografía, francés e historia en 9.º y 10.º.",
+    "fr": "Parcours régional avec crédits à élaboration locale en anglais, mathématiques, sciences, géographie, français et histoire en 9e et 10e année."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/locally-developedessential-pathway-program/",
+   "info": {
+    "how": {
+     "en": "Arranged with the parent/guardian, the Grade 8 SERT and the secondary Head of Special Education.",
+     "es": "Se coordina con el padre/tutor, el SERT de 8.º grado y la jefatura de educación especial de secundaria.",
+     "fr": "Organisé avec le parent/tuteur, l'enseignant-ressource de 8e année et le chef de l'éducation spécialisée au secondaire."
+    }
+   }
+  },
+  {
+   "id": "hdsb-community-pathways",
+   "tag": "other",
+   "start": "9",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-craig-kielburger",
+    "hdsb-elsie-macgill",
+    "hdsb-georgetown-district",
+    "hdsb-m-m-robinson",
+    "hdsb-nelson",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "Community Pathways Program (CPP)",
+    "es": "Community Pathways Program (CPP)",
+    "fr": "Community Pathways Program (CPP)"
+   },
+   "p": {
+    "en": "Program from Grade 9 to age 21 with non-credit courses in communication, daily living, social and work-readiness skills.",
+    "es": "Programa de 9.º grado hasta los 21 años con cursos sin créditos en comunicación, vida diaria, habilidades sociales y preparación laboral.",
+    "fr": "Programme de la 9e année jusqu'à 21 ans avec cours sans crédit en communication, vie quotidienne, habiletés sociales et préparation au travail."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+   "info": {
+    "who": {
+     "en": "Students who meet exceptionality requirements through the IPRC process.",
+     "es": "Estudiantes que cumplen los requisitos de excepcionalidad mediante el proceso IPRC.",
+     "fr": "Élèves qui répondent aux exigences d'exceptionnalité par le processus du CIPR."
+    },
+    "how": {
+     "en": "No application required.",
+     "es": "No requiere solicitud.",
+     "fr": "Aucune demande requise."
+    }
+   }
+  },
+  {
+   "id": "hdsb-multilingual-centres",
+   "tag": "other",
+   "start": "9",
+   "entry": "boundary",
+   "hosts": [
+    "hdsb-elsie-macgill",
+    "hdsb-garth-webb",
+    "hdsb-iroquois-ridge",
+    "hdsb-thomas-a-blakelock",
+    "hdsb-burlington-central",
+    "hdsb-craig-kielburger",
+    "hdsb-white-oaks"
+   ],
+   "name": {
+    "en": "ESL / ESL-ELD Centre Schools",
+    "es": "Escuelas centro ESL / ESL-ELD",
+    "fr": "Écoles centres ESL / ESL-ELD"
+   },
+   "p": {
+    "en": "Centre schools offer ESL and/or ELD courses (ESLAO, ESLBO, ESLCO, GLS) for multilingual students at STEP 1-6.",
+    "es": "Las escuelas centro ofrecen cursos ESL y/o ELD (ESLAO, ESLBO, ESLCO, GLS) para estudiantes multilingües en los niveles STEP 1-6.",
+    "fr": "Les écoles centres offrent des cours ESL et/ou ELD (ESLAO, ESLBO, ESLCO, GLS) aux élèves multilingues aux niveaux STEP 1-6."
+   },
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+   "info": {
+    "how": {
+     "en": "No application required.",
+     "es": "No requiere solicitud.",
+     "fr": "Aucune demande requise."
+    }
+   }
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "general",
+   "date": "2026-09-26",
+   "time": null,
+   "format": "In person",
+   "title": "Board-wide interactive Secondary School Open House at Craig Kielburger SS (Grades 6-10; time slots by registration)",
+   "url": "https://www.hdsb.ca/news-spotlight-on-schools/posts/halton-district-school-board-hosts-board-wide-interactive-secondary-school-open-house-event-on-sept-26/"
+  },
+  {
+   "kind": "general",
+   "date": "2026-09-24",
+   "time": null,
+   "format": "Virtual",
+   "title": "New Oakville Secondary School livestream",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "format": "Virtual",
+   "title": "AP / IB / I-STEM livestream (7-8 p.m.)",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-08",
+   "time": null,
+   "format": "Virtual",
+   "title": "Secondary French programming livestream (Core French, French Immersion, DELF)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-26",
+   "time": "18:00",
+   "format": "Virtual",
+   "title": "APEX livestream (new regional sports program at New Oakville SS, opening Sept. 2027)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-02",
+   "time": null,
+   "format": "Virtual",
+   "title": "SHSM, OYAP, Dual Credit and SWAC livestream",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  },
+  {
+   "kind": "general",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "format": "Virtual",
+   "title": "New Oakville Secondary School Grade 8 and 9 virtual open house (6-7 p.m.)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  }
+ ],
+ "notes": [
+  "Board overview page (hdsb-secondary-education-specialized-program-overviews) still shows 2025 dates for some information evenings (Dual Credit/SHSM/OYAP Oct. 22, Community Pathways Nov. 17, Locally Developed Oct. 29, 2025); those dates were not used.",
+  "APEX (Academy for Athletic Performance and Excellence) will launch at New Oakville Secondary School in Sept. 2027; that school is not in this board's work list so no program host is recorded.",
+  "Secondary out-of-area transfer: Grade 9 applications go to the home secondary school (due the second Friday of January); the page only gives the 2026 date (Jan. 9, 2026) so no 2027 date is recorded.",
+  "Entry type 'boundary' is used for programs that need no application (placement through the school, IPRC or course selection); the schema has no better value."
+ ]
+}

@@ -1,5 +1,6 @@
 import "./pwa.js";
 import "./track.js";
+import "./a11y.js";
 import { initSchoolDetail, renderSessionRow, reportUrl } from "./school-detail.js";
 import { SESSIONS } from "./sessions.js";
 import { EXPLAINER } from "./explainer.js";

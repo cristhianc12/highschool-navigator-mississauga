@@ -1,0 +1,155 @@
+{
+ "id": "hdsb-garth-webb",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.hdsb.ca/gws/",
+ "sources": [
+  "https://www.hdsb.ca/gws/our-school/about-us/",
+  "https://www.hdsb.ca/gws/academics-student-experience/course-selection/",
+  "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/cooperative-education/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/dual-credit-program/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/ontario-youth-apprenticeship-program-oyap/",
+  "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/",
+  "https://www.hdsb.ca/academics-resources/french-immersion/",
+  "https://www.hdsb.ca/gws/academics-student-experience/programs-pathways-tools/specialist-high-skills-major-shsm/"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "AP Prep (Grade 9-10)",
+   "note": {
+    "en": "AP Prep (Grades 9-10): Ontario credit courses with enrichment that build independent-learning skills before Grade 11-12 AP courses; Grade 9 entry requires an application.",
+    "es": "AP Prep (9.º y 10.º grado): cursos con créditos de Ontario y enriquecimiento que desarrollan habilidades de aprendizaje independiente antes de los cursos AP de 11.º y 12.º; el ingreso en 9.º grado requiere una solicitud.",
+    "fr": "AP Prep (9e et 10e année) : cours à crédits de l'Ontario avec enrichissement qui développent l'apprentissage autonome avant les cours AP de 11e et 12e année; l'admission en 9e année exige une demande."
+   },
+   "entry": "apply",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/"
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) courses",
+   "note": {
+    "en": "Grade 11 and 12 Advanced Placement courses follow the Ontario curriculum with university-level extensions; the external AP exam in May is optional.",
+    "es": "Los cursos de Advanced Placement de 11.º y 12.º grado siguen el currículo de Ontario con extensiones de nivel universitario; el examen externo de AP de mayo es opcional.",
+    "fr": "Les cours Advanced Placement de 11e et 12e année suivent le curriculum de l'Ontario avec des approfondissements de niveau universitaire; l'examen externe AP de mai est facultatif."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion for students who completed French Immersion in an Ontario elementary school or have at least 3800 hours of French by the end of Grade 8; 10 FI credits earn the Certificate of French Immersion Studies.",
+    "es": "Inmersión en francés para estudiantes que completaron la inmersión en una primaria de Ontario o que acumulan al menos 3800 horas de francés al terminar 8.º grado; 10 créditos de FI otorgan el Certificate of French Immersion Studies.",
+    "fr": "Immersion française pour les élèves ayant terminé l'immersion dans une école élémentaire de l'Ontario ou cumulant au moins 3800 heures de français à la fin de la 8e année; 10 crédits d'immersion donnent le Certificate of French Immersion Studies."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Secondary Gifted Cluster (SGC)",
+   "note": {
+    "en": "Secondary Gifted Cluster: students identified as Gifted through IPRC are grouped within regular classes with a curriculum differentiated in breadth, depth and pace.",
+    "es": "Secondary Gifted Cluster: estudiantes identificados como dotados mediante IPRC se agrupan dentro de clases regulares con un currículo diferenciado en amplitud, profundidad y ritmo.",
+    "fr": "Secondary Gifted Cluster : les élèves identifiés comme surdoués par le CIPR sont regroupés dans des classes ordinaires avec un curriculum différencié en ampleur, en profondeur et en rythme."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "other",
+   "name": "ESL Centre School",
+   "note": {
+    "en": "Centre school for multilingual learners with English as a Second Language / English Literacy Development courses.",
+    "es": "Escuela centro para estudiantes multilingües con cursos de inglés como segundo idioma / desarrollo de la lectoescritura en inglés.",
+    "fr": "École centre pour apprenants multilingues avec cours d'anglais langue seconde / développement de la littératie en anglais."
+   },
+   "entry": "boundary",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/hdsb-secondary-education-specialized-program-overviews/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of 8-10 sector courses, certifications, experiential learning and a co-op placement.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de 8 a 10 cursos del sector, certificaciones, aprendizaje experiencial y una colocación de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de 8 à 10 cours sectoriels, des certifications, de l'apprentissage expérientiel et un stage d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://www.hdsb.ca/gws/academics-student-experience/programs-pathways-tools/specialist-high-skills-major-shsm/"
+  }
+ ],
+ "shsm": [
+  "Environmental SHSM",
+  "Energy SHSM"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "focus": null,
+ "calendarUrl": "https://docs.google.com/document/d/1Mwa0WA1eeowo0ddJ4-AhYAIG43_a2zoO4a1OXGjl1dg/edit?tab=t.0",
+ "admissions": [
+  {
+   "program": "AP Prep (Grade 9 entry)",
+   "tag": "ap",
+   "url": "https://www.hdsb.ca/academics-resources/secondary-programs-pathways-tools/advanced-placement-ap/",
+   "elig": {
+    "en": "All students are welcome to apply to the Advanced Placement program for Grade 9; if space is limited, a randomized selection process is used.",
+    "es": "Todos los estudiantes pueden solicitar el programa Advanced Placement para 9.º grado; si el cupo es limitado, se usa un proceso de selección aleatoria.",
+    "fr": "Tous les élèves peuvent présenter une demande au programme Advanced Placement pour la 9e année; si les places sont limitées, un processus de sélection aléatoire est utilisé."
+   },
+   "fee": {
+    "en": "No charge for AP courses or AP self-study; AP exams have a fee of $140 - $200.",
+    "es": "Los cursos AP y el autoestudio AP no tienen costo; los exámenes AP tienen una tarifa de $140 a $200.",
+    "fr": "Aucuns frais pour les cours AP ni l'autoapprentissage AP; les examens AP coûtent de 140 $ à 200 $."
+   },
+   "dates": {
+    "en": "Online application opens Oct. 30, 2026 and closes Nov. 30, 2026 at 11:59 p.m.; schools inform applicants of their status by Dec. 4, 2026; last date to accept a spot is Dec. 11, 2026.",
+    "es": "La solicitud en línea abre el 30 de octubre de 2026 y cierra el 30 de noviembre de 2026 a las 11:59 p. m.; las escuelas informan el estado de la solicitud a más tardar el 4 de diciembre de 2026; el 11 de diciembre de 2026 es la última fecha para aceptar el cupo.",
+    "fr": "La demande en ligne ouvre le 30 octobre 2026 et ferme le 30 novembre 2026 à 23 h 59; les écoles informent les candidats de l'état de leur demande au plus tard le 4 décembre 2026; le 11 décembre 2026 est la dernière date pour accepter une place."
+   },
+   "submit": [
+    {
+     "en": "Online AP application (board application form)",
+     "es": "Solicitud AP en línea (formulario del consejo escolar)",
+     "fr": "Demande AP en ligne (formulaire du conseil scolaire)"
+    }
+   ],
+   "know": [
+    {
+     "en": "Students must register and pay for AP exams in October; exams are written in May and scored 1 to 5.",
+     "es": "Los estudiantes deben inscribirse y pagar los exámenes AP en octubre; se rinden en mayo y se califican de 1 a 5.",
+     "fr": "Les élèves doivent s'inscrire aux examens AP et les payer en octobre; ils sont passés en mai et notés de 1 à 5."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-19",
+   "time": "18:30",
+   "format": null,
+   "title": "Grade 8 Information Night (6:30-8 p.m.)",
+   "url": "https://www.hdsb.ca/academics-resources/grade-8-to-grade-9-transition/"
+  }
+ ],
+ "missing": [
+  "Halton Pathways lists only an Energy, Engineering and Robotics SHSM for Garth Webb; the school's page lists Environmental and Energy SHSM",
+  "No focus sentence: the About Us page is general",
+  "No fees stated for IB beyond the Grade 9-10 prep being free",
+  "Co-op, Dual Credit and OYAP availability taken from the board pages (all secondary schools), not from a school-specific page"
+ ],
+ "kv": {
+  "langs": {
+   "en": "English; French Immersion",
+   "es": "Inglés; inmersión en francés",
+   "fr": "Anglais; immersion française"
+  }
+ }
+}

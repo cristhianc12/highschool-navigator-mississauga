@@ -5,6 +5,7 @@ import { EXTRAS } from "./school-extras.js";
 import { BOARD_META, boardClass } from "./geo.js";
 import { ROSTER, CURATED_INFO } from "./data/roster.js";
 import { SUMMARY } from "./data/summary.js";
+import { supportHtml } from "./support.js";
 
 const x = (es, en, fr) => ({ es, en, fr });
 
@@ -16,7 +17,7 @@ const MADE_WITH = {
   es: "Hecho con amor por papá y mamá, que los adoran",
   fr: "Fait avec amour par un parent aimant",
 };
-export const madeWith = (lang) => `${MADE_WITH[lang] || MADE_WITH.en} ❤ <b>SBR · CBR</b>`;
+export const madeWith = (lang) => `${MADE_WITH[lang] || MADE_WITH.en} ❤ <b>SBR · CBR</b>${supportHtml(lang) ? `<br>${supportHtml(lang)}` : ""}`;
 
 export const FRASER = {
   report: x(

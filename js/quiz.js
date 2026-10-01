@@ -1,6 +1,7 @@
 import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
 import { systemOf, boardClass, isCatholic } from "./geo.js";
 import { trackQuiz } from "./track.js";
+import "./a11y.js";
 import "./pwa.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 import { initSchoolDetail } from "./school-detail.js";

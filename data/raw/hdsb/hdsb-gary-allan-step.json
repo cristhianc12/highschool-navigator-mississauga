@@ -1,0 +1,20 @@
+{
+ "id": "hdsb-gary-allan-step",
+ "scrapedAt": "2026-10-01",
+ "site": null,
+ "sources": [
+  "https://www.hdsb.ca/academics-resources/adult-alternative-and-continuing-education/"
+ ],
+ "programs": [],
+ "shsm": [],
+ "other": [],
+ "focus": null,
+ "calendarUrl": null,
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No official page read describing STEP (garyallan.ca is blocked by the network proxy; the hdsb.ca Gary Allan pages hold no STEP content)",
+  "Roster site link is an old hdsb.ca SchoolDetails URL that was not used",
+  "No course list, admissions or sessions found"
+ ]
+}

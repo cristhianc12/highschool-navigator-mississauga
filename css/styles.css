@@ -468,3 +468,44 @@ body:has(dialog.sdlg[open]){overflow:hidden}
 .mcluster{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#2B2A4C;color:#fff;font:800 14px var(--font-body);border:3px solid #fff;box-shadow:0 0 0 4px rgba(43,42,76,.25),0 2px 10px rgba(0,0,0,.4)}
 .mappin.n3{font-size:11px}
 .boardh{margin:22px 0 10px;font-size:1.05rem}
+
+/* ---------- High contrast (accessibility). Toggle in the top bar; also follows prefers-contrast: more. ---------- */
+:root[data-contrast="high"]{
+  color-scheme:light;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface2:#F0F0F0; --ink:#000000; --muted:#1A1A1A; --line:#000000;
+  --accent:#2B00A6; --accent-soft:#E8E2FF; --on-accent:#FFFFFF;
+  --cta-bg:#000000; --cta-ink:#FFFFFF;
+  --pink:#8A0050; --sky:#004A80; --coral:#8F1C10; --lime:#2B00A6;
+  --warm:#4A2E00; --warm-soft:#FFF3C4; --apply:#8F1C10; --apply-soft:#FFE4E0;
+  --grad:linear-gradient(#2B00A6,#2B00A6); --shadow:none}
+:root[data-contrast="high"][data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#000000; --surface:#000000; --surface2:#1A1A1A; --ink:#FFFFFF; --muted:#F2F2F2; --line:#FFFFFF;
+  --accent:#A9C7FF; --accent-soft:#12182B; --on-accent:#000000;
+  --cta-bg:#FFE600; --cta-ink:#000000;
+  --pink:#FF9BD0; --sky:#8DD3FF; --coral:#FFB4A8; --lime:#FFE600;
+  --warm:#FFD966; --warm-soft:#2A2000; --apply:#FFB4A8; --apply-soft:#2A0D08;
+  --grad:linear-gradient(#A9C7FF,#A9C7FF); --shadow:none}
+@media (prefers-color-scheme: dark){:root[data-contrast="high"]:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#000000; --surface:#000000; --surface2:#1A1A1A; --ink:#FFFFFF; --muted:#F2F2F2; --line:#FFFFFF;
+  --accent:#A9C7FF; --accent-soft:#12182B; --on-accent:#000000;
+  --cta-bg:#FFE600; --cta-ink:#000000;
+  --pink:#FF9BD0; --sky:#8DD3FF; --coral:#FFB4A8; --lime:#FFE600;
+  --warm:#FFD966; --warm-soft:#2A2000; --apply:#FFB4A8; --apply-soft:#2A0D08;
+  --grad:linear-gradient(#A9C7FF,#A9C7FF); --shadow:none}}
+:root[data-contrast="high"] body{background-image:none}
+:root[data-contrast="high"] .topbar{background:var(--bg);backdrop-filter:none;border-bottom:2px solid var(--ink)}
+:root[data-contrast="high"] .grad{background:none;-webkit-text-fill-color:currentColor;color:var(--accent)}
+:root[data-contrast="high"] .quiz-cta{background:var(--ink);color:var(--bg);border:2px solid var(--ink)}
+:root[data-contrast="high"] .quiz-cta *{color:var(--bg)}
+:root[data-contrast="high"] a{text-decoration:underline;text-underline-offset:3px}
+:root[data-contrast="high"] .card,:root[data-contrast="high"] .school,:root[data-contrast="high"] .btn,:root[data-contrast="high"] .chip,
+:root[data-contrast="high"] .toggle,:root[data-contrast="high"] .theme,:root[data-contrast="high"] .date,:root[data-contrast="high"] .stat,
+:root[data-contrast="high"] input,:root[data-contrast="high"] select,:root[data-contrast="high"] textarea,:root[data-contrast="high"] dialog.sdlg,
+:root[data-contrast="high"] .srow,:root[data-contrast="high"] .cmp-wrap,:root[data-contrast="high"] .mapstage,:root[data-contrast="high"] .lgt{border:2px solid var(--ink)}
+:root[data-contrast="high"] .toggle button[aria-pressed="true"],:root[data-contrast="high"] .theme[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+:root[data-contrast="high"] :focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--bg)}
+:root[data-contrast="high"] dialog.sdlg::backdrop{background:rgba(0,0,0,.8);backdrop-filter:none}
+:root[data-contrast="high"] .muted,:root[data-contrast="high"] .small.muted{color:var(--muted)}
+.support a{font-weight:700}

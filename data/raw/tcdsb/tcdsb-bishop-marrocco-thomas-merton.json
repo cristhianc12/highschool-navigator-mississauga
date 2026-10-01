@@ -1,0 +1,157 @@
+{
+ "id": "tcdsb-bishop-marrocco-thomas-merton",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/bishopmarroccothomasmerton",
+ "sources": [
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/ap-program/",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/regional-arts-centre/",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/shsm/",
+  "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://5il.co/1dlho",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Congregated Advanced Placement (CAP) Program",
+   "note": {
+    "en": "Congregated AP track in Grades 9-11 (at least four CAP courses a year in Grades 9-10) leading to AP exams in Grade 12.",
+    "es": "Itinerario AP congregado de 9.º a 11.º (al menos cuatro cursos CAP por año en 9.º y 10.º) que conduce a exámenes AP en 12.º.",
+    "fr": "Parcours AP regroupé de la 9e à la 11e année (au moins quatre cours CAP par année en 9e et 10e) menant aux examens AP en 12e année."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/ap-program/"
+  },
+  {
+   "tag": "arts",
+   "name": "Regional Arts Centre Program (RAP)",
+   "note": {
+    "en": "Regional Arts Program in dance, drama, instrumental or vocal music and visual arts (design, media, photography), with an Arts Certificate on completion.",
+    "es": "Programa Regional de Artes en danza, teatro, música instrumental o vocal y artes visuales (diseño, medios, fotografía), con un Certificado de Artes al terminar.",
+    "fr": "Programme régional d'arts en danse, art dramatique, musique instrumentale ou vocale et arts visuels (design, médias, photographie), avec un certificat en arts à la fin."
+   },
+   "entry": "audition",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/regional-arts-centre/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM): Arts and Culture, Business, Transportation",
+   "note": {
+    "en": "SHSM for Grades 11-12 in Arts and Culture, Business and Transportation, with a bundle of ten credits, certifications and co-op.",
+    "es": "SHSM para 11.º y 12.º en Arts and Culture, Business y Transportation, con un conjunto de diez créditos, certificaciones y educación cooperativa.",
+    "fr": "SHSM pour la 11e et la 12e année en Arts and Culture, Business et Transportation, avec un ensemble de dix crédits, des certifications et un stage coopératif."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/shsm/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP"
+ ],
+ "focus": {
+  "en": "Congregated Advanced Placement and a Regional Arts Centre in Roncesvalles, with SHSMs in Arts and Culture, Business and Transportation.",
+  "es": "Advanced Placement congregado y un Centro Regional de Artes en Roncesvalles, con SHSM en Arts and Culture, Business y Transportation.",
+  "fr": "Advanced Placement regroupé et un centre régional d'arts à Roncesvalles, avec des SHSM en Arts and Culture, Business et Transportation."
+ },
+ "calendarUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTFNaFvt764PQkq1-27blFXdOuAZ6yDZnKvCASw01N-f3GHjf02lvCY3B1NAw0iLA/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=213724200&single=true",
+ "admissions": [
+  {
+   "program": "Congregated Advanced Placement (CAP) Program",
+   "tag": "ap",
+   "elig": {
+    "en": "Academically inclined students who want enriched learning; open to apply through the TCDSB online application.",
+    "es": "Estudiantes con inclinación académica que quieren un aprendizaje enriquecido; se postula mediante la solicitud en línea del TCDSB.",
+    "fr": "Élèves à l'aise sur le plan scolaire qui veulent un apprentissage enrichi; la demande se fait par la demande en ligne du TCDSB."
+   },
+   "marks": {
+    "en": "The admission team reviews the Grade 7 report card and the Grade 8 progress report card.",
+    "es": "El equipo de admisión revisa el boletín de 7.º y el informe de progreso de 8.º.",
+    "fr": "L'équipe d'admission examine le bulletin de 7e année et le bulletin d'étape de 8e année."
+   },
+   "fee": null,
+   "dates": {
+    "en": "Applications open Sept. 25, 2026 (5 p.m.); specialty program applications close Oct. 30, 2026 (11:59 p.m.); Wave 1 offers Nov. 27, 2026 (accept by Dec. 1); Wave 2 offers Dec. 4, 2026 (accept by Dec. 8).",
+    "es": "Las solicitudes abren el 25 de septiembre de 2026 (5:00 p. m.); las de programas especializados cierran el 30 de octubre de 2026 (11:59 p. m.); ofertas de la Ronda 1 el 27 de noviembre de 2026 (aceptar antes del 1 de diciembre); ofertas de la Ronda 2 el 4 de diciembre de 2026 (aceptar antes del 8 de diciembre).",
+    "fr": "Les demandes ouvrent le 25 septembre 2026 (17 h); celles des programmes spécialisés ferment le 30 octobre 2026 (23 h 59); offres de la vague 1 le 27 novembre 2026 (accepter avant le 1er décembre); offres de la vague 2 le 4 décembre 2026 (accepter avant le 8 décembre)."
+   },
+   "submit": [
+    {
+     "en": "Online application in the TCDSB SOAR system (secsoar.tcdsb.org).",
+     "es": "Solicitud en línea en el sistema SOAR del TCDSB (secsoar.tcdsb.org).",
+     "fr": "Demande en ligne dans le système SOAR du TCDSB (secsoar.tcdsb.org)."
+    },
+    {
+     "en": "Persuasive essay of up to 250 words, community involvement and awards, and a principal reference (CAP section of the application).",
+     "es": "Ensayo persuasivo de hasta 250 palabras, participación comunitaria, premios y una referencia del director (sección CAP de la solicitud).",
+     "fr": "Essai persuasif d'au plus 250 mots, engagement communautaire, distinctions et une référence de la direction (section CAP de la demande)."
+    }
+   ],
+   "know": [
+    {
+     "en": "Students in Grades 9 and 10 are expected to take at least four CAP courses per year.",
+     "es": "Los estudiantes de 9.º y 10.º deben tomar al menos cuatro cursos CAP por año.",
+     "fr": "Les élèves de 9e et 10e année doivent suivre au moins quatre cours CAP par année."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/ap-program/"
+  },
+  {
+   "program": "Regional Arts Centre Program (RAP)",
+   "tag": "arts",
+   "elig": {
+    "en": "Students interested in dance, drama, music or visual arts; the Arts section of the application asks for the program and additional information.",
+    "es": "Estudiantes interesados en danza, teatro, música o artes visuales; la sección de Artes de la solicitud pide el programa e información adicional.",
+    "fr": "Élèves intéressés par la danse, l'art dramatique, la musique ou les arts visuels; la section Arts de la demande demande le programme et des renseignements supplémentaires."
+   },
+   "marks": null,
+   "fee": null,
+   "dates": {
+    "en": "Arts applications and the supplemental application and audition form must reach the school by Oct. 30, 2026.",
+    "es": "Las solicitudes de artes y el formulario suplementario y de audición deben llegar a la escuela antes del 30 de octubre de 2026.",
+    "fr": "Les demandes en arts et le formulaire supplémentaire et d'audition doivent parvenir à l'école au plus tard le 30 octobre 2026."
+   },
+   "submit": [
+    {
+     "en": "Online application in the TCDSB SOAR system (secsoar.tcdsb.org).",
+     "es": "Solicitud en línea en el sistema SOAR del TCDSB (secsoar.tcdsb.org).",
+     "fr": "Demande en ligne dans le système SOAR du TCDSB (secsoar.tcdsb.org)."
+    },
+    {
+     "en": "Supplemental application and audition form downloaded from the application, and a portfolio if asked.",
+     "es": "Formulario suplementario y de audición descargado de la solicitud, y un portafolio si se solicita.",
+     "fr": "Formulaire supplémentaire et d'audition téléchargé depuis la demande, et un portfolio si demandé."
+    }
+   ],
+   "know": [
+    {
+     "en": "Regional Arts students take arts-focused Religion courses.",
+     "es": "Los estudiantes de artes regionales toman cursos de Religión con enfoque artístico.",
+     "fr": "Les élèves du programme régional d'arts suivent des cours de religion axés sur les arts."
+    }
+   ],
+   "url": "https://5il.co/1dlho"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (6:00 to 8:30 p.m.) at 1515 Bloor Street West",
+   "url": "https://www.tcdsb.org/o/bishopmarroccothomasmerton/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No audition dates or audition guides for the Regional Arts Centre program on the school pages"
+ ]
+}

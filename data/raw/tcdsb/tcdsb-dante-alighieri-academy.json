@@ -1,0 +1,67 @@
+{
+ "id": "tcdsb-dante-alighieri-academy",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/dantealighieri",
+ "sources": [
+  "https://www.tcdsb.org/o/dantealighieri/",
+  "https://www.tcdsb.org/o/dantealighieri/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "SHSM programs in Arts and Culture, Business and Health and Wellness.",
+    "es": "Programas SHSM en Arts and Culture, Business y Health and Wellness.",
+    "fr": "Programmes SHSM en Arts and Culture, Business et Health and Wellness."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  },
+  {
+   "tag": "other",
+   "name": "Dual Credit program",
+   "note": {
+    "en": "Dual Credit opportunities are offered through college partnerships.",
+    "es": "Se ofrecen oportunidades de Dual Credit mediante alianzas con colegios universitarios (colleges).",
+    "fr": "Des possibilités de Dual Credit sont offertes grâce à des partenariats avec des collèges."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness"
+ ],
+ "other": [
+  "Dual Credit",
+  "Co-operative Education",
+  "OYAP",
+  "English as a Second Language (Levels A to E)"
+ ],
+ "focus": {
+  "en": "Co-educational Catholic school with SHSMs, Dual Credit, co-op and OYAP, a Grade 9 summer transition credit and a technology-course pathway.",
+  "es": "Escuela católica mixta con SHSM, Dual Credit, educación cooperativa y OYAP, un crédito de transición de verano para 9.º y cursos de tecnología.",
+  "fr": "École catholique mixte avec SHSM, Dual Credit, éducation coopérative et OYAP, un crédit de transition estival en 9e année et des cours de technologie."
+ },
+ "calendarUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTFNaFvt764PQkq1-27blFXdOuAZ6yDZnKvCASw01N-f3GHjf02lvCY3B1NAw0iLA/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=950959578&single=true",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House at 70 Playfair Ave. (school page address)",
+   "url": "https://www.tcdsb.org/o/dantealighieri/page/open-house/"
+  }
+ ],
+ "missing": [
+  "No separate program pages on the school site; program details taken from the board School Profiles page"
+ ]
+}

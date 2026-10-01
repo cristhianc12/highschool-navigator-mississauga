@@ -1,0 +1,124 @@
+{
+ "id": "tcdsb-cardinal-carter-academy-for-the-arts",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts",
+ "sources": [
+  "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/",
+  "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/application-audition/",
+  "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/open-house/",
+  "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/shsm/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://5il.co/1dlho",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Arts program (Dance, Drama, Music, Visual Arts)",
+   "note": {
+    "en": "Arts school with comprehensive programs in Dance, Drama, Visual Arts (Digital Art and Tech Design) and Music (Band, Strings, Vocal); admission is by successful audition.",
+    "es": "Escuela de artes con programas completos de Danza, Teatro, Artes Visuales (Arte Digital y Diseño Tecnológico) y Música (Banda, Cuerdas, Vocal); la admisión es mediante una audición exitosa.",
+    "fr": "École des arts avec des programmes complets de danse, d'art dramatique, d'arts visuels (arts numériques et design technologique) et de musique (harmonie, cordes, voix); l'admission se fait par audition réussie."
+   },
+   "entry": "audition",
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/application-audition/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM): Arts and Culture",
+   "note": {
+    "en": "Optional SHSM in Arts and Culture for Grades 11 and 12.",
+    "es": "SHSM opcional en Arts and Culture para 11.º y 12.º grado.",
+    "fr": "SHSM facultatif en Arts and Culture pour la 11e et la 12e année."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/shsm/"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture"
+ ],
+ "focus": {
+  "en": "Co-educational Catholic arts school (Grades 7-12) with Dance, Drama, Music and Visual Arts and an entry by audition.",
+  "es": "Escuela de artes católica mixta (7.º a 12.º) con Danza, Teatro, Música y Artes Visuales y admisión por audición.",
+  "fr": "École catholique mixte des arts (7e à 12e année) avec danse, art dramatique, musique et arts visuels et admission par audition."
+ },
+ "calendarUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTFNaFvt764PQkq1-27blFXdOuAZ6yDZnKvCASw01N-f3GHjf02lvCY3B1NAw0iLA/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=1882407285&single=true",
+ "admissions": [
+  {
+   "program": "Cardinal Carter Academy for the Arts (audition entry)",
+   "tag": "arts",
+   "elig": {
+    "en": "Students entering Grade 7 or Grade 9 (the main entry years); other grades only if space is available. Grade 7 applicants also meet the board's Catholicity requirement.",
+    "es": "Estudiantes que ingresan a 7.º o 9.º grado (los años principales de ingreso); otros grados solo si hay cupo. Los de 7.º también cumplen el requisito de catolicidad del consejo.",
+    "fr": "Élèves entrant en 7e ou en 9e année (les années d'entrée principales); les autres années seulement s'il y a de la place. Les candidats de 7e année répondent aussi à l'exigence de catholicité du conseil."
+   },
+   "marks": null,
+   "fee": {
+    "en": "$20 audition fee.",
+    "es": "Tarifa de audición de $20.",
+    "fr": "Frais d'audition de 20 $."
+   },
+   "dates": {
+    "en": "Application and portfolio package due Oct. 30, 2026; Audition Day Nov. 12, 2026 (time sent by email).",
+    "es": "Solicitud y portafolio a más tardar el 30 de octubre de 2026; Día de audición el 12 de noviembre de 2026 (la hora se envía por correo).",
+    "fr": "Dossier de demande et portfolio dus le 30 octobre 2026; journée d'auditions le 12 novembre 2026 (l'heure est envoyée par courriel)."
+   },
+   "submit": [
+    {
+     "en": "Online application in the TCDSB SOAR system (secsoar.tcdsb.org).",
+     "es": "Solicitud en línea en el sistema SOAR del TCDSB (secsoar.tcdsb.org).",
+     "fr": "Demande en ligne dans le système SOAR du TCDSB (secsoar.tcdsb.org)."
+    },
+    {
+     "en": "Pay the audition fee and send the supplemental application form and portfolio so the school receives them by Oct. 30, 2026.",
+     "es": "Paga la tarifa de audición y envía el formulario suplementario y el portafolio para que la escuela los reciba antes del 30 de octubre de 2026.",
+     "fr": "Paie les frais d'audition et envoie le formulaire supplémentaire et le portfolio pour que l'école les reçoive au plus tard le 30 octobre 2026."
+    }
+   ],
+   "know": [
+    {
+     "en": "Only one audition per applicant: choose your strongest area.",
+     "es": "Solo se permite una audición por postulante: elige tu área más fuerte.",
+     "fr": "Une seule audition par candidat : choisis ton domaine le plus fort."
+    },
+    {
+     "en": "Two Arts credits are mandatory in each of Grades 9, 10 and 11 and one in Grade 12.",
+     "es": "Se exigen dos créditos de Artes en cada uno de 9.º, 10.º y 11.º y uno en 12.º.",
+     "fr": "Deux crédits en arts sont obligatoires en 9e, 10e et 11e année et un en 12e année."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/application-audition/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-14",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (first date; registration through the school page)",
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/open-house/"
+  },
+  {
+   "kind": "school",
+   "date": "2026-10-15",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House (second date; registration through the school page)",
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/open-house/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-12",
+   "time": null,
+   "format": "In person",
+   "title": "Audition Day for admission (Grades 7 and 9 entry)",
+   "url": "https://www.tcdsb.org/o/cardinalcarteracademyforthearts/page/application-audition/"
+  }
+ ],
+ "missing": [
+  "Audition requirements per discipline are linked as separate documents and were not read"
+ ]
+}

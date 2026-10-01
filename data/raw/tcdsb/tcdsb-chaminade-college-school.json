@@ -1,0 +1,122 @@
+{
+ "id": "tcdsb-chaminade-college-school",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.tcdsb.org/o/chaminadecollege",
+ "sources": [
+  "https://www.tcdsb.org/o/chaminadecollege/",
+  "https://www.tcdsb.org/o/chaminadecollege/page/steam-program/",
+  "https://www.tcdsb.org/o/chaminadecollege/page/shsm/",
+  "https://www.tcdsb.org/o/chaminadecollege/page/open-house/",
+  "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings",
+  "https://www.tcdsb.org/page/secondary-school-registration/",
+  "https://5il.co/1dlho",
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRoSsZnbH2MS1YcVG8JXr7lU3LUZnhkZda4wbYqkAZz0zctPmv6fJagKyqH2c1qPnYLKGpYWODowiqM/pubhtml?gid=0&rm=minimal&chrome=false&headers=false"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM @cham",
+   "note": {
+    "en": "Cohort program where students move together through Science, Technology, English and Mathematics with an engineering and problem-solving component and earn a STEAM certificate.",
+    "es": "Programa en cohorte donde los estudiantes avanzan juntos en Ciencias, Tecnología, Inglés y Matemáticas con un componente de ingeniería y resolución de problemas, y reciben un certificado STEAM.",
+    "fr": "Programme en cohorte où les élèves avancent ensemble en sciences, technologie, anglais et mathématiques avec une composante d'ingénierie et de résolution de problèmes, et reçoivent un certificat STEAM."
+   },
+   "entry": "apply",
+   "url": "https://www.tcdsb.org/o/chaminadecollege/page/steam-program/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Four SHSM programs for Grades 11-12: Business, Information and Communications Technology, Environment and Sports.",
+    "es": "Cuatro programas SHSM para 11.º y 12.º: Business, Information and Communications Technology, Environment y Sports.",
+    "fr": "Quatre programmes SHSM pour la 11e et la 12e année : Business, Information and Communications Technology, Environment et Sports."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/chaminadecollege/page/shsm/"
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted program",
+   "note": {
+    "en": "Gifted programming is offered at this boys' school.",
+    "es": "El programa para estudiantes dotados se ofrece en esta escuela de varones.",
+    "fr": "Un programme pour élèves surdoués est offert dans cette école de garçons."
+   },
+   "entry": null,
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Information and Communications Technology",
+  "Environment",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education",
+  "OYAP"
+ ],
+ "focus": {
+  "en": "Semestered Catholic boys' school with a STEAM cohort program, four SHSMs and strong athletics and fine arts.",
+  "es": "Escuela católica de varones con semestres, un programa STEAM en cohorte, cuatro SHSM y fuertes programas de deportes y artes.",
+  "fr": "École catholique pour garçons à semestres avec un programme STEAM en cohorte, quatre SHSM et de solides programmes d'athlétisme et d'arts."
+ },
+ "calendarUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTFNaFvt764PQkq1-27blFXdOuAZ6yDZnKvCASw01N-f3GHjf02lvCY3B1NAw0iLA/pubhtml?rm=minimal&chrome=false&headers=false&gridlines=false&widget=false&gid=13686419&single=true",
+ "admissions": [
+  {
+   "program": "STEAM @cham",
+   "tag": "stem",
+   "elig": {
+    "en": "Classes are limited to the top students who meet the criteria.",
+    "es": "Los cursos se limitan a los mejores estudiantes que cumplen los criterios.",
+    "fr": "Les classes sont limitées aux meilleurs élèves qui répondent aux critères."
+   },
+   "marks": {
+    "en": "Level 3 or higher on final Grade 9 marks and in the specific Grade 9 STEAM courses (Science, Math and English).",
+    "es": "Nivel 3 o superior en las notas finales de 9.º y en los cursos específicos STEAM de 9.º (Ciencias, Matemáticas e Inglés).",
+    "fr": "Niveau 3 ou plus aux notes finales de 9e année et dans les cours STEAM précis de 9e année (sciences, mathématiques et anglais)."
+   },
+   "fee": null,
+   "dates": null,
+   "submit": [
+    {
+     "en": "Written essay outlining your interests and aptitude.",
+     "es": "Ensayo escrito que describa tus intereses y aptitudes.",
+     "fr": "Essai écrit décrivant tes intérêts et tes aptitudes."
+    },
+    {
+     "en": "Letter of reference and completed checklist from a Grade 9 teacher.",
+     "es": "Carta de referencia y lista de verificación completada por un docente de 9.º.",
+     "fr": "Lettre de référence et liste de vérification remplie par un enseignant de 9e année."
+    }
+   ],
+   "know": [
+    {
+     "en": "Students who complete the required number of STEAM courses receive a STEAM certificate at graduation.",
+     "es": "Quienes completan el número requerido de cursos STEAM reciben un certificado STEAM al graduarse.",
+     "fr": "Les élèves qui terminent le nombre requis de cours STEAM reçoivent un certificat STEAM à la fin de leurs études."
+    },
+    {
+     "en": "Some parts of the ten core STEAM courses are delivered through D2L and Google Classroom.",
+     "es": "Algunas partes de los diez cursos STEAM principales se imparten por D2L y Google Classroom.",
+     "fr": "Certaines parties des dix cours STEAM de base sont données sur D2L et Google Classroom."
+    }
+   ],
+   "url": "https://www.tcdsb.org/o/teachingandlearning/page/school-profiles-and-course-offerings"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-14",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Open House at 490 Queen's Drive",
+   "url": "https://www.tcdsb.org/o/chaminadecollege/page/open-house/"
+  }
+ ],
+ "missing": [
+  "Deadline and application method for STEAM @cham are not stated on the school pages (the board application guide lists a STEAM section)"
+ ]
+}

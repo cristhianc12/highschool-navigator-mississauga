@@ -67,7 +67,8 @@ function mergeBoardExtras(b, x) {
 
 function mergeSchool(r, s) {
   const ex = (EXTRAS[s.id] ||= { src: s.board });
-  if (r.site && !ex.site) ex.site = r.site;
+  // The collected URL was confirmed by an agent; the roster URL (Ontario open data) can be dead or even taken over by another site.
+  if (r.site && (!ex.site || !r.curated)) ex.site = r.site;
   if (r.cal && !ex.cal) ex.cal = r.cal;
   if (r.courses) ex.courses = true;
   if (!ex.shsm?.length && r.shsm) ex.shsm = r.shsm;

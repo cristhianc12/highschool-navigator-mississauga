@@ -218,7 +218,6 @@ async function renderApply() {
   if (sel.value !== b) return;
   const reg = REGISTRATION[b], R = REG_UI[state.lang];
   const part = (x) => (typeof x === "object" ? L(x) : x);
-  const peel = b === "peel" ? `<div class="grid"><div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div><div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div>` : "";
   box.innerHTML = !reg ? `<p class="muted">${esc(u.apply.none)}</p>` : `<div class="card apply-detail">
     <h3>${esc(L(BOARDS[b]))}</h3>
     <p class="small"><b>${esc(R.steps)}</b></p><ol class="dnotes">${reg.steps.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ol>
@@ -226,7 +225,7 @@ async function renderApply() {
     ${reg.note ? `<p class="small muted">${esc(L(reg.note))}</p>` : ""}
     ${reg.dates?.length ? `<p class="small"><b>${esc(R.dates)}</b></p><ul class="dnotes">${reg.dates.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ul>` : ""}
     ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(part(reg.contact))}</p>` : ""}
-    ${reg.url ? `<div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div>` : ""}</div>${peel}`;
+    ${reg.url ? `<div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div>` : ""}</div>`;
 }
 
 function renderShell() {

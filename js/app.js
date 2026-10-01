@@ -10,7 +10,7 @@ import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BO
 import { ensureAllDetails, ensureSchools, ensureBoardExtras } from "./details.js";
 import { REGISTRATION, REG_UI } from "./admissions.js";
 import { DETAIL_BOARDS } from "./data/summary.js";
-import { supportHtml } from "./support.js";
+import { supportHtml, supportCard, initSupportNudge } from "./support.js";
 import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass, colorOf } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -364,6 +364,8 @@ function renderShell() {
     <p class="count" id="d-count" aria-live="polite"></p>
     <div class="dates" id="dates-list"></div></section>
 
+  ${supportCard(state.lang)}
+
   <section id="preguntas"><div class="sec-head"><h2>${esc(u.preguntasH)}</h2><p>${esc(u.preguntasP)}</p></div>
     <ol class="q">${u.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></section>
 
@@ -624,5 +626,6 @@ initSchoolDetail({
 });
 initMyList({ getLang: () => state.lang });
 renderShell();
+initSupportNudge(() => state.lang);
 // Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
 ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderPrograms(); renderSessions(); renderCompare(); } });

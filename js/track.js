@@ -86,7 +86,7 @@ function start() {
     let utm = "";
     try { utm = (new URLSearchParams(location.search).get("utm_source") || "").toLowerCase(); } catch { /* ignore */ }
     if (/^[a-z0-9_-]{1,24}$/.test(utm)) track("campaign", utm);
-    track("env", matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light", pageName() === "home" && localStorage.getItem("tone") === "family" ? "family" : "teen");
+    track("env", matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light", pageName() === "home" && localStorage.getItem("tone") === "teen" ? "teen" : "family");
   }
 }
 

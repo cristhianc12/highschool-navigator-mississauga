@@ -588,3 +588,8 @@ section[id]{scroll-margin-top:70px}
 .listmore>summary::-webkit-details-marker{display:none}
 .listmore[open]>summary{margin-bottom:10px}
 .maplist .showmore{display:flex;justify-content:center;padding:6px 0}
+
+/* ---------- Device accessibility settings, followed automatically ---------- */
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-transparency:reduce){.bnav,.totop,.topbar{backdrop-filter:none;background:var(--surface)}}
+@media (forced-colors:active){.bnav,.mpanel,.card,.gcard,.supportcard{border:1px solid CanvasText}.btn,.cta{border:1px solid ButtonText}.bnav a.on,.mtile.on{outline:2px solid Highlight}}

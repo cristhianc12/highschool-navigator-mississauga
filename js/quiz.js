@@ -25,7 +25,7 @@ const SAVE_KEY = "quizProgress";
 
 const state = {
   lang: "en",
-  tone: store.get("tone") === "family" ? "family" : "teen",
+  tone: store.get("tone") === "teen" ? "teen" : "family", // parents first: Family unless the person chose Teen
   step: -1, answers: {}, result: null, shared: false,
 };
 

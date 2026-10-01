@@ -31,7 +31,7 @@ const store = {
 
 const state = {
   lang: "en",
-  tone: store.get("tone") === "family" ? "family" : "teen",
+  tone: store.get("tone") === "teen" ? "teen" : "family", // parents first: Family unless the person chose Teen
   filters: { q: "", region: "", city: "", board: "", tag: "", sort: "name" },
   pf: { q: "", board: "", region: "", tag: "", start: "", entry: "" }, // filters of the regional programs list
   apBoard: DETAIL_BOARDS.includes("peel") ? "peel" : DETAIL_BOARDS[0],
@@ -43,6 +43,29 @@ const state = {
   sess: { area: "", board: "" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
+
+// Remembered on this device only (localStorage): filters, the board picked in the apply guide, and the compare list.
+const PREFS_KEY = "hsPrefs";
+function loadPrefs() {
+  try {
+    const v = JSON.parse(store.get(PREFS_KEY) || "null");
+    if (!v || typeof v !== "object") return;
+    const pick = (src, keys) => Object.fromEntries(keys.filter((k) => typeof src?.[k] === "string").map((k) => [k, src[k]]));
+    Object.assign(state.filters, pick(v.f, ["region", "city", "board", "tag", "sort"]));
+    Object.assign(state.pf, pick(v.pf, ["board", "region", "tag", "start", "entry"]));
+    Object.assign(state.df, pick(v.df, ["region", "board"]));
+    Object.assign(state.sess, pick(v.sess, ["area", "board"]));
+    if (typeof v.ap === "string" && BOARD_META[v.ap]) state.apBoard = v.ap;
+    if (Array.isArray(v.cmp) && v.cmp.every((id) => byId(id))) state.compare = v.cmp.slice(0, MAX_COMPARE);
+  } catch { /* ignore a corrupt value */ }
+}
+function savePrefs() {
+  const { q, ...f } = state.filters, { q: _q, ...pf } = state.pf;
+  store.set(PREFS_KEY, JSON.stringify({ f, pf, df: state.df, sess: state.sess, ap: state.apBoard, cmp: state.compare }));
+}
+const saveSoon = () => setTimeout(savePrefs, 0);
+document.addEventListener("change", saveSoon);
+document.addEventListener("click", (e) => { if (e.target.closest("#f-reset, #pf-reset, [data-vibe], [data-cmp]")) saveSoon(); });
 
 function detectLang() {
   const fromUrl = new URLSearchParams(location.search).get("lang");
@@ -633,6 +656,7 @@ $("#theme-btn").addEventListener("click", () => {
 });
 
 state.lang = detectLang();
+loadPrefs();
 // The profile modal is initialised first so its language getter is ready when rows are rendered.
 initSchoolDetail({
   getLang: () => state.lang,

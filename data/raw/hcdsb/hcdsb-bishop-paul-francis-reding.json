@@ -1,0 +1,19 @@
+{
+ "id": "hcdsb-bishop-paul-francis-reding",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/bishopreding/",
+ "sources": [
+  "https://secondary.hcdsb.org/bishopreding/",
+  "https://secondary.hcdsb.org/bishopreding/students/sports/",
+  "https://secondary.hcdsb.org/bishopreding/events/"
+ ],
+ "programs": [],
+ "shsm": [],
+ "admissions": [],
+ "sessions": [],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "No special programs, SHSM page or 2026-27 information night found on the school's pages."
+ ]
+}

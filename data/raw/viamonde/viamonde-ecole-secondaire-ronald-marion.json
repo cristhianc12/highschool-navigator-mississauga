@@ -1,0 +1,103 @@
+{
+ "id": "viamonde-ecole-secondaire-ronald-marion",
+ "scrapedAt": "2026-10-01",
+ "site": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-ronald-marion",
+ "sources": [
+  "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-ronald-marion",
+  "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Ronald-Marion/2025-2026/ROMS_Prospectus_d_ecole_2026-2027_ROMS.pdf",
+  "https://programmesdexcellence.csviamonde.ca/arts",
+  "https://programmesdexcellence.csviamonde.ca/programmes-accredites",
+  "https://programmesdexcellence.csviamonde.ca/sports-et-plein-air",
+  "https://programmesdexcellence.csviamonde.ca/sciences-et-technologies",
+  "https://csviamonde.ca/inscriptions-et-nouveaux-eleves/visiter-une-ecole-secondaire",
+  "https://csviamonde.ca/inscriptions-et-nouveaux-eleves/inscription-a-lecole"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Programme placement avancé AP (Advanced Placement)",
+   "note": {
+    "en": "College Board Advanced Placement program: university-level courses and exams from Grade 11.",
+    "es": "Programa Advanced Placement del College Board: cursos y exámenes de nivel universitario desde 11.º grado.",
+    "fr": "Programme Advanced Placement du College Board : cours et examens de niveau universitaire dès la 11e année."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/programmes-accredites"
+  },
+  {
+   "tag": "ap",
+   "name": "Programme enrichi de préparation à AP",
+   "note": {
+    "en": "Enriched Grade 9-10 program that prepares students for the Advanced Placement program.",
+    "es": "Programa enriquecido de 9.º y 10.º grado que prepara para el programa Advanced Placement.",
+    "fr": "Programme enrichi de 9e et 10e année qui prépare les élèves au programme Advanced Placement."
+   },
+   "entry": "school",
+   "url": "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Ronald-Marion/2025-2026/ROMS_Prospectus_d_ecole_2026-2027_ROMS.pdf"
+  },
+  {
+   "tag": "arts",
+   "name": "Excellence en arts intégrés",
+   "note": {
+    "en": "Excellence arts program offered at Ronald-Marion to all students in Grades 7 and 8, half a day per 10-day cycle.",
+    "es": "Programa de excelencia en artes ofrecido en Ronald-Marion a todo el alumnado de 7.º y 8.º grado, media jornada por ciclo de 10 días.",
+    "fr": "Programme d'excellence en arts offert à Ronald-Marion à tous les élèves de 7e et 8e année, une demi-journée par cycle de 10 jours."
+   },
+   "entry": "school",
+   "url": "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Ronald-Marion/2025-2026/ROMS_Prospectus_d_ecole_2026-2027_ROMS.pdf"
+  },
+  {
+   "tag": "sports",
+   "name": "Excellence en plein-air et leadership",
+   "note": {
+    "en": "Excellence program of outdoor activities and leadership that builds appreciation of nature and environmental awareness.",
+    "es": "Programa de excelencia de actividades al aire libre y liderazgo que desarrolla el aprecio por la naturaleza y la conciencia ambiental.",
+    "fr": "Programme d'excellence d'activités de plein air et de leadership qui développe l'appréciation de la nature et la conscience environnementale."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/sports-et-plein-air"
+  },
+  {
+   "tag": "stem",
+   "name": "Excellence en robotique",
+   "note": {
+    "en": "Excellence program on designing robots and automatic machines, coding and computer programming.",
+    "es": "Programa de excelencia sobre diseño de robots y máquinas automáticas, codificación y programación.",
+    "fr": "Programme d'excellence sur la conception de robots et de machines automatiques, le codage et la programmation informatique."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/sciences-et-technologies"
+  },
+  {
+   "tag": "other",
+   "name": "Programme Boussole",
+   "note": {
+    "en": "Grade 11 integrated semester for students passionate about the environment: four courses delivered together through projects by two teachers.",
+    "es": "Semestre integrado de 11.º grado para quienes aman el medio ambiente: cuatro cursos impartidos juntos mediante proyectos por dos docentes.",
+    "fr": "Semestre intégré de 11e année pour les élèves passionnés d'environnement : quatre cours livrés ensemble par projets par deux membres du personnel enseignant."
+   },
+   "entry": "school",
+   "url": "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Ronald-Marion/2025-2026/ROMS_Prospectus_d_ecole_2026-2027_ROMS.pdf"
+  }
+ ],
+ "shsm": [
+  "Technologies de l'information et des communications",
+  "Environnement",
+  "Sports"
+ ],
+ "focus": {
+  "en": "Pickering French-language school (about 350 students, Grades 7-12) with Advanced Placement, three excellence programs and the Boussole environmental semester.",
+  "es": "Escuela francófona de Pickering (unos 350 estudiantes, 7.º a 12.º grado) con Advanced Placement, tres programas de excelencia y el semestre ambiental Boussole.",
+  "fr": "École francophone de Pickering (environ 350 élèves, de la 7e à la 12e année) offrant Advanced Placement, trois programmes d'excellence et le semestre environnemental Boussole."
+ },
+ "calendarUrl": null,
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 information night or open house dates published (the board says 2026 open houses are over)",
+  "No course calendar or course list published (course choice is in the MyBlueprint portal)",
+  "No program-specific admission process, fees or marks stated on the pages read",
+  "2026-27 prospectus published (used for programs); it lists no course codes or information-night dates",
+  "Excellence in technology is recorded as robotics only where the board page lists the school"
+ ]
+}

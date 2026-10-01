@@ -1,0 +1,81 @@
+{
+ "id": "viamonde-ecole-secondaire-etienne-brule",
+ "scrapedAt": "2026-10-01",
+ "site": "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-etienne-brule",
+ "sources": [
+  "https://csviamonde.ca/decouvrir-nos-ecoles-et-nos-programmes/trouver-une-ecole/fiche-ecole/ecole-secondaire-etienne-brule",
+  "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Etienne-Brule/Re__pertoire_des_programmes_d_excellence.pdf",
+  "https://programmesdexcellence.csviamonde.ca/sports-et-plein-air",
+  "https://programmesdexcellence.csviamonde.ca/sciences-et-technologies",
+  "https://programmesdexcellence.csviamonde.ca/programmes-accredites",
+  "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Ronald-Marion/2025-2026/ROMS_Prospectus_d_ecole_2026-2027_ROMS.pdf",
+  "https://csviamonde.ca/inscriptions-et-nouveaux-eleves/visiter-une-ecole-secondaire",
+  "https://csviamonde.ca/inscriptions-et-nouveaux-eleves/inscription-a-lecole"
+ ],
+ "programs": [
+  {
+   "tag": "sports",
+   "name": "Excellence en sport",
+   "note": {
+    "en": "Excellence program for students passionate about physical activity and team sports (soccer, hockey, basketball, cross-country), offered from Grade 7.",
+    "es": "Programa de excelencia para quienes aman la actividad física y los deportes de equipo (fútbol, hockey, baloncesto, cross country), ofrecido desde 7.º grado.",
+    "fr": "Programme d'excellence destiné aux élèves passionnés par l'activité physique et les sports d'équipe (soccer, hockey, basketball, cross-country), offert dès la 7e année."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/sports-et-plein-air"
+  },
+  {
+   "tag": "stem",
+   "name": "Excellence en sciences",
+   "note": {
+    "en": "Excellence program for students passionate about science and mathematics, with projects combining both.",
+    "es": "Programa de excelencia para quienes aman las ciencias y las matemáticas, con proyectos que combinan ambas.",
+    "fr": "Programme d'excellence destiné aux élèves passionnés par les sciences et les mathématiques, avec des projets alliant les deux."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/sciences-et-technologies"
+  },
+  {
+   "tag": "ap",
+   "name": "Programme placement avancé AP (Advanced Placement)",
+   "note": {
+    "en": "College Board Advanced Placement program: university-level courses and exams from Grade 11.",
+    "es": "Programa Advanced Placement del College Board: cursos y exámenes de nivel universitario desde 11.º grado.",
+    "fr": "Programme Advanced Placement du College Board : cours et examens de niveau universitaire dès la 11e année."
+   },
+   "entry": "school",
+   "url": "https://programmesdexcellence.csviamonde.ca/programmes-accredites"
+  },
+  {
+   "tag": "ap",
+   "name": "Programme enrichi de préparation à AP",
+   "note": {
+    "en": "Enriched Grade 9-10 program that prepares students for the Advanced Placement program.",
+    "es": "Programa enriquecido de 9.º y 10.º grado que prepara para el programa Advanced Placement.",
+    "fr": "Programme enrichi de 9e et 10e année qui prépare les élèves au programme Advanced Placement."
+   },
+   "entry": "school",
+   "url": "https://csviamonde.ca/fileadmin/ecoles/Ecole_secondaire_Ronald-Marion/2025-2026/ROMS_Prospectus_d_ecole_2026-2027_ROMS.pdf"
+  }
+ ],
+ "shsm": [
+  "Santé et bien-être",
+  "Sports",
+  "Environnement",
+  "Technologies de l'information et des communications"
+ ],
+ "focus": {
+  "en": "North York French-language school (Grades 7-12) with excellence programs in sport and science and the Advanced Placement program.",
+  "es": "Escuela francófona de North York (7.º a 12.º grado) con programas de excelencia en deporte y ciencias y el programa Advanced Placement.",
+  "fr": "École francophone de North York (7e à 12e année) offrant des programmes d'excellence en sport et en sciences et le programme Advanced Placement."
+ },
+ "calendarUrl": null,
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No 2026-27 information night or open house dates published (the board says 2026 open houses are over)",
+  "No course calendar or course list published (course choice is in the MyBlueprint portal)",
+  "No program-specific admission process, fees or marks stated on the pages read",
+  "The AP-prep program is listed on the school page as 'Programme enrichi de préparation à AP'; the board page does not give a start grade (Grades 9-10 per the Ronald-Marion prospectus)"
+ ]
+}

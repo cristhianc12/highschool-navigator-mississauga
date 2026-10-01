@@ -1,0 +1,68 @@
+{
+ "id": "hcdsb-st-ignatius-of-loyola",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/loyola/",
+ "sources": [
+  "https://secondary.hcdsb.org/loyola/",
+  "https://secondary.hcdsb.org/loyola/steam/",
+  "https://secondary.hcdsb.org/loyola/students/shsm/",
+  "https://secondary.hcdsb.org/loyola/event/steam-open-house-grade-8-parent-night/",
+  "https://secondary.hcdsb.org/loyola/event/steam-information-night-2/"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "STEAM Program",
+   "note": {
+    "en": "Grade 9 STEAM cohort: students take four bundled courses (Science, Technological Design, Math, English) through project-based, inquiry learning.",
+    "es": "Cohorte STEAM de 9.º grado: los estudiantes cursan cuatro materias integradas (Ciencias, Diseño Tecnológico, Matemáticas, Inglés) con aprendizaje por proyectos e indagación.",
+    "fr": "Cohorte STEAM de 9e année : les élèves suivent quatre cours regroupés (sciences, conception technologique, mathématiques, anglais) par projets et par enquête."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/loyola/steam/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of sector courses, certifications, experiential learning and a co-operative education course.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y un curso de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et un cours d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/loyola/students/shsm/"
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Information and Communication Technology",
+  "Non-Profit Education",
+  "Business",
+  "Transportation and Robotics",
+  "Art and Design"
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "program",
+   "date": "2026-10-29",
+   "time": "18:00",
+   "format": "In person",
+   "title": "STEAM Open House / Grade 8 Parent Night",
+   "url": "https://secondary.hcdsb.org/loyola/event/steam-open-house-grade-8-parent-night/"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "19:00",
+   "format": "In person",
+   "title": "STEAM Information Night",
+   "url": "https://secondary.hcdsb.org/loyola/event/steam-information-night-2/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "STEAM page still shows 2025-26 application dates, so no application dates recorded."
+ ]
+}

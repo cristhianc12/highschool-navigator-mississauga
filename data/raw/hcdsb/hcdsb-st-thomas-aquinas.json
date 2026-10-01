@@ -1,0 +1,71 @@
+{
+ "id": "hcdsb-st-thomas-aquinas",
+ "scrapedAt": "2026-10-01",
+ "site": "https://secondary.hcdsb.org/sta/",
+ "sources": [
+  "https://secondary.hcdsb.org/sta/",
+  "https://secondary.hcdsb.org/sta/ib-programme/",
+  "https://secondary.hcdsb.org/sta/ib-programme/application-process/",
+  "https://secondary.hcdsb.org/sta/ib-programme/events/",
+  "https://secondary.hcdsb.org/sta/ib-programme/course-offerings/",
+  "https://secondary.hcdsb.org/sta/students/specialty-high-skills-major-shsm/",
+  "https://secondary.hcdsb.org/sta/event/open-house-gr-8-info-ib-info-night/"
+ ],
+ "programs": [
+  {
+   "tag": "ib",
+   "name": "International Baccalaureate (IB) Diploma Programme with Pre-IB",
+   "note": {
+    "en": "IB World School since March 2012 offering the Diploma Programme in Grades 11-12, with a Pre-IB programme starting in Grade 9.",
+    "es": "Escuela del Mundo IB desde marzo de 2012; ofrece el Programa del Diploma en 11.º y 12.º grado, con un programa Pre-IB desde 9.º grado.",
+    "fr": "École du monde IB depuis mars 2012 offrant le Programme du diplôme en 11e et 12e année, avec un programme Pre-IB dès la 9e année."
+   },
+   "entry": "apply",
+   "url": "https://secondary.hcdsb.org/sta/ib-programme/"
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12: a bundle of sector courses, certifications, experiential learning and a co-operative education course.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y un curso de educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et un cours d'éducation coopérative."
+   },
+   "entry": "school",
+   "url": "https://secondary.hcdsb.org/sta/students/specialty-high-skills-major-shsm/"
+  }
+ ],
+ "shsm": [
+  "Construction & Carpentry",
+  "Health Care & Medical Technologies",
+  "Information & Communication Technology",
+  "Sports"
+ ],
+ "admissions": [
+  {
+   "program": "Pre-IB (Grade 9 entry for 2027-2028)",
+   "tag": "ib",
+   "dates": {
+    "en": "The Grade 9 Pre-IB application window opens in December (2026); Grade 9 students apply to Grade 10 Pre-IB by contacting the IB office at the end of January 2027.",
+    "es": "La ventana de solicitud de Pre-IB de 9.º grado abre en diciembre (2026); los estudiantes de 9.º que quieran Pre-IB de 10.º contactan a la oficina IB a fines de enero de 2027.",
+    "fr": "La période de demande Pre-IB de 9e année ouvre en décembre (2026); les élèves de 9e année qui visent le Pre-IB de 10e année communiquent avec le bureau IB à la fin de janvier 2027."
+   },
+   "url": "https://secondary.hcdsb.org/sta/ib-programme/application-process/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-08",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Open House / Grade 8 Info / IB Info Night (with Curriculum Night)",
+   "url": "https://secondary.hcdsb.org/sta/event/open-house-gr-8-info-ib-info-night/"
+  }
+ ],
+ "calendarUrl": null,
+ "missing": [
+  "No course calendar or course list found on the school's own pages (board site hcdsb.org returned 403 to the crawler).",
+  "IB course offerings for 2026-27 are published as a table, not a course calendar, so no course list extracted."
+ ]
+}

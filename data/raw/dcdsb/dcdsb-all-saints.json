@@ -1,0 +1,116 @@
+{
+ "id": "dcdsb-all-saints",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.dcdsb.ca/allsaints/",
+ "sources": [
+  "https://www.dcdsb.ca/allsaints/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/guidance-course-calendar/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/specialized-programs/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/pathways-to-student-success/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/secondary-courses-and-calendars/",
+  "https://www.dcdsb.ca/contact-us/register-for-school/secondary-school-registration/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/dual-credits/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/oyap/oyap-level-1-program/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/apply/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/audition-information/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/information-nights-workshops/",
+  "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/program-areas/"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Regional Arts & Media Program (AMP)",
+   "note": {
+    "en": "Regional arts program at All Saints serving Grade 7 to 12 students from across Durham Region, with specialized instruction in Dance, Instrumental Music, Media Arts (Grade 9 entry only), Performing Arts (Drama/Vocal Music) or Visual Arts.",
+    "es": "Programa regional de artes en All Saints para estudiantes de 7.º a 12.º grado de toda la región de Durham, con instrucción especializada en Danza, Música instrumental, Artes mediáticas (solo ingreso en 9.º), Artes escénicas (Teatro/Música vocal) o Artes visuales.",
+    "fr": "Programme régional d'arts à All Saints pour les élèves de la 7e à la 12e année de toute la région de Durham, avec enseignement spécialisé en danse, musique instrumentale, arts médiatiques (admission en 9e année seulement), arts de la scène (théâtre/musique vocale) ou arts visuels."
+   },
+   "entry": "audition",
+   "url": "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/"
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "Ontario Youth Apprenticeship Program (OYAP)",
+  "Dual Credits"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/durhamcatholic/allsaintsdcdsb",
+ "admissions": [
+  {
+   "program": "Regional Arts & Media Program (AMP)",
+   "tag": "arts",
+   "elig": {
+    "en": "Students entering Grade 7 or Grade 9 in September 2027 from anywhere in Durham Region; Media Arts is open for Grade 9 entry only.",
+    "es": "Estudiantes que ingresan a 7.º o 9.º grado en septiembre de 2027 desde cualquier parte de la región de Durham; Artes mediáticas es solo para ingreso en 9.º.",
+    "fr": "Élèves qui entrent en 7e ou en 9e année en septembre 2027, de partout dans la région de Durham; les arts médiatiques sont réservés à l'admission en 9e année."
+   },
+   "fee": {
+    "en": "No audition fee for applications for the 2027-2028 school year.",
+    "es": "Sin cuota de audición para las solicitudes del año escolar 2027-2028.",
+    "fr": "Aucuns frais d'audition pour les demandes de l'année scolaire 2027-2028."
+   },
+   "dates": {
+    "en": "Applications open September 22, 2026; deadline November 26, 2026 (no late applications); auditions in person at All Saints on January 9-10, 2027, 8:30 a.m. to 5:30 p.m.",
+    "es": "Las solicitudes abren el 22 de septiembre de 2026; fecha límite el 26 de noviembre de 2026 (no se aceptan solicitudes tardías); audiciones en persona en All Saints el 9 y 10 de enero de 2027, de 8:30 a. m. a 5:30 p. m.",
+    "fr": "Les demandes ouvrent le 22 septembre 2026; date limite le 26 novembre 2026 (aucune demande tardive); auditions en personne à All Saints les 9 et 10 janvier 2027, de 8 h 30 à 17 h 30."
+   },
+   "submit": [
+    {
+     "en": "Complete the online application at osas.dcdsb.ca (first-time users create an OSAS account) and review the audition requirements for your program area.",
+     "es": "Completa la solicitud en línea en osas.dcdsb.ca (si es tu primera vez, crea una cuenta de OSAS) y revisa los requisitos de audición de tu área.",
+     "fr": "Remplis la demande en ligne sur osas.dcdsb.ca (si c'est ta première fois, crée un compte OSAS) et consulte les exigences d'audition de ton domaine."
+    },
+    {
+     "en": "Prepare the audition for your area (Performing Arts: a monologue and a song).",
+     "es": "Prepara la audición de tu área (Artes escénicas: un monólogo y una canción).",
+     "fr": "Prépare l'audition de ton domaine (arts de la scène : un monologue et une chanson)."
+    }
+   ],
+   "know": [
+    {
+     "en": "You may audition for up to two disciplines but are offered admission to only one.",
+     "es": "Puedes audicionar para hasta dos disciplinas, pero solo te ofrecen admisión en una.",
+     "fr": "Tu peux auditionner dans un maximum de deux disciplines, mais une seule admission t'est offerte."
+    },
+    {
+     "en": "Audition dates and times are assigned by email after the application is processed and cannot be requested; no teacher reference form is accepted.",
+     "es": "Las fechas y horas de audición se asignan por correo después de procesar la solicitud y no se pueden pedir; no se acepta formulario de referencia de docente.",
+     "fr": "Les dates et heures d'audition sont attribuées par courriel après le traitement de la demande et ne peuvent pas être demandées; aucun formulaire de référence d'enseignant n'est accepté."
+    },
+    {
+     "en": "Accommodation needs can be shared in advance at amp@dcdsb.ca.",
+     "es": "Puedes informar con anticipación tus necesidades de adaptación en amp@dcdsb.ca.",
+     "fr": "Tu peux communiquer d'avance tes besoins d'adaptation à amp@dcdsb.ca."
+    }
+   ],
+   "url": "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/apply/"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "program",
+   "title": "AMP Information Night (Regional Arts & Media Program)",
+   "date": "2026-10-27",
+   "time": "19:00",
+   "format": "In person",
+   "url": "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/information-nights-workshops/"
+  },
+  {
+   "kind": "program",
+   "title": "Free Audition Workshop C-AMP",
+   "date": "2026-11-07",
+   "time": null,
+   "format": "In person",
+   "url": "https://www.dcdsb.ca/allsaints/our-programs-services/amp-regional-arts-and-media-program/information-nights-workshops/"
+  }
+ ],
+ "missing": [
+  "SHSM: the board SHSM page says to ask Guidance about the sectors at each school; no page read lists which sectors this school offers.",
+  "French Immersion is not offered here: the board lists Grade 9-12 FI at Austin, Notre Dame, St. Mary and Monsignor Paul Dwyer only.",
+  "No Grade 8 information night other than the AMP events found for 2026-27.",
+  "Course list: the school course calendar is hosted on myBlueprint, a JavaScript app that the extractor cannot read (0 courses found); no PDF or text calendar published.",
+  "AMP workshop (C-AMP) start time and place are not stated on the page."
+ ]
+}

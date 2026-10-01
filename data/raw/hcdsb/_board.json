@@ -1,0 +1,162 @@
+{
+ "board": "hcdsb",
+ "scrapedAt": "2026-10-01",
+ "sources": [
+  "https://www.hcdsb.org/parents/register-your-child/secondary-9-12/",
+  "https://www.hcdsb.org/schools/transferring-schools/",
+  "https://secondary.hcdsb.org/assumption/join-our-school/",
+  "https://secondary.hcdsb.org/bishopreding/join-our-school/",
+  "https://secondary.hcdsb.org/notredame/steam/",
+  "https://secondary.hcdsb.org/loyola/steam/",
+  "https://secondary.hcdsb.org/xavier/steam/",
+  "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/",
+  "https://secondary.hcdsb.org/ctk/advanced-placement-2/",
+  "https://secondary.hcdsb.org/corpuschristi/advanced-placement/",
+  "https://secondary.hcdsb.org/holytrinity/advanced-placement/",
+  "https://secondary.hcdsb.org/stkateri/advanced-placement/",
+  "https://secondary.hcdsb.org/stkateri/international-baccalaureate-ib-programme/",
+  "https://secondary.hcdsb.org/sta/ib-programme/",
+  "https://secondary.hcdsb.org/stkateri/french-immersion/"
+ ],
+ "registration": {
+  "steps": [
+   {
+    "en": "Find your designated (home) school with the board's Find Your School tool; it is based on your primary home address.",
+    "es": "Encuentra tu escuela designada (de residencia) con la herramienta Find Your School del consejo; se basa en tu domicilio principal.",
+    "fr": "Trouve ton école désignée (de secteur) avec l'outil Find Your School du conseil; elle dépend de ton adresse principale."
+   },
+   {
+    "en": "If you attend an HCDSB Catholic elementary school in the secondary school's Family of Schools, you do not register online: Grade 9 registration is handled through your elementary school during Grade 8.",
+    "es": "Si asistes a una primaria católica del HCDSB de la Family of Schools de la secundaria, no te inscribes en línea: la inscripción a 9.º se hace a través de tu primaria durante 8.º grado.",
+    "fr": "Si tu fréquentes une école élémentaire catholique du HCDSB de la Family of Schools de l'école secondaire, tu ne t'inscris pas en ligne : l'inscription en 9e année se fait par ton école élémentaire pendant la 8e année."
+   },
+   {
+    "en": "If you are new to HCDSB, complete the board's online registration form (see the HCDSB secondary registration page for documents and timelines).",
+    "es": "Si eres nuevo en HCDSB, completa el formulario de inscripción en línea del consejo (consulta la página de inscripción secundaria del HCDSB para documentos y fechas).",
+    "fr": "Si tu es nouveau au HCDSB, remplis le formulaire d'inscription en ligne du conseil (consulte la page d'inscription au secondaire du HCDSB pour les documents et les échéances)."
+   },
+   {
+    "en": "To attend a school other than your home school, register at your home school and apply through the HCDSB Cross Boundary School Attendance process; approval depends on space and you stay at your home school until you have written approval.",
+    "es": "Para asistir a una escuela distinta de la tuya, inscríbete en tu escuela de residencia y solicita por el proceso Cross Boundary School Attendance del HCDSB; la aprobación depende del cupo y sigues en tu escuela de residencia hasta tener la aprobación escrita.",
+    "fr": "Pour fréquenter une autre école que celle de ton secteur, inscris-toi à ton école de secteur et fais une demande par le processus Cross Boundary School Attendance du HCDSB; l'approbation dépend des places et tu restes à ton école de secteur jusqu'à l'approbation écrite."
+   }
+  ],
+  "docs": [],
+  "note": {
+   "en": "Summary taken from the schools' 'Join Our School' pages; the board's own registration page (hcdsb.org) could not be read by the crawler (HTTP 403), so documents and dates are not listed.",
+   "es": "Resumen tomado de las páginas 'Join Our School' de las escuelas; la página de inscripción del consejo (hcdsb.org) no pudo leerse con el rastreador (HTTP 403), por lo que no se listan documentos ni fechas.",
+   "fr": "Résumé tiré des pages « Join Our School » des écoles; la page d'inscription du conseil (hcdsb.org) n'a pas pu être lue par l'outil (HTTP 403), donc les documents et les dates ne sont pas indiqués."
+  },
+  "contact": "See the school's contact page at secondary.hcdsb.org; registration questions go to the board via hcdsb.org.",
+  "url": "https://www.hcdsb.org/parents/register-your-child/secondary-9-12/"
+ },
+ "programs": [
+  {
+   "id": "hcdsb-steam",
+   "tag": "stem",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-notre-dame",
+    "hcdsb-st-ignatius-of-loyola",
+    "hcdsb-st-francis-xavier"
+   ],
+   "name": {
+    "en": "STEAM Program",
+    "es": "STEAM Program",
+    "fr": "STEAM Program"
+   },
+   "p": {
+    "en": "Grade 9 cohort program with four bundled STEAM courses taught through project-based, inquiry learning.",
+    "es": "Programa de cohorte de 9.º grado con cuatro materias STEAM integradas, con aprendizaje por proyectos e indagación.",
+    "fr": "Programme en cohorte de 9e année avec quatre cours STEAM regroupés, par projets et par enquête."
+   },
+   "url": "https://secondary.hcdsb.org/notredame/steam/"
+  },
+  {
+   "id": "hcdsb-ap",
+   "tag": "ap",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-christ-the-king",
+    "hcdsb-corpus-christi",
+    "hcdsb-holy-trinity",
+    "hcdsb-st-kateri-tekakwitha-school"
+   ],
+   "name": {
+    "en": "Advanced Placement (AP) Prep",
+    "es": "Advanced Placement (AP) Prep",
+    "fr": "Advanced Placement (AP) Prep"
+   },
+   "p": {
+    "en": "AP Preparation courses from Grade 9 leading to university-level AP courses; school-run application.",
+    "es": "Cursos de preparación AP desde 9.º grado que llevan a cursos AP de nivel universitario; solicitud gestionada por cada escuela.",
+    "fr": "Cours de préparation AP dès la 9e année menant à des cours AP de niveau universitaire; demande gérée par chaque école."
+   },
+   "url": "https://secondary.hcdsb.org/corpuschristi/advanced-placement/"
+  },
+  {
+   "id": "hcdsb-ib",
+   "tag": "ib",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-st-kateri-tekakwitha-school",
+    "hcdsb-st-thomas-aquinas"
+   ],
+   "name": {
+    "en": "International Baccalaureate (IB) Diploma Programme",
+    "es": "International Baccalaureate (IB) Diploma Programme",
+    "fr": "International Baccalaureate (IB) Diploma Programme"
+   },
+   "p": {
+    "en": "Pre-IB from Grade 9 preparing for the IB Diploma Programme in Grades 11-12.",
+    "es": "Pre-IB desde 9.º grado como preparación para el Programa del Diploma IB de 11.º y 12.º.",
+    "fr": "Pre-IB dès la 9e année en préparation au Programme du diplôme IB de 11e et 12e année."
+   },
+   "url": "https://secondary.hcdsb.org/sta/ib-programme/"
+  },
+  {
+   "id": "hcdsb-hpp",
+   "tag": "sports",
+   "start": "9",
+   "entry": "apply",
+   "hosts": [
+    "hcdsb-st-francis-xavier"
+   ],
+   "name": {
+    "en": "High Performance Regional Sports Program",
+    "es": "High Performance Regional Sports Program",
+    "fr": "High Performance Regional Sports Program"
+   },
+   "p": {
+    "en": "Academics plus athletic development, open to students across Halton Region, with full-time and provincial-athlete pathways.",
+    "es": "Estudios y desarrollo atlético, abierto a estudiantes de toda la región de Halton, con vías de tiempo completo y de atletas provinciales.",
+    "fr": "Études et développement athlétique, ouvert aux élèves de toute la région de Halton, avec parcours à temps plein et parcours d'athlètes provinciaux."
+   },
+   "url": "https://secondary.hcdsb.org/xavier/high-performance-regional-sports-program/"
+  },
+  {
+   "id": "hcdsb-french",
+   "tag": "fi",
+   "start": "9",
+   "entry": "school",
+   "hosts": [
+    "hcdsb-st-kateri-tekakwitha-school"
+   ],
+   "name": {
+    "en": "French Immersion and Extended French",
+    "es": "French Immersion and Extended French",
+    "fr": "French Immersion and Extended French"
+   },
+   "p": {
+    "en": "French Immersion and Extended French continue in Grade 9 for students from the elementary programs.",
+    "es": "La inmersión y el francés extendido continúan en 9.º grado para estudiantes de los programas de primaria.",
+    "fr": "L'immersion et le français approfondi se poursuivent en 9e année pour les élèves des programmes élémentaires."
+   },
+   "url": "https://secondary.hcdsb.org/stkateri/french-immersion/"
+  }
+ ],
+ "sessions": []
+}

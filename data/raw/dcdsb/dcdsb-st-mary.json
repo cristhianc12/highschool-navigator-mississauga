@@ -1,0 +1,85 @@
+{
+ "id": "dcdsb-st-mary",
+ "scrapedAt": "2026-10-01",
+ "site": "https://www.dcdsb.ca/stmary/",
+ "sources": [
+  "https://www.dcdsb.ca/stmary/",
+  "https://www.dcdsb.ca/stmary/programs-services/guidance-course-calendar/",
+  "https://www.dcdsb.ca/stmary/programs-services/specialized-programs/",
+  "https://www.dcdsb.ca/stmary/programs-services/pathways-to-student-success/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/secondary-courses-and-calendars/",
+  "https://www.dcdsb.ca/contact-us/register-for-school/secondary-school-registration/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/dual-credits/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/pathways-to-student-success/oyap/oyap-level-1-program/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/french-and-french-immersion/french-secondary-programs/",
+  "https://www.dcdsb.ca/our-programs-learning/academics/specialized-programs/french-immersion/french-immersion-school-listing/"
+ ],
+ "programs": [
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion continues in Grades 9 to 12 at this school, with 10 of the 30 diploma credits taken in French.",
+    "es": "La inmersión en francés continúa de 9.º a 12.º grado en esta escuela, con 10 de los 30 créditos del diploma cursados en francés.",
+    "fr": "L'immersion française se poursuit de la 9e à la 12e année dans cette école, avec 10 des 30 crédits du diplôme suivis en français."
+   },
+   "entry": "school",
+   "url": "https://www.dcdsb.ca/our-programs-learning/academics/french-and-french-immersion/french-secondary-programs/"
+  }
+ ],
+ "other": [
+  "Co-operative Education",
+  "Ontario Youth Apprenticeship Program (OYAP)",
+  "Dual Credits"
+ ],
+ "calendarUrl": "https://app.myblueprint.ca/public/courses/durhamcatholic/smcssdcdsb",
+ "admissions": [
+  {
+   "program": "French Immersion",
+   "tag": "fi",
+   "elig": {
+    "en": "Students currently in DCDSB elementary French Immersion, or in French Immersion at a school outside the board.",
+    "es": "Estudiantes que cursan inmersión en francés en una primaria del DCDSB, o en inmersión en una escuela fuera del consejo.",
+    "fr": "Élèves actuellement en immersion française dans une école élémentaire du DCDSB, ou en immersion dans une école hors du conseil."
+   },
+   "submit": [
+    {
+     "en": "Contact the school Guidance Office for an enrolment package: French Immersion registrations cannot be completed over OSAS.",
+     "es": "Comunícate con la Oficina de Orientación de la escuela para obtener un paquete de inscripción: las inscripciones de inmersión en francés no se pueden completar por OSAS.",
+     "fr": "Communique avec le service d'orientation de l'école pour obtenir une trousse d'inscription : les inscriptions en immersion française ne peuvent pas se faire par OSAS."
+    }
+   ],
+   "know": [
+    {
+     "en": "DCDSB elementary French Immersion students get a Guidance counsellor visit at their school for course selection.",
+     "es": "A los estudiantes de inmersión de primaria del DCDSB los visita un orientador en su escuela para elegir cursos.",
+     "fr": "Les élèves de l'immersion élémentaire du DCDSB reçoivent la visite d'un conseiller en orientation à leur école pour le choix de cours."
+    },
+    {
+     "en": "French Immersion boundaries differ from regular home-school boundaries; transport is provided within the busing zone.",
+     "es": "Los límites de inmersión en francés son distintos de los de la escuela de zona; hay transporte dentro de la zona de autobús.",
+     "fr": "Les secteurs d'immersion française diffèrent des secteurs scolaires habituels; le transport est offert dans la zone d'autobus."
+    },
+    {
+     "en": "Graduates receive a French certificate that is not a bilingual certificate; Grade 12 students may take the DELF exam.",
+     "es": "Los graduados reciben un certificado de francés que no es un certificado bilingüe; en 12.º grado se puede presentar el examen DELF.",
+     "fr": "Les diplômés reçoivent un certificat de français qui n'est pas un certificat bilingue; en 12e année, on peut passer l'examen DELF."
+    },
+    {
+     "en": "St. Mary asks French Immersion students to select the English option in OSAS; Guidance adjusts the French program at the course-selection and registration appointment.",
+     "es": "St. Mary pide a los estudiantes de inmersión que elijan la opción English en OSAS; Orientación ajusta el programa de francés en la cita de selección de cursos e inscripción.",
+     "fr": "St. Mary demande aux élèves d'immersion de choisir l'option English dans OSAS; l'orientation ajuste le programme de français lors du rendez-vous de choix de cours et d'inscription."
+    }
+   ],
+   "url": "https://www.dcdsb.ca/our-programs-learning/academics/french-and-french-immersion/french-secondary-programs/"
+  }
+ ],
+ "sessions": [],
+ "missing": [
+  "SHSM: the board SHSM page says to ask Guidance about the sectors at each school; no page read lists which sectors this school offers.",
+  "No 2026-27 Grade 8 information night or open house for this school found on its pages or the board site (checked school pages, board news, board calendar).",
+  "Course list: the school course calendar is hosted on myBlueprint, a JavaScript app that the extractor cannot read (0 courses found); no PDF or text calendar published.",
+  "St. Mary's page lists a Grade 8 information evening on January 13, 2026 (previous cycle); the 2026-27 date is not yet published."
+ ]
+}

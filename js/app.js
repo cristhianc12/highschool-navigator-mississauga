@@ -7,7 +7,9 @@ import { EXPLAINER } from "./explainer.js";
 import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
-import { ensureAllDetails, ensureSchools } from "./details.js";
+import { ensureAllDetails, ensureSchools, ensureBoardExtras } from "./details.js";
+import { REGISTRATION, REG_UI } from "./admissions.js";
+import { DETAIL_BOARDS } from "./data/summary.js";
 import { supportHtml } from "./support.js";
 import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
 
@@ -30,6 +32,8 @@ const state = {
   tone: store.get("tone") === "family" ? "family" : "teen",
   filters: { q: "", region: "", city: "", board: "", tag: "", sort: "name" },
   pf: { q: "", board: "", region: "", tag: "", start: "", entry: "" }, // filters of the regional programs list
+  apBoard: DETAIL_BOARDS.includes("peel") ? "peel" : DETAIL_BOARDS[0],
+  df: { region: "", board: "" }, // filters of the key dates
   progShown: PROG_PAGE,
   shown: PAGE,
   sessShown: SESS_PAGE,
@@ -190,6 +194,41 @@ function timeline() {
 
 /* ---------- Render ---------- */
 
+// Which boards each key date (same order as u.dates) belongs to; null = applies to everyone.
+const DATE_BOARDS = [["yrdsb"], ["tcdsb"], null, ["yrdsb"], ["hdsb"], ["peel"], ["tdsb"], ["dpcdsb"], ["dcdsb"], ["tdsb"], ["dpcdsb"], null];
+function renderDates() {
+  const u = t(), d = state.df;
+  const reg = (b) => BOARD_META[b].regions || [];
+  const regionOf = (b) => REGION_ORDER.filter((r) => SCHOOLS.some((s) => s.board === b && s.region === r));
+  const rows = u.dates.map((x, i) => ({ x, b: DATE_BOARDS[i] })).filter(({ b }) =>
+    !b || ((!d.board || b.includes(d.board)) && (!d.region || b.some((id) => regionOf(id).includes(d.region) || reg(id).includes(d.region)))));
+  $("#dates-list").innerHTML = rows.map(({ x, b }) => `<div class="date"><span class="when">${esc(x.when)}</span><p><b>${esc(x.b)}</b> ${esc(x.p)}</p>${b && !d.board ? `<p class="small muted">${esc(b.map((id) => L(BOARDS[id])).join(", "))}</p>` : ""}</div>`).join("");
+  $("#d-count").textContent = ({ es: (n) => `${n} fechas`, en: (n) => `${n} dates`, fr: (n) => `${n} dates` })[state.lang](rows.length);
+  $("#d-region").onchange = (e) => { d.region = e.target.value; renderDates(); };
+  $("#d-board").onchange = (e) => { d.board = e.target.value; renderDates(); };
+}
+
+async function renderApply() {
+  const u = t(), box = $("#ap-detail"), sel = $("#ap-board");
+  if (!box || !sel) return;
+  const b = sel.value;
+  state.apBoard = b;
+  sel.onchange = renderApply;
+  await ensureBoardExtras(b);
+  if (sel.value !== b) return;
+  const reg = REGISTRATION[b], R = REG_UI[state.lang];
+  const part = (x) => (typeof x === "object" ? L(x) : x);
+  const peel = b === "peel" ? `<div class="grid"><div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div><div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div>` : "";
+  box.innerHTML = !reg ? `<p class="muted">${esc(u.apply.none)}</p>` : `<div class="card apply-detail">
+    <h3>${esc(L(BOARDS[b]))}</h3>
+    <p class="small"><b>${esc(R.steps)}</b></p><ol class="dnotes">${reg.steps.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ol>
+    ${reg.docs?.length ? `<p class="small"><b>${esc(R.docs)}</b></p><ul class="dnotes">${reg.docs.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ul>` : ""}
+    ${reg.note ? `<p class="small muted">${esc(L(reg.note))}</p>` : ""}
+    ${reg.dates?.length ? `<p class="small"><b>${esc(R.dates)}</b></p><ul class="dnotes">${reg.dates.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ul>` : ""}
+    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(part(reg.contact))}</p>` : ""}
+    ${reg.url ? `<div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div>` : ""}</div>${peel}`;
+}
+
 function renderShell() {
   const u = t();
   document.documentElement.lang = u.htmlLang;
@@ -213,7 +252,7 @@ function renderShell() {
   const f = state.filters;
   const q = `quiz?lang=${state.lang}`;
   $("#desk-nav").innerHTML =
-    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
+    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#aplicar">${esc(u.apply.nav)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
   $("#bnav").innerHTML =
     `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
@@ -284,10 +323,16 @@ function renderShell() {
     </form>
     <p class="count" id="pcount" aria-live="polite"></p>
     <div class="grid" id="progs"></div><div id="progs-more" class="morewrap"></div>
-    <div class="peelinfo"><h3>${esc(u.peelH)}</h3><p class="muted">${esc(u.peelP)}</p>
-      <div class="grid">
-        <div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div>
-        <div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div></div></section>
+  </section>
+
+  <section id="aplicar"><div class="sec-head"><h2>${esc(u.apply.h)}</h2><p>${esc(u.apply.p)}</p></div>
+    <div class="grid">${u.apply.paths.map((x, n) => `<div class="card layer"><span class="tag">${n + 1}</span><h3>${esc(x.h)}</h3><p>${esc(x.p)}</p></div>`).join("")}</div>
+    <h3 class="boardh">${esc(u.apply.glanceH)}</h3>
+    <div class="tblwrap"><table class="cmp-table glance"><thead><tr>${u.apply.cols.map((c) => `<th scope="col">${esc(c)}</th>`).join("")}</tr></thead>
+      <tbody>${u.apply.rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+    <h3 class="boardh">${esc(u.apply.guideH)}</h3>
+    <form class="filters" onsubmit="return false"><label class="field">${esc(u.apply.pick)}<select id="ap-board">${boardOptions(state.apBoard).replace(/<option value="">[^<]*<\/option>/, "")}</select></label></form>
+    <div id="ap-detail" aria-live="polite"></div></section>
 
   <section id="charlas"><div class="sec-head"><h2>${esc(u.sess.h)}</h2><p>${esc(u.sess.p)}</p></div>
     <form class="filters" id="sess-filters" onsubmit="return false">
@@ -309,7 +354,12 @@ function renderShell() {
     <dl class="gl">${u.glossary.map(([k, d, m]) => `<div class="gl-row"><dt>${esc(k)}</dt><dd>${esc(d)}${m ? ` <span>${esc(m)}</span>` : ""}</dd></div>`).join("")}</dl></section>
 
   <section id="fechas"><div class="sec-head"><h2>${esc(u.fechasH)}</h2><p>${esc(u.fechasP)}</p></div>
-    <div class="dates">${u.dates.map((d) => `<div class="date"><span class="when">${esc(d.when)}</span><p><b>${esc(d.b)}</b> ${esc(d.p)}</p></div>`).join("")}</div></section>
+    <form class="filters" id="df" onsubmit="return false">
+      <label class="field">${esc(u.fRegion)}<select id="d-region">${regionOptions(state.df.region)}</select></label>
+      <label class="field">${esc(u.fSystem)}<select id="d-board">${boardOptions(state.df.board)}</select></label>
+    </form>
+    <p class="count" id="d-count" aria-live="polite"></p>
+    <div class="dates" id="dates-list"></div></section>
 
   <section id="preguntas"><div class="sec-head"><h2>${esc(u.preguntasH)}</h2><p>${esc(u.preguntasP)}</p></div>
     <ol class="q">${u.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></section>
@@ -329,6 +379,8 @@ function renderShell() {
   renderPrograms();
   renderCompare();
   renderSessions();
+  renderDates();
+  renderApply();
   bindGame();
   syncMyList();
 }

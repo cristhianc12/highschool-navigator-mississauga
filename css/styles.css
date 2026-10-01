@@ -529,3 +529,11 @@ a.theme.coffee{font-size:16px}
 .cf-more{margin-top:4px}
 .cf-more>summary{cursor:pointer;font-weight:600;color:var(--accent);font-size:.9rem}
 @media (max-width:560px){.cf-board{grid-template-columns:1fr}}
+.boardh{margin:26px 0 10px;font:800 1.05rem var(--font-display)}
+.tblwrap{overflow-x:auto}
+.glance{width:100%;border-collapse:collapse;font-size:14px}
+.glance th,.glance td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+.glance thead th{background:var(--surface);position:static}
+.glance tbody th{white-space:nowrap}
+.apply-detail{margin-bottom:14px}
+@media (max-width:640px){.glance tbody th{white-space:normal}}

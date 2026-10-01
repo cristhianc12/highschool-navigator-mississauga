@@ -149,7 +149,7 @@ export const UI = {
     langLabel: "Idioma",
     themeLabel: "Cambiar tema",
 
-    capasH: "Cómo funciona el sistema",
+    capasH: "Cómo funciona el sistema: el recorrido de tu hijo/a",
     capasP: "No todas las opciones son del mismo tipo. Hay cuatro niveles y algunos se pueden combinar.",
     layers: [
       { tag: "Nivel 1", h: "Escuela", p: "El edificio donde estudias. Todas ofrecen la secundaria regular completa, más algunos extras propios." },
@@ -209,6 +209,32 @@ export const UI = {
     peelHow: "Se entra en Grade 9 aplicando en línea. Hay una tarifa por aplicar y otra anual por programa. Se revisan las notas de Grade 7 y, en algunos programas, también una audición, una evaluación o una respuesta escrita. Después hay un sorteo entre quienes cumplen los criterios.",
     peelRuleH: "Reglas importantes",
     peelRule: "Tienes que aplicar al programa que te corresponde según tu boundary (tu dirección). Los estudiantes con visa de estudiante internacional no pueden aplicar; quienes tienen permiso de trabajo o de estudio, sí.",
+    apply: {
+      nav: "Cómo aplicar",
+      h: "Cómo se aplica, consejo por consejo",
+      p: "Hay tres caminos para entrar a una escuela y cada consejo los maneja un poco distinto. Empieza por los caminos, revisa las fechas en la tabla y luego elige tu consejo para ver sus pasos y documentos.",
+      paths: [
+        { h: "Tu escuela por boundary", p: "Es automática. La decide tu dirección y te registras en la escuela o en el portal del consejo. No hay que aplicar." },
+        { h: "Un programa regional o especializado", p: "Aplicas, normalmente en el otoño de Grade 8, a un programa de una escuela que recibe estudiantes de fuera de su boundary. Muchos piden evaluación, audición o sorteo." },
+        { h: "Una escuela fuera de tu boundary", p: "Pides un traslado, muchas veces en invierno o primavera. Los cupos son limitados y el transporte no está garantizado." },
+      ],
+      glanceH: "De un vistazo: periodos de aplicación 2026-27 (entrada a Grade 9 en septiembre de 2027)",
+      cols: ["Consejo", "Periodo para aplicar", "Dónde y cómo", "Después de aplicar"],
+      rows: [
+        ["TDSB (Toronto)", "Specialized Programs: 9–27 nov. de 2026. Fuera de zona: 4–22 ene. de 2027", "En línea, una aplicación por programa", "Evaluaciones 7–17 dic.; ofertas el 10 feb. de 2027"],
+        ["Católico de Toronto (TCDSB)", "25 sept. – 30 oct. de 2026", "SOAR, en línea (escuelas de artes: en la escuela)", "Ofertas el 27 nov. y el 4 dic.; ubicación regular el 15 ene. de 2027"],
+        ["Peel DSB", "3–24 nov. de 2026 (RLCP y Explore High Skills)", "Portal en línea de RLCP", "Audiciones y evaluaciones dic.–ene.; ofertas desde el 2 feb. de 2027 (sorteo entre quienes cumplen)"],
+        ["Dufferin-Peel Católico (DPCDSB)", "Varía según el programa (por ejemplo 27 nov. – 18 dic.; la ronda 1 cierra el 8 ene. de 2027)", "La aplicación propia de cada programa", "Ofertas entre dic. y feb."],
+        ["York Region DSB", "IB: 16 oct. – 12 nov. de 2026. Artes: abre en noviembre. Los programas de escuela varían", "En línea (Edsby) o en la escuela", "Evaluaciones IB el 19 o 21 nov."],
+        ["Halton DSB", "AP, IB e I-STEM: 30 oct. – 30 nov. de 2026", "Una aplicación central en línea", "Respuesta antes del 4 dic.; aceptar antes del 11 dic. (sorteo si el programa tiene más solicitudes que cupos)"],
+        ["Durham Católico (DCDSB)", "Regional Arts & Media: cierra el 26 nov. de 2026", "Aplicación en línea más audición", "Audiciones 9–10 ene. de 2027"],
+        ["Otros consejos", "York Catholic, Durham, Halton Católico, CS Viamonde, CSC MonAvenir y los de Clarington: casi siempre registro en la escuela, algunos todo el año", "Mira el perfil de cada escuela", "Los programas con fechas propias aparecen en el perfil"],
+      ],
+      guideH: "Pasos y documentos de tu consejo",
+      pick: "Consejo",
+      none: "Los datos de registro de este consejo aún se están cargando o no fueron publicados.",
+      peelExtra: "Programas regionales de Peel (RLCP)",
+    },
     startsAt: { "9": "Desde Gr 9", "10": "Desde Gr 10", "11": "Desde Gr 11", "12": "Desde Gr 12" },
     applyChip: "Aplicar",
 
@@ -385,7 +411,7 @@ export const UI = {
     langLabel: "Language",
     themeLabel: "Toggle theme",
 
-    capasH: "How to read the map",
+    capasH: "How to read the map: your child's journey",
     capasP: "The options are not equivalent. There are four different levels and some can be combined.",
     layers: [
       { tag: "Level 1", h: "School", p: "The building where you study. Every school offers the full regular high school program, plus some extras of its own." },
@@ -445,6 +471,32 @@ export const UI = {
     peelHow: "Grade 9 entry by online application. There is an application fee and an annual per-program fee. Grade 7 marks are reviewed and, for some programs, an audition, assessment or written response. Then a random selection is held among applicants who meet the criteria.",
     peelRuleH: "Important rules",
     peelRule: "You must apply to the program that matches your boundary by home address. Students on an international student visa are not eligible (those with work or study permits may apply).",
+    apply: {
+      nav: "How to apply",
+      h: "How applying works, board by board",
+      p: "Three paths lead into a school, and each board runs them a little differently. Start with the paths, check the dates in the table, then pick your board for its own steps and documents.",
+      paths: [
+        { h: "Your boundary school", p: "Automatic. Your home address decides it, and you register at the school or through the board's portal. No application." },
+        { h: "A regional or specialized program", p: "You apply, usually in the fall of Grade 8, to a program in a school that takes students from beyond its boundary. Many add an assessment, an audition or a random selection." },
+        { h: "A school outside your boundary", p: "You ask for a transfer, often in winter or spring. Space is limited and busing is not guaranteed." },
+      ],
+      glanceH: "At a glance: 2026-27 application windows (Grade 9 entry in September 2027)",
+      cols: ["Board", "Application window", "Where and how", "After you apply"],
+      rows: [
+        ["Toronto DSB", "Specialized Programs: Nov 9–27, 2026. Out-of-area: Jan 4–22, 2027", "Online, one application per program", "Assessments Dec 7–17; offers Feb 10, 2027"],
+        ["Toronto Catholic (TCDSB)", "Sept 25 – Oct 30, 2026", "SOAR, online (arts schools: at the school)", "Offers Nov 27 and Dec 4; regular placement Jan 15, 2027"],
+        ["Peel DSB", "Nov 3–24, 2026 (RLCP and Explore High Skills)", "RLCP online portal", "Auditions and assessments Dec–Jan; offers from Feb 2, 2027 (random selection among eligible applicants)"],
+        ["Dufferin-Peel Catholic (DPCDSB)", "Varies by program (for example Nov 27 – Dec 18; round 1 closes Jan 8, 2027)", "Each program's own application", "Offers between Dec and Feb"],
+        ["York Region DSB", "IB: Oct 16 – Nov 12, 2026. Arts: opens in November. School programs vary", "Online (Edsby) or at the school", "IB assessments Nov 19 or 21"],
+        ["Halton DSB", "AP, IB and I-STEM: Oct 30 – Nov 30, 2026", "One central online application", "Status by Dec 4; accept by Dec 11 (random selection if a program is over-subscribed)"],
+        ["Durham Catholic (DCDSB)", "Regional Arts & Media: closes Nov 26, 2026", "Online application plus audition", "Auditions Jan 9–10, 2027"],
+        ["Other boards", "York Catholic, Durham, Halton Catholic, CS Viamonde, CSC MonAvenir, Clarington boards: mostly registration at the school, some all year", "Check each school's profile", "Programs with their own dates are listed in the profile"],
+      ],
+      guideH: "Your board's steps and documents",
+      pick: "Board",
+      none: "This board's registration details are still being loaded or were not published.",
+      peelExtra: "Peel regional programs (RLCP)",
+    },
     startsAt: { "9": "From Gr 9", "10": "From Gr 10", "11": "From Gr 11", "12": "From Gr 12" },
     applyChip: "Application",
 
@@ -621,7 +673,7 @@ export const UI = {
     langLabel: "Langue",
     themeLabel: "Changer de thème",
 
-    capasH: "Comment lire la carte",
+    capasH: "Comment lire la carte : le parcours de ton enfant",
     capasP: "Les options ne sont pas équivalentes. Il y a quatre niveaux distincts et certains peuvent se combiner.",
     layers: [
       { tag: "Niveau 1", h: "École", p: "Le bâtiment où tu étudies. Toutes offrent le secondaire régulier complet, plus quelques extras qui leur sont propres." },
@@ -681,6 +733,32 @@ export const UI = {
     peelHow: "Entrée en 9e année par demande en ligne. Des frais de demande et des frais annuels par programme s'appliquent. On examine les notes de 7e année et, pour certains programmes, une audition, une évaluation ou une réponse écrite. Un tirage au sort a ensuite lieu parmi les candidats qui répondent aux critères.",
     peelRuleH: "Règles importantes",
     peelRule: "Vous devez demander le programme qui correspond à votre secteur selon votre adresse. Les élèves titulaires d'un visa d'étudiant international ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler).",
+    apply: {
+      nav: "Comment demander",
+      h: "Comment présenter une demande, conseil par conseil",
+      p: "Trois voies mènent à une école et chaque conseil les gère un peu différemment. Commence par les voies, vérifie les dates dans le tableau, puis choisis ton conseil pour voir ses étapes et ses documents.",
+      paths: [
+        { h: "Ton école de secteur", p: "Automatique. Ton adresse décide, et tu t'inscris à l'école ou par le portail du conseil. Aucune demande." },
+        { h: "Un programme régional ou spécialisé", p: "Tu présentes une demande, souvent à l'automne de la 8e année, à un programme d'une école qui accueille des élèves de l'extérieur de son secteur. Plusieurs ajoutent une évaluation, une audition ou un tirage au sort." },
+        { h: "Une école hors de ton secteur", p: "Tu demandes un transfert, souvent en hiver ou au printemps. Les places sont limitées et le transport n'est pas garanti." },
+      ],
+      glanceH: "En un coup d'œil : périodes de demande 2026-2027 (entrée en 9e année en septembre 2027)",
+      cols: ["Conseil", "Période de demande", "Où et comment", "Après ta demande"],
+      rows: [
+        ["TDSB (Toronto)", "Specialized Programs : 9–27 nov. 2026. Hors secteur : 4–22 janv. 2027", "En ligne, une demande par programme", "Évaluations du 7 au 17 déc.; offres le 10 févr. 2027"],
+        ["Catholique de Toronto (TCDSB)", "25 sept. – 30 oct. 2026", "SOAR, en ligne (écoles d'arts : à l'école)", "Offres les 27 nov. et 4 déc.; placement régulier le 15 janv. 2027"],
+        ["Peel DSB", "3–24 nov. 2026 (RLCP et Explore High Skills)", "Portail en ligne des RLCP", "Auditions et évaluations déc.–janv.; offres dès le 2 févr. 2027 (tirage au sort parmi les candidats admissibles)"],
+        ["Dufferin-Peel catholique (DPCDSB)", "Varie selon le programme (par exemple 27 nov. – 18 déc.; la ronde 1 ferme le 8 janv. 2027)", "La demande propre à chaque programme", "Offres entre déc. et févr."],
+        ["York Region DSB", "BI : 16 oct. – 12 nov. 2026. Arts : ouvre en novembre. Les programmes d'école varient", "En ligne (Edsby) ou à l'école", "Évaluations du BI les 19 ou 21 nov."],
+        ["Halton DSB", "AP, BI et I-STEM : 30 oct. – 30 nov. 2026", "Une demande centrale en ligne", "Réponse avant le 4 déc.; acceptation avant le 11 déc. (tirage au sort si le programme reçoit trop de demandes)"],
+        ["Durham catholique (DCDSB)", "Regional Arts & Media : ferme le 26 nov. 2026", "Demande en ligne et audition", "Auditions les 9–10 janv. 2027"],
+        ["Autres conseils", "York Catholic, Durham, Halton catholique, CS Viamonde, CSC MonAvenir et ceux de Clarington : surtout inscription à l'école, parfois toute l'année", "Consulte le profil de chaque école", "Les programmes ayant leurs propres dates figurent dans le profil"],
+      ],
+      guideH: "Les étapes et documents de ton conseil",
+      pick: "Conseil",
+      none: "Les renseignements d'inscription de ce conseil sont en cours de chargement ou n'ont pas été publiés.",
+      peelExtra: "Programmes régionaux de Peel (RLCP)",
+    },
     startsAt: { "9": "Dès la 9e", "10": "Dès la 10e", "11": "Dès la 11e", "12": "Dès la 12e" },
     applyChip: "Demande",
 
@@ -988,6 +1066,7 @@ export const TEEN = {
     vibesLabel: "Empieza por lo que te llama:",
     preguntasH: "Qué preguntar en las charlas",
     fechasH: "Fechas que no puedes olvidar",
+    capasH: "Cómo funciona el sistema: tu recorrido como estudiante",
   },
   en: {
     eyebrow: "GTA · Grade 9 · September 2027",
@@ -1001,6 +1080,7 @@ export const TEEN = {
     vibesLabel: "Start with what you are into:",
     preguntasH: "What to ask at the info sessions",
     fechasH: "Dates you cannot miss",
+    capasH: "How to read the map: your student journey",
   },
   fr: {
     eyebrow: "RGT · 9e année · septembre 2027",
@@ -1014,5 +1094,6 @@ export const TEEN = {
     vibesLabel: "Commence par ce qui te branche :",
     preguntasH: "Quoi demander aux séances d'info",
     fechasH: "Les dates à ne pas manquer",
+    capasH: "Comment lire la carte : ton parcours d'élève",
   },
 };

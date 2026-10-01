@@ -1,0 +1,118 @@
+{
+  "id": "ycdsb-holy-cross-academy",
+  "scrapedAt": "2026-10-01",
+  "site": "https://hocr.ycdsb.ca/",
+  "sources": [
+    "https://www.ycdsb.ca/programs-services/secondary/secondary-school-directory/hocr/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/hpa/",
+    "https://www.ycdsb.ca/programs-services/secondary/specialty-programs/shsm/",
+    "https://www.ycdsb.ca/holycrosshpa/",
+    "https://www.ycdsb.ca/holycrosshpa/application/",
+    "https://www.ycdsb.ca/pathways/co-op/",
+    "https://www.ycdsb.ca/pathways/oyap/",
+    "https://www.ycdsb.ca/pathways/dual-credit-courses/",
+    "https://www.ycdsb.ca/admissions/secondary-registration/"
+  ],
+  "programs": [
+    {
+      "tag": "sports",
+      "name": "High Performer Athlete (HPA)",
+      "note": {
+        "en": "Academic program for elite student-athletes who compete at a regional, provincial, national or international level, with a flexible timetable that balances school and training.",
+        "es": "Programa académico para estudiantes-atletas de élite que compiten a nivel regional, provincial, nacional o internacional, con un horario flexible que equilibra estudios y entrenamiento.",
+        "fr": "Programme scolaire pour élèves-athlètes d'élite qui participent à des compétitions régionales, provinciales, nationales ou internationales, avec un horaire flexible qui concilie études et entraînement."
+      },
+      "entry": "apply",
+      "url": "https://www.ycdsb.ca/holycrosshpa/"
+    }
+  ],
+  "shsm": [
+    "Arts & Culture",
+    "Business",
+    "Health & Wellness",
+    "Construction",
+    "Justice, Community Safety & Emergency Services"
+  ],
+  "other": [
+    "Co-operative Education",
+    "Dual Credit",
+    "OYAP"
+  ],
+  "admissions": [
+    {
+      "program": "High Performer Athlete (HPA)",
+      "tag": "sports",
+      "url": "https://www.ycdsb.ca/holycrosshpa/application/",
+      "elig": {
+        "en": "Elite student-athletes applying for the HPA program; the 2026-27 application package becomes available on November 1.",
+        "es": "Estudiantes-atletas de élite que postulan al programa HPA; el paquete de solicitud 2026-27 estará disponible el 1 de noviembre.",
+        "fr": "Élèves-athlètes d'élite qui postulent au programme HPA; la trousse de demande 2026-27 sera disponible le 1er novembre."
+      },
+      "fee": {
+        "en": "$50 non-refundable application fee.",
+        "es": "Tarifa de solicitud no reembolsable de $50.",
+        "fr": "Frais de demande non remboursables de 50 $."
+      },
+      "dates": {
+        "en": "Application deadline: a December date still to be announced, at 2 p.m.; acceptance letters December 14, 2026; acceptance RSVP January 4, 2027.",
+        "es": "Fecha límite de solicitud: una fecha de diciembre por anunciar, a las 2 p. m.; cartas de aceptación el 14 de diciembre de 2026; confirmación de aceptación el 4 de enero de 2027.",
+        "fr": "Date limite de la demande : une date en décembre à confirmer, à 14 h; lettres d'acceptation le 14 décembre 2026; confirmation de l'acceptation le 4 janvier 2027."
+      },
+      "submit": [
+        {
+          "en": "HPA application form",
+          "es": "Formulario de solicitud HPA",
+          "fr": "Formulaire de demande HPA"
+        },
+        {
+          "en": "$50 application fee",
+          "es": "Tarifa de solicitud de $50",
+          "fr": "Frais de demande de 50 $"
+        },
+        {
+          "en": "Coach's reference form",
+          "es": "Formulario de referencia del entrenador",
+          "fr": "Formulaire de référence de l'entraîneur"
+        },
+        {
+          "en": "Academic reference form (sealed envelope)",
+          "es": "Formulario de referencia académica (sobre sellado)",
+          "fr": "Formulaire de référence scolaire (enveloppe scellée)"
+        },
+        {
+          "en": "Report card (final Grade 7 or secondary credit summary)",
+          "es": "Boletín de calificaciones (final de 7.º grado o resumen de créditos de secundaria)",
+          "fr": "Bulletin scolaire (final de 7e année ou sommaire des crédits du secondaire)"
+        },
+        {
+          "en": "Property tax bill for the primary address",
+          "es": "Factura de impuestos de la propiedad del domicilio principal",
+          "fr": "Compte de taxes foncières de l'adresse principale"
+        }
+      ],
+      "know": [
+        {
+          "en": "Incomplete applications will not be processed.",
+          "es": "Las solicitudes incompletas no se procesan.",
+          "fr": "Les demandes incomplètes ne sont pas traitées."
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "kind": "program",
+      "date": "2026-11-25",
+      "time": "18:30",
+      "format": "In person",
+      "title": "Holy Cross HPA Open House in the gymnasium (HPA presentation follows the school presentation)",
+      "url": "https://www.ycdsb.ca/holycrosshpa/"
+    }
+  ],
+  "missing": [
+    "The page labels the application dates as 2027-28 while also calling the package 2026-27; dates are copied as published (letters Dec 14, 2026)",
+    "Co-op, Dual Credit and OYAP come from the board pathways pages (co-op is offered in Grades 11-12); the Construction and Justice SHSM are listed on the board SHSM page as centralized for all schools",
+    "No school course calendar or course list found online (guidance pages are Google Sites with no readable course list)",
+    "2026 open house details: the board 2026 Open House page says information will be posted soon (as of 2026-10-01)"
+  ]
+}

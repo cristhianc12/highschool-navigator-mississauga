@@ -17,7 +17,8 @@ const [id, ...urls] = args.filter((a) => !a.startsWith("--"));
 const school = SCHOOLS.find((s) => s.id === id);
 if (!school || !urls.length) { console.error("usage: extract-courses.mjs <school-id> <url>..."); process.exit(2); }
 
-const CODE = /\b([A-Z]{3}[1-4][A-Z](?:[0-9A-Z])?)\b/g;
+// Codes may be written with a space ("ADA 1O0", as in Peel's calendars): the match has two groups, joined without the space.
+const CODE = /\b([A-Z]{3}) ?([1-4][A-Z][0-9A-Z]?)\b/g;
 const area = (code, title) => {
   if (/co-?op/i.test(title)) return "Cooperative Education";
   const p = code.slice(0, 3);
@@ -48,7 +49,7 @@ for (const url of urls) {
   const text = execFileSync("node", [path.join(ROOT, "scripts/pipeline/crawl.mjs"), "page", url, "--max=2000000"], { env: process.env, maxBuffer: 256 * 1024 * 1024 }).toString("utf8").split("\n").filter((l) => !l.startsWith("# "));
   for (let i = 0; i < text.length; i++) {
     const line = text[i].trim();
-    const codes = [...line.matchAll(CODE)].map((m) => m[1]);
+    const codes = [...line.matchAll(CODE)].map((m) => m[1] + m[2]);
     if (!codes.length) continue;
     const rest = line.replace(CODE, " ");
     let title = tidy(rest);

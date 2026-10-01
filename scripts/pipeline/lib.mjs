@@ -6,7 +6,7 @@ import crypto from "node:crypto";
 export const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "../..");
 export const CACHE = path.join(ROOT, "data/cache");
 // Honest, compatible identification: some firewalls reject unknown bot-style strings but accept the standard "Mozilla/5.0 (compatible; ...)" form.
-export const UA = "Mozilla/5.0 (compatible; HighschoolNavigatorGTA/1.0; +https://highschool-gta-navigator.vercel.app/; polite informational crawler)";
+export const UA = "Mozilla/5.0 (compatible; HighschoolNavigatorGTA/1.0)";
 
 export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const slug = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -30,7 +30,7 @@ export async function get(url, { ttlHours = 24 * 7, delay = 400, binary = false,
     if (wait > 0) await sleep(wait);
     lastHit.set(host, Date.now());
     try {
-      const res = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA, "Accept-Language": "en-CA,en;q=0.9", ...headers }, signal: AbortSignal.timeout(timeoutMs) });
+      const res = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA, "Accept-Language": "en-CA,en;q=0.9", Accept: "text/html,application/xhtml+xml,application/pdf,text/csv,*/*;q=0.8", ...headers }, signal: AbortSignal.timeout(timeoutMs) });
       const meta = { ok: res.ok, status: res.status, url: res.url, type: res.headers.get("content-type") || "" };
       if (res.status >= 500 || res.status === 429) { await sleep(1500 * (attempt + 1)); continue; }
       const buf = Buffer.from(await res.arrayBuffer());

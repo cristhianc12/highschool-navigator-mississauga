@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Polite page reader for the scraping agents. Prints readable text (HTML or PDF) and the page's links,
 // with an on-disk cache and a per-host delay, so agents spend tokens on content, not markup.
-//   node scripts/pipeline/crawl.mjs page <url> [--links] [--max=12000] [--find=regex]
+//   node scripts/pipeline/crawl.mjs page <url> [--links] [--max=12000] [--find=regex]   (Google Docs/Slides/Sheets/Drive links and CSV are handled)
 //   node scripts/pipeline/crawl.mjs links <url> [--match=regex]       (links only)
 //   node scripts/pipeline/crawl.mjs sitemap <origin> [--match=regex]  (urls from sitemap.xml)
 // Needs: NODE_USE_ENV_PROXY=1 (this environment routes traffic through a proxy).
@@ -23,14 +23,43 @@ const pdfText = (buf) => {
   finally { fs.rmSync(f, { force: true }); }
 };
 
-async function read(url) {
+// Google Docs / Slides / Sheets / Drive links only work through their export endpoints.
+function rewrite(url) {
+  let m;
+  if ((m = url.match(/docs\.google\.com\/document\/d\/([\w-]+)/))) return `https://docs.google.com/document/d/${m[1]}/export?format=txt`;
+  if ((m = url.match(/docs\.google\.com\/presentation\/d\/([\w-]+)/))) return `https://docs.google.com/presentation/d/${m[1]}/export/txt`;
+  if ((m = url.match(/docs\.google\.com\/spreadsheets\/d\/([\w-]+)/))) { const g = url.match(/gid=(\d+)/); return `https://docs.google.com/spreadsheets/d/${m[1]}/export?format=csv${g ? `&gid=${g[1]}` : ""}`; }
+  if ((m = url.match(/drive\.google\.com\/file\/d\/([\w-]+)/)) || (m = url.match(/drive\.google\.com\/open\?id=([\w-]+)/))) return `https://drive.google.com/uc?export=download&id=${m[1]}`;
+  return url;
+}
+
+// Minimal CSV parser (quoted fields, doubled quotes, newlines inside quotes) -> "a | b | c" lines.
+function csvToLines(text) {
+  const rows = []; let row = [], cell = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += c; }
+    else if (c === '"') q = true;
+    else if (c === ",") { row.push(cell); cell = ""; }
+    else if (c === "\n" || c === "\r") { if (c === "\r" && text[i + 1] === "\n") i++; row.push(cell); rows.push(row); row = []; cell = ""; }
+    else cell += c;
+  }
+  if (cell || row.length) { row.push(cell); rows.push(row); }
+  return rows.map((r) => r.map(clean).join(" | ")).filter((l) => l.replace(/[|\s]/g, ""));
+}
+
+async function read(url0) {
+  const url = rewrite(url0);
   const head = await get(url, { binary: true, ttlHours: 24 * 14, delay: 600, timeoutMs: 45000 });
   if (!head.ok) return { ok: false, status: head.status, url, error: head.error };
-  if (/pdf/i.test(head.type) || /\.pdf(\?|$)/i.test(url)) return { ok: true, url: head.url, kind: "pdf", text: pdfText(head.buf), links: [] };
+  const magic = head.buf.subarray(0, 5).toString("latin1");
+  if (/csv/i.test(head.type) && !/<html/i.test(head.buf.subarray(0, 300).toString("utf8"))) return { ok: true, url: head.url, kind: "csv", text: csvToLines(head.buf.toString("utf8")).join("\n"), links: [] };
+  if (/pdf/i.test(head.type) || /\.pdf(\?|$)/i.test(url) || magic === "%PDF-") return { ok: true, url: head.url, kind: "pdf", text: pdfText(head.buf), links: [] };
   const html = head.buf.toString("utf8");
   const $ = load(html);
   const links = [];
-  $("a[href]").each((_, a) => {
+  const scope = $("main, [role=main], #content, article").first();
+  (scope.length ? scope.find("a[href]") : $("a[href]")).each((_, a) => {
     let href = $(a).attr("href");
     if (!href || /^(mailto:|tel:|javascript:|#)/i.test(href)) return;
     try { href = new URL(href, head.url).href.replace(/#.*$/, ""); } catch { return; }
@@ -82,4 +111,4 @@ if (opt.find) {
 const max = Number(opt.max || 12000);
 console.log(`# ${page.title || page.url}\n# url: ${page.url} (${page.kind}, ${page.text.length} chars${text.length > max ? `, showing first ${max}` : ""})\n`);
 console.log(text.slice(0, max));
-if (opt.links && page.links.length) console.log("\n# LINKS\n" + page.links.slice(0, 200).map((l) => `${l.text || "-"}\t${l.href}`).join("\n"));
+if (opt.links && page.links.length) console.log("\n# LINKS (content area" + (page.links.length > 60 ? ", first 60 of " + page.links.length + "; use the `links --match=` command to filter" : "") + ")\n" + page.links.slice(0, 60).map((l) => `${l.text || "-"}\t${l.href}`).join("\n"));

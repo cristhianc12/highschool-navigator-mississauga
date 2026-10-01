@@ -1,8 +1,10 @@
 // The raw data contract shared by the scraping agents, the validator and the site builder.
 // See scripts/pipeline/README.md for the human-readable version.
 export const TAGS = ["ib", "ap", "arts", "stem", "sports", "fi", "ef", "bakery", "trades", "ibt", "strings", "alt", "shsm", "gifted", "other"];
-export const START = ["9", "10", "11"];
-export const ENTRY = ["apply", "audition", "boundary", "lottery", "transfer"];
+export const START = ["9", "10", "11", "12"];
+// apply: application; audition: audition/portfolio; boundary: automatic by home address; lottery; transfer: request to attend out of boundary;
+// school: no application, placement through the school or its guidance team (for example IPRC or timetable selection).
+export const ENTRY = ["apply", "audition", "boundary", "lottery", "transfer", "school"];
 export const SESSION_KINDS = ["school", "program", "general"];
 export const SESSION_FORMATS = ["In person", "Virtual", "Hybrid"];
 

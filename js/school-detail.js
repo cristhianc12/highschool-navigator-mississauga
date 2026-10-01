@@ -9,7 +9,7 @@ import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
 import { starBtn } from "./mylist.js";
 import { EXTRAS } from "./school-extras.js";
 import { ADM_UI, REG_UI, REGISTRATION, admissionsForProgram, admissionsForSchool } from "./admissions.js";
-import { ensureDetails, ensureAllDetails } from "./details.js";
+import { ensureSchool, ensureBoardExtras, ensureBoards } from "./details.js";
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -152,7 +152,7 @@ function registrationHtml(school) {
     ${reg.docs.length ? `<p class="small"><b>${esc(R.docs)}</b></p><ul class="dnotes">${reg.docs.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>` : ""}
     <p class="small muted">${esc(L(reg.note))}</p>
     ${reg.dates?.length ? `<p class="small"><b>${esc(R.dates)}</b></p><ul class="dnotes">${reg.dates.map((s) => `<li>${esc(L(s))}</li>`).join("")}</ul>` : ""}
-    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(reg.contact)}</p>` : ""}
+    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(typeof reg.contact === "object" ? L(reg.contact) : reg.contact)}</p>` : ""}
     <p class="small muted">${esc(R.note)}</p>
     <div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div></section>`;
 }
@@ -206,9 +206,9 @@ function renderSchool(school) {
     ? `<section class="dsec"><h3>${esc(crs.h)}</h3><details class="dcourses" data-courses="${school.id}"><summary>${esc(crs.show)}</summary><div class="dcourses-body"></div></details></section>`
     : (ex?.src === "peel" ? `<section class="dsec"><p class="small muted">${esc(crs.peelNote)}</p></section>` : "");
 
-  const kv = school.kv
-    ? `<section class="dsec"><h3>${esc(d.detailsH)}</h3><p class="dfocus"><b>${esc(u.lblFocus)}</b> ${esc(L(school.focus))}</p>
-        <dl class="kv">${["distinct", "shsm", "langs", "entry"].map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(school.kv[k]))}</dd>`).join("")}</dl></section>`
+  const kv = school.kv || school.focus
+    ? `<section class="dsec"><h3>${esc(d.detailsH)}</h3>${school.focus ? `<p class="dfocus"><b>${esc(u.lblFocus)}</b> ${esc(L(school.focus))}</p>` : ""}
+        <dl class="kv">${["distinct", "shsm", "langs", "entry"].filter((k) => school.kv?.[k]).map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(school.kv[k]))}</dd>`).join("")}</dl></section>`
     : "";
 
   const boardNote = systemOf(school.board) === "french" ? `<p class="small muted">${esc(d.frenchNote)}</p>` : "";
@@ -264,7 +264,7 @@ function renderProgram(p) {
       ${admissionHtml(admissionsForProgram(p.id), "program")}
       ${info.reqs ? `<section class="dsec"><h3>${esc(P.reqs)}</h3><ul class="dnotes">${info.reqs.map((r) => `<li>${esc(L(r))}</li>`).join("")}</ul></section>` : ""}
       ${info.how ? `<section class="dsec"><h3>${esc(P.how)}</h3><p class="small">${esc(L(info.how))}</p>${info.dates ? `<p class="small muted">${esc(L(info.dates))}</p>` : ""}</section>` : ""}
-      ${info.keyDates ? `<section class="dsec"><h3>${esc(P.keyDates)}</h3><p class="small">${esc(L(info.keyDates))}</p></section>` : ""}
+      ${info.keyDates && L(info.keyDates) !== L(info.dates) ? `<section class="dsec"><h3>${esc(P.keyDates)}</h3><p class="small">${esc(L(info.keyDates))}</p></section>` : ""}
       ${sess.length ? `<section class="dsec"><h3>${esc(P.sessions)}</h3>${sess.map((e) => sessionRow(e, { showSchool: true })).join("")}<p class="small muted">${esc(S.calNote)}</p></section>` : ""}
       <section class="dsec"><h3>${esc(P.hosts)}</h3><ul class="hosts">${hosts}</ul></section>
       ${links ? `<section class="dsec"><h3>${esc(P.links)}</h3><div class="sbtns">${links}</div></section>` : ""}
@@ -308,13 +308,20 @@ const findItem = (type, id) => (type === "school" ? SCHOOLS.find((s) => s.id ===
 async function openProfile(type, id) {
   let item = findItem(type, id);
   // A shared link to a program of another board arrives before that board's details are loaded.
-  if (!item && type === "program") { await ensureAllDetails(); item = findItem(type, id); }
+  if (!item && type === "program") { await ensureBoards(); item = findItem(type, id); }
   if (!item) return;
   ensureDialog();
   current = { type, id };
   type === "school" ? renderSchool(item) : renderProgram(item);
   // Collected details (programs, admissions, sessions...) load per board; refresh the open profile when they arrive.
-  if (type === "school") ensureDetails([item.board]).then((changed) => { if (changed && dlg.open && current?.type === type && current.id === id) { const y = dlg.querySelector(".dbody")?.scrollTop || 0; renderSchool(item); const b = dlg.querySelector(".dbody"); if (b) b.scrollTop = y; } });
+  const refresh = (changed) => {
+    if (!changed || !dlg.open || current?.type !== type || current.id !== id) return;
+    const y = dlg.querySelector(".dbody")?.scrollTop || 0;
+    type === "school" ? renderSchool(item) : renderProgram(item);
+    const b = dlg.querySelector(".dbody");
+    if (b) b.scrollTop = y;
+  };
+  (type === "school" ? ensureSchool(id) : ensureBoardExtras(item.board)).then(refresh);
   if (!dlg.open) dlg.showModal();
   dlg.querySelector(".dbody").scrollTop = 0;
   const hash = `#${type}-${id}`;

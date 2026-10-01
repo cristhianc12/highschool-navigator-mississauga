@@ -208,7 +208,7 @@ export const UI = {
     peelHow: "Se entra en Grade 9 aplicando en línea. Hay una tarifa por aplicar y otra anual por programa. Se revisan las notas de Grade 7 y, en algunos programas, también una audición, una evaluación o una respuesta escrita. Después hay un sorteo entre quienes cumplen los criterios.",
     peelRuleH: "Reglas importantes",
     peelRule: "Tienes que aplicar al programa que te corresponde según tu boundary (tu dirección). Los estudiantes con visa de estudiante internacional no pueden aplicar; quienes tienen permiso de trabajo o de estudio, sí.",
-    startsAt: { "9": "Desde Gr 9", "10": "Desde Gr 10", "11": "Desde Gr 11" },
+    startsAt: { "9": "Desde Gr 9", "10": "Desde Gr 10", "11": "Desde Gr 11", "12": "Desde Gr 12" },
     applyChip: "Aplicar",
 
     gradosH: "¿Desde qué grado empieza cada cosa?",
@@ -437,7 +437,7 @@ export const UI = {
     peelHow: "Grade 9 entry by online application. There is an application fee and an annual per-program fee. Grade 7 marks are reviewed and, for some programs, an audition, assessment or written response. Then a random selection is held among applicants who meet the criteria.",
     peelRuleH: "Important rules",
     peelRule: "You must apply to the program that matches your boundary by home address. Students on an international student visa are not eligible (those with work or study permits may apply).",
-    startsAt: { "9": "From Gr 9", "10": "From Gr 10", "11": "From Gr 11" },
+    startsAt: { "9": "From Gr 9", "10": "From Gr 10", "11": "From Gr 11", "12": "From Gr 12" },
     applyChip: "Application",
 
     gradosH: "From which grade does each thing start?",
@@ -666,7 +666,7 @@ export const UI = {
     peelHow: "Entrée en 9e année par demande en ligne. Des frais de demande et des frais annuels par programme s'appliquent. On examine les notes de 7e année et, pour certains programmes, une audition, une évaluation ou une réponse écrite. Un tirage au sort a ensuite lieu parmi les candidats qui répondent aux critères.",
     peelRuleH: "Règles importantes",
     peelRule: "Vous devez demander le programme qui correspond à votre secteur selon votre adresse. Les élèves titulaires d'un visa d'étudiant international ne sont pas admissibles (les titulaires d'un permis de travail ou d'études peuvent postuler).",
-    startsAt: { "9": "Dès la 9e", "10": "Dès la 10e", "11": "Dès la 11e" },
+    startsAt: { "9": "Dès la 9e", "10": "Dès la 10e", "11": "Dès la 11e", "12": "Dès la 12e" },
     applyChip: "Demande",
 
     gradosH: "À partir de quelle année chaque option commence-t-elle?",

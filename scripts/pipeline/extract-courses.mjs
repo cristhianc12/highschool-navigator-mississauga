@@ -9,6 +9,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { ROOT } from "./lib.mjs";
 import { SCHOOLS } from "../../js/content.js";
+import { cleanCourses } from "./course-quality.mjs";
 
 const args = process.argv.slice(2);
 const year = (args.find((a) => a.startsWith("--year=")) || "").slice(7) || null;
@@ -51,6 +52,12 @@ for (const url of urls) {
     if (!codes.length) continue;
     const rest = line.replace(CODE, " ");
     let title = tidy(rest);
+    if (line.includes(" | ")) {
+      // table row ("a | b | c"): the title is the first short, capitalised cell that holds no course code
+      const cells = line.split(" | ").map((c) => c.trim());
+      const cand = cells.find((c) => c && !new RegExp(CODE.source).test(c) && /^[A-Z0-9][^|]{2,69}$/.test(tidy(c)) && !/^(n\/a|yes|no|full|grade|\d+)$/i.test(c));
+      if (cand) title = tidy(cand);
+    }
     if (title.length < 3) title = tidy(text[i - 1] || ""); // code on its own line: the title is the previous line
     if (title.length < 3 && text[i + 1] && !CODE.test(text[i + 1])) title = tidy(text[i + 1]);
     CODE.lastIndex = 0;
@@ -63,10 +70,11 @@ for (const e of found.values()) {
   const row = [e.title, ...[9, 10, 11, 12].map((g) => [...(e.g[g] || [])].join(" "))];
   (byArea.get(e.area) || byArea.set(e.area, []).get(e.area)).push(row);
 }
-const courses = [...byArea.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([a, rows]) => [a, rows.sort((x, y) => x[0].localeCompare(y[0]))]);
+const raw = [...byArea.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([a, rows]) => [a, rows.sort((x, y) => x[0].localeCompare(y[0]))]);
+const { courses, fixed, dropped } = cleanCourses(raw);
 const total = courses.reduce((n, [, r]) => n + r.length, 0);
 const out = path.join(ROOT, "data/raw", school.board, `${id}.courses.json`);
 await fs.mkdir(path.dirname(out), { recursive: true });
 await fs.writeFile(out, JSON.stringify({ year, sources: urls, courses }) + "\n");
-console.log(`${id}: ${total} courses in ${courses.length} areas -> ${path.relative(ROOT, out)}`);
+console.log(`${id}: ${total} courses in ${courses.length} areas -> ${path.relative(ROOT, out)} (titles repaired from code: ${fixed}, unreadable rows dropped: ${dropped})`);
 if (total < 25) console.log("WARNING: very few courses found. Check the page (it may be a menu page: find the real calendar/course list link) and re-run.");

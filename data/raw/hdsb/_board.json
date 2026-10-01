@@ -27,23 +27,23 @@
   "steps": [
    {
     "en": "Find your home school with the board's Find My Local School tool; for out-of-area transfers, contact the school you want to attend directly.",
-    "es": "Encuentre su escuela asignada con la herramienta Find My Local School del consejo escolar; para traslados fuera de zona, comuníquese directamente con la escuela deseada.",
-    "fr": "Trouvez votre école de secteur avec l'outil Find My Local School du conseil; pour un transfert hors secteur, communiquez directement avec l'école souhaitée."
+    "es": "Encuentra tu escuela asignada con la herramienta Find My Local School del consejo escolar; para traslados fuera de zona, comunícate directamente con la escuela que quieres.",
+    "fr": "Trouve ton école de secteur avec l'outil Find My Local School du conseil; pour un transfert hors secteur, communique directement avec l'école que tu souhaites."
    },
    {
     "en": "Complete the HDSB Student Registration Form (parent/guardian, or the student if 18 or older) and register in person at your local school, OR pre-register online through the HDSB online student pre-registration portal.",
-    "es": "Complete el formulario HDSB Student Registration Form (padre/madre/tutor, o el estudiante si tiene 18 años o más) y regístrese en persona en su escuela, O preinscríbase en línea mediante el portal de preinscripción del HDSB.",
-    "fr": "Remplissez le formulaire HDSB Student Registration Form (parent/tuteur, ou l'élève s'il a 18 ans ou plus) et inscrivez-vous en personne à votre école de secteur, OU préinscrivez-vous en ligne par le portail de préinscription du HDSB."
+    "es": "Completa el formulario HDSB Student Registration Form (padre/madre/tutor, o el estudiante si tiene 18 años o más) y regístrate en persona en tu escuela, O preinscríbete en línea mediante el portal de preinscripción del HDSB.",
+    "fr": "Remplis le formulaire HDSB Student Registration Form (parent/tuteur, ou l'élève s'il a 18 ans ou plus) et inscris-toi en personne à ton école de secteur, OU préinscris-toi en ligne par le portail de préinscription du HDSB."
    },
    {
     "en": "Bring the required original documents to your registration appointment at the school (school office staff contact you after an online pre-registration).",
-    "es": "Lleve los documentos originales requeridos a su cita de inscripción en la escuela (el personal de la oficina escolar le contacta tras una preinscripción en línea).",
-    "fr": "Apportez les documents originaux requis à votre rendez-vous d'inscription à l'école (le personnel du secrétariat communique avec vous après une préinscription en ligne)."
+    "es": "Lleva los documentos originales requeridos a tu cita de inscripción en la escuela (el personal de la oficina escolar te contacta tras una preinscripción en línea).",
+    "fr": "Apporte les documents originaux requis à ton rendez-vous d'inscription à l'école (le personnel du secrétariat communique avec toi après une préinscription en ligne)."
    },
    {
     "en": "New or returning to Ontario: use the Where Do I Register tool to find out whether to start at your home school or at the HDSB Welcome Centre.",
-    "es": "Si es nuevo en Ontario o regresa a la provincia: use la herramienta Where Do I Register para saber si debe comenzar en su escuela o en el HDSB Welcome Centre.",
-    "fr": "Nouveau en Ontario ou de retour dans la province : utilisez l'outil Where Do I Register pour savoir si vous devez commencer à votre école de secteur ou au HDSB Welcome Centre."
+    "es": "Si eres nuevo en Ontario o regresas a la provincia: usa la herramienta Where Do I Register para saber si debes comenzar en tu escuela o en el HDSB Welcome Centre.",
+    "fr": "Nouveau en Ontario ou de retour dans la province : utilise l'outil Where Do I Register pour savoir si tu dois commencer à ton école de secteur ou au HDSB Welcome Centre."
    }
   ],
   "docs": [
@@ -69,8 +69,8 @@
    },
    {
     "en": "Proof of custody (court order) if you are not the parent and the student is under 18",
-    "es": "Prueba de custodia (orden judicial) si no es el padre/madre y el estudiante es menor de 18 años",
-    "fr": "Preuve de garde (ordonnance du tribunal) si vous n'êtes pas le parent et que l'élève a moins de 18 ans"
+    "es": "Prueba de custodia (orden judicial) si no eres el padre/madre y el estudiante es menor de 18 años",
+    "fr": "Preuve de garde (ordonnance du tribunal) si tu n'es pas le parent et que l'élève a moins de 18 ans"
    },
    {
     "en": "Proof of immunization reported to Halton Region Public Health or a valid vaccine exemption",
@@ -91,12 +91,7 @@
     "fr": "Demandes AP, IB et I-STEM pour la 9e année : du 30 octobre au 30 novembre 2026 (23 h 59); état de la demande au plus tard le 4 décembre; acceptation au plus tard le 11 décembre 2026."
    }
   ],
-  "contact": {
-   "phone": "905-335-3663",
-   "tollFree": "866-786-6120",
-   "email": "contact@hdsb.ca",
-   "welcomeCentre": "215 Ontario St S, Milton; 905-335-3665 ext. 3440; WelcomeCentre@hdsb.ca"
-  }
+  "contact": "HDSB 905-335-3663 (toll-free 866-786-6120), contact@hdsb.ca, https://www.hdsb.ca/our-board/contact-us/"
  },
  "programs": [
   {
@@ -191,7 +186,7 @@
     },
     "how": {
      "en": "Grades 10-12: select AP courses in regular course selection; register and pay for exams in October.",
-     "es": "10.º a 12.º: elija los cursos AP en la selección regular; inscríbase y pague los exámenes en octubre.",
+     "es": "10.º a 12.º: elige los cursos AP en la selección regular; inscríbete y paga los exámenes en octubre.",
      "fr": "10e à 12e année : choisir les cours AP lors du choix de cours habituel; s'inscrire aux examens et les payer en octobre."
     },
     "reqs": [
@@ -471,7 +466,7 @@
    "info": {
     "who": {
      "en": "Grade 11 and 12 students; students in Grade 10 or above can indicate interest in myBlueprint and speak with their Guidance Counsellor.",
-     "es": "Estudiantes de 11.º y 12.º; desde 10.º se puede indicar interés en myBlueprint y hablar con el orientador.",
+     "es": "Estudiantes de 11.º y 12.º; desde 10.º puedes indicar tu interés en myBlueprint y hablar con el orientador.",
      "fr": "Élèves de 11e et 12e année; dès la 10e année, on peut indiquer son intérêt dans myBlueprint et en parler avec son conseiller en orientation."
     },
     "how": {
@@ -523,8 +518,8 @@
     },
     "how": {
      "en": "Select the co-op / 'OYFAST' code in myBlueprint course selection and meet with the Guidance Counsellor; parent/guardian consent required for students under 18.",
-     "es": "Elija el código de cooperativa / 'OYFAST' en myBlueprint y reúnase con el orientador; se requiere consentimiento del padre/tutor para menores de 18 años.",
-     "fr": "Choisissez le code coop / « OYFAST » dans myBlueprint et rencontrez le conseiller en orientation; le consentement du parent/tuteur est requis pour les moins de 18 ans."
+     "es": "Elige el código de cooperativa / 'OYFAST' en myBlueprint y reúnete con el orientador; se requiere consentimiento del padre/tutor para menores de 18 años.",
+     "fr": "Choisis le code coop / « OYFAST » dans myBlueprint et rencontre le conseiller en orientation; le consentement du parent/tuteur est requis pour les moins de 18 ans."
     }
    }
   },
@@ -570,8 +565,8 @@
     },
     "how": {
      "en": "Complete the Dual Credit Application Form; a graduation summary from the guidance team is required.",
-     "es": "Complete el formulario de solicitud de Dual Credit; se requiere un resumen de graduación del equipo de orientación.",
-     "fr": "Remplissez le formulaire de demande Dual Credit; un sommaire de diplomation de l'équipe d'orientation est requis."
+     "es": "Completa el formulario de solicitud de Dual Credit; se requiere un resumen de graduación del equipo de orientación.",
+     "fr": "Remplis le formulaire de demande Dual Credit; un sommaire de diplomation de l'équipe d'orientation est requis."
     }
    }
   },
@@ -617,8 +612,8 @@
     },
     "how": {
      "en": "Complete the SWAC application form; enrolment is not guaranteed and spaces are limited.",
-     "es": "Complete el formulario de solicitud SWAC; la inscripción no está garantizada y los cupos son limitados.",
-     "fr": "Remplissez le formulaire de demande SWAC; l'inscription n'est pas garantie et les places sont limitées."
+     "es": "Completa el formulario de solicitud SWAC; la inscripción no está garantizada y los cupos son limitados.",
+     "fr": "Remplis le formulaire de demande SWAC; l'inscription n'est pas garantie et les places sont limitées."
     }
    }
   },

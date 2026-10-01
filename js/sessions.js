@@ -702,7 +702,12 @@ export const SESSIONS = events.sort((a, b) => (a.date || "9999").localeCompare(b
 /** Adds sessions collected later (see details.js) and keeps the list sorted by date. */
 let nx = 0;
 export function addSessions(list) {
-  for (const o of list) SESSIONS.push({ id: `x${++nx}`, ...o, key: key(o.school) });
+  for (const o of list) {
+    const k = key(o.school);
+    // skip an event that is already listed (same school, kind, date and time)
+    if (SESSIONS.some((e) => e.key === k && e.kind === o.kind && e.date === (o.date || null) && (e.time || null) === (o.time || null))) continue;
+    SESSIONS.push({ id: `x${++nx}`, ...o, key: k });
+  }
   SESSIONS.sort((a, b) => (a.date || "9999").localeCompare(b.date || "9999") || (a.time || "99").localeCompare(b.time || "99") || a.school.localeCompare(b.school));
 }
 

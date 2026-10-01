@@ -7,7 +7,7 @@ import { EXPLAINER } from "./explainer.js";
 import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
-import { ensureAllDetails } from "./details.js";
+import { ensureAllDetails, ensureSchools } from "./details.js";
 import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -395,6 +395,7 @@ function compareOptions(free) {
 function renderCompare() {
   const u = t();
   const chosen = state.compare.map(byId).filter(Boolean);
+  ensureSchools(chosen.map((s) => s.id)).then((changed) => { if (changed) renderCompare(); }); // profiles of the compared schools load on demand
   const free = SCHOOLS.filter((s) => !state.compare.includes(s.id)).sort((a, b) => a.name.localeCompare(b.name));
   const canAdd = chosen.length < MAX_COMPARE;
   $("#cmp-toggles").innerHTML =
@@ -407,7 +408,7 @@ function renderCompare() {
   const dash = u.none;
   const row = (label, fn) => `<tr><th scope="row">${esc(label)}</th>${chosen.map((s) => `<td>${fn(s)}</td>`).join("")}</tr>`;
   const r = u.compRows;
-  const kv = (k) => (s) => (s.kv ? esc(L(s.kv[k])) : dash);
+  const kv = (k) => (s) => (s.kv && s.kv[k] ? esc(L(s.kv[k])) : dash);
   $("#cmp-out").innerHTML = `<div class="cmp-wrap"><table class="cmp-table">
     <thead><tr><th scope="col">${esc(u.compCol)}</th>${chosen.map((s) => `<th scope="col"><button type="button" class="viewlink" data-school="${s.id}">${esc(s.name)}</button></th>`).join("")}</tr></thead>
     <tbody>

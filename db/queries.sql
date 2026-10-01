@@ -74,3 +74,11 @@ group by 1, 2 having sum(n) >= 5 order by 3 desc;
 -- Feature use: compare, My list (add/export), map (load, legend, locate), sessions calendar, course finder
 select event, a, sum(n) as uses from metrics_daily where event in ('compare', 'mylist', 'map', 'session', 'courses', 'game')
 group by 1, 2 having sum(n) >= 5 order by 1, 3 desc;
+
+-- Buy Me a Coffee clicks by button (topbar, hero, footer, card, pill, quiz), per day
+select day, a as button, sum(n) as clicks from metrics_daily where event = 'coffee'
+group by 1, 2 order by 1 desc, 3 desc;
+
+-- Coffee clicks as a share of visits (all time)
+select (select coalesce(sum(n), 0) from metrics_daily where event = 'coffee') as coffee_clicks,
+       (select coalesce(sum(n), 0) from metrics_daily where event = 'visit') as visits;

@@ -544,3 +544,15 @@ a.theme.coffee{font-size:16px}
 .gcard p span{display:block;font:700 11px var(--font-body,inherit);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
 .gcard .gwin{font-weight:700;font-size:15px}
 .gcard .linkbtn{align-self:flex-start;margin-top:auto;font-weight:700}
+.supportcard{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:34px 0;padding:18px 22px;border-radius:18px;border:1px dashed var(--line);background:var(--surface)}
+.supportcard h3{margin:0 0 4px;font:800 1.05rem var(--font-display)}
+.supportcard p{margin:0;max-width:60ch;font-size:14.5px;color:var(--muted)}
+.supportcard .sc-act{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.supportcard small{color:var(--muted);font-size:12px}
+.coffee-pill{position:fixed;left:16px;bottom:18px;z-index:40;display:flex;align-items:center;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 14px;box-shadow:0 6px 22px rgba(20,10,60,.16);font-size:14px;animation:pillin .5s ease both;transition:opacity .5s}
+.coffee-pill.out{opacity:0}
+.coffee-pill a{font-weight:700;color:var(--ink,inherit);text-decoration:none;padding:6px 4px}
+.coffee-pill button{border:0;background:none;font-size:20px;line-height:1;padding:4px 9px;cursor:pointer;color:var(--muted)}
+@keyframes pillin{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+@media (max-width:760px){.coffee-pill{left:10px;right:10px;bottom:78px;justify-content:space-between}}
+@media (prefers-reduced-motion:reduce){.coffee-pill{animation:none}}

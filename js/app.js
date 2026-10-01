@@ -343,6 +343,10 @@ function sessionAreas(u) {
 
 function renderSessions() {
   const u = t();
+  // The area and board lists come from the sessions themselves: refresh them when more boards' sessions have loaded.
+  const sa = $("#s-area"), sb = $("#s-board");
+  if (sa) sa.innerHTML = sessionAreas(u).map(([v, l]) => `<option value="${v}" ${state.sess.area === v ? "selected" : ""}>${esc(l)}</option>`).join("");
+  if (sb) sb.innerHTML = [["", u.sess.allBoards], ...[...new Set(SESSIONS.map((e) => e.board).filter(Boolean))].sort((a, b) => BOARD_ORDER.indexOf(a) - BOARD_ORDER.indexOf(b)).map((b) => [b, L(BOARDS[b])])].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("");
   const today = new Date().toISOString().slice(0, 10);
   let list = SESSIONS.filter((e) => !e.date || e.date >= today);
   if (state.sess.area) list = list.filter((e) => e.city === state.sess.area || e.city === "virtual");

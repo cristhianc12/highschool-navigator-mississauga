@@ -19,9 +19,9 @@
    "tag": "stem",
    "name": "CCi STEM",
    "note": {
-    "en": "Specialized STEM program with its own 2026-27 course selection guide: cross-curricular learning applying STEM concepts to real-world scenarios, with science, English and technology courses each year.",
-    "es": "Programa especializado STEM con su propia guía de selección de cursos 2026-27: aprendizaje interdisciplinario que aplica conceptos STEM a situaciones reales, con cursos de ciencias, inglés y tecnología cada año.",
-    "fr": "Programme spécialisé STEM avec son propre guide de choix de cours 2026-27 : apprentissage interdisciplinaire appliquant les concepts STEM à des situations réelles, avec des cours de sciences, d'anglais et de technologie chaque année."
+    "en": "Specialized STEM program with its own 2026-27 course selection guide: cross-curricular learning applying STEM concepts to real-world scenarios, with science and English courses in Grades 9 and 10 and science, technology or computer science choices in Grades 11 and 12.",
+    "es": "Programa especializado STEM con su propia guía de selección de cursos 2026-27: aprendizaje interdisciplinario que aplica conceptos STEM a situaciones reales, con cursos de ciencias e inglés en 9.º y 10.º grado y opciones de ciencias, tecnología o informática en 11.º y 12.º.",
+    "fr": "Programme spécialisé STEM avec son propre guide de choix de cours 2026-27 : apprentissage interdisciplinaire appliquant les concepts STEM à des situations réelles, avec des cours de sciences et d'anglais en 9e et en 10e année et des choix de sciences, de technologie ou d'informatique en 11e et en 12e année."
    },
    "url": "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Grade-8-To-9-Transition",
    "entry": "apply"
@@ -42,7 +42,7 @@
    "note": {
     "en": "The school's course selection page links a 2026-27 document of Immersion and Extended French courses.",
     "es": "La página de selección de cursos de la escuela enlaza un documento 2026-27 con los cursos de Immersion y Extended French.",
-    "fr": "La page de choix de cours de l'école renvoie à un document 2026-27 des cours d'immersion et de Extended French."
+    "fr": "La page de choix de cours de l'école renvoie à un document 2026-27 des cours d'immersion et d'Extended French."
    },
    "url": "https://schoolweb.tdsb.on.ca/cedarbraeci/Guidance/Course-Selection"
   },

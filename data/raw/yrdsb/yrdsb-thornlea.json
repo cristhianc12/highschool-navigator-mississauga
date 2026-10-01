@@ -1,0 +1,155 @@
+{
+ "id": "yrdsb-thornlea",
+ "scrapedAt": "2026-10-01",
+ "site": "https://thornlea-ss.yrdsb.ca/",
+ "sources": [
+  "https://thornlea-ss.yrdsb.ca/",
+  "https://thornlea-ss.yrdsb.ca/academy-creativity-and-multimedia-acam",
+  "https://thornlea-ss.yrdsb.ca/advanced-placement",
+  "https://thornlea-ss.yrdsb.ca/french-immersion",
+  "https://thornlea-ss.yrdsb.ca/stem",
+  "https://thornlea-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://thornlea-ss.yrdsb.ca/experience-thornlea-secondary-school-welcome-grade-9",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/secondary-school-programs-and-opportunities",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program"
+ ],
+ "programs": [
+  {
+   "tag": "arts",
+   "name": "Academy of Creativity and Multimedia (ACAM)",
+   "entry": "apply",
+   "url": "https://thornlea-ss.yrdsb.ca/academy-creativity-and-multimedia-acam",
+   "note": {
+    "en": "Specialized program combining visual and performing arts with technology (art, drama, communications technology and multimedia), ending with a personal portfolio or start-up in Grade 12; also offered in French.",
+    "es": "Programa especializado que combina artes visuales y escénicas con tecnología (arte, teatro, tecnología de la comunicación y multimedia), con un portafolio personal o emprendimiento en 12.º grado; también se ofrece en francés.",
+    "fr": "Programme spécialisé qui combine arts visuels et d'interprétation avec la technologie (arts, théâtre, technologie de la communication et multimédia), avec un portfolio personnel ou une entreprise en démarrage en 12e année; offert aussi en français."
+   }
+  },
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "entry": "school",
+   "url": "https://thornlea-ss.yrdsb.ca/advanced-placement",
+   "note": {
+    "en": "Advanced Placement courses give university-level content, mainly in Grades 11-12; students pick AP courses at course selection and are assessed on AP content by a standardized exam each May.",
+    "es": "Los cursos de Advanced Placement ofrecen contenido de nivel universitario, sobre todo en 11.º y 12.º grado; los estudiantes eligen los cursos AP en la selección de cursos y se evalúa el contenido AP con un examen estandarizado cada mayo.",
+    "fr": "Les cours Advanced Placement offrent un contenu de niveau universitaire, surtout en 11e et 12e année; tu choisis les cours AP lors du choix de cours et le contenu AP est évalué par un examen normalisé chaque mai."
+   }
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "entry": "boundary",
+   "url": "https://thornlea-ss.yrdsb.ca/french-immersion",
+   "note": {
+    "en": "Secondary French Immersion for students continuing from elementary French Immersion; 10 French Immersion credits earn the French Immersion Certificate.",
+    "es": "French Immersion en secundaria para estudiantes que continúan desde la inmersión en francés de primaria; 10 créditos de inmersión dan derecho al French Immersion Certificate.",
+    "fr": "French Immersion au secondaire pour les élèves qui poursuivent depuis l'immersion française à l'élémentaire; 10 crédits d'immersion donnent droit au French Immersion Certificate."
+   }
+  },
+  {
+   "tag": "stem",
+   "name": "STEM Certificate",
+   "entry": "apply",
+   "url": "https://thornlea-ss.yrdsb.ca/stem",
+   "note": {
+    "en": "STEM Certificate requiring a set number of Science, Mathematics and Technology/Computer Studies courses plus clubs and contests; incoming Grade 8 students submit an Expression of Interest form.",
+    "es": "STEM Certificate que exige un número de cursos de ciencias, matemáticas y tecnología/informática más clubes y concursos; los estudiantes de 8.º grado que ingresan envían un formulario de Expression of Interest.",
+    "fr": "STEM Certificate qui exige un nombre de cours de sciences, de mathématiques et de technologie/informatique, plus des clubs et des concours; les élèves de 8e année qui arrivent soumettent un formulaire Expression of Interest."
+   }
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "apply",
+   "url": "https://thornlea-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12 in arts and culture, business, health and wellness and transportation: a bundle of sector courses, certifications, experiential learning and co-op.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado en arts and culture, business, health and wellness and transportation: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année en arts and culture, business, health and wellness and transportation : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et de l'éducation coopérative."
+   }
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA)",
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+   "note": {
+    "en": "High Performance Athlete (HPA) gives timetable support to students who compete at the provincial, national or international level in eligible sports.",
+    "es": "High Performance Athlete (HPA) ofrece apoyo de horario a estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles.",
+    "fr": "High Performance Athlete (HPA) offre un soutien d'horaire aux élèves qui participent à des compétitions de niveau provincial, national ou international dans des sports admissibles."
+   }
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Business",
+  "Health and Wellness",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://thornlea-ss.yrdsb.ca/course-selection",
+ "admissions": [
+  {
+   "program": "Academy of Creativity and Multimedia (ACAM)",
+   "tag": "arts",
+   "url": "https://thornlea-ss.yrdsb.ca/academy-creativity-and-multimedia-acam",
+   "elig": {
+    "en": "Experience in visual and performing arts or technology is useful but not required; ACAM can be combined with French Immersion and AP.",
+    "es": "La experiencia en artes visuales y escénicas o en tecnología es útil pero no es obligatoria; ACAM se puede combinar con French Immersion y AP.",
+    "fr": "Une expérience en arts visuels, en arts d'interprétation ou en technologie est utile mais pas obligatoire; l'ACAM peut se combiner avec l'immersion française et l'AP."
+   },
+   "fee": {
+    "en": "Free; no cost to apply.",
+    "es": "Gratis; no hay costo por solicitar.",
+    "fr": "Gratuit; aucuns frais pour présenter une demande."
+   },
+   "submit": [
+    {
+     "en": "Application submitted online or to the main office, plus a reference form",
+     "es": "Solicitud en línea o en la oficina principal, más un formulario de referencia",
+     "fr": "Demande en ligne ou au secrétariat, plus un formulaire de référence"
+    },
+    {
+     "en": "Registration form once accepted",
+     "es": "Formulario de registro una vez aceptado",
+     "fr": "Formulaire d'inscription une fois accepté"
+    }
+   ],
+   "know": [
+    {
+     "en": "Early acceptances and wait-list letters go out in December; later applications are taken as long as spots remain.",
+     "es": "Las aceptaciones tempranas y las cartas de lista de espera se envían en diciembre; las solicitudes posteriores se aceptan mientras haya cupos.",
+     "fr": "Les acceptations hâtives et les lettres de liste d'attente sont envoyées en décembre; les demandes plus tardives sont acceptées tant qu'il reste des places."
+    }
+   ]
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-12",
+   "time": "18:30",
+   "format": null,
+   "title": "Thornlea SS Open House (6:30-8:30 p.m.)",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course page links only to the myBlueprint public course catalogue, which does not render without JavaScript (0 courses readable).",
+  "HPA application deadline on the board HPA page is given as January 16, 2026 for the 2026-2027 school year (looks like a stale or inconsistent date), so no HPA date recorded.",
+  "ACAM page gives an early-admission deadline of 'December 13' without a year, so no ACAM deadline recorded.",
+  "SHSM page lists four sectors while the school's welcome page says 'Three Specialist High Skills Majors'; the page's list of four is used.",
+  "STEM page shows a 2026-2027 program but no dates for the cycle that leads to Grade 9 entry in 2027."
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": "yrdsb-thornhill",
+ "scrapedAt": "2026-10-01",
+ "site": "https://thornhill-ss.yrdsb.ca/",
+ "sources": [
+  "https://thornhill-ss.yrdsb.ca/",
+  "https://thornhill-ss.yrdsb.ca/advanced-placement-ap",
+  "https://thornhill-ss.yrdsb.ca/gifted-program",
+  "https://thornhill-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+  "https://thornhill-ss.yrdsb.ca/experience-thornhill-secondary-school-welcome-grade-9",
+  "https://thornhill-ss.yrdsb.ca/our-programs",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/secondary-school-programs-and-opportunities",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/school-programs-and-opportunities/secondary-school-programs",
+  "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/specialist-high-skills-major",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/college-delivered-dual-credit-program",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/cooperative-education",
+  "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/ontario-youth-apprenticeship-program"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP)",
+   "entry": "school",
+   "url": "https://thornhill-ss.yrdsb.ca/advanced-placement-ap",
+   "note": {
+    "en": "Advanced Placement courses give university-level content, mainly in Grades 11-12; students pick AP courses at course selection and are assessed on AP content by a standardized exam each May. The school describes AP courses as occurring at the Grade 12 level.",
+    "es": "Los cursos de Advanced Placement ofrecen contenido de nivel universitario, sobre todo en 11.º y 12.º grado; los estudiantes eligen los cursos AP en la selección de cursos y se evalúa el contenido AP con un examen estandarizado cada mayo. La escuela indica que los cursos AP se toman en 12.º grado.",
+    "fr": "Les cours Advanced Placement offrent un contenu de niveau universitaire, surtout en 11e et 12e année; tu choisis les cours AP lors du choix de cours et le contenu AP est évalué par un examen normalisé chaque mai. L'école indique que les cours AP se donnent en 12e année."
+   }
+  },
+  {
+   "tag": "gifted",
+   "name": "Gifted Program",
+   "entry": "school",
+   "url": "https://thornhill-ss.yrdsb.ca/gifted-program",
+   "note": {
+    "en": "Gifted programming in Grades 9 and 10 for students formally identified as Gifted through the IPRC process.",
+    "es": "Programa para estudiantes dotados en 9.º y 10.º grado, para quienes han sido identificados formalmente como dotados mediante el proceso IPRC.",
+    "fr": "Programme pour élèves surdoués en 9e et 10e année, pour les élèves formellement identifiés comme surdoués par le processus du CIPR."
+   }
+  },
+  {
+   "tag": "shsm",
+   "name": "Specialist High Skills Major (SHSM)",
+   "entry": "apply",
+   "url": "https://thornhill-ss.yrdsb.ca/pathways-programs/Specialist-High-Skills-Major-%28SHSM%29",
+   "note": {
+    "en": "Specialist High Skills Major for Grades 11-12 in Health and Wellness, Business and Transportation: a bundle of sector courses, certifications, experiential learning and co-op.",
+    "es": "Specialist High Skills Major para 11.º y 12.º grado en Health and Wellness, Business and Transportation: un conjunto de cursos del sector, certificaciones, aprendizaje experiencial y educación cooperativa.",
+    "fr": "Specialist High Skills Major pour la 11e et la 12e année en Health and Wellness, Business and Transportation : un ensemble de cours sectoriels, des certifications, de l'apprentissage expérientiel et de l'éducation coopérative."
+   }
+  },
+  {
+   "tag": "sports",
+   "name": "High Performance Athlete (HPA)",
+   "entry": "apply",
+   "url": "https://www2.yrdsb.ca/schools-programs/school-programs-nav/school-programs/high-performance-athlete-support",
+   "note": {
+    "en": "High Performance Athlete (HPA) gives timetable support to students who compete at the provincial, national or international level in eligible sports.",
+    "es": "High Performance Athlete (HPA) ofrece apoyo de horario a estudiantes que compiten a nivel provincial, nacional o internacional en deportes elegibles.",
+    "fr": "High Performance Athlete (HPA) offre un soutien d'horaire aux élèves qui participent à des compétitions de niveau provincial, national ou international dans des sports admissibles."
+   }
+  }
+ ],
+ "shsm": [
+  "Health and Wellness",
+  "Business",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "format": null,
+   "title": "Thornhill SS Open House (6-8 p.m.)",
+   "url": "https://www2.yrdsb.ca/schools-programs/secondary-school/planning-secondary-school/open-house-information-nights"
+  }
+ ],
+ "missing": [
+  "Course list not extracted: the school's course page links only to the myBlueprint public course catalogue, which does not render without JavaScript (0 courses readable).",
+  "HPA application deadline on the board HPA page is given as January 16, 2026 for the 2026-2027 school year (looks like a stale or inconsistent date), so no HPA date recorded.",
+  "School course-selection page not found (404), so no calendarUrl."
+ ]
+}

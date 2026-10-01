@@ -1,0 +1,163 @@
+{
+ "id": "peel-bramalea",
+ "scrapedAt": "2026-10-01",
+ "site": "https://bramalea.peelschools.org/",
+ "sources": [
+  "https://bramalea.peelschools.org/",
+  "https://bramalea.peelschools.org/construction",
+  "https://bramalea.peelschools.org/transportation-shsm",
+  "https://bramalea.peelschools.org/construction-ehs",
+  "https://bramalea.peelschools.org/transportation-ehs",
+  "https://bramalea.peelschools.org/transportation-engineering-and-technology",
+  "https://bramalea.peelschools.org/Frenchimmersion",
+  "https://bramalea.peelschools.org/co-operative-education",
+  "https://bramalea.peelschools.org/dual-credit",
+  "https://bramalea.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/explore-high-skills",
+  "https://www.peelschools.org/documents/0eaf2aa7-1389-4c8d-90b3-13955ee85d82/Bramalea-SS.pdf?fingerprint=ppb20251217021908"
+ ],
+ "programs": [
+  {
+   "tag": "stem",
+   "name": "Transportation, Engineering and Technology - RLCP",
+   "note": {
+    "en": "Regional Learning Choice Program with land, marine and aerospace transportation streams, industry partners and all OSSD requirements for every post-secondary pathway.",
+    "es": "Programa regional de elección con áreas de transporte terrestre, marítimo y aeroespacial, aliados de la industria y todos los requisitos del OSSD para cualquier ruta posterior.",
+    "fr": "Programme régional au choix avec volets de transport terrestre, maritime et aérospatial, partenaires de l'industrie et toutes les exigences du OSSD pour chaque voie postsecondaire."
+   },
+   "entry": "apply",
+   "url": "https://bramalea.peelschools.org/transportation-engineering-and-technology"
+  },
+  {
+   "tag": "shsm",
+   "name": "Construction - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Construction for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Construcción para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Construction pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://bramalea.peelschools.org/construction"
+  },
+  {
+   "tag": "shsm",
+   "name": "Transportation - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Transportation for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Transporte para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Transport pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://bramalea.peelschools.org/transportation-shsm"
+  },
+  {
+   "tag": "other",
+   "name": "Architecture and Construction - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Architecture and Construction: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Arquitectura y Construcción: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Architecture et construction : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://bramalea.peelschools.org/construction-ehs"
+  },
+  {
+   "tag": "other",
+   "name": "Transportation - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Transportation: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Transporte: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Transport : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://bramalea.peelschools.org/transportation-ehs"
+  },
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion: from Grade 9 students complete 10 credits in French and receive a certificate of French Immersion studies.",
+    "es": "Inmersión en francés: desde 9.º grado se cursan 10 créditos en francés y se recibe un certificado de estudios de inmersión en francés.",
+    "fr": "Immersion française : dès la 9e année, l'élève suit 10 crédits en français et reçoit un certificat d'études d'immersion en français."
+   },
+   "entry": "apply",
+   "url": "https://bramalea.peelschools.org/Frenchimmersion"
+  }
+ ],
+ "shsm": [
+  "Construction",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/0eaf2aa7-1389-4c8d-90b3-13955ee85d82/Bramalea-SS.pdf?fingerprint=ppb20251217021908",
+ "admissions": [
+  {
+   "program": "Transportation, Engineering and Technology - RLCP",
+   "tag": "stem",
+   "elig": {
+    "en": "Open to Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary (apply to the RLCP for your home address). International visa students are not eligible; work or study permit holders may apply.",
+    "es": "Abierto a estudiantes de 8.º grado que pasan a 9.º en 2027-28 y cumplen los criterios del programa y viven dentro de su zona (postula al RLCP que corresponde a tu domicilio). Los estudiantes con visa internacional no son elegibles; quienes tienen permiso de trabajo o estudio pueden postular.",
+    "fr": "Ouvert aux élèves de 8e année qui entrent en 9e année en 2027-28, qui répondent aux critères du programme et habitent dans son secteur (postule au RLCP qui correspond à ton adresse). Les élèves étrangers sous visa ne sont pas admissibles; les titulaires d'un permis de travail ou d'études peuvent postuler."
+   },
+   "marks": {
+    "en": "Grade 7 final report card and a written response (4 questions); no audition or in-person assessment.",
+    "es": "Boletín final de 7.º grado y una respuesta escrita (4 preguntas); sin audición ni evaluación presencial.",
+    "fr": "Bulletin final de 7e année et une réponse écrite (4 questions); pas d'audition ni d'évaluation en personne."
+   },
+   "fee": {
+    "en": "A non-refundable application fee plus an annual program fee (amounts not stated), paid through School Cash Online.",
+    "es": "Una tarifa de solicitud no reembolsable más una tarifa anual del programa (montos no indicados), pagadas por School Cash Online.",
+    "fr": "Des frais de demande non remboursables plus des frais annuels de programme (montants non indiqués), payés par School Cash Online."
+   },
+   "dates": {
+    "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); later rounds Feb 16, Feb 23 and Mar 8, 2027; waitlist offers from Mar 30, 2027.",
+    "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); rondas siguientes el 16 y 23 de febrero y el 8 de marzo de 2027; ofertas de lista de espera desde el 30 de marzo de 2027.",
+    "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); autres rondes les 16 et 23 février et le 8 mars 2027; offres de la liste d'attente dès le 30 mars 2027."
+   },
+   "know": [
+    {
+     "en": "After the review of the Grade 7 final report (and any written response or audition), applicants who meet the criteria go into a central random selection run by the board, not the school; remaining students go on that school's waitlist.",
+     "es": "Tras revisar el boletín final de 7.º grado (y la respuesta escrita o audición, si corresponde), los postulantes que cumplen los criterios entran a un sorteo central del consejo escolar, no de la escuela; los demás pasan a la lista de espera de esa escuela.",
+     "fr": "Après l'examen du bulletin final de 7e année (et de la réponse écrite ou de l'audition, le cas échéant), les candidats qui répondent aux critères entrent dans un tirage au sort central fait par le conseil, non par l'école; les autres vont sur la liste d'attente de cette école."
+    },
+    {
+     "en": "Students who self-identify as African, Black, Afro-Caribbean, First Nations, Inuit or Métis and meet the criteria are accepted without the random selection.",
+     "es": "Los estudiantes que se autoidentifican como africanos, negros, afrocaribeños, de las Primeras Naciones, inuit o métis y cumplen los criterios son aceptados sin pasar por el sorteo.",
+     "fr": "Les élèves qui s'auto-identifient comme africains, noirs, afro-caribéens, des Premières Nations, inuits ou métis et qui répondent aux critères sont admis sans passer par le tirage au sort."
+    },
+    {
+     "en": "Students in Peel are offered spots first; out-of-region applicants only if spaces remain. Busing for RLCP students in Grades 6-10 is planned for 2026-27, subject to Ministry funding.",
+     "es": "Los estudiantes de Peel reciben ofertas primero; los de fuera de la región solo si quedan cupos. Se planea ofrecer transporte escolar a estudiantes de RLCP de 6.º a 10.º grado en 2026-27, sujeto al financiamiento del Ministerio.",
+     "fr": "Les élèves de Peel reçoivent les offres en premier; ceux de l'extérieur de la région seulement s'il reste des places. Le transport est prévu pour les élèves de RLCP de la 6e à la 10e année en 2026-27, sous réserve du financement du ministère."
+    }
+   ],
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-05",
+   "time": "19:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "19:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Transportation, Engineering and Technology (7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": []
+}

@@ -1,0 +1,118 @@
+{
+ "id": "peel-fletcher-s-meadow",
+ "scrapedAt": "2026-10-01",
+ "site": "https://fletchersmeadow.peelschools.org/",
+ "sources": [
+  "https://fletchersmeadow.peelschools.org/",
+  "https://fletchersmeadow.peelschools.org/advanced-placement-ap-programs",
+  "https://fletchersmeadow.peelschools.org/arts-and-culture",
+  "https://fletchersmeadow.peelschools.org/health-wellness",
+  "https://fletchersmeadow.peelschools.org/sports",
+  "https://fletchersmeadow.peelschools.org/ict-shsm-information-and-communication-technology-",
+  "https://fletchersmeadow.peelschools.org/co-operative-education",
+  "https://fletchersmeadow.peelschools.org/dual-credit",
+  "https://fletchersmeadow.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/e1e895a0-bd38-4e3d-bf59-90d1483c72f7/FletchersMeadow-SS-717-2026.pdf?fingerprint=ppb20260717192700"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement (AP) Program",
+   "note": {
+    "en": "School advanced placement program with its own information night; it is not one of the board's Regional Learning Choice AP sites.",
+    "es": "Programa de Advanced Placement de la escuela con su propia noche informativa; no es una de las sedes de AP del programa regional de elección del consejo.",
+    "fr": "Programme Advanced Placement de l'école avec sa propre soirée d'information; ce n'est pas l'un des sites AP du programme régional au choix du conseil."
+   },
+   "entry": null,
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "tag": "shsm",
+   "name": "Arts and Culture - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Arts and Culture for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Artes y Cultura para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Arts et culture pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://fletchersmeadow.peelschools.org/arts-and-culture"
+  },
+  {
+   "tag": "shsm",
+   "name": "Health & Wellness - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Health & Wellness for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Salud y Bienestar para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Santé et bien-être pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://fletchersmeadow.peelschools.org/health-wellness"
+  },
+  {
+   "tag": "shsm",
+   "name": "Information and Communications Technology - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Information and Communications Technology for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Tecnologías de la Información y la Comunicación para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Technologies de l'information et des communications pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://fletchersmeadow.peelschools.org/ict-shsm-information-and-communication-technology-"
+  },
+  {
+   "tag": "shsm",
+   "name": "Sports - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Sports for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Deportes para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Sports pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://fletchersmeadow.peelschools.org/sports"
+  }
+ ],
+ "shsm": [
+  "Arts and Culture",
+  "Health & Wellness",
+  "Information and Communications Technology",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/e1e895a0-bd38-4e3d-bf59-90d1483c72f7/FletchersMeadow-SS-717-2026.pdf?fingerprint=ppb20260717192700",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-14",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Grade 7 & 8 Open House (6:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-14",
+   "time": "18:30",
+   "format": "In person",
+   "title": "SHSM Info Night: Arts & Culture, Health & Wellness, Sports, Information & Communication Technology (6:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-14",
+   "time": "18:30",
+   "format": "In person",
+   "title": "Advanced Placement Program Info Night (6:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "The school's Advanced Placement page is empty; the AP program is known only from the board's information-night listing, so entry process and eligibility are not stated."
+ ]
+}

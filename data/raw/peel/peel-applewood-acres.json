@@ -1,0 +1,24 @@
+{
+ "id": "peel-applewood-acres",
+ "scrapedAt": "2026-10-01",
+ "site": "https://applewoodacres.peelschools.org/",
+ "sources": [
+  "https://applewoodacres.peelschools.org/",
+  "https://applewoodacres.peelschools.org/co-operative-education",
+  "https://applewoodacres.peelschools.org/pathways-programs",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights"
+ ],
+ "programs": [],
+ "other": [
+  "Co-operative Education"
+ ],
+ "calendarUrl": null,
+ "admissions": [],
+ "sessions": [],
+ "missing": [
+  "No special program, SHSM or course-calendar page found: the school site only has generic Co-operative Education and Pathways Programs pages and is not listed on the board's Common Course Calendar page.",
+  "No 2026-27 information night listed for this school on the board's Grade 8 information nights page.",
+  "The PDF linked from the school's home page is a ventilation profile, not a course calendar."
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "id": "peel-humberview",
+ "scrapedAt": "2026-10-01",
+ "site": "https://humberview.peelschools.org/",
+ "sources": [
+  "https://humberview.peelschools.org/",
+  "https://humberview.peelschools.org/Frenchimmersion",
+  "https://humberview.peelschools.org/extended-french",
+  "https://humberview.peelschools.org/health-wellness",
+  "https://humberview.peelschools.org/health-wellness-ehs",
+  "https://humberview.peelschools.org/manufacturing",
+  "https://humberview.peelschools.org/transportation-shsm",
+  "https://humberview.peelschools.org/co-operative-education",
+  "https://humberview.peelschools.org/dual-credit",
+  "https://humberview.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/explore-high-skills",
+  "https://www.peelschools.org/documents/32f43c49-5f6b-4ab9-97a3-b6ae999ba3e9/Humberview-SS.pdf?fingerprint=ppb20251217022651"
+ ],
+ "programs": [
+  {
+   "tag": "fi",
+   "name": "French Immersion",
+   "note": {
+    "en": "French Immersion: from Grade 9 students complete 10 credits in French and receive a certificate of French Immersion studies.",
+    "es": "Inmersión en francés: desde 9.º grado se cursan 10 créditos en francés y se recibe un certificado de estudios de inmersión en francés.",
+    "fr": "Immersion française : dès la 9e année, l'élève suit 10 crédits en français et reçoit un certificat d'études d'immersion en français."
+   },
+   "entry": "apply",
+   "url": "https://humberview.peelschools.org/Frenchimmersion"
+  },
+  {
+   "tag": "ef",
+   "name": "Extended French",
+   "note": {
+    "en": "Extended French starts in Grade 7; in high school students take 4 credits in Extended French and 3 in other subjects taught in French, earning a Certificate of Extended French Studies.",
+    "es": "Extended French comienza en 7.º grado; en secundaria se cursan 4 créditos de Extended French y 3 en otras materias en francés, y se recibe un Certificate of Extended French Studies.",
+    "fr": "Le programme de français étendu commence en 7e année; au secondaire l'élève suit 4 crédits en français étendu et 3 dans d'autres matières enseignées en français, et reçoit un Certificate of Extended French Studies."
+   },
+   "entry": "apply",
+   "url": "https://humberview.peelschools.org/extended-french"
+  },
+  {
+   "tag": "shsm",
+   "name": "Health & Wellness - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Health & Wellness for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Salud y Bienestar para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Santé et bien-être pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://humberview.peelschools.org/health-wellness"
+  },
+  {
+   "tag": "shsm",
+   "name": "Manufacturing - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Manufacturing for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Manufactura para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Fabrication pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://humberview.peelschools.org/manufacturing"
+  },
+  {
+   "tag": "shsm",
+   "name": "Transportation - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Transportation for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Transporte para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Transport pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://humberview.peelschools.org/transportation-shsm"
+  },
+  {
+   "tag": "other",
+   "name": "Health & Wellness - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Health & Wellness: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Salud y Bienestar: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Santé et bien-être : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://humberview.peelschools.org/health-wellness-ehs"
+  }
+ ],
+ "shsm": [
+  "Health & Wellness",
+  "Manufacturing",
+  "Transportation"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/32f43c49-5f6b-4ab9-97a3-b6ae999ba3e9/Humberview-SS.pdf?fingerprint=ppb20251217022651",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "French Immersion & Extended French Info Night (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "EHS Info Night: Health & Wellness (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "SHSM Info Night: Health & Wellness, Manufacturing, Transportation (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Vocational One Info Night (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Learning Hub 6 & Learning Hub 36 Info Night (6-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "The school's 'Vocational' page is empty; Vocational One and Learning Hub programs are named only on the information-night listing, with no description."
+ ]
+}

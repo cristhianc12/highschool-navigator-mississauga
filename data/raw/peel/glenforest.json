@@ -1,0 +1,51 @@
+{
+ "id": "glenforest",
+ "scrapedAt": "2026-10-01",
+ "site": "https://glenforest.peelschools.org/",
+ "sources": [
+  "https://glenforest.peelschools.org/",
+  "https://glenforest.peelschools.org/construction",
+  "https://glenforest.peelschools.org/information-and-communications-technology",
+  "https://glenforest.peelschools.org/DesignTechnology",
+  "https://glenforest.peelschools.org/co-operative-education",
+  "https://glenforest.peelschools.org/dual-credit",
+  "https://glenforest.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/documents/bb6e772e-c133-4a46-87f7-91c618bc6652/Glenforest-SS-716-2026.pdf?fingerprint=ppb20260716192008"
+ ],
+ "programs": [],
+ "shsm": [
+  "Construction",
+  "Information and Communications Technology"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/bb6e772e-c133-4a46-87f7-91c618bc6652/Glenforest-SS-716-2026.pdf?fingerprint=ppb20260716192008",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-21",
+   "time": "18:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night: school presentation on all programs (6-6:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-21",
+   "time": "18:30",
+   "format": "In person",
+   "title": "RLCP Info Night: International Baccalaureate (6:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site."
+ ]
+}

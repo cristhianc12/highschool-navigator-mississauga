@@ -1,0 +1,65 @@
+{
+ "id": "erindale",
+ "scrapedAt": "2026-10-01",
+ "site": "https://erindale.peelschools.org/",
+ "sources": [
+  "https://erindale.peelschools.org/",
+  "https://erindale.peelschools.org/construction-ehs",
+  "https://erindale.peelschools.org/co-operative-education",
+  "https://erindale.peelschools.org/dual-credit",
+  "https://erindale.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/documents/831b85cc-21ea-4be3-991f-3f98c49503e5/Erindale-SS-717-2026.pdf?fingerprint=ppb20260717192549"
+ ],
+ "programs": [],
+ "shsm": [
+  "Justice, Community Safety & Emergency Services"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/831b85cc-21ea-4be3-991f-3f98c49503e5/Erindale-SS-717-2026.pdf?fingerprint=ppb20260717192549",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-21",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night / ESS Advantage (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-21",
+   "time": "17:30",
+   "format": "In person",
+   "title": "RLCP Info Night: International Baccalaureate (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-21",
+   "time": "17:30",
+   "format": "In person",
+   "title": "EHS Info Night: Construction (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-21",
+   "time": "17:30",
+   "format": "In person",
+   "title": "SHSM Info Night: Justice, Community Safety & Emergency Services (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site. The SHSM sector is taken from the board's information-night page; the school's own navigation lists only a Construction EHS page.",
+  "The RLCP page lists Erindale's IB information night time as TBA, the information-night page gives 5:30-7:30 p.m."
+ ]
+}

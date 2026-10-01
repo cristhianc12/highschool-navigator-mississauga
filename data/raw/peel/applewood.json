@@ -1,0 +1,61 @@
+{
+ "id": "applewood",
+ "scrapedAt": "2026-10-01",
+ "site": "https://applewoodheights.peelschools.org/",
+ "sources": [
+  "https://applewoodheights.peelschools.org/",
+  "https://applewoodheights.peelschools.org/pathways-programs",
+  "https://applewoodheights.peelschools.org/dual-credit",
+  "https://applewoodheights.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/documents/12a31b8f-b53a-4fae-81c0-dc87555ef03a/ApplewoodHeights-SS-716-2026.pdf?fingerprint=ppb20260716195219"
+ ],
+ "programs": [],
+ "shsm": [
+  "Sports"
+ ],
+ "other": [
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/12a31b8f-b53a-4fae-81c0-dc87555ef03a/ApplewoodHeights-SS-716-2026.pdf?fingerprint=ppb20260716195219",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-11-05",
+   "time": "17:45",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Program Info Night: all academic subjects incl. Co-op, Dual Credits & International School (5:45-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "17:45",
+   "format": "In person",
+   "title": "EHS Info Night: Sports Leadership, Grades 9 & 10 (5:45-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "17:45",
+   "format": "In person",
+   "title": "SHSM Info Night: Sports, Grades 11 & 12 (5:45-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-11-05",
+   "time": "17:45",
+   "format": "In person",
+   "title": "French Immersion Info Night (5:45-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "Curated school: programs already on the site; the school site has no Co-operative Education page in its navigation (only Dual Credit and OYAP pages)."
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "id": "peel-david-suzuki",
+ "scrapedAt": "2026-10-01",
+ "site": "https://davidsuzuki.peelschools.org/",
+ "sources": [
+  "https://davidsuzuki.peelschools.org/",
+  "https://davidsuzuki.peelschools.org/food-processing-shsm",
+  "https://davidsuzuki.peelschools.org/hospitality-and-tourism",
+  "https://davidsuzuki.peelschools.org/sports",
+  "https://davidsuzuki.peelschools.org/sports-ehs",
+  "https://davidsuzuki.peelschools.org/co-operative-education",
+  "https://davidsuzuki.peelschools.org/dual-credit",
+  "https://davidsuzuki.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/explore-high-skills",
+  "https://www.peelschools.org/documents/8a1bf5ec-8e9f-485b-9c5f-e89d2b2e9b30/David-Suzuki-SS-CCC.pdf?fingerprint=ppb20251219210903"
+ ],
+ "programs": [
+  {
+   "tag": "shsm",
+   "name": "Food Processing - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Food Processing for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Procesamiento de Alimentos para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Transformation des aliments pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://davidsuzuki.peelschools.org/food-processing-shsm"
+  },
+  {
+   "tag": "shsm",
+   "name": "Hospitality and Tourism - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Hospitality and Tourism for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Hostelería y Turismo para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Hôtellerie et tourisme pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://davidsuzuki.peelschools.org/hospitality-and-tourism"
+  },
+  {
+   "tag": "shsm",
+   "name": "Sports - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Sports for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Deportes para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Sports pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://davidsuzuki.peelschools.org/sports"
+  },
+  {
+   "tag": "other",
+   "name": "Sports - Explore High Skills (EHS)",
+   "note": {
+    "en": "Explore High Skills in Sports: a Grade 9-10 pathway program focused on this sector and a possible entry point into the Grade 11-12 SHSM.",
+    "es": "Explore High Skills en Deportes: programa de ruta de 9.º y 10.º grado centrado en este sector y posible puerta de entrada al SHSM de 11.º y 12.º.",
+    "fr": "Explore High Skills en Sports : programme de cheminement de la 9e et de la 10e année axé sur ce secteur et porte d'entrée possible vers le SHSM de la 11e et de la 12e année."
+   },
+   "entry": "apply",
+   "url": "https://davidsuzuki.peelschools.org/sports-ehs"
+  }
+ ],
+ "shsm": [
+  "Food Processing",
+  "Hospitality and Tourism",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/8a1bf5ec-8e9f-485b-9c5f-e89d2b2e9b30/David-Suzuki-SS-CCC.pdf?fingerprint=ppb20251219210903",
+ "admissions": [],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-06",
+   "time": "17:30",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-06",
+   "time": "17:30",
+   "format": "In person",
+   "title": "SHSM Info Night: Sports, Food Processing and Hospitality & Tourism (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-06",
+   "time": "17:30",
+   "format": "In person",
+   "title": "EHS Info Night: Sports (5:30-7:30 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": []
+}

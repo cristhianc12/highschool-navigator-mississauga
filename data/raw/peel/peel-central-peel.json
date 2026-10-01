@@ -1,0 +1,215 @@
+{
+ "id": "peel-central-peel",
+ "scrapedAt": "2026-10-01",
+ "site": "https://centralpeel.peelschools.org/",
+ "sources": [
+  "https://centralpeel.peelschools.org/",
+  "https://centralpeel.peelschools.org/advanced-placement",
+  "https://centralpeel.peelschools.org/strings",
+  "https://centralpeel.peelschools.org/leap-program",
+  "https://centralpeel.peelschools.org/business-SHSM",
+  "https://centralpeel.peelschools.org/construction",
+  "https://centralpeel.peelschools.org/sports",
+  "https://centralpeel.peelschools.org/co-operative-education",
+  "https://centralpeel.peelschools.org/dual-credit",
+  "https://centralpeel.peelschools.org/oyap",
+  "https://www.peelschools.org/common-course-calendar",
+  "https://www.peelschools.org/grade-8-information-nights",
+  "https://www.peelschools.org/secondary-regional-learning-choice-programs",
+  "https://www.peelschools.org/documents/b1a2cb83-5849-4bc5-a6dd-e523906052df/Updated-FINAL-CentralPeel-COURSES-2026-2027-82806.pdf?fingerprint=ppb20260828192817"
+ ],
+ "programs": [
+  {
+   "tag": "ap",
+   "name": "Advanced Placement - RLCP",
+   "note": {
+    "en": "Regional Learning Choice Program: university-readiness enrichment of the Ontario curriculum leading to senior Advanced Placement (AP) courses.",
+    "es": "Programa regional de elección: enriquecimiento del currículo de Ontario preparatorio para la universidad que lleva a los cursos avanzados de Advanced Placement (AP).",
+    "fr": "Programme régional au choix : enrichissement du curriculum de l'Ontario préparant à l'université et menant aux cours Advanced Placement (AP) de fin de secondaire."
+   },
+   "entry": "apply",
+   "url": "https://centralpeel.peelschools.org/advanced-placement"
+  },
+  {
+   "tag": "strings",
+   "name": "Strings - RLCP",
+   "note": {
+    "en": "Peel Regional Strings program for string players from beginner to highly advanced, with orchestral collaboration, offered at Central Peel and Port Credit.",
+    "es": "Programa regional de cuerdas de Peel para músicos de cuerdas desde principiantes hasta muy avanzados, con experiencia orquestal, en Central Peel y Port Credit.",
+    "fr": "Programme régional de cordes de Peel pour les joueurs de cordes, du débutant à l'avancé, avec expérience orchestrale, offert à Central Peel et à Port Credit."
+   },
+   "entry": "audition",
+   "url": "https://centralpeel.peelschools.org/strings"
+  },
+  {
+   "tag": "other",
+   "name": "LEAP Program",
+   "note": {
+    "en": "PDSB and Algoma University program: students spend one semester on the Brampton Algoma campus taking high school and university classes; aimed at groups underrepresented on university campuses, including Indigenous and Black students.",
+    "es": "Programa de PDSB y Algoma University: los estudiantes pasan un semestre en el campus de Algoma en Brampton con clases de secundaria y de universidad; dirigido a grupos subrepresentados en las universidades, incluidos estudiantes indígenas y negros.",
+    "fr": "Programme du PDSB et de l'Université Algoma : l'élève passe un semestre sur le campus d'Algoma à Brampton avec des cours de secondaire et d'université; destiné aux groupes sous-représentés sur les campus, dont les élèves autochtones et noirs."
+   },
+   "entry": null,
+   "url": "https://centralpeel.peelschools.org/leap-program"
+  },
+  {
+   "tag": "shsm",
+   "name": "Business - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Business for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Negocios para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Affaires pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://centralpeel.peelschools.org/business-SHSM"
+  },
+  {
+   "tag": "shsm",
+   "name": "Construction - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Construction for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Construcción para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Construction pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://centralpeel.peelschools.org/construction"
+  },
+  {
+   "tag": "shsm",
+   "name": "Sports - SHSM",
+   "note": {
+    "en": "Specialist High Skills Major in Sports for Grades 11-12: sector courses, certifications and co-op credits.",
+    "es": "Specialist High Skills Major en Deportes para 11.º y 12.º grado: cursos del sector, certificaciones y créditos de educación cooperativa.",
+    "fr": "Specialist High Skills Major en Sports pour la 11e et la 12e année : cours sectoriels, certifications et crédits d'éducation coopérative."
+   },
+   "entry": null,
+   "url": "https://centralpeel.peelschools.org/sports"
+  }
+ ],
+ "shsm": [
+  "Business",
+  "Construction",
+  "Sports"
+ ],
+ "other": [
+  "Co-operative Education",
+  "Dual Credit",
+  "OYAP"
+ ],
+ "calendarUrl": "https://www.peelschools.org/documents/b1a2cb83-5849-4bc5-a6dd-e523906052df/Updated-FINAL-CentralPeel-COURSES-2026-2027-82806.pdf?fingerprint=ppb20260828192817",
+ "admissions": [
+  {
+   "program": "Advanced Placement - RLCP",
+   "tag": "ap",
+   "elig": {
+    "en": "Open to Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary (apply to the RLCP for your home address). International visa students are not eligible; work or study permit holders may apply.",
+    "es": "Abierto a estudiantes de 8.º grado que pasan a 9.º en 2027-28 y cumplen los criterios del programa y viven dentro de su zona (postula al RLCP que corresponde a tu domicilio). Los estudiantes con visa internacional no son elegibles; quienes tienen permiso de trabajo o estudio pueden postular.",
+    "fr": "Ouvert aux élèves de 8e année qui entrent en 9e année en 2027-28, qui répondent aux critères du programme et habitent dans son secteur (postule au RLCP qui correspond à ton adresse). Les élèves étrangers sous visa ne sont pas admissibles; les titulaires d'un permis de travail ou d'études peuvent postuler."
+   },
+   "marks": {
+    "en": "Grade 7 final report card and an in-person numeracy and literacy assessment (Dec 5, 2026, time set by the school); no written response or audition.",
+    "es": "Boletín final de 7.º grado y una evaluación presencial de numeración y lectoescritura (5 de diciembre de 2026, hora fijada por la escuela); sin respuesta escrita ni audición.",
+    "fr": "Bulletin final de 7e année et évaluation en personne en numératie et en littératie (5 décembre 2026, heure fixée par l'école); pas de réponse écrite ni d'audition."
+   },
+   "fee": {
+    "en": "A non-refundable application fee plus an annual program fee (amounts not stated), paid through School Cash Online.",
+    "es": "Una tarifa de solicitud no reembolsable más una tarifa anual del programa (montos no indicados), pagadas por School Cash Online.",
+    "fr": "Des frais de demande non remboursables plus des frais annuels de programme (montants non indiqués), payés par School Cash Online."
+   },
+   "dates": {
+    "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); later rounds Feb 16, Feb 23 and Mar 8, 2027; waitlist offers from Mar 30, 2027.",
+    "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); rondas siguientes el 16 y 23 de febrero y el 8 de marzo de 2027; ofertas de lista de espera desde el 30 de marzo de 2027.",
+    "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); autres rondes les 16 et 23 février et le 8 mars 2027; offres de la liste d'attente dès le 30 mars 2027."
+   },
+   "know": [
+    {
+     "en": "After the review of the Grade 7 final report (and any written response or audition), applicants who meet the criteria go into a central random selection run by the board, not the school; remaining students go on that school's waitlist.",
+     "es": "Tras revisar el boletín final de 7.º grado (y la respuesta escrita o audición, si corresponde), los postulantes que cumplen los criterios entran a un sorteo central del consejo escolar, no de la escuela; los demás pasan a la lista de espera de esa escuela.",
+     "fr": "Après l'examen du bulletin final de 7e année (et de la réponse écrite ou de l'audition, le cas échéant), les candidats qui répondent aux critères entrent dans un tirage au sort central fait par le conseil, non par l'école; les autres vont sur la liste d'attente de cette école."
+    },
+    {
+     "en": "Students who self-identify as African, Black, Afro-Caribbean, First Nations, Inuit or Métis and meet the criteria are accepted without the random selection.",
+     "es": "Los estudiantes que se autoidentifican como africanos, negros, afrocaribeños, de las Primeras Naciones, inuit o métis y cumplen los criterios son aceptados sin pasar por el sorteo.",
+     "fr": "Les élèves qui s'auto-identifient comme africains, noirs, afro-caribéens, des Premières Nations, inuits ou métis et qui répondent aux critères sont admis sans passer par le tirage au sort."
+    },
+    {
+     "en": "Students in Peel are offered spots first; out-of-region applicants only if spaces remain. Busing for RLCP students in Grades 6-10 is planned for 2026-27, subject to Ministry funding.",
+     "es": "Los estudiantes de Peel reciben ofertas primero; los de fuera de la región solo si quedan cupos. Se planea ofrecer transporte escolar a estudiantes de RLCP de 6.º a 10.º grado en 2026-27, sujeto al financiamiento del Ministerio.",
+     "fr": "Les élèves de Peel reçoivent les offres en premier; ceux de l'extérieur de la région seulement s'il reste des places. Le transport est prévu pour les élèves de RLCP de la 6e à la 10e année en 2026-27, sous réserve du financement du ministère."
+    }
+   ],
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  },
+  {
+   "program": "Strings - RLCP",
+   "tag": "strings",
+   "elig": {
+    "en": "Open to Grade 8 students entering Grade 9 in 2027-28 who meet the program criteria and live in the program's boundary (apply to the RLCP for your home address). International visa students are not eligible; work or study permit holders may apply.",
+    "es": "Abierto a estudiantes de 8.º grado que pasan a 9.º en 2027-28 y cumplen los criterios del programa y viven dentro de su zona (postula al RLCP que corresponde a tu domicilio). Los estudiantes con visa internacional no son elegibles; quienes tienen permiso de trabajo o estudio pueden postular.",
+    "fr": "Ouvert aux élèves de 8e année qui entrent en 9e année en 2027-28, qui répondent aux critères du programme et habitent dans son secteur (postule au RLCP qui correspond à ton adresse). Les élèves étrangers sous visa ne sont pas admissibles; les titulaires d'un permis de travail ou d'études peuvent postuler."
+   },
+   "marks": {
+    "en": "Grade 7 final report card, a written response (2 questions) and an audition (Dec 5, 2026 at Central Peel).",
+    "es": "Boletín final de 7.º grado, una respuesta escrita (2 preguntas) y una audición (5 de diciembre de 2026 en Central Peel).",
+    "fr": "Bulletin final de 7e année, une réponse écrite (2 questions) et une audition (5 décembre 2026 à Central Peel)."
+   },
+   "fee": {
+    "en": "A non-refundable application fee plus an annual program fee (amounts not stated), paid through School Cash Online.",
+    "es": "Una tarifa de solicitud no reembolsable más una tarifa anual del programa (montos no indicados), pagadas por School Cash Online.",
+    "fr": "Des frais de demande non remboursables plus des frais annuels de programme (montants non indiqués), payés par School Cash Online."
+   },
+   "dates": {
+    "en": "Apply Nov 3, 2026 (8:30 a.m.) to Nov 24, 2026 (11:59 p.m.); first-round offers Feb 2, 2027 after 3 p.m. (accept by Feb 5, 2027); later rounds Feb 16, Feb 23 and Mar 8, 2027; waitlist offers from Mar 30, 2027.",
+    "es": "Postula del 3 de noviembre de 2026 (8:30 a. m.) al 24 de noviembre de 2026 (11:59 p. m.); primera ronda de ofertas el 2 de febrero de 2027 después de las 3 p. m. (acepta a más tardar el 5 de febrero de 2027); rondas siguientes el 16 y 23 de febrero y el 8 de marzo de 2027; ofertas de lista de espera desde el 30 de marzo de 2027.",
+    "fr": "Postule du 3 novembre 2026 (8 h 30) au 24 novembre 2026 (23 h 59); premières offres le 2 février 2027 après 15 h (accepte au plus tard le 5 février 2027); autres rondes les 16 et 23 février et le 8 mars 2027; offres de la liste d'attente dès le 30 mars 2027."
+   },
+   "know": [
+    {
+     "en": "After the review of the Grade 7 final report (and any written response or audition), applicants who meet the criteria go into a central random selection run by the board, not the school; remaining students go on that school's waitlist.",
+     "es": "Tras revisar el boletín final de 7.º grado (y la respuesta escrita o audición, si corresponde), los postulantes que cumplen los criterios entran a un sorteo central del consejo escolar, no de la escuela; los demás pasan a la lista de espera de esa escuela.",
+     "fr": "Après l'examen du bulletin final de 7e année (et de la réponse écrite ou de l'audition, le cas échéant), les candidats qui répondent aux critères entrent dans un tirage au sort central fait par le conseil, non par l'école; les autres vont sur la liste d'attente de cette école."
+    },
+    {
+     "en": "Students who self-identify as African, Black, Afro-Caribbean, First Nations, Inuit or Métis and meet the criteria are accepted without the random selection.",
+     "es": "Los estudiantes que se autoidentifican como africanos, negros, afrocaribeños, de las Primeras Naciones, inuit o métis y cumplen los criterios son aceptados sin pasar por el sorteo.",
+     "fr": "Les élèves qui s'auto-identifient comme africains, noirs, afro-caribéens, des Premières Nations, inuits ou métis et qui répondent aux critères sont admis sans passer par le tirage au sort."
+    },
+    {
+     "en": "Students in Peel are offered spots first; out-of-region applicants only if spaces remain. Busing for RLCP students in Grades 6-10 is planned for 2026-27, subject to Ministry funding.",
+     "es": "Los estudiantes de Peel reciben ofertas primero; los de fuera de la región solo si quedan cupos. Se planea ofrecer transporte escolar a estudiantes de RLCP de 6.º a 10.º grado en 2026-27, sujeto al financiamiento del Ministerio.",
+     "fr": "Les élèves de Peel reçoivent les offres en premier; ceux de l'extérieur de la région seulement s'il reste des places. Le transport est prévu pour les élèves de RLCP de la 6e à la 10e année en 2026-27, sous réserve du financement du ministère."
+    }
+   ],
+   "url": "https://www.peelschools.org/secondary-regional-learning-choice-programs"
+  }
+ ],
+ "sessions": [
+  {
+   "kind": "school",
+   "date": "2026-10-22",
+   "time": "17:00",
+   "format": "In person",
+   "title": "Grade 9 Regular Track Info Night (5-6 p.m. or 7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Advanced Placement (5-6 p.m. or 7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  },
+  {
+   "kind": "program",
+   "date": "2026-10-22",
+   "time": "17:00",
+   "format": "In person",
+   "title": "RLCP Info Night: Strings (5-6 p.m. or 7-8 p.m.)",
+   "url": "https://www.peelschools.org/grade-8-information-nights"
+  }
+ ],
+ "missing": [
+  "LEAP page gives no eligibility, application steps or dates (contact the guidance counsellor)."
+ ]
+}

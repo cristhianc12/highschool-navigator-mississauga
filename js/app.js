@@ -198,10 +198,20 @@ function tagOptions(current) {
     Object.keys(TAGS).map((k) => `<option value="${k}" ${current === k ? "selected" : ""}>${esc(L(TAGS[k]))}</option>`).join("");
 }
 
+// One key per school whatever the spelling ("John Fraser SS" and "John Fraser Secondary School" are the same school).
+const hostKey = (n) => norm(n).replace(/\(.*?\)/g, "").replace(/\b(secondary|school|catholic|high|collegiate|institute|academy|district|ss|css|cs|chs|ci|hs)\b/g, "").replace(/[^a-z0-9]/g, "");
 function explainerHtml() {
   const E = EXPLAINER;
-  const head = E.cols.map((c) => `<th scope="col">${esc(L(c.head))}${c.program ? ` <button type="button" class="viewlink" data-program="${c.program}">${esc(L(E.see))} →</button>` : ""}</th>`).join("");
-  const rows = E.rows.map((r) => `<tr><th scope="row">${esc(L(r.l))}</th>${r.c.map((cell) => `<td>${esc(L(cell))}</td>`).join("")}</tr>`).join("");
+  const short = (b) => L(BOARDS[b]).replace(/\s*\(.*\)$/, "");
+  // "Where": which boards offer the program, with how many schools host it (from the collected program data).
+  const where = (tag) => {
+    const by = new Map();
+    for (const p of PROGRAMS.filter((x) => x.tag === tag)) by.set(p.board, new Set([...(by.get(p.board) || []), ...p.hosts.map((h) => hostKey(h.id ? byId(h.id)?.name || h.id : h.n))]));
+    const list = BOARD_ORDER.filter((b) => by.has(b)).map((b) => `${short(b)} (${by.get(b).size})`);
+    return list.length ? list.join(", ") : L(E.whereNone);
+  };
+  const head = E.cols.map((c) => `<th scope="col">${esc(L(c.head))}${c.tag ? ` <button type="button" class="viewlink" data-pftag="${c.tag}">${esc(L(E.see))} →</button>` : ""}</th>`).join("");
+  const rows = E.rows.map((r, i) => `<tr><th scope="row">${esc(L(r.l))}</th>${r.c.map((cell, j) => `<td>${esc(cell ? L(cell) : where(E.cols[j].tag))}</td>`).join("")}</tr>`).join("");
   return `<section id="comparativa"><div class="sec-head"><h2>${esc(L(E.h))}</h2><p>${esc(L(E.p))}</p></div>
     <div class="cmp-wrap"><table class="cmp-table explain"><thead><tr><th scope="col"></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>
     <p class="small muted" style="margin-top:10px">${esc(L(E.note))}</p></section>`;
@@ -616,6 +626,8 @@ document.addEventListener("click", (e) => {
   if (e.target.closest("#show-more")) { state.shown += STEP; renderResults(); return; }
   if (e.target.closest("#cf-show-more")) { const out = $("#cf-out"); out.dataset.limit = (Number(out.dataset.limit) || 5) + STEP; runFinder(false); return; }
   if (e.target.closest("#progs-show-more")) { state.progShown += STEP; renderPrograms(); return; }
+  const pt = e.target.closest("[data-pftag]");
+  if (pt) { state.pf.tag = pt.dataset.pftag; state.progShown = PROG_PAGE; renderPrograms(); $("#p-tag").value = state.pf.tag; savePrefs(); $("#regionales")?.scrollIntoView({ behavior: "smooth" }); return; }
   if (e.target.closest("#dates-show-more")) { state.datesShown += STEP; renderDates(); return; }
   if (e.target.closest("#sess-show-more")) { state.sessShown += STEP; renderSessions(); return; }
   const rm = e.target.closest("[data-remove]");
@@ -679,4 +691,4 @@ renderShell();
 initBackToTop(() => state.lang);
 initSupportNudge(() => state.lang);
 // Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
-ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderPrograms(); renderSessions(); renderCompare(); } });
+ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderPrograms(); renderSessions(); renderCompare(); const ex = $("#comparativa"); if (ex) ex.outerHTML = explainerHtml(); } });

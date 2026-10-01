@@ -31,8 +31,9 @@ const RULES = {
   school_open: [SCHOOL_IDS, E("card", "map", "compare", "sessions", "courses", "quiz", "profile", "other")],
   program_open: [ID, E("card", "map", "compare", "sessions", "courses", "quiz", "profile", "other")],
   outbound: [E("support", "directions", "report", "fraser", "osm", "register", "flyer", "board", "school", "other"), HOST],
-  filter: [E("region", "city", "board", "tag", "start", "entry", "sort", "vibe", "search"), (v, a) => ({
+  filter: [E("region", "city", "board", "tag", "start", "entry", "sort", "vibe", "search", "prog_board", "prog_region", "prog_tag", "prog_start", "prog_entry", "prog_search"), (v, a) => ({
     region: empty(REGIONS), city: empty(CITIES), board: empty(BOARDS), tag: empty(TAGS), vibe: empty(TAGS),
+    prog_board: empty(BOARDS), prog_region: empty(REGIONS), prog_tag: empty(TAGS), prog_start: empty(E("9", "10", "11", "12")), prog_entry: empty(E("auto", "apply")), prog_search: empty(E("")),
     start: empty(E("9", "10", "11")), entry: (x) => x === "" || /^[a-z]{3,12}$/.test(x), sort: empty(E("name", "fraser")), search: empty(E("")),
   }[a]?.(v) ?? false)],
   compare: [E("add", "remove"), ANY],

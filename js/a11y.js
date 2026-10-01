@@ -1,6 +1,7 @@
 // High-contrast option for accessibility. The choice is kept on this device (localStorage "contrast");
 // until the person chooses, the device setting (prefers-contrast: more) decides.
 const KEY = "contrast";
+const COFFEE = { es: "Invítanos un café", en: "Buy us a coffee", fr: "Offrez-nous un café" };
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
   set(k, v) { try { localStorage.setItem(k, v); } catch { /* storage unavailable */ } },
@@ -35,4 +36,6 @@ document.addEventListener("click", (e) => {
   apply(next);
 });
 // The language can change after load: keep the button label in the page language.
-new MutationObserver(() => apply(isHigh())).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
+const labelCoffee = () => { const c = document.getElementById("coffee-link"); if (!c) return; const l = COFFEE[(document.documentElement.lang || "en").slice(0, 2)] || COFFEE.en; c.setAttribute("aria-label", l); c.title = l; };
+labelCoffee();
+new MutationObserver(() => { apply(isHigh()); labelCoffee(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });

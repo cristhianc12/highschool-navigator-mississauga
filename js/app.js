@@ -14,6 +14,8 @@ import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META,
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const MAX_COMPARE = 4;
+const SESS_PAGE = 10; // information sessions shown per step (there are hundreds)
+const PROG_PAGE = 9; // regional programs shown per step
 const PAGE = 24; // schools rendered per "show more" step (the GTA directory has 300+)
 // Regional programs (cards below) exist for these boards, all in Peel for now.
 const PROG_REGION = { dpcdsb: "peel", peel: "peel" };
@@ -26,8 +28,11 @@ const store = {
 const state = {
   lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
-  filters: { q: "", region: "", city: "", board: "", tag: "", start: "", entry: "", sort: "name" },
+  filters: { q: "", region: "", city: "", board: "", tag: "", sort: "name" },
+  pf: { q: "", board: "", region: "", tag: "", start: "", entry: "" }, // filters of the regional programs list
+  progShown: PROG_PAGE,
   shown: PAGE,
+  sessShown: SESS_PAGE,
   sess: { area: "", board: "" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
@@ -66,7 +71,7 @@ function schoolMatches(s) {
 }
 
 function programMatches(p) {
-  const f = state.filters;
+  const f = state.pf;
   if (f.board && p.board !== f.board) return false;
   if (f.region && !(p.regions || [PROG_REGION[p.board]]).includes(f.region)) return false;
   if (f.tag && p.tag !== f.tag) return false;
@@ -128,12 +133,14 @@ function schoolCard(s) {
 
 function programCard(p) {
   const u = t();
-  const hosts = p.hosts.map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("");
+  const HOSTS = 6; // long host lists (SHSM, AP...) are cut here; the profile lists them all
+  const hosts = p.hosts.slice(0, HOSTS).map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("")
+    + (p.hosts.length > HOSTS ? `<li class="muted">+${p.hosts.length - HOSTS}</li>` : "");
   const second = p.second ? `<p class="muted small"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : "";
   return `<article class="card prog clickable" data-pcard="${p.id}"><div class="prog-top"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>${starBtn("program", p.id)}</div>
     <div class="where">${esc(u.host)}</div><ul class="hosts">${hosts}</ul>
     <p>${esc(L(p.p))}</p>${second}
-    <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
+    <div class="meta"><span class="chip">${esc(L(BOARDS[p.board]))}</span><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
       <button type="button" class="viewbtn" data-program="${p.id}" aria-label="${esc(u.sess.pd.details)}: ${esc(L(p.name))}">${esc(u.sess.pd.details)} →</button></div></article>`;
 }
 
@@ -242,8 +249,6 @@ function renderShell() {
       <label class="field">${esc(u.fCity)}<select id="f-city">${cityOptions(f.region, f.city)}</select></label>
       <label class="field">${esc(u.fSystem)}<select id="f-board">${boardOptions(f.board)}</select></label>
       <label class="field">${esc(u.fTag)}<select id="f-tag">${tagOptions(f.tag)}</select></label>
-      <label class="field">${esc(u.fStart)}<select id="f-start">${options(u.optStart, f.start)}</select></label>
-      <label class="field">${esc(u.fEntry)}<select id="f-entry">${options(u.optEntry, f.entry)}</select></label>
       <label class="field">${esc(u.fSort)}<select id="f-sort">${Object.entries(u.optSort).map(([v, l]) => `<option value="${v}" ${f.sort === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
       <button type="button" class="btn" id="f-reset">${esc(u.reset)}</button>
     </form>
@@ -265,16 +270,21 @@ function renderShell() {
     <div class="cmp-toggles" id="cmp-toggles"></div><div id="cmp-out"></div></section>
 
   <section id="regionales"><div class="sec-head"><h2>${esc(u.regionalesH)}</h2><p>${esc(u.regionalesP)}</p></div>
-    <div class="grid" id="prog-dpcdsb"></div></section>
-
-  <section id="otherprogs" hidden><div class="sec-head"><h2>${esc(u.otherH)}</h2><p>${esc(u.otherP)}</p></div>
-    <div id="prog-other"></div></section>
-
-  <section id="peel"><div class="sec-head"><h2>${esc(u.peelH)}</h2><p>${esc(u.peelP)}</p></div>
-    <div class="grid" id="prog-peel"></div>
-    <div class="grid" style="margin-top:14px">
-      <div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div>
-      <div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div></section>
+    <form class="filters" id="pf" role="search" onsubmit="return false">
+      <label class="field search">${esc(u.searchLabel)}<input type="search" id="p-q" value="${esc(state.pf.q)}" placeholder="${esc(u.pfSearchPh)}"></label>
+      <label class="field">${esc(u.fSystem)}<select id="p-board"></select></label>
+      <label class="field">${esc(u.fRegion)}<select id="p-region"></select></label>
+      <label class="field">${esc(u.fTag)}<select id="p-tag"></select></label>
+      <label class="field">${esc(u.fStart)}<select id="p-start">${options(u.optStart, state.pf.start)}</select></label>
+      <label class="field">${esc(u.fEntry)}<select id="p-entry">${options(u.optEntry, state.pf.entry)}</select></label>
+      <button type="button" class="btn" id="pf-reset">${esc(u.reset)}</button>
+    </form>
+    <p class="count" id="pcount" aria-live="polite"></p>
+    <div class="grid" id="progs"></div><div id="progs-more" class="morewrap"></div>
+    <div class="peelinfo"><h3>${esc(u.peelH)}</h3><p class="muted">${esc(u.peelP)}</p>
+      <div class="grid">
+        <div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div>
+        <div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div></div></section>
 
   <section id="charlas"><div class="sec-head"><h2>${esc(u.sess.h)}</h2><p>${esc(u.sess.p)}</p></div>
     <form class="filters" id="sess-filters" onsubmit="return false">
@@ -282,7 +292,7 @@ function renderShell() {
       <label class="field">${esc(u.sess.board)}<select id="s-board">${[["", u.sess.allBoards], ...[...new Set(SESSIONS.map((e) => e.board).filter(Boolean))].sort((a, b) => BOARD_ORDER.indexOf(a) - BOARD_ORDER.indexOf(b)).map((b) => [b, L(BOARDS[b])])].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
     </form>
     <p class="count" id="sess-count" aria-live="polite"></p>
-    <div class="slist" id="sess-list"></div>
+    <div class="slist" id="sess-list"></div><div id="sess-more" class="morewrap"></div>
     <p class="small muted">${esc(u.sess.calNote)} ${esc(u.sess.source)}</p></section>
 
   <section id="capas"><div class="sec-head"><h2>${esc(u.capasH)}</h2><p>${esc(u.capasP)}</p></div>
@@ -312,6 +322,7 @@ function renderShell() {
   $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
   bindFilters();
   renderResults();
+  renderPrograms();
   renderCompare();
   renderSessions();
   bindGame();
@@ -354,9 +365,13 @@ function renderSessions() {
   if (state.sess.area) list = list.filter((e) => e.city === state.sess.area || e.city === "virtual");
   if (state.sess.board) list = list.filter((e) => e.board === state.sess.board);
   $("#sess-count").textContent = u.sess.count(list.length);
+  const shownSess = list.slice(0, state.sessShown);
   $("#sess-list").innerHTML = list.length
-    ? list.map((e) => renderSessionRow(e, { showSchool: true })).join("")
+    ? shownSess.map((e) => renderSessionRow(e, { showSchool: true })).join("")
     : `<div class="empty">${esc(u.sess.none)}</div>`;
+  const rest = list.length - shownSess.length;
+  $("#sess-more").innerHTML = rest > 0
+    ? `<div class="showmore"><button type="button" class="btn" id="sess-show-more">${esc(u.showMore(Math.min(SESS_PAGE, rest), rest))}</button></div>` : "";
 }
 
 function renderResults() {
@@ -365,9 +380,6 @@ function renderResults() {
   let schools = SCHOOLS.filter(schoolMatches);
   if (f.sort === "fraser") schools = [...schools].sort((a, b) => (b.fraser?.score ?? -1) - (a.fraser?.score ?? -1));
   else schools = [...schools].sort((a, b) => a.name.localeCompare(b.name));
-  const progs = PROGRAMS.filter(programMatches);
-  const dp = progs.filter((p) => p.board === "dpcdsb");
-  const pe = progs.filter((p) => p.board === "peel");
   const empty = `<div class="empty">${esc(u.noResults)}</div>`;
 
   const shown = schools.slice(0, state.shown);
@@ -377,18 +389,28 @@ function renderResults() {
   $("#schools-more").innerHTML = more;
   const mh = $("#map-host");
   if (mh) renderMap(mh, { lang: state.lang, matchIds: schools.map((s) => s.id) });
-  $("#prog-dpcdsb").innerHTML = dp.length ? dp.map(programCard).join("") : empty;
-  $("#prog-peel").innerHTML = pe.length ? pe.map(programCard).join("") : empty;
-  // Programs of the other boards (loaded from their collected details), grouped by board.
-  const other = progs.filter((p) => p.board !== "dpcdsb" && p.board !== "peel");
-  const sec = $("#otherprogs");
-  if (sec) {
-    sec.hidden = !PROGRAMS.some((p) => p.board !== "dpcdsb" && p.board !== "peel");
-    $("#prog-other").innerHTML = other.length
-      ? BOARD_ORDER.map((b) => { const l = other.filter((p) => p.board === b); return l.length ? `<h3 class="boardh">${esc(L(BOARDS[b]))}</h3><div class="grid">${l.map(programCard).join("")}</div>` : ""; }).join("")
-      : empty;
-  }
-  $("#count").textContent = u.resultCount(schools.length, progs.length);
+  $("#count").textContent = u.map.count(schools.length);
+}
+
+// Regional and specialized programs: own filters, sorted by board then name, shown in steps.
+function renderPrograms() {
+  const u = t();
+  const f = state.pf;
+  // The board and type lists only offer values that exist, and refresh when more boards' programs have loaded.
+  const boards = BOARD_ORDER.filter((b) => PROGRAMS.some((p) => p.board === b));
+  const tags = Object.keys(TAGS).filter((k) => PROGRAMS.some((p) => p.tag === k));
+  const opts = (list, cur, label) => `<option value="">${esc(u.all)}</option>` + list.map(([v, l]) => `<option value="${v}" ${cur === v ? "selected" : ""}>${esc(l)}</option>`).join("");
+  const pb = $("#p-board"), pr = $("#p-region"), pt = $("#p-tag");
+  if (!pb) return;
+  pb.innerHTML = opts(boards.map((b) => [b, L(BOARDS[b])]), f.board);
+  pr.innerHTML = opts(REGION_ORDER.map((r) => [r, L(REGIONS[r])]), f.region);
+  pt.innerHTML = opts(tags.map((k) => [k, L(TAGS[k])]), f.tag);
+  const list = PROGRAMS.filter(programMatches).sort((a, b) => BOARD_ORDER.indexOf(a.board) - BOARD_ORDER.indexOf(b.board) || L(a.name).localeCompare(L(b.name)));
+  const shown = list.slice(0, state.progShown);
+  const rest = list.length - shown.length;
+  $("#pcount").textContent = u.pcount(list.length);
+  $("#progs").innerHTML = list.length ? shown.map(programCard).join("") : `<div class="empty">${esc(u.noResults)}</div>`;
+  $("#progs-more").innerHTML = rest > 0 ? `<div class="showmore"><button type="button" class="btn" id="progs-show-more">${esc(u.showMore(Math.min(PROG_PAGE, rest), rest))}</button></div>` : "";
 }
 
 function compareOptions(free) {
@@ -438,13 +460,17 @@ function renderCompare() {
 function bindFilters() {
   const f = state.filters;
   $("#f-q").addEventListener("input", (e) => { f.q = e.target.value.trim(); state.shown = PAGE; renderResults(); });
-  for (const k of ["region", "city", "board", "tag", "start", "entry", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => {
+  const pf = state.pf;
+  $("#p-q").addEventListener("input", (e) => { pf.q = e.target.value.trim(); state.progShown = PROG_PAGE; renderPrograms(); });
+  for (const k of ["board", "region", "tag", "start", "entry"]) $(`#p-${k}`).addEventListener("change", (e) => { pf[k] = e.target.value; state.progShown = PROG_PAGE; renderPrograms(); });
+  $("#pf-reset").addEventListener("click", () => { Object.assign(pf, { q: "", board: "", region: "", tag: "", start: "", entry: "" }); $("#p-q").value = ""; $("#p-start").value = ""; $("#p-entry").value = ""; state.progShown = PROG_PAGE; renderPrograms(); });
+  for (const k of ["region", "city", "board", "tag", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => {
     f[k] = e.target.value;
     if (k === "region") { f.city = ""; $("#f-city").innerHTML = cityOptions(f.region, ""); }
     state.shown = PAGE;
     renderResults();
   });
-  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", region: "", city: "", board: "", tag: "", start: "", entry: "", sort: "name" }); state.shown = PAGE; renderShell(); });
+  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", region: "", city: "", board: "", tag: "", sort: "name" }); state.shown = PAGE; renderShell(); });
 }
 
 function setCompare(id, on) {
@@ -468,11 +494,13 @@ document.addEventListener("input", (e) => {
 document.addEventListener("change", (e) => {
   if (e.target.matches("[data-cmp]")) setCompare(e.target.dataset.cmp, e.target.checked);
   if (e.target.id === "cmp-add" && e.target.value) setCompare(e.target.value, true);
-  if (e.target.id === "s-area") { state.sess.area = e.target.value; renderSessions(); }
-  if (e.target.id === "s-board") { state.sess.board = e.target.value; renderSessions(); }
+  if (e.target.id === "s-area") { state.sess.area = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
+  if (e.target.id === "s-board") { state.sess.board = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
 });
 document.addEventListener("click", (e) => {
   if (e.target.closest("#show-more")) { state.shown += PAGE; renderResults(); return; }
+  if (e.target.closest("#progs-show-more")) { state.progShown += PROG_PAGE; renderPrograms(); return; }
+  if (e.target.closest("#sess-show-more")) { state.sessShown += SESS_PAGE; renderSessions(); return; }
   const rm = e.target.closest("[data-remove]");
   if (rm) setCompare(rm.dataset.remove, false);
   const tone = e.target.closest("[data-tone]");
@@ -486,7 +514,9 @@ document.addEventListener("click", (e) => {
   if (vibe) {
     const k = vibe.dataset.vibe;
     state.filters.tag = state.filters.tag === k ? "" : k;
+    state.pf.tag = state.filters.tag;
     state.shown = PAGE;
+    state.progShown = PROG_PAGE;
     renderShell();
     $("#escuelas")?.scrollIntoView({ behavior: "smooth" });
     return;
@@ -516,4 +546,4 @@ initSchoolDetail({
 initMyList({ getLang: () => state.lang });
 renderShell();
 // Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
-ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderSessions(); renderCompare(); } });
+ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderPrograms(); renderSessions(); renderCompare(); } });

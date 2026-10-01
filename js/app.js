@@ -7,13 +7,17 @@ import { EXPLAINER } from "./explainer.js";
 import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
-import { ensureAllDetails, ensureSchools } from "./details.js";
+import { ensureAllDetails, ensureSchools, ensureBoardExtras } from "./details.js";
+import { REGISTRATION, REG_UI } from "./admissions.js";
+import { DETAIL_BOARDS } from "./data/summary.js";
 import { supportHtml } from "./support.js";
-import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
+import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass, colorOf } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const MAX_COMPARE = 4;
+const SESS_PAGE = 10; // information sessions shown per step (there are hundreds)
+const PROG_PAGE = 9; // regional programs shown per step
 const PAGE = 24; // schools rendered per "show more" step (the GTA directory has 300+)
 // Regional programs (cards below) exist for these boards, all in Peel for now.
 const PROG_REGION = { dpcdsb: "peel", peel: "peel" };
@@ -26,8 +30,13 @@ const store = {
 const state = {
   lang: "en",
   tone: store.get("tone") === "family" ? "family" : "teen",
-  filters: { q: "", region: "", city: "", board: "", tag: "", start: "", entry: "", sort: "name" },
+  filters: { q: "", region: "", city: "", board: "", tag: "", sort: "name" },
+  pf: { q: "", board: "", region: "", tag: "", start: "", entry: "" }, // filters of the regional programs list
+  apBoard: DETAIL_BOARDS.includes("peel") ? "peel" : DETAIL_BOARDS[0],
+  df: { region: "", board: "" }, // filters of the key dates
+  progShown: PROG_PAGE,
   shown: PAGE,
+  sessShown: SESS_PAGE,
   sess: { area: "", board: "" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
@@ -66,7 +75,7 @@ function schoolMatches(s) {
 }
 
 function programMatches(p) {
-  const f = state.filters;
+  const f = state.pf;
   if (f.board && p.board !== f.board) return false;
   if (f.region && !(p.regions || [PROG_REGION[p.board]]).includes(f.region)) return false;
   if (f.tag && p.tag !== f.tag) return false;
@@ -128,12 +137,14 @@ function schoolCard(s) {
 
 function programCard(p) {
   const u = t();
-  const hosts = p.hosts.map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("");
+  const HOSTS = 6; // long host lists (SHSM, AP...) are cut here; the profile lists them all
+  const hosts = p.hosts.slice(0, HOSTS).map((h) => `<li${h.m ? ' class="miss"' : ""}>${esc(h.n)}${h.m ? ` <span class="pin">${esc(u.inMiss)}</span>` : ""}</li>`).join("")
+    + (p.hosts.length > HOSTS ? `<li class="muted">+${p.hosts.length - HOSTS}</li>` : "");
   const second = p.second ? `<p class="muted small"><b>${esc(u.secondEntry)}</b>${esc(L(p.second))}</p>` : "";
   return `<article class="card prog clickable" data-pcard="${p.id}"><div class="prog-top"><h3>${TAG_ICON[p.tag] || ""} ${esc(L(p.name))}</h3>${starBtn("program", p.id)}</div>
     <div class="where">${esc(u.host)}</div><ul class="hosts">${hosts}</ul>
     <p>${esc(L(p.p))}</p>${second}
-    <div class="meta"><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
+    <div class="meta"><span class="chip">${esc(L(BOARDS[p.board]))}</span><span class="chip">${esc(u.startsAt[p.start])}</span><span class="chip apply">${esc(u.applyChip)}</span>
       <button type="button" class="viewbtn" data-program="${p.id}" aria-label="${esc(u.sess.pd.details)}: ${esc(L(p.name))}">${esc(u.sess.pd.details)} →</button></div></article>`;
 }
 
@@ -183,6 +194,42 @@ function timeline() {
 
 /* ---------- Render ---------- */
 
+// Which boards each key date (same order as u.dates) belongs to; null = applies to everyone.
+const DATE_BOARDS = [["yrdsb"], ["tcdsb"], null, ["yrdsb"], ["hdsb"], ["peel"], ["tdsb"], ["dpcdsb"], ["dcdsb"], ["tdsb"], ["dpcdsb"], null];
+function renderDates() {
+  const u = t(), d = state.df;
+  const reg = (b) => BOARD_META[b].regions || [];
+  const regionOf = (b) => REGION_ORDER.filter((r) => SCHOOLS.some((s) => s.board === b && s.region === r));
+  const rows = u.dates.map((x, i) => ({ x, b: DATE_BOARDS[i] })).filter(({ b }) =>
+    !b || ((!d.board || b.includes(d.board)) && (!d.region || b.some((id) => regionOf(id).includes(d.region) || reg(id).includes(d.region)))));
+  $("#dates-list").innerHTML = rows.map(({ x, b }) => `<div class="date"><span class="when">${esc(x.when)}</span><p><b>${esc(x.b)}</b> ${esc(x.p)}</p>${b && !d.board ? `<p class="small muted">${esc(b.map((id) => L(BOARDS[id])).join(", "))}</p>` : ""}</div>`).join("");
+  $("#d-count").textContent = ({ es: (n) => `${n} fechas`, en: (n) => `${n} dates`, fr: (n) => `${n} dates` })[state.lang](rows.length);
+  $("#d-region").onchange = (e) => { d.region = e.target.value; renderDates(); };
+  $("#d-board").onchange = (e) => { d.board = e.target.value; renderDates(); };
+}
+
+const GLANCE_BOARDS = ["tdsb", "tcdsb", "peel", "dpcdsb", "yrdsb", "hdsb", "dcdsb", null];
+async function renderApply() {
+  const u = t(), box = $("#ap-detail"), sel = $("#ap-board");
+  if (!box || !sel) return;
+  const b = sel.value;
+  state.apBoard = b;
+  sel.onchange = renderApply;
+  document.querySelectorAll("[data-ap-pick]").forEach((x) => { x.onclick = () => { sel.value = x.dataset.apPick; renderApply(); sel.scrollIntoView({ block: "center", behavior: "smooth" }); }; });
+  await ensureBoardExtras(b);
+  if (sel.value !== b) return;
+  const reg = REGISTRATION[b], R = REG_UI[state.lang];
+  const part = (x) => (typeof x === "object" ? L(x) : x);
+  box.innerHTML = !reg ? `<p class="muted">${esc(u.apply.none)}</p>` : `<div class="card apply-detail">
+    <h3>${esc(L(BOARDS[b]))}</h3>
+    <p class="small"><b>${esc(R.steps)}</b></p><ol class="dnotes">${reg.steps.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ol>
+    ${reg.docs?.length ? `<p class="small"><b>${esc(R.docs)}</b></p><ul class="dnotes">${reg.docs.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ul>` : ""}
+    ${reg.note ? `<p class="small muted">${esc(L(reg.note))}</p>` : ""}
+    ${reg.dates?.length ? `<p class="small"><b>${esc(R.dates)}</b></p><ul class="dnotes">${reg.dates.map((x) => `<li>${esc(L(x))}</li>`).join("")}</ul>` : ""}
+    ${reg.contact ? `<p class="small"><b>${esc(R.contact)}:</b> ${esc(part(reg.contact))}</p>` : ""}
+    ${reg.url ? `<div class="sbtns"><a class="btn small" href="${reg.url}" target="_blank" rel="noopener">${esc(R.src)} ↗</a></div>` : ""}</div>`;
+}
+
 function renderShell() {
   const u = t();
   document.documentElement.lang = u.htmlLang;
@@ -206,7 +253,7 @@ function renderShell() {
   const f = state.filters;
   const q = `quiz?lang=${state.lang}`;
   $("#desk-nav").innerHTML =
-    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
+    `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#aplicar">${esc(u.apply.nav)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
   $("#bnav").innerHTML =
     `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
@@ -235,21 +282,17 @@ function renderShell() {
     ${supportHtml(state.lang) ? `<p class="small supportline">${supportHtml(state.lang)} · <button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button></p>` : ""}
   </header>
 
-  <section id="explorar"><div class="sec-head"><h2>${esc(u.exploreH)}</h2><p>${esc(u.exploreP)}</p></div>
+  <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
     <form class="filters" id="filters" role="search" onsubmit="return false">
       <label class="field search">${esc(u.searchLabel)}<input type="search" id="f-q" value="${esc(f.q)}" placeholder="${esc(u.searchPh)}"></label>
       <label class="field">${esc(u.fRegion)}<select id="f-region">${regionOptions(f.region)}</select></label>
       <label class="field">${esc(u.fCity)}<select id="f-city">${cityOptions(f.region, f.city)}</select></label>
       <label class="field">${esc(u.fSystem)}<select id="f-board">${boardOptions(f.board)}</select></label>
       <label class="field">${esc(u.fTag)}<select id="f-tag">${tagOptions(f.tag)}</select></label>
-      <label class="field">${esc(u.fStart)}<select id="f-start">${options(u.optStart, f.start)}</select></label>
-      <label class="field">${esc(u.fEntry)}<select id="f-entry">${options(u.optEntry, f.entry)}</select></label>
       <label class="field">${esc(u.fSort)}<select id="f-sort">${Object.entries(u.optSort).map(([v, l]) => `<option value="${v}" ${f.sort === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
       <button type="button" class="btn" id="f-reset">${esc(u.reset)}</button>
     </form>
-    <p class="count" id="count" aria-live="polite"></p></section>
-
-  <section id="escuelas"><div class="sec-head"><h2>${esc(u.escuelasH)}</h2><p>${esc(u.escuelasP)}</p></div>
+    <p class="count" id="count" aria-live="polite"></p>
     <div class="grid dir" id="schools"></div><div id="schools-more" class="morewrap"></div>
     <details class="fraser-note"><summary>${esc(u.fraserWhatH)}</summary><p>${esc(u.fraserWhat)}</p>
       <p><a href="${FRASER.url}" target="_blank" rel="noopener">${esc(L(FRASER.report))}</a></p></details></section>
@@ -257,7 +300,10 @@ function renderShell() {
   <section id="mapa"><div class="sec-head"><h2>${esc(u.map.h)}</h2><p>${esc(u.map.p)}</p></div><div id="map-host"></div></section>
 
   <section id="materias"><div class="sec-head"><h2>${esc(u.crs.finderH)}</h2><p>${esc(u.crs.finderP)}</p></div>
-    <input type="search" class="mapsearch" id="cf-q" placeholder="${esc(u.crs.finderPh)}" aria-label="${esc(u.crs.finderH)}" autocomplete="off">
+    <form class="filters" onsubmit="return false">
+      <label class="field search">${esc(u.searchLabel)}<input type="search" id="cf-q" placeholder="${esc(u.crs.finderPh)}" autocomplete="off"></label>
+      <label class="field">${esc(u.fSystem)}<select id="cf-board"><option value="">${esc(u.all)}</option></select></label>
+    </form>
     <div id="cf-out" class="cf-out" aria-live="polite"></div>
     <p class="small muted">${esc(u.crs.finderSrc("2025-2026"))}</p></section>
 
@@ -265,16 +311,31 @@ function renderShell() {
     <div class="cmp-toggles" id="cmp-toggles"></div><div id="cmp-out"></div></section>
 
   <section id="regionales"><div class="sec-head"><h2>${esc(u.regionalesH)}</h2><p>${esc(u.regionalesP)}</p></div>
-    <div class="grid" id="prog-dpcdsb"></div></section>
+    <form class="filters" id="pf" role="search" onsubmit="return false">
+      <label class="field search">${esc(u.searchLabel)}<input type="search" id="p-q" value="${esc(state.pf.q)}" placeholder="${esc(u.pfSearchPh)}"></label>
+      <label class="field">${esc(u.fSystem)}<select id="p-board"></select></label>
+      <label class="field">${esc(u.fRegion)}<select id="p-region"></select></label>
+      <label class="field">${esc(u.fTag)}<select id="p-tag"></select></label>
+      <label class="field">${esc(u.fStart)}<select id="p-start">${options(u.optStart, state.pf.start)}</select></label>
+      <label class="field">${esc(u.fEntry)}<select id="p-entry">${options(u.optEntry, state.pf.entry)}</select></label>
+      <button type="button" class="btn" id="pf-reset">${esc(u.reset)}</button>
+    </form>
+    <p class="count" id="pcount" aria-live="polite"></p>
+    <div class="grid" id="progs"></div><div id="progs-more" class="morewrap"></div>
+  </section>
 
-  <section id="otherprogs" hidden><div class="sec-head"><h2>${esc(u.otherH)}</h2><p>${esc(u.otherP)}</p></div>
-    <div id="prog-other"></div></section>
-
-  <section id="peel"><div class="sec-head"><h2>${esc(u.peelH)}</h2><p>${esc(u.peelP)}</p></div>
-    <div class="grid" id="prog-peel"></div>
-    <div class="grid" style="margin-top:14px">
-      <div class="card"><h3>${esc(u.peelHowH)}</h3><p>${esc(u.peelHow)}</p></div>
-      <div class="card"><h3>${esc(u.peelRuleH)}</h3><p>${esc(u.peelRule)}</p></div></div></section>
+  <section id="aplicar"><div class="sec-head"><h2>${esc(u.apply.h)}</h2><p>${esc(u.apply.p)}</p></div>
+    <div class="grid">${u.apply.paths.map((x, n) => `<div class="card layer"><span class="tag">${n + 1}</span><h3>${esc(x.h)}</h3><p>${esc(x.p)}</p></div>`).join("")}</div>
+    <h3 class="boardh">${esc(u.apply.glanceH)}</h3>
+    <div class="gl-cards">${u.apply.rows.map((r, n) => { const id = GLANCE_BOARDS[n]; return `<article class="gcard" style="--bc:${id ? colorOf(id) : "var(--muted)"}">
+      <h4>${esc(r[0])}</h4>
+      <p class="gwin"><span>${esc(u.apply.cols[1])}</span>${esc(r[1])}</p>
+      <p><span>${esc(u.apply.cols[2])}</span>${esc(r[2])}</p>
+      <p><span>${esc(u.apply.cols[3])}</span>${esc(r[3])}</p>
+      ${id ? `<button type="button" class="linkbtn" data-ap-pick="${id}">${esc(u.apply.guideH)} →</button>` : ""}</article>`; }).join("")}</div>
+    <h3 class="boardh">${esc(u.apply.guideH)}</h3>
+    <form class="filters" onsubmit="return false"><label class="field">${esc(u.apply.pick)}<select id="ap-board">${boardOptions(state.apBoard).replace(/<option value="">[^<]*<\/option>/, "")}</select></label></form>
+    <div id="ap-detail" aria-live="polite"></div></section>
 
   <section id="charlas"><div class="sec-head"><h2>${esc(u.sess.h)}</h2><p>${esc(u.sess.p)}</p></div>
     <form class="filters" id="sess-filters" onsubmit="return false">
@@ -282,7 +343,7 @@ function renderShell() {
       <label class="field">${esc(u.sess.board)}<select id="s-board">${[["", u.sess.allBoards], ...[...new Set(SESSIONS.map((e) => e.board).filter(Boolean))].sort((a, b) => BOARD_ORDER.indexOf(a) - BOARD_ORDER.indexOf(b)).map((b) => [b, L(BOARDS[b])])].map(([v, l]) => `<option value="${v}" ${state.sess.board === v ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
     </form>
     <p class="count" id="sess-count" aria-live="polite"></p>
-    <div class="slist" id="sess-list"></div>
+    <div class="slist" id="sess-list"></div><div id="sess-more" class="morewrap"></div>
     <p class="small muted">${esc(u.sess.calNote)} ${esc(u.sess.source)}</p></section>
 
   <section id="capas"><div class="sec-head"><h2>${esc(u.capasH)}</h2><p>${esc(u.capasP)}</p></div>
@@ -296,7 +357,12 @@ function renderShell() {
     <dl class="gl">${u.glossary.map(([k, d, m]) => `<div class="gl-row"><dt>${esc(k)}</dt><dd>${esc(d)}${m ? ` <span>${esc(m)}</span>` : ""}</dd></div>`).join("")}</dl></section>
 
   <section id="fechas"><div class="sec-head"><h2>${esc(u.fechasH)}</h2><p>${esc(u.fechasP)}</p></div>
-    <div class="dates">${u.dates.map((d) => `<div class="date"><span class="when">${esc(d.when)}</span><p><b>${esc(d.b)}</b> ${esc(d.p)}</p></div>`).join("")}</div></section>
+    <form class="filters" id="df" onsubmit="return false">
+      <label class="field">${esc(u.fRegion)}<select id="d-region">${regionOptions(state.df.region)}</select></label>
+      <label class="field">${esc(u.fSystem)}<select id="d-board">${boardOptions(state.df.board)}</select></label>
+    </form>
+    <p class="count" id="d-count" aria-live="polite"></p>
+    <div class="dates" id="dates-list"></div></section>
 
   <section id="preguntas"><div class="sec-head"><h2>${esc(u.preguntasH)}</h2><p>${esc(u.preguntasP)}</p></div>
     <ol class="q">${u.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></section>
@@ -309,11 +375,15 @@ function renderShell() {
     <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
   </main>`;
 
-  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p>`;
+  $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p><p class="small muted" id="build"></p>`;
+  showBuild();
   bindFilters();
   renderResults();
+  renderPrograms();
   renderCompare();
   renderSessions();
+  renderDates();
+  renderApply();
   bindGame();
   syncMyList();
 }
@@ -343,6 +413,16 @@ function sessionAreas(u) {
   return [["", u.sess.all], ...cities.map((c) => [c, name(c)]), ["virtual", u.sess.virtual]];
 }
 
+// Small build stamp in the footer (commit and environment), so a preview can be told from production.
+let buildInfo = null;
+function showBuild() {
+  const el = $("#build");
+  if (!el) return;
+  const paint = () => { if (buildInfo?.sha) el.textContent = `build ${buildInfo.sha} · ${buildInfo.env}${buildInfo.branch ? " · " + buildInfo.branch : ""}`; };
+  if (buildInfo) return paint();
+  fetch("/api/version", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then((j) => { buildInfo = j; paint(); }).catch(() => {});
+}
+
 function renderSessions() {
   const u = t();
   // The area and board lists come from the sessions themselves: refresh them when more boards' sessions have loaded.
@@ -354,9 +434,13 @@ function renderSessions() {
   if (state.sess.area) list = list.filter((e) => e.city === state.sess.area || e.city === "virtual");
   if (state.sess.board) list = list.filter((e) => e.board === state.sess.board);
   $("#sess-count").textContent = u.sess.count(list.length);
+  const shownSess = list.slice(0, state.sessShown);
   $("#sess-list").innerHTML = list.length
-    ? list.map((e) => renderSessionRow(e, { showSchool: true })).join("")
+    ? shownSess.map((e) => renderSessionRow(e, { showSchool: true })).join("")
     : `<div class="empty">${esc(u.sess.none)}</div>`;
+  const rest = list.length - shownSess.length;
+  $("#sess-more").innerHTML = rest > 0
+    ? `<div class="showmore"><button type="button" class="btn" id="sess-show-more">${esc(u.showMore(Math.min(SESS_PAGE, rest), rest))}</button></div>` : "";
 }
 
 function renderResults() {
@@ -365,9 +449,6 @@ function renderResults() {
   let schools = SCHOOLS.filter(schoolMatches);
   if (f.sort === "fraser") schools = [...schools].sort((a, b) => (b.fraser?.score ?? -1) - (a.fraser?.score ?? -1));
   else schools = [...schools].sort((a, b) => a.name.localeCompare(b.name));
-  const progs = PROGRAMS.filter(programMatches);
-  const dp = progs.filter((p) => p.board === "dpcdsb");
-  const pe = progs.filter((p) => p.board === "peel");
   const empty = `<div class="empty">${esc(u.noResults)}</div>`;
 
   const shown = schools.slice(0, state.shown);
@@ -377,18 +458,28 @@ function renderResults() {
   $("#schools-more").innerHTML = more;
   const mh = $("#map-host");
   if (mh) renderMap(mh, { lang: state.lang, matchIds: schools.map((s) => s.id) });
-  $("#prog-dpcdsb").innerHTML = dp.length ? dp.map(programCard).join("") : empty;
-  $("#prog-peel").innerHTML = pe.length ? pe.map(programCard).join("") : empty;
-  // Programs of the other boards (loaded from their collected details), grouped by board.
-  const other = progs.filter((p) => p.board !== "dpcdsb" && p.board !== "peel");
-  const sec = $("#otherprogs");
-  if (sec) {
-    sec.hidden = !PROGRAMS.some((p) => p.board !== "dpcdsb" && p.board !== "peel");
-    $("#prog-other").innerHTML = other.length
-      ? BOARD_ORDER.map((b) => { const l = other.filter((p) => p.board === b); return l.length ? `<h3 class="boardh">${esc(L(BOARDS[b]))}</h3><div class="grid">${l.map(programCard).join("")}</div>` : ""; }).join("")
-      : empty;
-  }
-  $("#count").textContent = u.resultCount(schools.length, progs.length);
+  $("#count").textContent = u.map.count(schools.length);
+}
+
+// Regional and specialized programs: own filters, sorted by board then name, shown in steps.
+function renderPrograms() {
+  const u = t();
+  const f = state.pf;
+  // The board and type lists only offer values that exist, and refresh when more boards' programs have loaded.
+  const boards = BOARD_ORDER.filter((b) => PROGRAMS.some((p) => p.board === b));
+  const tags = Object.keys(TAGS).filter((k) => PROGRAMS.some((p) => p.tag === k));
+  const opts = (list, cur, label) => `<option value="">${esc(u.all)}</option>` + list.map(([v, l]) => `<option value="${v}" ${cur === v ? "selected" : ""}>${esc(l)}</option>`).join("");
+  const pb = $("#p-board"), pr = $("#p-region"), pt = $("#p-tag");
+  if (!pb) return;
+  pb.innerHTML = opts(boards.map((b) => [b, L(BOARDS[b])]), f.board);
+  pr.innerHTML = opts(REGION_ORDER.map((r) => [r, L(REGIONS[r])]), f.region);
+  pt.innerHTML = opts(tags.map((k) => [k, L(TAGS[k])]), f.tag);
+  const list = PROGRAMS.filter(programMatches).sort((a, b) => BOARD_ORDER.indexOf(a.board) - BOARD_ORDER.indexOf(b.board) || L(a.name).localeCompare(L(b.name)));
+  const shown = list.slice(0, state.progShown);
+  const rest = list.length - shown.length;
+  $("#pcount").textContent = u.pcount(list.length);
+  $("#progs").innerHTML = list.length ? shown.map(programCard).join("") : `<div class="empty">${esc(u.noResults)}</div>`;
+  $("#progs-more").innerHTML = rest > 0 ? `<div class="showmore"><button type="button" class="btn" id="progs-show-more">${esc(u.showMore(Math.min(PROG_PAGE, rest), rest))}</button></div>` : "";
 }
 
 function compareOptions(free) {
@@ -438,13 +529,17 @@ function renderCompare() {
 function bindFilters() {
   const f = state.filters;
   $("#f-q").addEventListener("input", (e) => { f.q = e.target.value.trim(); state.shown = PAGE; renderResults(); });
-  for (const k of ["region", "city", "board", "tag", "start", "entry", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => {
+  const pf = state.pf;
+  $("#p-q").addEventListener("input", (e) => { pf.q = e.target.value.trim(); state.progShown = PROG_PAGE; renderPrograms(); });
+  for (const k of ["board", "region", "tag", "start", "entry"]) $(`#p-${k}`).addEventListener("change", (e) => { pf[k] = e.target.value; state.progShown = PROG_PAGE; renderPrograms(); });
+  $("#pf-reset").addEventListener("click", () => { Object.assign(pf, { q: "", board: "", region: "", tag: "", start: "", entry: "" }); $("#p-q").value = ""; $("#p-start").value = ""; $("#p-entry").value = ""; state.progShown = PROG_PAGE; renderPrograms(); });
+  for (const k of ["region", "city", "board", "tag", "sort"]) $(`#f-${k}`).addEventListener("change", (e) => {
     f[k] = e.target.value;
     if (k === "region") { f.city = ""; $("#f-city").innerHTML = cityOptions(f.region, ""); }
     state.shown = PAGE;
     renderResults();
   });
-  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", region: "", city: "", board: "", tag: "", start: "", entry: "", sort: "name" }); state.shown = PAGE; renderShell(); });
+  $("#f-reset").addEventListener("click", () => { Object.assign(f, { q: "", region: "", city: "", board: "", tag: "", sort: "name" }); state.shown = PAGE; renderShell(); });
 }
 
 function setCompare(id, on) {
@@ -460,19 +555,31 @@ function setCompare(id, on) {
 }
 
 let cfTimer = null;
+// Course finder: runs on typing, on a board change and on "Show more" (the limit is kept on the results element).
+async function runFinder(reset = true) {
+  const out = $("#cf-out");
+  if (!out) return;
+  if (reset) delete out.dataset.limit;
+  const { renderFinder } = await import("./course-finder.js");
+  renderFinder(out, $("#cf-q")?.value || "", state.lang, { board: $("#cf-board")?.value || "" });
+}
 document.addEventListener("input", (e) => {
   if (e.target.id !== "cf-q") return;
   clearTimeout(cfTimer);
-  cfTimer = setTimeout(async () => { const { renderFinder } = await import("./course-finder.js"); renderFinder($("#cf-out"), e.target.value, state.lang); }, 220);
+  cfTimer = setTimeout(runFinder, 220);
 });
 document.addEventListener("change", (e) => {
   if (e.target.matches("[data-cmp]")) setCompare(e.target.dataset.cmp, e.target.checked);
   if (e.target.id === "cmp-add" && e.target.value) setCompare(e.target.value, true);
-  if (e.target.id === "s-area") { state.sess.area = e.target.value; renderSessions(); }
-  if (e.target.id === "s-board") { state.sess.board = e.target.value; renderSessions(); }
+  if (e.target.id === "cf-board") runFinder();
+  if (e.target.id === "s-area") { state.sess.area = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
+  if (e.target.id === "s-board") { state.sess.board = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
 });
 document.addEventListener("click", (e) => {
   if (e.target.closest("#show-more")) { state.shown += PAGE; renderResults(); return; }
+  if (e.target.closest("#cf-show-more")) { const out = $("#cf-out"); out.dataset.limit = (Number(out.dataset.limit) || 10) + 10; runFinder(false); return; }
+  if (e.target.closest("#progs-show-more")) { state.progShown += PROG_PAGE; renderPrograms(); return; }
+  if (e.target.closest("#sess-show-more")) { state.sessShown += SESS_PAGE; renderSessions(); return; }
   const rm = e.target.closest("[data-remove]");
   if (rm) setCompare(rm.dataset.remove, false);
   const tone = e.target.closest("[data-tone]");
@@ -486,7 +593,9 @@ document.addEventListener("click", (e) => {
   if (vibe) {
     const k = vibe.dataset.vibe;
     state.filters.tag = state.filters.tag === k ? "" : k;
+    state.pf.tag = state.filters.tag;
     state.shown = PAGE;
+    state.progShown = PROG_PAGE;
     renderShell();
     $("#escuelas")?.scrollIntoView({ behavior: "smooth" });
     return;
@@ -516,4 +625,4 @@ initSchoolDetail({
 initMyList({ getLang: () => state.lang });
 renderShell();
 // Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
-ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderSessions(); renderCompare(); } });
+ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderPrograms(); renderSessions(); renderCompare(); } });

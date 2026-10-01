@@ -38,7 +38,7 @@ export const QUIZ_UI = {
     tapHint: "Toca la tarjeta para ver más. Puedes seleccionar y copiar cualquier texto.",
     nextSteps: [
       "Revisa los programas en la guía y anota cuáles piden aplicar, audición o portafolio.",
-      "Ve a las charlas y open houses (oct.–nov. de 2026). Peel recibe aplicaciones del 3 al 24 de noviembre de 2026.",
+      "Ve a las charlas y open houses (oct.–nov. de 2026). Las fechas de aplicación dependen del consejo: Peel del 3 al 24 de nov., TDSB del 9 al 27 de nov., Halton del 30 de oct. al 30 de nov., TCDSB del 25 de sept. al 30 de oct. (mira «Fechas»).",
       "Confirma cuál es tu escuela según tu boundary (tu dirección) en el buscador de escuelas de tu board.",
       "Habla con el orientador de tu escuela actual antes de decidir.",
     ],
@@ -107,7 +107,7 @@ export const QUIZ_UI = {
     tapHint: "Tap the card for more. You can select and copy any text.",
     nextSteps: [
       "Review the programs in the guide and note which ones require an application, audition or portfolio.",
-      "Attend the info sessions and open houses (Oct–Nov 2026). Peel accepts applications Nov 3–24, 2026.",
+      "Attend the info sessions and open houses (Oct–Nov 2026). Application dates depend on the board: Peel Nov 3–24, TDSB Nov 9–27, Halton Oct 30–Nov 30, TCDSB Sept 25–Oct 30 (see “Dates”).",
       "Confirm which school is yours by boundary (based on your address) using your board's school locator.",
       "Talk to the guidance counsellor at your current school before deciding.",
     ],
@@ -176,7 +176,7 @@ export const QUIZ_UI = {
     tapHint: "Touche la carte pour en savoir plus. Tu peux sélectionner et copier n'importe quel texte.",
     nextSteps: [
       "Passe en revue les programmes du guide et note ceux qui exigent une demande, une audition ou un portfolio.",
-      "Assiste aux séances d'information et aux portes ouvertes (oct.–nov. 2026). Peel reçoit les demandes du 3 au 24 novembre 2026.",
+      "Assiste aux séances d'information et aux portes ouvertes (oct.–nov. 2026). Les dates de demande dépendent du conseil : Peel du 3 au 24 nov., TDSB du 9 au 27 nov., Halton du 30 oct. au 30 nov., TCDSB du 25 sept. au 30 oct. (voir « Dates »).",
       "Confirme ton école de secteur (selon ton adresse) avec l'outil de recherche d'écoles de ton conseil.",
       "Parle au personnel d'orientation de ton école actuelle avant de décider.",
     ],

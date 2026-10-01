@@ -150,7 +150,7 @@ document.addEventListener("click", (e) => {
   const lg = t.closest("[data-legend]"); if (lg) return track("map", "legend", lg.dataset.legend);
   const ml = t.closest("[data-ml]"); if (ml && ["ics", "pdf", "copy"].includes(ml.dataset.ml)) return track("mylist", "export_" + ml.dataset.ml);
   if (t.closest("[data-ics]")) return track("session", "ics");
-  if (t.closest("#show-more")) return track("ui", "show_more");
+  if (t.closest("#show-more, #sess-show-more")) return track("ui", "show_more");
   if (t.closest("#d-copy")) return track("ui", "share_link");
   if (t.closest(".quiz-cta a, a.cta[href^='quiz']")) return track("quiz", "cta");
   if (t.closest("#gamebox")) once("game", "game", "open");
@@ -162,8 +162,11 @@ document.addEventListener("change", (e) => {
   if (!(t instanceof Element)) return;
   if (t.matches("[data-cmp]")) return track("compare", t.checked ? "add" : "remove");
   if (t.id === "cmp-add") return track("compare", "add");
-  const f = t.id && t.id.match(/^f-(region|city|board|tag|start|entry|sort)$/);
+  const f = t.id && t.id.match(/^f-(region|city|board|tag|sort)$/);
   if (f) return track("filter", f[1], t.value);
+  const pfm = t.id && t.id.match(/^p-(board|region|tag|start|entry)$/);
+  if (pfm) return track("filter", "prog_" + pfm[1], t.value);
+  if (t.id === "cf-board") return once("finderboard", "courses", "finder");
   if (t.id === "s-area") return track("session", "area", t.value);
   if (t.id === "s-board") return track("session", "board", t.value);
   if (t.classList.contains("maparea")) return track("map", "region", t.value);
@@ -173,6 +176,7 @@ document.addEventListener("input", (e) => {
   if (trackingOff()) return;
   const id = e.target?.id;
   if (id === "f-q") once("search", "filter", "search");
+  else if (id === "p-q") once("psearch", "filter", "prog_search");
   else if (id === "cf-q") once("finder", "courses", "finder");
   else if (e.target?.classList?.contains("mapsearch")) once("mapsearch", "map", "search");
 });

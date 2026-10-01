@@ -10,15 +10,17 @@ import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BO
 import { ensureAllDetails, ensureSchools, ensureBoardExtras } from "./details.js";
 import { REGISTRATION, REG_UI } from "./admissions.js";
 import { DETAIL_BOARDS } from "./data/summary.js";
+import { bottomBarHtml, openSheet, closeSheet, watchSections, initBackToTop } from "./mobile.js";
 import { supportHtml, supportCard, initSupportNudge } from "./support.js";
 import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass, colorOf } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const MAX_COMPARE = 4;
-const SESS_PAGE = 10; // information sessions shown per step (there are hundreds)
-const PROG_PAGE = 9; // regional programs shown per step
-const PAGE = 24; // schools rendered per "show more" step (the GTA directory has 300+)
+const STEP = 10; // each "Show more" click adds this many
+const SESS_PAGE = 5; // information sessions shown per step (there are hundreds)
+const PROG_PAGE = 5; // regional programs shown per step
+const PAGE = 5; // schools rendered per "show more" step (the GTA directory has 300+)
 // Regional programs (cards below) exist for these boards, all in Peel for now.
 const PROG_REGION = { dpcdsb: "peel", peel: "peel" };
 
@@ -37,6 +39,7 @@ const state = {
   progShown: PROG_PAGE,
   shown: PAGE,
   sessShown: SESS_PAGE,
+  datesShown: 5,
   sess: { area: "", board: "" },
   compare: ["goetz", "pocock", "cabot", "sfx"],
 };
@@ -202,10 +205,20 @@ function renderDates() {
   const regionOf = (b) => REGION_ORDER.filter((r) => SCHOOLS.some((s) => s.board === b && s.region === r));
   const rows = u.dates.map((x, i) => ({ x, b: DATE_BOARDS[i] })).filter(({ b }) =>
     !b || ((!d.board || b.includes(d.board)) && (!d.region || b.some((id) => regionOf(id).includes(d.region) || reg(id).includes(d.region)))));
-  $("#dates-list").innerHTML = rows.map(({ x, b }) => `<div class="date"><span class="when">${esc(x.when)}</span><p><b>${esc(x.b)}</b> ${esc(x.p)}</p>${b && !d.board ? `<p class="small muted">${esc(b.map((id) => L(BOARDS[id])).join(", "))}</p>` : ""}</div>`).join("");
+  const rest = rows.length - state.datesShown;
+  $("#dates-more").innerHTML = rest > 0 ? `<div class="showmore"><button type="button" class="btn" id="dates-show-more">${esc(u.showMore(Math.min(STEP, rest), rest))}</button></div>` : "";
+  $("#dates-list").innerHTML = rows.slice(0, state.datesShown).map(({ x, b }) => `<div class="date"><span class="when">${esc(x.when)}</span><p><b>${esc(x.b)}</b> ${esc(x.p)}</p>${b && !d.board ? `<p class="small muted">${esc(b.map((id) => L(BOARDS[id])).join(", "))}</p>` : ""}</div>`).join("");
   $("#d-count").textContent = ({ es: (n) => `${n} fechas`, en: (n) => `${n} dates`, fr: (n) => `${n} dates` })[state.lang](rows.length);
-  $("#d-region").onchange = (e) => { d.region = e.target.value; renderDates(); };
-  $("#d-board").onchange = (e) => { d.board = e.target.value; renderDates(); };
+  $("#d-region").onchange = (e) => { d.region = e.target.value; state.datesShown = 5; renderDates(); };
+  $("#d-board").onchange = (e) => { d.board = e.target.value; state.datesShown = 5; renderDates(); };
+}
+
+// Reference lists (glossary, questions, sources) start with a few items; the rest opens on tap.
+const MORE_N = { es: (n) => `Ver ${n} más`, en: (n) => `Show ${n} more`, fr: (n) => `Voir ${n} de plus` };
+function firstN(items, n, wrapOpen, wrapClose, render) {
+  const head = items.slice(0, n), rest = items.slice(n);
+  return wrapOpen + head.map(render).join("") + wrapClose +
+    (rest.length ? `<details class="listmore"><summary>${esc(MORE_N[state.lang](rest.length))}</summary>${wrapOpen.replace(/>$/, ` style="counter-reset:q ${n}">`)}${rest.map(render).join("")}${wrapClose}</details>` : "");
 }
 
 const GLANCE_BOARDS = ["tdsb", "tcdsb", "peel", "dpcdsb", "yrdsb", "hdsb", "dcdsb", null];
@@ -255,11 +268,7 @@ function renderShell() {
   $("#desk-nav").innerHTML =
     `<a href="#escuelas">${esc(u.bnav.escuelas)}</a><a href="#regionales">${esc(u.bnav.regionales)}</a><a href="#mapa">${esc(u.map.nav)}</a><a href="#comparar">${esc(u.nav.comparar)}</a><a href="#aplicar">${esc(u.apply.nav)}</a><a href="#charlas">${esc(u.sess.nav)}</a><a href="#fechas">${esc(u.bnav.fechas)}</a><a href="${q}">${esc(u.bnav.quiz)}</a>${state.tone === "teen" ? `<a href="#descanso" class="gamelink" aria-label="${esc(u.game.h)}" title="${esc(u.game.h)}">🎮</a>` : ""}`;
   $("#bnav").setAttribute("aria-label", u.navLabel);
-  $("#bnav").innerHTML =
-    `<a href="#escuelas"><span aria-hidden="true">🏫</span>${esc(u.bnav.escuelas)}</a>` +
-    `<a href="#regionales"><span aria-hidden="true">🎯</span>${esc(u.bnav.regionales)}</a>` +
-    `<a href="${q}" class="hot"><span aria-hidden="true">✨</span>${esc(u.bnav.quiz)}</a>` +
-    `<a href="#fechas"><span aria-hidden="true">📅</span>${esc(u.bnav.fechas)}</a>`;
+  $("#bnav").innerHTML = bottomBarHtml(state.lang, q);
 
   const vibes = VIBES.map((k) => `<button type="button" class="vibe" data-vibe="${k}">${TAG_ICON[k]} ${esc(L(TAGS[k]))}</button>`).join("");
   const dpCount = PROGRAMS.length;
@@ -354,7 +363,7 @@ function renderShell() {
   ${explainerHtml()}
 
   <section id="siglas"><div class="sec-head"><h2>${esc(u.siglasH)}</h2></div>
-    <dl class="gl">${u.glossary.map(([k, d, m]) => `<div class="gl-row"><dt>${esc(k)}</dt><dd>${esc(d)}${m ? ` <span>${esc(m)}</span>` : ""}</dd></div>`).join("")}</dl></section>
+    ${firstN(u.glossary, 5, '<dl class="gl">', "</dl>", ([k, d, m]) => `<div class="gl-row"><dt>${esc(k)}</dt><dd>${esc(d)}${m ? ` <span>${esc(m)}</span>` : ""}</dd></div>`)}</section>
 
   <section id="fechas"><div class="sec-head"><h2>${esc(u.fechasH)}</h2><p>${esc(u.fechasP)}</p></div>
     <form class="filters" id="df" onsubmit="return false">
@@ -362,19 +371,19 @@ function renderShell() {
       <label class="field">${esc(u.fSystem)}<select id="d-board">${boardOptions(state.df.board)}</select></label>
     </form>
     <p class="count" id="d-count" aria-live="polite"></p>
-    <div class="dates" id="dates-list"></div></section>
+    <div class="dates" id="dates-list"></div><div id="dates-more" class="morewrap"></div></section>
 
   ${supportCard(state.lang)}
 
   <section id="preguntas"><div class="sec-head"><h2>${esc(u.preguntasH)}</h2><p>${esc(u.preguntasP)}</p></div>
-    <ol class="q">${u.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ol></section>
+    ${firstN(u.questions, 5, '<ol class="q">', "</ol>", (q) => `<li>${esc(q)}</li>`)}</section>
 
   ${state.tone === "teen" ? `<section id="descanso"><details class="gamebox" id="gamebox"><summary>${esc(u.game.h)}</summary>
     <p class="muted">${esc(u.game.p)}</p><div id="game-host"></div></details></section>` : ""}
 
   <section><div class="sec-head"><h2>${esc(u.pendingH)}</h2></div>
     <div class="pending"><p class="muted">${esc(u.pendingP)}</p><ul>${u.pending.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>
-    <div class="sources">${esc(u.sourcesH)}:<ul>${SOURCES.map(([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul></div></section>
+    <div class="sources">${esc(u.sourcesH)}:${firstN(SOURCES, 5, "<ul>", "</ul>", ([n, h]) => `<li><a href="${h}" target="_blank" rel="noopener">${esc(n)}</a></li>`)}</div></section>
   </main>`;
 
   $("#foot").innerHTML = `<p>${esc(u.disclaimer)}</p><nav>${state.tone === "teen" ? `<a href="#descanso">${esc(u.game.h)}</a>` : ""}<a href="privacy?lang=${state.lang}">${esc(u.privacy)}</a><a href="${reportUrl("Highschool Navigator", state.lang)}" target="_blank" rel="noopener">${{ es: "Reportar un error", en: "Report an error", fr: "Signaler une erreur" }[state.lang]}</a><button type="button" class="linkbtn" data-contrast-toggle>${esc(({ es: "Alto contraste", en: "High contrast", fr: "Contraste élevé" })[state.lang])}</button><a href="#main">${esc(u.backTop)}</a></nav><p class="made">${madeWith(state.lang)}</p><p class="small muted" id="build"></p>`;
@@ -387,6 +396,7 @@ function renderShell() {
   renderDates();
   renderApply();
   bindGame();
+  watchSections();
   syncMyList();
 }
 
@@ -442,7 +452,7 @@ function renderSessions() {
     : `<div class="empty">${esc(u.sess.none)}</div>`;
   const rest = list.length - shownSess.length;
   $("#sess-more").innerHTML = rest > 0
-    ? `<div class="showmore"><button type="button" class="btn" id="sess-show-more">${esc(u.showMore(Math.min(SESS_PAGE, rest), rest))}</button></div>` : "";
+    ? `<div class="showmore"><button type="button" class="btn" id="sess-show-more">${esc(u.showMore(Math.min(STEP, rest), rest))}</button></div>` : "";
 }
 
 function renderResults() {
@@ -455,7 +465,7 @@ function renderResults() {
 
   const shown = schools.slice(0, state.shown);
   const more = schools.length > shown.length
-    ? `<div class="showmore"><button type="button" class="btn" id="show-more">${esc(u.showMore(Math.min(PAGE, schools.length - shown.length), schools.length - shown.length))}</button></div>` : "";
+    ? `<div class="showmore"><button type="button" class="btn" id="show-more">${esc(u.showMore(Math.min(STEP, schools.length - shown.length), schools.length - shown.length))}</button></div>` : "";
   $("#schools").innerHTML = schools.length ? shown.map(schoolCard).join("") : empty;
   $("#schools-more").innerHTML = more;
   const mh = $("#map-host");
@@ -481,7 +491,7 @@ function renderPrograms() {
   const rest = list.length - shown.length;
   $("#pcount").textContent = u.pcount(list.length);
   $("#progs").innerHTML = list.length ? shown.map(programCard).join("") : `<div class="empty">${esc(u.noResults)}</div>`;
-  $("#progs-more").innerHTML = rest > 0 ? `<div class="showmore"><button type="button" class="btn" id="progs-show-more">${esc(u.showMore(Math.min(PROG_PAGE, rest), rest))}</button></div>` : "";
+  $("#progs-more").innerHTML = rest > 0 ? `<div class="showmore"><button type="button" class="btn" id="progs-show-more">${esc(u.showMore(Math.min(STEP, rest), rest))}</button></div>` : "";
 }
 
 function compareOptions(free) {
@@ -578,10 +588,11 @@ document.addEventListener("change", (e) => {
   if (e.target.id === "s-board") { state.sess.board = e.target.value; state.sessShown = SESS_PAGE; renderSessions(); }
 });
 document.addEventListener("click", (e) => {
-  if (e.target.closest("#show-more")) { state.shown += PAGE; renderResults(); return; }
-  if (e.target.closest("#cf-show-more")) { const out = $("#cf-out"); out.dataset.limit = (Number(out.dataset.limit) || 10) + 10; runFinder(false); return; }
-  if (e.target.closest("#progs-show-more")) { state.progShown += PROG_PAGE; renderPrograms(); return; }
-  if (e.target.closest("#sess-show-more")) { state.sessShown += SESS_PAGE; renderSessions(); return; }
+  if (e.target.closest("#show-more")) { state.shown += STEP; renderResults(); return; }
+  if (e.target.closest("#cf-show-more")) { const out = $("#cf-out"); out.dataset.limit = (Number(out.dataset.limit) || 5) + STEP; runFinder(false); return; }
+  if (e.target.closest("#progs-show-more")) { state.progShown += STEP; renderPrograms(); return; }
+  if (e.target.closest("#dates-show-more")) { state.datesShown += STEP; renderDates(); return; }
+  if (e.target.closest("#sess-show-more")) { state.sessShown += STEP; renderSessions(); return; }
   const rm = e.target.closest("[data-remove]");
   if (rm) setCompare(rm.dataset.remove, false);
   const tone = e.target.closest("[data-tone]");
@@ -609,6 +620,10 @@ document.addEventListener("click", (e) => {
     renderShell();
   }
 });
+document.addEventListener("click", (e) => {
+  const m = e.target.closest("[data-more]");
+  if (m) openSheet(state.lang, { quizHref: `quiz?lang=${state.lang}`, game: state.tone === "teen" ? t().game.h : "" }, m);
+});
 $("#theme-btn").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") ||
     (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
@@ -626,6 +641,7 @@ initSchoolDetail({
 });
 initMyList({ getLang: () => state.lang });
 renderShell();
+initBackToTop(() => state.lang);
 initSupportNudge(() => state.lang);
 // Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
 ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderPrograms(); renderSessions(); renderCompare(); } });

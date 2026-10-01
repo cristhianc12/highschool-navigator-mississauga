@@ -105,10 +105,12 @@ img{max-width:100%}
 }
 
 /* ---------- Bottom nav (mobile) ---------- */
-.bnav{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;display:grid;grid-template-columns:1fr 1fr 1.6fr 1fr;
+.bnav{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;display:grid;grid-template-columns:1fr 1fr 1.5fr 1fr 1fr;
   background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:6px}
-.bnav a{display:grid;justify-items:center;gap:1px;padding:7px 4px;white-space:nowrap;min-width:0;border-radius:14px;color:var(--muted);text-decoration:none;font-size:11.5px;font-weight:600}
-.bnav a span{font-size:19px;line-height:1.2}
+.bnav a,.bnav button{display:grid;justify-items:center;gap:1px;padding:7px 4px;white-space:nowrap;min-width:0;border-radius:14px;color:var(--muted);text-decoration:none;font-size:11.5px;font-weight:600}
+.bnav button{border:0;background:none;font-family:inherit;cursor:pointer}
+.bnav a span,.bnav button span{font-size:19px;line-height:1.2}
+.bnav a.on:not(.hot),.bnav button[aria-expanded="true"]{color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
 .bnav a.hot{background:var(--cta-bg);color:var(--cta-ink)}
 @media (min-width:860px){.bnav{display:none}body{padding-block-end:48px}.desk-nav{display:flex}}
 
@@ -560,3 +562,29 @@ a.theme.coffee{font-size:16px}
 @keyframes pillin{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
 @media (max-width:760px){.coffee-pill{left:10px;right:10px;bottom:78px;justify-content:space-between}}
 @media (prefers-reduced-motion:reduce){.coffee-pill{animation:none}}
+
+/* ---------- More sheet, back to top ---------- */
+.msheet{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center}
+.mback{position:absolute;inset:0;background:rgba(20,10,50,.45)}
+.mpanel{position:relative;width:100%;max-width:560px;max-height:82vh;overflow:auto;background:var(--surface);border-radius:24px 24px 0 0;padding:16px 16px calc(18px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 40px rgba(20,10,60,.25);animation:sheetin .25s ease both}
+.mhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.mhead b{font:800 1.1rem var(--font-display)}
+.mclose{border:0;background:var(--bg-soft,transparent);font-size:26px;line-height:1;width:44px;height:44px;border-radius:50%;cursor:pointer;color:var(--muted)}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mtile{display:grid;justify-items:center;align-content:center;gap:4px;min-height:84px;padding:10px 6px;border:1px solid var(--line);border-radius:16px;text-align:center;text-decoration:none;color:var(--ink,inherit);font-size:13px;font-weight:700;line-height:1.2}
+.mtile span{font-size:24px}
+.mtile.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.mtile.hot{background:var(--cta-bg);color:var(--cta-ink);border-color:transparent}
+.mfoot{margin:14px 0 0;text-align:center;font-size:13px}
+html.sheet-open{overflow:hidden}
+@keyframes sheetin{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
+.totop{position:fixed;right:14px;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:35;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(8px);color:var(--ink,inherit);font-size:20px;font-weight:800;box-shadow:var(--shadow);cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s,transform .2s}
+.totop.show{opacity:.92;transform:none;pointer-events:auto}
+@media (min-width:860px){.totop{bottom:24px;right:24px}}
+@media (prefers-reduced-motion:reduce){.mpanel{animation:none}.totop{transition:none}}
+section[id]{scroll-margin-top:70px}
+.listmore{margin-top:10px}
+.listmore>summary{cursor:pointer;display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:999px;font-weight:700;font-size:14px;background:var(--surface);list-style:none}
+.listmore>summary::-webkit-details-marker{display:none}
+.listmore[open]>summary{margin-bottom:10px}
+.maplist .showmore{display:flex;justify-content:center;padding:6px 0}

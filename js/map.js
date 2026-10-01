@@ -25,7 +25,7 @@ const store = {
 };
 
 // Module state: survives re-renders of the page (filters change often).
-const S = { host: null, lang: null, matchIds: null, q: "", home: null, region: "", picking: false, loaded: false, map: null, L: null, markers: new Map(), group: null, homeMarker: null, lastKey: "", hide: new Set(), touched: false, ro: null };
+const S = { host: null, lang: null, matchIds: null, q: "", home: null, region: "", picking: false, loaded: false, map: null, L: null, markers: new Map(), group: null, homeMarker: null, lastKey: "", hide: new Set(), touched: false, ro: null, listShown: 5 };
 
 // Fixed number per school (alphabetical), so a pin, its list row and its popup always match.
 const NUM = new Map([...SCHOOLS].sort((a, b) => a.name.localeCompare(b.name)).map((s, i) => [s.id, i + 1]));
@@ -98,13 +98,14 @@ function updateList() {
   const m = t();
   const list = visible();
   S.host.querySelector(".mapcount").textContent = `${m.count(list.length)}${S.home ? " · " + m.sortedByDist : ""}`;
-  S.host.querySelector(".maplist").innerHTML = list.length ? list.map((s) => {
+  const rest = list.length - S.listShown;
+  S.host.querySelector(".maplist").innerHTML = list.length ? list.slice(0, S.listShown).map((s) => {
     const d = distOf(s);
     return `<li class="mapitem" data-id="${s.id}">
       <button type="button" class="mi-main" data-focus="${s.id}"><span class="mi-num" style="background:${colorOf(s.board)}" aria-hidden="true">${NUM.get(s.id)}</span>
         <span class="mi-text"><b>${esc(s.name)}</b><small>${esc(BOARDS[s.board][S.lang])}${s.fraser ? " · " + s.fraser.score.toFixed(1) : ""}${d != null ? " · " + esc(m.dist(fmtKm(d))) : ""}</small></span></button>
       ${starBtn("school", s.id)}<button type="button" class="viewbtn" data-open="${s.id}">${esc(m.view)} →</button></li>`;
-  }).join("") : `<li class="empty">${esc(m.none)}</li>`;
+  }).join("") + (rest > 0 ? `<li class="showmore"><button type="button" class="btn small" data-listmore>${esc(UI[S.lang].showMore(Math.min(10, rest), rest))}</button></li>` : "") : `<li class="empty">${esc(m.none)}</li>`;
   const btn = S.host.querySelector('[data-map="home"]');
   btn.textContent = S.home ? `✖ ${m.homeClear}` : (S.picking ? `📍 ${m.homePick}` : `📍 ${m.home}`);
   S.host.querySelector("#map-note").textContent = S.picking ? m.homePick : (S.home ? m.homeNote : "");
@@ -258,8 +259,9 @@ function bind() {
   const host = S.host;
   if (host._mapBound) return; // the host element survives re-builds: attach the listeners once
   host._mapBound = true;
-  host.addEventListener("change", (e) => { if (e.target.classList.contains("maparea")) { S.region = e.target.value; S.touched = false; sync(); } });
-  host.addEventListener("input", (e) => { if (e.target.classList.contains("mapsearch")) { S.q = e.target.value.trim(); sync(); } });
+  host.addEventListener("click", (e) => { if (e.target.closest("[data-listmore]")) { S.listShown += 10; updateList(); } });
+  host.addEventListener("change", (e) => { if (e.target.classList.contains("maparea")) { S.region = e.target.value; S.touched = false; S.listShown = 5; sync(); } });
+  host.addEventListener("input", (e) => { if (e.target.classList.contains("mapsearch")) { S.q = e.target.value.trim(); S.listShown = 5; sync(); } });
   host.addEventListener("click", (e) => {
     const lg = e.target.closest("[data-legend]")?.dataset.legend;
     if (lg) { if (S.hide.has(lg)) S.hide.delete(lg); else S.hide.add(lg); S.touched = false; sync(); return; }

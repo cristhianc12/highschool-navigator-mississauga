@@ -25,7 +25,7 @@ const SAVE_KEY = "quizProgress";
 
 const state = {
   lang: "en",
-  tone: store.get("tone") === "family" ? "family" : "teen",
+  tone: store.get("tone") === "teen" ? "teen" : "family", // parents first: Family unless the person chose Teen
   step: -1, answers: {}, result: null, shared: false,
 };
 
@@ -233,7 +233,7 @@ function renderResults() {
     <div class="toolbar">
       <div class="tb-row">
         <button type="button" class="cta small" id="pdf">⬇ ${esc(u.pdf)}</button>
-        <a class="btn small" href="./?lang=${state.lang}#escuelas">${esc(u.seeGuide)}</a>
+        <a class="btn small" href="/?lang=${state.lang}#escuelas">${esc(u.seeGuide)}</a>
         <button type="button" class="btn small" id="retake">${esc(u.retake)}</button>
       </div>
       <div class="tb-row tb-share">

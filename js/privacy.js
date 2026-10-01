@@ -31,6 +31,16 @@ function statsSection(st) {
     ${auto ? "" : `<p><button type="button" class="btn" id="stats-toggle">${esc(off ? st.on : st.off)}</button></p>`}</section>`;
 }
 
+const RESET = {
+  es: { b: "Borrar mis preferencias guardadas", d: "Hecho: se borraron idioma, tono, tema, filtros y Mi lista de este dispositivo." },
+  en: { b: "Clear my saved preferences", d: "Done: language, tone, theme, filters and My list were cleared from this device." },
+  fr: { b: "Effacer mes préférences enregistrées", d: "Fait : langue, ton, thème, filtres et Ma liste ont été effacés de cet appareil." },
+};
+document.addEventListener("click", (e) => {
+  if (!e.target.closest("#reset-prefs")) return;
+  try { ["hsPrefs", "tone", "lang", "theme", "contrast", "hsCoffeeSeen", "hsList"].forEach((k) => localStorage.removeItem(k)); } catch { /* storage unavailable */ }
+  document.querySelector("#reset-state").textContent = RESET[lang].d;
+});
 document.addEventListener("click", (e) => {
   if (!e.target.closest("#stats-toggle")) return;
   setTrackingOff(!trackingOff());
@@ -56,6 +66,7 @@ function render() {
       ${(s.p || []).map((x) => `<p>${esc(x)}</p>`).join("")}
       ${s.ul ? `<ul>${s.ul.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</section>`).join("")}
     ${statsSection(p.stats)}
+    <section class="ps"><p><button type="button" class="btn" id="reset-prefs">${esc(RESET[lang].b)}</button></p><p class="small muted" id="reset-state" role="status" aria-live="polite"></p></section>
     <p><a href="${CONTACT_URL}" target="_blank" rel="noopener">${esc(p.contact)}</a></p>
     <p class="muted small">${esc(p.note)}</p>`;
 }

@@ -1,6 +1,491 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://highschool-gta-navigator.vercel.app/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://highschool-gta-navigator.vercel.app/quiz</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://highschool-gta-navigator.vercel.app/privacy</loc><lastmod>2026-10-01</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/tdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/tdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/tdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/tdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/tdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/tdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/tdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/tcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/tcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/tcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/tcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/tcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/tcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/tcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/peel</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/peel"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/peel</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/peel"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/peel</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/peel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/peel"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/dpcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/dpcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/dpcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/dpcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/dpcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/dpcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/dpcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/yrdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/yrdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/yrdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/yrdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/yrdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/yrdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/yrdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/ycdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/ycdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/ycdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/ycdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/ycdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/ycdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/ycdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/ddsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/ddsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/ddsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/ddsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/ddsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/ddsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/ddsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/dcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/dcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/dcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/dcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/dcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/dcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/dcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/kprdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/kprdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/kprdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/kprdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/kprdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/kprdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/kprdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/pvnccdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/pvnccdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/pvnccdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/pvnccdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/pvnccdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/pvnccdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/pvnccdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/hdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/hdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/hdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/hdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/hdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/hdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/hdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/hcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/hcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/hcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/hcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/hcdsb</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/hcdsb"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/hcdsb"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/viamonde</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/viamonde"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/viamonde</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/viamonde"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/viamonde</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/viamonde"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/viamonde"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/board/monavenir</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/monavenir"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/board/monavenir</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/monavenir"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/board/monavenir</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/board/monavenir"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/board/monavenir"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/region/toronto</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/toronto"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/region/toronto</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/toronto"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/region/toronto</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/toronto"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/toronto"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/region/peel</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/peel"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/region/peel</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/peel"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/region/peel</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/peel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/peel"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/region/york</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/york"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/york"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/york"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/york"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/region/york</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/york"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/york"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/york"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/york"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/region/york</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/york"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/york"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/york"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/york"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/region/durham</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/durham"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/region/durham</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/durham"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/region/durham</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/durham"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/durham"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/region/halton</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/halton"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/es/region/halton</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/halton"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/fr/region/halton</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://highschool-gta-navigator.vercel.app/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://highschool-gta-navigator.vercel.app/es/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://highschool-gta-navigator.vercel.app/fr/region/halton"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://highschool-gta-navigator.vercel.app/region/halton"/>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/quiz</loc>
+    <lastmod>2026-10-01</lastmod>
+  </url>
+  <url>
+    <loc>https://highschool-gta-navigator.vercel.app/privacy</loc>
+    <lastmod>2026-10-01</lastmod>
+  </url>
 </urlset>

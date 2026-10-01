@@ -92,8 +92,9 @@ function gradeText(gs) {
   return out.join(", ");
 }
 
-const RESULTS = 10; // courses shown per step
-const SCHOOLS_SHOWN = 8; // schools listed on a card before "+N more"
+const RESULTS = 5; // courses shown first
+const STEP = 10; // and added by each "Show more"
+const SCHOOLS_SHOWN = 5; // schools listed on a card before "+N more"
 
 /** Renders the finder results for a query into host. opts.board filters by school board; the board list is filled in too. */
 export async function renderFinder(host, q, lang, opts = {}) {
@@ -135,6 +136,6 @@ export async function renderFinder(host, q, lang, opts = {}) {
       ${group(head)}${rest.length ? `<details class="cf-more"><summary>${esc(c.moreSchools(rest.length))}</summary>${group(rest)}</details>` : ""}
     </article>`;
   };
-  const more = hits.length > shown.length ? `<div class="showmore"><button type="button" class="btn" id="cf-show-more">${esc(u.showMore(Math.min(RESULTS, hits.length - shown.length), hits.length - shown.length))}</button></div>` : "";
+  const more = hits.length > shown.length ? `<div class="showmore"><button type="button" class="btn" id="cf-show-more">${esc(u.showMore(Math.min(STEP, hits.length - shown.length), hits.length - shown.length))}</button></div>` : "";
   host.innerHTML = `<p class="count">${esc(c.finderCount(hits.length))}</p>${shown.map(card).join("")}${more}`;
 }

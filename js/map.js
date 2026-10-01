@@ -5,15 +5,18 @@
 // kept in memory only and is never stored or sent anywhere.
 import { UI, SCHOOLS, BOARDS, TAG_ICON, TAGS } from "./content.js";
 import { GEO } from "./school-geo.js";
+import { SYSTEM_ORDER, SYSTEMS, SYSTEM_COLOR, colorOf, systemOf } from "./geo.js";
 import { MAP } from "./map-data.js";
 import { inList, starBtn } from "./mylist.js";
 import { openSchool } from "./school-detail.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const norm = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-const COLOR = { dpcdsb: "#6D3DF2", peel: "#0A7BB8", fr: "#C2287E" };
 const CONSENT_KEY = "hsMapOk";
 const CENTER = [43.5890, -79.6441];
+
+// Official coordinates (Ontario open data) first; the hand-made table is the fallback.
+const geoOf = (s) => s.geo || GEO[s.id] || null;
 
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch { return null; } },
@@ -35,11 +38,11 @@ function km(a, b) {
   const x = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a[0])) * Math.cos(rad(b[0])) * Math.sin(dLon / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(x));
 }
-const distOf = (s) => (S.home && GEO[s.id] ? km(S.home, GEO[s.id]) : null);
+const distOf = (s) => (S.home && geoOf(s) ? km(S.home, geoOf(s)) : null);
 const fmtKm = (d) => (d < 10 ? d.toFixed(1) : Math.round(d)).toString();
 
 function visible() {
-  let list = SCHOOLS.filter((s) => GEO[s.id] && (!S.matchIds || S.matchIds.includes(s.id)) && !S.hide.has(s.board) && !(S.hide.has("mine") && inList("school", s.id)));
+  let list = SCHOOLS.filter((s) => geoOf(s) && (!S.matchIds || S.matchIds.includes(s.id)) && !S.hide.has(systemOf(s.board)) && !(S.hide.has("mine") && inList("school", s.id)));
   if (S.q) list = list.filter((s) => norm(`${s.name} ${BOARDS[s.board][S.lang]}`).includes(norm(S.q)));
   return list.sort((a, b) => (S.home ? distOf(a) - distOf(b) : a.name.localeCompare(b.name)));
 }
@@ -70,7 +73,7 @@ function build() {
       </div>
       <div class="mapmain"><div class="mapstage" id="map-stage" aria-label="${esc(m.aria)}"></div>
         <div class="mlegend" role="group" aria-label="${esc(m.legendH)}">
-          ${["dpcdsb", "peel", "fr"].map((b) => `<button type="button" class="lgt" data-legend="${b}" aria-pressed="${!S.hide.has(b)}" title="${esc(m.legendToggle)}"><i class="lgpin" style="background:${COLOR[b]}"></i>${esc(BOARDS[b][S.lang])}</button>`).join("")}
+          ${SYSTEM_ORDER.map((g) => `<button type="button" class="lgt" data-legend="${g}" aria-pressed="${!S.hide.has(g)}" title="${esc(m.legendToggle)}"><i class="lgpin" style="background:${SYSTEM_COLOR[g]}"></i>${esc(SYSTEMS[g][S.lang])}</button>`).join("")}
           <button type="button" class="lgt" data-legend="mine" aria-pressed="${!S.hide.has("mine")}" title="${esc(m.legendToggle)}"><i class="lgpin mine"></i>⭐ ${esc(m.mine)}</button>
           <span><i class="lghome">🏠</i>${esc(m.legendHome)}</span>
           <span class="lgnum">${esc(m.legendNum)}</span>
@@ -97,7 +100,7 @@ function updateList() {
   S.host.querySelector(".maplist").innerHTML = list.length ? list.map((s) => {
     const d = distOf(s);
     return `<li class="mapitem" data-id="${s.id}">
-      <button type="button" class="mi-main" data-focus="${s.id}"><span class="mi-num" style="background:${COLOR[s.board]}" aria-hidden="true">${NUM.get(s.id)}</span>
+      <button type="button" class="mi-main" data-focus="${s.id}"><span class="mi-num" style="background:${colorOf(s.board)}" aria-hidden="true">${NUM.get(s.id)}</span>
         <span class="mi-text"><b>${esc(s.name)}</b><small>${esc(BOARDS[s.board][S.lang])}${s.fraser ? " · " + s.fraser.score.toFixed(1) : ""}${d != null ? " · " + esc(m.dist(fmtKm(d))) : ""}</small></span></button>
       ${starBtn("school", s.id)}<button type="button" class="viewbtn" data-open="${s.id}">${esc(m.view)} →</button></li>`;
   }).join("") : `<li class="empty">${esc(m.none)}</li>`;
@@ -110,16 +113,16 @@ function updateList() {
 function pinIcon(s) {
   const mine = inList("school", s.id);
   return S.L.divIcon({ className: "pinwrap", iconSize: [36, 36], iconAnchor: [18, 18], tooltipAnchor: [0, -18],
-    html: `<span class="mappin ${mine ? "mine" : ""}" style="--pc:${COLOR[s.board]}">${NUM.get(s.id)}${mine ? '<i aria-hidden="true">⭐</i>' : ""}</span>` });
+    html: `<span class="mappin ${mine ? "mine" : ""}" style="--pc:${colorOf(s.board)}">${NUM.get(s.id)}${mine ? '<i aria-hidden="true">⭐</i>' : ""}</span>` });
 }
 
 function popupHtml(s) {
   const m = t();
   const u = UI[S.lang];
   const d = distOf(s);
-  const [lat, lon] = GEO[s.id];
+  const [lat, lon] = geoOf(s);
   const progs = s.progs.slice(0, 4).map((p) => `<span class="chip">${TAG_ICON[p.k] || ""} ${esc(TAGS[p.k][S.lang])}</span>`).join("");
-  return `<div class="spop"><h4><span class="popnum" style="background:${COLOR[s.board]}">${NUM.get(s.id)}</span> ${esc(s.name)}</h4>
+  return `<div class="spop"><h4><span class="popnum" style="background:${colorOf(s.board)}">${NUM.get(s.id)}</span> ${esc(s.name)}</h4>
     <p class="small">${esc(BOARDS[s.board][S.lang])}${s.fraser ? ` · ${esc(u.fraserLabel)} <b>${s.fraser.score.toFixed(1)}</b>${esc(u.fraserOf)}` : ""}</p>
     ${d != null ? `<p class="small">${esc(m.dist(fmtKm(d)))}</p>` : ""}
     ${progs ? `<div class="chips">${progs}</div>` : ""}
@@ -138,7 +141,7 @@ function updateMarkers() {
   for (const s of list) {
     let mk = S.markers.get(s.id);
     if (!mk) {
-      mk = L.marker(GEO[s.id], { icon: pinIcon(s), title: s.name, alt: s.name, keyboard: true, riseOnHover: true }).addTo(S.map);
+      mk = L.marker(geoOf(s), { icon: pinIcon(s), title: s.name, alt: s.name, keyboard: true, riseOnHover: true }).addTo(S.map);
       mk.bindPopup(() => popupHtml(s), { maxWidth: 290, className: "schoolpop", autoPanPadding: [20, 20] });
       S.markers.set(s.id, mk);
     } else mk.setIcon(pinIcon(s));
@@ -149,7 +152,7 @@ function updateMarkers() {
   if (key !== S.lastKey) {
     S.lastKey = key;
     if (list.length) {
-      const b = L.latLngBounds(list.map((s) => GEO[s.id]));
+      const b = L.latLngBounds(list.map(geoOf));
       if (S.home) b.extend(S.home);
       S.map.fitBounds(b, { padding: [36, 36], maxZoom: 15 });
     }
@@ -268,7 +271,7 @@ function bind() {
     const focus = e.target.closest("[data-focus]")?.dataset.focus;
     if (focus) {
       const mk = S.markers.get(focus);
-      if (S.map && mk) { S.map.flyTo(GEO[focus], Math.max(S.map.getZoom(), 15), { duration: 0.6 }); setTimeout(() => mk.openPopup(), 650); host.querySelector(".mapstage").scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+      if (S.map && mk) { S.map.flyTo(geoOf(SCHOOLS.find((x) => x.id === focus)), Math.max(S.map.getZoom(), 15), { duration: 0.6 }); setTimeout(() => mk.openPopup(), 650); host.querySelector(".mapstage").scrollIntoView({ block: "nearest", behavior: "smooth" }); }
       else openSchool(focus); // no map loaded: the list item opens the profile directly
     }
     const open = e.target.closest(".mapside [data-open]")?.dataset.open;

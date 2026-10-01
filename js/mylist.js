@@ -127,7 +127,7 @@ function plainText() {
   if (programs.length) { L.push(t.programs + ":"); programs.forEach((p) => L.push(`- ${Lx(p.name)} (${Lx(BOARDS[p.board])}) · ${p.hosts.map((h) => h.n).join(", ")}`)); L.push(""); }
   const plan = planTexts(); if (plan.length) { L.push(t.planH + ":"); plan.forEach((x) => L.push("- " + x)); L.push(""); }
   events.forEach((e) => L.push(`- ${e.date ? fmtDate(e.date, langOf()) : u.sess.tbc}${eventTime(e, langOf()) ? " " + eventTime(e, langOf()) : ""}: ${e.school}`));
-  L.push("", "https://hs-mississauga-navigator.vercel.app/");
+  L.push("", "https://highschool-gta-navigator.vercel.app/");
   return L.join("\n");
 }
 

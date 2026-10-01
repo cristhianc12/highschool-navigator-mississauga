@@ -1,7 +1,7 @@
 {
-  "name": "Highschool Navigator Mississauga",
+  "name": "Highschool Navigator GTA",
   "short_name": "HS Navigator",
-  "description": "Guide to every high school in Mississauga: programs, dates, map and a shortlist.",
+  "description": "Guide to the high schools of the Greater Toronto Area: programs, dates, map and a shortlist.",
   "lang": "en",
   "start_url": "/?source=pwa",
   "scope": "/",

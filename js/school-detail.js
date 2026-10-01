@@ -4,6 +4,7 @@
 // close and focus restoration. The URL hash (#school-<id> / #program-<id>) makes a profile shareable,
 // and the browser Back button closes it.
 import { UI, SCHOOLS, PROGRAMS, TAGS, TAG_ICON, BOARDS, FRASER } from "./content.js";
+import { BOARD_META, systemOf, boardClass } from "./geo.js";
 import { PROGRAM_INFO, PEEL_MAIN_LINK } from "./program-info.js";
 import { starBtn } from "./mylist.js";
 import { EXTRAS } from "./school-extras.js";
@@ -11,10 +12,7 @@ import { ADM_UI, REG_UI, REGISTRATION, admissionsForProgram, admissionsForSchool
 import { SESSIONS, sessionsForSchool, sessionsForProgram, schoolKey, fmtDate, eventTime, downloadIcs } from "./sessions.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const OFFICIAL = {
-  dpcdsb: "https://www.dpcdsb.org/schools/school-directory",
-  peel: "https://www.peelschools.org/",
-};
+const officialDir = (board) => BOARD_META[board]?.site;
 
 let dlg = null;
 let ctx = { getLang: () => "en", onCompare: null, isCompared: null };
@@ -178,7 +176,7 @@ function renderSchool(school) {
   const chips = school.progs.length
     ? `<div class="chips">${school.progs.map((p) => `<span class="chip">${TAG_ICON[p.k] || ""} ${esc(L(TAGS[p.k]))}</span>`).join("")}</div>
        <ul class="dnotes">${school.progs.filter((p) => p.n).map((p) => `<li><b>${esc(L(TAGS[p.k]))}:</b> ${esc(L(p.n))}</li>`).join("")}</ul>`
-    : `<p class="muted">${esc(u.noPrograms)}</p>`;
+    : `<p class="muted">${esc(school.pending ? u.pendingDetail : u.noPrograms)}</p>`;
 
   const hostedHtml = hostedList.length
     ? `<section class="dsec"><h3>${esc(d.hostedH)}</h3>${hostedList.map((p) => `<article class="dprog clickable" data-pcard="${p.id}">
@@ -210,17 +208,17 @@ function renderSchool(school) {
         <dl class="kv">${["distinct", "shsm", "langs", "entry"].map((k) => `<dt>${esc(u.compRows[k])}</dt><dd>${esc(L(school.kv[k]))}</dd>`).join("")}</dl></section>`
     : "";
 
-  const boardNote = school.board === "fr" ? `<p class="small muted">${esc(d.frenchNote)}</p>` : "";
+  const boardNote = systemOf(school.board) === "french" ? `<p class="small muted">${esc(d.frenchNote)}</p>` : "";
   const site = sess.map((e) => e.site).find(Boolean);
   const siteBtn = site ? `<a class="btn" href="${site}" target="_blank" rel="noopener">${esc(S.website)} ↗</a>` : "";
-  const official = OFFICIAL[school.board]
-    ? `<a class="btn" href="${OFFICIAL[school.board]}" target="_blank" rel="noopener">${esc(d.officialLink)} ↗</a>` : "";
+  const official = officialDir(school.board)
+    ? `<a class="btn" href="${officialDir(school.board)}" target="_blank" rel="noopener">${esc(d.officialLink)} ↗</a>` : "";
   const cmp = ctx.onCompare
     ? `<button type="button" class="btn" id="d-compare">${esc(ctx.isCompared?.(school.id) ? d.inCompare : d.addCompare)}</button>` : "";
 
   dlg.setAttribute("aria-label", school.name);
-  dlg.className = `sdlg board-${school.board}`;
-  dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${school.board}`) +
+  dlg.className = `sdlg board-${boardClass(school.board)}`;
+  dlg.innerHTML = headHtml(initials, school.name, `${esc(L(BOARDS[school.board]))} · ${esc(school.addr)}`, `board-${boardClass(school.board)}`) +
     `<div class="dbody">${fraser}${sessHtml}<section class="dsec"><h3>${esc(d.programsH)}</h3>${chips}</section>${hostedHtml}${admissionHtml(admissionsForSchool(school.id), "school")}${registrationHtml(school)}${extraHtml}${coursesHtml}${kv}${boardNote}${verifiedHtml(school.name)}</div>` +
     footHtml(starBtn("school", school.id, { label: true }) + cmp + siteBtn + (site ? "" : official));
   // Course list is loaded only when the person opens it (86 KB of data).

@@ -1,0 +1,7 @@
+{
+  "name": "navigator-pipeline",
+  "private": true,
+  "type": "module",
+  "description": "Data pipeline tooling (roster build, scrapers, validators). Kept apart from the site so Vercel deploys do not install it.",
+  "dependencies": { "exceljs": "^4.4.0", "cheerio": "^1.0.0" }
+}

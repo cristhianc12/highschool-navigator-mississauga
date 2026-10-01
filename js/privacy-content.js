@@ -8,7 +8,7 @@ export const PRIV = {
     h1: "Política de privacidad", updated: "Última actualización",
     tldr: "En corto: este sitio no te pide nombre, correo ni cuenta, no usa cookies y no guarda tu IP. Si haces el cuestionario, nada sale de tu dispositivo a menos que aceptes compartir tus respuestas de forma anónima.",
     sections: [
-      { h: "Quiénes somos", p: ["Highschool Navigator Mississauga es un proyecto informativo independiente. No tiene relación con el DPCDSB, el Peel District School Board ni el Fraser Institute."] },
+      { h: "Quiénes somos", p: ["Highschool Navigator GTA es un proyecto informativo independiente. No tiene relación con ningún consejo escolar (DPCDSB, Peel, TDSB, TCDSB, York, Durham, Halton ni otros) ni con el Fraser Institute."] },
       { h: "La guía", p: ["Explorar la guía no requiere dar datos personales."], ul: [
         "Guardamos en tu navegador (localStorage) solo tus preferencias de idioma, tema y tono, tu «Mi lista» de escuelas y programas guardados, y tu récord en el minijuego. Nunca salen de tu dispositivo.",
         "Mientras haces el cuestionario, tu avance se guarda en esta pestaña del navegador (sessionStorage) para que no pierdas tu resultado si abres otra página. Se queda en tu dispositivo y desaparece al cerrar la pestaña.",
@@ -45,7 +45,7 @@ export const PRIV = {
     h1: "Privacy policy", updated: "Last updated",
     tldr: "In short: this site does not ask for your name, email or an account, does not use cookies and does not store your IP. If you take the questionnaire, nothing leaves your device unless you agree to share your answers anonymously.",
     sections: [
-      { h: "Who we are", p: ["Highschool Navigator Mississauga is an independent informational project. It is not affiliated with DPCDSB, the Peel District School Board or the Fraser Institute."] },
+      { h: "Who we are", p: ["Highschool Navigator GTA is an independent informational project. It is not affiliated with any school board (DPCDSB, Peel, TDSB, TCDSB, York, Durham, Halton or others) or with the Fraser Institute."] },
       { h: "The guide", p: ["Browsing the guide does not require any personal data."], ul: [
         "We keep only your language, theme and tone preferences, your saved “My list” of schools and programs, and your best score in the mini game in your browser (localStorage). They never leave your device.",
         "While you take the questionnaire, your progress is kept in this browser tab (sessionStorage) so you do not lose your results if you open another page. It stays on your device and disappears when you close the tab.",
@@ -82,7 +82,7 @@ export const PRIV = {
     h1: "Politique de confidentialité", updated: "Dernière mise à jour",
     tldr: "En bref : ce site ne demande ni nom, ni courriel, ni compte, n'utilise pas de témoins (cookies) et ne conserve pas ton adresse IP. Si tu fais le questionnaire, rien ne quitte ton appareil à moins que tu acceptes de partager tes réponses de façon anonyme.",
     sections: [
-      { h: "Qui nous sommes", p: ["Highschool Navigator Mississauga est un projet d'information indépendant. Il n'est affilié ni au DPCDSB, ni au Peel District School Board, ni à l'Institut Fraser."] },
+      { h: "Qui nous sommes", p: ["Highschool Navigator GTA est un projet d'information indépendant. Il n'est affilié à aucun conseil scolaire (DPCDSB, Peel, TDSB, TCDSB, York, Durham, Halton ou autres) ni à l'Institut Fraser."] },
       { h: "Le guide", p: ["Consulter le guide n'exige aucune donnée personnelle."], ul: [
         "Nous conservons dans ton navigateur (localStorage) seulement tes préférences de langue, de thème et de ton, ta « Ma liste » d'écoles et de programmes enregistrés, et ton record au mini-jeu. Elles ne quittent jamais ton appareil.",
         "Pendant le questionnaire, ta progression est conservée dans cet onglet du navigateur (sessionStorage) pour que tu ne perdes pas ton résultat si tu ouvres une autre page. Elle reste sur ton appareil et disparaît à la fermeture de l'onglet.",

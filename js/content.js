@@ -2,6 +2,8 @@
 // To update data (Fraser scores, dates, programs, schools) edit only this file.
 
 import { EXTRAS } from "./school-extras.js";
+import { BOARD_META, boardClass } from "./geo.js";
+import { ROSTER, CURATED_INFO } from "./data/roster.js";
 
 const x = (es, en, fr) => ({ es, en, fr });
 
@@ -43,11 +45,7 @@ export const TAGS = {
   shsm: x("SHSM", "SHSM", "MHS (SHSM)"),
 };
 
-export const BOARDS = {
-  dpcdsb: x("DPCDSB (católico)", "DPCDSB (Catholic)", "DPCDSB (catholique)"),
-  peel: x("Peel (público)", "Peel (public)", "Peel (public)"),
-  fr: x("Católica en francés", "French-language Catholic", "Catholique de langue française"),
-};
+export const BOARDS = Object.fromEntries(Object.entries(BOARD_META).map(([k, v]) => [k, v.name]));
 
 /* ------------------------------------------------------------------ */
 /* UI strings                                                          */
@@ -56,26 +54,26 @@ export const UI = {
   es: {
     htmlLang: "es",
     ogLocale: "es_CO",
-    title: "Guía de secundarias en Mississauga | Highschool Navigator",
-    metaDesc: "Directorio completo de secundarias católicas, públicas y de habla francesa en Mississauga (DPCDSB y Peel): IB, AP, artes, STEM, francés, oficios, fechas para aplicar y nota Fraser, con filtros y comparador.",
+    title: "Guía de secundarias del GTA (Gran Toronto) | Highschool Navigator GTA",
+    metaDesc: "Directorio de secundarias públicas, católicas y de habla francesa del Gran Toronto (GTA): Toronto, Peel, York, Durham y Halton. Programas IB, AP, artes, STEM, francés y oficios, fechas para aplicar, cursos y nota Fraser, con filtros, mapa y comparador.",
     skip: "Saltar al contenido",
-    eyebrow: "Mississauga · Para entrar a Grade 9 en septiembre de 2027",
-    h1: "Guía de secundarias en Mississauga",
+    eyebrow: "GTA · Para entrar a Grade 9 en septiembre de 2027",
+    h1: "Guía de secundarias del GTA",
     h1a: "Guía de secundarias",
-    h1b: "en Mississauga",
+    h1b: "del Gran Toronto (GTA)",
     vibesLabel: "Explora según lo que te interesa:",
     statSchools: "escuelas", statBoards: "sistemas", statPrograms: "programas",
     tone: { label: "Tono", teen: "Teen", family: "Familia" },
     bnav: { escuelas: "Escuelas", regionales: "Programas", quiz: "Descúbrete", fechas: "Fechas" },
     privacy: "Privacidad",
     sticker: "6-7 😏",
-    lead: "Todas las secundarias públicas, católicas y de habla francesa de Mississauga, con sus programas especiales (IB, AP, artes, STEM, francés y más), cómo se entra y cuándo hay que aplicar. Una guía para que toda la familia hable con la misma información.",
+    lead: "Las secundarias públicas, católicas y de habla francesa del Gran Toronto (Toronto, Peel, York, Durham y Halton), con sus programas especiales (IB, AP, artes, STEM, francés y más), cómo se entra y cuándo hay que aplicar. Una guía para que toda la familia hable con la misma información.",
     factBoards: "Sistemas escolares:",
-    factBoardsV: "DPCDSB (católico), Peel (público) y una escuela en francés",
+    factBoardsV: "14 consejos escolares públicos, católicos y de habla francesa del GTA",
     factSchools: "Escuelas:",
-    factSchoolsN: (n) => `${n} secundarias de Mississauga`,
+    factSchoolsN: (n) => `${n} secundarias del GTA`,
     notice: "<b>Esta guía muestra lo que ofrece cada escuela; no recomienda ninguna.</b> Incluye la nota pública del Fraser Institute como referencia de cómo se ve cada escuela en resultados académicos. No mide los programas, el ambiente ni si la escuela es adecuada para cada estudiante.",
-    scope: "Alcance: secundarias públicas y católicas de Mississauga, más una escuela en francés. No incluye escuelas privadas ni independientes (por ejemplo Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Los programas de cada escuela son los regionales confirmados en fuentes oficiales. Otras opciones, como los SHSM (especializaciones) y el Co-op (prácticas laborales con crédito), pueden variar: confírmalas con la escuela.",
+    scope: "Alcance: secundarias públicas, católicas y de habla francesa de Toronto y de las regiones de Peel, York, Durham y Halton (la definición estándar del GTA). No incluye escuelas privadas ni independientes. La lista de escuelas viene de los datos abiertos de Ontario; los programas, cursos, requisitos y fechas se van completando desde los sitios oficiales de cada escuela y board, y las escuelas que aún no tienen ese detalle lo indican. Mississauga tiene el detalle más completo. Otras opciones, como los SHSM (especializaciones) y el Co-op (prácticas laborales con crédito), pueden variar: confírmalas con la escuela.",
     crs: {
       extraH: "También en esta escuela", shsmL: "SHSM", otherL: "Otros programas", siteL: "Sitio de la escuela", calL: "Calendario de cursos oficial",
       h: "Cursos que ofrece",
@@ -93,7 +91,7 @@ export const UI = {
       nav: "Mapa", h: "Mapa de las escuelas",
       legendH: "Colores", legendToggle: "Toca para mostrar u ocultar", tilesFail: "Tu navegador bloqueó el mapa de calles (¿bloqueador de anuncios o escudo de privacidad?). Los puntos y la lista siguen funcionando; prueba pausar el bloqueador para este sitio.", legendNum: "El número de cada punto coincide con la lista", legendHome: "Mi casa",
       p: "Encuentra las escuelas cerca de ti. Toca una escuela de la lista o un punto del mapa para ver su tarjeta y abrir su perfil. Puedes marcar tu casa en el mapa para ver la distancia en línea recta.",
-      aria: "Mapa interactivo de las secundarias de Mississauga",
+      aria: "Mapa interactivo de las secundarias del GTA",
       search: "Buscar una escuela…", listAria: "Lista de escuelas",
       count: (n) => `${n} escuela${n === 1 ? "" : "s"}`,
       gateH: "Mapa de calles interactivo",
@@ -161,7 +159,7 @@ export const UI = {
     exploreP: "Los filtros de sistema, tipo de programa y búsqueda afectan al directorio y a los programas. «Empieza en» y «Cómo se entra» solo afectan a las listas de programas.",
     searchLabel: "Buscar",
     searchPh: "Ej.: IB, panadería, arte, Port Credit…",
-    fSystem: "Sistema", fTag: "Tipo de programa", fStart: "Empieza en (programas)", fEntry: "Cómo se entra (programas)", fSort: "Ordenar escuelas",
+    fRegion: "Región", fCity: "Ciudad", showMore: (n, rest) => `Ver ${n} más (${rest} restantes)`, pendingDetail: "Los detalles de programas aún no están verificados para esta escuela. Consulta su sitio oficial.", fSystem: "Consejo escolar (board)", fTag: "Tipo de programa", fStart: "Empieza en (programas)", fEntry: "Cómo se entra (programas)", fSort: "Ordenar escuelas",
     all: "Todos",
     optSystem: { dpcdsb: "DPCDSB (católico)", peel: "Peel (público)", fr: "Francófona católica" },
     optStart: { "9": "Grade 9", "10": "Grade 10", "11": "Grade 11" },
@@ -171,7 +169,7 @@ export const UI = {
     resultCount: (s, p) => `${s} escuela${s === 1 ? "" : "s"} · ${p} programa${p === 1 ? "" : "s"}`,
     noResults: "No hay resultados con esos filtros. Prueba quitándolos.",
 
-    escuelasH: "Directorio de secundarias de Mississauga",
+    escuelasH: "Directorio de secundarias del GTA",
     escuelasP: "Todas las escuelas, con sus programas regionales y su nota Fraser. La nota es solo académica y la lista no se ordena por ella, a menos que tú lo pidas.",
     lblFocus: "Enfoque:",
     fraserLabel: "Nota Fraser",
@@ -284,12 +282,12 @@ export const UI = {
   en: {
     htmlLang: "en",
     ogLocale: "en_CA",
-    title: "Mississauga High School Guide | Highschool Navigator",
-    metaDesc: "Complete directory of Catholic, public and French-language high schools in Mississauga (DPCDSB and Peel): IB, AP, Arts, STEM, French, trades, application dates and Fraser scores, with filters and a comparison tool.",
+    title: "GTA High School Guide (Greater Toronto Area) | Highschool Navigator GTA",
+    metaDesc: "Directory of public, Catholic and French-language high schools in the Greater Toronto Area (GTA): Toronto, Peel, York, Durham and Halton. IB, AP, Arts, STEM, French and trades programs, application dates, courses and Fraser scores, with filters, a map and a comparison tool.",
     skip: "Skip to content",
-    eyebrow: "Mississauga · Grade 9 entry, September 2027",
-    h1: "Mississauga High School Guide",
-    h1a: "Mississauga",
+    eyebrow: "GTA · Grade 9 entry, September 2027",
+    h1: "GTA High School Guide",
+    h1a: "GTA",
     h1b: "High School Guide",
     vibesLabel: "Explore by interest:",
     statSchools: "schools", statBoards: "boards", statPrograms: "programs",
@@ -297,13 +295,13 @@ export const UI = {
     bnav: { escuelas: "Schools", regionales: "Programs", quiz: "Find your fit", fechas: "Dates" },
     privacy: "Privacy",
     sticker: "6-7 😏",
-    lead: "Every public, Catholic and French-language high school in Mississauga, with its special programs (IB, AP, Arts, STEM, French and more), how to get in and when to apply. A guide so the family can talk with the same information.",
+    lead: "The public, Catholic and French-language high schools of the Greater Toronto Area (Toronto, Peel, York, Durham and Halton), with their special programs (IB, AP, Arts, STEM, French and more), how to get in and when to apply. A guide so the family can talk with the same information.",
     factBoards: "Boards:",
-    factBoardsV: "DPCDSB (Catholic), Peel (public) and a French-language school",
+    factBoardsV: "14 public, Catholic and French-language school boards in the GTA",
     factSchools: "Schools:",
-    factSchoolsN: (n) => `${n} high schools in Mississauga`,
+    factSchoolsN: (n) => `${n} high schools in the GTA`,
     notice: "<b>This guide describes what is offered; it does not recommend any school.</b> It includes the Fraser Institute's public score as a reference for how each school is perceived on academic results. It does not measure programs, atmosphere or fit for each student.",
-    scope: "Scope: public and Catholic high schools in Mississauga, plus one French-language school. Private and independent schools are excluded (for example Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). The programs listed per school are the regional programs confirmed in official sources; SHSM, Co-op and others may vary, so confirm them with the school.",
+    scope: "Scope: public, Catholic and French-language high schools in Toronto and the regions of Peel, York, Durham and Halton (the standard GTA definition). Private and independent schools are excluded. The school list comes from Ontario open data; programs, courses, requirements and dates are being filled in from each school and board website, and schools that do not have that detail yet say so. Mississauga has the most complete detail. SHSM, Co-op and others may vary, so confirm them with the school.",
     crs: {
       extraH: "Also at this school", shsmL: "SHSM", otherL: "Other programs", siteL: "School website", calL: "Official course calendar",
       h: "Courses offered",
@@ -321,7 +319,7 @@ export const UI = {
       nav: "Map", h: "School map",
       legendH: "Colors", legendToggle: "Tap to show or hide", tilesFail: "Your browser blocked the street map (ad blocker or privacy shield?). The pins and the list still work; try pausing the blocker for this site.", legendNum: "The number on each pin matches the list", legendHome: "My home",
       p: "Find schools near you. Tap a school in the list or a point on the map to see its card and open its profile. You can mark your home on the map to see the straight-line distance.",
-      aria: "Interactive map of Mississauga high schools",
+      aria: "Interactive map of GTA high schools",
       search: "Search for a school…", listAria: "List of schools",
       count: (n) => `${n} school${n === 1 ? "" : "s"}`,
       gateH: "Interactive street map",
@@ -389,7 +387,7 @@ export const UI = {
     exploreP: "The board, program type and search filters affect the directory and the programs. “Starts in” and “How to get in” only affect the program lists.",
     searchLabel: "Search",
     searchPh: "E.g. IB, bakery, arts, Port Credit…",
-    fSystem: "Board", fTag: "Program type", fStart: "Starts in (programs)", fEntry: "How to get in (programs)", fSort: "Sort schools",
+    fRegion: "Region", fCity: "City", showMore: (n, rest) => `Show ${n} more (${rest} left)`, pendingDetail: "Program details are not verified for this school yet. Check its official website.", fSystem: "School board", fTag: "Program type", fStart: "Starts in (programs)", fEntry: "How to get in (programs)", fSort: "Sort schools",
     all: "All",
     optSystem: { dpcdsb: "DPCDSB (Catholic)", peel: "Peel (public)", fr: "French-language Catholic" },
     optStart: { "9": "Grade 9", "10": "Grade 10", "11": "Grade 11" },
@@ -399,7 +397,7 @@ export const UI = {
     resultCount: (s, p) => `${s} school${s === 1 ? "" : "s"} · ${p} program${p === 1 ? "" : "s"}`,
     noResults: "No results for those filters. Try clearing them.",
 
-    escuelasH: "Directory of Mississauga high schools",
+    escuelasH: "GTA high school directory",
     escuelasP: "Every school, with its regional programs and Fraser score. The score is academic only and does not order the list unless you choose to sort by it.",
     lblFocus: "Focus:",
     fraserLabel: "Fraser score",
@@ -512,26 +510,26 @@ export const UI = {
   fr: {
     htmlLang: "fr-CA",
     ogLocale: "fr_CA",
-    title: "Guide des écoles secondaires de Mississauga | Highschool Navigator",
-    metaDesc: "Répertoire complet des écoles secondaires catholiques, publiques et de langue française de Mississauga (DPCDSB et Peel) : BI, AP, arts, STIM, français, métiers, dates d'inscription et cote Fraser, avec filtres et comparateur.",
+    title: "Guide des écoles secondaires de la RGT (Grand Toronto) | Highschool Navigator GTA",
+    metaDesc: "Répertoire des écoles secondaires publiques, catholiques et de langue française de la région du Grand Toronto (RGT) : Toronto, Peel, York, Durham et Halton. Programmes BI, AP, arts, STIM, français et métiers, dates d'inscription, cours et cote Fraser, avec filtres, carte et comparateur.",
     skip: "Passer au contenu",
-    eyebrow: "Mississauga · Entrée en 9e année, septembre 2027",
-    h1: "Guide des écoles secondaires de Mississauga",
+    eyebrow: "RGT · Entrée en 9e année, septembre 2027",
+    h1: "Guide des écoles secondaires de la RGT",
     h1a: "Guide des écoles secondaires",
-    h1b: "de Mississauga",
+    h1b: "de la RGT (Grand Toronto)",
     vibesLabel: "Explore selon tes intérêts :",
     statSchools: "écoles", statBoards: "conseils", statPrograms: "programmes",
     tone: { label: "Ton", teen: "Ado", family: "Famille" },
     bnav: { escuelas: "Écoles", regionales: "Programmes", quiz: "Trouve ta place", fechas: "Dates" },
     privacy: "Confidentialité",
     sticker: "6-7 😏",
-    lead: "Toutes les écoles secondaires publiques, catholiques et de langue française de Mississauga, avec leurs programmes spéciaux (BI, AP, arts, STIM, français et plus), la façon d'y entrer et le moment de présenter une demande. Un guide pour en discuter en famille avec la même information.",
+    lead: "Les écoles secondaires publiques, catholiques et de langue française du Grand Toronto (Toronto, Peel, York, Durham et Halton), avec leurs programmes spéciaux (BI, AP, arts, STIM, français et plus), la façon d'y entrer et le moment de présenter une demande. Un guide pour en discuter en famille avec la même information.",
     factBoards: "Conseils scolaires :",
-    factBoardsV: "DPCDSB (catholique), Peel (public) et une école de langue française",
+    factBoardsV: "14 conseils scolaires publics, catholiques et de langue française de la RGT",
     factSchools: "Écoles :",
-    factSchoolsN: (n) => `${n} écoles secondaires à Mississauga`,
+    factSchoolsN: (n) => `${n} écoles secondaires dans la RGT`,
     notice: "<b>Ce guide décrit l'offre; il ne recommande aucune école.</b> Il inclut la cote publique de l'Institut Fraser comme repère de la perception de chaque école sur les résultats scolaires. Elle ne mesure ni les programmes, ni le climat, ni l'adéquation à chaque élève.",
-    scope: "Portée : écoles secondaires publiques et catholiques de Mississauga, plus une école de langue française. Les écoles privées et indépendantes sont exclues (par exemple Olive Grove, ISNA, The Woodlands, Al-Manarat, Safa & Marwa). Les programmes indiqués pour chaque école sont les programmes régionaux confirmés dans les sources officielles; les MHS (SHSM), l'éducation coopérative et autres peuvent varier : confirmez-les auprès de l'école.",
+    scope: "Portée : écoles secondaires publiques, catholiques et de langue française de Toronto et des régions de Peel, York, Durham et Halton (la définition standard de la RGT). Les écoles privées et indépendantes sont exclues. La liste des écoles provient des données ouvertes de l'Ontario; les programmes, cours, conditions et dates sont complétés à partir des sites de chaque école et conseil, et les écoles qui n'ont pas encore ces détails l'indiquent. Mississauga est la plus complète. les MHS (SHSM), l'éducation coopérative et autres peuvent varier : confirmez-les auprès de l'école.",
     crs: {
       extraH: "Aussi à cette école", shsmL: "MHS (SHSM)", otherL: "Autres programmes", siteL: "Site de l'école", calL: "Calendrier des cours officiel",
       h: "Cours offerts",
@@ -549,7 +547,7 @@ export const UI = {
       nav: "Carte", h: "Carte des écoles",
       legendH: "Couleurs", legendToggle: "Touche pour afficher ou masquer", tilesFail: "Ton navigateur a bloqué la carte routière (bloqueur de pub ou bouclier de confidentialité?). Les repères et la liste fonctionnent toujours; essaie de mettre le bloqueur en pause pour ce site.", legendNum: "Le numéro de chaque point correspond à la liste", legendHome: "Ma maison",
       p: "Trouve les écoles près de chez toi. Touche une école dans la liste ou un point sur la carte pour voir sa fiche et ouvrir son profil. Tu peux marquer ta maison sur la carte pour voir la distance en ligne droite.",
-      aria: "Carte interactive des écoles secondaires de Mississauga",
+      aria: "Carte interactive des écoles secondaires de la RGT",
       search: "Chercher une école…", listAria: "Liste des écoles",
       count: (n) => `${n} école${n === 1 ? "" : "s"}`,
       gateH: "Carte routière interactive",
@@ -617,7 +615,7 @@ export const UI = {
     exploreP: "Les filtres de conseil scolaire, de type de programme et la recherche touchent le répertoire et les programmes. « Commence en » et « Comment y entrer » ne touchent que les listes de programmes.",
     searchLabel: "Rechercher",
     searchPh: "Ex. BI, boulangerie, arts, Port Credit…",
-    fSystem: "Conseil scolaire", fTag: "Type de programme", fStart: "Commence en (programmes)", fEntry: "Comment y entrer (programmes)", fSort: "Trier les écoles",
+    fRegion: "Région", fCity: "Ville", showMore: (n, rest) => `Voir ${n} de plus (${rest} restantes)`, pendingDetail: "Les détails des programmes ne sont pas encore vérifiés pour cette école. Consultez son site officiel.", fSystem: "Conseil scolaire", fTag: "Type de programme", fStart: "Commence en (programmes)", fEntry: "Comment y entrer (programmes)", fSort: "Trier les écoles",
     all: "Tous",
     optSystem: { dpcdsb: "DPCDSB (catholique)", peel: "Peel (public)", fr: "Catholique de langue française" },
     optStart: { "9": "9e année", "10": "10e année", "11": "11e année" },
@@ -627,7 +625,7 @@ export const UI = {
     resultCount: (s, p) => `${s} école${s === 1 ? "" : "s"} · ${p} programme${p === 1 ? "" : "s"}`,
     noResults: "Aucun résultat avec ces filtres. Essayez de les réinitialiser.",
 
-    escuelasH: "Répertoire des écoles secondaires de Mississauga",
+    escuelasH: "Répertoire des écoles secondaires de la RGT",
     escuelasP: "Toutes les écoles, avec leurs programmes régionaux et leur cote Fraser. La cote est uniquement scolaire et ne classe pas la liste, sauf si vous choisissez de trier par cote.",
     lblFocus: "Orientation :",
     fraserLabel: "Cote Fraser",
@@ -770,7 +768,7 @@ export const SOURCES = [
 const P = (k, n) => ({ k, n });
 const F = (score, rank, prev) => ({ score, rank, prev });
 
-export const SCHOOLS = [
+const CURATED = [
   // ---------------- DPCDSB (Catholic) ----------------
   { id: "goetz", board: "dpcdsb", name: "Father Michael Goetz", addr: "330 Central Pkwy W", fraser: F(4.0, 654, 5.2),
     progs: [P("bakery", x("Regional Bakery School, Grade 10–12, primer año 2026-27", "Regional Bakery School, Grades 10–12, first year 2026-27", "École régionale de boulangerie, 10e–12e année, première année 2026-2027")), P("shsm", x("ICT y Arts & Culture", "ICT and Arts & Culture", "TIC et arts et culture"))],
@@ -843,9 +841,33 @@ export const SCHOOLS = [
   { id: "gordon", board: "peel", name: "Gordon Graydon", addr: "Mississauga", fraser: null, progs: [] },
 
   // ---------------- French-language Catholic ----------------
-  { id: "famille", board: "fr", name: "Sainte-Famille", addr: "Mississauga", fraser: F(7.3, 158, 7.4), progs: [],
+  { id: "famille", board: "monavenir", name: "Sainte-Famille", addr: "Mississauga", fraser: F(7.3, 158, 7.4), progs: [],
     fnote: x("Escuela de lengua francesa: para entrar hay que cumplir los requisitos de titular de derechos (sección 23).", "French-language school: entry requires rights-holder eligibility (section 23).", "École de langue française : l'admission exige l'admissibilité comme ayant droit (article 23).") },
 ];
+
+/* ------------------------------------------------------------------ */
+/* GTA directory: curated schools (above) + the rest of the GTA        */
+/* (js/data/roster.js, generated from Ontario open data).              */
+/* ------------------------------------------------------------------ */
+const fullAddr = (street, city, hood) => `${street}, ${hood ? `${hood} (${city})` : city}`;
+
+// Curated schools keep their hand-verified record; the official street, city and region are added.
+const curated = CURATED.map((s) => {
+  const o = CURATED_INFO[s.id];
+  return o ? { ...s, addr: fullAddr(o.addr, o.city), city: o.city, region: o.region, postal: o.postal, enrol: o.enrol, geo: o.geo } : { ...s, city: "Mississauga", region: "peel" };
+});
+
+// Schools from the roster have no verified program data yet (details: true = being collected): the
+// profile links to the school's own site until the scraped details are reviewed and published.
+const fromRoster = ROSTER.map((r) => ({
+  id: r.id, board: r.board, name: r.name, addr: fullAddr(r.addr, r.city, r.hood), city: r.city, region: r.region,
+  postal: r.postal, enrol: r.enrol, geo: r.geo, site: r.site, phone: r.phone, special: r.special, lang: r.lang,
+  fraser: null, progs: [], pending: true,
+}));
+
+export const SCHOOLS = [...curated, ...fromRoster];
+export const boardClassOf = boardClass;
+
 
 /* ------------------------------------------------------------------ */
 /* Regional programs. hosts: [name, inMississauga]                     */
@@ -934,10 +956,10 @@ export const VIBES = ["ib", "ap", "arts", "stem", "sports", "fi", "trades", "ibt
    Keys here fully replace the base ones (nested objects are replaced whole). */
 export const TEEN = {
   es: {
-    eyebrow: "Mississauga · Grade 9 · septiembre 2027",
+    eyebrow: "GTA · Grade 9 · septiembre 2027",
     h1a: "Encuentra tu high school",
-    h1b: "en Mississauga",
-    lead: "33 escuelas y todos los programas, sin enredos. Filtra por lo que te gusta, compara y haz el vibe check para saber por dónde empezar.",
+    h1b: "en el GTA",
+    lead: "Más de 300 escuelas y sus programas, sin enredos. Filtra por lo que te gusta, compara y haz el vibe check para saber por dónde empezar.",
     notice: "<b>Aquí no hay favoritas.</b> Solo mostramos lo que ofrece cada escuela. La nota Fraser es solo académica: no mide el ambiente, los programas ni si la escuela va contigo.",
     quiz: { h: "Vibe check ✨", p: "12 toques, 3 minutos y sin registrarte. Al final recibes un PDF con escuelas y programas para explorar. Es una guía, no una sentencia.", btn: "Hacer el vibe check" },
     exploreH: "Filtra a tu manera",
@@ -947,10 +969,10 @@ export const TEEN = {
     fechasH: "Fechas que no puedes olvidar",
   },
   en: {
-    eyebrow: "Mississauga · Grade 9 · September 2027",
+    eyebrow: "GTA · Grade 9 · September 2027",
     h1a: "Find your high school",
-    h1b: "in Mississauga",
-    lead: "33 schools, every program, zero fluff. Filter by what you like, compare, and take the vibe check to see where to start.",
+    h1b: "in the GTA",
+    lead: "300+ schools, their programs, zero fluff. Filter by what you like, compare, and take the vibe check to see where to start.",
     notice: "<b>No favourites here.</b> We only show what each school offers. The Fraser score is academic only: it does not measure atmosphere, programs or whether a school is right for you.",
     quiz: { h: "Vibe check ✨", p: "12 taps, 3 minutes, no sign-up. You get a PDF with schools and programs to explore. It is a guide, not a verdict.", btn: "Take the vibe check" },
     exploreH: "Filter your way",
@@ -960,10 +982,10 @@ export const TEEN = {
     fechasH: "Dates you cannot miss",
   },
   fr: {
-    eyebrow: "Mississauga · 9e année · septembre 2027",
+    eyebrow: "RGT · 9e année · septembre 2027",
     h1a: "Trouve ton école secondaire",
-    h1b: "à Mississauga",
-    lead: "33 écoles, tous les programmes, zéro blabla. Filtre selon ce que tu aimes, compare et fais le vibe check pour savoir par où commencer.",
+    h1b: "dans la RGT",
+    lead: "300+ écoles et leurs programmes, zéro blabla. Filtre selon ce que tu aimes, compare et fais le vibe check pour savoir par où commencer.",
     notice: "<b>Ici, pas de favoris.</b> On montre seulement ce que chaque école offre. La cote Fraser est uniquement scolaire : elle ne mesure ni le climat, ni les programmes, ni si l'école est faite pour toi.",
     quiz: { h: "Vibe check ✨", p: "12 clics, 3 minutes, sans inscription. Tu obtiens un PDF avec des écoles et des programmes à explorer. C'est un guide, pas un verdict.", btn: "Faire le vibe check" },
     exploreH: "Filtre à ta façon",

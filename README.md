@@ -159,7 +159,7 @@ The site has no accounts and sets no cookies. Language and theme choices are sto
 1. Import this repository at https://vercel.com/new.
 2. Framework preset: **Other**. Leave build command and output directory empty.
 3. Deploy, then enable **Analytics** in the project settings and, optionally, connect Neon Postgres (see above).
-4. If the production URL differs from `hs-mississauga-navigator.vercel.app`, update it in `index.html` (canonical, Open Graph, JSON-LD), `sitemap.xml` and `robots.txt`.
+4. If the production URL differs from `highschool-gta-navigator.vercel.app`, update it in `index.html` (canonical, Open Graph, JSON-LD), `sitemap.xml` and `robots.txt`.
 
 ## Disclaimer
 

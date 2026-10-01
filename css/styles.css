@@ -537,3 +537,10 @@ a.theme.coffee{font-size:16px}
 .glance tbody th{white-space:nowrap}
 .apply-detail{margin-bottom:14px}
 @media (max-width:640px){.glance tbody th{white-space:normal}}
+.gl-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.gcard{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--bc);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:9px}
+.gcard h4{margin:0;font:800 1.05rem var(--font-display);color:var(--bc)}
+.gcard p{margin:0;font-size:14px;line-height:1.45}
+.gcard p span{display:block;font:700 11px var(--font-body,inherit);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.gcard .gwin{font-weight:700;font-size:15px}
+.gcard .linkbtn{align-self:flex-start;margin-top:auto;font-weight:700}

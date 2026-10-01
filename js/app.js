@@ -11,7 +11,7 @@ import { ensureAllDetails, ensureSchools, ensureBoardExtras } from "./details.js
 import { REGISTRATION, REG_UI } from "./admissions.js";
 import { DETAIL_BOARDS } from "./data/summary.js";
 import { supportHtml } from "./support.js";
-import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
+import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass, colorOf } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -208,12 +208,14 @@ function renderDates() {
   $("#d-board").onchange = (e) => { d.board = e.target.value; renderDates(); };
 }
 
+const GLANCE_BOARDS = ["tdsb", "tcdsb", "peel", "dpcdsb", "yrdsb", "hdsb", "dcdsb", null];
 async function renderApply() {
   const u = t(), box = $("#ap-detail"), sel = $("#ap-board");
   if (!box || !sel) return;
   const b = sel.value;
   state.apBoard = b;
   sel.onchange = renderApply;
+  document.querySelectorAll("[data-ap-pick]").forEach((x) => { x.onclick = () => { sel.value = x.dataset.apPick; renderApply(); sel.scrollIntoView({ block: "center", behavior: "smooth" }); }; });
   await ensureBoardExtras(b);
   if (sel.value !== b) return;
   const reg = REGISTRATION[b], R = REG_UI[state.lang];
@@ -325,8 +327,12 @@ function renderShell() {
   <section id="aplicar"><div class="sec-head"><h2>${esc(u.apply.h)}</h2><p>${esc(u.apply.p)}</p></div>
     <div class="grid">${u.apply.paths.map((x, n) => `<div class="card layer"><span class="tag">${n + 1}</span><h3>${esc(x.h)}</h3><p>${esc(x.p)}</p></div>`).join("")}</div>
     <h3 class="boardh">${esc(u.apply.glanceH)}</h3>
-    <div class="tblwrap"><table class="cmp-table glance"><thead><tr>${u.apply.cols.map((c) => `<th scope="col">${esc(c)}</th>`).join("")}</tr></thead>
-      <tbody>${u.apply.rows.map((r) => `<tr><th scope="row">${esc(r[0])}</th>${r.slice(1).map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+    <div class="gl-cards">${u.apply.rows.map((r, n) => { const id = GLANCE_BOARDS[n]; return `<article class="gcard" style="--bc:${id ? colorOf(id) : "var(--muted)"}">
+      <h4>${esc(r[0])}</h4>
+      <p class="gwin"><span>${esc(u.apply.cols[1])}</span>${esc(r[1])}</p>
+      <p><span>${esc(u.apply.cols[2])}</span>${esc(r[2])}</p>
+      <p><span>${esc(u.apply.cols[3])}</span>${esc(r[3])}</p>
+      ${id ? `<button type="button" class="linkbtn" data-ap-pick="${id}">${esc(u.apply.guideH)} →</button>` : ""}</article>`; }).join("")}</div>
     <h3 class="boardh">${esc(u.apply.guideH)}</h3>
     <form class="filters" onsubmit="return false"><label class="field">${esc(u.apply.pick)}<select id="ap-board">${boardOptions(state.apBoard).replace(/<option value="">[^<]*<\/option>/, "")}</select></label></form>
     <div id="ap-detail" aria-live="polite"></div></section>

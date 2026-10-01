@@ -1,0 +1,22 @@
+name: Refresh school roster
+# Monthly: re-reads Ontario's open school list and opens a pull request when something changed
+# (new, renamed or closed schools). Review the diff before merging.
+on:
+  schedule: [{ cron: "17 6 3 * *" }]
+  workflow_dispatch:
+permissions: { contents: write, pull-requests: write }
+jobs:
+  roster:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci --prefix scripts
+      - run: node scripts/pipeline/build-roster.mjs
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/roster-refresh
+          title: "Roster refresh from Ontario open data"
+          commit-message: "Roster refresh from Ontario open data"
+          body: "Automatic monthly refresh of js/data/roster.js. Check new/removed schools; curated schools keep their ids."

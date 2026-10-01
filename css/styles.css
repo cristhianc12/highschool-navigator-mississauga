@@ -544,10 +544,14 @@ a.theme.coffee{font-size:16px}
 .gcard p span{display:block;font:700 11px var(--font-body,inherit);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
 .gcard .gwin{font-weight:700;font-size:15px}
 .gcard .linkbtn{align-self:flex-start;margin-top:auto;font-weight:700}
-.supportcard{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:34px 0;padding:18px 22px;border-radius:18px;border:1px dashed var(--line);background:var(--surface)}
-.supportcard h3{margin:0 0 4px;font:800 1.05rem var(--font-display)}
-.supportcard p{margin:0;max-width:60ch;font-size:14.5px;color:var(--muted)}
-.supportcard .sc-act{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.supportcard{display:flex;gap:26px;align-items:center;flex-wrap:wrap;margin:44px 0;padding:34px 36px;border-radius:26px;border:1px solid var(--line);background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,var(--surface)),var(--surface) 70%);box-shadow:0 10px 34px rgba(60,30,140,.10)}
+.supportcard .sc-cup{font-size:64px;line-height:1;flex:none}
+.supportcard .sc-txt{flex:1 1 320px}
+.supportcard h3{margin:0 0 8px;font:800 1.6rem var(--font-display)}
+.supportcard p{margin:0;max-width:62ch;font-size:16.5px;line-height:1.55;color:var(--muted)}
+.supportcard .sc-act{display:flex;flex-direction:column;align-items:center;gap:8px;flex:none}
+.supportcard .cta{font-size:17px;padding:14px 26px;white-space:nowrap}
+@media (max-width:640px){.supportcard{padding:24px 20px}.supportcard .sc-cup{font-size:46px}.supportcard h3{font-size:1.3rem}.supportcard .sc-act{align-items:stretch;width:100%;text-align:center}}
 .supportcard small{color:var(--muted);font-size:12px}
 .coffee-pill{position:fixed;left:16px;bottom:18px;z-index:40;display:flex;align-items:center;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 14px;box-shadow:0 6px 22px rgba(20,10,60,.16);font-size:14px;animation:pillin .5s ease both;transition:opacity .5s}
 .coffee-pill.out{opacity:0}

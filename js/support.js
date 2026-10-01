@@ -27,7 +27,7 @@ const CLOSE = { es: "Cerrar", en: "Close", fr: "Fermer" };
 export const supportCard = (lang) => {
   if (!SUPPORT_URL) return "";
   const c = CARD[lang] || CARD.en;
-  return `<aside class="supportcard"><div><h3>${c.h}</h3><p>${c.p}</p></div><div class="sc-act"><a class="btn" href="${SUPPORT_URL}" target="_blank" rel="noopener" data-support>${c.a}</a><small>${c.n}</small></div></aside>`;
+  return `<aside class="supportcard"><span class="sc-cup" aria-hidden="true">☕</span><div class="sc-txt"><h3>${c.h}</h3><p>${c.p}</p></div><div class="sc-act"><a class="cta" href="${SUPPORT_URL}" target="_blank" rel="noopener" data-support>${c.a}</a><small>${c.n}</small></div></aside>`;
 };
 
 const KEY = "hsCoffeeSeen";
@@ -47,12 +47,12 @@ export function initSupportNudge(getLang) {
     el.querySelector("button").onclick = () => { mem.set(KEY, String(Date.now())); el.remove(); };
     el.querySelector("a").addEventListener("click", () => mem.set(KEY, String(Date.now())));
     document.body.appendChild(el);
-    setTimeout(() => { if (el.isConnected) { mem.set(KEY, String(Date.now())); el.classList.add("out"); setTimeout(() => el.remove(), 600); } }, 20000);
+    setTimeout(() => { if (el.isConnected) { mem.set(KEY, String(Date.now())); el.classList.add("out"); setTimeout(() => el.remove(), 600); } }, 30000);
   };
   const check = () => {
     const h = document.documentElement;
     const pct = (scrollY + innerHeight) / Math.max(h.scrollHeight, 1);
-    if (pct > 0.55 && Date.now() - t0 > 40000) show();
+    if (pct > 0.3 && Date.now() - t0 > 12000) show();
   };
   addEventListener("scroll", check, { passive: true });
 }

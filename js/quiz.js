@@ -1,5 +1,6 @@
 import { LANGS, madeWith, SCHOOLS, PROGRAMS, TAGS, BOARDS } from "./content.js";
 import { systemOf, boardClass, isCatholic } from "./geo.js";
+import { trackQuiz } from "./track.js";
 import "./pwa.js";
 import { QUIZ_UI, QUIZ_TEEN, QUESTIONS, TAG_WHY } from "./quiz-content.js";
 import { initSchoolDetail } from "./school-detail.js";
@@ -274,7 +275,11 @@ function restoreProgress() {
   } catch { /* ignore corrupt data */ }
 }
 
-function go(step) { state.step = step; if (step >= TOTAL) state.result = recommend(state.answers); saveProgress(); render(); }
+function go(step) {
+  if (step === 0 && state.step < 0) trackQuiz("start");
+  else if (step > 0 && step < TOTAL && step > state.step) trackQuiz("step", `q${step}`);
+  else if (step >= TOTAL && state.step < TOTAL) trackQuiz("done");
+  state.step = step; if (step >= TOTAL) state.result = recommend(state.answers); saveProgress(); render(); }
 
 document.addEventListener("click", (e) => {
   const lang = e.target.closest("[data-lang]");
@@ -290,7 +295,7 @@ document.addEventListener("click", (e) => {
   if (e.target.closest("#skip-q")) return go(state.step + 1);
   if (e.target.closest("#next")) return advance();
   if (e.target.closest("#retake")) { state.answers = {}; state.result = null; state.shared = false; sess.del(SAVE_KEY); return go(-1); }
-  if (e.target.closest("#pdf")) return makePdf();
+  if (e.target.closest("#pdf")) { trackQuiz("pdf"); return makePdf(); }
   if (e.target.closest("#share")) return share();
   const opt = e.target.closest("[data-opt]");
   if (opt) pick(opt.dataset.opt);
@@ -339,7 +344,7 @@ async function share() {
   };
   try {
     const res = await fetch("/api/submit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
-    if (res.ok) { state.shared = true; saveProgress(); msg.textContent = u.shareOk; $("#consent").disabled = true; return; }
+    if (res.ok) { trackQuiz("share"); state.shared = true; saveProgress(); msg.textContent = u.shareOk; $("#consent").disabled = true; return; }
     msg.textContent = res.status === 404 || res.status === 503 ? u.shareOff : u.shareErr;
   } catch {
     msg.textContent = u.shareErr;

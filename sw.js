@@ -9,7 +9,7 @@ const CORE = [
   "/css/styles.css", "/css/quiz.css",
   "/js/app.js", "/js/content.js", "/js/sessions.js", "/js/program-info.js", "/js/school-detail.js", "/js/mylist.js",
   "/js/explainer.js", "/js/map.js", "/js/map-data.js", "/js/quiz.js", "/js/quiz-content.js", "/js/privacy.js", "/js/privacy-content.js", "/js/game.js",
-  "/js/school-geo.js", "/js/geo.js", "/js/data/roster.js", "/js/school-extras.js", "/js/admissions.js", "/js/course-finder.js", "/assets/vendor/leaflet/leaflet.css", "/assets/vendor/leaflet/leaflet.js", "/assets/vendor/leaflet/MarkerCluster.css", "/assets/vendor/leaflet/leaflet.markercluster.js",
+  "/js/school-geo.js", "/js/geo.js", "/js/details.js", "/js/data/roster.js", "/js/data/summary.js", "/js/school-extras.js", "/js/admissions.js", "/js/course-finder.js", "/assets/vendor/leaflet/leaflet.css", "/assets/vendor/leaflet/leaflet.js", "/assets/vendor/leaflet/MarkerCluster.css", "/assets/vendor/leaflet/leaflet.markercluster.js",
   "/assets/fonts/bricolage-latin.woff2", "/assets/fonts/figtree-latin.woff2", "/assets/favicon.svg", "/assets/icon-192.png", "/assets/icon-512.png",
   "/assets/vendor/jspdf.umd.min.js",
 ];

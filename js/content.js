@@ -4,6 +4,7 @@
 import { EXTRAS } from "./school-extras.js";
 import { BOARD_META, boardClass } from "./geo.js";
 import { ROSTER, CURATED_INFO } from "./data/roster.js";
+import { SUMMARY } from "./data/summary.js";
 
 const x = (es, en, fr) => ({ es, en, fr });
 
@@ -77,14 +78,14 @@ export const UI = {
     crs: {
       extraH: "También en esta escuela", shsmL: "SHSM", otherL: "Otros programas", siteL: "Sitio de la escuela", calL: "Calendario de cursos oficial",
       h: "Cursos que ofrece",
-      intro: (y) => `Cursos del calendario oficial de la escuela (${y}). Que un curso aparezca no garantiza que se dicte todos los años: confírmalo con la escuela. Los nombres se muestran como los publica la escuela (en inglés).`,
+      intro: (y) => `Cursos del calendario oficial de la escuela ${y ? `(${y})` : ""}. Que un curso aparezca no garantiza que se dicte todos los años: confírmalo con la escuela. Los nombres se muestran como los publica la escuela (en inglés).`,
       show: "Ver los cursos", hide: "Ocultar los cursos", loading: "Cargando…", course: "Curso",
       peelNote: "Las escuelas de Peel publican sus cursos en su propia guía de selección; aún no están incluidos aquí.",
       finderH: "Buscador de cursos",
-      finderP: "Escribe una materia o un código (por ejemplo Computer Science, Photography, ICS4U) para ver qué escuelas del DPCDSB la ofrecen y en qué grados.",
+      finderP: "Escribe una materia o un código (por ejemplo Computer Science, Photography, ICS4U) para ver qué escuelas la ofrecen y en qué grados.",
       finderPh: "Ej.: Computer Science, Photography, MHF4U…", finderNone: "No encontramos cursos con ese texto.", finderMin: "Escribe al menos 3 letras.",
       finderCount: (n) => `${n} curso${n === 1 ? "" : "s"}`,
-      finderSrc: (y) => `Fuente: calendarios de cursos oficiales de 15 escuelas del DPCDSB (${y}). Peel todavía no está incluido.`,
+      finderSrc: () => `Fuente: calendarios de cursos publicados por cada escuela en su sitio oficial (el año aparece en cada perfil). No todas las escuelas publican su lista de cursos.`,
       offeredIn: "Se ofrece en",
     },
     map: {
@@ -195,6 +196,7 @@ export const UI = {
     none: "—",
 
     regionalesH: "Programas regionales del DPCDSB",
+    otherH: "Programas en otros consejos escolares del GTA", otherP: "Programas especiales y regionales de TDSB, TCDSB, York, Durham, Halton y otros consejos, recopilados de sus sitios oficiales. Confirma requisitos y fechas con cada consejo.", otherNone: "Los programas de los otros consejos se están agregando.",
     regionalesP: "Programas que reciben estudiantes de toda la zona. La escuela sede es donde se cursa el programa; las sedes en Mississauga aparecen marcadas.",
     peelH: "Programas regionales de Peel (RLCP)",
     peelP: "Los Regional Learning Choices Programs (RLCP) de Peel están abiertos a estudiantes que viven en Peel, incluso a quienes hoy están en el sistema católico. Se aplica según tu boundary (la zona que te corresponde por tu dirección). Vale la pena conocerlos antes de descartar nada.",
@@ -305,14 +307,14 @@ export const UI = {
     crs: {
       extraH: "Also at this school", shsmL: "SHSM", otherL: "Other programs", siteL: "School website", calL: "Official course calendar",
       h: "Courses offered",
-      intro: (y) => `Courses in the school's official course calendar (${y}). A listed course is not a guarantee that it runs every year: confirm with the school. Names are shown as the school publishes them.`,
+      intro: (y) => `Courses in the school's official course calendar ${y ? `(${y})` : ""}. A listed course is not a guarantee that it runs every year: confirm with the school. Names are shown as the school publishes them.`,
       show: "Show the courses", hide: "Hide the courses", loading: "Loading…", course: "Course",
       peelNote: "Peel schools publish their courses in their own course selection guides; they are not included here yet.",
       finderH: "Course finder",
-      finderP: "Type a subject or a course code (for example Computer Science, Photography, ICS4U) to see which DPCDSB schools offer it and in which grades.",
+      finderP: "Type a subject or a course code (for example Computer Science, Photography, ICS4U) to see which schools offer it and in which grades.",
       finderPh: "E.g. Computer Science, Photography, MHF4U…", finderNone: "No courses match that text.", finderMin: "Type at least 3 letters.",
       finderCount: (n) => `${n} course${n === 1 ? "" : "s"}`,
-      finderSrc: (y) => `Source: official course calendars of 15 DPCDSB schools (${y}). Peel is not included yet.`,
+      finderSrc: () => `Source: course calendars published on each school's official website (the year is shown on each profile). Not every school publishes its course list.`,
       offeredIn: "Offered at",
     },
     map: {
@@ -423,6 +425,7 @@ export const UI = {
     none: "—",
 
     regionalesH: "DPCDSB regional programs",
+    otherH: "Programs at other GTA school boards", otherP: "Special and regional programs of TDSB, TCDSB, York, Durham, Halton and other boards, collected from their official websites. Confirm requirements and dates with each board.", otherNone: "Programs from the other boards are being added.",
     regionalesP: "Programs that take students from the whole area. The host school is where the program is taken; Mississauga hosts are marked.",
     peelH: "Peel regional programs (RLCP)",
     peelP: "Peel's Regional Learning Choices Programs (RLCP) are open to students who live in Peel, including those currently in the Catholic system. You apply according to your home boundary, and it is worth knowing them before ruling anything out.",
@@ -533,14 +536,14 @@ export const UI = {
     crs: {
       extraH: "Aussi à cette école", shsmL: "MHS (SHSM)", otherL: "Autres programmes", siteL: "Site de l'école", calL: "Calendrier des cours officiel",
       h: "Cours offerts",
-      intro: (y) => `Cours du calendrier officiel de l'école (${y}). La présence d'un cours ne garantit pas qu'il soit offert chaque année : confirme auprès de l'école. Les noms sont affichés tels que l'école les publie (en anglais).`,
+      intro: (y) => `Cours du calendrier officiel de l'école ${y ? `(${y})` : ""}. La présence d'un cours ne garantit pas qu'il soit offert chaque année : confirme auprès de l'école. Les noms sont affichés tels que l'école les publie (en anglais).`,
       show: "Voir les cours", hide: "Masquer les cours", loading: "Chargement…", course: "Cours",
       peelNote: "Les écoles de Peel publient leurs cours dans leur propre guide de sélection; ils ne sont pas encore inclus ici.",
       finderH: "Recherche de cours",
-      finderP: "Saisis une matière ou un code (par exemple Computer Science, Photography, ICS4U) pour voir quelles écoles du DPCDSB l'offrent et en quelles années.",
+      finderP: "Saisis une matière ou un code (par exemple Computer Science, Photography, ICS4U) pour voir quelles écoles l'offrent et en quelles années.",
       finderPh: "Ex. : Computer Science, Photography, MHF4U…", finderNone: "Aucun cours ne correspond.", finderMin: "Saisis au moins 3 lettres.",
       finderCount: (n) => `${n} cours`,
-      finderSrc: (y) => `Source : calendriers de cours officiels de 15 écoles du DPCDSB (${y}). Peel n'est pas encore inclus.`,
+      finderSrc: () => `Source : calendriers de cours publiés sur le site officiel de chaque école (l'année figure dans chaque profil). Toutes les écoles ne publient pas leur liste de cours.`,
       offeredIn: "Offert à",
     },
     map: {
@@ -651,6 +654,7 @@ export const UI = {
     none: "—",
 
     regionalesH: "Programmes régionaux du DPCDSB",
+    otherH: "Programmes des autres conseils scolaires de la RGT", otherP: "Programmes spéciaux et régionaux du TDSB, du TCDSB, de York, Durham, Halton et d'autres conseils, recueillis sur leurs sites officiels. Confirme les conditions et les dates auprès de chaque conseil.", otherNone: "Les programmes des autres conseils sont en cours d'ajout.",
     regionalesP: "Programmes qui accueillent des élèves de toute la région. L'école hôte est celle où l'on suit le programme; les sites de Mississauga sont indiqués.",
     peelH: "Programmes régionaux de Peel (RLCP)",
     peelP: "Les Regional Learning Choices Programs (RLCP) de Peel sont ouverts aux élèves qui habitent à Peel, y compris ceux qui fréquentent actuellement le système catholique. On présente sa demande selon son secteur (adresse du domicile); il vaut la peine de les connaître avant d'écarter quoi que ce soit.",
@@ -862,7 +866,7 @@ const curated = CURATED.map((s) => {
 const fromRoster = ROSTER.map((r) => ({
   id: r.id, board: r.board, name: r.name, addr: fullAddr(r.addr, r.city, r.hood), city: r.city, region: r.region,
   postal: r.postal, enrol: r.enrol, geo: r.geo, site: r.site, phone: r.phone, special: r.special, lang: r.lang,
-  fraser: null, progs: [], pending: true,
+  fraser: null, progs: (SUMMARY[r.id] || []).map((k) => ({ k })), pending: !SUMMARY[r.id],
 }));
 
 export const SCHOOLS = [...curated, ...fromRoster];

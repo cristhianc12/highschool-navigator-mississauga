@@ -1,10 +1,12 @@
 import "./pwa.js";
+import "./track.js";
 import { initSchoolDetail, renderSessionRow, reportUrl } from "./school-detail.js";
 import { SESSIONS } from "./sessions.js";
 import { EXPLAINER } from "./explainer.js";
 import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
+import { ensureAllDetails } from "./details.js";
 import { REGIONS, REGION_ORDER, REGION_SHORT, SYSTEMS, SYSTEM_ORDER, BOARD_META, BOARD_ORDER, boardClass } from "./geo.js";
 
 const $ = (s, r = document) => r.querySelector(s);
@@ -64,7 +66,7 @@ function schoolMatches(s) {
 function programMatches(p) {
   const f = state.filters;
   if (f.board && p.board !== f.board) return false;
-  if (f.region && PROG_REGION[p.board] !== f.region) return false;
+  if (f.region && !(p.regions || [PROG_REGION[p.board]]).includes(f.region)) return false;
   if (f.tag && p.tag !== f.tag) return false;
   if (f.start && p.start !== f.start) return false;
   if (f.entry && p.entry !== f.entry) return false;
@@ -262,6 +264,9 @@ function renderShell() {
   <section id="regionales"><div class="sec-head"><h2>${esc(u.regionalesH)}</h2><p>${esc(u.regionalesP)}</p></div>
     <div class="grid" id="prog-dpcdsb"></div></section>
 
+  <section id="otherprogs" hidden><div class="sec-head"><h2>${esc(u.otherH)}</h2><p>${esc(u.otherP)}</p></div>
+    <div id="prog-other"></div></section>
+
   <section id="peel"><div class="sec-head"><h2>${esc(u.peelH)}</h2><p>${esc(u.peelP)}</p></div>
     <div class="grid" id="prog-peel"></div>
     <div class="grid" style="margin-top:14px">
@@ -367,6 +372,15 @@ function renderResults() {
   if (mh) renderMap(mh, { lang: state.lang, matchIds: schools.map((s) => s.id) });
   $("#prog-dpcdsb").innerHTML = dp.length ? dp.map(programCard).join("") : empty;
   $("#prog-peel").innerHTML = pe.length ? pe.map(programCard).join("") : empty;
+  // Programs of the other boards (loaded from their collected details), grouped by board.
+  const other = progs.filter((p) => p.board !== "dpcdsb" && p.board !== "peel");
+  const sec = $("#otherprogs");
+  if (sec) {
+    sec.hidden = !PROGRAMS.some((p) => p.board !== "dpcdsb" && p.board !== "peel");
+    $("#prog-other").innerHTML = other.length
+      ? BOARD_ORDER.map((b) => { const l = other.filter((p) => p.board === b); return l.length ? `<h3 class="boardh">${esc(L(BOARDS[b]))}</h3><div class="grid">${l.map(programCard).join("")}</div>` : ""; }).join("")
+      : empty;
+  }
   $("#count").textContent = u.resultCount(schools.length, progs.length);
 }
 
@@ -493,3 +507,5 @@ initSchoolDetail({
 });
 initMyList({ getLang: () => state.lang });
 renderShell();
+// Board details (programs, admissions, sessions...) load after the first paint and refresh the lists.
+ensureAllDetails().then((changed) => { if (changed) { renderResults(); renderSessions(); renderCompare(); } });

@@ -5,10 +5,20 @@ import { UI, SCHOOLS } from "./content.js";
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const norm = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
 
+import { COURSE_BOARDS } from "./data/summary.js";
+
 let data = null;
 let index = null;
+// DPCDSB's hand-checked calendars (school-courses.js) plus the course lists collected for the other schools (data/courses/<board>.js).
 async function load() {
-  if (!data) data = await import("./school-courses.js");
+  if (!data) data = (async () => {
+    const dp = await import("./school-courses.js");
+    const COURSES = { ...dp.COURSES };
+    const YEAR = Object.fromEntries(Object.keys(dp.COURSES).map((id) => [id, dp.COURSE_YEAR]));
+    const mods = await Promise.all(COURSE_BOARDS.map((b) => import(`./data/courses/${b}.js`).catch(() => null)));
+    for (const m of mods) if (m) for (const [id, areas] of Object.entries(m.default.courses)) if (!COURSES[id]) { COURSES[id] = areas; YEAR[id] = m.default.year[id] || null; }
+    return { COURSES, YEAR };
+  })();
   return data;
 }
 
@@ -16,9 +26,9 @@ async function load() {
 export async function renderSchoolCourses(host, schoolId, lang) {
   const c = UI[lang].crs;
   host.innerHTML = `<p class="small muted">${esc(c.loading)}</p>`;
-  const { COURSES, COURSE_YEAR } = await load();
+  const { COURSES, YEAR } = await load();
   const areas = COURSES[schoolId] || [];
-  host.innerHTML = `<p class="small muted">${esc(c.intro(COURSE_YEAR))}</p>` + areas.map(([name, rows]) => `
+  host.innerHTML = `<p class="small muted">${esc(c.intro(YEAR[schoolId]))}</p>` + areas.map(([name, rows]) => `
     <details class="carea"><summary>${esc(name)} <span class="muted small">(${rows.length})</span></summary>
       <div class="cwrap"><table class="ctable"><thead><tr><th>${esc(c.course)}</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead>
       <tbody>${rows.map((r) => `<tr><td>${esc(r[0])}</td>${[1, 2, 3, 4].map((i) => `<td>${esc(r[i] || "–")}</td>`).join("")}</tr>`).join("")}</tbody></table></div></details>`).join("");

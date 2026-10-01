@@ -467,3 +467,4 @@ body:has(dialog.sdlg[open]){overflow:hidden}
 .clwrap{background:none;border:0}
 .mcluster{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#2B2A4C;color:#fff;font:800 14px var(--font-body);border:3px solid #fff;box-shadow:0 0 0 4px rgba(43,42,76,.25),0 2px 10px rgba(0,0,0,.4)}
 .mappin.n3{font-size:11px}
+.boardh{margin:22px 0 10px;font-size:1.05rem}

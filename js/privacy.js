@@ -1,4 +1,5 @@
 import "./pwa.js";
+import { trackingOff, setTrackingOff, autoOff } from "./track.js";
 import { LANGS, madeWith } from "./content.js";
 import { PRIV, CONTACT_URL, UPDATED } from "./privacy-content.js";
 
@@ -19,6 +20,23 @@ let lang = (() => {
   return nav.startsWith("fr") ? "fr" : nav.startsWith("es") ? "es" : "en";
 })();
 
+function statsSection(st) {
+  const auto = autoOff();
+  const off = trackingOff();
+  return `<section class="ps" id="stats"><h2>${esc(st.h)}</h2>
+    ${st.p.map((x) => `<p>${esc(x)}</p>`).join("")}<ul>${st.ul.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+    <p class="small muted">${esc(st.small)}</p>
+    <p><span role="status" aria-live="polite" id="stats-state">${esc(auto ? st.state.auto : off ? st.state.off : st.state.on)}</span></p>
+    ${auto ? "" : `<p><button type="button" class="btn" id="stats-toggle">${esc(off ? st.on : st.off)}</button></p>`}</section>`;
+}
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest("#stats-toggle")) return;
+  setTrackingOff(!trackingOff());
+  render();
+  document.querySelector("#stats-toggle")?.focus();
+});
+
 function render() {
   const p = PRIV[lang];
   document.documentElement.lang = p.htmlLang;
@@ -36,6 +54,7 @@ function render() {
     ${p.sections.map((s) => `<section class="ps"><h2>${esc(s.h)}</h2>
       ${(s.p || []).map((x) => `<p>${esc(x)}</p>`).join("")}
       ${s.ul ? `<ul>${s.ul.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}</section>`).join("")}
+    ${statsSection(p.stats)}
     <p><a href="${CONTACT_URL}" target="_blank" rel="noopener">${esc(p.contact)}</a></p>
     <p class="muted small">${esc(p.note)}</p>`;
 }

@@ -39,6 +39,8 @@ async function read(url) {
   $("script,style,noscript,svg,iframe,nav,footer,header form").remove();
   const main = $("main, [role=main], #content, .content, article").first();
   const root = main.length && clean(main.text()).length > 400 ? main : $("body");
+  // a table row becomes one line: "cell | cell | cell"
+  root.find("tr").each((_, tr) => { const cells = $(tr).children("th,td").map((_, c) => clean($(c).text())).get(); $(tr).text(cells.join(" | ")); });
   // keep headings, list items and table rows on their own lines
   root.find("h1,h2,h3,h4,h5,li,tr,p,br,div").each((_, el) => { $(el).append("\n"); });
   const text = root.text().split("\n").map(clean).filter(Boolean).join("\n");

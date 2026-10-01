@@ -699,6 +699,13 @@ events.push(ev({
 
 export const SESSIONS = events.sort((a, b) => (a.date || "9999").localeCompare(b.date || "9999") || (a.time || "99").localeCompare(b.time || "99") || a.school.localeCompare(b.school));
 
+/** Adds sessions collected later (see details.js) and keeps the list sorted by date. */
+let nx = 0;
+export function addSessions(list) {
+  for (const o of list) SESSIONS.push({ id: `x${++nx}`, ...o, key: key(o.school) });
+  SESSIONS.sort((a, b) => (a.date || "9999").localeCompare(b.date || "9999") || (a.time || "99").localeCompare(b.time || "99") || a.school.localeCompare(b.school));
+}
+
 /** Sessions relevant to a school profile (matches by school name). */
 export const sessionsForSchool = (school) => {
   const k = key(school.name);

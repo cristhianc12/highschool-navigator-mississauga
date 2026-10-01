@@ -1,6 +1,6 @@
 // Privacy policy text (es / en / fr-CA). Keep it in sync with what api/submit.js actually stores.
 export const CONTACT_URL = "https://github.com/cristhianc12/highschool-navigator-mississauga/issues";
-export const UPDATED = "2026-09-29";
+export const UPDATED = "2026-10-01";
 
 export const PRIV = {
   es: {
@@ -10,7 +10,7 @@ export const PRIV = {
     sections: [
       { h: "Quiénes somos", p: ["Highschool Navigator GTA es un proyecto informativo independiente. No tiene relación con ningún consejo escolar (DPCDSB, Peel, TDSB, TCDSB, York, Durham, Halton ni otros) ni con el Fraser Institute."] },
       { h: "La guía", p: ["Explorar la guía no requiere dar datos personales."], ul: [
-        "Guardamos en tu navegador (localStorage) solo tus preferencias de idioma, tema y tono, tu «Mi lista» de escuelas y programas guardados, y tu récord en el minijuego. Nunca salen de tu dispositivo.",
+        "Guardamos en tu navegador (localStorage) solo tus preferencias de idioma, tema y tono, si desactivaste las estadísticas, tu «Mi lista» de escuelas y programas guardados, y tu récord en el minijuego. Nunca salen de tu dispositivo.",
         "Mientras haces el cuestionario, tu avance se guarda en esta pestaña del navegador (sessionStorage) para que no pierdas tu resultado si abres otra página. Se queda en tu dispositivo y desaparece al cerrar la pestaña.",
         "Usamos Vercel Web Analytics, que mide visitas de forma agregada, sin cookies y sin identificarte.",
         "Las fuentes y la librería del PDF se sirven desde este mismo sitio: no cargamos recursos de terceros.",
@@ -37,6 +37,13 @@ export const PRIV = {
       { h: "Tus decisiones", p: ["Compartir es totalmente voluntario, y el cuestionario y el PDF funcionan igual sin hacerlo. Como las respuestas enviadas son anónimas, no podemos saber cuáles son las tuyas; por eso no ofrecemos buscarlas ni borrarlas de forma individual. La mejor protección es no enviarlas. Puedes borrar tus preferencias limpiando los datos del sitio en tu navegador."] },
       { h: "Cambios y contacto", p: ["Si esta política cambia, actualizaremos la fecha de arriba. Para dudas o comentarios, abre un mensaje en el repositorio del proyecto."] },
     ],
+      stats: { h: "Estadísticas de uso (solo conteos)", p: ["Para saber qué partes de la guía sirven, contamos acciones de forma agregada. Cada acción es solo un nombre y una o dos etiquetas predefinidas, y se suma a un total diario. No hay cookies, ni identificadores, ni historial por persona, ni hora exacta, ni texto escrito por ti (por ejemplo, tus búsquedas no se envían)."], ul: [
+        "Visitas y páginas vistas, de dónde llegaste en términos generales (directo, buscador, redes sociales, sitio de una escuela, correo u otro) y si usas la app instalada.",
+        "Tipo de dispositivo (móvil, tableta, computador), sistema operativo y navegador en términos generales, ancho de pantalla en rangos (por ejemplo «menos de 768 px»), idioma y tema claro u oscuro. No guardamos el texto completo del agente de usuario.",
+        "País y provincia aproximados (por ejemplo Canadá / Ontario), que el servidor deduce de la conexión sin guardar tu dirección IP.",
+        "Qué escuelas y programas se abren, desde dónde (lista, mapa, comparador…), cuántos clics van a sitios oficiales (solo el tipo de enlace y el nombre del sitio), qué filtros se usan y con qué valores, uso del comparador, de «Mi lista», del mapa, del calendario de charlas, del buscador de cursos y del cuestionario (en qué paso estás, sin tus respuestas).",
+        "Cuánto tiempo estuvo abierta la página (en rangos) y hasta dónde se desplazó.",
+      ], off: "Desactivar las estadísticas en este navegador", on: "Activar las estadísticas en este navegador", state: { off: "Las estadísticas están desactivadas en este navegador.", on: "Las estadísticas están activadas en este navegador.", auto: "Tu navegador envía «No rastrear» o Global Privacy Control, así que no contamos nada." }, small: "Los datos agregados no se analizan ni se publican en grupos de menos de 5 y se eliminan a los 24 meses. No usamos las estadísticas para crear perfiles de personas." },
     contact: "Contacto (repositorio del proyecto)",
     note: "Esta política describe cómo funciona el sitio hoy; no constituye asesoría legal.",
   },
@@ -47,7 +54,7 @@ export const PRIV = {
     sections: [
       { h: "Who we are", p: ["Highschool Navigator GTA is an independent informational project. It is not affiliated with any school board (DPCDSB, Peel, TDSB, TCDSB, York, Durham, Halton or others) or with the Fraser Institute."] },
       { h: "The guide", p: ["Browsing the guide does not require any personal data."], ul: [
-        "We keep only your language, theme and tone preferences, your saved “My list” of schools and programs, and your best score in the mini game in your browser (localStorage). They never leave your device.",
+        "We keep only your language, theme and tone preferences, whether you turned statistics off, your saved “My list” of schools and programs, and your best score in the mini game in your browser (localStorage). They never leave your device.",
         "While you take the questionnaire, your progress is kept in this browser tab (sessionStorage) so you do not lose your results if you open another page. It stays on your device and disappears when you close the tab.",
         "We use Vercel Web Analytics, which measures visits in aggregate, without cookies and without identifying you.",
         "Fonts and the PDF library are served from this same site: we load no third-party resources.",
@@ -74,6 +81,13 @@ export const PRIV = {
       { h: "Your choices", p: ["Sharing is entirely voluntary, and the questionnaire and PDF work the same without it. Because submitted answers are anonymous, we cannot tell which ones are yours, so we do not offer individual lookup or deletion: the best protection is not to submit them. You can remove your preferences by clearing this site's data in your browser."] },
       { h: "Changes and contact", p: ["If this policy changes, we will update the date above. For questions or feedback, open an issue in the project repository."] },
     ],
+      stats: { h: "Usage statistics (counts only)", p: ["To learn which parts of the guide are useful, we count actions in aggregate. Each action is only a name and one or two predefined labels, added to a daily total. There are no cookies, no identifiers, no per-person history, no exact times and no text you typed (for example, your searches are not sent)."], ul: [
+        "Visits and page views, roughly where you came from (direct, search engine, social media, a school's site, email or other) and whether you use the installed app.",
+        "Device type (mobile, tablet, desktop), operating system and browser family, screen width in bands (for example “under 768 px”), language and light or dark theme. We do not keep the full user-agent text.",
+        "Approximate country and province (for example Canada / Ontario), which the server derives from the connection without storing your IP address.",
+        "Which schools and programs are opened and from where (list, map, comparison…), how many clicks go to official sites (only the type of link and the site name), which filters are used and with which values, use of the comparison, “My list”, the map, the info session calendar, the course finder and the questionnaire (which step you reach, never your answers).",
+        "How long the page was open (in bands) and how far it was scrolled.",
+      ], off: "Turn statistics off in this browser", on: "Turn statistics on in this browser", state: { off: "Statistics are off in this browser.", on: "Statistics are on in this browser.", auto: "Your browser sends Do Not Track or Global Privacy Control, so nothing is counted." }, small: "Aggregated data is never analyzed or published in groups of fewer than 5 and is deleted after 24 months. We do not use the statistics to build profiles of people." },
     contact: "Contact (project repository)",
     note: "This policy describes how the site works today; it is not legal advice.",
   },
@@ -84,7 +98,7 @@ export const PRIV = {
     sections: [
       { h: "Qui nous sommes", p: ["Highschool Navigator GTA est un projet d'information indépendant. Il n'est affilié à aucun conseil scolaire (DPCDSB, Peel, TDSB, TCDSB, York, Durham, Halton ou autres) ni à l'Institut Fraser."] },
       { h: "Le guide", p: ["Consulter le guide n'exige aucune donnée personnelle."], ul: [
-        "Nous conservons dans ton navigateur (localStorage) seulement tes préférences de langue, de thème et de ton, ta « Ma liste » d'écoles et de programmes enregistrés, et ton record au mini-jeu. Elles ne quittent jamais ton appareil.",
+        "Nous conservons dans ton navigateur (localStorage) seulement tes préférences de langue, de thème et de ton, le fait que tu aies désactivé les statistiques, ta « Ma liste » d'écoles et de programmes enregistrés, et ton record au mini-jeu. Elles ne quittent jamais ton appareil.",
         "Pendant le questionnaire, ta progression est conservée dans cet onglet du navigateur (sessionStorage) pour que tu ne perdes pas ton résultat si tu ouvres une autre page. Elle reste sur ton appareil et disparaît à la fermeture de l'onglet.",
         "Nous utilisons Vercel Web Analytics, qui mesure les visites de façon agrégée, sans témoins et sans t'identifier.",
         "Les polices et la bibliothèque PDF sont servies depuis ce même site : aucune ressource de tiers n'est chargée.",
@@ -111,6 +125,13 @@ export const PRIV = {
       { h: "Tes choix", p: ["Le partage est entièrement volontaire, et le questionnaire et le PDF fonctionnent de la même façon sans partage. Comme les réponses envoyées sont anonymes, nous ne pouvons pas savoir lesquelles sont les tiennes; nous n'offrons donc pas de recherche ni de suppression individuelle : la meilleure protection est de ne pas les envoyer. Tu peux effacer tes préférences en supprimant les données du site dans ton navigateur."] },
       { h: "Modifications et contact", p: ["Si cette politique change, nous mettrons à jour la date ci-dessus. Pour toute question ou tout commentaire, ouvre un signalement dans le dépôt du projet."] },
     ],
+      stats: { h: "Statistiques d'utilisation (comptages seulement)", p: ["Pour savoir quelles parties du guide sont utiles, nous comptons des actions de façon agrégée. Chaque action n'est qu'un nom et une ou deux étiquettes prédéfinies, ajoutées à un total quotidien. Il n'y a ni témoins (cookies), ni identifiants, ni historique par personne, ni heure exacte, ni texte saisi par toi (par exemple, tes recherches ne sont pas envoyées)."], ul: [
+        "Les visites et pages vues, d'où tu viens en gros (direct, moteur de recherche, réseaux sociaux, site d'une école, courriel ou autre) et si tu utilises l'application installée.",
+        "Le type d'appareil (mobile, tablette, ordinateur), la famille du système d'exploitation et du navigateur, la largeur d'écran par plages (par exemple « moins de 768 px »), la langue et le thème clair ou sombre. Nous ne gardons pas le texte complet de l'agent utilisateur.",
+        "Le pays et la province approximatifs (par exemple Canada / Ontario), que le serveur déduit de la connexion sans conserver ton adresse IP.",
+        "Les écoles et programmes ouverts et d'où (liste, carte, comparateur…), le nombre de clics vers les sites officiels (seulement le type de lien et le nom du site), les filtres utilisés et leurs valeurs, l'utilisation du comparateur, de « Ma liste », de la carte, du calendrier des séances, du chercheur de cours et du questionnaire (l'étape atteinte, jamais tes réponses).",
+        "La durée d'ouverture de la page (par plages) et jusqu'où elle a été défilée.",
+      ], off: "Désactiver les statistiques dans ce navigateur", on: "Activer les statistiques dans ce navigateur", state: { off: "Les statistiques sont désactivées dans ce navigateur.", on: "Les statistiques sont activées dans ce navigateur.", auto: "Ton navigateur envoie « Ne pas suivre » ou Global Privacy Control : rien n'est compté." }, small: "Les données agrégées ne sont ni analysées ni publiées pour des groupes de moins de 5 et sont supprimées après 24 mois. Nous n'utilisons pas les statistiques pour créer des profils de personnes." },
     contact: "Contact (dépôt du projet)",
     note: "Cette politique décrit le fonctionnement actuel du site; elle ne constitue pas un avis juridique.",
   },

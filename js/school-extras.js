@@ -43,7 +43,6 @@ export const EXTRAS = {
   clarkson: { ...P("clarksonss"), shsm: ["Sports"], other: ["Co-operative Education", "Dual Credit", "OYAP", "Pathways programs"] },
   tlkennedy: { ...P("tlkennedy"), shsm: ["Business", "Information & Communications Technology"], other: ["Co-operative Education", "Dual Credit", "OYAP", "Pathways programs"] },
   westcredit: { ...P("westcredit"), shsm: ["Construction", "Hospitality"], other: ["Co-operative Education", "Dual Credit", "OYAP", "Pathways programs"] },
-  gordon: { shsm: ["Hospitality & Tourism"], other: [], src: "peel" },
 };
 
 // Every other GTA school gets its official website from Ontario open data until its scraped details are published.

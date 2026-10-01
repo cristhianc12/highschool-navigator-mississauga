@@ -17,5 +17,5 @@ export const CURATED = {
   lma: ["peel", "Lincoln M. Alexander Secondary School"], clarkson: ["peel", "Clarkson Secondary School"],
   tlkennedy: ["peel", "T. L. Kennedy Secondary School"], westcredit: ["peel", "West Credit Secondary School"],
   famille: ["monavenir", "ÉSC Sainte-Famille"],
-  // "gordon" (Gordon Graydon) does not appear in the August 2026 list: kept as curated, flagged for review.
+  // "gordon" (Gordon Graydon) was removed: Peel lists it as an elementary school (Brampton), not a secondary school.
 };

@@ -843,7 +843,6 @@ const CURATED = [
   { id: "westcredit", board: "peel", name: "West Credit SS", addr: "Mississauga", fraser: F(0.9, 737, null),
     progs: [P("trades", x("RLCP: Regional Skilled Trades", "RLCP: Regional Skilled Trades", "RLCP : métiers spécialisés régionaux"))],
     fnote: x("Valor inusualmente bajo: revisa el informe original antes de sacar conclusiones.", "Unusually low value: check the original report before drawing conclusions.", "Valeur inhabituellement basse : consultez le bulletin original avant de tirer des conclusions.") },
-  { id: "gordon", board: "peel", name: "Gordon Graydon", addr: "Mississauga", fraser: null, progs: [] },
 
   // ---------------- French-language Catholic ----------------
   { id: "famille", board: "monavenir", name: "Sainte-Famille", addr: "Mississauga", fraser: F(7.3, 158, 7.4), progs: [],

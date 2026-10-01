@@ -30,7 +30,7 @@ export const EXPLAINER = {
       x("Los exámenes y trabajos del IB cuentan para el diploma; las universidades pueden dar créditos o ubicación avanzada (depende de cada una).", "IB exams and coursework count toward the diploma; universities may give credit or advanced standing (policies vary).", "Les examens et travaux du BI comptent pour le diplôme; les universités peuvent accorder des crédits ou une place avancée (selon l'université)."),
       x("Diploma de secundaria de Ontario (OSSD).", "Ontario Secondary School Diploma (OSSD).", "Diplôme d'études secondaires de l'Ontario (DESO)."),
     ] },
-    { l: x("Dónde, en Mississauga", "Where in Mississauga", "Où à Mississauga"), c: [
+    { l: x("Dónde (ejemplos)", "Where (examples)", "Où (exemples)"), c: [
       x("St. Joseph (DPCDSB) y John Fraser (Peel).", "St. Joseph (DPCDSB) and John Fraser (Peel).", "St. Joseph (DPCDSB) et John Fraser (Peel)."),
       x("St. Francis Xavier y St. Paul (DPCDSB); en Peel, MYP en Glenforest y Pre-IB en Erindale.", "St. Francis Xavier and St. Paul (DPCDSB); in Peel, MYP at Glenforest and Pre-IB at Erindale.", "St. Francis Xavier et St. Paul (DPCDSB); à Peel, PEI à Glenforest et pré-BI à Erindale."),
       x("Todas las escuelas.", "Every school.", "Toutes les écoles."),

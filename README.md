@@ -1,18 +1,15 @@
-# Highschool Navigator Mississauga
+# Highschool Navigator GTA
 
-A free, independent, trilingual (**Spanish, English, Canadian French**) guide to every public, Catholic and French-language **high school in Mississauga, Ontario**, built for families preparing for **Grade 9 entry in September 2027**.
+A free, independent, trilingual (**Spanish, English, Canadian French**) guide to the **public, Catholic and French-language high schools of the Greater Toronto Area** (Toronto, Peel, York, Durham and Halton), built for families preparing for **Grade 9 entry in September 2027**.
 
 It describes what each school and program offers, how to get in and when to apply. It **does not recommend any school**.
 
+> Status: the full GTA roster (about 340 schools, 14 boards) and the map are live. Mississauga has the most complete, hand-verified detail. Programs, courses, admissions and sessions for the rest of the GTA are collected from each school's and board's own website by the pipeline in `scripts/pipeline/` and published board by board after validation; schools without collected detail say so and link to their official site.
+
 ## Features
 
-- **Complete directory** of 33 Mississauga secondary schools across three systems:
-  - DPCDSB (Catholic): 15 schools
-  - Peel District School Board (public): 17 schools
-  - French-language Catholic: 1 school
-- **Regional programs** with host schools, Mississauga sites highlighted:
-  - DPCDSB: AP, IB, STEM/STEAM, Arts, Sports, Bakery School, French Immersion, Extended French, Alternative program
-  - Peel RLCP: IB (MYP and Pre-IB), Arts, AP, SciTech, IBT, Strings, Transportation/Engineering/Technology, Skilled Trades
+- **Complete GTA directory** of public, Catholic and French-language secondary schools (private schools excluded), from Ontario's open school data, with region, city and board filters and a "show more" list. Boards: TDSB, TCDSB, Peel DSB, Dufferin-Peel CDSB, YRDSB, YCDSB, DDSB, DCDSB, HDSB, HCDSB, CS Viamonde, CSC MonAvenir, and KPRDSB / PVNCCDSB for Clarington.
+- **Regional programs** of Peel and Dufferin-Peel (host schools, Mississauga sites highlighted) plus the programs collected for the other boards (section "Programs at other GTA school boards").
 - **Fraser Institute score** (out of 10), rank and previous-year score for each school, with a plain-language note on what the score does and does not measure.
 - **Filters and search** by board, program type, starting grade and how you get in, plus sorting by name or Fraser score.
 - **Side-by-side comparison** of up to 4 schools from any board.
@@ -32,13 +29,22 @@ It describes what each school and program offers, how to get in and when to appl
 - **Languages:** Spanish, English and Canadian French (`fr-CA`). The language is chosen from `?lang=`, then the saved choice, then the device language (Spanish, French or English), falling back to English.
 - **Follows the device theme** (light when none is detected, switchable), responsive layout, keyboard-friendly and accessible markup.
 - **SEO:** meta tags, Open Graph / Twitter card image, JSON-LD, `sitemap.xml`, `robots.txt`.
-- **Analytics:** Vercel Web Analytics (enable it in the Vercel dashboard).
+- **Analytics:** Vercel Web Analytics (cookieless, aggregate) plus first-party usage statistics that are counts only (see "Usage statistics" below).
 
 ## Tech stack
 
 Static site (HTML, CSS and ES modules) with no framework and no build step, plus one small Vercel serverless function for the optional anonymous questionnaire storage.
 
 ```
+js/geo.js            regions, systems and the 14 boards (names, colours, official sites)
+js/data/roster.js   GENERATED roster of GTA secondary schools (Ontario open data)
+js/data/summary.js  GENERATED: schools with collected details + lazy board modules
+js/data/details/    GENERATED per-board profiles, programs, registration, sessions, admissions
+js/data/courses/    GENERATED per-board course lists (lazy)
+js/details.js       loads the per-board modules and merges them into the shared data
+js/track.js         usage statistics client (counts only, honours Do Not Track)
+api/track.js        POST /api/track: validates and adds events to daily totals
+scripts/pipeline/   roster, map, scraping contract, validators and builders (see its README)
 index.html          guide page shell, SEO tags, language and theme toggles
 quiz.html           questionnaire page shell
 css/styles.css      shared styles (light and dark themes)
@@ -164,3 +170,22 @@ The site has no accounts and sets no cookies. Language and theme choices are sto
 ## Disclaimer
 
 Independent informational site. Not affiliated with DPCDSB, the Peel District School Board or the Fraser Institute. Information may change: always verify with official sources.
+
+## Data pipeline (GTA)
+
+`scripts/pipeline/` keeps the data reproducible and auditable. Run from the repo root (`cd scripts && npm install` once; use `NODE_USE_ENV_PROXY=1` behind a proxy):
+
+| Step | Command | Output |
+| --- | --- | --- |
+| Roster from Ontario open data | `node scripts/pipeline/build-roster.mjs` | `data/roster.json`, `js/data/roster.js` |
+| Map (boundaries, lake, freeways from OpenStreetMap) | `node scripts/pipeline/build-map.mjs` | `js/map-data.js` |
+| Work lists for the scraping agents | `node scripts/pipeline/worklist.mjs` | `data/work/<board>.json` |
+| Scraping (agents read school and board sites with `crawl.mjs` / `extract-courses.mjs`) | see `scripts/pipeline/README.md` | `data/raw/<board>/*.json` |
+| Validate against the contract | `node scripts/pipeline/validate.mjs [board]` | problems list |
+| Build the site modules | `node scripts/pipeline/build-details.mjs` | `js/data/details/`, `js/data/courses/`, `js/data/summary.js` |
+
+Rules: every fact carries the URL of the page that states it; anything not found is recorded as missing, never guessed; the hand-verified curated schools in `content.js` always win over scraped values; Fraser scores stay manual.
+
+## Usage statistics (counts only)
+
+`js/track.js` sends short events to `/api/track`, which adds them to daily totals in `metrics_daily` (`db/schema.sql`). Each event is a name plus up to two allow-listed labels. Counted: visits, page views, where visits come from (direct, search, social, school site, email), school and program opens and where from, clicks to official sites (link kind and site name), filters and their values, comparison, My list, map, sessions and course-finder use, questionnaire steps (never answers), time-on-page and scroll bands, device class, OS and browser family, viewport band, language, theme/tone and province. Not collected: IP, user agent text, cookies, any ID, exact times, typed text. It needs no browser permission, is off for Do Not Track / Global Privacy Control and has a toggle on `/privacy`. Reports use `db/queries.sql` (5-count rule); rows are deleted after 24 months. Keep `privacy-content.js`, `api/track.js` and this section in sync when events change.

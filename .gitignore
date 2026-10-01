@@ -5,3 +5,6 @@ node_modules/
 scripts/node_modules/
 data/cache/
 data/work/
+data/sources/
+data/fraser-2025.json
+data/fraser-match.json

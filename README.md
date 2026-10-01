@@ -184,6 +184,8 @@ Independent informational site. Not affiliated with DPCDSB, the Peel District Sc
 | Validate against the contract | `node scripts/pipeline/validate.mjs [board]` | problems list |
 | Build the site modules | `node scripts/pipeline/build-details.mjs` | `js/data/details/`, `js/data/courses/`, `js/data/summary.js` |
 
+Fraser scores: download the report PDF in a browser (the site blocks automated access) to `data/sources/fraser-2025.pdf`, then run `node scripts/pipeline/parse-fraser.mjs && node scripts/pipeline/match-fraser.mjs`. Rows are matched to the roster by school name and city (`data/fraser-overrides.json` settles ambiguous cases, `data/fraser-review.md` lists what is unmatched, such as private or closed schools); the PDF itself is not committed.
+
 Rules: every fact carries the URL of the page that states it; anything not found is recorded as missing, never guessed; the hand-verified curated schools in `content.js` always win over scraped values; Fraser scores stay manual.
 
 ## Usage statistics (counts only)

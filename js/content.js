@@ -5,6 +5,7 @@ import { EXTRAS } from "./school-extras.js";
 import { BOARD_META, boardClass } from "./geo.js";
 import { ROSTER, CURATED_INFO } from "./data/roster.js";
 import { SUMMARY } from "./data/summary.js";
+import { FRASER_SCORES } from "./data/fraser.js";
 import { supportHtml } from "./support.js";
 
 const x = (es, en, fr) => ({ es, en, fr });
@@ -866,7 +867,7 @@ const curated = CURATED.map((s) => {
 const fromRoster = ROSTER.map((r) => ({
   id: r.id, board: r.board, name: r.name, addr: fullAddr(r.addr, r.city, r.hood), city: r.city, region: r.region,
   postal: r.postal, enrol: r.enrol, geo: r.geo, site: r.site, phone: r.phone, special: r.special, lang: r.lang,
-  fraser: null, progs: (SUMMARY[r.id] || []).map((k) => ({ k })), pending: !SUMMARY[r.id],
+  fraser: FRASER_SCORES[r.id] ? F(...FRASER_SCORES[r.id]) : null, progs: (SUMMARY[r.id] || []).map((k) => ({ k })), pending: !SUMMARY[r.id],
 }));
 
 export const SCHOOLS = [...curated, ...fromRoster];

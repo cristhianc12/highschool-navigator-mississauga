@@ -7,7 +7,7 @@ import { EXPLAINER } from "./explainer.js";
 import { renderMap } from "./map.js";
 import { initMyList, starBtn, refresh as syncMyList } from "./mylist.js";
 import { UI, TEEN, LANGS, madeWith, SCHOOLS, PROGRAMS, SOURCES, FRASER, TAGS, BOARDS, TAG_ICON, VIBES } from "./content.js";
-import { ensureAllDetails, ensureSchools, ensureBoardExtras } from "./details.js";
+import { ensureAllDetails, ensureSchools, ensureBoardExtras, hostKey } from "./details.js";
 import { REGISTRATION, REG_UI } from "./admissions.js";
 import { DETAIL_BOARDS } from "./data/summary.js";
 import { bottomBarHtml, openSheet, closeSheet, watchSections, initBackToTop } from "./mobile.js";
@@ -198,8 +198,6 @@ function tagOptions(current) {
     Object.keys(TAGS).map((k) => `<option value="${k}" ${current === k ? "selected" : ""}>${esc(L(TAGS[k]))}</option>`).join("");
 }
 
-// One key per school whatever the spelling ("John Fraser SS" and "John Fraser Secondary School" are the same school).
-const hostKey = (n) => norm(n).replace(/\(.*?\)/g, "").replace(/\b(secondary|school|catholic|high|collegiate|institute|academy|district|ss|css|cs|chs|ci|hs)\b/g, "").replace(/[^a-z0-9]/g, "");
 function explainerHtml() {
   const E = EXPLAINER;
   const short = (b) => L(BOARDS[b]).replace(/\s*\(.*\)$/, "");

@@ -23,9 +23,58 @@ const load = (path) => {
 
 /* ---------------- 1. programs and sessions ---------------- */
 
+// One key per school whatever the spelling ("John Fraser SS" and "John Fraser Secondary School" are the same school).
+export const hostKey = (n) => String(n).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\(.*?\)/g, "")
+  .replace(/\b(secondary|school|catholic|high|collegiate|institute|academy|district|ss|css|cs|chs|ci|hs)\b/g, "").replace(/[^a-z0-9]/g, "");
+
+// Programs that were first written by hand (Mississauga era) and later also found on the board's own pages.
+// The hand-written card stays (its id may be saved in someone's list) and absorbs the collected details.
+const SAME_PROGRAM = {
+  "peel-rlcp-ap": "p-ap", "peel-rlcp-ib": "p-ib", "peel-rlcp-arts": "p-arts", "peel-rlcp-scitech": "p-scitech", "peel-rlcp-ibt": "p-ibt",
+  "peel-rlcp-strings": "p-strings", "peel-rlcp-skilled-trades": "p-trades", "peel-rlcp-transportation": "p-tet",
+};
+const canonicalId = (id) => SAME_PROGRAM[id] || id;
+
+const sameText = (a, b) => String(a?.en || "").toLowerCase().slice(0, 18) === String(b?.en || "").toLowerCase().slice(0, 18);
+const joinText = (a, b) => (a && b ? Object.fromEntries(["en", "es", "fr"].map((k) => [k, [a[k] || a.en, b[k] || b.en].filter(Boolean).join(" ")])) : a || b);
+
+function absorb(curated, p, b) {
+  const sch = (id) => byId.get(id);
+  const qual = (id) => curated.hosts.map((h) => ({ k: hostKey(h.n), q: (h.n.match(/\((MYP|Pre-IB)[^)]*\)/) || [])[0] || "" })).find((x) => x.k === hostKey(sch(id)?.name || id))?.q || "";
+  curated.hosts = p.hosts.map((id) => ({ n: `${sch(id)?.name || id}${qual(id) ? " " + qual(id) : ""}`, m: sch(id)?.city === "Mississauga", id }));
+  curated.regions = [...new Set(p.hosts.map((h) => sch(h)?.region).filter(Boolean))];
+  curated.p = p.p || curated.p;
+  curated.url = p.url || curated.url;
+  if (p.entry && p.entry !== "apply") curated.entryDetail = p.entry;
+  const i = PROGRAM_INFO[curated.id] || (PROGRAM_INFO[curated.id] = {});
+  const c = p.info || {};
+  i.who = c.who || i.who;
+  const reqs = [...(c.reqs || [])];
+  for (const r of i.reqs || []) if (!reqs.some((x) => sameText(x, r))) reqs.push(r);
+  if (reqs.length) i.reqs = reqs;
+  i.keyDates = joinText(c.keyDates, i.keyDates);
+  const links = [...(i.links || [])];
+  for (const l of c.links || []) if (l.url && !links.some((x) => x.u === l.url)) links.push({ l: l.label || OFFICIAL, u: l.url });
+  if (p.url && !links.some((x) => x.u === p.url)) links.unshift({ l: OFFICIAL, u: p.url });
+  i.links = links;
+}
+
+// A school appears once per program type: hosts of a hand-written umbrella card that now have their own collected card are dropped from it.
+function dedupeHosts(b) {
+  for (const cur of PROGRAMS.filter((x) => x.board === b && !x.id.startsWith(`${b}-`))) {
+    const own = new Set(PROGRAMS.filter((x) => x.board === b && x.tag === cur.tag && x !== cur && x.id.startsWith(`${b}-`)).flatMap((x) => x.hosts.map((h) => hostKey(h.n))));
+    if (!own.size) continue;
+    cur.hosts = cur.hosts.filter((h) => !own.has(hostKey(h.n)));
+  }
+  for (let k = PROGRAMS.length - 1; k >= 0; k--) if (PROGRAMS[k].board === b && !PROGRAMS[k].hosts.length) PROGRAMS.splice(k, 1);
+}
+
 function mergeBoard(b, d) {
   for (const p of d.programs || []) {
-    if (PROGRAMS.some((x) => x.id === p.id)) continue;
+    const canon = canonicalId(p.id);
+    const existing = PROGRAMS.find((x) => x.id === canon);
+    if (canon !== p.id && existing) { absorb(existing, p, b); continue; }
+    if (existing) continue;
     const hosts = p.hosts.map((h) => ({ n: byId.get(h)?.name || h, m: false, id: h }));
     PROGRAMS.push({
       id: p.id, board: b, tag: p.tag, start: String(p.start), entry: ["boundary", "school"].includes(p.entry) ? "auto" : "apply", entryDetail: p.entry,
@@ -36,13 +85,14 @@ function mergeBoard(b, d) {
       links: [{ l: OFFICIAL, u: p.url }, ...(p.info?.links || []).map((l) => ({ l: l.label || OFFICIAL, u: l.url }))],
     };
   }
+  dedupeHosts(b);
   const boardName = BOARD_META[b].name.en.split(" (")[0];
   addSessions((d.sessions || []).map((e) => {
     const s = e.schoolId ? byId.get(e.schoolId) : e.school ? byId.get(e.school) : null;
     return {
       kind: e.kind, board: b, school: s ? s.name : boardName, city: s ? (s.city || "").toLowerCase() : "virtual",
       site: s ? EXTRAS[s.id]?.site || null : null, title: e.title, date: e.date || null, time: e.time || null, end: e.endTime || null,
-      format: e.format || null, programId: progId(b, e.programId), links: [{ label: "Link", url: e.url }, ...(e.links || [])], programIds: [],
+      format: e.format || null, programId: canonicalId(progId(b, e.programId)), links: [{ label: "Link", url: e.url }, ...(e.links || [])], programIds: [],
     };
   }));
 }
@@ -62,7 +112,7 @@ export function ensureBoards(boards = DETAIL_BOARDS) {
 
 function mergeBoardExtras(b, x) {
   if (x.registration && !REGISTRATION[b]) REGISTRATION[b] = x.registration;
-  for (const a of x.admissions || []) ADMISSIONS.push({ ...a, prog: progId(b, a.programId) });
+  for (const a of x.admissions || []) ADMISSIONS.push({ ...a, prog: canonicalId(progId(b, a.programId)) });
 }
 
 function mergeSchool(r, s) {

@@ -4,3 +4,4 @@ node_modules/
 *.log
 scripts/node_modules/
 data/cache/
+data/work/

@@ -66,12 +66,15 @@ for (const r of contacts) {
     grades: r["Grade Range"],
   });
 }
+// Websites found dead or hijacked by scripts/pipeline/check-sites.mjs are dropped (data/site-overrides.json).
+const overrides = JSON.parse(await fs.readFile(path.join(ROOT, "data/site-overrides.json"), "utf8").catch(() => "{}"));
 const seen = new Map();
 for (const s of out) {
   let id = `${s.board}-${slug(s.name.replace(/\b(Secondary School|High School|Collegiate Institute|Catholic|Secondary|C\.?S\.?S\.?|S\.?S\.?)\b/gi, ""))}`.replace(/-$/, "");
   if (seen.has(id)) id += "-" + slug(s.city);
   seen.set(id, true);
   s.id = id;
+  if (s.id in overrides) s.site = overrides[s.id];
 }
 // Curated schools: attach the official record, keep their ids.
 const curatedInfo = {};

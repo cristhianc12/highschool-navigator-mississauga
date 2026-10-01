@@ -16,7 +16,7 @@ for (const b of await fs.readdir(path.join(ROOT, "data/raw")).catch(() => [])) {
   }
 }
 const https = (u) => (/^https?:\/\//i.test(u) ? u : "https://" + u).replace(/^http:/i, "https:");
-const SPAM = /casino|gambl|betting|\bslots?\b|poker|jackpot|sportsbook|viagra|porn|escort|loan approval/i;
+const SPAM = /casino|gambl|betting|\bslots?\b|poker|jackpot|sportsbook|viagra|porn|escort|loan approval|game online|gacor|togel|\bjudi\b|situs|deposit|bonus new member|\bsbobet|maxwin/i;
 const STOP = new Set(["secondary", "school", "high", "collegiate", "institute", "catholic", "the", "and", "of", "college", "academy", "centre", "center", "learning", "alternative", "district", "st", "saint"]);
 const words = (n) => n.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-z]+/).filter((w) => w.length > 2 && !STOP.has(w));
 

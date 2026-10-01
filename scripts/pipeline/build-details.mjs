@@ -16,6 +16,7 @@ import { BOARDS } from "../../js/content.js";
 
 const ctx = { ids: new Set(SCHOOLS.map((s) => s.id)), boards: new Set(Object.keys(BOARDS)) };
 const rawDir = path.join(ROOT, "data/raw");
+const siteOverrides = JSON.parse(await fs.readFile(path.join(ROOT, "data/site-overrides.json"), "utf8").catch(() => "{}"));
 const boards = (await fs.readdir(rawDir).catch(() => [])).filter((b) => ctx.boards.has(b)).sort();
 const summary = {}, detailBoards = [], courseBoards = [];
 const cleaned = { fixed: 0, dropped: 0 };
@@ -48,7 +49,7 @@ for (const b of boards) {
     if (checkSchool(d, ctx).length) { console.warn(`skip ${b}/${f}: fails validation`); skipped++; continue; }
     out.schools[d.id] = strip({
       curated: d.id in CURATED_INFO ? 1 : undefined,
-      site: d.site, focus: d.focus, kv: d.kv, shsm: d.shsm, other: d.other, cal: d.calendarUrl, at: d.scrapedAt,
+      site: d.id in siteOverrides ? siteOverrides[d.id] : d.site, focus: d.focus, kv: d.kv, shsm: d.shsm, other: d.other, cal: d.calendarUrl, at: d.scrapedAt,
       progs: (d.programs || []).map((p) => ({ k: p.tag, n: p.note, name: p.name, url: p.url, grades: p.grades, entry: p.entry })),
       admissions: (d.admissions || []).map((a) => ({ ...a })),
       sessions: d.sessions || [], missing: d.missing, sources: d.sources,

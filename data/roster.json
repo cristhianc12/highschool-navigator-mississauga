@@ -1,10 +1,10 @@
 {
- "source": "https://data.ontario.ca/dataset/d85f68c5-fcb0-4b4d-aec5-3047db47dcd5/resource/f75540ed-59eb-49ab-ac43-976d563b3a65/download/new_sif_data_2024_25_final_en_august2026.xlsx",
- "built": "2026-10-01",
+ "source": "https://data.ontario.ca/dataset/d85f68c5-fcb0-4b4d-aec5-3047db47dcd5/resource/f75540ed-59eb-49ab-ac43-976d563b3a65/download/new_sif_data_2024_25_final_en_sep_2026.xlsx",
+ "built": "2026-11-03",
  "schools": [
   {
    "key": "918997",
-   "name": "Collège français secondaire",
+   "name": "CollÃ¨ge franÃ§ais secondaire",
    "board": "viamonde",
    "city": "Toronto",
    "region": "toronto",
@@ -22,11 +22,11 @@
    "enrol": 155,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-college-francais-secondaire"
+   "id": "viamonde-colla-ge-frana-ais-secondaire"
   },
   {
    "key": "914723",
-   "name": "École secondaire Gaétan Gervais",
+   "name": "Ã‰cole secondaire GaÃ©tan Gervais",
    "board": "viamonde",
    "city": "Oakville",
    "region": "halton",
@@ -44,11 +44,11 @@
    "enrol": 170,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-gaetan-gervais"
+   "id": "viamonde-a-cole-secondaire-gaa-tan-gervais"
   },
   {
    "key": "907642",
-   "name": "École secondaire Jeunes sans frontières",
+   "name": "Ã‰cole secondaire Jeunes sans frontiÃ¨res",
    "board": "viamonde",
    "city": "Brampton",
    "region": "peel",
@@ -66,11 +66,11 @@
    "enrol": 365,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-jeunes-sans-frontieres"
+   "id": "viamonde-a-cole-secondaire-jeunes-sans-frontia-res"
   },
   {
    "key": "954651",
-   "name": "École secondaire Michelle-O'Bonsawin",
+   "name": "Ã‰cole secondaire Michelle-O'Bonsawin",
    "board": "viamonde",
    "city": "Toronto",
    "region": "toronto",
@@ -88,11 +88,11 @@
    "enrol": 100,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-michelle-o-bonsawin"
+   "id": "viamonde-a-cole-secondaire-michelle-o-bonsawin"
   },
   {
    "key": "896889",
-   "name": "École secondaire Norval-Morrisseau",
+   "name": "Ã‰cole secondaire Norval-Morrisseau",
    "board": "viamonde",
    "city": "Richmond Hill",
    "region": "york",
@@ -110,11 +110,11 @@
    "enrol": 85,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-norval-morrisseau"
+   "id": "viamonde-a-cole-secondaire-norval-morrisseau"
   },
   {
    "key": "901037",
-   "name": "École secondaire Ronald-Marion",
+   "name": "Ã‰cole secondaire Ronald-Marion",
    "board": "viamonde",
    "city": "Pickering",
    "region": "durham",
@@ -132,11 +132,11 @@
    "enrol": 230,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-ronald-marion"
+   "id": "viamonde-a-cole-secondaire-ronald-marion"
   },
   {
    "key": "952803",
-   "name": "École secondaire Toronto Ouest",
+   "name": "Ã‰cole secondaire Toronto Ouest",
    "board": "viamonde",
    "city": "Toronto",
    "region": "toronto",
@@ -154,11 +154,11 @@
    "enrol": 195,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-toronto-ouest"
+   "id": "viamonde-a-cole-secondaire-toronto-ouest"
   },
   {
    "key": "907588",
-   "name": "École secondaire Étienne-Brûlé",
+   "name": "Ã‰cole secondaire Ã‰tienne-BrÃ»lÃ©",
    "board": "viamonde",
    "city": "Toronto",
    "region": "toronto",
@@ -176,11 +176,11 @@
    "enrol": 225,
    "special": null,
    "grades": "9-12",
-   "id": "viamonde-ecole-secondaire-etienne-brule"
+   "id": "viamonde-a-cole-secondaire-a-tienne-bra-la"
   },
   {
    "key": "733458",
-   "name": "ÉSC Monseigneur-de-Charbonnel",
+   "name": "Ã‰SC Monseigneur-de-Charbonnel",
    "board": "monavenir",
    "city": "Toronto",
    "region": "toronto",
@@ -198,11 +198,11 @@
    "enrol": 210,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-monseigneur-de-charbonnel"
+   "id": "monavenir-a-sc-monseigneur-de-charbonnel"
   },
   {
    "key": "854087",
-   "name": "ÉSC Pape-François",
+   "name": "Ã‰SC Pape-FranÃ§ois",
    "board": "monavenir",
    "city": "Whitchurch-Stouffville",
    "region": "york",
@@ -220,11 +220,11 @@
    "enrol": 55,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-pape-francois"
+   "id": "monavenir-a-sc-pape-frana-ois"
   },
   {
    "key": "846041",
-   "name": "ÉSC Père-Philippe-Lamarche",
+   "name": "Ã‰SC PÃ¨re-Philippe-Lamarche",
    "board": "monavenir",
    "city": "Toronto",
    "region": "toronto",
@@ -242,11 +242,11 @@
    "enrol": 280,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-pere-philippe-lamarche"
+   "id": "monavenir-a-sc-pa-re-philippe-lamarche"
   },
   {
    "key": "705357",
-   "name": "ÉSC Renaissance",
+   "name": "Ã‰SC Renaissance",
    "board": "monavenir",
    "city": "Aurora",
    "region": "york",
@@ -264,11 +264,11 @@
    "enrol": 435,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-renaissance"
+   "id": "monavenir-a-sc-renaissance"
   },
   {
    "key": "706477",
-   "name": "ÉSC Saint-Charles-Garnier",
+   "name": "Ã‰SC Saint-Charles-Garnier",
    "board": "monavenir",
    "city": "Whitby",
    "region": "durham",
@@ -286,11 +286,11 @@
    "enrol": 470,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-saint-charles-garnier"
+   "id": "monavenir-a-sc-saint-charles-garnier"
   },
   {
    "key": "691950",
-   "name": "ÉSC Saint-Frère-André",
+   "name": "Ã‰SC Saint-FrÃ¨re-AndrÃ©",
    "board": "monavenir",
    "city": "Toronto",
    "region": "toronto",
@@ -308,11 +308,11 @@
    "enrol": 350,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-saint-frere-andre"
+   "id": "monavenir-a-sc-saint-fra-re-andra"
   },
   {
    "key": "790001",
-   "name": "ÉSC Sainte-Famille",
+   "name": "Ã‰SC Sainte-Famille",
    "board": "monavenir",
    "city": "Mississauga",
    "region": "peel",
@@ -330,11 +330,11 @@
    "enrol": 530,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-sainte-famille"
+   "id": "monavenir-a-sc-sainte-famille"
   },
   {
    "key": "865368",
-   "name": "ÉSC Sainte-Trinité",
+   "name": "Ã‰SC Sainte-TrinitÃ©",
    "board": "monavenir",
    "city": "Oakville",
    "region": "halton",
@@ -352,11 +352,11 @@
    "enrol": 365,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-sainte-trinite"
+   "id": "monavenir-a-sc-sainte-trinita"
   },
   {
    "key": "867769",
-   "name": "ÉSC de l'Ascension - Vaughan",
+   "name": "Ã‰SC de l'Ascension - Vaughan",
    "board": "monavenir",
    "city": "Vaughan",
    "region": "york",
@@ -374,7 +374,7 @@
    "enrol": null,
    "special": null,
    "grades": "9-12",
-   "id": "monavenir-esc-de-l-ascension-vaughan"
+   "id": "monavenir-a-sc-de-l-ascension-vaughan"
   },
   {
    "key": "687308",
@@ -1213,6 +1213,28 @@
    "id": "ddsb-brooklin"
   },
   {
+   "key": "969341",
+   "name": "Cedar Valley SS",
+   "board": "ddsb",
+   "city": "Oshawa",
+   "region": "durham",
+   "hood": null,
+   "addr": "245 Windfields Farm Drive",
+   "postal": "L1L0S9",
+   "geo": [
+    43.965292,
+    -78.893643
+   ],
+   "site": null,
+   "boardSite": "www.ddsb.ca",
+   "phone": null,
+   "lang": "en",
+   "enrol": null,
+   "special": null,
+   "grades": "9-12",
+   "id": "ddsb-cedar-valley"
+  },
+  {
    "key": "904392",
    "name": "Donald A Wilson Secondary School",
    "board": "ddsb",
@@ -1519,28 +1541,6 @@
    "special": null,
    "grades": "9-12",
    "id": "ddsb-sinclair"
-  },
-  {
-   "key": "969341",
-   "name": "Unnamed North Oshawa SS",
-   "board": "ddsb",
-   "city": "Oshawa",
-   "region": "durham",
-   "hood": null,
-   "addr": "245 Windfields Farm Drive",
-   "postal": "L1L0S9",
-   "geo": [
-    43.965292,
-    -78.893643
-   ],
-   "site": null,
-   "boardSite": "www.ddsb.ca",
-   "phone": null,
-   "lang": "en",
-   "enrol": null,
-   "special": null,
-   "grades": "9-12",
-   "id": "ddsb-unnamed-north-oshawa"
   },
   {
    "key": "948969",
@@ -6626,7 +6626,7 @@
   },
   {
    "key": "691356",
-   "name": "St Brother André Catholic High School",
+   "name": "St Brother AndrÃ© Catholic High School",
    "board": "ycdsb",
    "city": "Markham",
    "region": "york",
@@ -6644,7 +6644,7 @@
    "enrol": 1280,
    "special": null,
    "grades": "9-12",
-   "id": "ycdsb-st-brother-andre"
+   "id": "ycdsb-st-brother-andra"
   },
   {
    "key": "788112",
@@ -8014,21 +8014,6 @@
    "site": "http://schools.peelschools.org/sec/westcredit",
    "phone": "905-858-3087",
    "enrol": 385
-  },
-  "famille": {
-   "key": "790001",
-   "city": "Mississauga",
-   "region": "peel",
-   "official": "ÉSC Sainte-Famille",
-   "geo": [
-    43.61473,
-    -79.7478
-   ],
-   "postal": "L5N7K8",
-   "addr": "1780 Meadowvale boulevard",
-   "site": "http://essf.csdccs.edu.on.ca/wp/",
-   "phone": "905-814-0318",
-   "enrol": 530
   }
  }
 }
